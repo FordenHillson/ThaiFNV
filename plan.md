@@ -84,6 +84,8 @@ D:\backup\github\ThaiFNV\
 | กลยุทธ์การแปล | MT ก้อนแรก (Google Sheets Apps Script) + คนตามแก้รอบที่สอง |
 | ฐานอ้างอิง | ศึกษา FNV_THAI (Nexus 98964) เป็นแนวทางฟอนต์ — ถ้ายืม corpus = ต้องเครดิต/ขออนุญาตชัดเจน |
 | ฟอนต์ต้นแบบ | **Sarabun** (สำหรับทดสอบบทสนทนายาวก่อน) — ขยายครบจริงเพิ่ม Prompt (UI) และ Bai Jamjuree (terminal) |
+| DIAL topic names | **แปลด้วย** — เป็นตัวเลือกบทพูดที่ user เห็นตอนเลือก (ยืนยัน 2026-10-28) |
+| UI mods (DarNifiedUI) | ทำเป็น **DarNifiedUI patch** แยก — FOMOD = mod หลัก (vanilla UI) + patch option สำหรับ DarN (ยืนยัน 2026-10-28) |
 | workspace หลัก | D:\backup\github\ThaiFNV + git (อยู่นอกโฟลเดอร์เกมเสมอ) |
 
 ## 5) การออกแบบแพ็กเกจแจกจ่าย (Distribution)
