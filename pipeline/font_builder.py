@@ -18,6 +18,7 @@ import argparse
 import os
 import struct
 import sys
+import unicodedata
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -54,6 +55,13 @@ def build(args):
     advances = {cp: font.getlength(char_of[cp]) for cp in render_cps}
     thai_cp_set = set(thai_chars)
 
+    # NBSP (cp874 0xA0) ต้องเป็นช่องว่างกว้างเท่า space ไม่มีหมึก
+    space_cp = 0x20
+    space_adv = font.getlength(' ')
+
+    def is_combining(ch):
+        return unicodedata.combining(ch) > 0 or ch in COMBINING
+
     # shelf packing บน atlas
     margin = 2
     cell_w = int(max(max(font.getlength(chr(cp)) for cp in render_cps) + 4, 16))
@@ -69,9 +77,8 @@ def build(args):
 
     glyphs = []
     for cp in range(256):
-        g = Glyph()
-        g.px_height = cell_h
-        g.y_offset = 2.0  # ช่องว่าง: dummy เหมือน vanilla (f12=2.0, advance=0)
+        g = Glyph()  # ช่องว่าง = ทุกค่า 0 (เหมือน vanilla) + f12=2.0
+        g.y_offset = 2.0
         glyphs.append(g)
 
     x, y = margin, margin
@@ -82,14 +89,26 @@ def build(args):
         ch = char_of[cp]
         bb = font.getbbox(ch)
         adv = advances[cp]
-        if adv <= 0 or ch in COMBINING:
-            # สระบน/วรรณยุกต์ — วาดเพื่อเป็นรูป แต่ advance = 0
+        combining = is_combining(ch)
+        if ch == '\xa0':
+            # NBSP: ไม่วาดหมึก — advance เท่า space
+            adv = space_adv
+            gw = space_adv
+            glyphs[cp].advance = adv
+            glyphs[cp].uv_left = glyphs[cp].uv_right = 0.0
+            glyphs[cp].uv_top = glyphs[cp].uv_bottom = 0.0
+            glyphs[cp].px_width = 0.0
+            glyphs[cp].y_offset = 0.0
+            x += cell_w + margin
+            continue
+        if combining:
+            # สระบน/วรรณยุกต์ — advance = 0 (วาดทับใน cell เดียวกับตัวอักษรก่อนหน้า)
             adv = 0
-            gw = max(bb[2] - bb[0], 1)
+            gw = max(bb[2] - bb[0], 2)
+            if bb[0] < 0:
+                gw = max(bb[2], 2)
         else:
             gw = max(bb[2], int(adv))
-            if cp not in thai_cp_set and ch.isascii():
-                pass
         # เว้นจุดวาดให้ top-left ของ glyph ไปในถูก cell
         draw.text((x, y - (bb[1] if bb[1] < 0 else 0)), ch, font=font,
                   fill=(255, 255, 255, 255))
@@ -99,6 +118,7 @@ def build(args):
         g.uv_right = (x + gw) / tex_w
         g.uv_bottom = (y + cell_h) / tex_h
         g.px_width = gw
+        g.px_height = cell_h
         g.advance = adv
         g.x_offset = 0
         g.y_offset = 0
