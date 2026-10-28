@@ -28,7 +28,8 @@
 
 ### 2.2 ระบบฟอนต์ของเกม (ตรวจสอบจากไฟล์จริง)
 - เกมใช้ฟอนต์ **bitmap 9 สล็อต** ประกาศผ่าน `[Fonts]` ใน FalloutPrefs.ini และ Fallout.ini: `sFontFile_1..9 = Textures\Fonts\<ชื่อ>.fnt`
-- ทุกไฟล์ .fnt มีขนาดคงที่ 14,632 bytes (โครงสร้าง: header + ตารางราย glyph ~256 ตัว) — มีไฟล์คู่ **.tex** เป็นภาพ texture atlas (ตัวอักษรสร้างเป็นภาพ bitmap รวมก้อนเดียว)
+- ทุกไฟล์ .fnt มีขนาดคงที่ 14,632 bytes (โครงสร้าง: header 296 bytes + ตาราง 256 glyph × 56 bytes) — มีไฟล์คู่ **.tex** เป็นภาพ texture atlas (header 8 bytes = width/height แล้วตามด้วย RGBA ดิบ)
+- **รูปแบบ .fnt ที่ยืนยันแล้ว (2026-10-28)**: glyph 56 bytes = 4 มุม UV (L,T / R,T / L,B / R,B) + width + height + bearing X + advance ส่วนเกิน + ascent; header float = line height — ดู `docs/2026-10-28-fnt-format-fix.md` (บั๊กเดิม: สลับ UV X/Y ทำให้ข้อความหายทั้งเกม)
 - **แก้ไขได้จริง**: Export atlas เป็น PNG → เติมตัวอักษรใหม่ → Import PNG กลับ → ตั้งตำแหน่ง/ขนาด/ascender ราย glyph — เครื่องมือกลางที่ชุดชุมชนใช้คือ **Cobb's Oblivion Font Editor** (หรือเราเขียน Python + fontTools/Pillow สร้าง atlas และตารางเองได้)
 - มีตัวอย่างความสำเร็จจากภาษาอื่นแล้ว: โปรตุเกส-บราซิล (Vanilla UI Plus font thread), โปแลนด์ (California Font mod, Nexus 66194), ภาษาไทย (FNV_THAI, Nexus 98964)
 - **สมมติฐาน H1 (ต้องพิสูจน์ในเฟส prototype)**: ตาราง ~256 glyph ต่อไฟล์ไม่พอจัดตามรหัส Unicode ไทยตรง (U+0E00+) — วิธีชนะคือวาง glyph ไทยไว้ในตำแหน่งแบบ **codepage TIS-620/CP874 (ตับ 0xA0–0xDB)** แล้วเขียนข้อความไทยใน plugin ด้วย codepage เดียวกัน จึงแสดงได้แบบเลยเกมจริง

@@ -4,3 +4,10 @@ desktop.ini
 
 __pycache__/
 
+# ไฟล์เกมที่แตกออกมาเพื่ออ้างอิง (ลิขสิทธิ์ Bethesda + ใหญ่) — สร้างใหม่ได้ด้วย
+# pipeline/bsa_extract.py --filter fonts จาก Fallout - Textures2.bsa
+testing/vanilla_bsa_fonts/
+
+# ภาพผลตรวจชั่วคราว
+testing/*.png
+testing/patch_test/
