@@ -77,7 +77,7 @@ engine วาด glyph ด้วย `vertex color (จาก XML / SetTextColor)
 | `Glow_Monofonto_Large` | 31 | **26** | 31 |
 | `Monofonto_Large` | 29 | **25** | 31 |
 | `Glow_Monofonto_Medium` | 26 | **22** | 26 |
-| `Monofonto_VeryLarge02_Dialogs2` | 40 | **32** | 36 |
+| `Monofonto_VeryLarge02_Dialogs2` | 40 | **27** | 36 |
 | `Fixedsys_Comp_uniform_width` | 28 | **24** | 25 |
 | `Glow_Monofonto_VL_dialogs` | 34 | **29** | 34 |
 | `Baked-in_Monofonto_Large` | 31 | **26** | 36 |
@@ -95,6 +95,7 @@ engine วาด glyph ด้วย `vertex color (จาก XML / SetTextColor)
 | vanilla (natural ≈ 37px) | 55.5 px |
 | ours @40px (natural 53px) | 78.2 px |
 | ours @32px (natural 42px) | 64.6 px |
+| **ours @27px (ใช้จริง)** | **57.3 px** (+3% จาก vanilla) |
 
 อัตราส่วนตรงกับ `ascent+descent` ของฟอนต์เป๊ะ (ไม่ได้ใช้ header float 36)
 → ฟอนต์ที่มี line box สูง (Sarabun = 1.325em) จะดันบล็อกให้สูงกว่า vanilla
@@ -105,17 +106,67 @@ engine วาด glyph ด้วย `vertex color (จาก XML / SetTextColor)
 จึงเพิ่ม tracking เข้าไปใน advance ตรง ๆ:
 
 ```python
-tracking = max(1.0, round(size * 0.08, 1))   # ~8% ของขนาดฟอนต์
+tracking = max(1.0, round(size * 0.08, 1))   # ค่าเริ่มต้น ~8% ของขนาดฟอนต์
 ```
 
-- ที่ 26px → +2.1px, ที่ 32px → +2.6px, ที่ 42px → +3.4px
+- ค่าเริ่มต้น 8% (26px → 2.1, 32px → 2.6, 42px → 3.4)
 - รอบแรกใช้ 4% แล้วผู้ใช้ยังรู้สึกว่าตัวชิดกัน จึงเพิ่มเป็น 8%
+- **ปรับรายสล็อตได้** — `FONTSETS` รับสมาชิกตัวที่ 4 = สัดส่วน tracking
+  (ไม่มี = ใช้ 8% อัตโนมัติ, `--tracking` ยัง override ทั้งชุด)
+
+| สล็อต | ขนาด | tracking | เหตุผล |
+|---|---|---|---|
+| 1 (`Glow_Monofonto_Large`) | 26 | **8.9%** (2.3px) | main menu — ผู้ใช้ขอเพิ่ม 10% จาก 2.1 |
+| 4 (`Monofonto_VeryLarge02_Dialogs2`) | 27 | **10.2%** (2.8px) | version info — ผู้ใช้ขอเพิ่ม 6% จาก 2.6 |
+| 7 (`Baked-in_Monofonto_Large`) | 26 | **8.9%** (2.3px) | main menu ของ DarNified (`lb_item_template` = font 6+1) |
+| อื่น ๆ | — | 8% | ค่าเริ่มต้น |
+
 - สระ/วรรณยุกต์ (advance = 0) ต้องชดเชย tracking ใน `bearing_x` ด้วย
-  (`-(ref_cons_adv + 2*tracking + rw) / 2`) ไม่งั้นมาร์คจะเลื่อนไปทางซ้าย
+  (`(ref_cons_adv - ink_w)/2 - advance_cons`) ไม่งั้นมาร์คจะเลื่อนไปทางซ้าย
 - ช่องว่าง (space) ก็ได้ tracking ด้วย → คำห่างกันขึ้นเล็กน้อย
 
 **เพดาน**: ทดสอบแล้วที่ `+2*stroke` (~+4px/ตัว) ข้อความ "Downloadable Content"
-ถูก clip เพราะกรอบเมนูกว้างตายตัว — tracking 8% ยังเหลือขอบขวา ~186px ที่ 1440p
+ถูก clip เพราะกรอบเมนูกว้างตายตัว — tracking 8.9% ยังเหลือขอบขวา ~84px ที่ 1440p
+
+## 4.5) การจัดชิดขวาของเมนู — 2 กับดักที่ทำให้ข้อความเยื้อง
+
+ผู้ใช้รายงานว่าเมนูหลัก (Continue/New/Load/…) **ขอบขวาไม่ตรงกัน** ทั้งที่ทุกบรรทัด
+ชิดขวา วัดในเกมแล้วพบ 2 สาเหตุ:
+
+### ก) `bearing_x` ต้องเป็น 0 (เหมือน vanilla)
+engine คำนวณความกว้างข้อความสำหรับ justify เป็น **`Σ(advance − bearing)`**
+ถ้า quad ยื่นซ้ายของ pen (`bearing` ติดลบ) ความกว้างที่เกมคิดจะ "ยาวเกินจริง"
+→ ข้อความถูกวางเยื้องซ้ายสะสม = `Σ|bearing| × UI scale`
+
+วัดจริงก่อนแก้ (1440p, เทียบ anchor ของ vanilla ที่ x≈2481):
+
+| บรรทัด | เยื้องที่วัดได้ | `Σ|bearing|` | อัตราส่วน |
+|---|---|---|---|
+| Continue | 50 px | 34.0 | 1.47 |
+| Downloadable Content | 107 px | 80.0 | 1.34 |
+| Quit | 24 px | 16.0 | 1.50 |
+
+→ ตรงกับ UI scale 1.47 พอดี **แก้: `bearing_x = 0` ทุก glyph ที่ไม่ใช่ combining**
+(หมึกยังเริ่มที่ `pad` ใน quad เดิม ระยะห่างจึงไม่เปลี่ยน)
+
+### ข) `advance` ต้องเป็นจำนวนเต็ม px
+หลังแก้ bearing แล้วยังเหลือการเยื้องที่ **แปรตามความยาวข้อความ**
+(Continue +3, Settings +5, DLC +12 px) — เพราะเกมคิดความกว้างด้วย advance
+ที่ปัดเป็นจำนวนเต็ม แต่ตอนวาดใช้ค่าทศนิยมเต็ม → เศษสะสม ~0.4px/ตัวอักษร
+
+พิสูจน์: `Σ frac(advance)` ของอักษรก่อนตัวสุดท้าย × 1.47 ทำนายส่วนที่เหลือได้
+ภายใน ±2px ทุกบรรทัด (DLC 20 ตัว → ทำนาย 13.7px, วัดได้ 13px)
+
+**แก้: ปัด `advance` เป็นจำนวนเต็ม** (`round_adv` = ปัดครึ่งขึ้น) เหมือนฟอนต์
+vanilla ทุกไฟล์ที่ advance เป็น int อยู่แล้ว — ผลคือขอบขวาตรงกันทุกความยาว
+
+| | ขอบขวาบนจอ (1440p, 7 บรรทัด) | ช่วงต่าง |
+|---|---|---|
+| vanilla | 2478–2482 | 4 px |
+| ก่อนแก้ | 2374–2463 | 89 px |
+| หลังแก้ bearing | 2480–2493 | 13 px |
+| **หลังแก้ bearing + advance int** | **2476–2479** | **3 px** |
+
 
 ## 5) เลิกใช้ชื่อไฟล์กำหนดเอง
 เดิม slot 1 ชี้ไปที่ `Sarabun_20.fnt` (ชื่อใหม่) ทำให้ต้องแก้ INI และเสี่ยง
@@ -135,27 +186,32 @@ sFontFile_9 = Textures\Fonts\NVFont_Test.fnt
   - `--outline N` (px; ค่าเริ่มต้น = `auto_outline(size)`)
   - `--outline-color HEX` (วงนอก), `--outline-inner HEX|none` (วงใน)
   - `--line-height F` (บังคับความสูงบรรทัด)
-  - `FONTSETS` เก็บ `(ชื่อไฟล์, ขนาด, vanilla line height)`
+  - `--tracking F` (บังคับ tracking ทั้งชุด เป็น px)
+  - `FONTSETS` เก็บ `(ชื่อไฟล์, ขนาด, vanilla line height, tracking สัดส่วนของขนาด)`
   - `draw_glyph()` แยกออกมาให้ปรับสไตล์เส้นขอบได้ที่เดียว
+  - `round_adv()` ปัด advance เป็นจำนวนเต็ม px (จำเป็นสำหรับ justify — §4.5)
 - `font_render.py`
   - `--color HEX` จำลอง tint ของเกม (คูณ RGB ใน texture)
   - `--bg HEX` ตั้งสีพื้นหลังเพื่อดูคอนทราสต์จริง
 
 ## 7) ตรวจในเกมจริง
 - ติดตั้ง 14 ไฟล์ (vanilla 9 + DarN 5) ลง `Data\Textures\Fonts\`
-  แล้วรันผ่าน `nvse_loader.exe`
+  แล้วรันผ่าน `nvse_loader.exe` ที่ 2560×1440
 - **main menu** (สล็อต 1) — "Continue / New / Load / Settings / Credits /
   Downloadable Content / Quit" แสดงครบ ไม่ถูกตัดขอบ ตัวหนา มีเส้นขอบ
-  (ที่ 1440p "Downloadable Content" เหลือขอบขวา ~185px)
+  (ที่ 1440p "Downloadable Content" เหลือขอบขวา ~84px)
+- **ขอบขวาตรงกันทุกบรรทัด** 2476–2479px (vanilla 2478–2482) — ดู §4.5
 - **บล็อก version info** — "Fallout New Vegas 1.4.0.525",
   "Powered by xNVSE Version 6.49 b9", … อ่านครบ 14 บรรทัด ไม่ล้นจอ
+  ระยะบรรทัด 57.3px (vanilla 55.5px)
 - **การระบุสล็อต (แก้ความเข้าใจเดิม)**: บล็อก version info ใช้ **สล็อต 4**
   (`Monofonto_VeryLarge02_Dialogs2`) ตรงกับ `<font>4</font>` ใน
   `start_menu.xml` — ยืนยันจากระยะบรรทัดที่วัดได้ ซึ่งเปลี่ยนตามขนาดของ
-  ไฟล์สล็อต 4 เป๊ะ (40px → 78.2px, 32px → 64.6px ที่ 1440p)
+  ไฟล์สล็อต 4 เป๊ะ (40px → 78.2px, 32px → 64.6px, 27px → 57.3px ที่ 1440p)
   ไม่ใช่สล็อต 7 อย่างที่สรุปไว้ตอนแรก
 - **เทียบขนาดกับ vanilla** (ระยะบรรทัดของบล็อกเดียวกัน):
-  vanilla 55.5px → ours 64.6px (+16%) หลังจากลดจาก 40px (ซึ่งได้ 78.2px, +41%)
+  vanilla 55.5px → ours 57.3px (+3%) หลังจากลดจาก 40px (78.2px, +41%)
+  และ 32px (64.6px, +16%)
 
 ## 8) ข้อจำกัดที่รู้
 - Sarabun มีสัดส่วน ink/advance ≈ 0.89 → เส้นขอบ > 2px ที่ ~26–32px จะทำให้ตัวติดกัน

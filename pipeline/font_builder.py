@@ -25,6 +25,7 @@ Usage:
 """
 from __future__ import annotations
 import argparse
+import math
 import os
 import sys
 import unicodedata
@@ -61,6 +62,16 @@ def auto_tracking(size: int) -> float:
     (ค่ามากเกินจะทำให้ข้อความในเมนูถูกตัดขอบ — ดู docs)
     """
     return max(1.0, round(size * 0.08, 1))
+
+
+def round_adv(x: float) -> float:
+    """ปัด advance เป็นจำนวนเต็ม px (ปัดครึ่งขึ้น)
+
+    เกมคำนวณความกว้างข้อความสำหรับ justify ด้วย advance แบบจำนวนเต็ม
+    (vanilla ทุกไฟล์ advance เป็น int) แต่ตอนวาดใช้ค่าทศนิยมเต็ม
+    ถ้า advance มีเศษ ข้อความยาวจะเยื้องขวาสะสม ~0.4px/ตัวอักษร
+    """
+    return float(math.floor(x + 0.5))
 
 
 def parse_color(text: str):
@@ -182,7 +193,12 @@ def build(args):
     cons_advs = [a for a in cons_advs if a > 0]
     ref_cons_adv = sum(cons_advs) / len(cons_advs) if cons_advs else 0.0
 
-    # วัดกล่องหมึกทุก glyph → (bearing_x, ascent, rect_w, rect_h, advance, ink_left, ink_top)
+    # วัดกล่องหมึกทุก glyph → (bearing_x, ascent, rect_w, rect_h, advance, ink_w, ink_left, ink_top)
+    #
+    # bearing_x = 0 (เหมือนฟอนต์ vanilla ทุกตัว) — สำคัญมาก:
+    # เกมคำนวณความกว้างข้อความสำหรับ justify เป็น Σ(advance - bearing)
+    # ถ้า bearing ติดลบ (quad ยื่นซ้ายของ pen) ข้อความชิดขวาจะเยื้องซ้าย
+    # สะสมตามจำนวนตัวอักษร (วัดจริง: เยื้อง = Σ|bearing| × UI scale)
     measured = {}
     for cp in cps:
         ch = table[cp]
@@ -190,8 +206,8 @@ def build(args):
         if m is None:
             continue
         l, t, w, h = m
-        measured[cp] = (l - pad, -t + pad, w + 2 * pad, h + 2 * pad,
-                        font.getlength(ch), l, t)
+        measured[cp] = (0.0, -t + pad, w + 2 * pad, h + 2 * pad,
+                        font.getlength(ch), w, l, t)
 
     side, placed = pack_rects([(cp, m[2], m[3]) for cp, m in measured.items()])
     atlas = Image.new("RGBA", (side, side), (0, 0, 0, 0))
@@ -205,9 +221,9 @@ def build(args):
         combining = is_combining(ch)
         if cp not in measured:
             # ไม่มีหมึก (space / NBSP / ตัวอักษรว่าง) — ใช้เฉพาะ advance
-            g.advance = font.getlength(ch) + tracking
+            g.advance = round_adv(font.getlength(ch) + tracking)
             continue
-        bearing, asc, rw, rh, adv, ix, it = measured[cp]
+        bearing, asc, rw, rh, adv, iw, ix, it = measured[cp]
         rx, ry = placed[cp]
 
         # วาดโดยให้ baseline/ขอบซ้ายของหมึกตรงกับตำแหน่งในกล่อง
@@ -221,14 +237,19 @@ def build(args):
         g.ascent = asc
         if combining:
             # ไม่เลื่อน pen และเลื่อนซ้ายไปกลางพยัญชนะตัวก่อนหน้า
-            # (tracking ของพยัญชนะดัน pen ไปข้างหน้า จึงต้องชดเชยให้มาร์คยังอยู่กลาง)
-            g.bearing_x = -(ref_cons_adv + 2 * tracking + rw) / 2.0
+            # b = (ink_cons - ink_mark)/2 - advance_cons  (advance_cons = ref + tracking)
+            g.bearing_x = (ref_cons_adv - iw) / 2.0 - round_adv(ref_cons_adv + tracking)
             g.advance = 0
         else:
             g.bearing_x = bearing
             # tracking: เกมไม่ทำ kerning ให้ จึงเผื่อระยะห่างระหว่างตัวอักษรเอง
             # (มากเกินไปจะทำให้ข้อความในเมนูถูกตัดขอบ — ทดสอบแล้วที่ +2*stroke)
-            g.advance = adv + tracking
+            #
+            # advance ต้องเป็นจำนวนเต็ม px (เหมือนฟอนต์ vanilla ทุกตัว):
+            # เกมคำนวณความกว้างข้อความด้วย advance ที่ปัดเป็นจำนวนเต็ม แต่วาด
+            # glyph ด้วย advance เต็ม (ทศนิยม) → ถ้า advance มีเศษ ข้อความชิดขวา
+            # จะเยื้องสะสม ~0.4px ต่อตัวอักษร (วัดจริง: DLC 20 ตัวเยื้อง 12px)
+            g.advance = round_adv(adv + tracking)
 
     out_dir = os.path.dirname(os.path.abspath(args.out))
     os.makedirs(out_dir, exist_ok=True)
@@ -273,13 +294,18 @@ def main():
 
     if args.batch:
         os.makedirs(args.out_dir, exist_ok=True)
-        for fname, size, vanilla_lh in FONTSETS[args.batch]:
+        for entry in FONTSETS[args.batch]:
+            fname, size, vanilla_lh = entry[:3]
+            tracking_pct = entry[3] if len(entry) > 3 else None
+            tracking = args.tracking
+            if tracking is None and tracking_pct is not None:
+                tracking = round(size * tracking_pct, 1)
             sub = argparse.Namespace(
                 ttf=args.ttf, name=fname, size=size,
                 out=os.path.join(args.out_dir, fname),
                 outline=args.outline, outline_color=args.outline_color,
                 outline_inner=args.outline_inner,
-                tracking=args.tracking,
+                tracking=tracking,
                 line_height=args.line_height or vanilla_lh)
             print("--- %s (%dpx)" % (fname, size))
             build(sub)
@@ -296,18 +322,22 @@ def main():
 #   line_h = ความสูงบรรทัดของ vanilla (header float)
 FONTSETS = {
     "vanilla": [
-        # (ชื่อไฟล์, ขนาด Sarabun, line height ของ vanilla)
-        ("Glow_Monofonto_Large", 26, 31),
-        ("Monofonto_Large", 25, 31),
-        ("Glow_Monofonto_Medium", 22, 26),
-        # สล็อต 4 = บล็อก version info ของ start menu + บทสนทนา
+        # (ชื่อไฟล์, ขนาด Sarabun, line height ของ vanilla, tracking = สัดส่วนของขนาด)
+        # slot 1 — main menu (HUD หลัก) : tracking 8.9% (+10% จากรอบก่อน)
+        ("Glow_Monofonto_Large", 26, 31, 0.089),
+        ("Monofonto_Large", 25, 31, None),
+        ("Glow_Monofonto_Medium", 22, 26, None),
+        # slot 4 = บล็อก version info ของ start menu + บทสนทนา
+        # ลดขนาดลง 16% (32 → 27) ตามที่ผู้ใช้ขอ และ tracking 10.2% (+6% จากรอบก่อน)
         # เกมคิดระยะบรรทัดจาก metrics จริงของฟอนต์ (ไม่ใช่ header) → ตัวใหญ่จะดันบล็อกสูง
-        ("Monofonto_VeryLarge02_Dialogs2", 32, 36),
-        ("Fixedsys_Comp_uniform_width", 24, 25),
-        ("Glow_Monofonto_VL_dialogs", 29, 34),
-        ("Baked-in_Monofonto_Large", 26, 36),
-        ("Glow_Futura_Caps_Large", 42, 52),
-        ("NVFont_Test", 31, 36),
+        ("Monofonto_VeryLarge02_Dialogs2", 27, 36, 0.102),
+        ("Fixedsys_Comp_uniform_width", 24, 25, None),
+        ("Glow_Monofonto_VL_dialogs", 29, 34, None),
+        # slot 7 — main menu ของ DarNified UI (list_item_template: font 6+1)
+        # ใส่ tracking เท่ากับ slot 1 เผื่อไว้ทั้งสองกรณี
+        ("Baked-in_Monofonto_Large", 26, 36, 0.089),
+        ("Glow_Futura_Caps_Large", 42, 52, None),
+        ("NVFont_Test", 31, 36, None),
     ],
     # DarN patch: ชื่อไฟล์ต้องตรง DarNifiedUINV เป๊ะ เพื่อ override ทับใน Data\Textures\Fonts
     # (ชื่อ DarN มีขนาดอยู่ในชื่ออยู่แล้ว จึงใช้ขนาดตามชื่อ)
