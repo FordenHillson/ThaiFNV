@@ -37,7 +37,10 @@ TEXT_SUBRECORDS_BY_TYPE = {
     "MESG": ("DESC", "ITXT"),
     "GMST": ("DATA",),
     "NOTE": ("TNAM",),
-    # รอเพิ่มหลังสำรวจ: INFO (บทสนทนา), TERM (terminal), QUST, PACK
+    "INFO": ("NAM1",),                 # ข้อความบทสนทนา (response text)
+    "TERM": ("DESC", "ITXT", "RNAM"),  # เนื้อหา terminal / ตัวเลือก / ข้อความตอบ
+    "QUST": ("NNAM",),                 # quest objective
+    # รอเพิ่ม: NAM3 ของ INFO (ตรวจสอบเพิ่ม), CNAM ของ QUST (ดูเหมือน dev note)
 }
 
 
