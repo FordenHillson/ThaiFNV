@@ -72,6 +72,10 @@ def build(args):
     h = rows * (cell_h + margin) + margin
     tex_w = 1 << (w - 1).bit_length()
     tex_h = 1 << (h - 1).bit_length()
+    # vanilla ใช้ texture สี่เหลี่ยมจัตุรัสเสมอ (512², 420², 330² ...) — บังคับให้ตรงแบบ
+    if tex_w != tex_h:
+        sq = max(tex_w, tex_h)
+        tex_w = tex_h = sq
     atlas = Image.new("RGBA", (tex_w, tex_h), (0, 0, 0, 0))
     draw = ImageDraw.Draw(atlas)
 
