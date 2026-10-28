@@ -54,6 +54,15 @@ def auto_outline(size: int) -> int:
     return 1 if size < 20 else 2
 
 
+def auto_tracking(size: int) -> float:
+    """ระยะห่างระหว่างตัวอักษร (px) — ประมาณ 4% ของขนาดฟอนต์
+
+    เกมไม่ทำ kerning/tracking ให้ จึงต้องเผื่อไว้ใน advance เอง
+    (ค่ามากเกินจะทำให้ข้อความในเมนูถูกตัดขอบ — ดู docs)
+    """
+    return max(1.0, round(size * 0.04, 1))
+
+
 def parse_color(text: str):
     t = text.strip().lstrip("#")
     if len(t) != 6:
@@ -160,6 +169,11 @@ def build(args):
     inner_rgb = parse_color(inner_hex) if (inner_hex and outline > 0) else None
     pad = max(1, outline + 1)
 
+    tracking = getattr(args, "tracking", None)
+    if tracking is None:
+        tracking = auto_tracking(args.size)
+    tracking = float(tracking)
+
     table = char_table()
     cps = sorted(table)
 
@@ -191,7 +205,7 @@ def build(args):
         combining = is_combining(ch)
         if cp not in measured:
             # ไม่มีหมึก (space / NBSP / ตัวอักษรว่าง) — ใช้เฉพาะ advance
-            g.advance = font.getlength(ch)
+            g.advance = font.getlength(ch) + tracking
             continue
         bearing, asc, rw, rh, adv, ix, it = measured[cp]
         rx, ry = placed[cp]
@@ -207,21 +221,24 @@ def build(args):
         g.ascent = asc
         if combining:
             # ไม่เลื่อน pen และเลื่อนซ้ายไปกลางพยัญชนะตัวก่อนหน้า
-            g.bearing_x = -(ref_cons_adv + rw) / 2.0
+            # (tracking ของพยัญชนะดัน pen ไปข้างหน้า จึงต้องชดเชยให้มาร์คยังอยู่กลาง)
+            g.bearing_x = -(ref_cons_adv + 2 * tracking + rw) / 2.0
             g.advance = 0
         else:
             g.bearing_x = bearing
-            # ไม่บวก advance: เมนูของเกมมีกรอบความกว้างจำกัด ถ้าข้อความกว้างขึ้น
-            # จะถูกตัดขอบ (ทดสอบแล้วที่ advance + 2*stroke ข้อความถูก clip)
-            g.advance = adv
+            # tracking: เกมไม่ทำ kerning ให้ จึงเผื่อระยะห่างระหว่างตัวอักษรเอง
+            # (มากเกินไปจะทำให้ข้อความในเมนูถูกตัดขอบ — ทดสอบแล้วที่ +2*stroke)
+            g.advance = adv + tracking
 
     out_dir = os.path.dirname(os.path.abspath(args.out))
     os.makedirs(out_dir, exist_ok=True)
     save_fnt(args.out + ".fnt", args.name, glyphs, line_height=line_h)
     save_tex(args.out + ".tex", side, side, atlas.tobytes())
     atlas.save(args.out + ".png")
-    print("ok: %s.fnt/.tex (atlas %dx%d, line_h=%d, glyphs=%d, outline=%d, ref_cons=%.1f)" %
-          (args.out, side, side, line_h, len(measured), outline, ref_cons_adv))
+    print("ok: %s.fnt/.tex (atlas %dx%d, line_h=%d, glyphs=%d, outline=%d, "
+          "tracking=%.1f, ref_cons=%.1f)" %
+          (args.out, side, side, line_h, len(measured), outline, tracking,
+           ref_cons_adv))
 
 
 def main():
@@ -241,6 +258,8 @@ def main():
                          % DEFAULT_OUTLINE_INNER)
     ap.add_argument("--line-height", type=float, default=None,
                     help="บังคับความสูงบรรทัด (ค่าเริ่มต้น ascent+descent)")
+    ap.add_argument("--tracking", type=float, default=None,
+                    help="ระยะห่างระหว่างตัวอักษร (px) — ค่าเริ่มต้นคิดจากขนาดฟอนต์")
     args = ap.parse_args()
     if args.batch and (not args.out_dir):
         ap.error("--batch ต้องระบุ --out-dir ด้วย")
@@ -260,6 +279,7 @@ def main():
                 out=os.path.join(args.out_dir, fname),
                 outline=args.outline, outline_color=args.outline_color,
                 outline_inner=args.outline_inner,
+                tracking=args.tracking,
                 line_height=args.line_height or vanilla_lh)
             print("--- %s (%dpx)" % (fname, size))
             build(sub)
@@ -270,22 +290,24 @@ def main():
 
 # ชุดไฟล์ที่ต้องมีในแพ็กเกจ — ชุดหลัก (vanilla slots) และ patch (DarNifiedUINV)
 #
-# ขนาด px ต้อง "เทียบเท่าฟอนต์ vanilla" ไม่ใช่เดาจากชื่อไฟล์:
-#   วัดจาก vanilla จริง (advance ตัวพิมพ์เล็กเฉลี่ย + ความสูงหมึกของ H)
-#   แล้วเลือกขนาด Sarabun Bold ที่ให้ค่าใกล้เคียงที่สุด (ถ่วงน้ำหนักสองด้าน)
-#   line_h = ความสูงบรรทัดของ vanilla (ใช้เป็นค่าต่ำสุด — ที่ต่ำกว่านี้สระไทยจะชนบรรทัดบน)
+# ขนาด px อ้างจาก metrics ของ vanilla (advance ตัวพิมพ์เล็กเฉลี่ย + ความสูงหมึกของ H)
+# แล้ว "ลดลง ~15%" เพราะ Sarabun Bold มี x-height สูงและตัวหนากว่า Monofonto
+# ทำให้ที่ขนาดเท่ากันดูใหญ่กว่า — ค่าปัจจุบันคือค่าที่ทดสอบในเกมแล้วว่าไม่ล้นกรอบ
+#   line_h = ความสูงบรรทัดของ vanilla (header float)
 FONTSETS = {
     "vanilla": [
         # (ชื่อไฟล์, ขนาด Sarabun, line height ของ vanilla)
-        ("Glow_Monofonto_Large", 31, 31),
-        ("Monofonto_Large", 29, 31),
-        ("Glow_Monofonto_Medium", 26, 26),
-        ("Monofonto_VeryLarge02_Dialogs2", 40, 36),
-        ("Fixedsys_Comp_uniform_width", 28, 25),
-        ("Glow_Monofonto_VL_dialogs", 34, 34),
-        ("Baked-in_Monofonto_Large", 31, 36),
-        ("Glow_Futura_Caps_Large", 50, 52),
-        ("NVFont_Test", 37, 36),
+        ("Glow_Monofonto_Large", 26, 31),
+        ("Monofonto_Large", 25, 31),
+        ("Glow_Monofonto_Medium", 22, 26),
+        # สล็อต 4 = บล็อก version info ของ start menu + บทสนทนา
+        # เกมคิดระยะบรรทัดจาก metrics จริงของฟอนต์ (ไม่ใช่ header) → ตัวใหญ่จะดันบล็อกสูง
+        ("Monofonto_VeryLarge02_Dialogs2", 32, 36),
+        ("Fixedsys_Comp_uniform_width", 24, 25),
+        ("Glow_Monofonto_VL_dialogs", 29, 34),
+        ("Baked-in_Monofonto_Large", 26, 36),
+        ("Glow_Futura_Caps_Large", 42, 52),
+        ("NVFont_Test", 31, 36),
     ],
     # DarN patch: ชื่อไฟล์ต้องตรง DarNifiedUINV เป๊ะ เพื่อ override ทับใน Data\Textures\Fonts
     # (ชื่อ DarN มีขนาดอยู่ในชื่ออยู่แล้ว จึงใช้ขนาดตามชื่อ)

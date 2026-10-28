@@ -60,29 +60,63 @@ engine วาด glyph ด้วย `vertex color (จาก XML / SetTextColor)
 ขนาดเดิม (20/20/18/26/16/22/20/24/16) เป็นการเดาจากชื่อไฟล์ ทำให้ตัวอักษร
 **เล็กกว่าของเดิมราวครึ่งหนึ่ง** → ข้อความดูบางและกินพื้นที่น้อยเกินไป
 
+รอบแรกปรับให้ "เท่ากับ vanilla ตาม metrics" (31/29/26/40/…) แต่ผลคือ **ใหญ่เกินไป**
+เพราะ Sarabun Bold มี x-height สูงและน้ำหนักหนากว่า Monofonto ที่ขนาดเท่ากัน
+จึงลดลงอีกราว 15–20% จากค่านั้น (ค่าปัจจุบันคือค่าที่ทดสอบในเกมแล้ว)
+
 ### วิธีวัด
 วัดจาก vanilla จริงใน `testing/vanilla_bsa_fonts/` (แตกจาก BSA) 2 ค่า:
 - `advance` เฉลี่ยของ a–z
 - ความสูงหมึกของ `H` (threshold alpha > 128 แล้ววัด bounding box)
 
-แล้วเลือกขนาด Sarabun Bold ที่ให้ค่าทั้งสองใกล้เคียงที่สุด (ถ่วงน้ำหนักทั้งคู่)
+แล้วเลือกขนาด Sarabun Bold ที่ให้ค่าทั้งสองใกล้เคียงที่สุด **แล้วลดอีก 15–20%**
+ชดเชยความหนา/x-height ที่มากกว่า
 
-| ไฟล์ | ขนาดใหม่ | line height (vanilla) |
-|---|---|---|
-| `Glow_Monofonto_Large` | 31 | 31 |
-| `Monofonto_Large` | 29 | 31 |
-| `Glow_Monofonto_Medium` | 26 | 26 |
-| `Monofonto_VeryLarge02_Dialogs2` | 40 | 36 |
-| `Fixedsys_Comp_uniform_width` | 28 | 25 |
-| `Glow_Monofonto_VL_dialogs` | 34 | 34 |
-| `Baked-in_Monofonto_Large` | 31 | 36 |
-| `Glow_Futura_Caps_Large` | 50 | 52 |
-| `NVFont_Test` | 37 | 36 |
+| ไฟล์ | รอบแรก | **ใช้จริง** | line height (vanilla) |
+|---|---|---|---|
+| `Glow_Monofonto_Large` | 31 | **26** | 31 |
+| `Monofonto_Large` | 29 | **25** | 31 |
+| `Glow_Monofonto_Medium` | 26 | **22** | 26 |
+| `Monofonto_VeryLarge02_Dialogs2` | 40 | **32** | 36 |
+| `Fixedsys_Comp_uniform_width` | 28 | **24** | 25 |
+| `Glow_Monofonto_VL_dialogs` | 34 | **29** | 34 |
+| `Baked-in_Monofonto_Large` | 31 | **26** | 36 |
+| `Glow_Futura_Caps_Large` | 50 | **42** | 52 |
+| `NVFont_Test` | 37 | **31** | 36 |
 
-`line_height` ใช้ค่าของ vanilla ตรง ๆ (ไม่ใช่ ascent+descent ของ TTF) เพื่อไม่ให้
-กล่องข้อความเดิมล้น — วรรณยุกต์ไทยที่ล้นขึ้นบนเล็กน้อยยอมรับได้
+`line_height` ใน header ใช้ค่าของ vanilla ตรง ๆ
 
-## 4) เลิกใช้ชื่อไฟล์กำหนดเอง
+### ⚠ ระยะบรรทัดของ UI มาจาก metrics ของฟอนต์ ไม่ใช่ header
+ข้อสรุปนี้มาจากการวัดในเกม: บล็อก version info ของ start menu ใช้ `<font>4</font>`
+= สล็อต 4 (`Monofonto_VeryLarge02_Dialogs2`)
+
+| | ระยะบรรทัดบนจอ (1440p) |
+|---|---|
+| vanilla (natural ≈ 37px) | 55.5 px |
+| ours @40px (natural 53px) | 78.2 px |
+| ours @32px (natural 42px) | 64.6 px |
+
+อัตราส่วนตรงกับ `ascent+descent` ของฟอนต์เป๊ะ (ไม่ได้ใช้ header float 36)
+→ ฟอนต์ที่มี line box สูง (Sarabun = 1.325em) จะดันบล็อกให้สูงกว่า vanilla
+แม้ตัวอักษรจะดูขนาดใกล้กัน จึงต้องลดขนาดลงมากกว่าที่ metrics บอก
+
+## 4) ระยะห่างตัวอักษร (tracking)
+เกมไม่ทำ kerning/tracking ให้เลย — ระยะห่างถูก fix ไว้ใน `advance` ของแต่ละ glyph
+จึงเพิ่ม tracking เข้าไปใน advance ตรง ๆ:
+
+```python
+tracking = max(1.0, round(size * 0.04, 1))   # ~4% ของขนาดฟอนต์
+```
+
+- ที่ 26px → +1.0px, ที่ 32px → +1.3px, ที่ 42px → +1.7px
+- สระ/วรรณยุกต์ (advance = 0) ต้องชดเชย tracking ใน `bearing_x` ด้วย
+  (`-(ref_cons_adv + 2*tracking + rw) / 2`) ไม่งั้นมาร์คจะเลื่อนไปทางซ้าย
+- ช่องว่าง (space) ก็ได้ tracking ด้วย → คำห่างกันขึ้นเล็กน้อย
+
+**เพดาน**: ทดสอบแล้วที่ `+2*stroke` (~+4px/ตัว) ข้อความ "Downloadable Content"
+ถูก clip เพราะกรอบเมนูกว้างตายตัว — tracking 4% ยังเหลือขอบขวา ~185px ที่ 1440p
+
+## 5) เลิกใช้ชื่อไฟล์กำหนดเอง
 เดิม slot 1 ชี้ไปที่ `Sarabun_20.fnt` (ชื่อใหม่) ทำให้ต้องแก้ INI และเสี่ยง
 หลุดเมื่อผู้ใช้ลง mod อื่น
 
@@ -95,7 +129,7 @@ sFontFile_9 = Textures\Fonts\NVFont_Test.fnt
 ไม่ต้องแก้ INI เลย (ของผู้ใช้เดิมที่ชี้ `Sarabun_20` ให้เปลี่ยนกลับเป็นชื่อ vanilla)
 → ลบ `fonts/out/Sarabun_20.*` ออกแล้ว
 
-## 5) เครื่องมือที่เพิ่ม
+## 6) เครื่องมือที่เพิ่ม
 - `font_builder.py`
   - `--outline N` (px; ค่าเริ่มต้น = `auto_outline(size)`)
   - `--outline-color HEX` (วงนอก), `--outline-inner HEX|none` (วงใน)
@@ -106,20 +140,28 @@ sFontFile_9 = Textures\Fonts\NVFont_Test.fnt
   - `--color HEX` จำลอง tint ของเกม (คูณ RGB ใน texture)
   - `--bg HEX` ตั้งสีพื้นหลังเพื่อดูคอนทราสต์จริง
 
-## 6) ตรวจในเกมจริง
-- ติดตั้ง 15 ไฟล์ (vanilla 9 + DarN 5 + ชุดทดสอบ) ลง
-  `Data\Textures\Fonts\` แล้วรันผ่าน `nvse_loader.exe`
+## 7) ตรวจในเกมจริง
+- ติดตั้ง 14 ไฟล์ (vanilla 9 + DarN 5) ลง `Data\Textures\Fonts\`
+  แล้วรันผ่าน `nvse_loader.exe`
 - **main menu** (สล็อต 1) — "Continue / New / Load / Settings / Credits /
   Downloadable Content / Quit" แสดงครบ ไม่ถูกตัดขอบ ตัวหนา มีเส้นขอบ
-- **บล็อกข้อมูลมุมซ้าย** (สล็อต 7 = `Baked-in_Monofonto_Large`) —
-  "Fallout New Vegas 1.4.0.525", "Powered by xNVSE Version 6.49 b9" อ่านครบ
-- ยืนยันสล็อตด้วย probe ไล่สีเส้นขอบทีละไฟล์ (แดง/เขียว/น้ำเงิน/…) แล้วถ่ายภาพ
-  เทียบ: main menu = สล็อต 1, บล็อกข้อมูล = สล็อต 7
-  (แม้ `start_menu.xml` จะระบุ `<font>4</font>` — จอจริงใช้สล็อต 7)
+  (ที่ 1440p "Downloadable Content" เหลือขอบขวา ~185px)
+- **บล็อก version info** — "Fallout New Vegas 1.4.0.525",
+  "Powered by xNVSE Version 6.49 b9", … อ่านครบ 14 บรรทัด ไม่ล้นจอ
+- **การระบุสล็อต (แก้ความเข้าใจเดิม)**: บล็อก version info ใช้ **สล็อต 4**
+  (`Monofonto_VeryLarge02_Dialogs2`) ตรงกับ `<font>4</font>` ใน
+  `start_menu.xml` — ยืนยันจากระยะบรรทัดที่วัดได้ ซึ่งเปลี่ยนตามขนาดของ
+  ไฟล์สล็อต 4 เป๊ะ (40px → 78.2px, 32px → 64.6px ที่ 1440p)
+  ไม่ใช่สล็อต 7 อย่างที่สรุปไว้ตอนแรก
+- **เทียบขนาดกับ vanilla** (ระยะบรรทัดของบล็อกเดียวกัน):
+  vanilla 55.5px → ours 64.6px (+16%) หลังจากลดจาก 40px (ซึ่งได้ 78.2px, +41%)
 
-## 7) ข้อจำกัดที่รู้
-- Sarabun มีสัดส่วน ink/advance ≈ 0.89 → เส้นขอบ > 2px ที่ 31px จะทำให้ตัวติดกัน
-  และขยาย advance ไม่ได้ (เมนู clip) จึง **2px คือเพดานจริง** ที่ขนาดนี้
+## 8) ข้อจำกัดที่รู้
+- Sarabun มีสัดส่วน ink/advance ≈ 0.89 → เส้นขอบ > 2px ที่ ~26–32px จะทำให้ตัวติดกัน
+  และขยาย advance มากไม่ได้ (เมนู clip) จึง **2px คือเพดานจริง** ที่ขนาดนี้
+- Sarabun มี line box 1.325em (สูงกว่า Monofonto ~1.03em) → ที่ขนาดตัวอักษร
+  เท่ากัน ข้อความจะกินที่แนวตั้งมากกว่า ต้องยอมลดขนาดลงถ้าต้องการให้ layout
+  ของ UI เดิมไม่ล้น
 - ยังไม่ได้ทดสอบข้อความไทยในเกม (รอ Phase 2 ที่มี string แปลจริง)
   — ตรวจด้วย `font_render.py` แล้ว: สระบน/ล่าง/วรรณยุกต์วางถูกตำแหน่ง
 
