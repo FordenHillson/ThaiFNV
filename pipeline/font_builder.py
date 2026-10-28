@@ -115,11 +115,50 @@ def build(args):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ttf", required=True)
-    ap.add_argument("--name", required=True)
-    ap.add_argument("--size", type=int, required=True)
-    ap.add_argument("--out", required=True)
+    ap.add_argument("--name", default=None)
+    ap.add_argument("--size", type=int, default=None)
+    ap.add_argument("--out", default=None)
+    ap.add_argument("--batch", default=None, help="ชื่อชุดใน FONTSETS: vanilla | darn")
+    ap.add_argument("--out-dir", default=None, help="โฟลเดอร์ผลลัพธ์เมื่อใช้ --batch")
     args = ap.parse_args()
+    if args.batch and (not args.out_dir):
+        ap.error("--batch ต้องระบุ --out-dir ด้วย")
+
+    if args.batch:
+        os.makedirs(args.out_dir, exist_ok=True)
+        for fname, size in FONTSETS[args.batch]:
+            sub = argparse.Namespace(
+                ttf=args.ttf, name=fname, size=size,
+                out=os.path.join(args.out_dir, fname))
+            print("--- %s (%dpx)" % (fname, size))
+            build(sub)
+        return
+
     build(args)
+
+
+# ชุดไฟล์ที่ต้องมีในแพ็กเกจ — ชุดหลัก (vanilla slots) และ patch (DarNifiedUINV)
+FONTSETS = {
+    "vanilla": [
+        ("Glow_Monofonto_Large", 20),
+        ("Monofonto_Large", 20),
+        ("Glow_Monofonto_Medium", 18),
+        ("Monofonto_VeryLarge02_Dialogs2", 26),
+        ("Fixedsys_Comp_uniform_width", 16),
+        ("Glow_Monofonto_VL_dialogs", 22),
+        ("Baked-in_Monofonto_Large", 20),
+        ("Glow_Futura_Caps_Large", 24),
+        ("NVFont_Test", 16),
+    ],
+    # DarN patch: ชื่อไฟล์ต้องตรง DarNifiedUINV เป๊ะ เพื่อ override ทับใน Data\Textures\Fonts
+    "darn": [
+        ("DarN_FranKleinBold_14", 14),
+        ("DarN_FranKleinBold_16", 16),
+        ("DarN_Libel_Suit_Otl_24", 24),
+        ("DarN_Sui_Generis_Otl_10", 10),
+        ("DarN_Sui_Generis_Otl_13", 13),
+    ],
+}
 
 
 if __name__ == "__main__":
