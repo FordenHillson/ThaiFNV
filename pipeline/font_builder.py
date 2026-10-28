@@ -55,12 +55,12 @@ def auto_outline(size: int) -> int:
 
 
 def auto_tracking(size: int) -> float:
-    """ระยะห่างระหว่างตัวอักษร (px) — ประมาณ 4% ของขนาดฟอนต์
+    """ระยะห่างระหว่างตัวอักษร (px) — ประมาณ 8% ของขนาดฟอนต์
 
     เกมไม่ทำ kerning/tracking ให้ จึงต้องเผื่อไว้ใน advance เอง
     (ค่ามากเกินจะทำให้ข้อความในเมนูถูกตัดขอบ — ดู docs)
     """
-    return max(1.0, round(size * 0.04, 1))
+    return max(1.0, round(size * 0.08, 1))
 
 
 def parse_color(text: str):
