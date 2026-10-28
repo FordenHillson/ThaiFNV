@@ -14,7 +14,8 @@ font_render.py — จำลองการวาดข้อความแบ�
   ขึ้นบรรทัดใหม่: baseline += line_height (header float)
 
 Usage:
-  python font_render.py --fnt ..\\fonts\\out\\Sarabun_20.fnt --text "ตัวอย่าง ข้อความ" --out ..\\testing\\render.png
+  python font_render.py --fnt ..\\fonts\\out\\vanilla\\Glow_Monofonto_Large.fnt ^
+      --text "Continue\nการตั้งค่า" --color E0B93C --bg 1A140C --out ..\\testing\\render.png
 """
 from __future__ import annotations
 import argparse
@@ -29,7 +30,8 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
-def render(fnt_path: str, text: str, scale: int = 2, pad: int = 8):
+def render(fnt_path: str, text: str, scale: int = 2, pad: int = 8,
+           color=None, bg=(20, 20, 24)):
     name, glyphs = load_fnt(fnt_path)
     with open(fnt_path, "rb") as f:
         line_h = struct.unpack("<f", f.read(4))[0]
@@ -47,7 +49,7 @@ def render(fnt_path: str, text: str, scale: int = 2, pad: int = 8):
     canvas_w = int(max(widths, default=1)) + pad * 2
     canvas_h = int(line_h * len(lines)) + pad * 2
 
-    img = Image.new("RGBA", (max(canvas_w, 1), max(canvas_h, 1)), (20, 20, 24, 255))
+    img = Image.new("RGBA", (max(canvas_w, 1), max(canvas_h, 1)), bg + (255,))
     # engine วาง baseline ไว้ที่ขอบล่างของบรรทัด (glyph top = line_top + line_h - ascent)
     baseline = pad + line_h
     for line in lines:
@@ -62,6 +64,13 @@ def render(fnt_path: str, text: str, scale: int = 2, pad: int = 8):
                     glyph_img = glyph_img.resize(
                         (max(1, round(g.px_width)), max(1, round(g.px_height))),
                         Image.LANCZOS)
+                if color is not None:
+                    # เกมคูณสี vertex กับ RGB ใน texture
+                    r, gg, bch, a = glyph_img.split()
+                    r = r.point(lambda v: v * color[0] // 255)
+                    gg = gg.point(lambda v: v * color[1] // 255)
+                    bch = bch.point(lambda v: v * color[2] // 255)
+                    glyph_img = Image.merge("RGBA", (r, gg, bch, a))
                 img.alpha_composite(glyph_img, (round(pen + g.bearing_x),
                                                 round(baseline - g.ascent)))
             pen += g.advance
@@ -72,14 +81,25 @@ def render(fnt_path: str, text: str, scale: int = 2, pad: int = 8):
     return img
 
 
+def parse_color(text: str):
+    t = text.strip().lstrip("#")
+    if len(t) != 6:
+        raise SystemExit("--color ต้องเป็น hex 6 หลัก เช่น E0B93C")
+    return tuple(int(t[i:i + 2], 16) for i in (0, 2, 4))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--fnt", required=True)
     ap.add_argument("--text", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--scale", type=int, default=2)
+    ap.add_argument("--color", default=None, help="จำลอง tint ของเกม (hex)")
+    ap.add_argument("--bg", default="141418", help="สีพื้นหลัง (hex)")
     args = ap.parse_args()
-    img = render(args.fnt, args.text, args.scale)
+    color = parse_color(args.color) if args.color else None
+    bg = parse_color(args.bg)
+    img = render(args.fnt, args.text, args.scale, color=color, bg=bg)
     img.save(args.out)
     print("ok: %s (%dx%d)" % (args.out, img.width, img.height))
 

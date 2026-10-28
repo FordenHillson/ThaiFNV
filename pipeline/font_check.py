@@ -12,7 +12,7 @@ font_check.py — ตรวจความถูกต้องของ .fnt/.t
   - glyph ว่าง: ต้องมี uv เป็น 0 และ advance ≥ 0
 
 Usage:
-  python font_check.py ..\\fonts\\out\\Sarabun_20.fnt
+  python font_check.py ..\\fonts\\out\\vanilla\\Glow_Monofonto_Large.fnt
 """
 from __future__ import annotations
 import argparse

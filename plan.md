@@ -31,6 +31,9 @@
 - ทุกไฟล์ .fnt มีขนาดคงที่ 14,632 bytes (โครงสร้าง: header 296 bytes + ตาราง 256 glyph × 56 bytes) — มีไฟล์คู่ **.tex** เป็นภาพ texture atlas (header 8 bytes = width/height แล้วตามด้วย RGBA ดิบ)
 - **รูปแบบ .fnt ที่ยืนยันแล้ว (2026-10-28)**: glyph 56 bytes = 4 มุม UV (L,T / R,T / L,B / R,B) + width + height + bearing X + advance ส่วนเกิน + ascent; header float = line height — ดู `docs/2026-10-28-fnt-format-fix.md` (บั๊กเดิม: สลับ UV X/Y ทำให้ข้อความหายทั้งเกม)
 - **แก้ไขได้จริง**: Export atlas เป็น PNG → เติมตัวอักษรใหม่ → Import PNG กลับ → ตั้งตำแหน่ง/ขนาด/ascender ราย glyph — เครื่องมือกลางที่ชุดชุมชนใช้คือ **Cobb's Oblivion Font Editor** (หรือเราเขียน Python + fontTools/Pillow สร้าง atlas และตารางเองได้)
+- **ขนาดฟอนต์ต้องเทียบ vanilla ไม่ใช่เดาจากชื่อไฟล์** (2026-10-28): วัด `advance` เฉลี่ย a–z + ความสูงหมึกของ `H` (threshold alpha) จาก `testing/vanilla_bsa_fonts/` แล้วเลือกขนาด Sarabun Bold ที่ใกล้ที่สุด — ขนาดที่เดาไว้เดิมเล็กกว่าครึ่งหนึ่ง (รายละเอียด: `docs/2026-10-28-bold-outline-and-size-calibration.md`)
+- **เส้นขอบฟอนต์**: เกมไม่มี text outline → อบสีลงใน atlas (`draw_glyph`: วงนอก `#6A5C40` → วงใน `#B0A078` → ตัวอักษรขาว) ความหนา 1px ที่ <20px, 2px ที่ ≥20px — **ห้ามขยาย advance** เพื่อเว้นที่ให้เส้นขอบ เพราะกล่องข้อความเมนูมีความกว้างตายตัวและจะ clip
+- **ตั้งชื่อไฟล์แบบ drop-in**: แพ็กใช้ชื่อ vanilla ทั้ง 9 ไฟล์ (`Glow_Monofonto_Large` … `NVFont_Test`) ไม่ต้องแก้ `[Fonts]` ใน INI ของผู้ใช้ (ยกเลิกชื่อกำหนดเอง `Sarabun_20`)
 - มีตัวอย่างความสำเร็จจากภาษาอื่นแล้ว: โปรตุเกส-บราซิล (Vanilla UI Plus font thread), โปแลนด์ (California Font mod, Nexus 66194), ภาษาไทย (FNV_THAI, Nexus 98964)
 - **สมมติฐาน H1 (ต้องพิสูจน์ในเฟส prototype)**: ตาราง ~256 glyph ต่อไฟล์ไม่พอจัดตามรหัส Unicode ไทยตรง (U+0E00+) — วิธีชนะคือวาง glyph ไทยไว้ในตำแหน่งแบบ **codepage TIS-620/CP874 (ตับ 0xA0–0xDB)** แล้วเขียนข้อความไทยใน plugin ด้วย codepage เดียวกัน จึงแสดงได้แบบเลยเกมจริง
 - กติกาพิเศษ:

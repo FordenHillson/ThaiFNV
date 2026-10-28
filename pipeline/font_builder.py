@@ -13,10 +13,15 @@ font_builder.py — สร้างชุดฟอนต์ไทย (.fnt + .te
   - สระบน/วรรณยุกต์ไทย (combining) = advance 0 + เลื่อนซ้ายไปทับพยัญชนะตัวก่อน
     (เกมไม่ทำ shaping เอง จึงต้อง encode ตำแหน่งไว้ใน bearing X)
   - header float = ความสูงบรรทัด (ascent + descent ของ TTF)
+  - เส้นขอบ (outline): ฝังสีเข้มไว้ใน texture (เกมไม่มี outline ให้ font)
+    เกมคูณสีจาก vertex (XML/SetTextColor) กับ RGB ใน texture → สีขอบจึงถูก
+    คูณตามไปด้วย ต้องเลือกสีขอบเป็น "โทนกลาง-เข้ม" ไม่ใช่ดำสนิท
+  - ตัวอักษรใน atlas เป็นสีขาว เพื่อให้ tint ของเกมคุมสีจริงได้
 
 Usage:
-   python font_builder.py --ttf ..\\fonts\\src\\Sarabun-Regular.ttf --name Sarabun_20 --size 20 --out ..\\fonts\\out\\Sarabun_20
-   python font_builder.py --ttf ..\\fonts\\src\\Sarabun-Regular.ttf --batch vanilla --out-dir ..\\fonts\\out\\vanilla
+   python font_builder.py --ttf ..\\fonts\\src\\Sarabun-Bold.ttf --batch vanilla --out-dir ..\\fonts\\out\\vanilla
+   python font_builder.py --ttf ..\\fonts\\src\\Sarabun-Bold.ttf --batch darn --out-dir ..\\fonts\\out\\darn
+   python font_builder.py --ttf ..\\fonts\\src\\Sarabun-Bold.ttf --name T --size 31 --out X --outline 2 --outline-color 6A5C40
 """
 from __future__ import annotations
 import argparse
@@ -37,8 +42,23 @@ ASCII_RANGE = list(range(0x20, 0x7F))
 COMBINING = set("ัิีึืฺุู็่้๊๋์ํ๎")
 # ช่วงพยัญชนะไทย ใช้หาความกว้างอ้างอิงสำหรับวางสระ/วรรณยุกต์ให้อยู่กลางตัว
 THAI_CONSONANTS = range(0xA1, 0xCF)
-# ระยะขอบโปร่งรอบกล่องหมึก (กัน bleed ตอน sampling)
-PAD = 1
+# สีเส้นขอบเริ่มต้น — ต้องเป็น "โทนกลาง" เพราะเกมคูณ tint ทับอีกชั้น
+# (สีเข้มเกินจะกลายเป็นดำเมื่อคูณกับสีข้อความ)
+DEFAULT_OUTLINE_COLOR = "6A5C40"
+# สีเส้นใน (ระหว่างตัวอักษรกับขอบนอก) ให้ดูเป็นเส้นคู่แบบงานดีไซน์
+DEFAULT_OUTLINE_INNER = "B0A078"
+
+
+def auto_outline(size: int) -> int:
+    """ความหนาเส้นขอบอัตโนมัติ: 1px ที่ตัวเล็ก, 2px ตั้งแต่ 20px ขึ้นไป"""
+    return 1 if size < 20 else 2
+
+
+def parse_color(text: str):
+    t = text.strip().lstrip("#")
+    if len(t) != 6:
+        raise SystemExit("--outline-color ต้องเป็น hex 6 หลัก เช่น 4A3C16")
+    return tuple(int(t[i:i + 2], 16) for i in (0, 2, 4))
 
 
 def thai_char_of(cp: int):
@@ -62,16 +82,33 @@ def char_table() -> dict[int, str]:
     return table
 
 
-def ink_metrics(font: ImageFont.FreeTypeFont, ch: str, size: int):
-    """คืน (ink_left, ink_top, width, height) ของกล่องหมึก (ยังไม่รวม PAD)
+def draw_glyph(draw, xy, ch, font, stroke=0, outer=(46, 36, 16), inner=None):
+    """วาดตัวอักษรลง atlas: เส้นนอก → เส้นใน → ตัวอักษรสีขาว (ให้ tint เกมคุมสี)
+
+    stroke คือความหนารวม (px) แบ่งครึ่ง: ครึ่งนอกเป็นสีเข้ม ครึ่งในเป็นสีอ่อน
+    """
+    if stroke > 0:
+        draw.text(xy, ch, font=font, anchor="ls", fill=(255, 255, 255, 255),
+                  stroke_width=stroke, stroke_fill=outer + (255,))
+        inner_w = stroke // 2
+        if inner is not None and inner_w > 0:
+            draw.text(xy, ch, font=font, anchor="ls", fill=(255, 255, 255, 255),
+                      stroke_width=inner_w, stroke_fill=inner + (255,))
+    draw.text(xy, ch, font=font, anchor="ls", fill=(255, 255, 255, 255))
+
+
+def ink_metrics(font: ImageFont.FreeTypeFont, ch: str, size: int, stroke: int = 0):
+    """คืน (ink_left, ink_top, width, height) ของกล่องหมึก (ยังไม่รวม pad)
 
     วัดจาก baseline: ink_top ติดลบเมื่ออยู่เหนือ baseline, บวกเมื่ออยู่ใต้
     (ใช้การวาดจริงบน canvas เพราะ font.getbbox() คืนความสูงเกินจริงกับ
      glyph ที่ advance = 0 อย่างสระ/วรรณยุกต์ไทย)
+    ถ้ามี stroke กล่องหมึกจะขยายตามความหนาเส้นขอบด้วย
     """
-    pad = size * 3
+    pad = size * 3 + stroke + 2
     canvas = Image.new("L", (pad * 2, pad * 2), 0)
-    ImageDraw.Draw(canvas).text((pad, pad), ch, font=font, anchor="ls", fill=255)
+    ImageDraw.Draw(canvas).text((pad, pad), ch, font=font, anchor="ls", fill=255,
+                                stroke_width=stroke, stroke_fill=255)
     bb = canvas.getbbox()
     if bb is None:
         return None
@@ -108,7 +145,20 @@ def pack_rects(sizes, max_side=2048):
 def build(args):
     font = ImageFont.truetype(args.ttf, args.size)
     ascent, descent = font.getmetrics()
-    line_h = ascent + descent
+    natural_h = ascent + descent
+    # ความสูงบรรทัด: ใช้ค่าของ vanilla ตรง ๆ เพื่อไม่ให้กล่องข้อความเดิมล้น
+    line_h = getattr(args, "line_height", None) or natural_h
+
+    outline = getattr(args, "outline", None)
+    if outline is None:
+        outline = auto_outline(args.size)
+    outline = max(0, int(round(outline)))
+    outline_rgb = parse_color(getattr(args, "outline_color", DEFAULT_OUTLINE_COLOR))
+    inner_hex = getattr(args, "outline_inner", DEFAULT_OUTLINE_INNER)
+    if inner_hex and inner_hex.lower() in ("none", "-", "off", "0"):
+        inner_hex = None
+    inner_rgb = parse_color(inner_hex) if (inner_hex and outline > 0) else None
+    pad = max(1, outline + 1)
 
     table = char_table()
     cps = sorted(table)
@@ -122,11 +172,11 @@ def build(args):
     measured = {}
     for cp in cps:
         ch = table[cp]
-        m = ink_metrics(font, ch, args.size)
+        m = ink_metrics(font, ch, args.size, outline)
         if m is None:
             continue
         l, t, w, h = m
-        measured[cp] = (l - PAD, -t + PAD, w + 2 * PAD, h + 2 * PAD,
+        measured[cp] = (l - pad, -t + pad, w + 2 * pad, h + 2 * pad,
                         font.getlength(ch), l, t)
 
     side, placed = pack_rects([(cp, m[2], m[3]) for cp, m in measured.items()])
@@ -147,8 +197,9 @@ def build(args):
         rx, ry = placed[cp]
 
         # วาดโดยให้ baseline/ขอบซ้ายของหมึกตรงกับตำแหน่งในกล่อง
-        draw.text((rx + PAD - ix, ry + PAD - it), ch, font=font, anchor="ls",
-                  fill=(255, 255, 255, 255))
+        # ตัวอักษรเป็นสีขาว (เกมคูณ tint) ส่วนเส้นขอบฝังสีเข้มไว้ใน texture
+        draw_glyph(draw, (rx + pad - ix, ry + pad - it), ch, font,
+                   outline, outline_rgb, inner_rgb)
 
         g.set_uv(rx / side, ry / side, (rx + rw) / side, (ry + rh) / side)
         g.px_width = rw
@@ -160,6 +211,8 @@ def build(args):
             g.advance = 0
         else:
             g.bearing_x = bearing
+            # ไม่บวก advance: เมนูของเกมมีกรอบความกว้างจำกัด ถ้าข้อความกว้างขึ้น
+            # จะถูกตัดขอบ (ทดสอบแล้วที่ advance + 2*stroke ข้อความถูก clip)
             g.advance = adv
 
     out_dir = os.path.dirname(os.path.abspath(args.out))
@@ -167,8 +220,8 @@ def build(args):
     save_fnt(args.out + ".fnt", args.name, glyphs, line_height=line_h)
     save_tex(args.out + ".tex", side, side, atlas.tobytes())
     atlas.save(args.out + ".png")
-    print("ok: %s.fnt/.tex (atlas %dx%d, line_h=%d, glyphs=%d, ref_cons=%.1f)" %
-          (args.out, side, side, line_h, len(measured), ref_cons_adv))
+    print("ok: %s.fnt/.tex (atlas %dx%d, line_h=%d, glyphs=%d, outline=%d, ref_cons=%.1f)" %
+          (args.out, side, side, line_h, len(measured), outline, ref_cons_adv))
 
 
 def main():
@@ -179,6 +232,15 @@ def main():
     ap.add_argument("--out", default=None)
     ap.add_argument("--batch", default=None, help="ชื่อชุดใน FONTSETS: vanilla | darn")
     ap.add_argument("--out-dir", default=None, help="โฟลเดอร์ผลลัพธ์เมื่อใช้ --batch")
+    ap.add_argument("--outline", type=float, default=None,
+                    help="ความหนาเส้นขอบ (px) — ค่าเริ่มต้นคิดจากขนาดฟอนต์")
+    ap.add_argument("--outline-color", default=DEFAULT_OUTLINE_COLOR,
+                    help="สีเส้นขอบแบบ hex (ค่าเริ่มต้น %s)" % DEFAULT_OUTLINE_COLOR)
+    ap.add_argument("--outline-inner", default=DEFAULT_OUTLINE_INNER,
+                    help="สีเส้นในแบบ hex, ใส่ none เพื่อปิด (ค่าเริ่มต้น %s)"
+                         % DEFAULT_OUTLINE_INNER)
+    ap.add_argument("--line-height", type=float, default=None,
+                    help="บังคับความสูงบรรทัด (ค่าเริ่มต้น ascent+descent)")
     args = ap.parse_args()
     if args.batch and (not args.out_dir):
         ap.error("--batch ต้องระบุ --out-dir ด้วย")
@@ -192,10 +254,13 @@ def main():
 
     if args.batch:
         os.makedirs(args.out_dir, exist_ok=True)
-        for fname, size in FONTSETS[args.batch]:
+        for fname, size, vanilla_lh in FONTSETS[args.batch]:
             sub = argparse.Namespace(
                 ttf=args.ttf, name=fname, size=size,
-                out=os.path.join(args.out_dir, fname))
+                out=os.path.join(args.out_dir, fname),
+                outline=args.outline, outline_color=args.outline_color,
+                outline_inner=args.outline_inner,
+                line_height=args.line_height or vanilla_lh)
             print("--- %s (%dpx)" % (fname, size))
             build(sub)
         return
@@ -204,25 +269,32 @@ def main():
 
 
 # ชุดไฟล์ที่ต้องมีในแพ็กเกจ — ชุดหลัก (vanilla slots) และ patch (DarNifiedUINV)
+#
+# ขนาด px ต้อง "เทียบเท่าฟอนต์ vanilla" ไม่ใช่เดาจากชื่อไฟล์:
+#   วัดจาก vanilla จริง (advance ตัวพิมพ์เล็กเฉลี่ย + ความสูงหมึกของ H)
+#   แล้วเลือกขนาด Sarabun Bold ที่ให้ค่าใกล้เคียงที่สุด (ถ่วงน้ำหนักสองด้าน)
+#   line_h = ความสูงบรรทัดของ vanilla (ใช้เป็นค่าต่ำสุด — ที่ต่ำกว่านี้สระไทยจะชนบรรทัดบน)
 FONTSETS = {
     "vanilla": [
-        ("Glow_Monofonto_Large", 20),
-        ("Monofonto_Large", 20),
-        ("Glow_Monofonto_Medium", 18),
-        ("Monofonto_VeryLarge02_Dialogs2", 26),
-        ("Fixedsys_Comp_uniform_width", 16),
-        ("Glow_Monofonto_VL_dialogs", 22),
-        ("Baked-in_Monofonto_Large", 20),
-        ("Glow_Futura_Caps_Large", 24),
-        ("NVFont_Test", 16),
+        # (ชื่อไฟล์, ขนาด Sarabun, line height ของ vanilla)
+        ("Glow_Monofonto_Large", 31, 31),
+        ("Monofonto_Large", 29, 31),
+        ("Glow_Monofonto_Medium", 26, 26),
+        ("Monofonto_VeryLarge02_Dialogs2", 40, 36),
+        ("Fixedsys_Comp_uniform_width", 28, 25),
+        ("Glow_Monofonto_VL_dialogs", 34, 34),
+        ("Baked-in_Monofonto_Large", 31, 36),
+        ("Glow_Futura_Caps_Large", 50, 52),
+        ("NVFont_Test", 37, 36),
     ],
     # DarN patch: ชื่อไฟล์ต้องตรง DarNifiedUINV เป๊ะ เพื่อ override ทับใน Data\Textures\Fonts
+    # (ชื่อ DarN มีขนาดอยู่ในชื่ออยู่แล้ว จึงใช้ขนาดตามชื่อ)
     "darn": [
-        ("DarN_FranKleinBold_14", 14),
-        ("DarN_FranKleinBold_16", 16),
-        ("DarN_Libel_Suit_Otl_24", 24),
-        ("DarN_Sui_Generis_Otl_10", 10),
-        ("DarN_Sui_Generis_Otl_13", 13),
+        ("DarN_FranKleinBold_14", 14, None),
+        ("DarN_FranKleinBold_16", 16, None),
+        ("DarN_Libel_Suit_Otl_24", 24, None),
+        ("DarN_Sui_Generis_Otl_10", 10, None),
+        ("DarN_Sui_Generis_Otl_13", 13, None),
     ],
 }
 
