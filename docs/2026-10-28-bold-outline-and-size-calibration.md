@@ -74,15 +74,18 @@ engine วาด glyph ด้วย `vertex color (จาก XML / SetTextColor)
 
 | ไฟล์ | รอบแรก | **ใช้จริง** | line height (vanilla) |
 |---|---|---|---|
-| `Glow_Monofonto_Large` | 31 | **26** | 31 |
-| `Monofonto_Large` | 29 | **25** | 31 |
-| `Glow_Monofonto_Medium` | 26 | **22** | 26 |
-| `Monofonto_VeryLarge02_Dialogs2` | 40 | **27** | 36 |
+| `Glow_Monofonto_Large` | 31 | 26 → **21** | 31 |
+| `Monofonto_Large` | 29 | 25 → **20** | 31 |
+| `Glow_Monofonto_Medium` | 26 | 22 → **18** | 26 |
+| `Monofonto_VeryLarge02_Dialogs2` | 40 | 27 → **20** | 36 |
 | `Fixedsys_Comp_uniform_width` | 28 | **24** | 25 |
-| `Glow_Monofonto_VL_dialogs` | 34 | **29** | 34 |
-| `Baked-in_Monofonto_Large` | 31 | **26** | 36 |
+| `Glow_Monofonto_VL_dialogs` | 34 | 29 → **21** | 34 |
+| `Baked-in_Monofonto_Large` | 31 | 26 → **21** | 36 |
 | `Glow_Futura_Caps_Large` | 50 | **42** | 52 |
 | `NVFont_Test` | 37 | **31** | 36 |
+
+ตัวเลขหลังลูกศรคือรอบล่าสุด (2026-10-28) ที่ผู้ใช้ขอให้ลดขนาดในเกมอีก
+— เหตุผลและสล็อตที่ได้รับผลกระทบดู §8
 
 `line_height` ใน header ใช้ค่าของ vanilla ตรง ๆ
 
@@ -116,9 +119,9 @@ tracking = max(1.0, round(size * 0.08, 1))   # ค่าเริ่มต้น
 
 | สล็อต | ขนาด | tracking | เหตุผล |
 |---|---|---|---|
-| 1 (`Glow_Monofonto_Large`) | 26 | **8.9%** (2.3px) | main menu — ผู้ใช้ขอเพิ่ม 10% จาก 2.1 |
-| 4 (`Monofonto_VeryLarge02_Dialogs2`) | 27 | **10.2%** (2.8px) | version info — ผู้ใช้ขอเพิ่ม 6% จาก 2.6 |
-| 7 (`Baked-in_Monofonto_Large`) | 26 | **8.9%** (2.3px) | main menu ของ DarNified (`lb_item_template` = font 6+1) |
+| 1 (`Glow_Monofonto_Large`) | 26 → 21 | **8.9%** (1.9px) | main menu — ผู้ใช้ขอเพิ่ม 10% จาก 2.1 |
+| 4 (`Monofonto_VeryLarge02_Dialogs2`) | 27 → 20 | **10.2%** (2.0px) | version info — ผู้ใช้ขอเพิ่ม 6% จาก 2.6 |
+| 7 (`Baked-in_Monofonto_Large`) | 26 → 21 | **8.9%** (1.9px) | main menu ของ DarNified (`lb_item_template` = font 6+1) |
 | อื่น ๆ | — | 8% | ค่าเริ่มต้น |
 
 - สระ/วรรณยุกต์ (advance = 0) ต้องชดเชย tracking ใน `bearing_x` ด้วย
@@ -203,17 +206,41 @@ sFontFile_9 = Textures\Fonts\NVFont_Test.fnt
 - **ขอบขวาตรงกันทุกบรรทัด** 2476–2479px (vanilla 2478–2482) — ดู §4.5
 - **บล็อก version info** — "Fallout New Vegas 1.4.0.525",
   "Powered by xNVSE Version 6.49 b9", … อ่านครบ 14 บรรทัด ไม่ล้นจอ
-  ระยะบรรทัด 57.3px (vanilla 55.5px)
+  ระยะบรรทัด 57.3px (vanilla 55.5px) ที่ 27px → รอบล่าสุด 20px เหลือ ~42px
 - **การระบุสล็อต (แก้ความเข้าใจเดิม)**: บล็อก version info ใช้ **สล็อต 4**
   (`Monofonto_VeryLarge02_Dialogs2`) ตรงกับ `<font>4</font>` ใน
   `start_menu.xml` — ยืนยันจากระยะบรรทัดที่วัดได้ ซึ่งเปลี่ยนตามขนาดของ
   ไฟล์สล็อต 4 เป๊ะ (40px → 78.2px, 32px → 64.6px, 27px → 57.3px ที่ 1440p)
   ไม่ใช่สล็อต 7 อย่างที่สรุปไว้ตอนแรก
 - **เทียบขนาดกับ vanilla** (ระยะบรรทัดของบล็อกเดียวกัน):
-  vanilla 55.5px → ours 57.3px (+3%) หลังจากลดจาก 40px (78.2px, +41%)
-  และ 32px (64.6px, +16%)
+  vanilla 55.5px → 57.3px (+3%) ที่ 27px → รอบล่าสุด 20px (~42px, −24%)
 
-## 8) ข้อจำกัดที่รู้
+## 8) ลดขนาดรอบที่ 3 — gameplay / Pip-Boy / กล่องตัวเลือก (2026-10-28)
+
+ผู้ใช้ขอ: gameplay −26%, Pip-Boy −20%, กล่องตัวเลือกของเมนู −20%
+ตรวจ XML ของ DarNified UI (`DUINVSettings.xml`, `hudtemplates.xml`,
+`start_menu.xml`) แล้วพบว่าสล็อตทับกัน จึงแมปดังนี้:
+
+| สล็อต | ไฟล์ | ใช้ที่ | ขนาดเดิม → ใหม่ |
+|---|---|---|---|
+| 1 | `Glow_Monofonto_Large` | Pip-Boy list (`_pb_ListFont`), ข้อความในกล่องยืนยัน (`_msg_textFont`), prompt ใน HUD | 26 → **21** (−19%) |
+| 2 | `Monofonto_Large` | หน้า STATS/MAP, barter, repair, levelup, hotkey | 25 → **20** (−20%) |
+| 3 | `Glow_Monofonto_Medium` | หน้า STATS/MAP, loading screen, container | 22 → **18** (−18%) |
+| 4 | `Monofonto_VeryLarge02_Dialogs2` | HUD meters/ammo (`_HUDMeterFont`), version info | 27 → **20** (−26%) |
+| 6 | `Glow_Monofonto_VL_dialogs` | quest objective, ปุ่มในกล่องยืนยัน (`_gl_ButtonFont`), Pip-Boy tabs (`_pb_TabFont`), sneak/hardcore | 29 → **21** (−28%) |
+| 7 | `Baked-in_Monofonto_Large` | **start menu** (`6+1` ใน `lb_item_template`), หัวข้อ Pip-Boy (`_gl_HeaderFont`), ชื่อสถานที่ (`_HUDLocFont`) | 26 → **21** (−19%) |
+| 5, 8, 9 | — | หน้าจอพิเศษ (Fixedsys/Futura/Test) | ไม่เปลี่ยน |
+
+**ข้อควรรู้**: สล็อต 7 ถูกใช้ร่วมกับ start menu และสล็อต 4 ร่วมกับบล็อก
+version info — ผู้ใช้ยืนยันให้ลดไปด้วยทั้งคู่
+
+ผลข้างเคียงที่ตั้งใจ: หน้า STATS ของ Pip-Boy (สล็อต 2/3) ถูกลดตามไปด้วย
+เพื่อไม่ให้ตัวอักษรในหน้าเดียวกันใหญ่กว่าหัวข้อ/แท็บที่ลดแล้ว
+
+สล็อต 3 ที่ 18px ทำให้ `auto_outline()` เลือกเส้นขอบ 1px (ต่ำกว่าเกณฑ์ 20px)
+— ตั้งใจ เพราะเส้นขอบ 2px ที่ขนาดนี้จะกินเนื้อตัวอักษร
+
+## 9) ข้อจำกัดที่รู้
 - Sarabun มีสัดส่วน ink/advance ≈ 0.89 → เส้นขอบ > 2px ที่ ~26–32px จะทำให้ตัวติดกัน
   และขยาย advance มากไม่ได้ (เมนู clip) จึง **2px คือเพดานจริง** ที่ขนาดนี้
 - Sarabun มี line box 1.325em (สูงกว่า Monofonto ~1.03em) → ที่ขนาดตัวอักษร

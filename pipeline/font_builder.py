@@ -323,19 +323,27 @@ def main():
 FONTSETS = {
     "vanilla": [
         # (ชื่อไฟล์, ขนาด Sarabun, line height ของ vanilla, tracking = สัดส่วนของขนาด)
-        # slot 1 — main menu (HUD หลัก) : tracking 8.9% (+10% จากรอบก่อน)
-        ("Glow_Monofonto_Large", 26, 31, 0.089),
-        ("Monofonto_Large", 25, 31, None),
-        ("Glow_Monofonto_Medium", 22, 26, None),
-        # slot 4 = บล็อก version info ของ start menu + บทสนทนา
-        # ลดขนาดลง 16% (32 → 27) ตามที่ผู้ใช้ขอ และ tracking 10.2% (+6% จากรอบก่อน)
-        # เกมคิดระยะบรรทัดจาก metrics จริงของฟอนต์ (ไม่ใช่ header) → ตัวใหญ่จะดันบล็อกสูง
-        ("Monofonto_VeryLarge02_Dialogs2", 27, 36, 0.102),
+        #
+        # รอบล่าสุด (2026-10-28): ผู้ใช้ขอให้ลดขนาดในเกมเพิ่ม
+        #   gameplay −26%, Pip-Boy −20%, กล่องยืนยันของเมนู −20%
+        # สล็อตใน DarNified UI ทับกัน จึงแมปดังนี้:
+        #   1 = Pip-Boy list + ข้อความในกล่องยืนยัน  → −20%
+        #   4 = HUD meters/ammo + version info       → −26%
+        #   6 = quest objective + ปุ่มยืนยัน + Pip-Boy tabs → −26%
+        #   7 = start menu + หัวข้อ Pip-Boy + ชื่อสถานที่   → −20%
+        # (สล็อต 7 ถูกใช้ร่วมกับ start menu — ผู้ใช้ยืนยันให้ลดไปด้วย)
+        ("Glow_Monofonto_Large", 21, 31, 0.089),
+        # slot 2/3 = หน้า STATS ของ Pip-Boy, map, barter, repair, levelup ฯลฯ
+        # ลด 20% ให้พอดีกับสล็อตอื่นที่ลดแล้ว (25 → 20, 22 → 18)
+        ("Monofonto_Large", 20, 31, None),
+        ("Glow_Monofonto_Medium", 18, 26, None),
+        # slot 4: 27 → 20 (−26%) — ระวัง: บล็อก version info ของ start menu ใช้สล็อตนี้ด้วย
+        ("Monofonto_VeryLarge02_Dialogs2", 20, 36, 0.102),
         ("Fixedsys_Comp_uniform_width", 24, 25, None),
-        ("Glow_Monofonto_VL_dialogs", 29, 34, None),
-        # slot 7 — main menu ของ DarNified UI (list_item_template: font 6+1)
-        # ใส่ tracking เท่ากับ slot 1 เผื่อไว้ทั้งสองกรณี
-        ("Baked-in_Monofonto_Large", 26, 36, 0.089),
+        # slot 6: 29 → 21 (−28%)
+        ("Glow_Monofonto_VL_dialogs", 21, 34, None),
+        # slot 7: 26 → 21 (−19%)
+        ("Baked-in_Monofonto_Large", 21, 36, 0.089),
         ("Glow_Futura_Caps_Large", 42, 52, None),
         ("NVFont_Test", 31, 36, None),
     ],
