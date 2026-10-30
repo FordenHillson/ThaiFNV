@@ -1,13 +1,40 @@
 Thumbs.db
 desktop.ini
 ~*
+*.bak
 
 __pycache__/
+*.pyc
+.pytest_cache/
 
-# ไฟล์เกมที่แตกออกมาเพื่ออ้างอิง (ลิขสิทธิ์ Bethesda + ใหญ่) — สร้างใหม่ได้ด้วย
-# pipeline/bsa_extract.py --filter fonts จาก Fallout - Textures2.bsa
+# เครื่องมือภายนอก (โหลดเอง — ดู README ในโฟลเดอร์)
+pipeline/fnvedit/**
+!pipeline/fnvedit/README.md
+pipeline/xtranslator/**
+!pipeline/xtranslator/README.md
+
+# ไฟล์เกมที่แตกออกมาเพื่ออ้างอิง (ลิขสิทธิ์ Bethesda + ใหญ่)
+# สร้างใหม่ได้ด้วย: pipeline/bsa_extract.py --filter fonts
 testing/vanilla_bsa_fonts/
 
-# ภาพผลตรวจชั่วคราว
+# ภาพผลตรวจชั่วคราว / ฟอนต์ทดลองใน testing
 testing/*.png
 testing/patch_test/
+testing/gui_preview/
+testing/v5fonts/
+testing/*.fnt
+testing/*.tex
+
+# โฟลเดอร์ขยะจากคำสั่ง shell ที่พลาด
+/-Force/
+/-p/
+/pipeline]/
+
+# สภาพแวดล้อม agent / local
+.claude/
+memory/
+html/
+
+# แพ็กเกจใหญ่ / artifact ชั่วคราว
+release/*.zip
+corpus_thai/

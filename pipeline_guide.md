@@ -1,863 +1,142 @@
+# Pipeline Guide — ThaiFNV
 
-corpus/
-├── translations/                    # Raw MT outputs by source
-│   ├── google_sheets_import_2026-10-29.csv
-│   └── raw_translations.tsv
-├── validated/                       # Post-quality filtering
-│   ├── high_confidence.csv          # Confidence > 0.8
-│   ├── medium_confidence.csv        # Confidence 0.6-0.8
-│   └── review_needed.csv            # Low confidence or edge cases
-├── glossaries/                      # Terminology databases
-│   ├── core_terms.json              # Essential game vocabulary
-│   ├── dlc_terms.json               # DLC-specific terms
-│   └── location_names.txt           # Place names & locations
-└── formid_index/                    # Lookup tables
-    ├── dialogue_group_ids.txt       # FormIDs in Dialogue groups
-    └── miscellaneous.csv            # Other record types
-```
+คู่มือรันสคริปต์จริงใน `pipeline/`  
+อัปเดตเมื่อเพิ่ม/เปลี่ยนคำสั่งหรือ path
 
 ---
 
-## 🎯 Step 4: Priority Assignment Strategy
+## ข้อกำหนด
 
-### Translation Priority Scale
+- Python 3.10+ (`Pillow` สำหรับฟอนต์; stdlib พอสำหรับ extract)
+- ฟอนต์ต้นทาง: `fonts/src/Sarabun-Bold.ttf`
+- เครื่องมือภายนอก (โหลดเองตาม README ในโฟลเดอร์):
+  - `pipeline/xtranslator/` — export/import ข้อความระดับเครื่องมือ GUI
+  - `pipeline/fnvedit/` — ตรวจ record / conflict
 
-| Priority | Components | Target Completion | MT Provider Quality |
-|----------|-----------|-------------------|---------------------|
-| P0 - Critical | Core game (`FalloutNV.esm`) | Phase 1 complete | High-priority only |
-| P1 - Essential | 5 DLCs (DM, HH, OWB, LR, GRA) | Phase 2 complete | Standard MT + review |
-| P2 - Important | YUP unofficial patch | Phase 3 (optional) | Selective translation |
-| P3 - Nice-to-have | Major mods (JSawyer, Dark Side) | Future phases | As resources allow |
-
-### Priority Filtering Logic
-
-```python
-def assign_priority(record):
-    record_type = record['RecordType']
-    form_id_group = get_formid_group(record['FormID'])
-    
-    if record_type in ['Dialogue', 'Message', 'Name']:
-        priority = 0 if form_id_group == 'core' else 1
-    elif record_type in ['Quest', 'ItemDescription']:
-        priority = 1
-    else:
-        priority = 2
-    
-    return priority
-```
-
----
-
-## ✍️ Step 5: Human Post-Editing Workflow
-
-### Review Guidelines
-
-1. **Contextual Accuracy**: Ensure translations make sense within game dialogue flow
-2. **Character Voice**: Match speaker tone (heroic, sarcastic, menacing, etc.)
-3. **Cultural Appropriateness**: Avoid inappropriate humor or references for Thai audience
-4. **Terminology Consistency**: Use glossary terms where applicable
-
-### Review Tools Setup
-
-Configure translation memory and QA scripts:
+รันจากรากโปรเจกต์ หรือ `cd pipeline` แล้วเรียกสคริปต์ในโฟลเดอร์นั้น
 
 ```bash
-# After xtranslator processing
-pip install translate-toolkit memsource-connector quality-assurance-tools
-
-# Run validation
-python pipeline/xtranslator/validate_translations.py --input corpus/validated/high_confidence.csv
+cd D:\backup\github\ThaiFNV
+pip install Pillow
 ```
 
 ---
 
-## 🚀 Running the Pipeline
+## 1) ฟอนต์ (.fnt / .tex)
 
-### Complete Translation Batch
-
-
-```
-pipeline/
-├── xtranslator/                    # Main translation tool
-│   ├── config.json                 # Tool configuration
-│   ├── templates/                  # Text extraction templates
-│   ├── output/                     # Extracted text records
-│   └── scripts/                    # Helper scripts for MT
-├── importers/                      # Data source connectors
-│   └── google_sheets.py            # Google Sheets CSV importer
-├── corpus/                         # Aggregated translation database
-│   ├── translations.csv            # All translated strings
-│   ├── glossary.json               # Terminology standards
-│   └── formid_index.txt            # FormID lookup table
-└── priority/                       # Translation priority lists
-    ├── core_game.csv               # FalloutNV.esm (highest)
-    ├── dlc1_dead_money.csv         # DLC: Dead Money
-    ├── dlc2_honest_hearts.csv      # DLC: Honest Hearts
-    ├── dlc3_old_world_blues.csv    # DLC: Old World Blues
-    ├── dlc4_lonesome_road.csv      # DLC: Lonesome Road
-    ├── dlc5_gunrunners_arsenal.csv # DLC: Gun Runners Arsenal
-    ├── yup_unofficial_patch.csv    # YUP patch translations
-    └── major_mods.csv              # JSawyer, Dark Side series, etc.
-```
-
-
-
-### Glossary Standards
-corpus/
-
-
-
-
-
-
-
-### File Outputs
-
-After pipeline processing, outputs go to:
-
-```
-corpus/
-└── final_translations/
-    ├── FalloutNV.esm_translations.csv      # Core game translations
-    ├── dm_translations.csv                  # Dead Money
-    ├── hh_translations.csv                  # Honest Hearts
-    ├── owb_translations.csv                 # Old World Blues
-    ├── lr_translations.csv                  # Lonesome Road
-    └── gra_translations.csv                 # Gun Runners Arsenal
-```
-
-These files will be used for:
-- ESP/ESM modification tools (FNVEdit, etc.)
-- Integration into mod archives
-- Version control and distribution
-
----
-
-## 🛡️ Best Practices
-
-1. **Always backup**: Commit to git after major corpus updates
-2. **Track changes**: Use semantic versioning for corpus releases
-3. **Document decisions**: Record MT choices, rejection reasons in commit messages
-4. **Test frequently**: Verify translations render correctly with font slots
-5. **Collaborate**: Maintain shared glossary for consistency across translators
-
----
-
-## 📚 References
-
-- [xtranslator Documentation](./xtranslator/README.md)
-- [Corpus Schema Definition](./corpus/schema.md)
-- [Google Sheets Export Guide](https://support.google.com/docs/answer/15294)
-- [FNVEdit Editing Guide](http://fallout.newvegas.fandom.com/wiki/Fallout_New_Vegas_Edition#Editing_the_ESP)
-
----
-
-*Document maintained by ThaiFNV Development Team. For questions, see the project GitHub repository.*
-```
-### File Outputs
-
-After pipeline processing, outputs go to:
-
-```
-corpus/
-└── final_translations/
-    ├── FalloutNV.esm_translations.csv      # Core game translations
-    ├── dm_translations.csv                  # Dead Money
-    ├── hh_translations.csv                  # Honest Hearts
-    ├── owb_translations.csv                 # Old World Blues
-    ├── lr_translations.csv                  # Lonesome Road
-    └── gra_translations.csv                 # Gun Runners Arsenal
-```
-
-These files will be used for:
-- ESP/ESM modification tools (FNVEdit, etc.)
-- Integration into mod archives
-- Version control and distribution
-
----
-
-## 🛡️ Best Practices
-
-### Generate Progress Report
+### Build ชุดเต็ม
 
 ```bash
-python pipeline/reports/generate_progress.py \
-    --metrics-file metrics/pipeline_metrics.csv \
-    --output reports/translation_status_2026-10-29.md
+python pipeline/font_builder.py --ttf fonts/src/Sarabun-Bold.ttf --batch vanilla --out-dir fonts/out/vanilla
+python pipeline/font_builder.py --ttf fonts/src/Sarabun-Bold.ttf --batch darn --out-dir fonts/out/darn
 ```
 
-### Metrics Tracked
+ชุด `FONTSETS` อยู่ในท้าย `font_builder.py` (ชื่อไฟล์ + ขนาด px + line height + tracking)
 
-- **Total strings processed**: Count of unique records from source
-- **MT confidence distribution**: Histogram of confidence scores
-- **High-confidence translations**: Strings passing quality threshold
-- **Review backlog**: Items requiring human post-editing
-- **Priority completion**: Percentage by P0/P1/P2 levels
-
----
-
-## 🔗 Integration with Main Project
+### ไฟล์เดี่ยว
 
 ```bash
-cd D:/backup/github/ThaiFNV/pipeline/xtranslator
-
-# Step 1: Import Google Sheet data
-python importers/google_sheets_importer.py \
-    --source "corpus/imported" \
-    --output "corpus/translations" \
-    --format csv
-
-# Step 2: Run xtranslator for MT processing
-python xtranslator/main.py \
-    --input corpus/imported/*.csv \
-    --mt-model google_translate_thai \
-    --output corpus/validated/processed.tsv \
-    --threshold 0.7
-
-# Step 3: Filter by priority
-python scripts/prioritize_translations.py \
-    --input corpus/validated/processed.tsv \
-    --output-dir corpus/priority/P0_core_game \
-    --priority-levels core=high dlc=medium patch=low
-
-# Step 4: Generate glossary updates
-python scripts/update_glossary.py \
-    --corpus corpus/priority/P0_core_game/*.csv \
-    --glossary-output corpus/glossaries/core_terms.json
-
-# Step 5: Export for human review
-python scripts/export_review_bundle.py \
-    --input corpus/validated/processed.tsv \
-    --output "corpus/exports/final_review_bundle.zip"
+python pipeline/font_builder.py --ttf fonts/src/Sarabun-Bold.ttf --name Glow_Monofonto_Large --size 21 --out fonts/out/vanilla --outline 2 --outline-color 6A5C40
 ```
 
----
-
-## 📈 Monitoring & Reporting
-
-Configure translation memory and QA scripts:
+### ตรวจก่อนติดตั้ง
 
 ```bash
-# After xtranslator processing
-pip install translate-toolkit memsource-connector quality-assurance-tools
-
-# Run validation
-python pipeline/xtranslator/validate_translations.py --input corpus/validated/high_confidence.csv
+python pipeline/font_check.py fonts/out/vanilla/Glow_Monofonto_Large.fnt
 ```
 
----
-
-## 🚀 Running the Pipeline
-
-### Complete Translation Batch
-
-### Review Guidelines
-
-1. **Contextual Accuracy**: Ensure translations make sense within game dialogue flow
-2. **Character Voice**: Match speaker tone (heroic, sarcastic, menacing, etc.)
-3. **Cultural Appropriateness**: Avoid inappropriate humor or references for Thai audience
-4. **Terminology Consistency**: Use glossary terms where applicable
-
-### Review Tools Setup
-
-Configure translation memory and QA scripts:
+### จำลองการวาด (ไม่เปิดเกม)
 
 ```bash
-# After xtranslator processing
-pip install translate-toolkit memsource-connector quality-assurance-tools
-
-# Run validation
-python pipeline/xtranslator/validate_translations.py --input corpus/validated/high_confidence.csv
+python pipeline/font_render.py fonts/out/vanilla/Glow_Monofonto_Large.fnt --text "ทดสอบภาษาไทย" --out testing/sim.png
 ```
 
----
-
-## 🚀 Running the Pipeline
-
-### Translation Priority Scale
-
-| Priority | Components | Target Completion | MT Provider Quality |
-|----------|-----------|-------------------|---------------------|
-| P0 - Critical | Core game (`FalloutNV.esm`) | Phase 1 complete | High-priority only |
-| P1 - Essential | 5 DLCs (DM, HH, OWB, LR, GRA) | Phase 2 complete | Standard MT + review |
-| P2 - Important | YUP unofficial patch | Phase 3 (optional) | Selective translation |
-| P3 - Nice-to-have | Major mods (JSawyer, Dark Side) | Future phases | As resources allow |
-
-### Priority Filtering Logic
-
-```python
-def assign_priority(record):
-    record_type = record['RecordType']
-    form_id_group = get_formid_group(record['FormID'])
-    
-    if record_type in ['Dialogue', 'Message', 'Name']:
-        priority = 0 if form_id_group == 'core' else 1
-    elif record_type in ['Quest', 'ItemDescription']:
-        priority = 1
-    else:
-        priority = 2
-    
-    return priority
-```
-
----
-
-## ✍️ Step 5: Human Post-Editing Workflow
-
-├── translations/                    # Raw MT outputs by source
-│   ├── google_sheets_import_2026-10-29.csv
-│   └── raw_translations.tsv
-├── validated/                       # Post-quality filtering
-│   ├── high_confidence.csv          # Confidence > 0.8
-│   ├── medium_confidence.csv        # Confidence 0.6-0.8
-│   └── review_needed.csv            # Low confidence or edge cases
-├── glossaries/                      # Terminology databases
-│   ├── core_terms.json              # Essential game vocabulary
-│   ├── dlc_terms.json               # DLC-specific terms
-│   └── location_names.txt           # Place names & locations
-└── formid_index/                    # Lookup tables
-    ├── dialogue_group_ids.txt       # FormIDs in Dialogue groups
-    └── miscellaneous.csv            # Other record types
-```
-
----
-
-## 🎯 Step 4: Priority Assignment Strategy
-
-
-Establish consistent terminology for key concepts:
-
-| English Term | Thai Translation | Notes |
-|-------------|-----------------|-------|
-| Fallout | ฟอลแลท | Game title, standard transliteration |
-| New Vegas | นูวegas | Proper noun handling |
-| Brotherhood of Steel | บราเธอฮุดออฟสตีล | Established mod terminology |
-| Pip-Boy | พิปบอย | Device name |
-| Vault | วัลต์ | Shelter system |
-| Guts and Glory | กัตส์แอนด์กลอรี่ | Book reference |
-
-### File Organization in `corpus/`
-
-```
-### xtranslator config.json Template
-
-```json
-{
-  "project": "ThaiFNV",
-  "workspaces": {
-    "source": "D:/backup/github/ThaiFNV",
-    "corpus": "D:/backup/github/ThaiFNV/corpus",
-    "pipeline": "D:/backup/github/ThaiFNV/pipeline"
-  },
-  "mt_providers": {
-    "default": "google_translator_api",
-    "fallback": "deep_l",
-    "api_key_env": "GTM_API_KEY"
-  },
-  "quality_thresholds": {
-    "confidence_min": 0.7,
-    "length_variance_max": 0.2
-  },
-  "output_formats": {
-    "csv": true,
-    "tsv": false,
-    "jsonl": true
-  }
-}
-```
-
----
-
-## 📊 Step 3: Corpus Management
-
-## 🔄 Pipeline Workflow
+### แตกฟอนต์ vanilla จาก BSA (อ้างอิง)
 
 ```bash
-pipeline/
-├── xtranslator/                    # Main translation tool
-│   ├── config.json                 # Tool configuration
-│   ├── templates/                  # Text extraction templates
-│   ├── output/                     # Extracted text records
-│   └── scripts/                    # Helper scripts for MT
-├── importers/                      # Data source connectors
-│   └── google_sheets.py            # Google Sheets CSV importer
-├── corpus/                         # Aggregated translation database
-│   ├── translations.csv            # All translated strings
-│   ├── glossary.json               # Terminology standards
-│   └── formid_index.txt            # FormID lookup table
-└── priority/                       # Translation priority lists
-    ├── core_game.csv               # FalloutNV.esm (highest)
-    ├── dlc1_dead_money.csv         # DLC: Dead Money
-    ├── dlc2_honest_hearts.csv      # DLC: Honest Hearts
-    ├── dlc3_old_world_blues.csv    # DLC: Old World Blues
-    ├── dlc4_lonesome_road.csv      # DLC: Lonesome Road
-    ├── dlc5_gunrunners_arsenal.csv # DLC: Gun Runners Arsenal
-    ├── yup_unofficial_patch.csv    # YUP patch translations
-    └── major_mods.csv              # JSawyer, Dark Side series, etc.
+python pipeline/bsa_extract.py --filter fonts "D:\SteamLibrary\steamapps\common\Fallout New Vegas\Data\Fallout - Textures2.bsa" --out testing/vanilla_bsa_fonts
 ```
 
+ผลลัพธ์ `testing/vanilla_bsa_fonts/` ถูก gitignore (ลิขสิทธิ์ Bethesda)
+
+### ติดตั้งลงเกม (ทดสอบ)
+
+คัดลอก `.fnt` + `.tex` จาก `fonts/out/vanilla/` ไปที่  
+`Data\Textures\Fonts\` (ผ่าน MO2/Vortex overlay หรือคัดลอกตรง — ตามที่ผู้ใช้สั่งเท่านั้น)
 
 ---
 
-## 📋 Overview
-
-This guide outlines the workflow for processing Thai translations through the xtranslator pipeline, integrating data from Google Sheets and managing translation assets.
-
----
-
-### xtranslator config.json Template
-
-```json
-{
-  "project": "ThaiFNV",
-  "workspaces": {
-    "source": "D:/backup/github/ThaiFNV",
-    "corpus": "D:/backup/github/ThaiFNV/corpus",
-    "pipeline": "D:/backup/github/ThaiFNV/pipeline"
-  },
-  "mt_providers": {
-    "default": "google_translator_api",
-    "fallback": "deep_l",
-    "api_key_env": "GTM_API_KEY"
-  },
-  "quality_thresholds": {
-    "confidence_min": 0.7,
-    "length_variance_max": 0.2
-  },
-  "output_formats": {
-    "csv": true,
-    "tsv": false,
-    "jsonl": true
-  }
-}
-```
-
----
-
-## 📊 Step 3: Corpus Management
-
-### Glossary Standards
-
-Establish consistent terminology for key concepts:
-
-| English Term | Thai Translation | Notes |
-|-------------|-----------------|-------|
-| Fallout | ฟอลแลท | Game title, standard transliteration |
-| New Vegas | นูวegas | Proper noun handling |
-| Brotherhood of Steel | บราเธอฮุดออฟสตีล | Established mod terminology |
-| Pip-Boy | พิปบอย | Device name |
-| Vault | วัลต์ | Shelter system |
-| Guts and Glory | กัตส์แอนด์กลอรี่ | Book reference |
-
-### File Organization in `corpus/`
-
-```
-
-
-## 📋 Overview
-
-This guide outlines the workflow for processing Thai translations through the xtranslator pipeline, integrating data from Google Sheets and managing translation assets.
-
----
-
-## 🔄 Pipeline Workflow
+## 2) Extract ข้อความจาก ESM
 
 ```bash
-
-
-┌─────────────────────────────────────────────────────────────┐
-│                    Translation Pipeline                       │
-├─────────────────────────────────────────────────────────────┤
-│ 1. Source Data Import                                         │
-│     └── Google Sheets → CSV Export                            │
-│                                                                 │
-│ 2. xtranslator Processing                                      │
-│     ├── Text Extraction from ESP/ESM files                    │
-│     ├── Machine Translation (MT) Seed Generation              │
-│     └── Quality Filtering & Deduplication                      │
-│                                                                 │
-│ 3. Corpus Integration                                          │
-│     └── Merge with existing corpus (`corpus/`)                │
-│                                                                 │
-│ 4. Priority Assignment                                         │
-│     └── Categorize by game component (core/DLCs/patches)     │
-│                                                                 │
-│ 5. Human Post-Editing Workflow                                 │
-│     └── Translation Memory & Glossary Management               │
-└─────────────────────────────────────────────────────────────┘
-
----
-
-## 📥 Step 1: Import Google Sheet Translations
-
-### Source Data Location
-
-- **Google Sheet URL**: [Thai Translation Spreadsheet](https://docs.google.com/spreadsheets/d/1kJf1JjuN_CDdh7660LuVYHax0Z9cuB5NETtt1_LrEOE/edit?usp=sharing)
-- **Expected Columns**: `FormID`, `EditorID`, `OriginalText` (English), `ThaiTranslation`, `RecordType`
-
-### Import Process
-
-1. Export Google Sheet as CSV
-2. Validate column headers match expected schema
-3. Run through xtranslator for integration processing
-
----
-
-## 🔧 Step 2: xtranslator Configuration
-
-### Directory Structure
-
+python pipeline/fnv_esm.py ^
+  "D:\SteamLibrary\steamapps\common\Fallout New Vegas\Data\FalloutNV.esm" ^
+  --out extracted/FalloutNV_extract_v1.csv
 ```
 
-## 📋 Overview
-# Pipeline Guide - ThaiFNV Translation Processing
+ดึง: FULL ทุกชนิด + DESC/ITXT ตามประเภท + INFO NAM1 + TERM + QUST NNAM  
+ดูตารางใน docstring ของ `fnv_esm.py`
 
-## 📋 Overview
-
-This guide outlines the workflow for processing Thai translations through the xtranslator pipeline, integrating data from Google Sheets and managing translation assets.
-
----
-
-## 🔄 Pipeline Workflow
+### แยกหมวดสำหรับ Google Sheets
 
 ```bash
-
-┌─────────────────────────────────────────────────────────────┐
-│                    Translation Pipeline                       │
-├─────────────────────────────────────────────────────────────┤
-│ 1. Source Data Import                                         │
-│     └── Google Sheets → CSV Export                            │
-│                                                                 │
-│ 2. xtranslator Processing                                      │
-│     ├── Text Extraction from ESP/ESM files                    │
-│     ├── Machine Translation (MT) Seed Generation              │
-│     └── Quality Filtering & Deduplication                      │
-│                                                                 │
-│ 3. Corpus Integration                                          │
-│     └── Merge with existing corpus (`corpus/`)                │
-│                                                                 │
-│ 4. Priority Assignment                                         │
-│     └── Categorize by game component (core/DLCs/patches)     │
-│                                                                 │
-│ 5. Human Post-Editing Workflow                                 │
-│     └── Translation Memory & Glossary Management               │
-└─────────────────────────────────────────────────────────────┘
-
----
-
-## 📥 Step 1: Import Google Sheet Translations
-
-### Source Data Location
-
-- **Google Sheet URL**: [Thai Translation Spreadsheet](https://docs.google.com/spreadsheets/d/1kJf1JjuN_CDdh7660LuVYHax0Z9cuB5NETtt1_LrEOE/edit?usp=sharing)
-- **Expected Columns**: `FormID`, `EditorID`, `OriginalText` (English), `ThaiTranslation`, `RecordType`
-
-### Import Process
-
-1. Export Google Sheet as CSV
-2. Validate column headers match expected schema
-3. Run through xtranslator for integration processing
-
----
-
-## 🔧 Step 2: xtranslator Configuration
-
-# Pipeline Guide - ThaiFNV Translation Processing
-corpus/
-├── translations/                    # Raw MT outputs by source
-│   ├── google_sheets_import_2026-10-29.csv
-│   └── raw_translations.tsv
-├── validated/                       # Post-quality filtering
-│   ├── high_confidence.csv          # Confidence > 0.8
-│   ├── medium_confidence.csv        # Confidence 0.6-0.8
-│   └── review_needed.csv            # Low confidence or edge cases
-├── glossaries/                      # Terminology databases
-│   ├── core_terms.json              # Essential game vocabulary
-│   ├── dlc_terms.json               # DLC-specific terms
-│   └── location_names.txt           # Place names & locations
-└── formid_index/                    # Lookup tables
-    ├── dialogue_group_ids.txt       # FormIDs in Dialogue groups
-    └── miscellaneous.csv            # Other record types
+python pipeline/make_categories.py extracted/FalloutNV_extract_v1.csv --out-dir extracted/sheets
 ```
 
----
+ได้ไฟล์เช่น `FNV_Dialogue.csv`, `FNV_Names.csv`, …  
+คอลัมน์: `ID | ประเภท | FormID | EditorID | EN | TH | สถานะ | หมายเหตุ`
 
-## 🎯 Step 4: Priority Assignment Strategy
-
-### Translation Priority Scale
-
-| Priority | Components | Target Completion | MT Provider Quality |
-|----------|-----------|-------------------|---------------------|
-| P0 - Critical | Core game (`FalloutNV.esm`) | Phase 1 complete | High-priority only |
-| P1 - Essential | 5 DLCs (DM, HH, OWB, LR, GRA) | Phase 2 complete | Standard MT + review |
-| P2 - Important | YUP unofficial patch | Phase 3 (optional) | Selective translation |
-| P3 - Nice-to-have | Major mods (JSawyer, Dark Side) | Future phases | As resources allow |
-
-### Priority Filtering Logic
-
-```python
-def assign_priority(record):
-    record_type = record['RecordType']
-    form_id_group = get_formid_group(record['FormID'])
-    
-    if record_type in ['Dialogue', 'Message', 'Name']:
-        priority = 0 if form_id_group == 'core' else 1
-    elif record_type in ['Quest', 'ItemDescription']:
-        priority = 1
-    else:
-        priority = 2
-    
-    return priority
-```
-
----
-
-## ✍️ Step 5: Human Post-Editing Workflow
-
-### Review Guidelines
-
-1. **Contextual Accuracy**: Ensure translations make sense within game dialogue flow
-2. **Character Voice**: Match speaker tone (heroic, sarcastic, menacing, etc.)
-3. **Cultural Appropriateness**: Avoid inappropriate humor or references for Thai audience
-4. **Terminology Consistency**: Use glossary terms where applicable
-
-### Review Tools Setup
-
-Configure translation memory and QA scripts:
+### ดูชนิด subrecord (debug)
 
 ```bash
-# After xtranslator processing
-pip install translate-toolkit memsource-connector quality-assurance-tools
-
-# Run validation
-python pipeline/xtranslator/validate_translations.py --input corpus/validated/high_confidence.csv
+python pipeline/inspect_subs.py "path\to\FalloutNV.esm"
 ```
 
 ---
 
-## 🚀 Running the Pipeline
+## 3) Machine Translation seed (Google Sheets)
 
-### Complete Translation Batch
+1. อัปโหลด CSV จาก `extracted/sheets/` ขึ้นชีต (หนึ่ง tab ต่อหมวด)
+2. วาง Apps Script จาก `corpus/google_sheets/mt_seed.gs`
+3. รัน MT เติมคอลัมน์ `TH` + ตั้ง `สถานะ = mt`
+4. คนแก้ต่อ → `สถานะ = edited` / `final`
+5. ดาวน์โหลด CSV เก็บ backup ลง `corpus/` เมื่อจบรอบใหญ่
 
-```bash
-cd D:/backup/github/ThaiFNV/pipeline/xtranslator
-
-# Step 1: Import Google Sheet data
-python importers/google_sheets_importer.py \
-    --source "corpus/imported" \
-    --output "corpus/translations" \
-    --format csv
-
-# Step 2: Run xtranslator for MT processing
-python xtranslator/main.py \
-    --input corpus/imported/*.csv \
-    --mt-model google_translate_thai \
-    --output corpus/validated/processed.tsv \
-    --threshold 0.7
-
-# Step 3: Filter by priority
-python scripts/prioritize_translations.py \
-    --input corpus/validated/processed.tsv \
-    --output-dir corpus/priority/P0_core_game \
-    --priority-levels core=high dlc=medium patch=low
-
-# Step 4: Generate glossary updates
-python scripts/update_glossary.py \
-    --corpus corpus/priority/P0_core_game/*.csv \
-    --glossary-output corpus/glossaries/core_terms.json
-
-# Step 5: Export for human review
-python scripts/export_review_bundle.py \
-    --input corpus/validated/processed.tsv \
-    --output "corpus/exports/final_review_bundle.zip"
-```
+ทดลองแปล Messages: `extracted/sheets/FNV_Messages_translated.csv`
 
 ---
 
-## 📈 Monitoring & Reporting
+## 4) ป้อนกลับเข้าเกม (ยังไม่สมบูรณ์ใน pipeline)
 
-### Generate Progress Report
+เป้าหมายระยะถัดไป:
 
-```bash
-python pipeline/reports/generate_progress.py \
-    --metrics-file metrics/pipeline_metrics.csv \
-    --output reports/translation_status_2026-10-29.md
-```
+1. CSV แปลแล้ว → XML / หรือเขียนตรงเข้า ESM ด้วยเครื่องมือ (xTranslator Esp mode หรือสคริปต์)
+2. encoding ข้อความไทย = **CP874** ให้ตรงตาราง glyph
+3. Round-trip: EN → TH → เปิดเกมตรวจจุดสำคัญ
 
-### Metrics Tracked
-
-- **Total strings processed**: Count of unique records from source
-- **MT confidence distribution**: Histogram of confidence scores
-- **High-confidence translations**: Strings passing quality threshold
-- **Review backlog**: Items requiring human post-editing
-- **Priority completion**: Percentage by P0/P1/P2 levels
+จนกว่าจะมีสคริปต์ import ใช้ **xTranslator** ตามคู่มือใน `pipeline/xtranslator/README.md`
 
 ---
 
-## 🔗 Integration with Main Project
+## 5) จับภาพทดสอบในเกม
 
-### File Outputs
+สคริปต์ใน `testing/capture_*.py` — รันเมื่อผู้ใช้สั่งตรวจเท่านั้น (ตาม `Rule.md`)
 
-After pipeline processing, outputs go to:
-
-```
-corpus/
-└── final_translations/
-    ├── FalloutNV.esm_translations.csv      # Core game translations
-    ├── dm_translations.csv                  # Dead Money
-    ├── hh_translations.csv                  # Honest Hearts
-    ├── owb_translations.csv                 # Old World Blues
-    ├── lr_translations.csv                  # Lonesome Road
-    └── gra_translations.csv                 # Gun Runners Arsenal
-```
-
-These files will be used for:
-- ESP/ESM modification tools (FNVEdit, etc.)
-- Integration into mod archives
-- Version control and distribution
+ภาพ `testing/*.png` ไม่เข้า git
 
 ---
 
-## 🛡️ Best Practices
+## Checklist หลังเปลี่ยนฟอนต์
 
-1. **Always backup**: Commit to git after major corpus updates
-2. **Track changes**: Use semantic versioning for corpus releases
-3. **Document decisions**: Record MT choices, rejection reasons in commit messages
-4. **Test frequently**: Verify translations render correctly with font slots
-5. **Collaborate**: Maintain shared glossary for consistency across translators
+1. `font_builder` batch ที่เกี่ยวข้อง
+2. `font_check` ไฟล์หลักอย่างน้อย 1–2 สล็อต
+3. ติดตั้งลง Data (ตามที่ผู้ใช้ขอ)
+4. ผู้ใช้เปิดเกมตรวจ → รอ "ok" / "แก้ไข"
+5. บันทึกผลใน `docs/DEVLOG.md` + อัปเดตขนาดใน `CONTEXT.md` ถ้าเปลี่ยน
 
----
+## Checklist หลัง extract / แปลรอบใหญ่
 
-## 📚 References
-
-- [xtranslator Documentation](./xtranslator/README.md)
-- [Corpus Schema Definition](./corpus/schema.md)
-- [Google Sheets Export Guide](https://support.google.com/docs/answer/15294)
-- [FNVEdit Editing Guide](http://fallout.newvegas.fandom.com/wiki/Fallout_New_Vegas_Edition#Editing_the_ESP)
-
----
-
-*Document maintained by ThaiFNV Development Team. For questions, see the project GitHub repository.*
-## 📊 Step 3: Corpus Management
-
-### Glossary Standards
-
-Establish consistent terminology for key concepts:
-
-| English Term | Thai Translation | Notes |
-|-------------|-----------------|-------|
-| Fallout | ฟอลแลท | Game title, standard transliteration |
-| New Vegas | นูวegas | Proper noun handling |
-| Brotherhood of Steel | บราเธอฮุดออฟสตีล | Established mod terminology |
-| Pip-Boy | พิปบอย | Device name |
-| Vault | วัลต์ | Shelter system |
-| Guts and Glory | กัตส์แอนด์กลอรี่ | Book reference |
-
-### File Organization in `corpus/`
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Translation Pipeline                       │
-├─────────────────────────────────────────────────────────────┤
-│ 1. Source Data Import                                         │
-│     └── Google Sheets → CSV Export                            │
-│                                                                 │
-│ 2. xtranslator Processing                                      │
-│     ├── Text Extraction from ESP/ESM files                    │
-│     ├── Machine Translation (MT) Seed Generation              │
-│     └── Quality Filtering & Deduplication                      │
-│                                                                 │
-│ 3. Corpus Integration                                          │
-│     └── Merge with existing corpus (`corpus/`)                │
-│                                                                 │
-│ 4. Priority Assignment                                         │
-│     └── Categorize by game component (core/DLCs/patches)     │
-│                                                                 │
-│ 5. Human Post-Editing Workflow                                 │
-│     └── Translation Memory & Glossary Management               │
-└─────────────────────────────────────────────────────────────┘
-
----
-
-## 📥 Step 1: Import Google Sheet Translations
-
-### Source Data Location
-
-- **Google Sheet URL**: [Thai Translation Spreadsheet](https://docs.google.com/spreadsheets/d/1kJf1JjuN_CDdh7660LuVYHax0Z9cuB5NETtt1_LrEOE/edit?usp=sharing)
-- **Expected Columns**: `FormID`, `EditorID`, `OriginalText` (English), `ThaiTranslation`, `RecordType`
-
-### Import Process
-
-1. Export Google Sheet as CSV
-2. Validate column headers match expected schema
-3. Run through xtranslator for integration processing
-
----
-
-## 🔧 Step 2: xtranslator Configuration
-
-### Directory Structure
-
-```
-pipeline/
-├── xtranslator/                    # Main translation tool
-│   ├── config.json                 # Tool configuration
-│   ├── templates/                  # Text extraction templates
-│   ├── output/                     # Extracted text records
-│   └── scripts/                    # Helper scripts for MT
-├── importers/                      # Data source connectors
-│   └── google_sheets.py            # Google Sheets CSV importer
-├── corpus/                         # Aggregated translation database
-│   ├── translations.csv            # All translated strings
-│   ├── glossary.json               # Terminology standards
-│   └── formid_index.txt            # FormID lookup table
-└── priority/                       # Translation priority lists
-    ├── core_game.csv               # FalloutNV.esm (highest)
-    ├── dlc1_dead_money.csv         # DLC: Dead Money
-    ├── dlc2_honest_hearts.csv      # DLC: Honest Hearts
-    ├── dlc3_old_world_blues.csv    # DLC: Old World Blues
-    ├── dlc4_lonesome_road.csv      # DLC: Lonesome Road
-    ├── dlc5_gunrunners_arsenal.csv # DLC: Gun Runners Arsenal
-    ├── yup_unofficial_patch.csv    # YUP patch translations
-    └── major_mods.csv              # JSawyer, Dark Side series, etc.
-```
-
-### xtranslator config.json Template
-
-```json
-{
-  "project": "ThaiFNV",
-  "workspaces": {
-    "source": "D:/backup/github/ThaiFNV",
-    "corpus": "D:/backup/github/ThaiFNV/corpus",
-    "pipeline": "D:/backup/github/ThaiFNV/pipeline"
-  },
-  "mt_providers": {
-    "default": "google_translator_api",
-    "fallback": "deep_l",
-    "api_key_env": "GTM_API_KEY"
-  },
-  "quality_thresholds": {
-    "confidence_min": 0.7,
-    "length_variance_max": 0.2
-  },
-  "output_formats": {
-    "csv": true,
-    "tsv": false,
-    "jsonl": true
-  }
-}
-```
-
----
-
-
-## 📋 Overview
-
-This guide outlines the workflow for processing Thai translations through the xtranslator pipeline, integrating data from Google Sheets and managing translation assets.
-
----
-
-## 🔄 Pipeline Workflow
-
-```bash
+1. นับแถวต่อหมวด เทียบรอบก่อน
+2. Backup CSV ลง `corpus/` พร้อมวันที่
+3. อัปเดตตารางตัวเลขใน `CONTEXT.md` และ `docs/STATUS.md`
+4. เติม `docs/DEVLOG.md`
