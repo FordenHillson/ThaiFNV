@@ -1,0 +1,242 @@
+[
+  {
+    "row": 962,
+    "type": "NOTE:FULL",
+    "editor": "RCWeatherlyComputerEntry01",
+    "en": "Hotel Registry"
+  },
+  {
+    "row": 963,
+    "type": "NOTE:FULL",
+    "editor": "RCWeatherlyComputerEntry02",
+    "en": "Shopping List"
+  },
+  {
+    "row": 964,
+    "type": "NOTE:FULL",
+    "editor": "RCBannonComputerEntry01",
+    "en": "Council Agenda"
+  },
+  {
+    "row": 965,
+    "type": "NOTE:FULL",
+    "editor": "Vault112GarageNote01",
+    "en": "CPU Option 1HX-53BB"
+  },
+  {
+    "row": 966,
+    "type": "NOTE:TNAM",
+    "editor": "Vault112GarageNote01",
+    "en": "Open Vault-Tec secret hatch"
+  },
+  {
+    "row": 967,
+    "type": "NOTE:FULL",
+    "editor": "FortCBunkerLaunchCodes",
+    "en": "Fort Constantine Launch Codes"
+  },
+  {
+    "row": 968,
+    "type": "NOTE:FULL",
+    "editor": "FortCCOHomeTerminalPassword01",
+    "en": "Fort Constantine CO Keycard"
+  },
+  {
+    "row": 969,
+    "type": "NOTE:FULL",
+    "editor": "FFEU02Note",
+    "en": "Wastelander Map"
+  },
+  {
+    "row": 970,
+    "type": "NOTE:TNAM",
+    "editor": "FFEU02Note",
+    "en": "The map shows directions to Rock Creek Caverns, with the notation: \"Mirelurk King's Treasure Chamber!\""
+  },
+  {
+    "row": 971,
+    "type": "NOTE:FULL",
+    "editor": "ChildrensStory02",
+    "en": "Song of the Lightman"
+  },
+  {
+    "row": 972,
+    "type": "NOTE:FULL",
+    "editor": "ChildrensStory01",
+    "en": "The Guardians of Gillyfrond"
+  },
+  {
+    "row": 973,
+    "type": "NOTE:FULL",
+    "editor": "LDVault108CloningLog",
+    "en": "Cloning Log"
+  },
+  {
+    "row": 974,
+    "type": "NOTE:FULL",
+    "editor": "FortIndependence02Terminal01Password",
+    "en": "Fort Ind. Terminal Access Password"
+  },
+  {
+    "row": 975,
+    "type": "NOTE:TNAM",
+    "editor": "FortIndependence02Terminal01Password",
+    "en": "The password to the Door Terminal is \"enwozzirb.\""
+  },
+  {
+    "row": 976,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsBottlecapMineNote",
+    "en": "Schematics - Bottlecap Mine"
+  },
+  {
+    "row": 977,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsShishkebabNote",
+    "en": "Schematics - Shishkebab"
+  },
+  {
+    "row": 978,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsRockitLauncherNote",
+    "en": "Schematics - Rock-It Launcher"
+  },
+  {
+    "row": 979,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsRailwayRifleNote",
+    "en": "Schematics - Railway Rifle"
+  },
+  {
+    "row": 980,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsNukaCocktailNote",
+    "en": "Schematics - Nuka Grenade"
+  },
+  {
+    "row": 981,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsDeathclawGauntletNote",
+    "en": "Schematics - Deathclaw Gauntlet"
+  },
+  {
+    "row": 982,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsDartGunNote",
+    "en": "Schematics - Dart Gun"
+  },
+  {
+    "row": 983,
+    "type": "NOTE:FULL",
+    "editor": "DaveBallot1",
+    "en": "Vote for Dave"
+  },
+  {
+    "row": 984,
+    "type": "NOTE:TNAM",
+    "editor": "DaveBallot1",
+    "en": "Dave"
+  },
+  {
+    "row": 985,
+    "type": "NOTE:FULL",
+    "editor": "DaveBallot3",
+    "en": "Vote for Bob"
+  },
+  {
+    "row": 986,
+    "type": "NOTE:TNAM",
+    "editor": "DaveBallot3",
+    "en": "Bob"
+  },
+  {
+    "row": 987,
+    "type": "NOTE:FULL",
+    "editor": "DaveBallot2",
+    "en": "Vote for Rosie"
+  },
+  {
+    "row": 988,
+    "type": "NOTE:TNAM",
+    "editor": "DaveBallot2",
+    "en": "Rosie"
+  },
+  {
+    "row": 989,
+    "type": "NOTE:FULL",
+    "editor": "RHSLibraryMessage",
+    "en": "Note to the Librarian"
+  },
+  {
+    "row": 990,
+    "type": "NOTE:FULL",
+    "editor": "RHSRecipe",
+    "en": "Lunch Meat Casserole Recipe"
+  },
+  {
+    "row": 991,
+    "type": "NOTE:FULL",
+    "editor": "CG04OverseerMegatonPicture",
+    "en": "The settlement of Megaton"
+  },
+  {
+    "row": 992,
+    "type": "NOTE:FULL",
+    "editor": "CG04OverseerGiantAntPicture",
+    "en": "The settlement of Megaton"
+  },
+  {
+    "row": 993,
+    "type": "NOTE:FULL",
+    "editor": "CG04OverseerMegatonNote",
+    "en": "Report from first survey party"
+  },
+  {
+    "row": 994,
+    "type": "NOTE:FULL",
+    "editor": "CG04OverseerPassword",
+    "en": "Overseer's Terminal Password"
+  },
+  {
+    "row": 995,
+    "type": "NOTE:TNAM",
+    "editor": "CG04OverseerPassword",
+    "en": "The password is Amata."
+  },
+  {
+    "row": 996,
+    "type": "NOTE:TNAM",
+    "editor": "Vault101PepperGomezEmail3",
+    "en": "Nothing here."
+  },
+  {
+    "row": 997,
+    "type": "NOTE:TNAM",
+    "editor": "Vault101PepperGomezEmail2",
+    "en": "Nothing here."
+  },
+  {
+    "row": 998,
+    "type": "NOTE:TNAM",
+    "editor": "Vault101PepperGomezEmail1",
+    "en": "Nothing here."
+  },
+  {
+    "row": 999,
+    "type": "NOTE:FULL",
+    "editor": "Vault101ClassroomComputerHomework2",
+    "en": "Vault 101 Classroom Lesson Review"
+  },
+  {
+    "row": 1000,
+    "type": "NOTE:TNAM",
+    "editor": "Vault101ClassroomComputerHomework2",
+    "en": "Blah dee blah blah."
+  },
+  {
+    "row": 1001,
+    "type": "NOTE:FULL",
+    "editor": "Vault101ClassroomComputerHomework1",
+    "en": "Vault 101 Classroom Lesson Review"
+  }
+]

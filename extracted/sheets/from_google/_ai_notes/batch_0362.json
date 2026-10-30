@@ -1,0 +1,242 @@
+[
+  {
+    "row": 362,
+    "type": "NOTE:TNAM",
+    "editor": "VFreesideMickOmertaNote1",
+    "en": "Mick from Mick & Ralph's says the Omertas stopped buying guns suddenly without giving a reason why.  Maybe I should ask around and see if I can find out why."
+  },
+  {
+    "row": 363,
+    "type": "NOTE:FULL",
+    "editor": "VMS18Matchbook",
+    "en": "Matchbook"
+  },
+  {
+    "row": 364,
+    "type": "NOTE:FULL",
+    "editor": "NellisLindsayNote2",
+    "en": "Mr. Cuddles"
+  },
+  {
+    "row": 365,
+    "type": "NOTE:TNAM",
+    "editor": "NellisLindsayNote2",
+    "en": "Lindsay, one of the Boomer kids, lost her teddy bear, she last remembers seeing it when she was playing hide and seek in the main hangar."
+  },
+  {
+    "row": 366,
+    "type": "NOTE:FULL",
+    "editor": "NellisLindsayNote1",
+    "en": "Mr. Cuddles"
+  },
+  {
+    "row": 367,
+    "type": "NOTE:TNAM",
+    "editor": "NellisLindsayNote1",
+    "en": "Lindsay, one of the Boomer kids, lost her teddy bear, but she isn't sure where she lost it."
+  },
+  {
+    "row": 368,
+    "type": "NOTE:FULL",
+    "editor": "NellisArrayNote",
+    "en": "Nellis Solar Array"
+  },
+  {
+    "row": 369,
+    "type": "NOTE:TNAM",
+    "editor": "NellisArrayNote",
+    "en": "Loyal, one of the Boomer elders, requested that I take a look at the solar array and see about fixing them."
+  },
+  {
+    "row": 370,
+    "type": "NOTE:FULL",
+    "editor": "NellisJackNote",
+    "en": "Jack's Love Story"
+  },
+  {
+    "row": 371,
+    "type": "NOTE:TNAM",
+    "editor": "NellisJackNote",
+    "en": "Jack let me know there is a girl he is interested in at Crimson Caravan. He knows she has red hair, but that is all he knows. He'd like me to talk to her and see if she is interested in meeting him."
+  },
+  {
+    "row": 372,
+    "type": "NOTE:FULL",
+    "editor": "GSTrudyNote",
+    "en": "Busted Radio"
+  },
+  {
+    "row": 373,
+    "type": "NOTE:TNAM",
+    "editor": "GSTrudyNote",
+    "en": "The radio at the Prospector Saloon in Goodsprings was broken by a visiting Great Khan. Trudy has offered to pay you if you can fix it."
+  },
+  {
+    "row": 374,
+    "type": "NOTE:FULL",
+    "editor": "NellisScrapNote",
+    "en": "Nellis Scrap Metal"
+  },
+  {
+    "row": 375,
+    "type": "NOTE:TNAM",
+    "editor": "NellisScrapNote",
+    "en": "Jack at Nellis is looking for scrap metal. He can't pay me, but earning the trust of people with that much artillery seems like a decent idea."
+  },
+  {
+    "row": 376,
+    "type": "NOTE:FULL",
+    "editor": "NellisMissileNote",
+    "en": "Nellis Missile Metal"
+  },
+  {
+    "row": 377,
+    "type": "NOTE:TNAM",
+    "editor": "NellisMissileNote",
+    "en": "Raquel, the Master at Arms for the Boomers, would be grateful if I brought her some missiles."
+  },
+  {
+    "row": 378,
+    "type": "NOTE:FULL",
+    "editor": "CampGolfAccessDenied",
+    "en": "Misfits Rifle Report (Good)"
+  },
+  {
+    "row": 379,
+    "type": "NOTE:TNAM",
+    "editor": "CampGolfAccessDenied",
+    "en": "ACCESS DENIED - Ranger Detachment reports not available from this system."
+  },
+  {
+    "row": 380,
+    "type": "NOTE:FULL",
+    "editor": "CampGolfMisfitsGrenadeReportBad",
+    "en": "Misfits Grenade Report (Bad)"
+  },
+  {
+    "row": 381,
+    "type": "NOTE:FULL",
+    "editor": "CampGolfMisfitsGrenadeReportGood",
+    "en": "Misfits Grenade Report (Good)"
+  },
+  {
+    "row": 382,
+    "type": "NOTE:FULL",
+    "editor": "CampGolfMisfitsRifleReportBad",
+    "en": "Misfits Rifle Report (Bad)"
+  },
+  {
+    "row": 383,
+    "type": "NOTE:FULL",
+    "editor": "CampGolfMisfitsRifleReportGood",
+    "en": "Misfits Rifle Report (Good)"
+  },
+  {
+    "row": 384,
+    "type": "NOTE:FULL",
+    "editor": "PowderGanger01Note",
+    "en": "Holotape"
+  },
+  {
+    "row": 385,
+    "type": "NOTE:TNAM",
+    "editor": "PowderGanger01Note",
+    "en": "Not many patrols out here lately, which means not much loot.  Our crew is thinking we should make a move soon.  Follow the tracks up north; head towards the Strip. You in?  Ain't on the chain gang anymore, but we still gotta stick together."
+  },
+  {
+    "row": 386,
+    "type": "NOTE:FULL",
+    "editor": "VMQ01CourierNote",
+    "en": "Mojave Express Delivery Order (6 of 6)"
+  },
+  {
+    "row": 387,
+    "type": "NOTE:FULL",
+    "editor": "SSHQAllenMarksHolo",
+    "en": "Holotape"
+  },
+  {
+    "row": 388,
+    "type": "NOTE:FULL",
+    "editor": "NeonSignFactoryNote03",
+    "en": "Accident Report Log"
+  },
+  {
+    "row": 389,
+    "type": "NOTE:FULL",
+    "editor": "NeonSignFactoryNote02",
+    "en": "Shipping Invoice #1542"
+  },
+  {
+    "row": 390,
+    "type": "NOTE:FULL",
+    "editor": "NeonSignFactoryNote01",
+    "en": "Shipping Invoice #0812"
+  },
+  {
+    "row": 391,
+    "type": "NOTE:FULL",
+    "editor": "V22KeelyPassword",
+    "en": "Keely's Password"
+  },
+  {
+    "row": 392,
+    "type": "NOTE:FULL",
+    "editor": "VMS07OverseerPassword",
+    "en": "Vault 3 Overseer Password"
+  },
+  {
+    "row": 393,
+    "type": "NOTE:TNAM",
+    "editor": "VMS07OverseerPassword",
+    "en": "The password for the Overseer's room in Vault 3 is: 1L0V3B@Nana5"
+  },
+  {
+    "row": 394,
+    "type": "NOTE:FULL",
+    "editor": "ContrerasComputerNote",
+    "en": "Camp McCarran Weapons Manifest"
+  },
+  {
+    "row": 395,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformMcCarranMessHallMeatVendorList",
+    "en": "Meat Vendor List"
+  },
+  {
+    "row": 396,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformMcCarranMessHallMeatVendorList",
+    "en": "There are a few different vendors who sell snacks and meat.  You might try Fitz.  He has a small shop with a couple other merchants.  Ruby Nash in Primm has some interesting items.  Lastly, Crimson Caravan should be able to handle a good amount of supply for us.  Try and convince them to trade for some of our overstock if you can.  We need to reserve caps if possible."
+  },
+  {
+    "row": 397,
+    "type": "NOTE:FULL",
+    "editor": "McCarranFieldNote03",
+    "en": "Hey, buddy"
+  },
+  {
+    "row": 398,
+    "type": "NOTE:FULL",
+    "editor": "McCarranFieldNote02",
+    "en": "Reminder"
+  },
+  {
+    "row": 399,
+    "type": "NOTE:FULL",
+    "editor": "McCarranFieldNote01",
+    "en": "Redhead"
+  },
+  {
+    "row": 400,
+    "type": "NOTE:FULL",
+    "editor": "GunRunnerNote03",
+    "en": "New Name for the Vendortron"
+  },
+  {
+    "row": 401,
+    "type": "NOTE:TNAM",
+    "editor": "GunRunnerNote03",
+    "en": "Seriously, can we stop calling the Vendortron a \"Vendortron?\" Let's give the thing a proper name, like Bob (we're not calling it Bob). We'll vote on it at the end of the week. Please, please, please come  up with something decent."
+  }
+]

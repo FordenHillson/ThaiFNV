@@ -38,3 +38,4 @@ html/
 # แพ็กเกจใหญ่ / artifact ชั่วคราว
 release/*.zip
 corpus_thai/
+fonts/out/esp_precompose/

@@ -1,0 +1,242 @@
+[
+  {
+    "row": 602,
+    "type": "NOTE:TNAM",
+    "editor": "REPCONSabotageTerminalNote",
+    "en": "Warning! Current coordinates violate safety protocols! Please confirm."
+  },
+  {
+    "row": 603,
+    "type": "NOTE:FULL",
+    "editor": "REPCONBasementTerminalNote2",
+    "en": "REPCONBasementTerminalNote2"
+  },
+  {
+    "row": 604,
+    "type": "NOTE:FULL",
+    "editor": "REPCONBasementTerminalNote6",
+    "en": "Stealthboy Shipment Update"
+  },
+  {
+    "row": 605,
+    "type": "NOTE:FULL",
+    "editor": "REPCONBasementTerminalNote1",
+    "en": "REPCONBasementTerminalNote1"
+  },
+  {
+    "row": 606,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformNovacChupacabraNote",
+    "en": "Midnight Ranch Attacks"
+  },
+  {
+    "row": 607,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformNovacChupacabraNote",
+    "en": "Dusty McBride wants you to look into the nightly shootings of his livestock, which he says tend to occur around midnight. Being at the brahmin pen at that time would seem to be the best way to catch the culprit."
+  },
+  {
+    "row": 608,
+    "type": "NOTE:FULL",
+    "editor": "VNovacGreatKhansNote",
+    "en": "Message: Khan Hospitality"
+  },
+  {
+    "row": 609,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformNovacSnipersRevengeNote",
+    "en": "Sniper's Justice"
+  },
+  {
+    "row": 610,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformNovacSnipersRevengeNote",
+    "en": "Boone, one of the snipers posted in the model dinosaur in Novac, has enlisted you to try and find out who in town sold his wife to Caesar's Legion. He has requested that, should you find the person responsible, you lead them out in front of the dinosaur while he is on duty. You are to put on his beret as a signal that the person you've brought there is the guilty party."
+  },
+  {
+    "row": 611,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformNovacRangerStationNote",
+    "en": "Check on Ranger Station Charlie"
+  },
+  {
+    "row": 612,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformNovacRangerStationNote",
+    "en": "Ranger Andy is hoping to learn more about why he's lost radio contact with the NCR garrison at Ranger Station Charlie."
+  },
+  {
+    "row": 613,
+    "type": "NOTE:FULL",
+    "editor": "RepconGenNote2",
+    "en": "Public Kitchen"
+  },
+  {
+    "row": 614,
+    "type": "NOTE:FULL",
+    "editor": "RepconGenNote1",
+    "en": "Public Kitchen"
+  },
+  {
+    "row": 615,
+    "type": "NOTE:FULL",
+    "editor": "REPCONNotePassword",
+    "en": "Storage Room Safe"
+  },
+  {
+    "row": 616,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformNovacBillOfSale",
+    "en": "Bill of Sale"
+  },
+  {
+    "row": 617,
+    "type": "NOTE:FULL",
+    "editor": "RSCharlieAudioLog02",
+    "en": "Ranger Station Charlie Audio Log 2"
+  },
+  {
+    "row": 618,
+    "type": "NOTE:FULL",
+    "editor": "RSCharlieAudioLog01",
+    "en": "Ranger Station Charlie Audio Log 1"
+  },
+  {
+    "row": 619,
+    "type": "NOTE:FULL",
+    "editor": "CapitalPostTerminalNote3b",
+    "en": "CapitalPostTerminalNote3b"
+  },
+  {
+    "row": 620,
+    "type": "NOTE:FULL",
+    "editor": "HitSquadNoteGoodGuys",
+    "en": "Bounty Notice: &PCName;"
+  },
+  {
+    "row": 621,
+    "type": "NOTE:FULL",
+    "editor": "HitSquadNoteBadGuys",
+    "en": "Private Contract: Kill &PCName;!"
+  },
+  {
+    "row": 622,
+    "type": "NOTE:FULL",
+    "editor": "SuitHolo",
+    "en": "Burn this Goddamn Jumpsuit"
+  },
+  {
+    "row": 623,
+    "type": "NOTE:FULL",
+    "editor": "HamHideNote06",
+    "en": "HamHideNote01"
+  },
+  {
+    "row": 624,
+    "type": "NOTE:TNAM",
+    "editor": "HamHideNote06",
+    "en": "His hair was falling out within a week of him showing up.  I wanted to believe we could save him, but there's no way a few iodine tablets a day was going to reverse the radiation he must have been exposed to out there.  He was a good man.  He deserves better, but I can't go out there and give him a proper burial.  Maggie's going to stay up with Robin and let her play some holotapes loud tonight.  That's when I'll take Frank in the back and cremate him.  I wish our furnace was big enough to hold him in one piece.  God help us.  How could it have come to this?<//end>"
+  },
+  {
+    "row": 625,
+    "type": "NOTE:FULL",
+    "editor": "HamHideNote05",
+    "en": "HamHideNote01"
+  },
+  {
+    "row": 626,
+    "type": "NOTE:TNAM",
+    "editor": "HamHideNote05",
+    "en": "Frank's in bad shape, arms and face are all burned up.  He's got a lot of blisters that look infected.  He went through hell out there.  Hardly anybody alive, and those he met almost did him in.  He tried getting into a Vault near Burkittsville.  They wouldn't open up and he was almost killed in an ambush on his way out of there.  He said those folks wore skins of men.  Cannibal bastards must just wait for their next meal to come looking for help at the Vault.  Frank steered clear of them and headed straight here after that.  He's been on his feet for weeks.<//end>"
+  },
+  {
+    "row": 627,
+    "type": "NOTE:FULL",
+    "editor": "HamHideNote04",
+    "en": "HamHideNote01"
+  },
+  {
+    "row": 628,
+    "type": "NOTE:FULL",
+    "editor": "HamHideNote03",
+    "en": "HamHideNote01"
+  },
+  {
+    "row": 629,
+    "type": "NOTE:FULL",
+    "editor": "HamHideNote02",
+    "en": "HamHideNote01"
+  },
+  {
+    "row": 630,
+    "type": "NOTE:TNAM",
+    "editor": "HamHideNote02",
+    "en": "Robin wanted to play with the computer for Christmas, so I siphoned some juice from the fusion generator to power this old thing.  I know she'd rather be playing outside in the snow, but she's a good kid.  Knows that we can't go outside yet.  I'll check the fallout levels again tomorrow while she's playing, but I doubt we'll be heading out anytime soon.  Damn commies must have hit us hard.<//end>"
+  },
+  {
+    "row": 631,
+    "type": "NOTE:FULL",
+    "editor": "HamHideNote01",
+    "en": "HamHideNote01"
+  },
+  {
+    "row": 632,
+    "type": "NOTE:FULL",
+    "editor": "NeighborlyLetter",
+    "en": "Neighborly Letter"
+  },
+  {
+    "row": 633,
+    "type": "NOTE:FULL",
+    "editor": "Vault101RejectionLetter",
+    "en": "Letter from Vault-Tec"
+  },
+  {
+    "row": 634,
+    "type": "NOTE:FULL",
+    "editor": "Vault101AcceptanceLetter",
+    "en": "Letter from Vault-Tec"
+  },
+  {
+    "row": 635,
+    "type": "NOTE:FULL",
+    "editor": "BountyJundersPlunkett",
+    "en": "Bounty Notice: Junders Plunkett"
+  },
+  {
+    "row": 636,
+    "type": "NOTE:FULL",
+    "editor": "CommuneNote09",
+    "en": "CommuneNote01"
+  },
+  {
+    "row": 637,
+    "type": "NOTE:TNAM",
+    "editor": "CommuneNote09",
+    "en": "Nobody ought concern themselves too much with Miguel's scouting report.  While he did spot some folk out past the valley, they rode by and weren't like to have noticed him or us.  Let's all just keep to the homestead for a few days and avoid using open fires for a few days, just to be safe."
+  },
+  {
+    "row": 638,
+    "type": "NOTE:FULL",
+    "editor": "CommuneNote08",
+    "en": "CommuneNote01"
+  },
+  {
+    "row": 639,
+    "type": "NOTE:TNAM",
+    "editor": "CommuneNote08",
+    "en": "I'm trying to fabricate a windmill for us.  If anybody spots any long, flat sheets of metal, you let me know.  I have most of the other parts I need, but haven't found good metal for the blades yet."
+  },
+  {
+    "row": 640,
+    "type": "NOTE:FULL",
+    "editor": "CommuneNote07",
+    "en": "CommuneNote01"
+  },
+  {
+    "row": 641,
+    "type": "NOTE:TNAM",
+    "editor": "CommuneNote07",
+    "en": "Been a good few months for us since the coming out.  Going by the dosimeter tests, we're taking some exposure to radiation, but as long as Doc Johanson keeps folks on their meds, we don't seem to be having trouble with rad sickness.  Irrigation and fertilization has been good, and though we lost the goats and chickens, the cows have done good.  Those hardy beasts don't seem to mind this new world.  Miles and Jacky are devoting some time to husbandry to keep the cows breeding and available."
+  }
+]

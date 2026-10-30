@@ -1,0 +1,33 @@
+{
+  "ok": [
+    "F0002.json",
+    "F0042.json",
+    "F0082.json",
+    "F0122.json",
+    "F0162.json",
+    "F0202.json",
+    "F0242.json",
+    "F0282.json",
+    "F0322.json",
+    "F0362.json",
+    "F0402.json",
+    "F0442.json",
+    "F0482.json",
+    "F0522.json",
+    "F0562.json",
+    "F1002.json"
+  ],
+  "pending": [
+    "F0602.json",
+    "F0642.json",
+    "F0682.json",
+    "F0722.json",
+    "F0762.json",
+    "F0802.json",
+    "F0842.json",
+    "F0882.json",
+    "F0922.json",
+    "F0962.json"
+  ],
+  "failures": []
+}

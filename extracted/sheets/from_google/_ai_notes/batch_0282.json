@@ -1,0 +1,242 @@
+[
+  {
+    "row": 282,
+    "type": "NOTE:FULL",
+    "editor": "VNCREmbassyPappasLog2",
+    "en": "Jake Erwin Report"
+  },
+  {
+    "row": 283,
+    "type": "NOTE:TNAM",
+    "editor": "VNCREmbassyPappasLog2",
+    "en": "Private Erwin has been causing trouble again. His pranks are starting to go a little too far. One more complaint and I'll put him behind bars."
+  },
+  {
+    "row": 284,
+    "type": "NOTE:FULL",
+    "editor": "VNCREmbassyPappasLog1",
+    "en": "Strip Security Report"
+  },
+  {
+    "row": 285,
+    "type": "NOTE:TNAM",
+    "editor": "VNCREmbassyPappasLog1",
+    "en": "I've notice and increase in the amount of smuggling of restricted items into the Strip. I'm increasing security at the checkpoints to prevent more of this. A report has been sent to Ambassador Crocker via Liza to address this."
+  },
+  {
+    "row": 286,
+    "type": "NOTE:FULL",
+    "editor": "VNCREmbassyLog3",
+    "en": "Report from Captain Pappas"
+  },
+  {
+    "row": 287,
+    "type": "NOTE:FULL",
+    "editor": "VNCREmbassyLog2",
+    "en": "Generic Embassy Info"
+  },
+  {
+    "row": 288,
+    "type": "NOTE:FULL",
+    "editor": "VNCREmbassyLog1",
+    "en": "Liza O'Malley's Personal Files"
+  },
+  {
+    "row": 289,
+    "type": "NOTE:FULL",
+    "editor": "VNCREmbassyCrockerLog4",
+    "en": "Fiend Report"
+  },
+  {
+    "row": 290,
+    "type": "NOTE:TNAM",
+    "editor": "VNCREmbassyCrockerLog4",
+    "en": "The Fiends have been more active outside New Vegas. The NCR troops stationed at Camp McCarran are handling this for now, but the situation needs to be monitored."
+  },
+  {
+    "row": 291,
+    "type": "NOTE:FULL",
+    "editor": "VNCREmbassyCrockerLog3",
+    "en": "Farming Report"
+  },
+  {
+    "row": 292,
+    "type": "NOTE:TNAM",
+    "editor": "VNCREmbassyCrockerLog3",
+    "en": "Our farms on the east side of New Vegas are producing a good amount of crops. With the additional water allocated from Hoover Dam, we can increase the number of farms over the next few years by a substantial amount. That means more residents inclined to vote for annexation."
+  },
+  {
+    "row": 293,
+    "type": "NOTE:FULL",
+    "editor": "VNCREmbassyCrockerLog2",
+    "en": "Freeside Report"
+  },
+  {
+    "row": 294,
+    "type": "NOTE:TNAM",
+    "editor": "VNCREmbassyCrockerLog2",
+    "en": "Reports are coming in from Freeside detailing a rise in violence against NCR Citizens. We're going to need to look into this. All sources indicate that Pacer is involved, of course."
+  },
+  {
+    "row": 295,
+    "type": "NOTE:FULL",
+    "editor": "VNCREmbassyCrockerLog1",
+    "en": "Informant Report"
+  },
+  {
+    "row": 296,
+    "type": "NOTE:TNAM",
+    "editor": "VNCREmbassyCrockerLog1",
+    "en": "Latest information from our inside source reports that the Omertas are unhappy with House. We may be able to use this as leverage against him."
+  },
+  {
+    "row": 297,
+    "type": "NOTE:FULL",
+    "editor": "VNCREmbassyDispatch2",
+    "en": "Ambassador Susanna Edith's Final Report"
+  },
+  {
+    "row": 298,
+    "type": "NOTE:FULL",
+    "editor": "VNCREmbassyDispatch1",
+    "en": "Ambassador Phillip Granger's Final Report"
+  },
+  {
+    "row": 299,
+    "type": "NOTE:FULL",
+    "editor": "SVTerminalNote01",
+    "en": "Vault Status Log"
+  },
+  {
+    "row": 300,
+    "type": "NOTE:FULL",
+    "editor": "V21Control01",
+    "en": "Control Options"
+  },
+  {
+    "row": 301,
+    "type": "NOTE:TNAM",
+    "editor": "V21Control01",
+    "en": "ACCESS DENIED... SYSTEM OVERRIDE ---> HOUSE MAINFRAME."
+  },
+  {
+    "row": 302,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformLucky38NoteElDorado",
+    "en": "El Dorado Power"
+  },
+  {
+    "row": 303,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformLucky38NoteElDorado",
+    "en": "Power from El Dorado has been directed to the Lucky 38 Reactor."
+  },
+  {
+    "row": 304,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformLucky38NoteReactor",
+    "en": "Lucky 38 Reactor"
+  },
+  {
+    "row": 305,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformLucky38NoteReactor",
+    "en": "Reactor Terminal."
+  },
+  {
+    "row": 306,
+    "type": "NOTE:FULL",
+    "editor": "VMSRSGlobalCommBreakdownListNoCharlie",
+    "en": "Sgt. Reyes List"
+  },
+  {
+    "row": 307,
+    "type": "NOTE:FULL",
+    "editor": "VMSRSGlobalCommBreakdownList",
+    "en": "Sgt. Reyes List"
+  },
+  {
+    "row": 308,
+    "type": "NOTE:FULL",
+    "editor": "VMS30RichardsMedicalReport",
+    "en": "Dr. Richards Medical Report"
+  },
+  {
+    "row": 309,
+    "type": "NOTE:FULL",
+    "editor": "CFHNCRSextonNote1",
+    "en": "Sexton's Note"
+  },
+  {
+    "row": 310,
+    "type": "NOTE:FULL",
+    "editor": "CFHNCRDogtagNote1",
+    "en": "Mayes Request"
+  },
+  {
+    "row": 311,
+    "type": "NOTE:TNAM",
+    "editor": "CFHNCRDogtagNote1",
+    "en": "The NCR at Camp Forlorn Hope are short on supplies. Quartermaster Mayes is looking for Holotags to track fallen soldiers and reallocate inventory. Your assistance will be appreciated."
+  },
+  {
+    "row": 312,
+    "type": "NOTE:FULL",
+    "editor": "VMSRSFoxtrotLogNote",
+    "en": "Kudlow's Log"
+  },
+  {
+    "row": 313,
+    "type": "NOTE:FULL",
+    "editor": "VMSRSEchoLogNote",
+    "en": "Erasmus' Log"
+  },
+  {
+    "row": 314,
+    "type": "NOTE:FULL",
+    "editor": "VMSRSCharlieLogNote",
+    "en": "Charlie Station Requsition List"
+  },
+  {
+    "row": 315,
+    "type": "NOTE:FULL",
+    "editor": "VMSRSBravoLogNote",
+    "en": "Ericsen's Log"
+  },
+  {
+    "row": 316,
+    "type": "NOTE:FULL",
+    "editor": "VMSRSAlphaLogNote",
+    "en": "Lineholm's Log"
+  },
+  {
+    "row": 317,
+    "type": "NOTE:FULL",
+    "editor": "VFSForgedJetNote",
+    "en": "Forged Jet Theft Note"
+  },
+  {
+    "row": 318,
+    "type": "NOTE:FULL",
+    "editor": "VFSRealJetNote",
+    "en": "Jean-Baptiste's Jet Theft Note"
+  },
+  {
+    "row": 319,
+    "type": "NOTE:FULL",
+    "editor": "VFSPacerPatientRecord",
+    "en": "Pacer's Patient Record"
+  },
+  {
+    "row": 320,
+    "type": "NOTE:FULL",
+    "editor": "V21SarahMail02",
+    "en": "Your hotel rocks"
+  },
+  {
+    "row": 321,
+    "type": "NOTE:FULL",
+    "editor": "V21SarahPassword",
+    "en": "Buttercup"
+  }
+]

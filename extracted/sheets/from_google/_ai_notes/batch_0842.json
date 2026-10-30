@@ -1,0 +1,242 @@
+[
+  {
+    "row": 842,
+    "type": "NOTE:FULL",
+    "editor": "RCMeiWongNote",
+    "en": "Mei Wong"
+  },
+  {
+    "row": 843,
+    "type": "NOTE:TNAM",
+    "editor": "RCMeiWongNote",
+    "en": "Mei Wong is afraid of a man named Sister in Rivet City who she thinks is a slaver."
+  },
+  {
+    "row": 844,
+    "type": "NOTE:FULL",
+    "editor": "RCSeagraveLetter",
+    "en": "Seagrave's Incriminating Letter"
+  },
+  {
+    "row": 845,
+    "type": "NOTE:FULL",
+    "editor": "RCBannonRequest",
+    "en": "Bannon's Request"
+  },
+  {
+    "row": 846,
+    "type": "NOTE:TNAM",
+    "editor": "RCBannonRequest",
+    "en": "Bannon has asked me to search Seagrave Holmes' room to see if I can find anything incriminating about him. Then Bannon can stop him from taking over his council seat."
+  },
+  {
+    "row": 847,
+    "type": "NOTE:FULL",
+    "editor": "GameDefeatGrelok",
+    "en": "A text note"
+  },
+  {
+    "row": 848,
+    "type": "NOTE:FULL",
+    "editor": "GameTalkWizard01d",
+    "en": "A text note"
+  },
+  {
+    "row": 849,
+    "type": "NOTE:FULL",
+    "editor": "GameTalkWizard01c",
+    "en": "A text note"
+  },
+  {
+    "row": 850,
+    "type": "NOTE:FULL",
+    "editor": "GameTalkWizard01b",
+    "en": "A text note"
+  },
+  {
+    "row": 851,
+    "type": "NOTE:FULL",
+    "editor": "GameTalkWizard01a",
+    "en": "A text note"
+  },
+  {
+    "row": 852,
+    "type": "NOTE:FULL",
+    "editor": "GameExamineChurch01a",
+    "en": "A text note"
+  },
+  {
+    "row": 853,
+    "type": "NOTE:FULL",
+    "editor": "GameLookEast01c",
+    "en": "A text note"
+  },
+  {
+    "row": 854,
+    "type": "NOTE:FULL",
+    "editor": "GameTalkPriest01c",
+    "en": "A text note"
+  },
+  {
+    "row": 855,
+    "type": "NOTE:FULL",
+    "editor": "GameTalkPriest01b",
+    "en": "A text note"
+  },
+  {
+    "row": 856,
+    "type": "NOTE:FULL",
+    "editor": "GameTalkSmithy01b",
+    "en": "A text note"
+  },
+  {
+    "row": 857,
+    "type": "NOTE:FULL",
+    "editor": "GameTalkSmithy01a",
+    "en": "A text note"
+  },
+  {
+    "row": 858,
+    "type": "NOTE:FULL",
+    "editor": "GameExamineGrave01b",
+    "en": "A text note"
+  },
+  {
+    "row": 859,
+    "type": "NOTE:FULL",
+    "editor": "GameExamineGrave01c",
+    "en": "A text note"
+  },
+  {
+    "row": 860,
+    "type": "NOTE:TNAM",
+    "editor": "GameExamineGrave01c",
+    "en": "There is a deep, empty grave in the cemetery. Several bloated rats and a zombie corpse float in a foot of filthy water at the bottom.  Don't fall in!"
+  },
+  {
+    "row": 861,
+    "type": "NOTE:FULL",
+    "editor": "GameExamineGrave01a",
+    "en": "A text note"
+  },
+  {
+    "row": 862,
+    "type": "NOTE:TNAM",
+    "editor": "GameExamineGrave01a",
+    "en": "There is a deep, empty grave in the cemetery.  Several bloated rats floating in a foot of filthy water at the bottom.  Don't fall in!"
+  },
+  {
+    "row": 863,
+    "type": "NOTE:FULL",
+    "editor": "GameTalkPriest01a",
+    "en": "A text note"
+  },
+  {
+    "row": 864,
+    "type": "NOTE:FULL",
+    "editor": "GameLookEast01b",
+    "en": "A text note"
+  },
+  {
+    "row": 865,
+    "type": "NOTE:FULL",
+    "editor": "GameLookWest",
+    "en": "A text note"
+  },
+  {
+    "row": 866,
+    "type": "NOTE:FULL",
+    "editor": "GameLookEast01a",
+    "en": "A text note"
+  },
+  {
+    "row": 867,
+    "type": "NOTE:FULL",
+    "editor": "GameLookSouth01a",
+    "en": "A text note"
+  },
+  {
+    "row": 868,
+    "type": "NOTE:FULL",
+    "editor": "GameLookNorth01b",
+    "en": "A text note"
+  },
+  {
+    "row": 869,
+    "type": "NOTE:FULL",
+    "editor": "GameLookNorth01a",
+    "en": "A text note"
+  },
+  {
+    "row": 870,
+    "type": "NOTE:FULL",
+    "editor": "LOBEnterpriseNote10",
+    "en": "Emergency Procedures"
+  },
+  {
+    "row": 871,
+    "type": "NOTE:FULL",
+    "editor": "LOBsecurityPhoto01",
+    "en": "Terminal Entry"
+  },
+  {
+    "row": 872,
+    "type": "NOTE:FULL",
+    "editor": "LOBsecurityNote01",
+    "en": "Terminal Entry"
+  },
+  {
+    "row": 873,
+    "type": "NOTE:FULL",
+    "editor": "LOBlabNote04",
+    "en": "Terminal Entry"
+  },
+  {
+    "row": 874,
+    "type": "NOTE:FULL",
+    "editor": "LOBlabNote03",
+    "en": "Terminal Entry"
+  },
+  {
+    "row": 875,
+    "type": "NOTE:FULL",
+    "editor": "LOBlabNote02",
+    "en": "Terminal Entry"
+  },
+  {
+    "row": 876,
+    "type": "NOTE:FULL",
+    "editor": "LOBlabNote01",
+    "en": "Terminal Entry"
+  },
+  {
+    "row": 877,
+    "type": "NOTE:FULL",
+    "editor": "MamaDolceNote05",
+    "en": "Secure Transmission"
+  },
+  {
+    "row": 878,
+    "type": "NOTE:FULL",
+    "editor": "MamaDolceNote04",
+    "en": "Radiation Warning"
+  },
+  {
+    "row": 879,
+    "type": "NOTE:FULL",
+    "editor": "MamaDolceNote03",
+    "en": "Human Resources"
+  },
+  {
+    "row": 880,
+    "type": "NOTE:FULL",
+    "editor": "MamaDolceNote01",
+    "en": "Resource Levels"
+  },
+  {
+    "row": 881,
+    "type": "NOTE:FULL",
+    "editor": "MamaDolceNote02",
+    "en": "Quarterly Analysis"
+  }
+]

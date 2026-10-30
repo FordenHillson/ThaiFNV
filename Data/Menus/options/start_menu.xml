@@ -1,0 +1,1806 @@
+<menu name="StartMenu">
+	<class>&StartMenu;</class>
+	<stackingtype>&no_click_past;</stackingtype>
+	<_PanelWidth><copy src="sibling(HUDMainMenu)" trait="_PanelWidth" /></_PanelWidth>
+	<_PanelHeight><copy src="sibling(HUDMainMenu)" trait="_PanelHeight" /></_PanelHeight>
+	<_OColor><copy src="sibling(HUDMainMenu)" trait="_HUDOverrideColor" /></_OColor>
+	<_OColorState><copy src="child(OverrideColorBtn)" trait="_State" /></_OColorState>
+	<_HUDRed></_HUDRed>
+	<_HUDGreen></_HUDGreen>
+	<_HUDBlue></_HUDBlue>
+	<_HUDTxtRed></_HUDTxtRed>
+	<_HUDTxtGreen></_HUDTxtGreen>
+	<_HUDTxtBlue></_HUDTxtBlue>
+	<_HUDScale><copy src="sibling(HUDMainMenu)" trait="_HUDScale" /></_HUDScale>
+	<_HUDSolidMeters><copy src="sibling(HUDMainMenu)" trait="_HUDSolidMeters" /></_HUDSolidMeters>
+	<_HUDMeterFontStart>4</_HUDMeterFontStart>
+	<_HUDMeterFont><copy src="sibling(HUDMainMenu)" trait="_HUDMeterFont" /></_HUDMeterFont>
+	<_HUDHPArea><copy src="sibling(HUDMainMenu)" trait="_HUDShowHPInfo" /></_HUDHPArea>
+	<_HUDHPAreaX></_HUDHPAreaX>
+	<_HUDHPAreaY></_HUDHPAreaY>
+	<_HUDCompass><copy src="sibling(HUDMainMenu)" trait="_HUDShowCompass" /></_HUDCompass>
+	<_HUDDetachCompass><copy src="sibling(HUDMainMenu)" trait="_HUDDetachCompass" /></_HUDDetachCompass>
+	<_HUDCompass_X></_HUDCompass_X>
+	<_HUDCompass_Y></_HUDCompass_Y>
+	<_HUDCompassFrame><copy src="sibling(HUDMainMenu)" trait="_HUDCompassFrame" /></_HUDCompassFrame>
+	<_HUDShowQuestMarkers><copy src="sibling(HUDMainMenu)" trait="_HUDShowQuestMarkers" /></_HUDShowQuestMarkers>
+	<_HUDShowLandmarks><copy src="sibling(HUDMainMenu)" trait="_HUDShowLandmarks" /></_HUDShowLandmarks>
+	<_HUDShowNPC><copy src="sibling(HUDMainMenu)" trait="_HUDShowNPC" /></_HUDShowNPC>
+	<_HUDShowEnemies><copy src="sibling(HUDMainMenu)" trait="_HUDShowEnemies" /></_HUDShowEnemies>
+	<_HUDMarkEnemies><copy src="sibling(HUDMainMenu)" trait="_HUDMarkEnemies" /></_HUDMarkEnemies>
+	<_DColor><copy src="sibling(HUDMainMenu)" trait="_HUDDynamicColors" /></_DColor>
+	<_DColorState><copy src="child(DynamicColorBtn)" trait="_State" /></_DColorState>
+	<_dcWarnLvl></_dcWarnLvl>
+	<_dcAlertLvl></_dcAlertLvl>
+	<_cwRed></_cwRed>
+	<_cwGreen></_cwGreen>
+	<_cwBlue></_cwBlue>
+	<_caRed></_caRed>
+	<_caGreen></_caGreen>
+	<_caBlue></_caBlue>
+	<_RedState><copy src="child(ACRedScrub)" trait="_State" /></_RedState>
+	<_GreenState><copy src="child(ACGreenScrub)" trait="_State" /></_GreenState>
+	<_BlueState><copy src="child(ACBlueScrub)" trait="_State" /></_BlueState>
+	<_RedTxtState><copy src="child(TCRedScrub)" trait="_State" /></_RedTxtState>
+	<_GreenTxtState><copy src="child(TCGreenScrub)" trait="_State" /></_GreenTxtState>
+	<_BlueTxtState><copy src="child(TCBlueScrub)" trait="_State" /></_BlueTxtState>
+	<_xPanels><copy src="sibling(HUDMainMenu)" trait="_xPanels" /></_xPanels>
+	<_xPanelsX></_xPanelsX>
+	<_xPanelsY></_xPanelsY>
+	<_xBrackets><copy src="sibling(HUDMainMenu)" trait="_xBrackets" /></_xBrackets>
+	<_xTime><copy src="sibling(HUDMainMenu)" trait="_xTime" /></_xTime>
+	<_xTimeClock></_xTimeClock>
+	<_xHUDTimeClock><copy src="sibling(HUDMainMenu)" trait="_xTimeClock" /></_xHUDTimeClock>
+	<_xTimeDate></_xTimeDate>
+	<_xHUDTimeDate><copy src="sibling(HUDMainMenu)" trait="_xTimeDate" /></_xHUDTimeDate>
+	<_xTimeSDF><copy src="sibling(HUDMainMenu)" trait="_xTimeSDF" /></_xTimeSDF>
+	<_xTimeScale><copy src="sibling(HUDMainMenu)" trait="_xTimeScale" /></_xTimeScale>
+	<_xKarma><copy src="sibling(HUDMainMenu)" trait="_xKarma" /></_xKarma>
+	<_xKarmaMeter><copy src="sibling(HUDMainMenu)" trait="_xKarmaMeter" /></_xKarmaMeter>
+	<_xKarmaAlignment><copy src="sibling(HUDMainMenu)" trait="_xKarmaAlignment" /></_xKarmaAlignment>
+	<_xXP><copy src="sibling(HUDMainMenu)" trait="_xXP" /></_xXP>
+	<_xXPMeter><copy src="sibling(HUDMainMenu)" trait="_xXPMeter" /></_xXPMeter>
+	<_xRad><copy src="sibling(HUDMainMenu)" trait="_xRad" /></_xRad>
+	<_xRadMeter><copy src="sibling(HUDMainMenu)" trait="_xRadMeter" /></_xRadMeter>
+	<_xRadCurrent><copy src="sibling(HUDMainMenu)" trait="_xRadCurrent" /></_xRadCurrent>
+	<_xStats><copy src="sibling(HUDMainMenu)" trait="_xStats" /></_xStats>
+	<_xStatsDM></_xStatsDM>
+	<_xHUDStatsDM><copy src="sibling(HUDMainMenu)" trait="_xStatsDM" /></_xHUDStatsDM>
+	<_xStatsEN><copy src="sibling(HUDMainMenu)" trait="_xStatsEN" /></_xStatsEN>
+	<_xStatsCC><copy src="sibling(HUDMainMenu)" trait="_xStatsCC" /></_xStatsCC>
+	<_xStatsDR><copy src="sibling(HUDMainMenu)" trait="_xStatsDR" /></_xStatsDR>
+	<_xStatsPR><copy src="sibling(HUDMainMenu)" trait="_xStatsPR" /></_xStatsPR>
+	<_xStatsFR><copy src="sibling(HUDMainMenu)" trait="_xStatsFR" /></_xStatsFR>
+	<_xStatsFO><copy src="sibling(HUDMainMenu)" trait="_xStatsFO" /></_xStatsFO>
+	<_xStatsEL><copy src="sibling(HUDMainMenu)" trait="_xStatsEL" /></_xStatsEL>
+	<_xStatsER><copy src="sibling(HUDMainMenu)" trait="_xStatsER" /></_xStatsER>
+	<_xStatsEM><copy src="sibling(HUDMainMenu)" trait="_xStatsEM" /></_xStatsEM>
+	<_xStatsRR><copy src="sibling(HUDMainMenu)" trait="_xStatsRR" /></_xStatsRR>
+	<_DUINVSettingsMode><copy src="sibling(HUDMainMenu)" trait="_DUINVSettingsMode" /></_DUINVSettingsMode>
+	<alpha>0</alpha>
+	<locus>&true;</locus>
+	<explorefade>0.25</explorefade>
+	<brightness>255</brightness>
+	<_isPauseMenu>
+		<copy src="main_container" trait="childcount" />
+		<eq>8</eq>
+	</_isPauseMenu>
+	<_isGamePlayMenu>
+		<copy src="options_container" trait="childcount" />
+		<eq>9</eq>
+	</_isGamePlayMenu>
+	<_isDisplayMenu>
+		<copy src="options_container" trait="childcount" />
+		<eq>19</eq>
+	</_isDisplayMenu>
+	<_isAudioMenu>
+		<copy src="options_container" trait="childcount" />
+		<eq>8</eq>
+	</_isAudioMenu>
+	<_isControlsMenu>
+		<copy src="options_container" trait="childcount" />
+		<eq>5</eq>
+	</_isControlsMenu>
+	<_isControlsMapping>
+		<copy src="options_container" trait="childcount" />
+		<eq>23</eq>
+	</_isControlsMapping>
+	<_item_height>32</_item_height>
+	<_center_x></_center_x>
+	<_use_ps3_saveload_settings>&false;</_use_ps3_saveload_settings>
+	<_duiVersion>0.0.5.P18</_duiVersion>
+	<_NVSE_MajorV></_NVSE_MajorV>
+	<_NVSE_MinorV></_NVSE_MinorV>
+	<_NVSE_BetaV></_NVSE_BetaV>
+	<_NVSE><copy src="sibling(HUDMainMenu)" trait="_NVSE" /></_NVSE>
+	<_JIPLNVersion></_JIPLNVersion>
+	<_TTWVersion></_TTWVersion>
+	<_JGVersion></_JGVersion>
+	<_STVersion></_STVersion>
+	<_UIOVersion></_UIOVersion>
+	<_TFVersion></_TFVersion>
+	<_ANHVersion></_ANHVersion>
+	<_SOVersion></_SOVersion>
+	<_SUPVersion></_SUPVersion>
+	<_kVersion></_kVersion>
+	<_MCMVersion></_MCMVersion>
+	<_PCButton_X>settings_toggle_off</_PCButton_X>
+	<_PCButton_R>resetBtn</_PCButton_R>
+	<xbuttonx><ref src="resetBtn" trait="clicked"/></xbuttonx>
+	<xbuttonrt><ref src="DUIF3Btn" trait="clicked"/></xbuttonrt>
+	<xbuttonrb><ref src="settings_toggle_off" trait="clicked"/></xbuttonrb>
+	<user0></user0>
+	<user1>360</user1>
+	<user2>360</user2>
+	<user3>320</user3>
+	<user4>320</user4>
+	<user5>&xbox;</user5>
+
+	<image name="NV_InfoHover">
+		<target>&true;</target>
+		<id>&generic;</id>
+		<_filename_0>interface\icons\message icons\glow_message_vaultboy_neutral.dds</_filename_0>
+		<_filename_1>interface\icons\message icons\glow_message_vaultboy_very_happy.dds</_filename_1>
+		<x>0</x>
+		<y>
+			<copy src="screen()" trait="height" />
+			<sub src="me()" trait="height" />
+		</y>
+		<height><copy src="dui_version_info" trait="height" /></height>
+		<width><copy src="me()" trait="height" /></width>
+		<zoom>&scale;</zoom>
+		<filename>
+			<copy src="me()" trait="mouseover" />
+			<copy src="me()" trait="_filename_" />
+		</filename>
+		<alpha>
+			<copy>100</copy>
+			<add>
+				<copy>155</copy>
+				<onlyif src="me()" trait="mouseover" />
+			</add>
+		</alpha>
+	</image>
+	<rect name="dui_version_info">
+		<depth>3</depth>
+		<locus>&true;</locus>
+		<systemcolor>&hudmain;</systemcolor>
+		<x>0</x>
+		<y>
+			<copy src="screen()" trait="height" />
+			<sub src="me()" trait="height" />
+			<sub src="child(main_version_clone)" trait="height" />
+			<sub src="child(dui_version)" trait="height" />
+			<sub src="child(NVSEVInfo)" trait="height" />
+			<sub src="child(JIPLNVInfo)" trait="height" />
+			<sub src="child(TTWVInfo)" trait="height" />
+			<sub src="child(JGVInfo)" trait="height" />
+			<sub src="child(STVInfo)" trait="height" />
+			<sub src="child(UIOVInfo)" trait="height" />
+			<sub src="child(TFVInfo)" trait="height" />
+			<sub src="child(ANHVInfo)" trait="height" />
+			<sub src="child(SOVInfo)" trait="height" />
+			<sub src="child(SUPVInfo)" trait="height" />
+			<sub src="child(kVInfo)" trait="height" />
+			<sub src="child(MCMInfo)" trait="height" />
+		</y>
+		<width>
+			<copy src="child(main_version_clone)" trait="x" />
+			<add>
+				<copy src="child(main_version_clone)" trait="width" />
+				<max src="child(dui_version)" trait="width" />
+				<max src="child(NvseVInfo)" trait="width" />
+			</add>
+		</width>
+		<height>
+			<copy src="child(dui_version_lbl)" trait="y" />
+			<add src="child(dui_version_lbl)" trait="height" />
+			<add src="child(NvseVInfo)" trait="height" />
+			<max src="NV_InfoHover" trait="height" />
+		</height>
+		<visible><not src="io()" trait="_DUINVSettingsMode" /></visible>
+		<text name="FNV_lbl">
+			<x>
+				<copy src="NV_InfoHover" trait="x" />
+				<add src="NV_InfoHover" trait="width" />
+			</x>
+			<y>
+				<copy src="sibling(dui_version)" trait="y" />
+				<sub src="me()" trait="height" />
+			</y>
+			<string>Fallout New Vegas</string>
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<font>4</font>
+		</text>
+		<text name="main_version">
+			<id>10</id>
+			<visible>&false;</visible>
+			<x>-9999</x>
+			<y>-9999</y>
+		</text>
+		<text name="main_version_clone">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<font>4</font>
+			<x>
+				<copy src="sibling(FNV_lbl)" trait="x" />
+				<add src="sibling(FNV_lbl)" trait="width" />
+				<add>8</add>
+			</x>
+			<y><copy src="sibling(FNV_lbl)" trait="y" /></y>
+			<string><copy src="sibling(main_version)" trait="string" /></string>
+		</text>
+		<text name="dui_version_lbl">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<string>DarNified UI NV</string>
+			<font>4</font>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="parent()" trait="height" />
+				<sub src="me()" trait="height" />
+				<div>2</div>
+				<add>
+					<copy src="me()" trait="height" />
+					<div>2</div>
+					<onlyifnot src="sibling(NvseVInfo)" trait="visible" />
+				</add>
+			</y>
+		</text>
+		<text name="dui_version">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<string><copy src="io()" trait="_duiVersion" /></string>
+			<font>4</font>
+			<x>
+				<copy src="sibling(dui_version_lbl)" trait="x" />
+				<add src="sibling(dui_version_lbl)" trait="width" />
+				<add>8</add>
+			</x>
+			<y><copy src="sibling(dui_version_lbl)" trait="y" /></y>
+		</text>
+
+		<rect name="NvseVInfo">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="sibling(dui_version)" trait="y" />
+				<add src="sibling(dui_version)" trait="height" />
+			</y>
+			<height><copy src="child(nvse_version_lbl)" trait="height" /></height>
+			<locus>&true;</locus>
+			<text name="nvse_version_lbl">
+				<string>Powered by xNVSE Version</string>
+				<font>4</font>
+				<x>0</x>
+				<y>0</y>
+			</text>
+			<text name="nvse_major_version">
+				<string><copy src="io()" trait="_NVSE_MajorV" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(nvse_version_lbl)" trait="x" />
+					<add src="sibling(nvse_version_lbl)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(nvse_version_lbl)" trait="y" /></y>
+			</text>
+			<text name="nvse_beta_label">
+				<string>b</string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(nvse_major_version)" trait="x" />
+					<add src="sibling(nvse_major_version)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(nvse_version_lbl)" trait="y" /></y>
+				<visible><copy src="io()" trait="_NVSE_BetaV" /></visible>
+			</text>
+			<text name="nvse_beta_version">
+				<string><copy src="io()" trait="_NVSE_BetaV" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(nvse_beta_label)" trait="x" />
+					<add src="sibling(nvse_beta_label)" trait="width" />
+				</x>
+				<y><copy src="sibling(nvse_version_lbl)" trait="y" /></y>
+				<visible><copy src="io()" trait="_NVSE_BetaV" /></visible>
+			</text>
+		</rect>
+
+		<rect name="JIPLNVInfo">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="sibling(NvseVInfo)" trait="y" />
+				<add src="sibling(NvseVInfo)" trait="height" />
+			</y>
+			<height><copy src="child(jipln_version_lbl)" trait="height" /></height>
+			<locus>&true;</locus>
+			<text name="jipln_version_lbl">
+				<string>JIP LN NVSE Version</string>
+				<font>4</font>
+				<x>0</x>
+				<y>0</y>
+			</text>
+			<text name="jipln_version">
+				<string><copy src="io()" trait="_JIPLNVersion" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(jipln_version_lbl)" trait="x" />
+					<add src="sibling(jipln_version_lbl)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(jipln_version_lbl)" trait="y" /></y>
+			</text>
+		</rect>
+
+		<rect name="TTWVInfo">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="sibling(JIPLNVInfo)" trait="y" />
+				<add src="sibling(JIPLNVInfo)" trait="height" />
+			</y>
+			<height><copy src="child(ttw_version_lbl)" trait="height" /></height>
+			<locus>&true;</locus>
+			<text name="ttw_version_lbl">
+				<string>TTW NVSE Version</string>
+				<font>4</font>
+				<x>0</x>
+				<y>0</y>
+			</text>
+			<text name="ttw_version">
+				<string><copy src="io()" trait="_TTWVersion" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(ttw_version_lbl)" trait="x" />
+					<add src="sibling(ttw_version_lbl)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(ttw_version_lbl)" trait="y" /></y>
+			</text>
+		</rect>
+
+		<rect name="JGVInfo">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="sibling(TTWVInfo)" trait="y" />
+				<add src="sibling(TTWVInfo)" trait="height" />
+			</y>
+			<height><copy src="child(jg_version_lbl)" trait="height" /></height>
+			<locus>&true;</locus>
+			<text name="jg_version_lbl">
+				<string>Johnny Guitar Version</string>
+				<font>4</font>
+				<x>0</x>
+				<y>0</y>
+			</text>
+			<text name="jg_version">
+				<string><copy src="io()" trait="_JGVersion" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(jg_version_lbl)" trait="x" />
+					<add src="sibling(jg_version_lbl)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(jg_version_lbl)" trait="y" /></y>
+			</text>
+		</rect>
+
+		<rect name="STVInfo">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="sibling(JGVInfo)" trait="y" />
+				<add src="sibling(JGVInfo)" trait="height" />
+			</y>
+			<height><copy src="child(st_version_lbl)" trait="height" /></height>
+			<locus>&true;</locus>
+			<text name="st_version_lbl">
+				<string>Stewies Tweaks Version</string>
+				<font>4</font>
+				<x>0</x>
+				<y>0</y>
+			</text>
+			<text name="st_version">
+				<string><copy src="io()" trait="_STVersion" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(st_version_lbl)" trait="x" />
+					<add src="sibling(st_version_lbl)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(st_version_lbl)" trait="y" /></y>
+			</text>
+		</rect>
+
+		<rect name="UIOVInfo">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="sibling(STVInfo)" trait="y" />
+				<add src="sibling(STVInfo)" trait="height" />
+			</y>
+			<height><copy src="child(uio_version_lbl)" trait="height" /></height>
+			<locus>&true;</locus>
+			<text name="uio_version_lbl">
+				<string>UIO Version</string>
+				<font>4</font>
+				<x>0</x>
+				<y>0</y>
+			</text>
+			<text name="uio_version">
+				<string><copy src="io()" trait="_UIOVersion" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(uio_version_lbl)" trait="x" />
+					<add src="sibling(uio_version_lbl)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(uio_version_lbl)" trait="y" /></y>
+			</text>
+		</rect>
+
+		<rect name="TFVInfo">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="sibling(UIOVInfo)" trait="y" />
+				<add src="sibling(UIOVInfo)" trait="height" />
+			</y>
+			<height><copy src="child(tf_version_lbl)" trait="height" /></height>
+			<locus>&true;</locus>
+			<text name="tf_version_lbl">
+				<string>Tick Fix Version</string>
+				<font>4</font>
+				<x>0</x>
+				<y>0</y>
+			</text>
+			<text name="tf_version">
+				<string><copy src="io()" trait="_TFVersion" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(tf_version_lbl)" trait="x" />
+					<add src="sibling(tf_version_lbl)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(tf_version_lbl)" trait="y" /></y>
+			</text>
+		</rect>
+
+		<rect name="ANHVInfo">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="sibling(TFVInfo)" trait="y" />
+				<add src="sibling(TFVInfo)" trait="height" />
+			</y>
+			<height><copy src="child(anh_version_lbl)" trait="height" /></height>
+			<locus>&true;</locus>
+			<text name="anh_version_lbl">
+				<string>AnhNVSE Version</string>
+				<font>4</font>
+				<x>0</x>
+				<y>0</y>
+			</text>
+			<text name="anh_version">
+				<string><copy src="io()" trait="_ANHVersion" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(anh_version_lbl)" trait="x" />
+					<add src="sibling(anh_version_lbl)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(anh_version_lbl)" trait="y" /></y>
+			</text>
+		</rect>
+
+		<rect name="SOVInfo">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="sibling(ANHVInfo)" trait="y" />
+				<add src="sibling(ANHVInfo)" trait="height" />
+			</y>
+			<height><copy src="child(so_version_lbl)" trait="height" /></height>
+			<locus>&true;</locus>
+			<text name="so_version_lbl">
+				<string>Show Off NVSE Version</string>
+				<font>4</font>
+				<x>0</x>
+				<y>0</y>
+			</text>
+			<text name="so_version">
+				<string><copy src="io()" trait="_SOVersion" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(so_version_lbl)" trait="x" />
+					<add src="sibling(so_version_lbl)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(so_version_lbl)" trait="y" /></y>
+			</text>
+		</rect>
+
+		<rect name="SUPVInfo">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="sibling(SOVInfo)" trait="y" />
+				<add src="sibling(SOVInfo)" trait="height" />
+			</y>
+			<height><copy src="child(sup_version_lbl)" trait="height" /></height>
+			<locus>&true;</locus>
+			<text name="sup_version_lbl">
+				<string>SUP Version</string>
+				<font>4</font>
+				<x>0</x>
+				<y>0</y>
+			</text>
+			<text name="sup_version">
+				<string><copy src="io()" trait="_SUPVersion" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(sup_version_lbl)" trait="x" />
+					<add src="sibling(sup_version_lbl)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(sup_version_lbl)" trait="y" /></y>
+			</text>
+		</rect>
+
+		<rect name="kVInfo">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="sibling(SUPVInfo)" trait="y" />
+				<add src="sibling(SUPVInfo)" trait="height" />
+			</y>
+			<height><copy src="child(k_version_lbl)" trait="height" /></height>
+			<locus>&true;</locus>
+			<text name="k_version_lbl">
+				<string>kNVSE Version</string>
+				<font>4</font>
+				<x>0</x>
+				<y>0</y>
+			</text>
+			<text name="k_version">
+				<string><copy src="io()" trait="_kVersion" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(k_version_lbl)" trait="x" />
+					<add src="sibling(k_version_lbl)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(k_version_lbl)" trait="y" /></y>
+			</text>
+		</rect>
+
+		<rect name="MCMVInfo">
+			<visible><copy src="NV_InfoHover" trait="mouseover" /></visible>
+			<x><copy src="sibling(FNV_lbl)" trait="x" /></x>
+			<y>
+				<copy src="sibling(kVInfo)" trait="y" />
+				<add src="sibling(kVInfo)" trait="height" />
+			</y>
+			<height><copy src="child(mcm_version_lbl)" trait="height" /></height>
+			<locus>&true;</locus>
+			<text name="mcm_version_lbl">
+				<string>MCM Version</string>
+				<font>4</font>
+				<x>0</x>
+				<y>0</y>
+			</text>
+			<text name="mcm_version">
+				<string><copy src="io()" trait="_MCMVersion" /></string>
+				<font>4</font>
+				<x>
+					<copy src="sibling(mcm_version_lbl)" trait="x" />
+					<add src="sibling(mcm_version_lbl)" trait="width" />
+					<add>8</add>
+				</x>
+				<y><copy src="sibling(mcm_version_lbl)" trait="y" /></y>
+			</text>
+		</rect>
+
+	</rect>
+	<image name="fontPosRectBG">
+		<depth>0</depth>
+		<visible>0</visible>
+		<height>
+			<copy src="screen()" trait="height" />
+			<div>2</div>
+		</height>
+		<width>
+			<copy src="screen()" trait="width" />
+			<div>2</div>
+		</width>
+		<locus>&false;</locus>
+		<filename>interface\shared\solid_black.dds</filename>
+		<alpha>200</alpha>
+		<x>
+			<copy src="screen()" trait="width" />
+			<sub src="me()" trait="width" />
+			<div>2</div>
+		</x>
+		<y>
+			<copy src="screen()" trait="height" />
+			<sub src="me()" trait="height" />
+			<div>2</div>
+		</y>
+		<rect name="fontPosRect">
+			<depth>1</depth>
+			<height>
+				<copy src="child(alignText)" trait="height" />
+				<add>8</add>
+			</height>
+			<width>
+				<copy src="child(alignText)" trait="width" />
+				<add>8</add>
+			</width>
+			<locus>&true;</locus>
+			<x>
+				<copy src="screen()" trait="width" />
+				<sub src="me()" trait="width" />
+				<div>2</div>
+			</x>
+			<y>
+				<copy src="screen()" trait="height" />
+				<sub src="me()" trait="height" />
+				<div>2</div>
+			</y>
+			<image name="tLine">
+				<include src="line.xml"/>
+				<_length><copy src="parent()" trait="width"/></_length>
+				<height>1</height>
+				<x>0</x>
+				<y>-1</y>
+			</image>
+			<image name="bLine">
+				<include src="line.xml"/>
+				<_length><copy src="parent()" trait="width"/></_length>
+				<height>1</height>
+				<x>0</x>
+				<y><copy src="parent()" trait="height"/></y>
+			</image>
+			<image name="lLine">
+				<include src="line.xml"/>
+				<width>1</width>
+				<_horizontal>&false;</_horizontal>
+				<height><copy src="parent()" trait="height"/></height>
+				<x>-1</x>
+				<y>0</y>
+			</image>
+			<image name="rLine">
+				<include src="line.xml"/>
+				<width>1</width>
+				<_horizontal>&false;</_horizontal>
+				<height><copy src="parent()" trait="height"/></height>
+				<x><copy src="parent()" trait="width"/></x>
+				<y>0</y>
+			</image>
+			<text name="alignText">
+				<systemcolor>&hudmain;</systemcolor>
+				<string>Czech:  �, �, �</string>
+				<font>6</font>
+				<x>
+					<copy src="parent()" trait="width" />
+					<sub src="me()" trait="width" />
+					<div>2</div>
+				</x>
+				<y>
+					<copy src="parent()" trait="height" />
+					<sub src="me()" trait="height" />
+					<div>2</div>
+				</y>
+			</text>
+		</rect>
+	</image>
+	<rect name="NOGLOW_BRANCH">
+		<id>&noglow_branch;</id>
+		<systemcolor>&hudmain;</systemcolor>
+		<locus>&true;</locus>
+		<depth>3</depth>
+		<x>0</x>
+		<y>0</y>
+		<width><copy src="screen()" trait="width" /></width>
+		<height><copy src="screen()" trait="height" /></height>
+		<_x_buffer>
+			<copy src="screen()" trait="cropx" />
+			<mul>2</mul>
+		</_x_buffer>
+		<nif name="pause_background">
+			<id>13</id>
+			<visible>
+				<not src="sibling(main_title)" trait="visible" />
+				<and><not src="io()" trait="_DUINVSettingsMode" /></and>
+			</visible>
+			<filename>Interface\PauseScreen\PauseScreen01.NIF</filename>
+			<x>
+				<copy src="screen()" trait="width" />
+				<div>2</div>
+			</x>
+			<y>480</y>
+			<systemcolor>&nosystemcolor;</systemcolor>
+		</nif>
+		<text name="main_press_start">
+			<id>9</id>
+			<visible>
+				<copy>&xbox;</copy>
+				<and><not src="sibling(main_container)" trait="visible" /></and>
+			</visible>
+			<alpha>0</alpha>
+			<depth>3</depth>
+			<font>7</font>
+			<justify>&right;</justify>
+			<string>&-sPressStart;</string>
+			<x>
+				<copy src="parent()" trait="width" />
+				<sub src="parent()" trait="_x_buffer" />
+			</x>
+			<y>
+				<copy src="parent()" trait="height" />
+				<sub>46</sub>
+				<div>2</div>
+			</y>
+		</text>
+		<hotrect name="main_container">
+			<include src="list_box.xml" />
+			<id>0</id>
+			<alpha>0</alpha>
+			<visible>
+				<copy src="me()" trait="_alpha" />
+				<gt>0</gt>
+				<and><not src="io()" trait="_DUINVSettingsMode" /></and>
+				<or src="io()" trait="_use_ps3_saveload_settings"/>
+			</visible>
+			<target>
+				<not src="me()" trait="_enabled" />
+				<and><not src="io()" trait="user5" /></and>
+			</target>
+			<x>
+				<copy src="parent()" trait="width" />
+				<sub src="me()" trait="width" />
+				<sub src="parent()" trait="_x_buffer" />
+			</x>
+			<y>
+				<copy src="parent()" trait="height" />
+				<sub src="me()" trait="height" />
+				<div>2</div>
+			</y>
+			<height>
+				<copy src="me()" trait="_number_of_visible_items" />
+				<mul>48</mul>
+			</height>
+			<width>375</width>
+			<_alpha></_alpha>
+			<_scrollbar_vis>&false;</_scrollbar_vis>
+			<_enabled>&false;</_enabled>
+			<_isMainMenu>&true;</_isMainMenu>
+			<_smalltext>&false;</_smalltext>
+			<xup> <ref src="MCM_Trigger" trait="mouseover"/> </xup> 
+		</hotrect>
+		<hotrect name="settings_container">
+			<include src="list_box.xml" />
+			<id>1</id>
+			<visible>
+				<copy src="me()" trait="_alpha" />
+				<gt>0</gt>
+			</visible>
+			<alpha>0</alpha>
+			<target>
+				<not src="me()" trait="_enabled" />
+				<and src="me()" trait="visible" />
+				<and><not src="io()" trait="user5" /></and>
+			</target>
+			<x>
+				<copy src="sibling(main_container)" trait="x" />
+				<sub src="me()" trait="width" />
+				<add>150</add>
+			</x>
+			<y><copy src="sibling(main_container)" trait="y" /></y>
+			<width>155</width>
+			<_number_of_visible_items>5</_number_of_visible_items>
+			<_alpha></_alpha>
+			<_enabled>&false;</_enabled>
+			<_scrollbar_vis>&false;</_scrollbar_vis>
+			<_isSettingsMenu>&true;</_isSettingsMenu>
+			<_smalltext>&false;</_smalltext>
+		</hotrect>
+		<image name="saveload_screenshot">
+			<id>11</id>
+			<depth>4</depth>
+			<visible>&false;</visible>
+			<filename>Interface\Main\main_title.dds</filename>
+			<x>
+				<copy src="sibling(saveload_container)" trait="x" />
+				<add src="lb_scrollbar" trait="width" />
+				<add src="sibling(saveload_container)" trait="_text_offset" />
+			</x>
+			<y>
+				<copy src="sibling(saveload_playername)" trait="y" />
+				<sub src="me()" trait="height" />
+				<sub>5</sub>
+			</y>
+			<systemcolor>&nosystemcolor;</systemcolor>
+		</image>
+		<text name="saveload_playername">
+			<systemcolor>&hudmain;</systemcolor>
+			<id>12</id>
+			<depth>4</depth>
+			<font>7</font>
+			<visible>&false;</visible>
+			<wrapwidth><copy src="sibling(saveload_container)" trait="width" /></wrapwidth>
+			<x><copy src="sibling(saveload_screenshot)" trait="x" /></x>
+			<y>
+367
+			</y>
+		</text>
+		<text name="saveload_playerlevel">
+			<id>18</id>
+			<depth>4</depth>
+			<font>6</font>
+			<visible>&false;</visible>
+			<systemcolor>&nosystemcolor;</systemcolor>
+			<x><copy src="sibling(saveload_screenshot)" trait="x" /></x>
+			<y>
+418
+			</y>
+		</text>
+		<text name="saveload_playtime">
+			<id>19</id>
+			<depth>4</depth>
+			<font>6</font>
+			<visible>&false;</visible>
+			<systemcolor>&nosystemcolor;</systemcolor>
+			<x><copy src="sibling(saveload_screenshot)" trait="x" /></x>
+			<y>
+449
+			</y>
+		</text>
+		<text name="saveload_version">
+			<id>22</id>
+			<depth>4</depth>
+			<font>6</font>
+			<visible>&false;</visible>
+			<systemcolor>&nosystemcolor;</systemcolor>
+			<x><copy src="sibling(saveload_screenshot)" trait="x"/></x>
+			<y>
+480
+			</y>
+		</text>
+		<hotrect name="saveload_container">
+			<include src="list_box.xml" />
+			<id>6</id>
+			<visible>
+				<copy src="me()" trait="_alpha" />
+				<gt>0</gt>
+			</visible>
+			<depth>4</depth>
+			<x>
+				<copy src="sibling(main_container)" trait="x" />
+				<sub src="me()" trait="width" />
+			</x>
+			<y>521</y>
+			<_number_of_visible_items>
+				<copy>11</copy>
+				<add>
+					<copy>1</copy>
+					<onlyif src="sibling(main_title)" trait="visible" />
+				</add>
+			</_number_of_visible_items>
+			<width>650</width>
+			<user0>&true;</user0>
+			<_alpha></_alpha>
+			<_enabled>&false;</_enabled>
+			<_text_offset>10</_text_offset>
+		</hotrect>
+		<hotrect name="confirm_container">
+			<include src="list_box.xml" />
+			<id>7</id>
+			<visible>
+				<copy src="me()" trait="_alpha" />
+				<gt>0</gt>
+			</visible>
+			<depth>3</depth>
+			<x></x>
+			<y></y>
+			<width></width>
+			<_enabled>&false;</_enabled>
+			<_number_of_visible_items>3</_number_of_visible_items>
+			<_scrollbar_vis>&false;</_scrollbar_vis>
+			<_alpha></_alpha>
+			<_isConfirmContainer>&true;</_isConfirmContainer>
+			<text name="confirm_warning">
+				<id>20</id>
+				<string>&-sConfirmWarning;</string>
+				<alpha><copy src="parent()" trait="_alpha" /></alpha>
+				<depth>3</depth>
+				<brightness><copy src="StartMenu" trait="brightness" /></brightness>
+				<font>6</font>
+				<x>
+					<copy src="sibling(confirm_question)" trait="x" />
+					<sub src="sibling(confirm_question)" trait="width" />
+				</x>
+				<y>
+					<copy>0</copy>
+					<sub src="me()" trait="height" />
+					<sub>10</sub>
+				</y>
+				<systemcolor>&hudmain;</systemcolor>
+			</text>
+			<text name="confirm_question">
+				<id>8</id>
+				<alpha><copy src="parent()" trait="_alpha" /></alpha>
+				<depth>3</depth>
+				<brightness><copy src="StartMenu" trait="brightness" /></brightness>
+				<font>7</font>
+				<justify>&right;</justify>
+				<x>-20</x>
+				<y>
+					<copy>7</copy>
+					<add>
+						<copy>3</copy>
+						<onlyifnot src="io()" trait="user5" />
+					</add>
+				</y>
+				<wrapwidth>520</wrapwidth>
+			</text>
+			<_smalltext>&false;</_smalltext>
+		</hotrect>
+		<image name="options_brightness_gradient">
+			<id>17</id>
+			<depth>3</depth>
+			<visible>&false;</visible>
+			<filename>Interface\Shared\GrayscaleRamp01.dds</filename>
+			<width>512</width>
+			<height>100</height>
+			<zoom>&scale;</zoom>
+			<x>
+				<copy src="sibling(options_container)" trait="x" />
+				<add>
+					<copy src="sibling(options_container)" trait="width" />
+					<sub src="me()" trait="width" />
+					<div>2</div>
+				</add>
+			</x>
+			<y>
+				<copy src="sibling(options_container)" trait="y" />
+				<sub>70</sub>
+			</y>
+			<systemcolor>&nosystemcolor;</systemcolor>
+		</image>
+		<text name="controls_header">
+			<id>16</id>
+			<font>7</font>
+			<depth>3</depth>
+			<justify>&center;</justify>
+			<visible>&false;</visible>
+			<alpha><copy src="sibling(options_container)" trait="_alpha" /></alpha>
+			<x>
+				<copy src="sibling(options_container)" trait="x" />
+				<add>
+					<copy src="sibling(options_container)" trait="width" />
+					<div>2</div>
+				</add>
+			</x>
+			<y>
+				<copy src="sibling(options_container)" trait="y" />
+				<sub>36</sub>
+			</y>
+			<systemcolor>&nosystemcolor;</systemcolor>
+		</text>
+		<text name="dbg">
+			<font>7</font>
+			<depth>3</depth>
+			<justify>&center;</justify>
+			<visible>0</visible>
+			<x>
+				<copy src="sibling(options_container)" trait="x" />
+				<add>
+					<copy src="sibling(options_container)" trait="width" />
+					<div>2</div>
+				</add>
+			</x>
+			<y>
+				<copy src="sibling(options_container)" trait="y" />
+				<sub>36</sub>
+			</y>
+			<string><copy src="sibling(options_container)" trait="childcount" /></string>
+		</text>
+		<hotrect name="options_container">
+			<include src="list_box.xml" />
+			<id>2</id>
+			<visible>
+				<copy src="me()" trait="_alpha" />
+				<gt>0</gt>
+			</visible>
+			<depth>3</depth>
+			<x>
+				<copy src="screen()" trait="width" />
+				<sub src="me()" trait="width" />
+				<div>2</div>
+				<sub>
+					<copy>40</copy>
+					<onlyif>&xbox;</onlyif>
+					<onlyifnot src="StartMenu" trait="user0" />
+				</sub>
+			</x>
+			<y>
+				<copy src="screen()" trait="height" />
+				<sub src="me()" trait="height" />
+				<add>46</add>
+				<add>
+					<copy>130</copy>
+					<onlyif src="io()" trait="_isDisplayMenu" />
+				</add>
+				<div>2</div>
+			</y>
+			<width>520</width>
+			<height>
+				<copy>48</copy>
+				<sub>
+					<copy>14</copy>
+					<onlyif src="io()" trait="_isControlsMapping" />
+				</sub>
+				<mul>
+					<copy src="me()" trait="childcount" />
+					<sub>2</sub>
+					<min> 15 </min>
+				</mul>
+			</height>
+			<_alpha></_alpha>
+			<_enabled>&false;</_enabled>
+			<_leftjustify>1</_leftjustify>
+			<_isOptionsMenu>&true;</_isOptionsMenu>
+			<_smalltext>&true;</_smalltext>
+		</hotrect>
+		<hotrect name="downloads_container">
+			<include src="list_box.xml" />
+			<id>14</id>
+			<visible>
+				<copy src="me()" trait="_alpha" />
+				<gt>0</gt>
+			</visible>
+			<x>
+				<copy src="screen()" trait="width" />
+				<sub src="me()" trait="width" />
+				<div>2</div>
+				<sub>150</sub>
+			</x>
+			<y><copy src="sibling(main_container)" trait="y" /></y>
+			<width>575</width>
+			<_alpha></_alpha>
+			<_number_of_visible_items>9</_number_of_visible_items>
+			<_enabled>&false;</_enabled>
+			<_leftjustify>0</_leftjustify>
+		</hotrect>
+		<image name="container_background">
+			<filename>Interface\Shared\Background\fuzzy.dds</filename>
+			<zoom>&scale;</zoom>
+			<visible>
+				<copy src="options_container" trait="visible" />
+				<or src="saveload_container" trait="visible" />
+				<or src="downloads_container" trait="visible" />
+			</visible>
+			<target>&false;</target>
+			<depth>2</depth>
+			<alpha>
+200
+			</alpha>
+			<x>
+				<copy src="options_container" trait="x" />
+				<onlyif src="options_container" trait="visible" />
+				<add>
+					<copy src="saveload_container" trait="x" />
+					<onlyif src="saveload_container" trait="visible" />
+				</add>
+				<add>
+					<copy src="downloads_container" trait="x" />
+					<onlyif src="downloads_container" trait="visible" />
+				</add>
+				<sub src="me()" trait="_x_stretch" />
+			</x>
+			<y>
+				<copy>0</copy>
+				<sub src="me()" trait="_y_stretch" />
+			</y>
+			<width>
+				<copy src="options_container" trait="width" />
+				<onlyif src="options_container" trait="visible" />
+				<add>
+					<copy src="saveload_container" trait="width" />
+					<onlyif src="saveload_container" trait="visible" />
+				</add>
+				<add>
+					<copy src="downloads_container" trait="width" />
+					<onlyif src="downloads_container" trait="visible" />
+				</add>
+				<add src="me()" trait="_x_stretch" />
+				<add src="me()" trait="_x_stretch" />
+			</width>
+			<height>
+				<copy src="parent()" trait="height" />
+				<add src="me()" trait="_y_stretch" />
+				<add src="me()" trait="_y_stretch" />
+			</height>
+			<_x_stretch>
+60
+			</_x_stretch>
+			<_y_stretch>175</_y_stretch>
+		</image>
+		<image name="main_title">
+			<id>3</id>
+			<alpha>0</alpha>
+			<depth>1.5</depth>
+			<systemcolor>&nosystemcolor;</systemcolor>
+			<filename>Interface\Main\main_title.dds</filename>
+			<zoom>
+				<copy>100</copy>
+				<add>
+					<copy>33.33</copy>
+					<onlyif src="StartMenu" trait="user0" />
+				</add>
+			</zoom>
+			<width><copy src="me()" trait="filewidth" /></width>
+			<height><copy src="me()" trait="fileheight" /></height>
+			<x><copy src="parent()" trait="_x_buffer" /></x>
+			<y>
+				<copy src="parent()" trait="height" />
+				<sub src="me()" trait="height" />
+				<div>2</div>
+			</y>
+		</image>
+		<hotrect name="main_device_button">
+			<id>15</id>
+			<include src="darn\text_box_start.xml" />
+			<depth>3</depth>
+			<visible>
+				<copy src="me()" trait="_line_alpha" />
+				<gt>0</gt>
+				<and src="me()" trait="user0" />
+			</visible>
+			<target>
+				<copy src="sibling(saveload_container)" trait="_enabled" />
+				<onlyif>&xbox;</onlyif>
+				<add>
+					<copy src="sibling(options_container)" trait="_enabled" />
+					<onlyifnot src="io()" trait="user5" />
+				</add>
+			</target>
+			<string>&-sDevice;</string>
+			<justify>&right;</justify>
+			<font>6</font>
+			<clicksound>UIMenuOK</clicksound>
+			<alpha>
+				<copy>40</copy>
+				<onlyif src="me()" trait="_box_visible" />
+			</alpha>
+			<_x><copy src="sibling(main_defaults_button)" trait="_x" /></_x>
+			<_y>
+				<copy src="sibling(main_defaults_button)" trait="_y" />
+				<sub>37</sub>
+			</_y>
+			<_glow>&true;</_glow>
+			<brightness><copy src="me()" trait="_line_alpha" /></brightness>
+			<_fixedwidth><copy src="sibling(main_defaults_button)" trait="_fixedwidth" /></_fixedwidth>
+			<_xbox_button>&xbuttonx;</_xbox_button>
+			<user0>&false;</user0>
+			<_line_alpha>
+				<copy src="sibling(options_container)" trait="_alpha" />
+				<max src="sibling(saveload_container)" trait="_alpha" />
+				<min>
+					<copy>128</copy>
+					<add>
+						<copy>127</copy>
+						<onlyif src="me()" trait="target" />
+					</add>
+				</min>
+			</_line_alpha>
+		</hotrect>
+		<hotrect name="main_defaults_button">
+			<id>4</id>
+			<include src="darn\text_box_start.xml" />
+			<depth>3</depth>
+			<visible>
+				<copy src="me()" trait="_line_alpha" />
+				<gt>0</gt>
+				<and src="me()" trait="user0" />
+			</visible>
+			<target>
+				<copy src="sibling(options_container)" trait="_enabled" />
+				<or>
+					<copy src="io()" trait="user5" />
+					<and src="sibling(saveload_container)" trait="_enabled" />
+					<and src="me()" trait="_target" />
+				</or>
+			</target>
+			<_target>&false;</_target>
+			<font>6</font>
+			<justify>&right;</justify>
+			<clicksound>UIMenuOK</clicksound>
+			<alpha>
+				<copy>40</copy>
+				<onlyif src="me()" trait="_box_visible" />
+			</alpha>
+			<_x>
+				<copy src="main_container" trait="x" />
+				<add src="main_container" trait="width" />
+				<sub>
+					<copy src="child(xbox_button)" trait="width" />
+					<sub>25</sub>
+					<onlyif><copy src="io()" trait="user5" /></onlyif>
+				</sub>
+			</_x>
+			<_y>
+				<copy src="sibling(main_back_button)" trait="_y" />
+				<sub>37</sub>
+			</_y>
+			<_glow>&true;</_glow>
+			<_xbox_button>&xbuttony;</_xbox_button>
+			<_fixedwidth>150</_fixedwidth>
+			<brightness><copy src="me()" trait="_line_alpha" /></brightness>
+			<user0>&true;</user0>
+			<_line_alpha>
+				<copy src="sibling(options_container)" trait="_alpha" />
+				<max>
+					<copy src="sibling(saveload_container)" trait="_alpha" />
+					<onlyif><copy src="io()" trait="user5" /></onlyif>
+				</max>
+				<min>
+					<copy>128</copy>
+					<add>
+						<copy>127</copy>
+						<onlyif src="me()" trait="target" />
+					</add>
+				</min>
+			</_line_alpha>
+		</hotrect>
+		<hotrect name="main_back_button">
+			<id>5</id>
+			<include src="darn\text_box_start.xml" />
+			<depth>3</depth>
+			<visible>
+				<copy src="me()" trait="_line_alpha" />
+				<gt>0</gt>
+			</visible>
+			<font>6</font>
+			<string>&-sBack;</string>
+			<justify>&right;</justify>
+			<clicksound>UIMenuCancel</clicksound>
+			<alpha>
+				<copy>40</copy>
+				<onlyif src="me()" trait="_box_visible" />
+			</alpha>
+			<_glow>&true;</_glow>
+			<_alpha></_alpha>
+			<_x><copy src="sibling(main_defaults_button)" trait="_x" /></_x>
+			<_y>
+				<copy src="parent()" trait="height" />
+				<sub src="me()" trait="height" />
+				<sub src="screen()" trait="cropy" />
+				<sub src="screen()" trait="cropy" />
+			</_y>
+			<_line_alpha>
+				<copy src="me()" trait="_alpha" />
+				<min>
+					<copy>255</copy>
+					<sub>
+						<copy>127</copy>
+						<onlyifnot src="me()" trait="target" />
+					</sub>
+				</min>
+			</_line_alpha>
+			<brightness><copy src="me()" trait="_line_alpha" /></brightness>
+			<_xbox_button>&xbuttonb;</_xbox_button>
+			<_fixedwidth><copy src="sibling(main_defaults_button)" trait="_fixedwidth" /></_fixedwidth>
+		</hotrect>
+		<hotrect name="main_redeem_code_button">
+			<id>21</id>
+			<include src="text_box.xml"/>
+			<depth>3</depth>
+			<visible>
+				<copy src="me()" trait="_line_alpha"/>
+				<gt>0</gt>
+			</visible>
+			<string>&-sRedeemCode;</string>
+			<justify>&right;</justify>
+			<clicksound>UIMenuOK</clicksound>
+			<alpha>
+				<copy>40</copy>
+				<onlyif src="me()" trait="_box_visible"/>
+			</alpha>
+			<_glow>&true;</_glow>
+			<_alpha></_alpha>
+			<_x>
+				<copy src="sibling(main_back_button)" trait="_x"/>
+			</_x>
+			<_y>
+				<copy src="sibling(main_back_button)" trait="_y"/>
+				<sub>64</sub>
+			</_y>
+			<_line_alpha>
+				<copy src="me()" trait="_alpha"/>
+				<min>
+					<copy>255</copy>
+					<sub>
+						<copy>127</copy>
+						<onlyifnot src="me()" trait="target"/>
+					</sub>
+				</min>
+			</_line_alpha>
+			<brightness>
+				<copy src="me()" trait="_line_alpha"/>
+			</brightness>
+			<_xbox_button>&xbuttony;</_xbox_button>
+			<width>250</width>
+			<_horbuf>
+				<copy src="sibling(main_defaults_button)" trait="_horbuf"/>
+			</_horbuf>
+			<_verbuf>
+				<copy src="sibling(main_defaults_button)" trait="_verbuf"/>
+			</_verbuf>
+		</hotrect>
+	</rect>
+	<rect name="GLOW_BRANCH">
+		<id>&glow_branch;</id>
+	</rect>
+	<template name="lb_item_template">
+		<hotrect name="lb_item_hotrect">
+			<include src="list_box_template.xml" />
+			<brightness><copy src="StartMenu" trait="brightness" /></brightness>
+			<height>
+				<copy src="child(ListItemText)" trait="font" />
+				<copy src="globals()" trait="_fontSize_" />
+				<add>10</add>
+			</height>
+			<user0>0</user0>
+			<user1></user1>
+			<_enabled>
+				<copy src="me()" trait="visible" />
+			</_enabled>
+			<text name="ListItemText">
+				<font>
+					<copy>6</copy>
+					<add>
+						<copy>1</copy>
+						<onlyif src="grandparent()" trait="_isMainMenu" />
+					</add>
+				</font>
+				<string><copy src="parent()" trait="string" /></string>
+				<justify>
+					<copy>&left;</copy>
+					<onlyif src="grandparent()" trait="_leftjustify" />
+					<add>
+						<copy>&right;</copy>
+						<onlyifnot src="grandparent()" trait="_leftjustify" />
+					</add>
+				</justify>
+				<alpha>
+					<copy src="grandparent()" trait="_alpha" />
+					<min>
+						<copy>255</copy>
+						<sub>
+							<copy>128</copy>
+							<onlyifnot>
+								<copy src="grandparent()" trait="_enabled" />
+								<or src="parent()" trait="_selected" />
+								<and src="parent()" trait="_enabled" />
+							</onlyifnot>
+						</sub>
+					</min>
+				</alpha>
+				<brightness><copy src="me()" trait="alpha" /></brightness>
+				<x>
+					<copy src="parent()" trait="width" />
+					<sub>20</sub>
+					<onlyif>
+						<copy src="me()" trait="justify" />
+						<eq>&right;</eq>
+					</onlyif>
+					<add>
+						<copy>20</copy>
+						<onlyif>
+							<copy src="me()" trait="justify" />
+							<eq>&left;</eq>
+						</onlyif>
+					</add>
+				</x>
+				<y>
+					<copy src="parent()" trait="height" />
+					<sub src="me()" trait="height" />
+					<div>2</div>
+					<add>
+						<copy>-4</copy>
+						<onlyif src="grandparent()" trait="_isMainMenu" />
+					</add>
+				</y>
+			</text>
+			<text name="lb_item_button_text">
+				<visible>
+					<copy src="parent()" trait="user0" />
+					<eq>1</eq>
+				</visible>
+				<string><copy src="parent()" trait="user1" /></string>
+				<justify>&center;</justify>
+				<font>6</font>
+				<alpha>
+					<copy src="grandparent()" trait="_alpha" />
+					<min>
+						<copy>255</copy>
+						<sub>
+							<copy>128</copy>
+							<onlyifnot>
+								<copy src="grandparent()" trait="_enabled" />
+								<or src="parent()" trait="_selected" />
+								<and src="parent()" trait="_enabled" />
+							</onlyifnot>
+						</sub>
+					</min>
+				</alpha>
+				<brightness>
+					<copy src="me()" trait="alpha" />
+				</brightness>
+				<x>
+					<copy src="parent()" trait="width" />
+					<sub>50</sub>
+					<sub>
+						<copy>30</copy>
+						<onlyifnot><copy src="io()" trait="user5" /></onlyifnot>
+					</sub>
+				</x>
+				<y>
+					<copy src="parent()" trait="height" />
+					<sub src="me()" trait="height" />
+					<div>2</div>
+				</y>
+			</text>
+			<image name="lb_item_button_icon">
+				<visible>
+					<copy src="parent()" trait="user0" />
+					<eq>2</eq>
+				</visible>
+				<filename><copy src="parent()" trait="user1" /></filename>
+				<texatlas>Interface\InterfaceShared.tai</texatlas>
+				<width>33</width>
+				<height>33</height>
+				<alpha>
+					<copy src="grandparent()" trait="_alpha" />
+					<min>
+						<copy>255</copy>
+						<sub>
+							<copy>128</copy>
+							<onlyifnot>
+								<copy src="grandparent()" trait="_enabled" />
+								<or src="parent()" trait="_selected" />
+								<and src="parent()" trait="_enabled" />
+							</onlyifnot>
+						</sub>
+					</min>
+				</alpha>
+				<brightness>
+					<copy src="me()" trait="alpha" />
+				</brightness>
+				<x>
+					<copy src="sibling(lb_item_button_text)" trait="x" />
+					<sub>
+						<copy src="me()" trait="width" />
+						<div>2</div>
+					</sub>
+				</x>
+				<y>
+					<copy src="parent()" trait="height" />
+					<sub src="me()" trait="height" />
+					<div>2</div>
+				</y>
+			</image>
+		</hotrect>
+	</template>
+	<template name="lb_meter_template">
+		<hotrect name="lb_meter_template_item">
+			<include src="list_box_template.xml" />
+			<clicksound>&nosound;</clicksound>
+			<xdefault>1</xdefault>
+			<repeathorizontal>&true;</repeathorizontal>
+			<user0></user0>
+			<user1>
+				<copy src="me()" trait="user3" />
+				<div>5</div>
+			</user1>
+			<user2>1</user2>
+			<user3></user3>
+			<user4>10</user4>
+			<brightness><copy src="StartMenu" trait="brightness" /></brightness>
+			<_VerticalSpacing>7</_VerticalSpacing>
+			<text name="ListItemText">
+				<font>6</font>
+				<string><copy src="parent()" trait="string" /></string>
+				<alpha><copy src="grandparent()" trait="_alpha" /></alpha>
+				<x>10</x>
+				<y>
+					<copy src="parent()" trait="height" />
+					<sub src="me()" trait="height" />
+					<div>2</div>
+				</y>
+			</text>
+			<image name="lb_meter_left">
+				<id>100</id>
+				<filename>Interface\Main\main_arrow_left.dds</filename>
+				<alpha><copy src="grandparent()" trait="_alpha" /></alpha>
+				<target>&true;</target>
+				<clicksound>UIMenuPrevNext</clicksound>
+				<depth>3</depth>
+				<visible>
+					<copy src="parent()" trait="mouseover" />
+					<add src="me()" trait="mouseover" />
+					<add src="sibling(lb_meter_hotrect)" trait="mouseover" />
+					<add src="sibling(lb_meter_right)" trait="mouseover" />
+					<eq>1</eq>
+					<and>
+						<copy src="parent()" trait="user2" />
+						<lt>2</lt>
+					</and>
+				</visible>
+				<x>
+					<copy src="sibling(lb_meter_hotrect)" trait="x" />
+					<sub src="parent()" trait="user4" />
+					<sub src="me()" trait="width" />
+				</x>
+				<y>
+					<copy src="parent()" trait="height" />
+					<sub src="me()" trait="height" />
+					<div>2</div>
+					<add>4</add>
+				</y>
+				<width>14</width>
+				<height>26</height>
+				<zoom>-1</zoom>
+			</image>
+			<hotrect name="lb_meter_hotrect">
+				<id>102</id>
+				<locus>&true;</locus>
+				<target>&true;</target>
+				<alpha>30</alpha>
+				<clicksound>UIMenuPrevNext</clicksound>
+				<depth>3</depth>
+				<x>
+					<copy src="me()" trait="_center_x" />
+					<sub>
+						<copy src="me()" trait="width" />
+						<div>2</div>
+					</sub>
+				</x>
+				<y>
+					<copy src="parent()" trait="height" />
+					<sub src="me()" trait="height" />
+					<div>2</div>
+				</y>
+				<width>
+					<copy src="parent()" trait="user3" />
+					<mul>8</mul>
+				</width>
+				<height>20</height>
+				<_alpha><copy src="grandparent()" trait="_alpha" /></_alpha>
+				<_center_x><copy src="StartMenu" trait="_center_x" /></_center_x>
+				<rect name="lb_meter_image">
+					<include src="meter.xml" />
+					<alpha><copy src="parent()" trait="_alpha" /></alpha>
+					<width><copy src="parent()" trait="width" /></width>
+					<height>19</height>
+					<_Value>
+						<copy src="grandparent()" trait="user0" />
+						<div src="grandparent()" trait="user3" />
+						<min>1</min>
+					</_Value>
+				</rect>
+			</hotrect>
+			<image name="lb_meter_right">
+				<id>101</id>
+				<alpha><copy src="grandparent()" trait="_alpha" /></alpha>
+				<filename>Interface\Main\main_arrow_right.dds</filename>
+				<target>&true;</target>
+				<clicksound>UIMenuPrevNext</clicksound>
+				<depth>3</depth>
+				<visible>
+					<copy src="parent()" trait="mouseover" />
+					<add src="me()" trait="mouseover" />
+					<add src="sibling(lb_meter_hotrect)" trait="mouseover" />
+					<add src="sibling(lb_meter_left)" trait="mouseover" />
+					<eq>1</eq>
+					<and>
+						<copy src="parent()" trait="user2" />
+						<gt>0</gt>
+					</and>
+				</visible>
+				<x>
+					<copy src="sibling(lb_meter_hotrect)" trait="x" />
+					<add src="sibling(lb_meter_hotrect)" trait="width" />
+					<add src="parent()" trait="user4" />
+				</x>
+				<y><copy src="sibling(lb_meter_left)" trait="y" /></y>
+				<width>14</width>
+				<height>26</height>
+				<zoom>-1</zoom>
+			</image>
+		</hotrect>
+	</template>
+	<template name="lb_toggle_template">
+		<hotrect name="lb_toggle_template_item">
+			<include src="list_box_template.xml" />
+			<clicksound>&nosound;</clicksound>
+			<xdefault>1</xdefault>
+			<user0></user0>
+			<user1>0</user1>
+			<user2></user2>
+			<user4>45</user4>
+			<brightness><copy src="StartMenu" trait="brightness" /></brightness>
+			<_VerticalSpacing>7</_VerticalSpacing>
+			<text name="ListItemText">
+				<font>6</font>
+				<string><copy src="parent()" trait="string" /></string>
+				<alpha>
+					<copy src="grandparent()" trait="_alpha" />
+					<min>
+						<copy>255</copy>
+						<sub>
+							<copy>128</copy>
+							<onlyifnot src="parent()" trait="_enabled" />
+						</sub>
+					</min>
+				</alpha>
+				<x>10</x>
+				<y>
+					<copy src="parent()" trait="height" />
+					<sub src="me()" trait="height" />
+					<div>2</div>
+				</y>
+			</text>
+			<image name="lb_toggle_left">
+				<id>100</id>
+				<filename>Interface\Main\main_arrow_left.dds</filename>
+				<clicksound>UIMenuPrevNext</clicksound>
+				<alpha><copy src="sibling(ListItemText)" trait="alpha" /></alpha>
+				<target>&true;</target>
+				<depth>5</depth>
+				<visible>
+					<copy src="parent()" trait="mouseover" />
+					<add src="me()" trait="mouseover" />
+					<add src="sibling(lb_toggle_right)" trait="mouseover" />
+					<add src="sibling(lb_toggle_value)" trait="mouseover" />
+					<eq>1</eq>
+					<and>
+						<copy src="parent()" trait="user2" />
+						<lt>2</lt>
+					</and>
+				</visible>
+				<x>
+					<copy src="sibling(lb_toggle_value)" trait="_x" />
+					<sub src="parent()" trait="user4" />
+					<sub src="me()" trait="width" />
+				</x>
+				<y>
+					<copy src="parent()" trait="height" />
+					<sub src="me()" trait="height" />
+					<div>2</div>
+					<add>4</add>
+				</y>
+				<width>14</width>
+				<height>26</height>
+				<zoom>-1</zoom>
+			</image>
+			<hotrect name="lb_toggle_value">
+				<id>&generic;</id>
+			<include src="darn\text_box.xml" />
+				<font>6</font>
+				<clicksound>UIMenuPrevNext</clicksound>
+				<depth>3</depth>
+				<brightness><copy src="StartMenu" trait="brightness" /></brightness>
+				<string><copy src="parent()" trait="user0" /></string>
+				<justify>&center;</justify>
+				<_glow>&true;</_glow>
+				<_x>
+					<copy src="StartMenu" trait="_center_x" />
+					<add>10</add>
+				</_x>
+				<_y>1</_y>
+				<_box_visible>&false;</_box_visible>
+				<_horbuf>20</_horbuf>
+				<_verbuf>4</_verbuf>
+				<_line_alpha><copy src="sibling(ListItemText)" trait="alpha" /></_line_alpha>
+			</hotrect>
+			<image name="lb_toggle_right">
+				<id>101</id>
+				<alpha><copy src="sibling(ListItemText)" trait="alpha" /></alpha>
+				<filename>Interface\Main\main_arrow_right.dds</filename>
+				<clicksound>UIMenuPrevNext</clicksound>
+				<target>&true;</target>
+				<depth>5</depth>
+				<visible>
+					<copy src="parent()" trait="mouseover" />
+					<add src="me()" trait="mouseover" />
+					<add src="sibling(lb_toggle_left)" trait="mouseover" />
+					<add src="sibling(lb_toggle_value)" trait="mouseover" />
+					<eq>1</eq>
+					<and>
+						<copy src="parent()" trait="user2" />
+						<gt>0</gt>
+					</and>
+				</visible>
+				<x>
+					<copy src="sibling(lb_toggle_value)" trait="_x" />
+					<add src="parent()" trait="user4" />
+				</x>
+				<y><copy src="sibling(lb_toggle_left)" trait="y" /></y>
+				<width>14</width>
+				<height>26</height>
+				<zoom>-1</zoom>
+			</image>
+		</hotrect>
+	</template>
+	<template name="lb_saveload_template">
+		<hotrect name="lb_saveload_template_item">
+			<include src="list_box_template.xml" />
+			<xdefault>1</xdefault>
+			<user0></user0>
+			<user1></user1>
+			<visible>
+				<copy src="parent()" trait="user0" />
+				<or src="me()" trait="_selected" />
+				<and>
+					<copy src="me()" trait="listindex" />
+					<gte>0</gte>
+				</and>
+			</visible>
+			<brightness><copy src="StartMenu" trait="brightness" /></brightness>
+			<_VerticalSpacing>7</_VerticalSpacing>
+			<text name="lb_saveload_prefix">
+				<brightness><copy src="StartMenu" trait="brightness" /></brightness>
+				<font>6</font>
+				<alpha><copy src="grandparent()" trait="_alpha" /></alpha>
+				<string><copy src="parent()" trait="user0" /></string>
+				<x><copy src="grandparent()" trait="_text_offset" /></x>
+				<y>
+					<copy src="parent()" trait="height" />
+					<sub src="me()" trait="height" />
+					<div>2</div>
+				</y>
+				<systemcolor>&nosystemcolor;</systemcolor>
+			</text>
+			<text name="lb_saveload_location">
+				<brightness><copy src="StartMenu" trait="brightness" /></brightness>
+				<font>6</font>
+				<alpha><copy src="grandparent()" trait="_alpha" /></alpha>
+				<string><copy src="parent()" trait="user1" /></string>
+				<x>100</x>
+				<y><copy src="sibling(lb_saveload_prefix)" trait="y" /></y>
+			</text>
+		</hotrect>
+	</template>
+	<template name="lb_newsave_template">
+		<hotrect name="lb_newsave_template_item">
+			<include src="list_box_template.xml" />
+			<xdefault>1</xdefault>
+			<visible>
+				<copy src="parent()" trait="user0" />
+				<or src="me()" trait="_selected" />
+				<and>
+					<copy src="me()" trait="listindex" />
+					<gte>0</gte>
+				</and>
+			</visible>
+			<brightness><copy src="StartMenu" trait="brightness" /></brightness>
+			<_VerticalSpacing>7</_VerticalSpacing>
+			<text name="ListItemText">
+				<font>6</font>
+				<string><copy src="parent()" trait="string" /></string>
+				<alpha><copy src="grandparent()" trait="_alpha" /></alpha>
+				<systemcolor>&nosystemcolor;</systemcolor>
+				<x><copy src="grandparent()" trait="_text_offset" /></x>
+				<y>
+					<copy src="parent()" trait="height" />
+					<sub src="me()" trait="height" />
+					<div>2</div>
+				</y>
+			</text>
+		</hotrect>
+	</template>
+</menu>

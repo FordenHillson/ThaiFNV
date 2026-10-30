@@ -1,0 +1,242 @@
+[
+  {
+    "row": 562,
+    "type": "NOTE:FULL",
+    "editor": "VMS03HELIOSPoseidonEnergyPamphlet",
+    "en": "\"Can I Tell Him?\" A Poseidon Energy Publication for New Employees"
+  },
+  {
+    "row": 563,
+    "type": "NOTE:FULL",
+    "editor": "VMS03UpcomingGeneralVisitNote",
+    "en": "Upcoming Visit"
+  },
+  {
+    "row": 564,
+    "type": "NOTE:TNAM",
+    "editor": "VMS03UpcomingGeneralVisitNote",
+    "en": "Brig. Gen. Scott Lowe of the U.S. Army will be visiting the facility starting next Monday and staying onsite indefinitely.  When ARCHIMEDES goes live, he will be the only person here allowed to authorize its use for anything other than a test. Civilian employees are not required to salute, but it is expected of everyone that you observe thorough grooming and hygiene regimens and dress neatly while the general is with us. The general expects the best from all his men, and Poseidon men should be no different in the presence of such a fine and decorated soldier."
+  },
+  {
+    "row": 565,
+    "type": "NOTE:FULL",
+    "editor": "VMS03ARCHIMEDESIITrialsNote",
+    "en": "Initial Trials"
+  },
+  {
+    "row": 566,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformNCRCFChavezNote",
+    "en": "Pick the lock to Chavez's cell."
+  },
+  {
+    "row": 567,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformNCRCFChavezNote",
+    "en": "Chavez at the NCR Correctional Facility wants you to pick the lock to his cell."
+  },
+  {
+    "row": 568,
+    "type": "NOTE:FULL",
+    "editor": "PrimmBisonSteveRansom",
+    "en": "Ransom Note"
+  },
+  {
+    "row": 569,
+    "type": "NOTE:FULL",
+    "editor": "PrimmVanceGunNote",
+    "en": "Vance Gun Brochure"
+  },
+  {
+    "row": 570,
+    "type": "NOTE:TNAM",
+    "editor": "PrimmVanceGunNote",
+    "en": "One of the highlights of the museum at the Vikki and Vance Casino is the authentic gun that Vance used in in their cross country crime spree. This gun is proudly on display at the center of the casino, near the car they died in."
+  },
+  {
+    "row": 571,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformPrimmSheriff",
+    "en": "They Didn't Shoot The Deputy"
+  },
+  {
+    "row": 572,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformPrimmSheriff",
+    "en": "Deputy Beagle would like help finding a new sheriff for Primm. I should look for someone that has some experience with law enforcement, and is familiar with Primm and the surrounding area."
+  },
+  {
+    "row": 573,
+    "type": "NOTE:FULL",
+    "editor": "VMS03HeliosTerminalWestPassword",
+    "en": "Western Reflector Control Terminal Password"
+  },
+  {
+    "row": 574,
+    "type": "NOTE:TNAM",
+    "editor": "VMS03HeliosTerminalWestPassword",
+    "en": "546f6f206d616e792073656372657473"
+  },
+  {
+    "row": 575,
+    "type": "NOTE:FULL",
+    "editor": "VMS03HeliosTerminalEastPassword",
+    "en": "Eastern Reflector Control Terminal Password"
+  },
+  {
+    "row": 576,
+    "type": "NOTE:TNAM",
+    "editor": "VMS03HeliosTerminalEastPassword",
+    "en": "4d7920766f696365206973206d792070617373706f72742e"
+  },
+  {
+    "row": 577,
+    "type": "NOTE:FULL",
+    "editor": "VMS03HeliosIDCard",
+    "en": "Poseidon Energy Employee ID Card"
+  },
+  {
+    "row": 578,
+    "type": "NOTE:FULL",
+    "editor": "VMS02MilitaryOrders",
+    "en": "Military Orders"
+  },
+  {
+    "row": 579,
+    "type": "NOTE:FULL",
+    "editor": "HVEasySimNote",
+    "en": "Simulation Note"
+  },
+  {
+    "row": 580,
+    "type": "NOTE:FULL",
+    "editor": "HVNormalSimNote",
+    "en": "Simulation Note"
+  },
+  {
+    "row": 581,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformNCRCFHanniganNote",
+    "en": "Obtain a book of medicine for Hannigan."
+  },
+  {
+    "row": 582,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformNCRCFHanniganNote",
+    "en": "Hannigan at the NCR Correctional Facility wants you to obtain a book of medicine for him."
+  },
+  {
+    "row": 583,
+    "type": "NOTE:FULL",
+    "editor": "SammySafeComb",
+    "en": "Sammy's Safe Combination"
+  },
+  {
+    "row": 584,
+    "type": "NOTE:TNAM",
+    "editor": "SammySafeComb",
+    "en": "The combination for my safe is 5-23-34"
+  },
+  {
+    "row": 585,
+    "type": "NOTE:FULL",
+    "editor": "VanceGunNote1",
+    "en": "Primm Slim Corrupted Memory Block"
+  },
+  {
+    "row": 586,
+    "type": "NOTE:FULL",
+    "editor": "VNCRCFHolotapeFemale",
+    "en": "Letter of Introduction"
+  },
+  {
+    "row": 587,
+    "type": "NOTE:FULL",
+    "editor": "VNCRCFHolotapeMale",
+    "en": "Letter of Introduction"
+  },
+  {
+    "row": 588,
+    "type": "NOTE:FULL",
+    "editor": "NCRCFWardenNote04",
+    "en": "Letter of Protest"
+  },
+  {
+    "row": 589,
+    "type": "NOTE:FULL",
+    "editor": "NCRCFWardenNote03",
+    "en": "Conspiracy Suspicions"
+  },
+  {
+    "row": 590,
+    "type": "NOTE:FULL",
+    "editor": "NCRCFWardenNote02",
+    "en": "Caesar's Legion"
+  },
+  {
+    "row": 591,
+    "type": "NOTE:TNAM",
+    "editor": "NCRCFWardenNote02",
+    "en": "I've seen the reports of this so-called \"Caesar's Legion\". It sounds like they're just another bunch of raiders, but the higher-ups back west seem to think they're a serious threat."
+  },
+  {
+    "row": 592,
+    "type": "NOTE:FULL",
+    "editor": "NCRCFWardenNote01",
+    "en": "Troop Transfer"
+  },
+  {
+    "row": 593,
+    "type": "NOTE:TNAM",
+    "editor": "NCRCFWardenNote01",
+    "en": "They're transferring away three more of my men. They tell me it's all to keep the situation at the Dam under control, but what about this place? The situation here has become dangerous for my men and I  - I know it, my men know it, and the prisoners know it. It's only a matter of time before something happens."
+  },
+  {
+    "row": 594,
+    "type": "NOTE:FULL",
+    "editor": "ClarkFieldRadiationGuyJournal",
+    "en": "Mr. RADical's Journal"
+  },
+  {
+    "row": 595,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformNovacNighttimeSniperNote",
+    "en": "Nighttime Sniper"
+  },
+  {
+    "row": 596,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformNovacNighttimeSniperNote",
+    "en": "Manny Vargas mentioned that there is another sniper named Boone who works in the dinosaur mouth at night, and whose wife went missing recently."
+  },
+  {
+    "row": 597,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformNovacChupacabraInventoryNote",
+    "en": "The Screams of Brahmin"
+  },
+  {
+    "row": 598,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformNovacChupacabraInventoryNote",
+    "en": "Most of what is recorded here is a mess of incomprehensible psychotic gibberish. It seems to express a general frustration towards a set of brahmin who are allegedly keeping the author awake at night by screaming inside his head whenever he closes his eyes."
+  },
+  {
+    "row": 599,
+    "type": "NOTE:FULL",
+    "editor": "REPCONTourists",
+    "en": "Visitor Policy"
+  },
+  {
+    "row": 600,
+    "type": "NOTE:FULL",
+    "editor": "REPCONMartinNote",
+    "en": "Birthday Cake"
+  },
+  {
+    "row": 601,
+    "type": "NOTE:FULL",
+    "editor": "REPCONSabotageTerminalNote",
+    "en": "REPCONN Sabotage Terminal Note"
+  }
+]

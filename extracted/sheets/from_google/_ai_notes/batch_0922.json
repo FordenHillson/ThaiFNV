@@ -1,0 +1,242 @@
+[
+  {
+    "row": 922,
+    "type": "NOTE:TNAM",
+    "editor": "RCCJMissingNote",
+    "en": "C.J. Young is missing. This might have something to do with my taunting James Hargrave."
+  },
+  {
+    "row": 923,
+    "type": "NOTE:FULL",
+    "editor": "RCMisterLopezNote",
+    "en": "Mister Lopez"
+  },
+  {
+    "row": 924,
+    "type": "NOTE:TNAM",
+    "editor": "RCMisterLopezNote",
+    "en": "Mister Lopez is contemplating suicide. I can't decide if I should help him or get him help."
+  },
+  {
+    "row": 925,
+    "type": "NOTE:FULL",
+    "editor": "RCAngelaDiegoNote2",
+    "en": "Angela and Diego"
+  },
+  {
+    "row": 926,
+    "type": "NOTE:TNAM",
+    "editor": "RCAngelaDiegoNote2",
+    "en": "It seems that Angela Staley has a crush on Diego. Because he's a priest, he's been resisting her. She seems to think that ant pheromones might help to seduce him."
+  },
+  {
+    "row": 927,
+    "type": "NOTE:FULL",
+    "editor": "RCAngelaDiegoNote",
+    "en": "Angela and Diego"
+  },
+  {
+    "row": 928,
+    "type": "NOTE:TNAM",
+    "editor": "RCAngelaDiegoNote",
+    "en": "It seems that Angela Staley has a crush on Diego. Because he's a priest, he's been resisting her. I wonder if this is common knowledge in Rivet City?"
+  },
+  {
+    "row": 929,
+    "type": "NOTE:TNAM",
+    "editor": "xOBSOLETExFFRadioSignal01Note",
+    "en": "Restoring power to this broadcast station has amplified a faint signal being transmitted from somewhere in the nearby area."
+  },
+  {
+    "row": 930,
+    "type": "NOTE:FULL",
+    "editor": "LLKidnapNote",
+    "en": "Kidnap Order"
+  },
+  {
+    "row": 931,
+    "type": "NOTE:FULL",
+    "editor": "LDSpringvaleBossNote01",
+    "en": "Springvale Raider Mining Log"
+  },
+  {
+    "row": 932,
+    "type": "NOTE:TNAM",
+    "editor": "LDSpringvaleBossNote01",
+    "en": "Hit a goddamned hive of ants in the tunnel.  Bastards ate seven of our best diggers before we could lock off the way in.  Need to find some way to poison them so we can keep digging and blast into that Vault.  If we don't get there soon, I think I'm going to end up like Boppo, except it won't be the Sheriff popping me, it's gonna be my own men."
+  },
+  {
+    "row": 933,
+    "type": "NOTE:FULL",
+    "editor": "IrvingChengNote01",
+    "en": "Rebuilding Proposal"
+  },
+  {
+    "row": 934,
+    "type": "NOTE:FULL",
+    "editor": "RCPrestonComputerNote02",
+    "en": "Patient Files"
+  },
+  {
+    "row": 935,
+    "type": "NOTE:FULL",
+    "editor": "RCPrestonComputerNote01",
+    "en": "Regional Health Hazards"
+  },
+  {
+    "row": 936,
+    "type": "NOTE:FULL",
+    "editor": "RCCouncilMinutes02",
+    "en": "Council Minutes"
+  },
+  {
+    "row": 937,
+    "type": "NOTE:FULL",
+    "editor": "RCCouncilMinutes01",
+    "en": "Council Minutes"
+  },
+  {
+    "row": 938,
+    "type": "NOTE:FULL",
+    "editor": "RCDrLiComputerEntry01",
+    "en": "Hydroponics Notes"
+  },
+  {
+    "row": 939,
+    "type": "NOTE:FULL",
+    "editor": "HubrisComicsScheduleNOTE",
+    "en": "Hubris Comics Publishing Schedule, Summer 2077"
+  },
+  {
+    "row": 940,
+    "type": "NOTE:FULL",
+    "editor": "GermPoliceHQImpoundInfo2",
+    "en": "Case 43027"
+  },
+  {
+    "row": 941,
+    "type": "NOTE:FULL",
+    "editor": "Vault101OvseerMessageCG02",
+    "en": "Overseer's Message"
+  },
+  {
+    "row": 942,
+    "type": "NOTE:TNAM",
+    "editor": "Vault101OvseerMessageCG02",
+    "en": "Every day in the Vault is a day of freedom and safety from the horrors outside. Celebrate each new day and be thankful for your home."
+  },
+  {
+    "row": 943,
+    "type": "NOTE:FULL",
+    "editor": "ArlingtonLibraryLiteracyNote",
+    "en": "Arlington READS!"
+  },
+  {
+    "row": 944,
+    "type": "NOTE:FULL",
+    "editor": "CG02Note",
+    "en": "A Birthday Poem"
+  },
+  {
+    "row": 945,
+    "type": "NOTE:FULL",
+    "editor": "FFER17Note",
+    "en": "Contract Killing"
+  },
+  {
+    "row": 946,
+    "type": "NOTE:FULL",
+    "editor": "FFEU14Note",
+    "en": "Contract for Extermination"
+  },
+  {
+    "row": 947,
+    "type": "NOTE:FULL",
+    "editor": "LDtxtzDCint12bNote01",
+    "en": "Hidden Stash Note"
+  },
+  {
+    "row": 948,
+    "type": "NOTE:FULL",
+    "editor": "LDtxtYaoGuaiDenNote01",
+    "en": "Yao Guai Den Note"
+  },
+  {
+    "row": 949,
+    "type": "NOTE:FULL",
+    "editor": "GermPoliceHQImpoundInfo",
+    "en": "Case 45602"
+  },
+  {
+    "row": 950,
+    "type": "NOTE:FULL",
+    "editor": "LOBEnterpriseNote07",
+    "en": "Memo: How to Respond to Federal Raids"
+  },
+  {
+    "row": 951,
+    "type": "NOTE:FULL",
+    "editor": "NoteText02",
+    "en": "Note"
+  },
+  {
+    "row": 952,
+    "type": "NOTE:FULL",
+    "editor": "NoteText01",
+    "en": "Note"
+  },
+  {
+    "row": 953,
+    "type": "NOTE:FULL",
+    "editor": "LOBEnterpriseNote08",
+    "en": "Memo: Emergency Procedures"
+  },
+  {
+    "row": 954,
+    "type": "NOTE:FULL",
+    "editor": "LOBEnterpriseNote06",
+    "en": "Memo: Hostile Workplace"
+  },
+  {
+    "row": 955,
+    "type": "NOTE:FULL",
+    "editor": "LOBEnterpriseNote05",
+    "en": "Memo: Company Policy: Caps in Emails"
+  },
+  {
+    "row": 956,
+    "type": "NOTE:FULL",
+    "editor": "LOBEnterpriseNote04",
+    "en": "Memo: Weapon Practice Tonight?"
+  },
+  {
+    "row": 957,
+    "type": "NOTE:FULL",
+    "editor": "LOBEnterpriseNote03",
+    "en": "Man the Doors"
+  },
+  {
+    "row": 958,
+    "type": "NOTE:FULL",
+    "editor": "LOBEnterpriseNote02",
+    "en": "Sexual Harassment Charge"
+  },
+  {
+    "row": 959,
+    "type": "NOTE:FULL",
+    "editor": "LOBEnterpriseNote01",
+    "en": "Memo to All Personnel: Emergency Protocols"
+  },
+  {
+    "row": 960,
+    "type": "NOTE:TNAM",
+    "editor": "FFDCUrbanPlanningTerminal02Note05",
+    "en": "Welcome to the Integrated Human Resources Management System v2.3, a joint product of the District of Columbia Office of Software Management and the United States Office of Computational Organization, developed through contracts with Computechtron, a division of the Skeks Corporation, a wholly owned subsidiary of Diamond, Inc. Copyright 2256, all rights reserved."
+  },
+  {
+    "row": 961,
+    "type": "NOTE:TNAM",
+    "editor": "FFDCUrbanPlanningTerminal02Note02",
+    "en": "The National Tax Record Tracking System (NTRTS) is currently experiencing downtime due to maintenance. Should you require immediate assistance with your tax related issue, please contact the Office of Human Resources representative assigned to your group."
+  }
+]

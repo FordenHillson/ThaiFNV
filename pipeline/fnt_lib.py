@@ -37,12 +37,36 @@ Gamebryo font ของ OpenMW: components/fontloader/fontloader.cpp — struct 
   from fnt_lib import load_fnt, save_fnt, load_tex, save_tex
 """
 from __future__ import annotations
+import os
 import struct
+import time
 
 HEADER_SIZE = 296
 ENTRY_SIZE = 56
 NUM_GLYPHS = 256
 NAME_SIZE = HEADER_SIZE - 12  # 284
+
+
+def _write_bytes(path: str, data: bytes, retries: int = 8):
+    """เขียนผ่านไฟล์ชั่วคราว + retry — กัน Vortex/AV ล็อกไฟล์ตอน overwrite"""
+    path = os.path.abspath(path)
+    tmp = path + ".tmp"
+    last = None
+    for i in range(retries):
+        try:
+            with open(tmp, "wb") as f:
+                f.write(data)
+            os.replace(tmp, path)
+            return
+        except OSError as e:
+            last = e
+            time.sleep(0.05 * (i + 1))
+            try:
+                if os.path.exists(tmp):
+                    os.remove(tmp)
+            except OSError:
+                pass
+    raise last
 
 
 class Glyph:
@@ -126,10 +150,8 @@ def save_fnt(path: str, name: str, glyphs, line_height: float | None = None):
     raw_name = name.encode("ascii")[:NAME_SIZE - 1] + b"\x00"
     header += raw_name
     header = header.ljust(HEADER_SIZE, b"\x00")[:HEADER_SIZE]
-    with open(path, "wb") as f:
-        f.write(header)
-        for g in glyphs:
-            f.write(g.pack())
+    blob = header + b"".join(g.pack() for g in glyphs)
+    _write_bytes(path, blob)
 
 
 def load_tex(path: str):
@@ -142,6 +164,4 @@ def load_tex(path: str):
 
 def save_tex(path: str, w: int, h: int, rgba: bytes):
     assert len(rgba) == w * h * 4
-    with open(path, "wb") as f:
-        f.write(struct.pack("<II", w, h))
-        f.write(rgba)
+    _write_bytes(path, struct.pack("<II", w, h) + rgba)

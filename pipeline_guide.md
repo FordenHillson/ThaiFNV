@@ -96,25 +96,42 @@ python pipeline/inspect_subs.py "path\to\FalloutNV.esm"
 
 ## 3) Machine Translation seed (Google Sheets)
 
-1. อัปโหลด CSV จาก `extracted/sheets/` ขึ้นชีต (หนึ่ง tab ต่อหมวด)
-2. วาง Apps Script จาก `corpus/google_sheets/mt_seed.gs`
-3. รัน MT เติมคอลัมน์ `TH` + ตั้ง `สถานะ = mt`
-4. คนแก้ต่อ → `สถานะ = edited` / `final`
-5. ดาวน์โหลด CSV เก็บ backup ลง `corpus/` เมื่อจบรอบใหญ่
+ชีต: https://docs.google.com/spreadsheets/d/1kJf1JjuN_CDdh7660LuVYHax0Z9cuB5NETtt1_LrEOE
 
-ทดลองแปล Messages: `extracted/sheets/FNV_Messages_translated.csv`
+1. วาง Apps Script จาก `corpus/google_sheets/mt_seed.gs` (Extensions → Apps Script)
+2. เมนู **🇹🇭 ThaiFNV → Import หมวดที่เหลือจาก GitHub**  
+   (ดึง CSV จาก `extracted/sheets/` บน GitHub เข้าแท็บใหม่ — ข้ามแท็บที่มีแล้ว)
+3. รัน **MT Seed** เติมคอลัมน์ `TH` + ตั้ง `สถานะ = mt`
+4. คนแก้ต่อ → `สถานะ = ok` / `fix`
+5. ดึงกลับ:
+
+```bash
+python pipeline/sheets_sync.py list
+python pipeline/sheets_sync.py pull
+```
+
+CSV ไปที่ `extracted/sheets/from_google/` + backup ใน `corpus/sheets_backup/`
+
+ดูไฟล์ที่รออัปโหลด: `python pipeline/sheets_sync.py pending`
 
 ---
 
-## 4) ป้อนกลับเข้าเกม (ยังไม่สมบูรณ์ใน pipeline)
+## 4) ป้อนกลับเข้าเกม (MESG)
 
-เป้าหมายระยะถัดไป:
+```bash
+# ดาวน์โหลดชีต (gid ของแท็บ FNV_Messages)
+curl -L -o extracted/sheets/from_google/FNV_Messages.csv \
+  "https://docs.google.com/spreadsheets/d/<SHEET_ID>/export?format=csv&gid=<GID>"
 
-1. CSV แปลแล้ว → XML / หรือเขียนตรงเข้า ESM ด้วยเครื่องมือ (xTranslator Esp mode หรือสคริปต์)
-2. encoding ข้อความไทย = **CP874** ให้ตรงตาราง glyph
-3. Round-trip: EN → TH → เปิดเกมตรวจจุดสำคัญ
+python pipeline/import_csv_to_esp.py extracted/sheets/from_google/FNV_Messages.csv \
+  --esm "D:\SteamLibrary\steamapps\common\Fallout New Vegas\Data\FalloutNV.esm" \
+  --out release/ThaiFNV_Messages.esp
+```
 
-จนกว่าจะมีสคริปต์ import ใช้ **xTranslator** ตามคู่มือใน `pipeline/xtranslator/README.md`
+คัดลอก ESP ไป `Data\` แล้วเปิดใน load order (หลัง master)  
+รายละเอียด → `docs/2026-10-30-import-messages.md`
+
+หมวดอื่น / xTranslator → ยังใช้คู่มือใน `pipeline/xtranslator/README.md` ได้
 
 ---
 

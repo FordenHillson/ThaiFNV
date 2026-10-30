@@ -1,0 +1,116 @@
+[
+  {
+    "row": 1002,
+    "type": "NOTE:TNAM",
+    "editor": "Vault101ClassroomComputerHomework1",
+    "en": "Blah dee blah blah."
+  },
+  {
+    "row": 1003,
+    "type": "NOTE:FULL",
+    "editor": "Vault101ClassroomComputerLessonHealth",
+    "en": "Vault 101 Classroom Lesson Review"
+  },
+  {
+    "row": 1004,
+    "type": "NOTE:TNAM",
+    "editor": "Vault101ClassroomComputerLessonHealth",
+    "en": "Blah dee blah blah."
+  },
+  {
+    "row": 1005,
+    "type": "NOTE:FULL",
+    "editor": "Vault101ClassroomComputerLessonHomeEc",
+    "en": "Vault 101 Classroom Lesson Review"
+  },
+  {
+    "row": 1006,
+    "type": "NOTE:TNAM",
+    "editor": "Vault101ClassroomComputerLessonHomeEc",
+    "en": "Blah dee blah blah."
+  },
+  {
+    "row": 1007,
+    "type": "NOTE:FULL",
+    "editor": "Vault101ClassroomComputerLessonMath",
+    "en": "Vault 101 Classroom Lesson Review"
+  },
+  {
+    "row": 1008,
+    "type": "NOTE:TNAM",
+    "editor": "Vault101ClassroomComputerLessonMath",
+    "en": "Blah dee blah blah."
+  },
+  {
+    "row": 1009,
+    "type": "NOTE:FULL",
+    "editor": "Vault101ClassroomComputerLessonScience",
+    "en": "Vault 101 Classroom Lesson Review"
+  },
+  {
+    "row": 1010,
+    "type": "NOTE:TNAM",
+    "editor": "Vault101ClassroomComputerLessonScience",
+    "en": "Blah dee blah blah."
+  },
+  {
+    "row": 1011,
+    "type": "NOTE:FULL",
+    "editor": "Vault101ClassroomComputerLessonHistory",
+    "en": "Vault 101 Lesson Review - History"
+  },
+  {
+    "row": 1012,
+    "type": "NOTE:TNAM",
+    "editor": "Vault101ClassroomComputerLessonHistory",
+    "en": "Blah blah blah blah blah."
+  },
+  {
+    "row": 1013,
+    "type": "NOTE:FULL",
+    "editor": "GameLookROOT",
+    "en": "A text note"
+  },
+  {
+    "row": 1014,
+    "type": "NOTE:TNAM",
+    "editor": "GameLookROOT",
+    "en": "You are standing in a wide plain.  Foothills stretch to the north, where clouds gather around an ominous peak.  A dirt path winds from a lonely chapel to the east, through the plains where you're standing, and south into a bustling town.  Wispy mists gather over marshland in the west, where a thin tower stands alone in the bog."
+  },
+  {
+    "row": 1015,
+    "type": "NOTE:FULL",
+    "editor": "MegatonGenericBrassLanternLeoNotesBEFORE",
+    "en": "Leo Notes"
+  },
+  {
+    "row": 1016,
+    "type": "NOTE:FULL",
+    "editor": "MegatonGenericBrassLanternPassword",
+    "en": "Brass Lantern Password"
+  },
+  {
+    "row": 1017,
+    "type": "NOTE:TNAM",
+    "editor": "MegatonGenericBrassLanternPassword",
+    "en": "The terminal access password is: \"Lhats\""
+  },
+  {
+    "row": 1018,
+    "type": "NOTE:FULL",
+    "editor": "MegatonGenericBrassLanternInvNotes",
+    "en": "Brass Lantern Inventory Notes"
+  },
+  {
+    "row": 1019,
+    "type": "NOTE:FULL",
+    "editor": "DemoComputerPassword",
+    "en": "Metro Computer Password"
+  },
+  {
+    "row": 1020,
+    "type": "NOTE:TNAM",
+    "editor": "DemoComputerPassword",
+    "en": "The password is Applesauce."
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "rows": 0,
+  "log": {
+    "ok": [],
+    "fail": [
+      {
+        "file": "_stdout_1.json F247",
+        "error": "HTTP 401: {\"error\":\"unauthorized\",\"message\":\"Missing Cursor credential in x-cursor-auth\"}"
+      },
+      {
+        "file": "_stdout_2.json F327",
+        "error": "HTTP 401: {\"error\":\"unauthorized\",\"message\":\"Missing Cursor credential in x-cursor-auth\"}"
+      }
+    ]
+  }
+}

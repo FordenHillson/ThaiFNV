@@ -33,6 +33,7 @@ import unicodedata
 from PIL import Image, ImageDraw, ImageFont
 
 from fnt_lib import Glyph, save_fnt, save_tex
+from thai_precompose import PRECOMPOSE_TABLE
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -45,14 +46,16 @@ COMBINING = set("ัิีึืฺุู็่้๊๋์ํ๎")
 THAI_CONSONANTS = range(0xA1, 0xCF)
 # สีเส้นขอบเริ่มต้น — ต้องเป็น "โทนกลาง" เพราะเกมคูณ tint ทับอีกชั้น
 # (สีเข้มเกินจะกลายเป็นดำเมื่อคูณกับสีข้อความ)
-DEFAULT_OUTLINE_COLOR = "6A5C40"
+DEFAULT_OUTLINE_COLOR = "6A5C40"  # โทนกลาง — คูณ tint ทองแล้วได้ขอบเข้มพอดี (ดู docs)
 # สีเส้นใน (ระหว่างตัวอักษรกับขอบนอก) ให้ดูเป็นเส้นคู่แบบงานดีไซน์
 DEFAULT_OUTLINE_INNER = "B0A078"
 
 
 def auto_outline(size: int) -> int:
-    """ความหนาเส้นขอบอัตโนมัติ: 1px ที่ตัวเล็ก, 2px ตั้งแต่ 20px ขึ้นไป"""
-    return 1 if size < 20 else 2
+    """ความหนาเส้นขอบ — เกมใช้ความสูง glyph จัด UI; outline≥2 ที่เมนู/กล่องข้อความจะดันล้นกรอบ
+    จึงใช้ 1px เป็นหลัก (FreeType stroke เนียน) และ 2px เฉพาะหัวข้อใหญ่
+    """
+    return 1 if size < 36 else 2
 
 
 def auto_tracking(size: int) -> float:
@@ -105,7 +108,7 @@ def char_table() -> dict[int, str]:
 def draw_glyph(draw, xy, ch, font, stroke=0, outer=(46, 36, 16), inner=None):
     """วาดตัวอักษรลง atlas: เส้นนอก → เส้นใน → ตัวอักษรสีขาว (ให้ tint เกมคุมสี)
 
-    stroke คือความหนารวม (px) แบ่งครึ่ง: ครึ่งนอกเป็นสีเข้ม ครึ่งในเป็นสีอ่อน
+    ใช้ FreeType stroke (anti-alias) — ขอบเนียน ไม่แตกแบบ hard-mask
     """
     if stroke > 0:
         draw.text(xy, ch, font=font, anchor="ls", fill=(255, 255, 255, 255),
@@ -123,7 +126,6 @@ def ink_metrics(font: ImageFont.FreeTypeFont, ch: str, size: int, stroke: int = 
     วัดจาก baseline: ink_top ติดลบเมื่ออยู่เหนือ baseline, บวกเมื่ออยู่ใต้
     (ใช้การวาดจริงบน canvas เพราะ font.getbbox() คืนความสูงเกินจริงกับ
      glyph ที่ advance = 0 อย่างสระ/วรรณยุกต์ไทย)
-    ถ้ามี stroke กล่องหมึกจะขยายตามความหนาเส้นขอบด้วย
     """
     pad = size * 3 + stroke + 2
     canvas = Image.new("L", (pad * 2, pad * 2), 0)
@@ -184,6 +186,19 @@ def build(args):
     if tracking is None:
         tracking = auto_tracking(args.size)
     tracking = float(tracking)
+    # ช่องว่างแนวนอนพิเศษหลังทุก glyph (px) — แยกจาก tracking ใน advance ของ TTF
+    letter_gap = float(getattr(args, "letter_gap", 0) or 0)
+
+    # ระยะบรรทัดใน UI หลายจุดใช้ metrics ของ glyph ไม่ใช่แค่ header float
+    # (วัด 2026-10-30: ขยาย line_h header / pad เฉพาะ ASCII แล้วยังทับใน MessageMenu)
+    metric_pad_top = int(getattr(args, "metric_pad_top", 0) or 0)
+    metric_pad_bot = int(getattr(args, "metric_pad_bot", 0) or 0)
+    # สระบน/วรรณยุกต์: ยกขึ้นให้พ้น outline ของพยัญชนะ
+    upper_mark_lift = int(getattr(args, "upper_mark_lift", 0) or 0)
+    # สมมติฐาน H: MessageMenu ใช้ max(px_height) ของตัวในบรรทัดเป็นระยะบรรทัด
+    # สตริงไทยล้วน max_h≈25 แต่ max_asc+max_desc≈31 → gap ติดลบ → บังคับสูงขั้นต่ำ
+    min_glyph_h = int(getattr(args, "min_glyph_height", 0) or 0)
+    min_below = int(getattr(args, "min_below", 0) or 0)
 
     table = char_table()
     cps = sorted(table)
@@ -193,73 +208,274 @@ def build(args):
     cons_advs = [a for a in cons_advs if a > 0]
     ref_cons_adv = sum(cons_advs) / len(cons_advs) if cons_advs else 0.0
 
-    # วัดกล่องหมึกทุก glyph → (bearing_x, ascent, rect_w, rect_h, advance, ink_w, ink_left, ink_top)
+    # สระบน (ชั้นใกล้พยัญชนะ) vs วรรณยุกต์ (ชั้นสูงกว่า) — ต้องแยก ascent
+    # ไม่งั้น ที่ / ชิ้น จะทับกันเอง (วัด: ี asc≈19 กับ ่ asc≈18 เกือบเท่า)
+    UPPER_VOWELS = set("ัิีึื็ํ")
+    TONE_MARKS = set("่้๊๋์๎")
+    UPPER_MARKS = UPPER_VOWELS | TONE_MARKS
+    # วรรณยุกต์ยกสูงกว่าสระบนเสมอ (แม้ --upper-mark-lift=0)
+    # ระยะแนวตั้งระหว่างสระบนกับวรรณยุกต์ (ที่/ชิ้น ต้องเห็นแยกชั้น)
+    tone_extra_lift = max(8, int(round(args.size * 0.45)))
+
+    # วัดกล่องหมึกทุก glyph → dict ต่อ codepoint
     #
-    # bearing_x = 0 (เหมือนฟอนต์ vanilla ทุกตัว) — สำคัญมาก:
-    # เกมคำนวณความกว้างข้อความสำหรับ justify เป็น Σ(advance - bearing)
-    # ถ้า bearing ติดลบ (quad ยื่นซ้ายของ pen) ข้อความชิดขวาจะเยื้องซ้าย
-    # สะสมตามจำนวนตัวอักษร (วัดจริง: เยื้อง = Σ|bearing| × UI scale)
+    # สระ/วรรณยุกต์: ไม่ใส่ outline — กล่องมาร์คที่หนาเท่าพยัญชนะทำให้ยื่นทับตัวถัดไป
     measured = {}
     for cp in cps:
         ch = table[cp]
-        m = ink_metrics(font, ch, args.size, outline)
+        combining = is_combining(ch)
+        g_outline = 0 if combining else outline
+        g_pad = 1 if combining else pad
+        m = ink_metrics(font, ch, args.size, g_outline)
         if m is None:
             continue
         l, t, w, h = m
-        measured[cp] = (0.0, -t + pad, w + 2 * pad, h + 2 * pad,
-                        font.getlength(ch), w, l, t)
+        lift = 0
+        if combining and ch in UPPER_MARKS:
+            lift = upper_mark_lift
+            if ch in TONE_MARKS:
+                lift += tone_extra_lift
+            if lift > 0:
+                t = t - lift
+                h = h + lift
+        # metric pad + min height: เฉพาะตัวฐาน (ไม่ใช่ combining)
+        mpt = 0 if combining else metric_pad_top
+        mpb = 0 if combining else metric_pad_bot
+        asc = -t + g_pad + mpt
+        rh = h + 2 * g_pad + mpt + mpb
+        if not combining:
+            if min_below > 0 and rh < asc + min_below:
+                rh = asc + min_below
+            if min_glyph_h > 0 and rh < min_glyph_h:
+                extra = min_glyph_h - rh
+                asc += extra
+                rh += extra
+                mpt += extra
+            # ห้ามขยายทุก glyph ให้สูง = line_h — เกมใช้ความสูง glyph จริงจัดตำแหน่ง UI
+            # (พองแล้วปุ่ม Yes/Continue หลุดล่างกรอบ; minh≈48 ก็เคยดันเมนูหาย)
+            # เปิดได้ด้วย --match-line-height ถ้าต้องการทดลอง
+            if getattr(args, "match_line_height", False) and line_h > rh + 0.5:
+                deficit = int(round(line_h - rh))
+                if deficit > 0:
+                    rh += deficit
+                    mpb += deficit
+        measured[cp] = {
+            "combining": combining,
+            "outline": g_outline,
+            "pad": g_pad,
+            "mpt": mpt,
+            "asc": asc,
+            "rw": w + 2 * g_pad,
+            "rh": rh,
+            "adv": font.getlength(ch),
+            "iw": w,
+            "ix": l,
+            "it": t,
+            "lift": lift,
+            "precompose": None,
+        }
 
-    side, placed = pack_rects([(cp, m[2], m[3]) for cp, m in measured.items()])
+    # Precompose สระบน+วรรณยุกต์ → ช่อง 0x80–0x9B (ชั้น 3: ที่/ชิ้น/เปลี่ยน)
+    for cluster, slot in PRECOMPOSE_TABLE.items():
+        vowel, tone = cluster[0], cluster[1]
+        mv = ink_metrics(font, vowel, args.size, 0)
+        mt = ink_metrics(font, tone, args.size, 0)
+        if mv is None or mt is None:
+            continue
+        vl, vt, vw, vh = mv
+        tl, tt, tw, th = mt
+        # ยกวรรณยุกต์เหนือสระบน
+        tt_lifted = tt - tone_extra_lift
+        th_lifted = th + tone_extra_lift
+        # รวมกล่อง
+        left = min(vl, tl)
+        top = min(vt, tt_lifted)
+        right = max(vl + vw, tl + tw)
+        bot = max(vt + vh, tt_lifted + th_lifted)
+        g_pad = 1
+        w = max(1, right - left)
+        h = max(1, bot - top)
+        measured[slot] = {
+            "combining": True,
+            "outline": 0,
+            "pad": g_pad,
+            "mpt": 0,
+            "asc": -top + g_pad,
+            "rw": w + 2 * g_pad,
+            "rh": h + 2 * g_pad,
+            "adv": 0.0,
+            "iw": w,
+            "ix": left,
+            "it": top,
+            "lift": tone_extra_lift,
+            "precompose": {
+                "vowel": vowel, "tone": tone,
+                "vl": vl, "vt": vt,
+                "tl": tl, "tt": tt_lifted,
+            },
+        }
+
+    cons_rws = [measured[cp]["rw"] for cp in THAI_CONSONANTS if cp in measured]
+    ref_cons_rw = sum(cons_rws) / len(cons_rws) if cons_rws else ref_cons_adv
+    # ความกว้างเซลล์สระบน (หลังได้ rw) — วรรณยุกต์จะดึงกลับมายังเซลล์นี้แล้วซ้อนแนวตั้ง
+    upper_rws = [measured[cp]["rw"] for cp in cps
+                 if cp in measured and table[cp] in UPPER_VOWELS]
+    ref_upper_w = sum(upper_rws) / len(upper_rws) if upper_rws else 12.0
+
+    side, placed = pack_rects([(cp, m["rw"], m["rh"]) for cp, m in measured.items()])
     atlas = Image.new("RGBA", (side, side), (0, 0, 0, 0))
     draw = ImageDraw.Draw(atlas)
 
     glyphs = [Glyph() for _ in range(256)]
+    # #region agent log
+    _dbg_marks = []
+    # #endregion
 
-    for cp in cps:
-        ch = table[cp]
+    draw_cps = sorted(measured.keys())
+    for cp in draw_cps:
         g = glyphs[cp]
-        combining = is_combining(ch)
-        if cp not in measured:
-            # ไม่มีหมึก (space / NBSP / ตัวอักษรว่าง) — ใช้เฉพาะ advance
-            g.advance = round_adv(font.getlength(ch) + tracking)
-            continue
-        bearing, asc, rw, rh, adv, iw, ix, it = measured[cp]
+        m = measured[cp]
+        combining = m["combining"]
+        g_pad = m["pad"]
+        g_outline = m["outline"]
+        iw, ix, it = m["iw"], m["ix"], m["it"]
+        rw, rh, adv = m["rw"], m["rh"], m["adv"]
         rx, ry = placed[cp]
+        pc = m.get("precompose")
 
-        # วาดโดยให้ baseline/ขอบซ้ายของหมึกตรงกับตำแหน่งในกล่อง
-        # ตัวอักษรเป็นสีขาว (เกมคูณ tint) ส่วนเส้นขอบฝังสีเข้มไว้ใน texture
-        draw_glyph(draw, (rx + pad - ix, ry + pad - it), ch, font,
-                   outline, outline_rgb, inner_rgb)
+        if pc:
+            # origin เดียวกับ glyph ปกติ: หมึก (ix,it) ไปที่มุมบนซ้ายของเซลล์+pad
+            # สระ/วรรณยุกต์ใช้ origin เดียวกัน → ซ้อนตามตำแหน่งฟอนต์จริง
+            # วรรณยุกต์ยกเพิ่ม tone_extra_lift (tt ใน pc ถูกเลื่อนแล้วตอนวัด)
+            ox = rx + g_pad - ix
+            oy = ry + g_pad - it
+            lift = m.get("lift") or 0
+            draw_glyph(draw, (ox, oy), pc["vowel"], font, 0, outline_rgb, None)
+            draw_glyph(draw, (ox, oy - lift), pc["tone"], font, 0, outline_rgb, None)
+            ch_label = pc["vowel"] + pc["tone"]
+        else:
+            ch = table[cp]
+            draw_glyph(draw, (rx + g_pad - ix, ry + g_pad + m["mpt"] - it), ch, font,
+                       g_outline, outline_rgb, inner_rgb if g_outline > 0 else None)
+            ch_label = ch
 
         g.set_uv(rx / side, ry / side, (rx + rw) / side, (ry + rh) / side)
         g.px_width = rw
         g.px_height = rh
-        g.ascent = asc
+        g.ascent = m["asc"]
         if combining:
-            # ไม่เลื่อน pen และเลื่อนซ้ายไปกลางพยัญชนะตัวก่อนหน้า
-            # b = (ink_cons - ink_mark)/2 - advance_cons  (advance_cons = ref + tracking)
-            g.bearing_x = (ref_cons_adv - iw) / 2.0 - round_adv(ref_cons_adv + tracking)
-            g.advance = 0
+            # แบบ FNVThai: bear=-w, adv=w (รวม precompose ชั้น 3)
+            g.bearing_x = -float(rw)
+            g.advance = round_adv(max(rw, 1.0))
+            # #region agent log
+            _dbg_marks.append({
+                "cp": "0x%02X" % cp, "ch": ch_label, "w": rw, "iw": iw,
+                "pad": g_pad, "bearing": round(g.bearing_x, 2),
+                "adv": g.advance, "asc": round(g.ascent, 2),
+                "lift": m["lift"], "pre": bool(pc),
+            })
+            # #endregion
         else:
-            g.bearing_x = bearing
-            # tracking: เกมไม่ทำ kerning ให้ จึงเผื่อระยะห่างระหว่างตัวอักษรเอง
-            # (มากเกินไปจะทำให้ข้อความในเมนูถูกตัดขอบ — ทดสอบแล้วที่ +2*stroke)
-            #
-            # advance ต้องเป็นจำนวนเต็ม px (เหมือนฟอนต์ vanilla ทุกตัว):
-            # เกมคำนวณความกว้างข้อความด้วย advance ที่ปัดเป็นจำนวนเต็ม แต่วาด
-            # glyph ด้วย advance เต็ม (ทศนิยม) → ถ้า advance มีเศษ ข้อความชิดขวา
-            # จะเยื้องสะสม ~0.4px ต่อตัวอักษร (วัดจริง: DLC 20 ตัวเยื้อง 12px)
-            g.advance = round_adv(adv + tracking)
+            # ช่องว่างแนวนอนคงที่: advance = ความกว้างหมึกจริง + tracking + gap
+            g.bearing_x = 0.0
+            ink_w = max(adv, float(iw))
+            g.advance = round_adv(ink_w + tracking + letter_gap)
+
+    # space / ช่องว่างที่ไม่มีหมึก
+    for cp in cps:
+        if cp in measured:
+            continue
+        ch = table[cp]
+        glyphs[cp].advance = round_adv(font.getlength(ch) + tracking)
 
     out_dir = os.path.dirname(os.path.abspath(args.out))
     os.makedirs(out_dir, exist_ok=True)
     save_fnt(args.out + ".fnt", args.name, glyphs, line_height=line_h)
     save_tex(args.out + ".tex", side, side, atlas.tobytes())
-    atlas.save(args.out + ".png")
+    try:
+        atlas.save(args.out + ".png")
+    except OSError as e:
+        # PNG เป็นแค่พรีวิว — อย่าให้ AV/Vortex ล็อกแล้วพังทั้งชุด
+        print("warn: บันทึก PNG ไม่ได้ (%s) — ข้าม" % e)
+    # #region agent log
+    try:
+        import json, time
+        _log = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                            "..", ".cursor", "debug-8f0ee2.log")
+        os.makedirs(os.path.dirname(os.path.abspath(_log)), exist_ok=True)
+        with open(_log, "a", encoding="utf-8") as _f:
+            _f.write(json.dumps({
+                "sessionId": "8f0ee2", "runId": "post-fix", "hypothesisId": "E",
+                "location": "font_builder.py:build",
+                "message": "combining marks after rebuild",
+                "data": {"font": args.name, "size": args.size, "marks": _dbg_marks[:8],
+                         "mark_count": len(_dbg_marks)},
+                "timestamp": int(time.time() * 1000),
+            }, ensure_ascii=False) + "\n")
+    except Exception:
+        pass
+    # #endregion
+    # #region agent log
+    try:
+        import json, time
+        _H = glyphs[ord("H")]
+        _thai = [glyphs[c] for c in range(0xA0, 0x100) if glyphs[c].px_width > 0]
+        _tmax_h = max((g.px_height for g in _thai), default=0)
+        _tmax_a = max((g.ascent for g in _thai), default=0)
+        _tmax_d = max((g.px_height - g.ascent for g in _thai), default=0)
+        _log = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                            "..", ".cursor", "debug-8f0ee2.log")
+        with open(_log, "a", encoding="utf-8") as _f:
+            _f.write(json.dumps({
+                "sessionId": "8f0ee2", "runId": "min-glyph-h", "hypothesisId": "H",
+                "location": "font_builder.py:build",
+                "message": "Thai max_h vs span after min_glyph_height",
+                "data": {
+                    "font": args.name, "line_h": line_h, "tracking": tracking,
+                    "min_glyph_h": min_glyph_h, "min_below": min_below,
+                    "metric_pad_top": metric_pad_top, "metric_pad_bot": metric_pad_bot,
+                    "upper_mark_lift": upper_mark_lift,
+                    "H_asc": _H.ascent, "H_h": _H.px_height,
+                    "thai_max_h": _tmax_h, "thai_max_asc": _tmax_a,
+                    "thai_max_desc": _tmax_d,
+                    "gap_if_LH_max_h": round(_tmax_h - _tmax_a - _tmax_d, 2),
+                    "mark_sample": _dbg_marks[:4],
+                },
+                "timestamp": int(time.time() * 1000),
+            }, ensure_ascii=False) + "\n")
+        # #region agent log
+        # สมมติฐาน I: spacing พังเพราะ minh ไปขยาย combining — ตรวจว่ามาร์คกลับเป็น ink-tight
+        _mark_hs = [m["w"] for m in _dbg_marks]  # placeholder
+        _imai = glyphs[0xD4]  # ิ
+        _mai = glyphs[0xE8]   # ่
+        with open(_log, "a", encoding="utf-8") as _f:
+            _f.write(json.dumps({
+                "sessionId": "8f0ee2", "runId": "spacing-fix", "hypothesisId": "I",
+                "location": "font_builder.py:build",
+                "message": "combining mark quads after skip-minh",
+                "data": {
+                    "font": args.name,
+                    "sara_i": {"w": _imai.px_width, "h": _imai.px_height,
+                               "asc": _imai.ascent, "bear": round(_imai.bearing_x, 2),
+                               "adv": _imai.advance},
+                    "mai_ek": {"w": _mai.px_width, "h": _mai.px_height,
+                               "asc": _mai.ascent, "bear": round(_mai.bearing_x, 2),
+                               "adv": _mai.advance},
+                    "cons_ko": {"w": glyphs[0xA1].px_width, "h": glyphs[0xA1].px_height,
+                                "asc": glyphs[0xA1].ascent, "adv": glyphs[0xA1].advance},
+                    "marks_not_inflated": (_imai.px_height < 30 and _mai.px_height < 30),
+                },
+                "timestamp": int(time.time() * 1000),
+            }, ensure_ascii=False) + "\n")
+        # #endregion
+    except Exception:
+        pass
+    # #endregion
     print("ok: %s.fnt/.tex (atlas %dx%d, line_h=%d, glyphs=%d, outline=%d, "
-          "tracking=%.1f, ref_cons=%.1f)" %
+          "tracking=%.1f, gap=%.1f, ref_cons=%.1f, mpad=%d+%d, lift=%d, minh=%d)" %
           (args.out, side, side, line_h, len(measured), outline, tracking,
-           ref_cons_adv))
+           letter_gap, ref_cons_adv, metric_pad_top, metric_pad_bot,
+           upper_mark_lift, min_glyph_h))
 
 
 def main():
@@ -279,8 +495,24 @@ def main():
                          % DEFAULT_OUTLINE_INNER)
     ap.add_argument("--line-height", type=float, default=None,
                     help="บังคับความสูงบรรทัด (ค่าเริ่มต้น ascent+descent)")
+    ap.add_argument("--match-line-height", action="store_true",
+                    help="ขยายกล่อง glyph ให้สูงเท่า line_h (เติมล่าง) — ปิดเป็นค่าเริ่มต้น เพราะดันข้อความหลุดกรอบ UI")
+    ap.add_argument("--no-match-line-height", action="store_true",
+                    help=argparse.SUPPRESS)  # เดิม; ค่าเริ่มต้นคือไม่ขยายแล้ว
     ap.add_argument("--tracking", type=float, default=None,
                     help="ระยะห่างระหว่างตัวอักษร (px) — ค่าเริ่มต้นคิดจากขนาดฟอนต์")
+    ap.add_argument("--letter-gap", type=float, default=None,
+                    help="ช่องว่างแนวนอนพิเศษหลังทุก glyph (px)")
+    ap.add_argument("--metric-pad-top", type=int, default=None,
+                    help="เติมช่องว่างบน glyph เพื่อขยายระยะบรรทัด (UI อ่าน metrics)")
+    ap.add_argument("--metric-pad-bot", type=int, default=None,
+                    help="เติมช่องว่างล่าง glyph เพื่อขยายระยะบรรทัด")
+    ap.add_argument("--upper-mark-lift", type=int, default=None,
+                    help="ยกสระบน/วรรณยุกต์ขึ้น (px) ให้พ้นพยัญชนะ")
+    ap.add_argument("--min-glyph-height", type=int, default=None,
+                    help="บังคับความสูง glyph ขั้นต่ำ (px) — กัน LH=max(h) ติดลบ")
+    ap.add_argument("--min-below", type=int, default=None,
+                    help="บังคับให้ quad ยื่นต่ำกว่า baseline อย่างน้อย N px")
     args = ap.parse_args()
     if args.batch and (not args.out_dir):
         ap.error("--batch ต้องระบุ --out-dir ด้วย")
@@ -300,17 +532,67 @@ def main():
             tracking = args.tracking
             if tracking is None and tracking_pct is not None:
                 tracking = round(size * tracking_pct, 1)
+            # ค่าเริ่มต้นสำหรับชุด vanilla: บังคับสูง glyph ให้พอสำหรับไทยหลายบรรทัด
+            mpt = args.metric_pad_top
+            mpb = args.metric_pad_bot
+            uml = args.upper_mark_lift
+            mgh = args.min_glyph_height
+            mbl = args.min_below
+            lgap = args.letter_gap
+            if args.batch == "vanilla":
+                # 2026-10-30 เคยบังคับ minh≈48 → เมนู/Pip-Boy โดนดัน รายการล่างหาย
+                # เกมใช้ความสูง glyph จริงเป็นระยะแถว UI — ห้ามพองทุก glyph
+                # เผื่อสระไทยด้วย pad เล็กน้อย ไม่ใช้ min_glyph_height ก้อนใหญ่
+                # ระยะบรรทัด UI = ความสูง glyph จริง — เพิ่ม pad เพื่อห่างบรรทัด
+                # (กรอบ message_menu ขยายตามเนื้อหาใน XML แล้ว จึงพองได้พอประมาณ)
+                if mpt is None:
+                    mpt = max(2, int(round(size * 0.18)))
+                if mpb is None:
+                    mpb = max(2, int(round(size * 0.14)))
+                if uml is None:
+                    uml = 0
+                if mgh is None:
+                    mgh = 0
+                if mbl is None:
+                    mbl = max(4, int(round(size * 0.22)))
+                if lgap is None:
+                    lgap = 0.0
+            else:
+                mpt = mpt or 0
+                mpb = mpb or 0
+                uml = uml or 0
+                mgh = mgh or 0
+                mbl = mbl or 0
+                lgap = lgap or 0
+            # อย่า lock args.outline ในลูป — คำนวณต่อไฟล์ตามขนาด
+            outline = args.outline if args.outline is not None else auto_outline(size)
             sub = argparse.Namespace(
                 ttf=args.ttf, name=fname, size=size,
                 out=os.path.join(args.out_dir, fname),
-                outline=args.outline, outline_color=args.outline_color,
+                outline=outline, outline_color=args.outline_color,
                 outline_inner=args.outline_inner,
-                tracking=tracking,
-                line_height=args.line_height or vanilla_lh)
+                tracking=tracking, letter_gap=lgap,
+                line_height=args.line_height or vanilla_lh,
+                metric_pad_top=mpt, metric_pad_bot=mpb, upper_mark_lift=uml,
+                min_glyph_height=mgh, min_below=mbl,
+                match_line_height=bool(args.match_line_height) and not args.no_match_line_height)
             print("--- %s (%dpx)" % (fname, size))
             build(sub)
         return
 
+    if args.metric_pad_top is None:
+        args.metric_pad_top = 0
+    if args.metric_pad_bot is None:
+        args.metric_pad_bot = 0
+    if args.upper_mark_lift is None:
+        args.upper_mark_lift = 0
+    if args.min_glyph_height is None:
+        args.min_glyph_height = 0
+    if args.min_below is None:
+        args.min_below = 0
+    if args.letter_gap is None:
+        args.letter_gap = 0
+    args.match_line_height = bool(args.match_line_height) and not args.no_match_line_height
     build(args)
 
 
@@ -332,20 +614,18 @@ FONTSETS = {
         #   6 = quest objective + ปุ่มยืนยัน + Pip-Boy tabs → −26%
         #   7 = start menu + หัวข้อ Pip-Boy + ชื่อสถานที่   → −20%
         # (สล็อต 7 ถูกใช้ร่วมกับ start menu — ผู้ใช้ยืนยันให้ลดไปด้วย)
-        ("Glow_Monofonto_Large", 21, 31, 0.089),
-        # slot 2/3 = หน้า STATS ของ Pip-Boy, map, barter, repair, levelup ฯลฯ
-        # ลด 20% ให้พอดีกับสล็อตอื่นที่ลดแล้ว (25 → 20, 22 → 18)
-        ("Monofonto_Large", 20, 31, None),
-        ("Glow_Monofonto_Medium", 18, 26, None),
-        # slot 4: 27 → 20 (−26%) — ระวัง: บล็อก version info ของ start menu ใช้สล็อตนี้ด้วย
-        ("Monofonto_VeryLarge02_Dialogs2", 20, 36, 0.102),
-        ("Fixedsys_Comp_uniform_width", 24, 25, None),
-        # slot 6: 29 → 21 (−28%)
-        ("Glow_Monofonto_VL_dialogs", 21, 34, None),
-        # slot 7: 26 → 21 (−19%)
-        ("Baked-in_Monofonto_Large", 21, 36, 0.089),
-        ("Glow_Futura_Caps_Large", 42, 52, None),
-        ("NVFont_Test", 31, 36, None),
+        # 2026-10-30: ลดขนาดอีก ~14% — กล่องข้อความไทย (หัวข้อ/เนื้อ/ปุ่ม) ล้นกรอบ
+        # line_h คงของ vanilla (header); เกมจัดระยะแถวจากความสูง glyph จริง
+        # tracking ตาม docs calibrate (≈8–10%)
+        ("Glow_Monofonto_Large", 18, 31, 0.089),          # สล็อต 1 เนื้อกล่อง
+        ("Monofonto_Large", 17, 31, 0.08),
+        ("Glow_Monofonto_Medium", 15, 26, 0.08),
+        ("Monofonto_VeryLarge02_Dialogs2", 17, 36, 0.102),  # สล็อต 4
+        ("Fixedsys_Comp_uniform_width", 20, 25, None),
+        ("Glow_Monofonto_VL_dialogs", 18, 34, 0.08),        # สล็อต 6 ปุ่มกล่อง
+        ("Baked-in_Monofonto_Large", 18, 36, 0.089),        # สล็อต 7 หัวข้อกล่อง + start menu
+        ("Glow_Futura_Caps_Large", 36, 52, None),
+        ("NVFont_Test", 26, 36, None),
     ],
     # DarN patch: ชื่อไฟล์ต้องตรง DarNifiedUINV เป๊ะ เพื่อ override ทับใน Data\Textures\Fonts
     # (ชื่อ DarN มีขนาดอยู่ในชื่ออยู่แล้ว จึงใช้ขนาดตามชื่อ)

@@ -1,0 +1,242 @@
+[
+  {
+    "row": 482,
+    "type": "NOTE:TNAM",
+    "editor": "VMS08BombPassword",
+    "en": "This appears to be the activation/deactivation code for some sort of explosive."
+  },
+  {
+    "row": 483,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformMcCarranMessHallPartsListNote",
+    "en": "Food Processor Parts List"
+  },
+  {
+    "row": 484,
+    "type": "NOTE:FULL",
+    "editor": "McLaffertyNoteNV",
+    "en": "Crimson Caravan Payment"
+  },
+  {
+    "row": 485,
+    "type": "NOTE:TNAM",
+    "editor": "McLaffertyNoteNV",
+    "en": "Alice McLafferty at the Crimson Caravan Company in New Vegas has told you to return in a few days for payment as a result of your undetected theft of the Gun Runner's manufacturing secrets."
+  },
+  {
+    "row": 486,
+    "type": "NOTE:FULL",
+    "editor": "CrimsonCaravanHolotapeNV",
+    "en": "Crimson Caravan Invoice"
+  },
+  {
+    "row": 487,
+    "type": "NOTE:TNAM",
+    "editor": "CrimsonCaravanHolotapeNV",
+    "en": "This holotape contains an invoice for various bits of scientific equipment shipped from Shady Sands, California. The intended recipient for the holotape is Doctor Thomas Hildern."
+  },
+  {
+    "row": 488,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformMcCarranContreras2CrimsonCaravan",
+    "en": "Medical Supplies"
+  },
+  {
+    "row": 489,
+    "type": "NOTE:FULL",
+    "editor": "VMS07BountyNote",
+    "en": "Motor-Runner Bounty"
+  },
+  {
+    "row": 490,
+    "type": "NOTE:TNAM",
+    "editor": "VMS07BountyNote",
+    "en": "Hsu told me that he'd pay me for taking out Motor-Runner. I can find him at Vault 3, and the NCR will pay well if I'm able to take him out. Hsu also mentioned the last soldier he sent to take care of Motor-Runner has missed his scheduled radio contact."
+  },
+  {
+    "row": 491,
+    "type": "NOTE:FULL",
+    "editor": "EastTerminalNote",
+    "en": "East Terminal Warning"
+  },
+  {
+    "row": 492,
+    "type": "NOTE:TNAM",
+    "editor": "EastTerminalNote",
+    "en": "Warning: Radiation has been detected by the filtration system. No leaks are detected within this facility please investigate external causes to correct this issue."
+  },
+  {
+    "row": 493,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformMcCarranContreras1GunRunners",
+    "en": "McCarran Arms Request"
+  },
+  {
+    "row": 494,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformMcCarran2POWNote",
+    "en": "Silent Treatment"
+  },
+  {
+    "row": 495,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformMcCarran2POWNote",
+    "en": "The NCR has captured a centurion of Caesar's Legion alive and they have him in custody at Camp McCarran, but he's not talking. Talk to Lieutenant Boyd about getting access to the prisoner."
+  },
+  {
+    "row": 496,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformMcCarranProperBurialStartNote",
+    "en": "Retrieve the Corpse of Ranger Morales"
+  },
+  {
+    "row": 497,
+    "type": "NOTE:FULL",
+    "editor": "REPCONHQXuan",
+    "en": "Inter-office Correspondence #3458503"
+  },
+  {
+    "row": 498,
+    "type": "NOTE:FULL",
+    "editor": "GunRunnerHolotapeNV",
+    "en": "Milling Specifications"
+  },
+  {
+    "row": 499,
+    "type": "NOTE:TNAM",
+    "editor": "GunRunnerHolotapeNV",
+    "en": "This holotape contains milling and grinding specifications used in the creation of the Gun Runners' weapons."
+  },
+  {
+    "row": 500,
+    "type": "NOTE:FULL",
+    "editor": "VVault11GottliebPassword",
+    "en": "Roy Gottlieb's Terminal Password"
+  },
+  {
+    "row": 501,
+    "type": "NOTE:TNAM",
+    "editor": "VVault11GottliebPassword",
+    "en": "This password was found shamefully close to its creator's computer terminal."
+  },
+  {
+    "row": 502,
+    "type": "NOTE:FULL",
+    "editor": "BMNCRTrooperNote",
+    "en": "Black Mountain Investigation Note"
+  },
+  {
+    "row": 503,
+    "type": "NOTE:TNAM",
+    "editor": "BMNCRTrooperNote",
+    "en": "It was a fool's errand to send us into these mountains. The road seemed deserted at night, just like our scout said, but halfway up we found ourselves attacked from random directions by enemies we couldn't see. In the chaos that followed, the squad got split up, and now I don't know where my men are. Hopefully, some of them made it."
+  },
+  {
+    "row": 504,
+    "type": "NOTE:FULL",
+    "editor": "VVault11QuestNote",
+    "en": "Vault 11"
+  },
+  {
+    "row": 505,
+    "type": "NOTE:TNAM",
+    "editor": "VVault11QuestNote",
+    "en": "Four corpses at the front entrance of Vault 11 and a strange recording point to sinister events. Determine what happened to the citizens of Vault 11."
+  },
+  {
+    "row": 506,
+    "type": "NOTE:FULL",
+    "editor": "VVault11SurvivorRecording",
+    "en": "System Recording: Vault 11 Front Entrance"
+  },
+  {
+    "row": 507,
+    "type": "NOTE:FULL",
+    "editor": "BMTabithaJournal1Note",
+    "en": "Safe!"
+  },
+  {
+    "row": 508,
+    "type": "NOTE:TNAM",
+    "editor": "BMTabithaJournal6Note",
+    "en": "There was a fight in the yard today between some of us and the first gens. Marcus made a speech about how we need to work together, but why should we? We were the master's favorites! We don't need their help. Rhonda says we'd be better off without them."
+  },
+  {
+    "row": 509,
+    "type": "NOTE:TNAM",
+    "editor": "BMTabithaJournal5Note",
+    "en": "The radio station is fixed, and we've begun sending our message out into the desert. Marcus thinks I spend too much time in here, but what does a first gen know? Rhonda says they're just one step up from dumb dumbs, and I agree."
+  },
+  {
+    "row": 510,
+    "type": "NOTE:TNAM",
+    "editor": "BMTabithaJournal4Note",
+    "en": "It's amazing! This place is a radio station! If we can get it repaired, we can broadcast music across the wastes, just like Rhonda and I used to listen to. Ah Rhonda, how I wish you hadn't gone away. I asked all of the mutants here for help, but none of them could do anything for you. Which makes me doubt they can fix this place..."
+  },
+  {
+    "row": 511,
+    "type": "NOTE:TNAM",
+    "editor": "BmTabithaJournal3Note",
+    "en": "The leader of this community, Marcus, said I should start keeping a journal to get my mind off of Rhonda. He also said I might find something interesting inside this stupid old building. What could possibly be interesting here? The only think that works in here is this junky old terminal."
+  },
+  {
+    "row": 512,
+    "type": "NOTE:FULL",
+    "editor": "BMTabithaJournal2Note",
+    "en": "Tabitha Journal 2"
+  },
+  {
+    "row": 513,
+    "type": "NOTE:FULL",
+    "editor": "BMOriginalStation4Note",
+    "en": "Log 676"
+  },
+  {
+    "row": 514,
+    "type": "NOTE:FULL",
+    "editor": "BMMarcusNote",
+    "en": "Meeting Notes"
+  },
+  {
+    "row": 515,
+    "type": "NOTE:TNAM",
+    "editor": "BMMarcusNote",
+    "en": "Note written by Marcus"
+  },
+  {
+    "row": 516,
+    "type": "NOTE:FULL",
+    "editor": "BMOriginalStation3Note",
+    "en": "Log 675"
+  },
+  {
+    "row": 517,
+    "type": "NOTE:TNAM",
+    "editor": "BMOriginalStation3Note",
+    "en": "I can bsrely type. The mountian shielded us from the wost or the blasd but thr's too mucsd radiattttttttttttttttttttttttttttttt"
+  },
+  {
+    "row": 518,
+    "type": "NOTE:FULL",
+    "editor": "BMOriginalStation2Note",
+    "en": "Log 674"
+  },
+  {
+    "row": 519,
+    "type": "NOTE:TNAM",
+    "editor": "BMOriginalStation2Note",
+    "en": "Oh my god. It's actually happening. We have readings across the board of launches happening everywhere. They must've thrown everything they had, and it looks like we didn't hold back either. The computer says we have 2 minutes until the first missile drops."
+  },
+  {
+    "row": 520,
+    "type": "NOTE:FULL",
+    "editor": "BMOriginalStation1Note",
+    "en": "Log 672"
+  },
+  {
+    "row": 521,
+    "type": "NOTE:TNAM",
+    "editor": "BMOriginalStation1Note",
+    "en": "We've been picking up a lot of activity from China's satellite network. The tension is pretty high around here. Frank's been talking about securing a place in one of those vaults for himself and his family, and when he didn't show up to work yesterday, I think we all knew where he went."
+  }
+]

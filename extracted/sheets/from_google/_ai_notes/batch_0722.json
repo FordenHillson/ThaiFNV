@@ -1,0 +1,242 @@
+[
+  {
+    "row": 722,
+    "type": "NOTE:FULL",
+    "editor": "LamplightHolo02",
+    "en": "Journal of Carrie Delaney, Entry 2"
+  },
+  {
+    "row": 723,
+    "type": "NOTE:TNAM",
+    "editor": "LamplightHolo02",
+    "en": "µð"
+  },
+  {
+    "row": 724,
+    "type": "NOTE:FULL",
+    "editor": "LamplightHolo01",
+    "en": "Journal of Carrie Delaney, Entry 1"
+  },
+  {
+    "row": 725,
+    "type": "NOTE:TNAM",
+    "editor": "LamplightHolo01",
+    "en": "¶ð"
+  },
+  {
+    "row": 726,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPests5",
+    "en": "DashwoodTerminalPests"
+  },
+  {
+    "row": 727,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPests4",
+    "en": "DashwoodTerminalPests"
+  },
+  {
+    "row": 728,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPests3",
+    "en": "DashwoodTerminalPests"
+  },
+  {
+    "row": 729,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPests2",
+    "en": "DashwoodTerminalPests"
+  },
+  {
+    "row": 730,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPests1",
+    "en": "DashwoodTerminalPests"
+  },
+  {
+    "row": 731,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPlaces5",
+    "en": "DashwoodTerminalPlaces"
+  },
+  {
+    "row": 732,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPlaces4",
+    "en": "DashwoodTerminalPlaces"
+  },
+  {
+    "row": 733,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPlaces3",
+    "en": "DashwoodTerminalPlaces"
+  },
+  {
+    "row": 734,
+    "type": "NOTE:TNAM",
+    "editor": "DashwoodTerminalPlaces3",
+    "en": "The best damn whorehouse in the Capital Wasteland. Strong booze and soft women. It shut down in the summer of ’49 when most of the ladies died from a cholera outbreak."
+  },
+  {
+    "row": 735,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPlaces2",
+    "en": "DashwoodTerminalPlaces"
+  },
+  {
+    "row": 736,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPlaces1",
+    "en": "DashwoodTerminalPlaces"
+  },
+  {
+    "row": 737,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPeople5",
+    "en": "DashwoodTerminalPeople1"
+  },
+  {
+    "row": 738,
+    "type": "NOTE:TNAM",
+    "editor": "DashwoodTerminalPeople5",
+    "en": "Slaver leader and psychotic cannibal, circa 2250. See entry on Paradise Falls."
+  },
+  {
+    "row": 739,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPeople4",
+    "en": "DashwoodTerminalPeople1"
+  },
+  {
+    "row": 740,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPeople3",
+    "en": "DashwoodTerminalPeople1"
+  },
+  {
+    "row": 741,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPeople2",
+    "en": "DashwoodTerminalPeople1"
+  },
+  {
+    "row": 742,
+    "type": "NOTE:TNAM",
+    "editor": "DashwoodTerminalPeople2",
+    "en": "Miss Penelope Chase -- Two-timing bitch. She got what she deserved."
+  },
+  {
+    "row": 743,
+    "type": "NOTE:FULL",
+    "editor": "DashwoodTerminalPeople1",
+    "en": "DashwoodTerminalPeople1"
+  },
+  {
+    "row": 744,
+    "type": "NOTE:TNAM",
+    "editor": "PFallsEulogyPassword",
+    "en": "Eulogy, I changed your password to \"tryandrememberitthistime\". Maybe you won't forget that one."
+  },
+  {
+    "row": 745,
+    "type": "NOTE:FULL",
+    "editor": "KellerJournal1",
+    "en": "Diary of Candace Keller"
+  },
+  {
+    "row": 746,
+    "type": "NOTE:TNAM",
+    "editor": "UnderworldAhzrukhalTerminal4",
+    "en": "What is with this guy? Well, honestly, I don't care. He buys up all my jet and keeps coming back for more. It doesn't really matter if he insists that he's a barber, I guess."
+  },
+  {
+    "row": 747,
+    "type": "NOTE:TNAM",
+    "editor": "UnderworldAhzrukhalTerminal3",
+    "en": "Note: He has all sorts of good stuff in his office. I should find a way to get him out of town for a while so that I can restock my supply from his. Of course, the egghead never leaves that lab of his, especially since he got that passed out smoothskin in there."
+  },
+  {
+    "row": 748,
+    "type": "NOTE:TNAM",
+    "editor": "UnderworldAhzrukhalTerminal2",
+    "en": "I can't say enough good things about this boy. The only thing is, I need to remember to keep an eye on him. I've caught him behind the counter several times. I'd say that he's more trouble that he's worth, but somehow, he just keeps coming up with caps for booze."
+  },
+  {
+    "row": 749,
+    "type": "NOTE:TNAM",
+    "editor": "UnderworldAhzrukhalTerminal1",
+    "en": "There's something up with her. She's become so mopey lately, I wish I knew what it was, she might be a good customer for the special stock. That is, if I could get her away from Greta long enough to work on her."
+  },
+  {
+    "row": 750,
+    "type": "NOTE:FULL",
+    "editor": "UnderworldBarrowsTerminal1",
+    "en": "Autonomic Nervous System"
+  },
+  {
+    "row": 751,
+    "type": "NOTE:FULL",
+    "editor": "UnderworldTulipTerminalPL4",
+    "en": "Book VIII"
+  },
+  {
+    "row": 752,
+    "type": "NOTE:FULL",
+    "editor": "UnderworldTulipTerminalPL3",
+    "en": "Book IV"
+  },
+  {
+    "row": 753,
+    "type": "NOTE:FULL",
+    "editor": "UnderworldTulipTerminalPL2",
+    "en": "Book II"
+  },
+  {
+    "row": 754,
+    "type": "NOTE:FULL",
+    "editor": "UnderworldTulipTerminalPL1",
+    "en": "UnderworldTulipTerminalPL1"
+  },
+  {
+    "row": 755,
+    "type": "NOTE:FULL",
+    "editor": "FFEnclaveEncampment12A",
+    "en": "Camp Crater Orientation"
+  },
+  {
+    "row": 756,
+    "type": "NOTE:FULL",
+    "editor": "Vault106BLockedFamily",
+    "en": "To Anyone Who Gets This"
+  },
+  {
+    "row": 757,
+    "type": "NOTE:TNAM",
+    "editor": "Vault106BLockedFamily",
+    "en": "I don’t know what happened, all of a sudden everyone just started acting strange.  The Overseer told us to lock ourselves into our room and wait until security gets the riff raff under control so that’s what im doing.  I managed to catch the security chief on his way past and apparently the weirdos are so out of their head they can't read, so if you’re not affected say the word ‘Fanzini’ and I’ll let you in."
+  },
+  {
+    "row": 758,
+    "type": "NOTE:FULL",
+    "editor": "Vault106BLivingQuartersHippyNote",
+    "en": "Feel The Love Man"
+  },
+  {
+    "row": 759,
+    "type": "NOTE:TNAM",
+    "editor": "Vault106BLivingQuartersHippyNote",
+    "en": "Oh man.  I just had to get my thoughts on paper man, otherwise the cat in my head forgets, man.  The sky is as blue as it used to be, im so happy to be here and my roomies are flailing around in the love mist.  I cant remember what I was doing before but man is it great here now.  I never thought about it like this before, but the walls just need somebody to love, too, man."
+  },
+  {
+    "row": 760,
+    "type": "NOTE:FULL",
+    "editor": "Vault106BRantingsNoteA",
+    "en": "Scribbles"
+  },
+  {
+    "row": 761,
+    "type": "NOTE:TNAM",
+    "editor": "Vault106BHallucinationNoteC",
+    "en": "Seriously, this place has everything we need, enjoy it while we're here."
+  }
+]

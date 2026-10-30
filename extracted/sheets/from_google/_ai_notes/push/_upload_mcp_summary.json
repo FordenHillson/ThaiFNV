@@ -1,0 +1,42 @@
+{
+  "merge": {
+    "script": "pipeline/ai_notes_merge_push.py",
+    "status": "ok",
+    "push_batches": 26,
+    "total_rows": 1019
+  },
+  "mcp_write_range": {
+    "files_pushed": [
+      { "file": "F0002.json", "cells": "F2", "rows": 40 },
+      { "file": "F0042.json", "cells": "F42", "rows": 40 },
+      { "file": "F0082.json", "cells": "F82", "rows": 40 },
+      { "file": "F0122.json", "cells": "F122", "rows": 40 },
+      { "file": "F0642.json", "cells": "F642", "rows": 40 }
+    ],
+    "files_pushed_count": 5,
+    "rows_pushed_mcp": 200,
+    "pending_agent_mcp": {
+      "note": "Shell REST MCP and push_ai_notes_api.py cannot auth from agent shell. Continue with CallDynamicTool write_range.",
+      "batch_out_dir": "AgentStore/files/batch_out (00.json..22.json, 23 files, 899 rows F122-F1002)",
+      "also_repush_from_push_folder": "26 x F*.json in push/ for full spec coverage",
+      "runner": "python pipeline/mcp_push_invoke_file.py <invoke.json> then CallDynamicTool write_range with stdout JSON"
+    }
+  },
+  "failures": [
+    {
+      "script": "pipeline/push_ai_notes_api.py",
+      "count": 26,
+      "error": "invalid_grant (google_token.json refresh revoked)"
+    },
+    {
+      "script": "pipeline/push_ai_notes_mcp.cjs",
+      "count": 26,
+      "error": "HTTP 401 Missing Cursor credential in x-cursor-auth (shell cannot call REST MCP)"
+    }
+  ],
+  "verification": {
+    "F2:G3": "ai (sample Thai text ok)",
+    "F642:G643": "check after F642 push",
+    "F1002:G1020": "ai on tail rows (19 rows); G column ai"
+  }
+}

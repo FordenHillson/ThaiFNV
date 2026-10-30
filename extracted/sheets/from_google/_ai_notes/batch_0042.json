@@ -1,0 +1,242 @@
+[
+  {
+    "row": 42,
+    "type": "NOTE:FULL",
+    "editor": "VCFHSniperNote",
+    "en": "Sniper Nest Location"
+  },
+  {
+    "row": 43,
+    "type": "NOTE:FULL",
+    "editor": "CrimsonCaravanNote04",
+    "en": "War Effort"
+  },
+  {
+    "row": 44,
+    "type": "NOTE:FULL",
+    "editor": "CrimsonCaravanNote03",
+    "en": "Gun Runner Tariff"
+  },
+  {
+    "row": 45,
+    "type": "NOTE:FULL",
+    "editor": "CrimsonCaravanNote02",
+    "en": "Re: Henry Jamison"
+  },
+  {
+    "row": 46,
+    "type": "NOTE:TNAM",
+    "editor": "CrimsonCaravanNote02",
+    "en": "Efforts to \"encourage\" Henry Jamison to resign have so far failed. His parents are proving stubborn as well - obviously, they don't want him around anymore than I do. Getting the New Vegas branch up and running should have been a simple job for him, but this place is still as crude and primitive as any frontier branch. Very irritating."
+  },
+  {
+    "row": 47,
+    "type": "NOTE:FULL",
+    "editor": "CrimsonCaravanNote01",
+    "en": "New Canaan Branch Proposal"
+  },
+  {
+    "row": 48,
+    "type": "NOTE:FULL",
+    "editor": "CaravanRulesNote",
+    "en": "How To Play Caravan"
+  },
+  {
+    "row": 49,
+    "type": "NOTE:FULL",
+    "editor": "VStripGamblerNote07",
+    "en": "Strip Letter 7"
+  },
+  {
+    "row": 50,
+    "type": "NOTE:FULL",
+    "editor": "VStripEpicureNote",
+    "en": "Fine Dining"
+  },
+  {
+    "row": 51,
+    "type": "NOTE:FULL",
+    "editor": "VNoteElaine",
+    "en": "Elaine's Letter"
+  },
+  {
+    "row": 52,
+    "type": "NOTE:FULL",
+    "editor": "VStripTrooperNote04",
+    "en": "Strip Letter 11"
+  },
+  {
+    "row": 53,
+    "type": "NOTE:FULL",
+    "editor": "VStripTrooperNote03",
+    "en": "Strip Letter 10"
+  },
+  {
+    "row": 54,
+    "type": "NOTE:FULL",
+    "editor": "VStripTrooperNote02",
+    "en": "Strip Letter 9"
+  },
+  {
+    "row": 55,
+    "type": "NOTE:FULL",
+    "editor": "VStripTrooperNote01",
+    "en": "Strip Letter 8"
+  },
+  {
+    "row": 56,
+    "type": "NOTE:FULL",
+    "editor": "VStripGamblerNote06",
+    "en": "Strip Letter 6"
+  },
+  {
+    "row": 57,
+    "type": "NOTE:FULL",
+    "editor": "VStripGamblerNote05",
+    "en": "Strip Letter 5"
+  },
+  {
+    "row": 58,
+    "type": "NOTE:FULL",
+    "editor": "VStripGamblerNote04",
+    "en": "Strip Letter 4"
+  },
+  {
+    "row": 59,
+    "type": "NOTE:FULL",
+    "editor": "VStripGamblerNote03",
+    "en": "Strip Letter 3"
+  },
+  {
+    "row": 60,
+    "type": "NOTE:FULL",
+    "editor": "VStripGamblerNote02",
+    "en": "Strip Letter 2"
+  },
+  {
+    "row": 61,
+    "type": "NOTE:FULL",
+    "editor": "VStripGamblerNote01",
+    "en": "Strip Letter 1"
+  },
+  {
+    "row": 62,
+    "type": "NOTE:FULL",
+    "editor": "VCFHTrooperNote09",
+    "en": "Forlorn Hope Letter 9"
+  },
+  {
+    "row": 63,
+    "type": "NOTE:FULL",
+    "editor": "VCFHTrooperNote08",
+    "en": "Forlorn Hope Letter 8"
+  },
+  {
+    "row": 64,
+    "type": "NOTE:FULL",
+    "editor": "VCFHTrooperNote07",
+    "en": "Forlorn Hope Letter 7"
+  },
+  {
+    "row": 65,
+    "type": "NOTE:FULL",
+    "editor": "VCFHTrooperNote06",
+    "en": "Forlorn Hope Letter 6"
+  },
+  {
+    "row": 66,
+    "type": "NOTE:FULL",
+    "editor": "VCFHTrooperNote05",
+    "en": "Forlorn Hope Letter 5"
+  },
+  {
+    "row": 67,
+    "type": "NOTE:FULL",
+    "editor": "VCFHTrooperNote04",
+    "en": "Forlorn Hope Letter 4"
+  },
+  {
+    "row": 68,
+    "type": "NOTE:FULL",
+    "editor": "VCFHTrooperNote03",
+    "en": "Forlorn Hope Letter 3"
+  },
+  {
+    "row": 69,
+    "type": "NOTE:FULL",
+    "editor": "VCFHTrooperNote02",
+    "en": "Forlorn Hope Letter 2"
+  },
+  {
+    "row": 70,
+    "type": "NOTE:FULL",
+    "editor": "VCFHTrooperNote01",
+    "en": "Forlorn Hope Letter 1"
+  },
+  {
+    "row": 71,
+    "type": "NOTE:FULL",
+    "editor": "V19NoteBlue04a",
+    "en": "V19Note"
+  },
+  {
+    "row": 72,
+    "type": "NOTE:TNAM",
+    "editor": "V19NoteBlue04a",
+    "en": "I saw one of the guys in the mess hall pull a bottle cap off a Sunset Sarsaparilla and then run to his room.  I knew he was hiding something so I broke into his room when he wasn't there and saw the bottle cap.  It had a blue star underneath it.  I think he's been marked for something but I can't figure out what.  All I know is I want that bottle cap."
+  },
+  {
+    "row": 73,
+    "type": "NOTE:FULL",
+    "editor": "V19NoteBlue04b",
+    "en": "V19Note"
+  },
+  {
+    "row": 74,
+    "type": "NOTE:TNAM",
+    "editor": "V19NoteBlue04b",
+    "en": "What does it mean?  Why was there a blue star under my bottle cap?  Are the Red's behind this?  Is this part of their mind control?  They must be making me see things now, things that shouldn't be there.  The star shouldn't be there, why do I see a star?  It won't go away.  No matter how long I close my eyes it won't go away.  I want the star to go away!"
+  },
+  {
+    "row": 75,
+    "type": "NOTE:FULL",
+    "editor": "McCarranProperBurialNote",
+    "en": "Corpse Retrieved"
+  },
+  {
+    "row": 76,
+    "type": "NOTE:TNAM",
+    "editor": "McCarranProperBurialNote",
+    "en": "I managed to get Ranger Morales' corpse away from the Fiends. I should return to Pvt. Morales and let her know her husband's body is safe."
+  },
+  {
+    "row": 77,
+    "type": "NOTE:FULL",
+    "editor": "SLTrashJournal01",
+    "en": "Entry One in the Die-ary of Trash"
+  },
+  {
+    "row": 78,
+    "type": "NOTE:FULL",
+    "editor": "SLTrashJournal03",
+    "en": "Entry Three in the Die-ary of Trash"
+  },
+  {
+    "row": 79,
+    "type": "NOTE:FULL",
+    "editor": "SLTrashJournal02",
+    "en": "Entry Two in the Die-ary of Trash"
+  },
+  {
+    "row": 80,
+    "type": "NOTE:FULL",
+    "editor": "VMS11AndersonNote",
+    "en": "Anderson's Confession"
+  },
+  {
+    "row": 81,
+    "type": "NOTE:FULL",
+    "editor": "VMS11DazzleNote",
+    "en": "Note from White to Dazzle"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "row": 322,
+    "type": "NOTE:TNAM",
+    "editor": "V21SarahPassword",
+    "en": "ButtercupRide"
+  },
+  {
+    "row": 323,
+    "type": "NOTE:FULL",
+    "editor": "V21SarahOutMail01",
+    "en": "Hey, you!"
+  },
+  {
+    "row": 324,
+    "type": "NOTE:FULL",
+    "editor": "V21SarahMail01",
+    "en": "From the depths of my ebbing soul"
+  },
+  {
+    "row": 325,
+    "type": "NOTE:FULL",
+    "editor": "V21MailSent01",
+    "en": "Keeping You in Touch"
+  },
+  {
+    "row": 326,
+    "type": "NOTE:FULL",
+    "editor": "V21MailMessages01",
+    "en": "Keeping You in Touch"
+  },
+  {
+    "row": 327,
+    "type": "NOTE:FULL",
+    "editor": "V21Service03",
+    "en": "Your Satisfaction Guaranteed"
+  },
+  {
+    "row": 328,
+    "type": "NOTE:FULL",
+    "editor": "V21Service02",
+    "en": "A Piece of the Past for Your Future"
+  },
+  {
+    "row": 329,
+    "type": "NOTE:FULL",
+    "editor": "V21Service01",
+    "en": "Enjoy Our Hearty Meals"
+  },
+  {
+    "row": 330,
+    "type": "NOTE:FULL",
+    "editor": "V21History03",
+    "en": "A Tribute to Our Benefactor"
+  },
+  {
+    "row": 331,
+    "type": "NOTE:FULL",
+    "editor": "V21History02",
+    "en": "Opening to a New World"
+  },
+  {
+    "row": 332,
+    "type": "NOTE:FULL",
+    "editor": "V21History01",
+    "en": "A Story to Be Told"
+  },
+  {
+    "row": 333,
+    "type": "NOTE:FULL",
+    "editor": "VMS21MurderTapes",
+    "en": "Snuff Tapes"
+  },
+  {
+    "row": 334,
+    "type": "NOTE:TNAM",
+    "editor": "VMS21MurderTapes",
+    "en": "These tapes contain horrific sounds of murder and violence. You hear Clanden engaging in violent sex with women, and then hear the sounds of visceral and violent murder being carried out."
+  },
+  {
+    "row": 335,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformLucky38Note",
+    "en": "Recon of the Lucky 38"
+  },
+  {
+    "row": 336,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformLucky38Note",
+    "en": "The Followers of the Apocalypse have asked you to gather information on the Lucky 38 and its master, Mr. House.  They have given you a bug to install at an access point to the Lucky 38's data network.  Mr. House will be in the penthouse of the tower."
+  },
+  {
+    "row": 337,
+    "type": "NOTE:FULL",
+    "editor": "JackWilsonNote",
+    "en": "Jack Wilson"
+  },
+  {
+    "row": 338,
+    "type": "NOTE:FULL",
+    "editor": "VMS21BigSalsPassword",
+    "en": "Big Sal's Password"
+  },
+  {
+    "row": 339,
+    "type": "NOTE:TNAM",
+    "editor": "VMS21BigSalsPassword",
+    "en": "D@ddyZH0M3!"
+  },
+  {
+    "row": 340,
+    "type": "NOTE:FULL",
+    "editor": "VMS21TroikeBlackMail",
+    "en": "Troike Blackmail Note"
+  },
+  {
+    "row": 341,
+    "type": "NOTE:FULL",
+    "editor": "VMS23CrockerNote",
+    "en": "Ambassador Crocker's Note"
+  },
+  {
+    "row": 342,
+    "type": "NOTE:FULL",
+    "editor": "VMS18RecipeNote",
+    "en": "Philippe's Recipes"
+  },
+  {
+    "row": 343,
+    "type": "NOTE:TNAM",
+    "editor": "VMS18RecipeNote",
+    "en": "This is a stack of hand-written recipes, obviously experimental, with many sections crossed out and notes scribbled in the margins. The one that seems to have gone through the most revision is called \"Sweet Veal,\" however the notes indicate a desire to make it taste not like veal but human flesh."
+  },
+  {
+    "row": 344,
+    "type": "NOTE:FULL",
+    "editor": "VFSFollowersSuppliesNote",
+    "en": "Followers Need Supplies"
+  },
+  {
+    "row": 345,
+    "type": "NOTE:TNAM",
+    "editor": "VFSFollowersSuppliesNote",
+    "en": "Julie Farkas from the Followers would like me to arrange a trading agreement with someone to supply Med-X, Rad-Away, and Fixer.  The Crimson Caravan are apparently asking for too many caps for the supplies.  I'll need to ask around to see if I can work out a deal."
+  },
+  {
+    "row": 346,
+    "type": "NOTE:FULL",
+    "editor": "VMQ01JessupNote",
+    "en": "Chairmen Job Offer"
+  },
+  {
+    "row": 347,
+    "type": "NOTE:FULL",
+    "editor": "RSFoxtrotPassword",
+    "en": "Foxtrot Station Password"
+  },
+  {
+    "row": 348,
+    "type": "NOTE:TNAM",
+    "editor": "RSFoxtrotPassword",
+    "en": "Hard8Eight"
+  },
+  {
+    "row": 349,
+    "type": "NOTE:FULL",
+    "editor": "RSEchoPassword",
+    "en": "Echo Station Password"
+  },
+  {
+    "row": 350,
+    "type": "NOTE:TNAM",
+    "editor": "RSEchoPassword",
+    "en": "Bl0m3"
+  },
+  {
+    "row": 351,
+    "type": "NOTE:FULL",
+    "editor": "RSDeltaPassword",
+    "en": "Delta Station Password"
+  },
+  {
+    "row": 352,
+    "type": "NOTE:TNAM",
+    "editor": "RSDeltaPassword",
+    "en": "131Lapis"
+  },
+  {
+    "row": 353,
+    "type": "NOTE:FULL",
+    "editor": "RSCharliePassword",
+    "en": "Charlie Station Password"
+  },
+  {
+    "row": 354,
+    "type": "NOTE:TNAM",
+    "editor": "RSCharliePassword",
+    "en": "K&EMtn"
+  },
+  {
+    "row": 355,
+    "type": "NOTE:FULL",
+    "editor": "RSBravoPassword",
+    "en": "Bravo Station Password"
+  },
+  {
+    "row": 356,
+    "type": "NOTE:TNAM",
+    "editor": "RSBravoPassword",
+    "en": "Flint$ExEx"
+  },
+  {
+    "row": 357,
+    "type": "NOTE:FULL",
+    "editor": "RSAlphaPassword",
+    "en": "Alpha Station Password"
+  },
+  {
+    "row": 358,
+    "type": "NOTE:TNAM",
+    "editor": "RSAlphaPassword",
+    "en": "Step7#Niner"
+  },
+  {
+    "row": 359,
+    "type": "NOTE:FULL",
+    "editor": "GSSunnyNote",
+    "en": "Goodsprings Schoolhouse Safe"
+  },
+  {
+    "row": 360,
+    "type": "NOTE:TNAM",
+    "editor": "GSSunnyNote",
+    "en": "Sunny Smiles told you that the old Goodsprings schoolhouse contains a safe which no one in town has been able to crack. She helpfully provided you with some bobby pins and a copy of the magazine \"Locksmith's Reader\" in case you wanted to take a shot at opening the safe."
+  },
+  {
+    "row": 361,
+    "type": "NOTE:FULL",
+    "editor": "VFreesideMickOmertaNote1",
+    "en": "Omertas Stopped Buying From Mick"
+  }
+]

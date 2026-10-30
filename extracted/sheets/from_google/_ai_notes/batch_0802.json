@@ -1,0 +1,242 @@
+[
+  {
+    "row": 802,
+    "type": "NOTE:FULL",
+    "editor": "CapitalPostTerminalNote2b",
+    "en": "CapitalPostTerminalNote2b"
+  },
+  {
+    "row": 803,
+    "type": "NOTE:FULL",
+    "editor": "CapitalPostTerminalNote1b",
+    "en": "CapitalPostTerminalNote1b"
+  },
+  {
+    "row": 804,
+    "type": "NOTE:FULL",
+    "editor": "CapitalPostTerminalNote2a",
+    "en": "CapitalPostTerminalNote2a"
+  },
+  {
+    "row": 805,
+    "type": "NOTE:FULL",
+    "editor": "CapitalPostTerminalNote1a",
+    "en": "CapitalPostTerminalNote1a"
+  },
+  {
+    "row": 806,
+    "type": "NOTE:FULL",
+    "editor": "CGDadSafeNote",
+    "en": "Home Sweet Home"
+  },
+  {
+    "row": 807,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDossier4",
+    "en": "MaxsonDossier4"
+  },
+  {
+    "row": 808,
+    "type": "NOTE:FULL",
+    "editor": "PAAveMercenaryNote01",
+    "en": "Pennsylvania Ave Explosives Note"
+  },
+  {
+    "row": 809,
+    "type": "NOTE:FULL",
+    "editor": "CitPalandineNote",
+    "en": "CitPalandineNote"
+  },
+  {
+    "row": 810,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonStateNote",
+    "en": "MaxsonStateNote"
+  },
+  {
+    "row": 811,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDossier3",
+    "en": "MaxsonDossier3"
+  },
+  {
+    "row": 812,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDossier2",
+    "en": "MaxsonDossier2"
+  },
+  {
+    "row": 813,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDossier1",
+    "en": "MaxsonDossier1"
+  },
+  {
+    "row": 814,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDiary11",
+    "en": "MaxsonDiary11"
+  },
+  {
+    "row": 815,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDiary10",
+    "en": "MaxsonDiary10"
+  },
+  {
+    "row": 816,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDiary9",
+    "en": "MaxsonDiary9"
+  },
+  {
+    "row": 817,
+    "type": "NOTE:TNAM",
+    "editor": "MaxsonDiary9",
+    "en": "Sgt. Platner volunteered to go outside today to take specific readings on the atmosphere. It seems the radiation has not spread this far. Since he was wearing his Power Armor, there was no threat to him from radiation, but if he had been exposed he would have had to be exiled. We don't have adequate decontamination facilities here."
+  },
+  {
+    "row": 818,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDiary8",
+    "en": "MaxsonDiary8"
+  },
+  {
+    "row": 819,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDiary7",
+    "en": "MaxsonDiary7"
+  },
+  {
+    "row": 820,
+    "type": "NOTE:TNAM",
+    "editor": "MaxsonDiary7",
+    "en": "What the hell is going on? We declare ourselves to be in full desertion from the Army and no longer under the government's command and what happens? Nothing. Something bad is coming down."
+  },
+  {
+    "row": 821,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDiary6",
+    "en": "MaxsonDiary6"
+  },
+  {
+    "row": 822,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDiary5",
+    "en": "MaxsonDiary5"
+  },
+  {
+    "row": 823,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDiary4",
+    "en": "MaxsonDiary4"
+  },
+  {
+    "row": 824,
+    "type": "NOTE:TNAM",
+    "editor": "MaxsonDiary4",
+    "en": "I tried again to speak to the colonel through the door, but he seems to have completely lost touch with reality. I broke down the door with several of the men just in time to watch him blow his head off. Right before he pulled the trigger he said he was sorry."
+  },
+  {
+    "row": 825,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDiary3",
+    "en": "MaxsonDiary3"
+  },
+  {
+    "row": 826,
+    "type": "NOTE:TNAM",
+    "editor": "MaxsonDiary3",
+    "en": "I killed a man today. I was interrogating Chief Scientist Anderson and he was giving me the full details of their inhuman experiments. He said his orders came from the government, but I didn't buy it. He started screaming about how he was following orders, how he was a military man, and I just shot him. I tell myself it was to keep him from causing a full mutiny among the men, but I'm not so sure."
+  },
+  {
+    "row": 827,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDiary2",
+    "en": "MaxsonDiary2"
+  },
+  {
+    "row": 828,
+    "type": "NOTE:FULL",
+    "editor": "MaxsonDiary1",
+    "en": "MaxsonDiary1"
+  },
+  {
+    "row": 829,
+    "type": "NOTE:FULL",
+    "editor": "FortIndResearchNote06",
+    "en": "Research Note - Missile Launcher"
+  },
+  {
+    "row": 830,
+    "type": "NOTE:FULL",
+    "editor": "FortIndResearchNote05",
+    "en": "Research Note - Enclave Armor"
+  },
+  {
+    "row": 831,
+    "type": "NOTE:FULL",
+    "editor": "FortIndResearchNote04",
+    "en": "Research Note - Pulse Grenade"
+  },
+  {
+    "row": 832,
+    "type": "NOTE:FULL",
+    "editor": "FortIndResearchNote03",
+    "en": "Research Note - Minigun"
+  },
+  {
+    "row": 833,
+    "type": "NOTE:FULL",
+    "editor": "FortIndResearchNote02",
+    "en": "Research Note - Plasma Rifle"
+  },
+  {
+    "row": 834,
+    "type": "NOTE:FULL",
+    "editor": "FortIndResearchNote01",
+    "en": "Research Note - Laser Rifle"
+  },
+  {
+    "row": 835,
+    "type": "NOTE:FULL",
+    "editor": "AWMNoteMirelurkRecipe",
+    "en": "Recipe - Mirelurk Cakes"
+  },
+  {
+    "row": 836,
+    "type": "NOTE:FULL",
+    "editor": "AWMNoteMercenary",
+    "en": "Merc's Orders"
+  },
+  {
+    "row": 837,
+    "type": "NOTE:FULL",
+    "editor": "AWMNoteTedFFTerm",
+    "en": "Terminal Instructions"
+  },
+  {
+    "row": 838,
+    "type": "NOTE:FULL",
+    "editor": "AWMNotePassword",
+    "en": "Access Codes"
+  },
+  {
+    "row": 839,
+    "type": "NOTE:FULL",
+    "editor": "AWMNoteTedFFStart",
+    "en": "Note For Ted"
+  },
+  {
+    "row": 840,
+    "type": "NOTE:FULL",
+    "editor": "AWMNoteFFStashLocation",
+    "en": "Anchorage War Memorial Stash"
+  },
+  {
+    "row": 841,
+    "type": "NOTE:TNAM",
+    "editor": "AWMNoteFFStashLocation",
+    "en": "The stash is hidden downstairs in one of the freezers.  Rocky set it up. You know his style.  Don't forget the key -- you'll need it to unlock the compartment."
+  }
+]

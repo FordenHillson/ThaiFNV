@@ -1,0 +1,242 @@
+[
+  {
+    "row": 2,
+    "type": "NOTE:FULL",
+    "editor": "vYesManBunkerNote",
+    "en": "About that Bunker at Fortification Hill..."
+  },
+  {
+    "row": 3,
+    "type": "NOTE:FULL",
+    "editor": "RecipesCookCooksFiendStewNote",
+    "en": "Recipes - Cook-Cook's Fiend Stew"
+  },
+  {
+    "row": 4,
+    "type": "NOTE:TNAM",
+    "editor": "RecipesCookCooksFiendStewNote",
+    "en": "This recipe allows you to make Cook-Cook's Fiend Stew."
+  },
+  {
+    "row": 5,
+    "type": "NOTE:FULL",
+    "editor": "RecipesBrahminWellingtonNote",
+    "en": "Recipes - Brahmin Wellington"
+  },
+  {
+    "row": 6,
+    "type": "NOTE:TNAM",
+    "editor": "RecipesBrahminWellingtonNote",
+    "en": "This recipe allows you to make Brahmin Wellington."
+  },
+  {
+    "row": 7,
+    "type": "NOTE:FULL",
+    "editor": "VCassWhiskeyChallenge",
+    "en": "Cass's Whiskey Challenge"
+  },
+  {
+    "row": 8,
+    "type": "NOTE:TNAM",
+    "editor": "VCassWhiskeyChallenge",
+    "en": "Cass wants you to supply a dozen bottles of whiskey for her Whiskey Challenge, after which she'll try to drink you under the table."
+  },
+  {
+    "row": 9,
+    "type": "NOTE:FULL",
+    "editor": "HVTorresNote",
+    "en": "Missing Laser Pistol"
+  },
+  {
+    "row": 10,
+    "type": "NOTE:TNAM",
+    "editor": "HVTorresNote",
+    "en": "Knight Torres in Hidden Valley wants me to find a laser pistol that's gone missing. The first thing to do is speak with the paladin in charge of the firing range to see if he remembers who was using it."
+  },
+  {
+    "row": 11,
+    "type": "NOTE:FULL",
+    "editor": "VES02GeckomanNote",
+    "en": "Note to Self"
+  },
+  {
+    "row": 12,
+    "type": "NOTE:TNAM",
+    "editor": "VES02GeckomanNote",
+    "en": "Remember to not roll off the cliff and kill yourself while you're sleeping. You'll show her... you'll show everyone! What does \"too stupid to live\" even mean anyway?"
+  },
+  {
+    "row": 13,
+    "type": "NOTE:FULL",
+    "editor": "vL38PreWarNote03",
+    "en": "Note 3"
+  },
+  {
+    "row": 14,
+    "type": "NOTE:FULL",
+    "editor": "vL38PreWarNote02",
+    "en": "Note 2"
+  },
+  {
+    "row": 15,
+    "type": "NOTE:FULL",
+    "editor": "vL38PreWarNote01",
+    "en": "Note 1"
+  },
+  {
+    "row": 16,
+    "type": "NOTE:FULL",
+    "editor": "CampSearchlightAstorLog",
+    "en": "First Sergeant Astor's Log"
+  },
+  {
+    "row": 17,
+    "type": "NOTE:TNAM",
+    "editor": "HVRamosJournal01",
+    "en": "Still no word from the missing patrols. I was beginning to get my hopes up that the Elder was close to ending the lockdown when they were sent out, but now..."
+  },
+  {
+    "row": 18,
+    "type": "NOTE:TNAM",
+    "editor": "VHDInventoryNote03",
+    "en": "Remember those suits I told you about? Gone. Some jackass ordered a complete reorganization of our storage system and now I can't find anything. Wonderful. I guess they'll turn up sooner or later."
+  },
+  {
+    "row": 19,
+    "type": "NOTE:TNAM",
+    "editor": "VHDInventoryNote02",
+    "en": "Johnson, I've come across a crate with a couple of suits made of a material I don't even recognize. Do you know what the hell this is? Looks like pre-war tech to me. The eggheads we have down here are mostly glorified mechanics, so they just scratched their heads when I showed it to them."
+  },
+  {
+    "row": 20,
+    "type": "NOTE:TNAM",
+    "editor": "VHDInventoryNote01",
+    "en": "We've begun to take stock of what's left here, but my first impression is \"not much.\" The equipment here is in terrible condition, and will require extensive repairs to get even minimal power production started. Looks like we've got our work cut out for us, boys."
+  },
+  {
+    "row": 21,
+    "type": "NOTE:TNAM",
+    "editor": "HVBunkerGoalNote",
+    "en": "The goal of the Hidden Valley project is to create a self-sustaining shelter for high-ranking VIPs that can serve as a command structure in times of crisis. The bunker itself is located several hundred feet below the surface. Multiple layers of reinforced materials serve to prevent a breach of the inhabitable areas by anything save for a direct hit by a bunker-busting weapon utilizing a megatonnage considered outside the capability of America's closest competitors. In the event that our enemies become capable of such an attack, the bunker's DERVISH camouflaging system makes targeting the site impossible for automated systems, forcing aggressors to rely on guesswork and sheer luck."
+  },
+  {
+    "row": 22,
+    "type": "NOTE:TNAM",
+    "editor": "HVLorenzoJournal03",
+    "en": "The Elder has asked me to provide a list of possible locations for the components needed. Unfortunately, our reconnaissance of the area is lacking due to Elijah's insistence that we concentrate all efforts on HELIOS. Ibsen and I have managed to retrieve some information from the datastore on sites of potential interest, but they are mostly military and industrial locations. If only I knew if there are other bunkers, or even one of those old RobCo vaults in the area!"
+  },
+  {
+    "row": 23,
+    "type": "NOTE:TNAM",
+    "editor": "HVSchulerNote02",
+    "en": "Nothing much to report this week. Just a few cases of mild respiratory problems. Come to think of it, there were a number of respiratory problems last week, too. I should talk to Lorenzo. Maybe something's breaking down."
+  },
+  {
+    "row": 24,
+    "type": "NOTE:TNAM",
+    "editor": "HVLorenzoJournal02",
+    "en": "I have just discovered something horrifying. If my projections are right, we must-- but I shouldn't get ahead of myself. The Elder will know what to do. He must."
+  },
+  {
+    "row": 25,
+    "type": "NOTE:TNAM",
+    "editor": "HVLorenzoJournal01",
+    "en": "This is maddening! All of my research thus far points to a company called Poseidon Energy as having experimented far beyond the capabilities of our current power armor and weapons. It is possible they were behind the development of the equipment the Enclave used as well. Why then have we found numerous caches of military-grade equipment throughout the wastes, and nothing from this company?"
+  },
+  {
+    "row": 26,
+    "type": "NOTE:TNAM",
+    "editor": "HVRamosJournal02",
+    "en": "A few of our best men headed out around the same time as the patrols without my knowing about it. When I asked the Elder, he said they were on an important mission. Too important to tell his Chief of Security about? Something's up..."
+  },
+  {
+    "row": 27,
+    "type": "NOTE:FULL",
+    "editor": "CampSearchlightChiefFireOfficer",
+    "en": "Chief Fire Officer Report"
+  },
+  {
+    "row": 28,
+    "type": "NOTE:FULL",
+    "editor": "V19MedNote05",
+    "en": "Patient 3905698"
+  },
+  {
+    "row": 29,
+    "type": "NOTE:FULL",
+    "editor": "V19MedNote04",
+    "en": "Patient 6585645"
+  },
+  {
+    "row": 30,
+    "type": "NOTE:FULL",
+    "editor": "V19MedNote03",
+    "en": "Patient 1687865"
+  },
+  {
+    "row": 31,
+    "type": "NOTE:FULL",
+    "editor": "V19MedNote02",
+    "en": "Patient 5498465"
+  },
+  {
+    "row": 32,
+    "type": "NOTE:FULL",
+    "editor": "V19MedNote01",
+    "en": "Patient 1648654"
+  },
+  {
+    "row": 33,
+    "type": "NOTE:FULL",
+    "editor": "vConcessionMrHouse",
+    "en": "Offer to Permit Annexation"
+  },
+  {
+    "row": 34,
+    "type": "NOTE:FULL",
+    "editor": "vObituaryMrHouse",
+    "en": "A Tragedy Has Befallen All Mankind"
+  },
+  {
+    "row": 35,
+    "type": "NOTE:FULL",
+    "editor": "vBennyLoveNote",
+    "en": "Thanks, baby"
+  },
+  {
+    "row": 36,
+    "type": "NOTE:FULL",
+    "editor": "VNCREmbassyLog4",
+    "en": "Stril Gang Report"
+  },
+  {
+    "row": 37,
+    "type": "NOTE:TNAM",
+    "editor": "HVSelfDestructAborted",
+    "en": "Self-destruct sequence aborted."
+  },
+  {
+    "row": 38,
+    "type": "NOTE:TNAM",
+    "editor": "HVSelfDestructConfirmed",
+    "en": "Self-destruct sequence initiated. Please exit the bunker in a calm, orderly fashion."
+  },
+  {
+    "row": 39,
+    "type": "NOTE:FULL",
+    "editor": "HVSelfDestructPassword",
+    "en": "Hidden Valley Self-destruct Password"
+  },
+  {
+    "row": 40,
+    "type": "NOTE:TNAM",
+    "editor": "HVSelfDestructPassword",
+    "en": "From my cold, dead hands."
+  },
+  {
+    "row": 41,
+    "type": "NOTE:FULL",
+    "editor": "VCFHMandateNote",
+    "en": "Forlorn Hope Mandate"
+  }
+]

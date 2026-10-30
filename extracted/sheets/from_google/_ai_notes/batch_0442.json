@@ -1,0 +1,242 @@
+[
+  {
+    "row": 442,
+    "type": "NOTE:FULL",
+    "editor": "V22PestControlNote2",
+    "en": "Vault 22 Pest Control Note 2"
+  },
+  {
+    "row": 443,
+    "type": "NOTE:FULL",
+    "editor": "V22PestControlNote1",
+    "en": "Vault 22 Pest Control Note 1"
+  },
+  {
+    "row": 444,
+    "type": "NOTE:FULL",
+    "editor": "V22KeelyNote9",
+    "en": "Keely note 9"
+  },
+  {
+    "row": 445,
+    "type": "NOTE:TNAM",
+    "editor": "V22KeelyNote9",
+    "en": "After numerous attempts, I've found a range that highlights the particles in the air that I believe killed everyone in this vault. Preliminary tests show them to be spores of some kind. I've set up spectrometers on several of the levels now and the concentration appears to increase in the lower levels. At this point, I'm concerned that the plants here may constitute a danger to the people of the NCR."
+  },
+  {
+    "row": 446,
+    "type": "NOTE:FULL",
+    "editor": "V22KeelyNote8",
+    "en": "Keely note 8"
+  },
+  {
+    "row": 447,
+    "type": "NOTE:FULL",
+    "editor": "V22KeelyNote4",
+    "en": "Keely note 4"
+  },
+  {
+    "row": 448,
+    "type": "NOTE:TNAM",
+    "editor": "V22KeelyNote4",
+    "en": "It's strange, but some sections of the machinery down here appear to have been modified for some unknown purpose. The restraints regarding oxygen content and systemic pressure have been bypassed."
+  },
+  {
+    "row": 449,
+    "type": "NOTE:FULL",
+    "editor": "V22dClinicNote6",
+    "en": "Vault 22 Clinic Note 6"
+  },
+  {
+    "row": 450,
+    "type": "NOTE:FULL",
+    "editor": "V22dClinicNote5",
+    "en": "Vault 22 Clinic Note 5"
+  },
+  {
+    "row": 451,
+    "type": "NOTE:FULL",
+    "editor": "V22dClinicNote4",
+    "en": "Vault 22 Clinic Note 4"
+  },
+  {
+    "row": 452,
+    "type": "NOTE:FULL",
+    "editor": "V22dClinicNote3",
+    "en": "Vault 22 Clinic Note 3"
+  },
+  {
+    "row": 453,
+    "type": "NOTE:FULL",
+    "editor": "V22dClinicNote2",
+    "en": "Vault 22 Clinic Note 2"
+  },
+  {
+    "row": 454,
+    "type": "NOTE:FULL",
+    "editor": "V22dClinicNote1",
+    "en": "Vault 22 Clinic Note 1"
+  },
+  {
+    "row": 455,
+    "type": "NOTE:FULL",
+    "editor": "V22KeelyNote3",
+    "en": "Keely note 3"
+  },
+  {
+    "row": 456,
+    "type": "NOTE:TNAM",
+    "editor": "V22KeelyNote3",
+    "en": "This level seems to have been devoted to the study of atmospheric effects on plants, with a concentration on producing plants with a high oxygen yield. Given the \"problems\" these vaults were known to have, it sounds like a reasonable avenue of research."
+  },
+  {
+    "row": 457,
+    "type": "NOTE:FULL",
+    "editor": "V22MaintenanceNote2",
+    "en": "Vault 22 Maintenance Note 2"
+  },
+  {
+    "row": 458,
+    "type": "NOTE:FULL",
+    "editor": "V22MaintenanceNote1",
+    "en": "Vault 22 Maintenance Note 1"
+  },
+  {
+    "row": 459,
+    "type": "NOTE:FULL",
+    "editor": "V22AdditiveNote2",
+    "en": "Vault 22 Additive Note 2"
+  },
+  {
+    "row": 460,
+    "type": "NOTE:FULL",
+    "editor": "V22KeelyNote2",
+    "en": "Keely note 2"
+  },
+  {
+    "row": 461,
+    "type": "NOTE:FULL",
+    "editor": "V22KeelyNote1",
+    "en": "Keely note 1"
+  },
+  {
+    "row": 462,
+    "type": "NOTE:TNAM",
+    "editor": "V22KeelyNote1",
+    "en": "I've established a temporary camp inside the entrance of the vault. Power inside is minimal, but still running, and I've managed to hack into one of their security terminals. The logs show that several people have entered the vault over the past few months, but none have left. It's getting late, so I'll resume the expedition in the morning.  Keely out."
+  },
+  {
+    "row": 463,
+    "type": "NOTE:FULL",
+    "editor": "V22AdditiveNote1",
+    "en": "Vault 22 Additive Note 1"
+  },
+  {
+    "row": 464,
+    "type": "NOTE:FULL",
+    "editor": "V22cCaveDoorRoomNote3",
+    "en": "Vault 22 Cave Door Terminal Note 3"
+  },
+  {
+    "row": 465,
+    "type": "NOTE:FULL",
+    "editor": "V22cCaveDoorRoomNote2",
+    "en": "Vault 22 Cave Door Terminal Note 2"
+  },
+  {
+    "row": 466,
+    "type": "NOTE:FULL",
+    "editor": "V22KeelyNote7",
+    "en": "Keely note 7"
+  },
+  {
+    "row": 467,
+    "type": "NOTE:TNAM",
+    "editor": "V22KeelyNote7",
+    "en": "This level appears to be where they performed most of the research NCR is interested in. I've been able to collect a little, but the vast majority of the data from the research done here is inaccessible. I'll have to find the main backup and download from there."
+  },
+  {
+    "row": 468,
+    "type": "NOTE:FULL",
+    "editor": "V22KeelyNote6",
+    "en": "Keely note 6"
+  },
+  {
+    "row": 469,
+    "type": "NOTE:TNAM",
+    "editor": "V22KeelyNote6",
+    "en": "I've finally found some of the bodies of the scientists that lived here. They appear to be overgrown with some form of lichen. They blend in so well with the other growth that I walked right by several of them without even noticing them. I've taken the proper precautions, but the lichen doesn't seem to be contagious, at least to ghouls."
+  },
+  {
+    "row": 470,
+    "type": "NOTE:FULL",
+    "editor": "V22cCaveDoorRoomNote1",
+    "en": "Vault 22 Cave Door Terminal Note 1"
+  },
+  {
+    "row": 471,
+    "type": "NOTE:TNAM",
+    "editor": "V22cCaveDoorRoomNote1",
+    "en": "Assistant Mathers went into the caves at 18:46 today and still hasn't returned. Requesting security escort for science personnel to conduct a search."
+  },
+  {
+    "row": 472,
+    "type": "NOTE:FULL",
+    "editor": "V22OxygenNote1",
+    "en": "Vault 22 Oxygen Note"
+  },
+  {
+    "row": 473,
+    "type": "NOTE:TNAM",
+    "editor": "V22OxygenNote1",
+    "en": "Could maintenance look into the duct work here on level 2 again? I know you guys took a look at this last week, but I swear the noise is back. I even have other people that can back me up on it this time, too."
+  },
+  {
+    "row": 474,
+    "type": "NOTE:FULL",
+    "editor": "V22AdditiveNote3",
+    "en": "Vault 22 Additive Note 3"
+  },
+  {
+    "row": 475,
+    "type": "NOTE:TNAM",
+    "editor": "V22AdditiveNote3",
+    "en": "Not much to report today. The mood is unusually somber in the wake of Dr. Peter's passing. There's a strange rumor going around that the commotion downstairs was caused by, of all things, Dr. Peter's corpse suddenly animating and attacking people. I don't know who would start such a vicious rumor, but it's in exceptionally bad taste."
+  },
+  {
+    "row": 476,
+    "type": "NOTE:FULL",
+    "editor": "HostetlerTerminalNote1",
+    "en": "HostetlerTerminalNote1"
+  },
+  {
+    "row": 477,
+    "type": "NOTE:FULL",
+    "editor": "HostetlerTerminalNote3",
+    "en": "HostetlerTerminalNote3"
+  },
+  {
+    "row": 478,
+    "type": "NOTE:FULL",
+    "editor": "HostetlerTerminalNote2",
+    "en": "HostetlerTerminalNote2"
+  },
+  {
+    "row": 479,
+    "type": "NOTE:FULL",
+    "editor": "ScorpionsGangNoteNV",
+    "en": "Ammunition for the Scorpions"
+  },
+  {
+    "row": 480,
+    "type": "NOTE:TNAM",
+    "editor": "ScorpionsGangNoteNV",
+    "en": "Yvette, the leader of the Scorpions on the Westside of New Vegas, wants you to set up a steady supply of ammunition from the NCR quartermaster at Camp McCarran. Her gang recently acquired new firearms but lack the ammunition to put them to use."
+  },
+  {
+    "row": 481,
+    "type": "NOTE:FULL",
+    "editor": "VMS08BombPassword",
+    "en": "Activation Code"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "row": 202,
+    "type": "NOTE:FULL",
+    "editor": "V19NoteDocRed02a",
+    "en": "V19Note"
+  },
+  {
+    "row": 203,
+    "type": "NOTE:TNAM",
+    "editor": "V19NoteDocRed02a",
+    "en": "Some of the Blues caused some trouble in the clinic today. I bet they were stealing drugs, I've heard the vents coming on late at night, others have too, and I bet they are using the drugs to poison us; stealing supplies from the clinic and using them to kill us all."
+  },
+  {
+    "row": 204,
+    "type": "NOTE:FULL",
+    "editor": "V19NoteDocBlue01f",
+    "en": "V19Note"
+  },
+  {
+    "row": 205,
+    "type": "NOTE:TNAM",
+    "editor": "V19NoteDocBlue01f",
+    "en": "We confronted the doctor today, she refused to give us any information, and we were thrown out of the clinic, some of us quite literally. We tried talking to the overseer, but acted as if he didn't know anything about it. I don't believe him, I don't trust him, and I don't trust any of them."
+  },
+  {
+    "row": 206,
+    "type": "NOTE:FULL",
+    "editor": "V19NoteDocBlue01e",
+    "en": "V19Note"
+  },
+  {
+    "row": 207,
+    "type": "NOTE:TNAM",
+    "editor": "V19NoteDocBlue01e",
+    "en": "It took some doing, but a few of us got together and managed to distract the people in the clinic long enough for me to get in and do some looking around, I found restraints and enough sedatives to kill a horse. She must be using them to control us, to make us forget, we're just pawns in her sick game."
+  },
+  {
+    "row": 208,
+    "type": "NOTE:FULL",
+    "editor": "RecipesTurboNote",
+    "en": "Recipes - Turbo"
+  },
+  {
+    "row": 209,
+    "type": "NOTE:TNAM",
+    "editor": "RecipesTurboNote",
+    "en": "This recipe allows you to make Turbo."
+  },
+  {
+    "row": 210,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsDogTagFistNote",
+    "en": "Schematics - Dog Tag Fist"
+  },
+  {
+    "row": 211,
+    "type": "NOTE:TNAM",
+    "editor": "SchematicsDogTagFistNote",
+    "en": "This recipe allows you to make a Dog Tag Fist."
+  },
+  {
+    "row": 212,
+    "type": "NOTE:FULL",
+    "editor": "VRRCKarlsJournalNOTE",
+    "en": "Karl's Journal"
+  },
+  {
+    "row": 213,
+    "type": "NOTE:TNAM",
+    "editor": "VRRCKarlsJournalNOTE",
+    "en": "This journal consists of detailed records and observations from Karl's time with the Great Khans. Many of the entries go into great detail about his opinion of their \"savage, barbarous customs,\" and at several points he waxes philosophic about how it's very likely that Caesar's Legion will have to execute the lot of them."
+  },
+  {
+    "row": 214,
+    "type": "NOTE:FULL",
+    "editor": "VRRCLegionSlaveLedgerNOTE",
+    "en": "Legion Slave Ledger"
+  },
+  {
+    "row": 215,
+    "type": "NOTE:FULL",
+    "editor": "VHDEngineeringNote",
+    "en": "Hoover Dam Engineering Report"
+  },
+  {
+    "row": 216,
+    "type": "NOTE:FULL",
+    "editor": "VHDSecurityReportNote",
+    "en": "Hoover Dam Security Report"
+  },
+  {
+    "row": 217,
+    "type": "NOTE:FULL",
+    "editor": "VHDDutyRosterNote",
+    "en": "Hoover Dam Security Duty Roster"
+  },
+  {
+    "row": 218,
+    "type": "NOTE:FULL",
+    "editor": "VMS04ChompsLewisNote",
+    "en": "Note to Tyrone"
+  },
+  {
+    "row": 219,
+    "type": "NOTE:FULL",
+    "editor": "VMS11RomanowskiNote",
+    "en": "Reprimand Recommendation"
+  },
+  {
+    "row": 220,
+    "type": "NOTE:FULL",
+    "editor": "VMS11TrentBascomNote",
+    "en": "Note from Corporal White"
+  },
+  {
+    "row": 221,
+    "type": "NOTE:FULL",
+    "editor": "SSHQTomasNote",
+    "en": "Tomas's Journal"
+  },
+  {
+    "row": 222,
+    "type": "NOTE:FULL",
+    "editor": "V34OverseerJournal03Note",
+    "en": "Overseer's Journal Fragment"
+  },
+  {
+    "row": 223,
+    "type": "NOTE:FULL",
+    "editor": "V34OverseerJournal02Note",
+    "en": "Overseer's Journal Fragment"
+  },
+  {
+    "row": 224,
+    "type": "NOTE:FULL",
+    "editor": "V34OverseerJournal04Note",
+    "en": "Overseer's Journal Fragment"
+  },
+  {
+    "row": 225,
+    "type": "NOTE:FULL",
+    "editor": "VHDFlightControlNote",
+    "en": "Flight Control Log"
+  },
+  {
+    "row": 226,
+    "type": "NOTE:FULL",
+    "editor": "VOVNVAndyScabbNote01",
+    "en": "Henchman Message to Andy Scabb"
+  },
+  {
+    "row": 227,
+    "type": "NOTE:FULL",
+    "editor": "Schematics44MagnumHandLoad",
+    "en": "Schematics - .44 Magnum, Hand Load"
+  },
+  {
+    "row": 228,
+    "type": "NOTE:TNAM",
+    "editor": "Schematics44MagnumHandLoad",
+    "en": "This schematic allows you to make .44 Magnum, Hand Load."
+  },
+  {
+    "row": 229,
+    "type": "NOTE:FULL",
+    "editor": "JacobstownAudioLog01",
+    "en": "Post-War Audio Log"
+  },
+  {
+    "row": 230,
+    "type": "NOTE:TNAM",
+    "editor": "JacobstownAudioLog01",
+    "en": "È"
+  },
+  {
+    "row": 231,
+    "type": "NOTE:FULL",
+    "editor": "RecipesRosesWastelandOmeletNote",
+    "en": "Recipes - Rose's Wasteland Omelet"
+  },
+  {
+    "row": 232,
+    "type": "NOTE:TNAM",
+    "editor": "RecipesRosesWastelandOmeletNote",
+    "en": "This recipe allows you to make Rose's Wasteland Omelet."
+  },
+  {
+    "row": 233,
+    "type": "NOTE:FULL",
+    "editor": "NVCCFrankWeathersNote",
+    "en": "Frank Weathers' Family"
+  },
+  {
+    "row": 234,
+    "type": "NOTE:TNAM",
+    "editor": "NVCCFrankWeathersNote",
+    "en": "Frank Weathers asked me to find his family. He thinks they may be enslaved in Cottonwood Cove by the Legion."
+  },
+  {
+    "row": 235,
+    "type": "NOTE:FULL",
+    "editor": "V34OverseerPassword",
+    "en": "Overseer's Password"
+  },
+  {
+    "row": 236,
+    "type": "NOTE:TNAM",
+    "editor": "V34OverseerPassword",
+    "en": "Sunflower"
+  },
+  {
+    "row": 237,
+    "type": "NOTE:FULL",
+    "editor": "vNiptonMayorsNote4",
+    "en": "New Terminal"
+  },
+  {
+    "row": 238,
+    "type": "NOTE:FULL",
+    "editor": "vNiptonTinkerNote",
+    "en": "Ambitions!"
+  },
+  {
+    "row": 239,
+    "type": "NOTE:FULL",
+    "editor": "vNiptonParanoidNote",
+    "en": "Declaration of Vital Essence"
+  },
+  {
+    "row": 240,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsPowderChargeNote",
+    "en": "Schematics - Powder Charge"
+  },
+  {
+    "row": 241,
+    "type": "NOTE:TNAM",
+    "editor": "SchematicsPowderChargeNote",
+    "en": "This schematic allows you to make Powder Charges."
+  }
+]

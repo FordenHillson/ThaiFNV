@@ -1,0 +1,242 @@
+[
+  {
+    "row": 682,
+    "type": "NOTE:FULL",
+    "editor": "FFEnclaveResearchBrahmin",
+    "en": "Field Entry: \"Two-Headed Brahmin\""
+  },
+  {
+    "row": 683,
+    "type": "NOTE:FULL",
+    "editor": "FFEnclaveResearchMirelurk",
+    "en": "Field Entry: \"Mirelurk\""
+  },
+  {
+    "row": 684,
+    "type": "NOTE:FULL",
+    "editor": "FFEnclaveResearchGiantAnt",
+    "en": "Field Entry: \"Giant Ant\""
+  },
+  {
+    "row": 685,
+    "type": "NOTE:FULL",
+    "editor": "FFEnclaveResearchRadroach",
+    "en": "Field Entry: \"Great American Cockroach\""
+  },
+  {
+    "row": 686,
+    "type": "NOTE:FULL",
+    "editor": "FFEnclaveResearchBloatFly",
+    "en": "Field Entry: \"Bloatfly\""
+  },
+  {
+    "row": 687,
+    "type": "NOTE:FULL",
+    "editor": "OasisExileHolotape",
+    "en": "Oasis Coordinates"
+  },
+  {
+    "row": 688,
+    "type": "NOTE:FULL",
+    "editor": "InternmentOrders",
+    "en": "Internment Orders"
+  },
+  {
+    "row": 689,
+    "type": "NOTE:FULL",
+    "editor": "LDSpringvaleBossNote03",
+    "en": "Springvale Raider Mining Log"
+  },
+  {
+    "row": 690,
+    "type": "NOTE:FULL",
+    "editor": "LDSpringvaleBossNote02",
+    "en": "Springvale Raider Mining Log"
+  },
+  {
+    "row": 691,
+    "type": "NOTE:TNAM",
+    "editor": "LDSpringvaleBossNote02",
+    "en": "Some of the scabs got tired of digging the tunnel and started using mines to get into the caves.  Not a half bad idea, the explosions damn near knocked the building apart.  We got a new window or two on the side of the building. haha.  I'm going to have some of the boys knock over a caravan for more explosives, but we'll have to use fewer in the blasts, or some assholes from Megaton will come looking."
+  },
+  {
+    "row": 692,
+    "type": "NOTE:FULL",
+    "editor": "FFEU20Note",
+    "en": "Wasteland Merchant Note"
+  },
+  {
+    "row": 693,
+    "type": "NOTE:FULL",
+    "editor": "FFSuperMutantCamp01Note04",
+    "en": "Search Party Log #4"
+  },
+  {
+    "row": 694,
+    "type": "NOTE:FULL",
+    "editor": "FFSuperMutantCamp01Note03",
+    "en": "Search Party Log #3"
+  },
+  {
+    "row": 695,
+    "type": "NOTE:FULL",
+    "editor": "FFSuperMutantCamp01Note02",
+    "en": "Search Party Log #2"
+  },
+  {
+    "row": 696,
+    "type": "NOTE:TNAM",
+    "editor": "FFSuperMutantCamp01Note02",
+    "en": "Bad news.  Rangers haven't seen Cheryl and got troubles of their own.  Muties been snatching people left and right.  Reilly’s men are going to keep an eye out round here.   They suggested we head to the western ruins, across the river and search there, so I guess that’s what we’ll do.  Damn it, sis, why didn't you just wait for us?"
+  },
+  {
+    "row": 697,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsRockitLauncherNote30",
+    "en": "Schematics - Rock-It Launcher v.4"
+  },
+  {
+    "row": 698,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsShishkebabNote20",
+    "en": "Schematics - Shishkebab v.3"
+  },
+  {
+    "row": 699,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsShishkebabNote10",
+    "en": "Schematics - Shishkebab v.2"
+  },
+  {
+    "row": 700,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsRockitLauncherNote20",
+    "en": "Schematics - Rock-It Launcher v.3"
+  },
+  {
+    "row": 701,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsRockitLauncherNote10",
+    "en": "Schematics - Rock-It Launcher v.2"
+  },
+  {
+    "row": 702,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsRailwayRifleNote20",
+    "en": "Schematics - Railway Rifle v.3"
+  },
+  {
+    "row": 703,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsRailwayRifleNote10",
+    "en": "Schematics - Railway Rifle v.2"
+  },
+  {
+    "row": 704,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsNukaCocktailNote20",
+    "en": "Schematics - Nuka Grenade v.3"
+  },
+  {
+    "row": 705,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsNukaCocktailNote10",
+    "en": "Schematics - Nuka Grenade v.2"
+  },
+  {
+    "row": 706,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsDeathclawGauntletNote20",
+    "en": "Schematics - Deathclaw Gauntlet v.3"
+  },
+  {
+    "row": 707,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsDeathclawGauntletNote10",
+    "en": "Schematics - Deathclaw Gauntlet v.2"
+  },
+  {
+    "row": 708,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsDartGunNote20",
+    "en": "Schematics - Dart Gun v.3"
+  },
+  {
+    "row": 709,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsDartGunNote10",
+    "en": "Schematics - Dart Gun v.2"
+  },
+  {
+    "row": 710,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsBottlecapMineNote20",
+    "en": "Schematics - Bottlecap Mine v.3"
+  },
+  {
+    "row": 711,
+    "type": "NOTE:FULL",
+    "editor": "SchematicsBottlecapMineNote10",
+    "en": "Schematics - Bottlecap Mine v.2"
+  },
+  {
+    "row": 712,
+    "type": "NOTE:FULL",
+    "editor": "FFEnclaveCamp08ReportHolo",
+    "en": "Enclave Field Report"
+  },
+  {
+    "row": 713,
+    "type": "NOTE:FULL",
+    "editor": "FFEncCamp08NoteREPORTAudio",
+    "en": "Enclave Field Report"
+  },
+  {
+    "row": 714,
+    "type": "NOTE:FULL",
+    "editor": "MetroMapNote01",
+    "en": "DCTA Metro Map"
+  },
+  {
+    "row": 715,
+    "type": "NOTE:FULL",
+    "editor": "floodedSewerShockerNote",
+    "en": "Shocker Glove"
+  },
+  {
+    "row": 716,
+    "type": "NOTE:FULL",
+    "editor": "LamplightHolo05",
+    "en": "January 26, 2077 -- Little Lamplight!"
+  },
+  {
+    "row": 717,
+    "type": "NOTE:TNAM",
+    "editor": "LamplightHolo05",
+    "en": "²ð"
+  },
+  {
+    "row": 718,
+    "type": "NOTE:FULL",
+    "editor": "LamplightHolo04",
+    "en": "My Diary, by Jason Grant -- Entry 2"
+  },
+  {
+    "row": 719,
+    "type": "NOTE:TNAM",
+    "editor": "LamplightHolo04",
+    "en": "³ð"
+  },
+  {
+    "row": 720,
+    "type": "NOTE:FULL",
+    "editor": "LamplightHolo03",
+    "en": "My Diary, by Jason Grant -- Entry 1"
+  },
+  {
+    "row": 721,
+    "type": "NOTE:TNAM",
+    "editor": "LamplightHolo03",
+    "en": "´ð"
+  }
+]

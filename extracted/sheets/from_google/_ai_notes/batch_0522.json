@@ -1,0 +1,242 @@
+[
+  {
+    "row": 522,
+    "type": "NOTE:FULL",
+    "editor": "REPCONHQQ35",
+    "en": "Matter Modulator Project"
+  },
+  {
+    "row": 523,
+    "type": "NOTE:FULL",
+    "editor": "VVault11SolutionResponse",
+    "en": "Automated Solution Response"
+  },
+  {
+    "row": 524,
+    "type": "NOTE:FULL",
+    "editor": "VVault11Solution",
+    "en": "System Recording: Vault 11 Solution"
+  },
+  {
+    "row": 525,
+    "type": "NOTE:FULL",
+    "editor": "VVault11ElectionGuide",
+    "en": "Vault 11 Election Guide"
+  },
+  {
+    "row": 526,
+    "type": "NOTE:FULL",
+    "editor": "VVault11PostponementNotice",
+    "en": "Notice of Postponement"
+  },
+  {
+    "row": 527,
+    "type": "NOTE:FULL",
+    "editor": "VVault11Deposition",
+    "en": "Deposition"
+  },
+  {
+    "row": 528,
+    "type": "NOTE:FULL",
+    "editor": "VVault11OverseerOrder",
+    "en": "Overseer Order 745"
+  },
+  {
+    "row": 529,
+    "type": "NOTE:FULL",
+    "editor": "VVault11OverseerPassword",
+    "en": "Vault 11 Overseer's Terminal Password"
+  },
+  {
+    "row": 530,
+    "type": "NOTE:TNAM",
+    "editor": "VVault11OverseerPassword",
+    "en": "According to the text of a speech that was given or scheduled to be given in the Vault 11 Atrium on overseer election day, the terminal password is \"Betty.\""
+  },
+  {
+    "row": 531,
+    "type": "NOTE:FULL",
+    "editor": "VVault11JusticeBlocRecording",
+    "en": "Justice Bloc HQ Security Tapes"
+  },
+  {
+    "row": 532,
+    "type": "NOTE:FULL",
+    "editor": "VVault11Speech",
+    "en": "Prepared Speech of Gus Olson, Ombudsman, for the Annual Overseer Election"
+  },
+  {
+    "row": 533,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformQJSnufflesNote",
+    "en": "Injured Molerat"
+  },
+  {
+    "row": 534,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformQJSnufflesNote",
+    "en": "The molerat Snuffles at Sloan appears to have injured his leg. Judging from the condition of the injury, it doesn't appear that any of the quarry workers have the appropriate medical skills to do anything about it."
+  },
+  {
+    "row": 535,
+    "type": "NOTE:FULL",
+    "editor": "BMRaulJournal4Note",
+    "en": "Entry 4"
+  },
+  {
+    "row": 536,
+    "type": "NOTE:FULL",
+    "editor": "BMRaulJournal3Note",
+    "en": "Entry 3"
+  },
+  {
+    "row": 537,
+    "type": "NOTE:TNAM",
+    "editor": "BMRaulJournal3Note",
+    "en": "The mutant with the scar across his face, whom I've taken to calling Cuddles, stopped in today and asked me to fix his car. I told him that's outside my expertise and seriously thought he was going to kill me."
+  },
+  {
+    "row": 538,
+    "type": "NOTE:FULL",
+    "editor": "BMRaulJournal2Note",
+    "en": "Entry 2"
+  },
+  {
+    "row": 539,
+    "type": "NOTE:TNAM",
+    "editor": "BMRaulJournal2Note",
+    "en": "Apparently, the mutants raided a caravan today. One of their rifles jammed. Took about seven minutes to fix. I also performed minor maintenance on the broadcasting tower outside. It's tempting to think that I could have just pulled a switch there and taken this accursed station off the air. No doubt she would have killed me soon afterward, but it might have been worth it just to see the look on her face."
+  },
+  {
+    "row": 540,
+    "type": "NOTE:FULL",
+    "editor": "BMRaulJournal1Note",
+    "en": "Entry 1"
+  },
+  {
+    "row": 541,
+    "type": "NOTE:TNAM",
+    "editor": "BMRaulJournal1Note",
+    "en": "As if I don't have enough pointless things to do here, Tabitha wants me to start keeping a log of all the repairs I do. So here's my first log entry. I fixed up several old terminals that were left over in the intact buildings here. I wonder what she's planning to use them for."
+  },
+  {
+    "row": 542,
+    "type": "NOTE:FULL",
+    "editor": "BMRaulJournal6Note",
+    "en": "Entry 6"
+  },
+  {
+    "row": 543,
+    "type": "NOTE:FULL",
+    "editor": "BMRaulJournal5Note",
+    "en": "Entry 5"
+  },
+  {
+    "row": 544,
+    "type": "NOTE:FULL",
+    "editor": "BMHiddenTreasureNote",
+    "en": "Treasure Hunt"
+  },
+  {
+    "row": 545,
+    "type": "NOTE:FULL",
+    "editor": "BMRepairNote3",
+    "en": "Repair Note #3"
+  },
+  {
+    "row": 546,
+    "type": "NOTE:FULL",
+    "editor": "BMRaulNote",
+    "en": "Ghoul in Trouble"
+  },
+  {
+    "row": 547,
+    "type": "NOTE:TNAM",
+    "editor": "BMRaulNote",
+    "en": "According to the radio, a ghoul named Raul is being held captive on Black Mountain."
+  },
+  {
+    "row": 548,
+    "type": "NOTE:FULL",
+    "editor": "BMPrisonPasswordNote",
+    "en": "Black Mountain Prison Password"
+  },
+  {
+    "row": 549,
+    "type": "NOTE:TNAM",
+    "editor": "BMPrisonPasswordNote",
+    "en": "123456789"
+  },
+  {
+    "row": 550,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformQJChompsNote",
+    "en": "Let There Be Light!"
+  },
+  {
+    "row": 551,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformQJChompsNote",
+    "en": "Chomps Lewis complained that the replacement generator the NCR sent to Quarry Junction isn't working. No one at Quarry Junction has the skill to fix the problem."
+  },
+  {
+    "row": 552,
+    "type": "NOTE:FULL",
+    "editor": "VFreeformQJJasNote",
+    "en": "Wanted: Deathclaw Egg"
+  },
+  {
+    "row": 553,
+    "type": "NOTE:TNAM",
+    "editor": "VFreeformQJJasNote",
+    "en": "Jas Wilkins at Quarry Junction wants you to obtain a deathclaw egg for her Wasteland Omelet recipe. The most likely location to find an egg is the deathclaw nest at the nearby limestone quarry."
+  },
+  {
+    "row": 554,
+    "type": "NOTE:FULL",
+    "editor": "HVRangerNote",
+    "en": "Note"
+  },
+  {
+    "row": 555,
+    "type": "NOTE:FULL",
+    "editor": "PrimmSheriffPetition2",
+    "en": "Primm Residential Petition"
+  },
+  {
+    "row": 556,
+    "type": "NOTE:FULL",
+    "editor": "PrimmSheriffPetition1",
+    "en": "Primm Residential Petition"
+  },
+  {
+    "row": 557,
+    "type": "NOTE:FULL",
+    "editor": "PrimmSheriffPetition0",
+    "en": "Primm Residential Petition"
+  },
+  {
+    "row": 558,
+    "type": "NOTE:FULL",
+    "editor": "PrimmSheriffPetition5",
+    "en": "Primm Residential Petition - Complete"
+  },
+  {
+    "row": 559,
+    "type": "NOTE:FULL",
+    "editor": "PrimmSheriffPetition4",
+    "en": "Primm Residential Petition"
+  },
+  {
+    "row": 560,
+    "type": "NOTE:FULL",
+    "editor": "PrimmSheriffPetition3",
+    "en": "Primm Residential Petition"
+  },
+  {
+    "row": 561,
+    "type": "NOTE:FULL",
+    "editor": "VMS03ARCHIMEDESTestingNote",
+    "en": "ARCHIMEDES Testing"
+  }
+]

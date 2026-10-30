@@ -13,7 +13,7 @@
 | 1 | Extract ข้อความ → Sheets | 🟡 extract เสร็จ / MT + glossary กำลังทำ |
 | 2 | Prototype ฟอนต์ในเกม | ✅ ผ่าน (ปรับขนาดหลายรอบ) |
 | 3 | MT seed + human post-edit | ⬜ เริ่มแล้วบางส่วน (Messages) |
-| 4 | ป้อนแปลกลับ ESM | ⬜ ยังไม่ทำ |
+| 4 | ป้อนแปลกลับ ESM | 🟡 MESG จาก Sheets → `ThaiFNV_Messages.esp` |
 | 5 | FOMOD / แพ็กเกจ | ⬜ ยังไม่ทำ |
 | 6 | DLC / YUP / major mods | ⬜ |
 | 7 | เผยแพร่ | ⬜ |
@@ -22,16 +22,17 @@
 
 - ฟอนต์: `fonts/out/vanilla/` + `fonts/out/darn/` (Sarabun Bold, sizes 21/20/18/20/24/21/21/42/31)
 - Extract: `extracted/sheets/*.csv` จาก FalloutNV.esm
-- ทดลองแปล: `extracted/sheets/FNV_Messages_translated.csv`
+- ทดลองแปล: Google Sheet → `extracted/sheets/from_google/FNV_Messages.csv`
+- Override ESP: `release/ThaiFNV_Messages.esp` (1121 MESG, wordbreak+precompose)
 
 ## บล็อกเกอร์ / คำถามเปิด
 
-- Round-trip CSV → ESM ด้วย CP874 ยังไม่พิสูจน์ครบ pipeline
 - Glossary มาตรฐานยังไม่ล็อกทั้งชุด
+- หมวดอื่นนอก Messages ยังไม่ import
 - ลิขสิทธิ์การแจก `.esm` แก้แล้ว — แผนระยะยาวอาจเป็น translation plugin
 
 ## Next 3 อย่าง
 
-1. ขยาย MT seed + Glossary บน Google Sheets
-2. Post-edit หมวด Messages / Names
-3. สคริปต์ import กลับ + ทดสอบในเกม
+1. ทดสอบ `ThaiFNV_Messages.esp` ในเกม (ShowMessage)
+2. Post-edit หมวด Messages บน Sheets แล้ว re-import
+3. ขยาย import ไป Names / Quests / Dialogue

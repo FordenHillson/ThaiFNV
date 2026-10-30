@@ -1,0 +1,242 @@
+[
+  {
+    "row": 82,
+    "type": "NOTE:FULL",
+    "editor": "vNellisJanetNote",
+    "en": "Getting Janet Into Nellis"
+  },
+  {
+    "row": 83,
+    "type": "NOTE:TNAM",
+    "editor": "vNellisJanetNote",
+    "en": "Pearl really doesn't trust outsiders. Maybe if I improve my reputation with the Boomers, she'll change her mind."
+  },
+  {
+    "row": 84,
+    "type": "NOTE:FULL",
+    "editor": "VMQ01BeagleJournalNote",
+    "en": "Deputy Beagle's Journal"
+  },
+  {
+    "row": 85,
+    "type": "NOTE:FULL",
+    "editor": "RecipesCassMoonshineNote",
+    "en": "Recipes - Cass' Moonshine"
+  },
+  {
+    "row": 86,
+    "type": "NOTE:TNAM",
+    "editor": "RecipesCassMoonshineNote",
+    "en": "This recipe allows you to make Cass' Moonshine."
+  },
+  {
+    "row": 87,
+    "type": "NOTE:FULL",
+    "editor": "RecipesRubysSpicyCasseroleNote",
+    "en": "Recipes - Ruby's Spicy Casserole"
+  },
+  {
+    "row": 88,
+    "type": "NOTE:TNAM",
+    "editor": "RecipesRubysSpicyCasseroleNote",
+    "en": "This recipe allows you to make Ruby's Spicy Casserole."
+  },
+  {
+    "row": 89,
+    "type": "NOTE:FULL",
+    "editor": "VBooneLastLetterNote",
+    "en": "For Carla"
+  },
+  {
+    "row": 90,
+    "type": "NOTE:FULL",
+    "editor": "VHDTermsOfSurrender",
+    "en": "Order of Withdrawal"
+  },
+  {
+    "row": 91,
+    "type": "NOTE:FULL",
+    "editor": "CassNoteVanGraff",
+    "en": "Letter to Gloria"
+  },
+  {
+    "row": 92,
+    "type": "NOTE:FULL",
+    "editor": "CassNoteCrimsonCaravan",
+    "en": "Crimson Caravan - Van Graff Agreement"
+  },
+  {
+    "row": 93,
+    "type": "NOTE:FULL",
+    "editor": "SLBasincreek",
+    "en": "Help Me!"
+  },
+  {
+    "row": 94,
+    "type": "NOTE:FULL",
+    "editor": "VMS05CassidyBuyoutNote",
+    "en": "Cassidy Caravans Buyout Offer"
+  },
+  {
+    "row": 95,
+    "type": "NOTE:TNAM",
+    "editor": "VMS05CassidyBuyoutNote",
+    "en": "This is an offer letter from Alice McLafferty at the Crimson Caravan Company to buyout Cassidy Caravans in its entirety - including equipment, Brahmin, and existing trade contracts - from Cass."
+  },
+  {
+    "row": 96,
+    "type": "NOTE:FULL",
+    "editor": "VFSOffDutyNCRBarkerPasswordNote",
+    "en": "Freeside Squatter Camp Note"
+  },
+  {
+    "row": 97,
+    "type": "NOTE:TNAM",
+    "editor": "VFSOffDutyNCRBarkerPasswordNote",
+    "en": "Hope is the key."
+  },
+  {
+    "row": 98,
+    "type": "NOTE:FULL",
+    "editor": "PrimmCourierNote",
+    "en": "Mojave Express Delivery Order (4 of 6)"
+  },
+  {
+    "row": 99,
+    "type": "NOTE:FULL",
+    "editor": "HVPatrolNote02",
+    "en": "Mission Statement KH-792"
+  },
+  {
+    "row": 100,
+    "type": "NOTE:FULL",
+    "editor": "VFSSilverRushBomberNote",
+    "en": "Revenge Note"
+  },
+  {
+    "row": 101,
+    "type": "NOTE:FULL",
+    "editor": "HVPatrolNote01",
+    "en": "Mission Statement XV-56"
+  },
+  {
+    "row": 102,
+    "type": "NOTE:FULL",
+    "editor": "HVPatrolNote03",
+    "en": "Mission Statement CB-03"
+  },
+  {
+    "row": 103,
+    "type": "NOTE:FULL",
+    "editor": "NellisGeorgeArtilleryNote",
+    "en": "Nellis Artillery Timing Details"
+  },
+  {
+    "row": 104,
+    "type": "NOTE:TNAM",
+    "editor": "NellisGeorgeArtilleryNote",
+    "en": "The key to avoiding the artillery is to move from building-to-building up the northwest side of town toward the front gate. Stick to the high cover in the northeast corner of the two buildings, then make a bee line for the gate. The Boomers won't shoot at their own people, so stick to the fence until you make it to the gate. Also, I know there is an old train tunnel that enters the area from the south, but no one has ever come back out of there to say it is safe."
+  },
+  {
+    "row": 105,
+    "type": "NOTE:FULL",
+    "editor": "V34SOSNote",
+    "en": "Reactor SOS Message"
+  },
+  {
+    "row": 106,
+    "type": "NOTE:TNAM",
+    "editor": "V34SOSNote",
+    "en": "If there's anyone still alive out there we need help. Someone planted a bomb in the pool, when the lower level flooded all the doors were automatically sealed. My family and a few others are trapped behind those doors. If someone could transfer control to the backup terminal I could get us all out. Please help us."
+  },
+  {
+    "row": 107,
+    "type": "NOTE:FULL",
+    "editor": "V34PowerNote",
+    "en": "Reactor Power Message"
+  },
+  {
+    "row": 108,
+    "type": "NOTE:TNAM",
+    "editor": "V34PowerNote",
+    "en": "This action will transfer all vault controls to another terminal. This action cannot be undone. As part of safety protocol this action has been locked out from this terminal. Using the Master Override terminal located in the reactor room will bypass all safety features."
+  },
+  {
+    "row": 109,
+    "type": "NOTE:FULL",
+    "editor": "V34ShutdownNote",
+    "en": "Reactor Shutdown Message"
+  },
+  {
+    "row": 110,
+    "type": "NOTE:TNAM",
+    "editor": "V34ShutdownNote",
+    "en": "Unexpected drop in power detected. Systems are unable to stabilize. Prepare for shutdown."
+  },
+  {
+    "row": 111,
+    "type": "NOTE:FULL",
+    "editor": "V34VentNote",
+    "en": "Reactor Vent Message"
+  },
+  {
+    "row": 112,
+    "type": "NOTE:TNAM",
+    "editor": "V34VentNote",
+    "en": "This action may result in meltdown. As part of safety protocol this action has been locked out from this terminal. Using the Master Override terminal located in the reactor room will bypass all safety features."
+  },
+  {
+    "row": 113,
+    "type": "NOTE:FULL",
+    "editor": "Lucky38LSChamberNote",
+    "en": "LS Chamber"
+  },
+  {
+    "row": 114,
+    "type": "NOTE:TNAM",
+    "editor": "Lucky38LSChamberNote",
+    "en": "Warning: Lethal Shock Risk if LS Chamber Occupied. Proceed?"
+  },
+  {
+    "row": 115,
+    "type": "NOTE:FULL",
+    "editor": "VHanlonsConfession",
+    "en": "Chief Hanlon's Confession"
+  },
+  {
+    "row": 116,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal17",
+    "en": "HouseToolsTerminal17"
+  },
+  {
+    "row": 117,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal16",
+    "en": "HouseToolsTerminal16"
+  },
+  {
+    "row": 118,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal15",
+    "en": "HouseToolsTerminal15"
+  },
+  {
+    "row": 119,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal14",
+    "en": "HouseToolsTerminal14"
+  },
+  {
+    "row": 120,
+    "type": "NOTE:FULL",
+    "editor": "SLFarmDiary01",
+    "en": "Torn Diary Page 1"
+  },
+  {
+    "row": 121,
+    "type": "NOTE:FULL",
+    "editor": "SLFarmDiary04",
+    "en": "Torn Diary Page 4"
+  }
+]

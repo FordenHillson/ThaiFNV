@@ -1,0 +1,242 @@
+[
+  {
+    "row": 402,
+    "type": "NOTE:FULL",
+    "editor": "GunRunnerNote02",
+    "en": "Crimson Caravan Reparations"
+  },
+  {
+    "row": 403,
+    "type": "NOTE:FULL",
+    "editor": "GunRunnerNote01",
+    "en": "Camp McCarran Order #172"
+  },
+  {
+    "row": 404,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsJournalSucceed",
+    "en": "HouseToolsJournalSucceed"
+  },
+  {
+    "row": 405,
+    "type": "NOTE:TNAM",
+    "editor": "HouseToolsJournalSucceed",
+    "en": "[SUCCEEDED] You've accessed a hidden, distributed file network buried in the net code for this terminal. It appears to be part of a journal."
+  },
+  {
+    "row": 406,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsJournalFail",
+    "en": "HouseToolsJournalFail"
+  },
+  {
+    "row": 407,
+    "type": "NOTE:TNAM",
+    "editor": "HouseToolsJournalFail",
+    "en": "[FAILED] There appears to be a hidden file buried in the network, but you aren't skilled enough to crack it."
+  },
+  {
+    "row": 408,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal1",
+    "en": "HouseToolsTerminal1"
+  },
+  {
+    "row": 409,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal13",
+    "en": "H&H Tools Journal Entry 06/19/2077"
+  },
+  {
+    "row": 410,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal12",
+    "en": "H&H Tools Journal Entry 04/15/2077"
+  },
+  {
+    "row": 411,
+    "type": "NOTE:TNAM",
+    "editor": "HouseToolsTerminal12",
+    "en": "Cindy-Lou can no longer save me."
+  },
+  {
+    "row": 412,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal11",
+    "en": "H&H Tools Journal Entry 12/27/2064"
+  },
+  {
+    "row": 413,
+    "type": "NOTE:TNAM",
+    "editor": "HouseToolsTerminal11",
+    "en": "Nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless nevertheless"
+  },
+  {
+    "row": 414,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal10",
+    "en": "H&H Tools Journal Entry 04/06/2058"
+  },
+  {
+    "row": 415,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal9",
+    "en": "H&H Tools Journal Entry 11/08/2053"
+  },
+  {
+    "row": 416,
+    "type": "NOTE:TNAM",
+    "editor": "HouseToolsTerminal9",
+    "en": "Matsumoto cornered me in the hall like a wild animal today! Kept asking if I was all right, but I see the lies bubbling in his throat behind that sussurating smile. He knows. He must know. Has my brother gotten to him, too? Have to talk to Cindy-Lou, she always knows what to do."
+  },
+  {
+    "row": 417,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal8",
+    "en": "H&H Tools Journal Entry 07/25/2042"
+  },
+  {
+    "row": 418,
+    "type": "NOTE:TNAM",
+    "editor": "HouseToolsTerminal8",
+    "en": "It's worse than I feared. Henderson sent a 10-point memo outlining the benefits of mechanization and automation. As if I wouldn't know he's been plotting with my half-brother the entire time! I knew he was a weasel-dick traitor from the moment I laid eyes on him. Only one thing to do.  One thing, and the company - my father's LEGACY - is safe forever. Cindy-Lou will bring him to me, and then I'll make an example. The Bastard will learn why you don't cross the House."
+  },
+  {
+    "row": 419,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal7",
+    "en": "H&H Tools Journal Entry 04/14/2042"
+  },
+  {
+    "row": 420,
+    "type": "NOTE:TNAM",
+    "editor": "HouseToolsTerminal7",
+    "en": "I'm beginning to mistrust Henderson. I think he's conspiring with my bastard half-brother to seize the company. I built this company, dammit! I won't be ousted by some Johnny-come-lately fancy college man with his robots and his degrees. I've asked Cindy-Lou to keep an eye on him, to monitor his e-mail for suspicious activity."
+  },
+  {
+    "row": 421,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal6",
+    "en": "H&H Tools Journal Entry 05/14/2027"
+  },
+  {
+    "row": 422,
+    "type": "NOTE:TNAM",
+    "editor": "HouseToolsTerminal6",
+    "en": "As the years roll on, I find myself missing Father's advice more and more. I wonder if he would be proud of the decisions I've made - but no, such second-guessing does me no good. I won't be weighed down by the past, and I won't waste energy on ancient family history, especially when that history isn't really family at all."
+  },
+  {
+    "row": 423,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal5",
+    "en": "HouseToolsTerminal5"
+  },
+  {
+    "row": 424,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal4",
+    "en": "HouseToolsTerminal4"
+  },
+  {
+    "row": 425,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal3",
+    "en": "HouseToolsTerminal3"
+  },
+  {
+    "row": 426,
+    "type": "NOTE:FULL",
+    "editor": "HouseToolsTerminal2",
+    "en": "HouseToolsTerminal2"
+  },
+  {
+    "row": 427,
+    "type": "NOTE:FULL",
+    "editor": "VMS08Plans",
+    "en": "Monorail Sabotage Plans"
+  },
+  {
+    "row": 428,
+    "type": "NOTE:TNAM",
+    "editor": "VMS08Plans",
+    "en": "The papers here include schematics and recipes for explosives and blueprints for a monorail car with several points of vulnerability marked. They are all marked with a stamp bearing the logo of Caesar's Legion."
+  },
+  {
+    "row": 429,
+    "type": "NOTE:FULL",
+    "editor": "VMS11Note",
+    "en": "Corporal White's Journal"
+  },
+  {
+    "row": 430,
+    "type": "NOTE:FULL",
+    "editor": "VMS08TowerLogs",
+    "en": "Control Tower Log"
+  },
+  {
+    "row": 431,
+    "type": "NOTE:FULL",
+    "editor": "VDialogueVegasEastDrugsNote",
+    "en": "Report back to Captain Parker"
+  },
+  {
+    "row": 432,
+    "type": "NOTE:TNAM",
+    "editor": "VDialogueVegasEastDrugsNote",
+    "en": "You have proof that Keith is selling drugs. Report back to Captain Parker with your findings."
+  },
+  {
+    "row": 433,
+    "type": "NOTE:FULL",
+    "editor": "VDialogueVegasEastDiceNote",
+    "en": "Report back to Captain Parker"
+  },
+  {
+    "row": 434,
+    "type": "NOTE:TNAM",
+    "editor": "VDialogueVegasEastDiceNote",
+    "en": "You have proof that Keith runs a crooked game. Report back to Captain Parker with your findings."
+  },
+  {
+    "row": 435,
+    "type": "NOTE:FULL",
+    "editor": "VDialogueVegasEastKeithNote",
+    "en": "Investigate Keith's gambling and drug operations."
+  },
+  {
+    "row": 436,
+    "type": "NOTE:TNAM",
+    "editor": "VDialogueVegasEastKeithNote",
+    "en": "Captain Parker at the Aerotech Office Park wants you to find evidence that Keith is running crooked gambling or involved with drug running."
+  },
+  {
+    "row": 437,
+    "type": "NOTE:FULL",
+    "editor": "VMS21CachinoJournal",
+    "en": "Cachino's Journal"
+  },
+  {
+    "row": 438,
+    "type": "NOTE:FULL",
+    "editor": "VMS13Note",
+    "en": "Dermot's Ledger"
+  },
+  {
+    "row": 439,
+    "type": "NOTE:FULL",
+    "editor": "V22KeelyNote5",
+    "en": "Keely note 5"
+  },
+  {
+    "row": 440,
+    "type": "NOTE:TNAM",
+    "editor": "V22KeelyNote5",
+    "en": "I've been hearing a strange chittering sound for some time now, and finally discovered its source. There's some kind of giant mantises that've taken up residence in the vault. I almost ran smack into one the other day, but the creatures don't appear to react to my presence at all. Perhaps the others sent here ran afoul of the creatures, but I can't see how a few scattered insects could pose much of a problem to experienced mercs."
+  },
+  {
+    "row": 441,
+    "type": "NOTE:FULL",
+    "editor": "V22PestControlNote3",
+    "en": "Vault 22 Pest Control Note 3"
+  }
+]
