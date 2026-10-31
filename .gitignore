@@ -60,3 +60,7 @@ fonts/out/esp_precompose/
 fonts/out/preview_edit/
 testing/_workbench_tmp/
 testing/ab_backup_our_fonts/
+
+# local RE / unpack tooling (ignored wholesale)
+Tools/
+
