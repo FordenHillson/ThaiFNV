@@ -42,13 +42,24 @@ SHEET_URL = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}"
 # gid ที่รู้แล้ว (อัปเดตเมื่อมีแท็บใหม่ — หรือใช้ list)
 KNOWN_GIDS: dict[str, int] = {
     "FNV_Messages": 161309527,
+    "FNV_SystemStr": 1230611415,
+    "FNV_Other": 1979608645,
+    "FNV_BookDesc": 1302236600,
+    "FNV_Notes": 100349961,
+    "FNV_Quests": 1936231527,
+    "FNV_Terminals": 1013726487,
+    "FNV_Names": 1872342141,
+    "FNV_TopicNames": 715319255,
+    "FNV_Dialogue": 288509415,
 }
 
 # ลำดับนำเข้าที่แนะนำ (Messages มีแล้ว)
 UPLOAD_ORDER = [
     "FNV_SystemStr",
+    "FNV_ExeUI",
     "FNV_Other",
     "FNV_BookDesc",
+    "FNV_Descs",
     "FNV_Notes",
     "FNV_Quests",
     "FNV_Terminals",
