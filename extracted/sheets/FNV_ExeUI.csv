@@ -1,0 +1,846 @@
+﻿ID,ประเภท,FormID,EditorID,EN,TH,สถานะ,หมายเหตุ
+1,EXE:STR,,sAMTime,AM,,,FalloutNV.exe UI string
+2,EXE:STR,,sAccept,Accept,,,FalloutNV.exe UI string
+3,EXE:STR,,sAcceptText,Accept Text,,,FalloutNV.exe UI string
+4,EXE:STR,,sActionMapping,Action Mapping,,,FalloutNV.exe UI string
+5,EXE:STR,,sActionPointsAttack,Action Points Attack,,,FalloutNV.exe UI string
+6,EXE:STR,,sActionPointsCrouch,Crouch,,,FalloutNV.exe UI string
+7,EXE:STR,,sActionPointsDrop,Action Points Drop,,,FalloutNV.exe UI string
+8,EXE:STR,,sActionPointsHeal,Heal,,,FalloutNV.exe UI string
+9,EXE:STR,,sActionPointsPunch,Punch,,,FalloutNV.exe UI string
+10,EXE:STR,,sActionPointsReload,Action Points Reload,,,FalloutNV.exe UI string
+11,EXE:STR,,sActionPointsShoot,Shot,,,FalloutNV.exe UI string
+12,EXE:STR,,sActionPointsShort,AP,,,FalloutNV.exe UI string
+13,EXE:STR,,sActionPointsStand,Stand,,,FalloutNV.exe UI string
+14,EXE:STR,,sActionPointsSwitchWeapon,Switch Weapon,,,FalloutNV.exe UI string
+15,EXE:STR,,sActionPointsThrow,Throw,,,FalloutNV.exe UI string
+16,EXE:STR,,sActionPointsToggleWeaponDrawn,Toggle Weapon Drawn,,,FalloutNV.exe UI string
+17,EXE:STR,,sActionRef,CreateDetectionEvent,,,FalloutNV.exe UI string
+18,EXE:STR,,sActionsInSingleThread,minDesiredIslandSize,,,FalloutNV.exe UI string
+19,EXE:STR,,sActor,DumpMasterFileSeekData,,,FalloutNV.exe UI string
+20,EXE:STR,,sActorAVictim,IsActorEvil,,,FalloutNV.exe UI string
+21,EXE:STR,,sActorDetected,GetDetectionLevel,,,FalloutNV.exe UI string
+22,EXE:STR,,sActorEvil,GetPCMS,,,FalloutNV.exe UI string
+23,EXE:STR,,sActorFade,Actor Fade,,,FalloutNV.exe UI string
+24,EXE:STR,,sActorRefEssential,Checks if the loading menu is open,,,FalloutNV.exe UI string
+25,EXE:STR,,sActorTalkingThroughActivator,Complete all of a quest's objectives,,,FalloutNV.exe UI string
+26,EXE:STR,,sActorUsingATorch,UnusedFunction15,,,FalloutNV.exe UI string
+27,EXE:STR,,sActorsAIOff,ToggleActorsAI,,,FalloutNV.exe UI string
+28,EXE:STR,,sAge,Age,,,FalloutNV.exe UI string
+29,EXE:STR,,sAgeDeathModifier,NiPSysAirFieldSpreadCtlr,,,FalloutNV.exe UI string
+30,EXE:STR,,sAgent,iClassAssassin,,,FalloutNV.exe UI string
+31,EXE:STR,,sAmber,AMBER,,,FalloutNV.exe UI string
+32,EXE:STR,,sAmmoEffectCondition,Gun CND,,,FalloutNV.exe UI string
+33,EXE:STR,,sAmmoEffectDAM,DAM,,,FalloutNV.exe UI string
+34,EXE:STR,,sAmmoEffectDR,Target DR,,,FalloutNV.exe UI string
+35,EXE:STR,,sAmmoEffectDT,Target DT,,,FalloutNV.exe UI string
+36,EXE:STR,,sAmmoEffectFatigue,Target Fatigue,,,FalloutNV.exe UI string
+37,EXE:STR,,sAmmoEffectSpread,Gun Spread,,,FalloutNV.exe UI string
+38,EXE:STR,,sAntiCheatTimeRemainingText,Time Remaining:,,,FalloutNV.exe UI string
+39,EXE:STR,,sArmorLowCond,Your armor condition is dangerously low.,,,FalloutNV.exe UI string
+40,EXE:STR,,sArmorWeightHeavy,Heavy,,,FalloutNV.exe UI string
+41,EXE:STR,,sArmorWeightLight,Armor Weight Light,,,FalloutNV.exe UI string
+42,EXE:STR,,sArmorWeightMedium,Medium,,,FalloutNV.exe UI string
+43,EXE:STR,,sAttribute,hkDescriptionAttribute,,,FalloutNV.exe UI string
+44,EXE:STR,,sAttributeDamaged,has been damaged,,,FalloutNV.exe UI string
+45,EXE:STR,,sAttributeDrained,is being drained,,,FalloutNV.exe UI string
+46,EXE:STR,,sAttributesCount,Distribute %d Point,,,FalloutNV.exe UI string
+47,EXE:STR,,sAttributesTitle,ATTRIBUTES: %d/%d Points Assigned,,,FalloutNV.exe UI string
+48,EXE:STR,,sAudio,Audio,,,FalloutNV.exe UI string
+49,EXE:STR,,sAudioNote,Audio File,,,FalloutNV.exe UI string
+50,EXE:STR,,sAutoAttempt,Auto Attempt,,,FalloutNV.exe UI string
+51,EXE:STR,,sAutoLoading,Autoloading...,,,FalloutNV.exe UI string
+52,EXE:STR,,sAutoMatchText,Auto Match,,,FalloutNV.exe UI string
+53,EXE:STR,,sAutoSaveDisabledDueToLackOfSpace,The selected storage device does not have sufficient space available to save your progress. Autosave is disabled. Please select another device or delete some of your saved content.,,,FalloutNV.exe UI string
+54,EXE:STR,,sAutoSaveDisabledLoadAnyways,"Selected storage device has insufficient
+space to save progress. Autosave will
+be disabled. Continue Loading?",,,FalloutNV.exe UI string
+55,EXE:STR,,sAutoSaving,Autosaving...,,,FalloutNV.exe UI string
+56,EXE:STR,,sAutomatically,Automatically,,,FalloutNV.exe UI string
+57,EXE:STR,,sAutosaveAbbrev,AUTO,,,FalloutNV.exe UI string
+58,EXE:STR,,sAutosaveCorruptMessage,The Autosave content is damaged. Do you want to overwrite it?,,,FalloutNV.exe UI string
+59,EXE:STR,,sBack,Back,,,FalloutNV.exe UI string
+60,EXE:STR,,sBarterSelected,Barter Selected,,,FalloutNV.exe UI string
+61,EXE:STR,,sBloodParticleDefault,Effects\BloodSpray.nif,,,FalloutNV.exe UI string
+62,EXE:STR,,sBloodParticleMeleeDefault,Effects\ImpactMeleeBloodSpray01.nif,,,FalloutNV.exe UI string
+63,EXE:STR,,sBloodSplatterAlpha01OPTFilename,Blood Splatter Alpha 01 OPT Filename,,,FalloutNV.exe UI string
+64,EXE:STR,,sBloodSplatterColor01OPTFilename,Blood Splatter Color 01 OPT Filename,,,FalloutNV.exe UI string
+65,EXE:STR,,sBloodSplatterFlare01Filename,Blood Splatter Flare 01 Filename,,,FalloutNV.exe UI string
+66,EXE:STR,,sBloodTextureDefault,Effects\blooddecal.dds,,,FalloutNV.exe UI string
+67,EXE:STR,,sBlue,Blue,,,FalloutNV.exe UI string
+68,EXE:STR,,sBrightness,Brightness,,,FalloutNV.exe UI string
+69,EXE:STR,,sCWheelBackUp,Back Up,,,FalloutNV.exe UI string
+70,EXE:STR,,sCWheelBeAggressive,Be Aggressive,,,FalloutNV.exe UI string
+71,EXE:STR,,sCWheelBePassive,Be Passive,,,FalloutNV.exe UI string
+72,EXE:STR,,sCWheelFollowMe,Follow Me,,,FalloutNV.exe UI string
+73,EXE:STR,,sCWheelKeepDistance,Keep Distance,,,FalloutNV.exe UI string
+74,EXE:STR,,sCWheelOpenInventory,Open Inventory,,,FalloutNV.exe UI string
+75,EXE:STR,,sCWheelStayClose,Stay Close,,,FalloutNV.exe UI string
+76,EXE:STR,,sCWheelTalkTo,Talk To,,,FalloutNV.exe UI string
+77,EXE:STR,,sCWheelTitle,Companion Commands,,,FalloutNV.exe UI string
+78,EXE:STR,,sCWheelUseMelee,Use Melee,,,FalloutNV.exe UI string
+79,EXE:STR,,sCWheelUseRanged,Use Ranged,,,FalloutNV.exe UI string
+80,EXE:STR,,sCWheelUseStimpak,Use Stimpak,,,FalloutNV.exe UI string
+81,EXE:STR,,sCWheelWaitHere,Wait Here,,,FalloutNV.exe UI string
+82,EXE:STR,,sCancel,Cancel,,,FalloutNV.exe UI string
+83,EXE:STR,,sCancelBarter,Cancel transaction?,,,FalloutNV.exe UI string
+84,EXE:STR,,sCancelRecipe,Cancel Recipe?,,,FalloutNV.exe UI string
+85,EXE:STR,,sCantChangeResolution,You must close your current game to change resolutions.,,,FalloutNV.exe UI string
+86,EXE:STR,,sCantEquipBrokenItem,Broken items cannot be equipped until they have been repaired.,,,FalloutNV.exe UI string
+87,EXE:STR,,sCantEquipGeneric,You cannot equip this item.,,,FalloutNV.exe UI string
+88,EXE:STR,,sCantEquipPowerArmor,Power armor training is required to equip this item.,,,FalloutNV.exe UI string
+89,EXE:STR,,sCantHotkeyBrokenItem,You cannot hotkey broken items.,,,FalloutNV.exe UI string
+90,EXE:STR,,sCantHotkeyItem,You cannot hotkey that item.,,,FalloutNV.exe UI string
+91,EXE:STR,,sCantQuickLoad,You can't Quickload while the game is paused.,,,FalloutNV.exe UI string
+92,EXE:STR,,sCantQuickSave,You can't Quicksave while the game is paused.,,,FalloutNV.exe UI string
+93,EXE:STR,,sCantRemoveWornItem,Unable to remove the worn item.,,,FalloutNV.exe UI string
+94,EXE:STR,,sCantRepairPastMax,CANNOT REPAIR PAST %.0f%s,,,FalloutNV.exe UI string
+95,EXE:STR,,sCantSaveNow,You cannot save right now.,,,FalloutNV.exe UI string
+96,EXE:STR,,sCantUnequipGeneric,You cannot unequip this item.,,,FalloutNV.exe UI string
+97,EXE:STR,,sChemsAddicted,You have become addicted to %s.,,,FalloutNV.exe UI string
+98,EXE:STR,,sChemsWithdrawal,You are suffering from %s withdrawal.,,,FalloutNV.exe UI string
+99,EXE:STR,,sChemsWornOff,Chems Worn Off,,,FalloutNV.exe UI string
+100,EXE:STR,,sCloseButton,Close Button,,,FalloutNV.exe UI string
+101,EXE:STR,,sColor,Hair Color,,,FalloutNV.exe UI string
+102,EXE:STR,,sColorModifier,NiPSysColliderManager,,,FalloutNV.exe UI string
+103,EXE:STR,,sComputersAddedNote,Note Added: %s,,,FalloutNV.exe UI string
+104,EXE:STR,,sComputersBack,Computers Back,,,FalloutNV.exe UI string
+105,EXE:STR,,sComputersHeader1,ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM,,,FalloutNV.exe UI string
+106,EXE:STR,,sComputersHeader2,COPYRIGHT 2075-2077 ROBCO INDUSTRIES,,,FalloutNV.exe UI string
+107,EXE:STR,,sComputersLogon,LOGON ADMIN,,,FalloutNV.exe UI string
+108,EXE:STR,,sComputersWelcome,Welcome to the service on SERVER1,,,FalloutNV.exe UI string
+109,EXE:STR,,sConfirmChoice1,Are you sure you want to be a,,,FalloutNV.exe UI string
+110,EXE:STR,,sConfirmChoice2,Are you sure you want to be an,,,FalloutNV.exe UI string
+111,EXE:STR,,sConfirmContinue,Continue from your last saved game?,,,FalloutNV.exe UI string
+112,EXE:STR,,sConfirmDelete,Delete this game?,,,FalloutNV.exe UI string
+113,EXE:STR,,sConfirmLoad,Load this game?,,,FalloutNV.exe UI string
+114,EXE:STR,,sConfirmNew,"Start a new game? This will
+overwrite your Autosave if present.",,,FalloutNV.exe UI string
+115,EXE:STR,,sConfirmQuit,Are you sure you want to quit?,,,FalloutNV.exe UI string
+116,EXE:STR,,sConfirmSave,Overwrite this game?,,,FalloutNV.exe UI string
+117,EXE:STR,,sConfirmWarning,WARNING:  Any unsaved progress will be lost.,,,FalloutNV.exe UI string
+118,EXE:STR,,sContainerItemsTitle,Inventory,,,FalloutNV.exe UI string
+119,EXE:STR,,sContainerListSelected,_IsBarterSelected,,,FalloutNV.exe UI string
+120,EXE:STR,,sContinue,Continue,,,FalloutNV.exe UI string
+121,EXE:STR,,sContinuePlayingAfterCredits,"Congratulations on completing Fallout: New Vegas! Would you like to load a save prior to the Hoover Dam battle? (If you select no, you will be returned to the main menu).",,,FalloutNV.exe UI string
+122,EXE:STR,,sContinueText,Continue Running Executable?,,,FalloutNV.exe UI string
+123,EXE:STR,,sContinuingPackagePCNear,getweather,,,FalloutNV.exe UI string
+124,EXE:STR,,sContractedDisease,You have contracted,,,FalloutNV.exe UI string
+125,EXE:STR,,sController,NiUVData,,,FalloutNV.exe UI string
+126,EXE:STR,,sControllerOption,Turn off 360 Controller in the Controls section of the Settings menu to switch back to Keyboard/Mouse.,,,FalloutNV.exe UI string
+127,EXE:STR,,sControls,Controls,,,FalloutNV.exe UI string
+128,EXE:STR,,sCrew,Credits,,,FalloutNV.exe UI string
+129,EXE:STR,,sCriticalStrike,Critical Strike on,,,FalloutNV.exe UI string
+130,EXE:STR,,sCriticalStrikeIcon,Critical Strike Icon,,,FalloutNV.exe UI string
+131,EXE:STR,,sCrosshair,Crosshair,,,FalloutNV.exe UI string
+132,EXE:STR,,sDamage1Damage,fPhysicsDamage2Damage,,,FalloutNV.exe UI string
+133,EXE:STR,,sDamage1Mass,fPhysicsDamage2Mass,,,FalloutNV.exe UI string
+134,EXE:STR,,sDamage1SpeedMin,fPhysicsDamage2SpeedMin,,,FalloutNV.exe UI string
+135,EXE:STR,,sDamage2Damage,fPhysicsDamage3Damage,,,FalloutNV.exe UI string
+136,EXE:STR,,sDamage2Mass,fPhysicsDamage3Mass,,,FalloutNV.exe UI string
+137,EXE:STR,,sDamage2SpeedMin,fPhysicsDamage3SpeedMin,,,FalloutNV.exe UI string
+138,EXE:STR,,sDamage3Damage,fPhysicsDamageSpeedBase,,,FalloutNV.exe UI string
+139,EXE:STR,,sDamage3Mass,fPhysicsDamage1Damage,,,FalloutNV.exe UI string
+140,EXE:STR,,sDamage3SpeedMin,fGetHitPainMult,,,FalloutNV.exe UI string
+141,EXE:STR,,sDamageSpeedBase,fPhysicsDamageSpeedMult,,,FalloutNV.exe UI string
+142,EXE:STR,,sDamageSpeedMin,fPhysicsDamage1SpeedMin,,,FalloutNV.exe UI string
+143,EXE:STR,,sDamageSpeedMult,fPhysicsDamageSpeedMin,,,FalloutNV.exe UI string
+144,EXE:STR,,sDayFriday,Friday,,,FalloutNV.exe UI string
+145,EXE:STR,,sDayMonday,Monday,,,FalloutNV.exe UI string
+146,EXE:STR,,sDaySaturday,Saturday,,,FalloutNV.exe UI string
+147,EXE:STR,,sDaySunday,Sunday,,,FalloutNV.exe UI string
+148,EXE:STR,,sDayThursday,Thursday,,,FalloutNV.exe UI string
+149,EXE:STR,,sDayTuesday,Tuesday,,,FalloutNV.exe UI string
+150,EXE:STR,,sDayWednesday,Wednesday,,,FalloutNV.exe UI string
+151,EXE:STR,,sDefaultCellName,Wilderness,,,FalloutNV.exe UI string
+152,EXE:STR,,sDefaultMatch,GetIsClassDefault,,,FalloutNV.exe UI string
+153,EXE:STR,,sDefaultMessage,DEFAULT MESSAGE TEXT,,,FalloutNV.exe UI string
+154,EXE:STR,,sDefaultPlayerName,Player Name,,,FalloutNV.exe UI string
+155,EXE:STR,,sDefaultTexAtlas,Default Tex Atlas,,,FalloutNV.exe UI string
+156,EXE:STR,,sDefaults,Defaults,,,FalloutNV.exe UI string
+157,EXE:STR,,sDevice,Device,,,FalloutNV.exe UI string
+158,EXE:STR,,sDeviceGamepad,Xbox 360 Controller,,,FalloutNV.exe UI string
+159,EXE:STR,,sDeviceJoystick,Joystick,,,FalloutNV.exe UI string
+160,EXE:STR,,sDeviceKeyboard,Keyboard,,,FalloutNV.exe UI string
+161,EXE:STR,,sDeviceMouse,Mouse,,,FalloutNV.exe UI string
+162,EXE:STR,,sDeviceRemoved,"The storage device you selected is no longer available.  You will need to select a new device the next time you save.  Until then, Autosave is disabled.",,,FalloutNV.exe UI string
+163,EXE:STR,,sDialogSubtitles,Dialog Subtitles,,,FalloutNV.exe UI string
+164,EXE:STR,,sDifficulty,Difficulty,,,FalloutNV.exe UI string
+165,EXE:STR,,sDisableHelp,Disable Help,,,FalloutNV.exe UI string
+166,EXE:STR,,sDisableXBoxController,360 Controller,,,FalloutNV.exe UI string
+167,EXE:STR,,sDisabled,DisablePlayerControls,,,FalloutNV.exe UI string
+168,EXE:STR,,sDisplay,Display,,,FalloutNV.exe UI string
+169,EXE:STR,,sDisplayRateMenus,iComputersDisplayRateNotes,,,FalloutNV.exe UI string
+170,EXE:STR,,sDisplayRateNotes,iComputersResultDisplayTimeout,,,FalloutNV.exe UI string
+171,EXE:STR,,sDisplayTransformPair,hkpSerializedDisplayRbTransforms,,,FalloutNV.exe UI string
+172,EXE:STR,,sDone,Done,,,FalloutNV.exe UI string
+173,EXE:STR,,sDown,ITMBottlecapsUp,,,FalloutNV.exe UI string
+174,EXE:STR,,sDownloads,Downloadable Content,,,FalloutNV.exe UI string
+175,EXE:STR,,sDownloadsAvailable,New Content Available,,,FalloutNV.exe UI string
+176,EXE:STR,,sDownloadsNotAvail,No New Content Available,,,FalloutNV.exe UI string
+177,EXE:STR,,sDrop,CGM_PlayerTrackRect,,,FalloutNV.exe UI string
+178,EXE:STR,,sDropEquippedItemWarning,You cannot drop an equipped item until you complete your current action.,,,FalloutNV.exe UI string
+179,EXE:STR,,sDropQuestItemWarning,You cannot remove Quest Items from your Inventory.,,,FalloutNV.exe UI string
+180,EXE:STR,,sEmpty,[EMPTY],,,FalloutNV.exe UI string
+181,EXE:STR,,sEnable,Toggle decal rendering,,,FalloutNV.exe UI string
+182,EXE:STR,,sEnableHelp,Enable Help,,,FalloutNV.exe UI string
+183,EXE:STR,,sEnabled,numConstrainedAxes,,,FalloutNV.exe UI string
+184,EXE:STR,,sEquipItemOnPlayer,was equipped,,,FalloutNV.exe UI string
+185,EXE:STR,,sEquipped,ITMBottlecapsDown,,,FalloutNV.exe UI string
+186,EXE:STR,,sExit,Exit,,,FalloutNV.exe UI string
+187,EXE:STR,,sExitGameAffirm,Exit Game,,,FalloutNV.exe UI string
+188,EXE:STR,,sFace,Face,,,FalloutNV.exe UI string
+189,EXE:STR,,sFacebrow,Face brow/nose/chin ratio,,,FalloutNV.exe UI string
+190,EXE:STR,,sFaceforehead,Face forehead/sellion/nose ratio,,,FalloutNV.exe UI string
+191,EXE:STR,,sFaceheavy,Face heavy/light,,,FalloutNV.exe UI string
+192,EXE:STR,,sFaceround,Face round/gaunt,,,FalloutNV.exe UI string
+193,EXE:STR,,sFacethin,Face thin/wide,,,FalloutNV.exe UI string
+194,EXE:STR,,sFastTravelNoTravelHealthDamage,You can't fast travel while taking health damage,,,FalloutNV.exe UI string
+195,EXE:STR,,sFemale,Female,,,FalloutNV.exe UI string
+196,EXE:STR,,sFindingContentMessage,Looking for content.  Please wait.,,,FalloutNV.exe UI string
+197,EXE:STR,,sFullHealth,You are already at full health.,,,FalloutNV.exe UI string
+198,EXE:STR,,sGameplay,Gameplay,,,FalloutNV.exe UI string
+199,EXE:STR,,sGeneralFace,General(Face),,,FalloutNV.exe UI string
+200,EXE:STR,,sGeneralSkin,General(Skin),,,FalloutNV.exe UI string
+201,EXE:STR,,sGeneralSubtitles,General Subtitles,,,FalloutNV.exe UI string
+202,EXE:STR,,sGrassFade,Grass Fade,,,FalloutNV.exe UI string
+203,EXE:STR,,sGreen,Green,,,FalloutNV.exe UI string
+204,EXE:STR,,sHUDColor,HUD Color,,,FalloutNV.exe UI string
+205,EXE:STR,,sHUDHealth,Hlth,,,FalloutNV.exe UI string
+206,EXE:STR,,sHUDOpacity,HUD Opacity,,,FalloutNV.exe UI string
+207,EXE:STR,,sHUDQuestCompleted,COMPLETED:,,,FalloutNV.exe UI string
+208,EXE:STR,,sHUDRads,Rads,,,FalloutNV.exe UI string
+209,EXE:STR,,sHUDUseKey,Use Key,,,FalloutNV.exe UI string
+210,EXE:STR,,sHackIneligible,A %s skill of %d is required to hack this terminal.,,,FalloutNV.exe UI string
+211,EXE:STR,,sHackingAccessing1,Please wait,,,FalloutNV.exe UI string
+212,EXE:STR,,sHackingAccessing2,while system,,,FalloutNV.exe UI string
+213,EXE:STR,,sHackingAccessing3,is accessed.,,,FalloutNV.exe UI string
+214,EXE:STR,,sHackingCorrect,correct,,,FalloutNV.exe UI string
+215,EXE:STR,,sHackingDenied,Entry denied,,,FalloutNV.exe UI string
+216,EXE:STR,,sHackingDudRemoved,Dud removed.,,,FalloutNV.exe UI string
+217,EXE:STR,,sHackingGranted,Exact match!,,,FalloutNV.exe UI string
+218,EXE:STR,,sHackingHeader,ROBCO INDUSTRIES (TM) TERMLINK PROTOCOL,,,FalloutNV.exe UI string
+219,EXE:STR,,sHackingHeader2,ENTER PASSWORD NOW,,,FalloutNV.exe UI string
+220,EXE:STR,,sHackingHeader3,ATTEMPT(S) LEFT:,,,FalloutNV.exe UI string
+221,EXE:STR,,sHackingIntro01,WELCOME TO ROBCO INDUSTRIES (TM) TERMLINK,,,FalloutNV.exe UI string
+222,EXE:STR,,sHackingIntro02,SET TERMINAL/INQUIRE,,,FalloutNV.exe UI string
+223,EXE:STR,,sHackingIntro03,RIT-V300,,,FalloutNV.exe UI string
+224,EXE:STR,,sHackingIntro04,SET FILE/PROTECTION=OWNER:RWED ACCOUNTS.F,,,FalloutNV.exe UI string
+225,EXE:STR,,sHackingIntro05,SET HALT RESTART/MAINT,,,FalloutNV.exe UI string
+226,EXE:STR,,sHackingIntro06,Initializing Robco Industries(TM) MF Boot Agent v2.3.0,,,FalloutNV.exe UI string
+227,EXE:STR,,sHackingIntro07,RETROS BIOS,,,FalloutNV.exe UI string
+228,EXE:STR,,sHackingIntro08,RBIOS-4.02.08.00 52EE5.E7.E8,,,FalloutNV.exe UI string
+229,EXE:STR,,sHackingIntro09,Copyright 2201-2203 Robco Ind.,,,FalloutNV.exe UI string
+230,EXE:STR,,sHackingIntro10,Uppermem: 64 KB,,,FalloutNV.exe UI string
+231,EXE:STR,,sHackingIntro11,Root (5A8),,,FalloutNV.exe UI string
+232,EXE:STR,,sHackingIntro12,Maintenance Mode,,,FalloutNV.exe UI string
+233,EXE:STR,,sHackingIntro13,RUN DEBUG/ACCOUNTS.F,,,FalloutNV.exe UI string
+234,EXE:STR,,sHackingLockout1,Lockout in,,,FalloutNV.exe UI string
+235,EXE:STR,,sHackingLockout2,progress.,,,FalloutNV.exe UI string
+236,EXE:STR,,sHackingLockout3,TERMINAL LOCKED,,,FalloutNV.exe UI string
+237,EXE:STR,,sHackingLockout4,PLEASE CONTACT AN ADMINISTRATOR,,,FalloutNV.exe UI string
+238,EXE:STR,,sHackingSecurityReset,SECURITY RESET...,,,FalloutNV.exe UI string
+239,EXE:STR,,sHackingToleranceReset1,Allowance,,,FalloutNV.exe UI string
+240,EXE:STR,,sHackingToleranceReset2,replenished.,,,FalloutNV.exe UI string
+241,EXE:STR,,sHackingWarning,!!! WARNING: LOCKOUT IMMINENT !!!,,,FalloutNV.exe UI string
+242,EXE:STR,,sHair,Hair,,,FalloutNV.exe UI string
+243,EXE:STR,,sHairColor0,Hair Color 0,,,FalloutNV.exe UI string
+244,EXE:STR,,sHairColor1,Hair Color 1,,,FalloutNV.exe UI string
+245,EXE:STR,,sHairColor10,Hair Color 10,,,FalloutNV.exe UI string
+246,EXE:STR,,sHairColor11,Hair Color 11,,,FalloutNV.exe UI string
+247,EXE:STR,,sHairColor12,Hair Color 12,,,FalloutNV.exe UI string
+248,EXE:STR,,sHairColor13,Hair Color 13,,,FalloutNV.exe UI string
+249,EXE:STR,,sHairColor14,Hair Color 14,,,FalloutNV.exe UI string
+250,EXE:STR,,sHairColor15,iHairColor00,,,FalloutNV.exe UI string
+251,EXE:STR,,sHairColor2,Hair Color 2,,,FalloutNV.exe UI string
+252,EXE:STR,,sHairColor3,Hair Color 3,,,FalloutNV.exe UI string
+253,EXE:STR,,sHairColor4,Hair Color 4,,,FalloutNV.exe UI string
+254,EXE:STR,,sHairColor5,Hair Color 5,,,FalloutNV.exe UI string
+255,EXE:STR,,sHairColor6,Hair Color 6,,,FalloutNV.exe UI string
+256,EXE:STR,,sHairColor7,Hair Color 7,,,FalloutNV.exe UI string
+257,EXE:STR,,sHairColor8,Hair Color 8,,,FalloutNV.exe UI string
+258,EXE:STR,,sHairColor9,Hair Color 9,,,FalloutNV.exe UI string
+259,EXE:STR,,sHardcore,RemoveAllTypedItems,,,FalloutNV.exe UI string
+260,EXE:STR,,sHealth,iVatsTargetAngle,,,FalloutNV.exe UI string
+261,EXE:STR,,sHealthLevelMult,fPCBaseMagickaMult,,,FalloutNV.exe UI string
+262,EXE:STR,,sHealthStartMult,fStatsHealthLevelMult,,,FalloutNV.exe UI string
+263,EXE:STR,,sHelp,Help,,,FalloutNV.exe UI string
+264,EXE:STR,,sHigh,High,,,FalloutNV.exe UI string
+265,EXE:STR,,sHolidayEmperorsBirthday,Emperor's Birthday,,,FalloutNV.exe UI string
+266,EXE:STR,,sHolidayFirstPlanting,First Planting,,,FalloutNV.exe UI string
+267,EXE:STR,,sHolidayHarvestsEnd,Harvest's End,,,FalloutNV.exe UI string
+268,EXE:STR,,sHolidayJestersDay,Jester's Day,,,FalloutNV.exe UI string
+269,EXE:STR,,sHolidayMerchantsFestival,Merchant's Festival,,,FalloutNV.exe UI string
+270,EXE:STR,,sHolidayMidYearCelebration,Mid Year Celebration,,,FalloutNV.exe UI string
+271,EXE:STR,,sHolidayNewLifeFestival,New Life Festival,,,FalloutNV.exe UI string
+272,EXE:STR,,sHolidayNorthWindsPrayer,North Wind's Prayer,,,FalloutNV.exe UI string
+273,EXE:STR,,sHolidayOldLifeFestival,Old Life Festival,,,FalloutNV.exe UI string
+274,EXE:STR,,sHolidaySecondPlanting,Second Planting,,,FalloutNV.exe UI string
+275,EXE:STR,,sHolidaySouthWindsPrayer,South Wind's Prayer,,,FalloutNV.exe UI string
+276,EXE:STR,,sHolidaySunsRest,Sun's Rest,,,FalloutNV.exe UI string
+277,EXE:STR,,sHolidayTalesAndTallows,Tales and Tallows,,,FalloutNV.exe UI string
+278,EXE:STR,,sHolidayWarriorsFestival,Warrior's Festival,,,FalloutNV.exe UI string
+279,EXE:STR,,sHolidayWitchesFestival,Witches' Festival,,,FalloutNV.exe UI string
+280,EXE:STR,,sHour,hour,,,FalloutNV.exe UI string
+281,EXE:STR,,sHours,hours,,,FalloutNV.exe UI string
+282,EXE:STR,,sInventoryAid,Aid,,,FalloutNV.exe UI string
+283,EXE:STR,,sInventoryAmmo,Inventory Ammo,,,FalloutNV.exe UI string
+284,EXE:STR,,sInventoryAmmoTab,Inventory Ammo Tab,,,FalloutNV.exe UI string
+285,EXE:STR,,sInventoryApparel,Inventory Apparel,,,FalloutNV.exe UI string
+286,EXE:STR,,sInventoryArmorClass,Armor Class,,,FalloutNV.exe UI string
+287,EXE:STR,,sInventoryCaps,Caps,,,FalloutNV.exe UI string
+288,EXE:STR,,sInventoryCondition,CND,,,FalloutNV.exe UI string
+289,EXE:STR,,sInventoryDamage,Inventory Damage,,,FalloutNV.exe UI string
+290,EXE:STR,,sInventoryDamagePerSecond,DPS,,,FalloutNV.exe UI string
+291,EXE:STR,,sInventoryDamageResistance,DR,,,FalloutNV.exe UI string
+292,EXE:STR,,sInventoryDamageThreshold,DT,,,FalloutNV.exe UI string
+293,EXE:STR,,sInventoryDrop,Inventory Drop,,,FalloutNV.exe UI string
+294,EXE:STR,,sInventoryEffects,Inventory Effects,,,FalloutNV.exe UI string
+295,EXE:STR,,sInventoryEquip,Inventory Equip,,,FalloutNV.exe UI string
+296,EXE:STR,,sInventoryHotKey,Inventory Hot Key,,,FalloutNV.exe UI string
+297,EXE:STR,,sInventoryItems,ITEMS,,,FalloutNV.exe UI string
+298,EXE:STR,,sInventoryMisc,Inventory Misc,,,FalloutNV.exe UI string
+299,EXE:STR,,sInventoryMod,Mod,,,FalloutNV.exe UI string
+300,EXE:STR,,sInventoryName,NAME,,,FalloutNV.exe UI string
+301,EXE:STR,,sInventoryQuantity,QTY,,,FalloutNV.exe UI string
+302,EXE:STR,,sInventoryRepair,Inventory Repair,,,FalloutNV.exe UI string
+303,EXE:STR,,sInventoryStrReq,STR,,,FalloutNV.exe UI string
+304,EXE:STR,,sInventoryUnequip,Inventory Unequip,,,FalloutNV.exe UI string
+305,EXE:STR,,sInventoryUse,Use,,,FalloutNV.exe UI string
+306,EXE:STR,,sInventoryValue,VAL,,,FalloutNV.exe UI string
+307,EXE:STR,,sInventoryWeapons,Weapons,,,FalloutNV.exe UI string
+308,EXE:STR,,sInventoryWeight,Wg,,,FalloutNV.exe UI string
+309,EXE:STR,,sInventoryWeightUpper,WG,,,FalloutNV.exe UI string
+310,EXE:STR,,sItemFade,Item Fade,,,FalloutNV.exe UI string
+311,EXE:STR,,sItemModItem,Item Mod Item,,,FalloutNV.exe UI string
+312,EXE:STR,,sKarmaMajorGained,Major Karma Gained,,,FalloutNV.exe UI string
+313,EXE:STR,,sKarmaMajorGainedImage,Karma Major Gained Image,,,FalloutNV.exe UI string
+314,EXE:STR,,sKarmaMajorLost,Major Karma Lost,,,FalloutNV.exe UI string
+315,EXE:STR,,sKarmaMajorLostImage,Karma Major Lost Image,,,FalloutNV.exe UI string
+316,EXE:STR,,sKarmaMinorGained,Minor Karma Gained,,,FalloutNV.exe UI string
+317,EXE:STR,,sKarmaMinorGainedImage,Karma Minor Gained Image,,,FalloutNV.exe UI string
+318,EXE:STR,,sKarmaMinorLost,Minor Karma Lost,,,FalloutNV.exe UI string
+319,EXE:STR,,sKarmaMinorLostImage,Karma Minor Lost Image,,,FalloutNV.exe UI string
+320,EXE:STR,,sKillCamMode,Kill Cam Mode,,,FalloutNV.exe UI string
+321,EXE:STR,,sKillCamModeCinematic,Cinematic,,,FalloutNV.exe UI string
+322,EXE:STR,,sKillCamModeNone,Kill Cam Mode None,,,FalloutNV.exe UI string
+323,EXE:STR,,sKillCamModePlayer,Player View,,,FalloutNV.exe UI string
+324,EXE:STR,,sKiller,GetVATSValue,,,FalloutNV.exe UI string
+325,EXE:STR,,sKillerObject,IsKiller,,,FalloutNV.exe UI string
+326,EXE:STR,,sLarge,fExplosionShudderPowerMin,,,FalloutNV.exe UI string
+327,EXE:STR,,sLevel,GetCasinoWinningsLevel,,,FalloutNV.exe UI string
+328,EXE:STR,,sLevelAbbrev,Level Abbrev,,,FalloutNV.exe UI string
+329,EXE:STR,,sLevelPenatly,fDetectionLargeActorSizeMult,,,FalloutNV.exe UI string
+330,EXE:STR,,sLevelProgress,Level Progress,,,FalloutNV.exe UI string
+331,EXE:STR,,sLevelUp,LEVEL UP,,,FalloutNV.exe UI string
+332,EXE:STR,,sLevelUpPerkCounter,CHOOSE 1 PERK,,,FalloutNV.exe UI string
+333,EXE:STR,,sLevelUpPerkCounterPl,CHOOSE %d PERKS,,,FalloutNV.exe UI string
+334,EXE:STR,,sLevelUpSkillCounter,ASSIGN 1 SKILL POINT,,,FalloutNV.exe UI string
+335,EXE:STR,,sLevelUpSkillCounterPl,ASSIGN %d SKILL POINTS,,,FalloutNV.exe UI string
+336,EXE:STR,,sLevelUpTitleText,WELCOME TO LEVEL %d,,,FalloutNV.exe UI string
+337,EXE:STR,,sLightFade,Light Fade,,,FalloutNV.exe UI string
+338,EXE:STR,,sLoad,Load,,,FalloutNV.exe UI string
+339,EXE:STR,,sLoadFromMainMenu,Are you sure you want to load this game?,,,FalloutNV.exe UI string
+340,EXE:STR,,sLoadSavedGame,Load Saved Game,,,FalloutNV.exe UI string
+341,EXE:STR,,sLoadScreenTypeDataFontHint,"* Font indices map to the corresponding texture filenames (""sFontFile_#"") in Fallout.ini (PC/PS3) and FalloutXenon.ini (360)!",,,FalloutNV.exe UI string
+342,EXE:STR,,sLoadScreenTypeDataTextureSpaceHint,* Position/dimensions are relative to 1280 x 960 texture space!,,,FalloutNV.exe UI string
+343,EXE:STR,,sLoadThisGame,Load This Game,,,FalloutNV.exe UI string
+344,EXE:STR,,sLoadWhilePlaying,Are you sure you want to load this game?  All unsaved progress will be lost.,,,FalloutNV.exe UI string
+345,EXE:STR,,sLoaded3D,GetActorsInHigh,,,FalloutNV.exe UI string
+346,EXE:STR,,sLoading,Loading...,,,FalloutNV.exe UI string
+347,EXE:STR,,sLoadingArea,Loading area...,,,FalloutNV.exe UI string
+348,EXE:STR,,sLoadingContentMessage,Loading extra content. Please wait.,,,FalloutNV.exe UI string
+349,EXE:STR,,sLoadingLOD,Loading distant LOD...,,,FalloutNV.exe UI string
+350,EXE:STR,,sLoadingMenuEnabled,Enable or disables the loading menu,,,FalloutNV.exe UI string
+351,EXE:STR,,sLocal,rotation1,,,FalloutNV.exe UI string
+352,EXE:STR,,sLocalMapTabText,Local Map,,,FalloutNV.exe UI string
+353,EXE:STR,,sLockBroken,GetVATSFrontAreaFree,,,FalloutNV.exe UI string
+354,EXE:STR,,sLockCount,pendingBodyOperationsCount,,,FalloutNV.exe UI string
+355,EXE:STR,,sLockCountForPhantoms,criticalOperationsLockCount,,,FalloutNV.exe UI string
+356,EXE:STR,,sLockLevelNameAverage,Average,,,FalloutNV.exe UI string
+357,EXE:STR,,sLockLevelNameEasy,Easy,,,FalloutNV.exe UI string
+358,EXE:STR,,sLockLevelNameHard,Hard,,,FalloutNV.exe UI string
+359,EXE:STR,,sLockLevelNameImpossible,Requires Key,,,FalloutNV.exe UI string
+360,EXE:STR,,sLockLevelNameVeryEasy,Very Easy,,,FalloutNV.exe UI string
+361,EXE:STR,,sLockLevelNameVeryHard,Very Hard,,,FalloutNV.exe UI string
+362,EXE:STR,,sLockLevelText,Lock Level,,,FalloutNV.exe UI string
+363,EXE:STR,,sLocked,Locked,,,FalloutNV.exe UI string
+364,EXE:STR,,sLockpickSkillText,Lockpick Skill,,,FalloutNV.exe UI string
+365,EXE:STR,,sLockpickSkillTooLow,You need a lockpick skill of %d to pick this lock.,,,FalloutNV.exe UI string
+366,EXE:STR,,sLockpickingTitle,LOCKPICKING,,,FalloutNV.exe UI string
+367,EXE:STR,,sLow,Low,,,FalloutNV.exe UI string
+368,EXE:STR,,sMagicCastConstant,Apparel,,,FalloutNV.exe UI string
+369,EXE:STR,,sMagicCastInsufficientMagicka,You don't have enough Magicka,,,FalloutNV.exe UI string
+370,EXE:STR,,sMagicCastInsufficientSkill,Your Skill level is too low,,,FalloutNV.exe UI string
+371,EXE:STR,,sMagicCastMultipleBoundEffects,You already have that kind of Bound Item,,,FalloutNV.exe UI string
+372,EXE:STR,,sMagicCastOKText,Magic Cast OK Text,,,FalloutNV.exe UI string
+373,EXE:STR,,sMagicCastOnce,(unused),,,FalloutNV.exe UI string
+374,EXE:STR,,sMagicCastPowerUsed,You can only cast Powers once per day,,,FalloutNV.exe UI string
+375,EXE:STR,,sMagicCastRangedUnderwater,You cannot cast ranged spells underwater,,,FalloutNV.exe UI string
+376,EXE:STR,,sMagicCastSilenced,You are currently Silenced,,,FalloutNV.exe UI string
+377,EXE:STR,,sMagicCastWhenStrikes,Weapon,,,FalloutNV.exe UI string
+378,EXE:STR,,sMagicCastWhenUsed,Magic Cast When Used,,,FalloutNV.exe UI string
+379,EXE:STR,,sMagicCostliestEffectRequires,Requires,,,FalloutNV.exe UI string
+380,EXE:STR,,sMagicCostliestEffectSkillOf,Skill of,,,FalloutNV.exe UI string
+381,EXE:STR,,sMagicEffect,AdvLevel,,,FalloutNV.exe UI string
+382,EXE:STR,,sMagicEffectItemAbsorb,Magic Effect Item Absorb,,,FalloutNV.exe UI string
+383,EXE:STR,,sMagicEffectItemCreateLock,Create,,,FalloutNV.exe UI string
+384,EXE:STR,,sMagicEffectItemDamage,Damage,,,FalloutNV.exe UI string
+385,EXE:STR,,sMagicEffectItemDrain,Drain,,,FalloutNV.exe UI string
+386,EXE:STR,,sMagicEffectItemFeet,ft,,,FalloutNV.exe UI string
+387,EXE:STR,,sMagicEffectItemFor,for,,,FalloutNV.exe UI string
+388,EXE:STR,,sMagicEffectItemFortify,Fortify,,,FalloutNV.exe UI string
+389,EXE:STR,,sMagicEffectItemIn,in,,,FalloutNV.exe UI string
+390,EXE:STR,,sMagicEffectItemLock,Magic Effect Item Lock,,,FalloutNV.exe UI string
+391,EXE:STR,,sMagicEffectItemOn,on,,,FalloutNV.exe UI string
+392,EXE:STR,,sMagicEffectItemPercent,Magic Effect Item Percent,,,FalloutNV.exe UI string
+393,EXE:STR,,sMagicEffectItemPointsPlural,pts,,,FalloutNV.exe UI string
+394,EXE:STR,,sMagicEffectItemPointsSingular,pt,,,FalloutNV.exe UI string
+395,EXE:STR,,sMagicEffectItemRestore,Restore,,,FalloutNV.exe UI string
+396,EXE:STR,,sMagicEffectItemSecondsPlural,secs,,,FalloutNV.exe UI string
+397,EXE:STR,,sMagicEffectItemSecondsSingular,sec,,,FalloutNV.exe UI string
+398,EXE:STR,,sMagicEffectItemUpToLevel,up to level,,,FalloutNV.exe UI string
+399,EXE:STR,,sMagicEffectResisted,effect resisted,,,FalloutNV.exe UI string
+400,EXE:STR,,sMagicProjectileTypeBall,Ball,,,FalloutNV.exe UI string
+401,EXE:STR,,sMagicProjectileTypeBolt,Bolt,,,FalloutNV.exe UI string
+402,EXE:STR,,sMagicProjectileTypeFog,Fog,,,FalloutNV.exe UI string
+403,EXE:STR,,sMagicProjectileTypeSpray,Spray,,,FalloutNV.exe UI string
+404,EXE:STR,,sMagicRangeSelf,Self,,,FalloutNV.exe UI string
+405,EXE:STR,,sMagicRangeStrike,Strike,,,FalloutNV.exe UI string
+406,EXE:STR,,sMagicRangeTarget,Target,,,FalloutNV.exe UI string
+407,EXE:STR,,sMagicRangeTouch,Touch,,,FalloutNV.exe UI string
+408,EXE:STR,,sMagicSchool,Magic School,,,FalloutNV.exe UI string
+409,EXE:STR,,sMagicSchoolAlteration,Alteration,,,FalloutNV.exe UI string
+410,EXE:STR,,sMagicSchoolConjuration,Conjuration,,,FalloutNV.exe UI string
+411,EXE:STR,,sMagicSchoolDestruction,Destruction,,,FalloutNV.exe UI string
+412,EXE:STR,,sMagicSchoolIllusion,Illusion,,,FalloutNV.exe UI string
+413,EXE:STR,,sMagicSchoolMysticism,Mysticism,,,FalloutNV.exe UI string
+414,EXE:STR,,sMagicSchoolRestoration,Restoration,,,FalloutNV.exe UI string
+415,EXE:STR,,sMagicTypeAbility,Ability,,,FalloutNV.exe UI string
+416,EXE:STR,,sMagicTypeAddiction,Addiction,,,FalloutNV.exe UI string
+417,EXE:STR,,sMagicTypeDisease,Disease,,,FalloutNV.exe UI string
+418,EXE:STR,,sMagicTypeEnchantment,Object Effect,,,FalloutNV.exe UI string
+419,EXE:STR,,sMagicTypeLesserPower,Lesser Power,,,FalloutNV.exe UI string
+420,EXE:STR,,sMagicTypeLevelled,Leveled Actor Effect,,,FalloutNV.exe UI string
+421,EXE:STR,,sMagicTypePoison,Poison,,,FalloutNV.exe UI string
+422,EXE:STR,,sMagicTypePotion,Potion,,,FalloutNV.exe UI string
+423,EXE:STR,,sMagicTypePower,Power,,,FalloutNV.exe UI string
+424,EXE:STR,,sMagicTypeSpell,Actor Effect,,,FalloutNV.exe UI string
+425,EXE:STR,,sMagicTypeWortcraft,Wortcraft,,,FalloutNV.exe UI string
+426,EXE:STR,,sMain,Main,,,FalloutNV.exe UI string
+427,EXE:STR,,sMainMenu,Main Menu,,,FalloutNV.exe UI string
+428,EXE:STR,,sMaintainItem,Maintain,,,FalloutNV.exe UI string
+429,EXE:STR,,sMakeActiveQuest,Make Active Quest,,,FalloutNV.exe UI string
+430,EXE:STR,,sMakeDefaults,Make these your default settings?,,,FalloutNV.exe UI string
+431,EXE:STR,,sMale,Male,,,FalloutNV.exe UI string
+432,EXE:STR,,sMap,BSShader_DefNormalMap,,,FalloutNV.exe UI string
+433,EXE:STR,,sMapMarkerAdded,Map marker added.,,,FalloutNV.exe UI string
+434,EXE:STR,,sMapMarkerNotFound,You have not found this location yet.,,,FalloutNV.exe UI string
+435,EXE:STR,,sMedicineSkill,Med skill,,,FalloutNV.exe UI string
+436,EXE:STR,,sMedium,Medium,,,FalloutNV.exe UI string
+437,EXE:STR,,sMelee,fAutoAimMaxDegreesMiss,,,FalloutNV.exe UI string
+438,EXE:STR,,sMeleeSneakingMult,fMinimumFatigue,,,FalloutNV.exe UI string
+439,EXE:STR,,sMiscConstantEffect,Constant Effect,,,FalloutNV.exe UI string
+440,EXE:STR,,sMiscPlayerDeadLoadOption,Reload,,,FalloutNV.exe UI string
+441,EXE:STR,,sMiscPlayerDeadMenuOption,Misc Player Dead Menu Option,,,FalloutNV.exe UI string
+442,EXE:STR,,sMiscPlayerDeadMessage,Reloading the most recent save game,,,FalloutNV.exe UI string
+443,EXE:STR,,sMiscTabText,Misc Tab Text,,,FalloutNV.exe UI string
+444,EXE:STR,,sMiscUnknownEffect,(Unknown Effect),,,FalloutNV.exe UI string
+445,EXE:STR,,sMissingImage,Missing Image,,,FalloutNV.exe UI string
+446,EXE:STR,,sMissingName,<Missing Name>,,,FalloutNV.exe UI string
+447,EXE:STR,,sMonthApril,April,,,FalloutNV.exe UI string
+448,EXE:STR,,sMonthAugust,August,,,FalloutNV.exe UI string
+449,EXE:STR,,sMonthDecember,December,,,FalloutNV.exe UI string
+450,EXE:STR,,sMonthFebruary,February,,,FalloutNV.exe UI string
+451,EXE:STR,,sMonthJanuary,January,,,FalloutNV.exe UI string
+452,EXE:STR,,sMonthJuly,July,,,FalloutNV.exe UI string
+453,EXE:STR,,sMonthJune,June,,,FalloutNV.exe UI string
+454,EXE:STR,,sMonthMarch,March,,,FalloutNV.exe UI string
+455,EXE:STR,,sMonthMay,May,,,FalloutNV.exe UI string
+456,EXE:STR,,sMonthNovember,November,,,FalloutNV.exe UI string
+457,EXE:STR,,sMonthOctober,October,,,FalloutNV.exe UI string
+458,EXE:STR,,sMonthSeptember,September,,,FalloutNV.exe UI string
+459,EXE:STR,,sMultiTargetEmitterCtlr,BSValueNode,,,FalloutNV.exe UI string
+460,EXE:STR,,sMultiplier,fCrossThreshold,,,FalloutNV.exe UI string
+461,EXE:STR,,sMustRestart,You must exit and restart Fallout: New Vegas for changes in this setting to take effect.,,,FalloutNV.exe UI string
+462,EXE:STR,,sName,Name,,,FalloutNV.exe UI string
+463,EXE:STR,,sNameA,Ø,,,FalloutNV.exe UI string
+464,EXE:STR,,sNameRegistry,hkTypeInfoRegistry,,,FalloutNV.exe UI string
+465,EXE:STR,,sNew,New,,,FalloutNV.exe UI string
+466,EXE:STR,,sNewGame,New Game,,,FalloutNV.exe UI string
+467,EXE:STR,,sNewSave,[NEW SAVE],,,FalloutNV.exe UI string
+468,EXE:STR,,sNext,Next,,,FalloutNV.exe UI string
+469,EXE:STR,,sNextChallenge,Next Challenge Type,,,FalloutNV.exe UI string
+470,EXE:STR,,sNo,No,,,FalloutNV.exe UI string
+471,EXE:STR,,sNoCharge,The item does not have enough charge.,,,FalloutNV.exe UI string
+472,EXE:STR,,sNoChildUse,Children cannot use that.,,,FalloutNV.exe UI string
+473,EXE:STR,,sNoCrime,StealNoCrime,,,FalloutNV.exe UI string
+474,EXE:STR,,sNoDeviceSelected,"You have not selected a storage device.  You will need to select one before you can save.  Until then, Autosave is disabled.",,,FalloutNV.exe UI string
+475,EXE:STR,,sNoEatQuestItem,You can not eat quest items.,,,FalloutNV.exe UI string
+476,EXE:STR,,sNoFastTravelAlarm,You cannot fast travel while guards are pursuing you.,,,FalloutNV.exe UI string
+477,EXE:STR,,sNoFastTravelCell,You cannot fast travel from this location.,,,FalloutNV.exe UI string
+478,EXE:STR,,sNoFastTravelCombat,You cannot fast travel during combat!,,,FalloutNV.exe UI string
+479,EXE:STR,,sNoFastTravelHostileActorsNear,You cannot fast travel when enemies are nearby.,,,FalloutNV.exe UI string
+480,EXE:STR,,sNoFastTravelInAir,You can't fast travel while jumping or falling.,,,FalloutNV.exe UI string
+481,EXE:STR,,sNoFastTravelOverencumbered,You cannot fast travel while overencumbered.,,,FalloutNV.exe UI string
+482,EXE:STR,,sNoFastTravelScriptBlock,Fast travel is currently unavaliable from this location.,,,FalloutNV.exe UI string
+483,EXE:STR,,sNoFastTravelUndiscovered,You have not discovered this location yet.,,,FalloutNV.exe UI string
+484,EXE:STR,,sNoHumanGoreExe,Set actor reference to essential,,,FalloutNV.exe UI string
+485,EXE:STR,,sNoItemsToRepair,No items to repair,,,FalloutNV.exe UI string
+486,EXE:STR,,sNoJumpWarning,You can not drop objects while in the air.,,,FalloutNV.exe UI string
+487,EXE:STR,,sNoLockPick,You don't have any bobbypins.,,,FalloutNV.exe UI string
+488,EXE:STR,,sNoLockPickIfCrimeAlert,You can't pick a lock while being pursued by guards.,,,FalloutNV.exe UI string
+489,EXE:STR,,sNoMoreFollowers,You have too many followers.,,,FalloutNV.exe UI string
+490,EXE:STR,,sNoPickPocketAgain,has already caught you.,,,FalloutNV.exe UI string
+491,EXE:STR,,sNoProfileSelected,"You have not signed in to a Gamer Profile.  You will need to sign in to a Gamer Profile and then select a storage device before you can save.  Until then, Autosave is disabled.",,,FalloutNV.exe UI string
+492,EXE:STR,,sNoRace,NO RACE,,,FalloutNV.exe UI string
+493,EXE:STR,,sNoRepairHostileActorsNear,You cannot repair items when enemies are nearby.,,,FalloutNV.exe UI string
+494,EXE:STR,,sNoRepairInCombat,You cannot repair items while in combat.,,,FalloutNV.exe UI string
+495,EXE:STR,,sNoRestart,"No, keep playing.",,,FalloutNV.exe UI string
+496,EXE:STR,,sNoSaves,[NO SAVES FOUND],,,FalloutNV.exe UI string
+497,EXE:STR,,sNoSitOnOwnedFurniture,You cannot sit on owned furniture.,,,FalloutNV.exe UI string
+498,EXE:STR,,sNoSleepCombat,You cannot sleep while in combat.,,,FalloutNV.exe UI string
+499,EXE:STR,,sNoSleepHostileActorsNear,You cannot sleep when enemies are near by.,,,FalloutNV.exe UI string
+500,EXE:STR,,sNoSleepInOwnedBed,You cannot sleep in an owned bed.,,,FalloutNV.exe UI string
+501,EXE:STR,,sNoSleepInRadiation,You cannot sleep while being irradiated.,,,FalloutNV.exe UI string
+502,EXE:STR,,sNoSleepTakingHealthDamage,You cannot sleep while taking health damage.,,,FalloutNV.exe UI string
+503,EXE:STR,,sNoSleepTrespass,You cannot sleep while trespassing.,,,FalloutNV.exe UI string
+504,EXE:STR,,sNoSpareParts,NO USABLE SPARE PARTS,,,FalloutNV.exe UI string
+505,EXE:STR,,sNoTalkFleeing,is fleeing for their life.,,,FalloutNV.exe UI string
+506,EXE:STR,,sNoTalkUnConscious,is unconscious.,,,FalloutNV.exe UI string
+507,EXE:STR,,sNoText,No,,,FalloutNV.exe UI string
+508,EXE:STR,,sNoWaitHostilActorsNear,You cannot wait when enemies are nearby.,,,FalloutNV.exe UI string
+509,EXE:STR,,sNoWaitInAir,You cannot wait in the air.,,,FalloutNV.exe UI string
+510,EXE:STR,,sNoWaitInCell,You cannot wait in this location.,,,FalloutNV.exe UI string
+511,EXE:STR,,sNoWaitInCombat,You cannot wait while in combat.,,,FalloutNV.exe UI string
+512,EXE:STR,,sNoWaitInJail,You must sleep in a jail bed in order to serve your sentence.,,,FalloutNV.exe UI string
+513,EXE:STR,,sNoWaitInRadiation,You cannot wait while being irradiated.,,,FalloutNV.exe UI string
+514,EXE:STR,,sNoWaitTakingHealthDamage,You cannot wait while taking health damage.,,,FalloutNV.exe UI string
+515,EXE:STR,,sNoWaitTrespass,You cannot wait while trespassing.,,,FalloutNV.exe UI string
+516,EXE:STR,,sNoWaitUnderWater,You cannot wait while under water.,,,FalloutNV.exe UI string
+517,EXE:STR,,sNoWaitWhileAlarmSounding,You are unable to wait here. An alarm is sounding with your name on it.,,,FalloutNV.exe UI string
+518,EXE:STR,,sNode,Node,,,FalloutNV.exe UI string
+519,EXE:STR,,sNone,None,,,FalloutNV.exe UI string
+520,EXE:STR,,sNormal,Normal,,,FalloutNV.exe UI string
+521,EXE:STR,,sNormalWeaponsResisted,Your attack has no effect.,,,FalloutNV.exe UI string
+522,EXE:STR,,sNose,Nose,,,FalloutNV.exe UI string
+523,EXE:STR,,sNoseTex,Nose shades,,,FalloutNV.exe UI string
+524,EXE:STR,,sNosebridgeshallow,Nose bridge shallow/deep,,,FalloutNV.exe UI string
+525,EXE:STR,,sNosebridgeshort,Nose bridge short/long,,,FalloutNV.exe UI string
+526,EXE:STR,,sNosedown,Nose down/up,,,FalloutNV.exe UI string
+527,EXE:STR,,sNoseflat,Nose flat/pointed,,,FalloutNV.exe UI string
+528,EXE:STR,,sNosenostrilssmall,Nose nostrils small/large,,,FalloutNV.exe UI string
+529,EXE:STR,,sNosenostrilswide,Nose nostrils wide/thin,,,FalloutNV.exe UI string
+530,EXE:STR,,sNosenostriltilt,Nose nostril tilt down/up,,,FalloutNV.exe UI string
+531,EXE:STR,,sNoseregion,Nose region concave/convex,,,FalloutNV.exe UI string
+532,EXE:STR,,sNoseselliondown,Nose sellion down/up,,,FalloutNV.exe UI string
+533,EXE:STR,,sNosesellionlower,Nose sellion lower shallow/deep,,,FalloutNV.exe UI string
+534,EXE:STR,,sNosesellionshallow,Nose sellion shallow/deep,,,FalloutNV.exe UI string
+535,EXE:STR,,sNosesellionthin,Nose sellion thin/wide,,,FalloutNV.exe UI string
+536,EXE:STR,,sNoseshort,Nose short/long,,,FalloutNV.exe UI string
+537,EXE:STR,,sNosetilt,Nose tilt down/up,,,FalloutNV.exe UI string
+538,EXE:STR,,sNotEnoughCaps,You don't have enough caps.,,,FalloutNV.exe UI string
+539,EXE:STR,,sNotEnoughRoomWarning,You do not have enough room to drop this object.,,,FalloutNV.exe UI string
+540,EXE:STR,,sNote,RN,,,FalloutNV.exe UI string
+541,EXE:STR,,sNotesToggle,Notes Toggle,,,FalloutNV.exe UI string
+542,EXE:STR,,sNovice,iWortcraftMaxEffectsApprentice,,,FalloutNV.exe UI string
+543,EXE:STR,,sNoviceFatigueMult,fPerkAthleticsApprenticeFatigueMult,,,FalloutNV.exe UI string
+544,EXE:STR,,sNoviceSkillLevelText,You have a basic understanding of this skill.,,,FalloutNV.exe UI string
+545,EXE:STR,,sOKText,OK,,,FalloutNV.exe UI string
+546,EXE:STR,,sObjectDamping,fMagicTelekinesisMaxForce,,,FalloutNV.exe UI string
+547,EXE:STR,,sObjectExplosionDamage,fDangerousObjectExplosionRadius,,,FalloutNV.exe UI string
+548,EXE:STR,,sObjectExplosionRadius,fCombatAvoidThreatsChance,,,FalloutNV.exe UI string
+549,EXE:STR,,sObjectFade,Object Fade,,,FalloutNV.exe UI string
+550,EXE:STR,,sObjectHealth,fCombatThreatSignificantScore,,,FalloutNV.exe UI string
+551,EXE:STR,,sObjectInUse,This object is already in use by someone else.,,,FalloutNV.exe UI string
+552,EXE:STR,,sObjectLODFade,Object LOD Fade,,,FalloutNV.exe UI string
+553,EXE:STR,,sObjectType,SAM,,,FalloutNV.exe UI string
+554,EXE:STR,,sOff,Off,,,FalloutNV.exe UI string
+555,EXE:STR,,sOfferRefused,Offer refused,,,FalloutNV.exe UI string
+556,EXE:STR,,sOffset,exportsOffset,,,FalloutNV.exe UI string
+557,EXE:STR,,sOn,bFileControllerOnRoot:TestAllCells,,,FalloutNV.exe UI string
+558,EXE:STR,,sOnKv,On Kv,,,FalloutNV.exe UI string
+559,EXE:STR,,sOnly,PlayMusic,,,FalloutNV.exe UI string
+560,EXE:STR,,sOverEncumbered,You are carrying too much to be able to run.,,,FalloutNV.exe UI string
+561,EXE:STR,,sOverburdened,RegeneratingAmmo,,,FalloutNV.exe UI string
+562,EXE:STR,,sPMTime,PM,,,FalloutNV.exe UI string
+563,EXE:STR,,sPauseText,Pause,,,FalloutNV.exe UI string
+564,EXE:STR,,sPerk,Enable navmesh by FormID,,,FalloutNV.exe UI string
+565,EXE:STR,,sPipboyColor,Pip-Boy Color,,,FalloutNV.exe UI string
+566,EXE:STR,,sPlayAudio,Play Audio,,,FalloutNV.exe UI string
+567,EXE:STR,,sPlayCaravanText,Play Caravan,,,FalloutNV.exe UI string
+568,EXE:STR,,sPlayTime,Play Time,,,FalloutNV.exe UI string
+569,EXE:STR,,sPlayableRace,UnusedFunction14,,,FalloutNV.exe UI string
+570,EXE:STR,,sPlayer,TWR,,,FalloutNV.exe UI string
+571,EXE:STR,,sPlayerActionActive,GetLastPlayerAction,,,FalloutNV.exe UI string
+572,EXE:STR,,sPlayerGrabbedRef,GetPlayerGrabbedRef,,,FalloutNV.exe UI string
+573,EXE:STR,,sPlayerInRegion,Player In Region,,,FalloutNV.exe UI string
+574,EXE:STR,,sPlayerLeavingBorderRegion,You cannot go that way.,,,FalloutNV.exe UI string
+575,EXE:STR,,sPlayerMovingIntoNewSpace,UnusedFunction27,,,FalloutNV.exe UI string
+576,EXE:STR,,sPlayerOutOfMoneyText,You do not have funds to play Caravan.,,,FalloutNV.exe UI string
+577,EXE:STR,,sPlayerTagSkill,SetPlayerTagSkill,,,FalloutNV.exe UI string
+578,EXE:STR,,sPlayersLastRiddenHorse,See if an actor is ignoring friendly hits,,,FalloutNV.exe UI string
+579,EXE:STR,,sPleaseStandBy,PLEASE STAND BY,,,FalloutNV.exe UI string
+580,EXE:STR,,sPressControl,Press the new control for this action,,,FalloutNV.exe UI string
+581,EXE:STR,,sPressStart,Press START,,,FalloutNV.exe UI string
+582,EXE:STR,,sPrevChallenge,Prev Challenge Type,,,FalloutNV.exe UI string
+583,EXE:STR,,sPrevious,Previous,,,FalloutNV.exe UI string
+584,EXE:STR,,sQuestAddedText,Quest added,,,FalloutNV.exe UI string
+585,EXE:STR,,sQuestCompletedText,Quest completed,,,FalloutNV.exe UI string
+586,EXE:STR,,sQuestFailed,Quest FAILED,,,FalloutNV.exe UI string
+587,EXE:STR,,sQuestUpdatedText,Quest updated,,,FalloutNV.exe UI string
+588,EXE:STR,,sQuestsTabText,Quests,,,FalloutNV.exe UI string
+589,EXE:STR,,sQuit,Quit,,,FalloutNV.exe UI string
+590,EXE:STR,,sQuitCaravanText,"If you quit now, you will forfeit the money wagered. Are you sure you wish to forfeit this match?",,,FalloutNV.exe UI string
+591,EXE:STR,,sRace,GetPCIsClass,,,FalloutNV.exe UI string
+592,EXE:STR,,sRaceDescription,Race Description,,,FalloutNV.exe UI string
+593,EXE:STR,,sRadialFieldModifier,NiPSysPositionModifier,,,FalloutNV.exe UI string
+594,EXE:STR,,sRadioSignalLost,Radio Signal Lost,,,FalloutNV.exe UI string
+595,EXE:STR,,sRadioStationDiscovered,Radio Station Discovered,,,FalloutNV.exe UI string
+596,EXE:STR,,sRadioVolume,Radio Volume,,,FalloutNV.exe UI string
+597,EXE:STR,,sRadioWaveformFileFormat,Radio Waveform File Format,,,FalloutNV.exe UI string
+598,EXE:STR,,sRed,Red,,,FalloutNV.exe UI string
+599,EXE:STR,,sRedText,Red Text,,,FalloutNV.exe UI string
+600,EXE:STR,,sRedeemCode,Enter Code,,,FalloutNV.exe UI string
+601,EXE:STR,,sRepChangeNegSound,UIRepBad,,,FalloutNV.exe UI string
+602,EXE:STR,,sRepChangePosSound,UIRepGood,,,FalloutNV.exe UI string
+603,EXE:STR,,sRepNegativeGain,Reputation Loss,,,FalloutNV.exe UI string
+604,EXE:STR,,sRepNegativeGainIcon,Rep Negative Gain Icon,,,FalloutNV.exe UI string
+605,EXE:STR,,sRepNegativeLoss,Rep Negative Loss,,,FalloutNV.exe UI string
+606,EXE:STR,,sRepNegativeLossIcon,Rep Negative Loss Icon,,,FalloutNV.exe UI string
+607,EXE:STR,,sRepPositiveGain,Reputation Gain,,,FalloutNV.exe UI string
+608,EXE:STR,,sRepPositiveGainIcon,Rep Positive Gain Icon,,,FalloutNV.exe UI string
+609,EXE:STR,,sRepPositiveLoss,Rep Positive Loss,,,FalloutNV.exe UI string
+610,EXE:STR,,sRepPositiveLossIcon,Rep Positive Loss Icon,,,FalloutNV.exe UI string
+611,EXE:STR,,sRepTitlePosNoneNegNone,Rep Title Pos None Neg None,,,FalloutNV.exe UI string
+612,EXE:STR,,sRepTitlePosNoneNegNoneDesc,People don't know enough about you to form an opinion.,,,FalloutNV.exe UI string
+613,EXE:STR,,sRepTitlePosNoneNegNoneIcon,Rep Title Pos None Neg None Icon,,,FalloutNV.exe UI string
+614,EXE:STR,,sRepTitlePosNoneNegOne,Shunned,,,FalloutNV.exe UI string
+615,EXE:STR,,sRepTitlePosNoneNegOneDesc,You've left a poor impression on the community and may be shunned as a result.,,,FalloutNV.exe UI string
+616,EXE:STR,,sRepTitlePosNoneNegOneIcon,Rep Title Pos None Neg One Icon,,,FalloutNV.exe UI string
+617,EXE:STR,,sRepTitlePosNoneNegThree,Vilified,,,FalloutNV.exe UI string
+618,EXE:STR,,sRepTitlePosNoneNegThreeDesc,"For your overwhelmingly monstrous behavior, you have become vilified by the community.",,,FalloutNV.exe UI string
+619,EXE:STR,,sRepTitlePosNoneNegThreeIcon,Rep Title Pos None Neg Three Icon,,,FalloutNV.exe UI string
+620,EXE:STR,,sRepTitlePosNoneNegTwo,Hated,,,FalloutNV.exe UI string
+621,EXE:STR,,sRepTitlePosNoneNegTwoDesc,"Now that folks know you're bad, most people outright hate you.",,,FalloutNV.exe UI string
+622,EXE:STR,,sRepTitlePosNoneNegTwoIcon,Rep Title Pos None Neg Two Icon,,,FalloutNV.exe UI string
+623,EXE:STR,,sRepTitlePosOneNegNone,Accepted,,,FalloutNV.exe UI string
+624,EXE:STR,,sRepTitlePosOneNegNoneDesc,Folks have come to accept you for your helpful nature.,,,FalloutNV.exe UI string
+625,EXE:STR,,sRepTitlePosOneNegNoneIcon,Rep Title Pos One Neg None Icon,,,FalloutNV.exe UI string
+626,EXE:STR,,sRepTitlePosOneNegOne,Mixed,,,FalloutNV.exe UI string
+627,EXE:STR,,sRepTitlePosOneNegOneDesc,"A little bit good mixed with a little bit bad, people haven't figured you out yet.",,,FalloutNV.exe UI string
+628,EXE:STR,,sRepTitlePosOneNegOneIcon,Rep Title Pos One Neg One Icon,,,FalloutNV.exe UI string
+629,EXE:STR,,sRepTitlePosOneNegThree,Merciful Thug,,,FalloutNV.exe UI string
+630,EXE:STR,,sRepTitlePosOneNegThreeDesc,"Despite your reputation as a thug, you are known to occasionally show a charitable side.",,,FalloutNV.exe UI string
+631,EXE:STR,,sRepTitlePosOneNegThreeIcon,Rep Title Pos One Neg Three Icon,,,FalloutNV.exe UI string
+632,EXE:STR,,sRepTitlePosOneNegTwo,Sneering Punk,,,FalloutNV.exe UI string
+633,EXE:STR,,sRepTitlePosOneNegTwoDesc,"Even though you've done some good for the community, people still think you're a punk.",,,FalloutNV.exe UI string
+634,EXE:STR,,sRepTitlePosOneNegTwoIcon,Rep Title Pos One Neg Two Icon,,,FalloutNV.exe UI string
+635,EXE:STR,,sRepTitlePosThreeNegNone,Idolized,,,FalloutNV.exe UI string
+636,EXE:STR,,sRepTitlePosThreeNegNoneDesc,"Renowned for your extensive support and goodwill, you are idolized by the community.",,,FalloutNV.exe UI string
+637,EXE:STR,,sRepTitlePosThreeNegNoneIcon,Rep Title Pos Three Neg None Icon,,,FalloutNV.exe UI string
+638,EXE:STR,,sRepTitlePosThreeNegOne,Good Natured Rascal,,,FalloutNV.exe UI string
+639,EXE:STR,,sRepTitlePosThreeNegOneDesc,Your reputation as a good-natured friend of the community manages to outshine your dark side.,,,FalloutNV.exe UI string
+640,EXE:STR,,sRepTitlePosThreeNegOneIcon,Rep Title Pos Three Neg One Icon,,,FalloutNV.exe UI string
+641,EXE:STR,,sRepTitlePosThreeNegThree,Wild Child,,,FalloutNV.exe UI string
+642,EXE:STR,,sRepTitlePosThreeNegThreeDesc,"Your wild, seemingly capricious behavior leaves people scratching their heads in confusion and avoiding close contact.",,,FalloutNV.exe UI string
+643,EXE:STR,,sRepTitlePosThreeNegThreeIcon,Rep Title Pos Three Neg Three Icon,,,FalloutNV.exe UI string
+644,EXE:STR,,sRepTitlePosThreeNegTwo,Dark Hero,,,FalloutNV.exe UI string
+645,EXE:STR,,sRepTitlePosThreeNegTwoDesc,"Folks still think you're some kind of hero, but you sure can be nasty sometimes.",,,FalloutNV.exe UI string
+646,EXE:STR,,sRepTitlePosThreeNegTwoIcon,Rep Title Pos Three Neg Two Icon,,,FalloutNV.exe UI string
+647,EXE:STR,,sRepTitlePosTwoNegNone,Liked,,,FalloutNV.exe UI string
+648,EXE:STR,,sRepTitlePosTwoNegNoneDesc,Enough news of your good works has been passed around that people like you.,,,FalloutNV.exe UI string
+649,EXE:STR,,sRepTitlePosTwoNegNoneIcon,Rep Title Pos Two Neg None Icon,,,FalloutNV.exe UI string
+650,EXE:STR,,sRepTitlePosTwoNegOne,Smiling Troublemaker,,,FalloutNV.exe UI string
+651,EXE:STR,,sRepTitlePosTwoNegOneDesc,People know you're good at heart even though you're occasionally a troublemaker.,,,FalloutNV.exe UI string
+652,EXE:STR,,sRepTitlePosTwoNegOneIcon,Rep Title Pos Two Neg One Icon,,,FalloutNV.exe UI string
+653,EXE:STR,,sRepTitlePosTwoNegThree,Soft-Hearted Devil,,,FalloutNV.exe UI string
+654,EXE:STR,,sRepTitlePosTwoNegThreeDesc,"Most people say you're the devil himself, but most admit you've also done a world of good.",,,FalloutNV.exe UI string
+655,EXE:STR,,sRepTitlePosTwoNegThreeIcon,Rep Title Pos Two Neg Three Icon,,,FalloutNV.exe UI string
+656,EXE:STR,,sRepTitlePosTwoNegTwo,Unpredictable,,,FalloutNV.exe UI string
+657,EXE:STR,,sRepTitlePosTwoNegTwoDesc,"No one's sure what to make of your unpredictable nature, but you've left a strong impression.",,,FalloutNV.exe UI string
+658,EXE:STR,,sRepTitlePosTwoNegTwoIcon,Rep Title Pos Two Neg Two Icon,,,FalloutNV.exe UI string
+659,EXE:STR,,sRepair,REPAIR,,,FalloutNV.exe UI string
+660,EXE:STR,,sRepairAllItems,Repair All (%d),,,FalloutNV.exe UI string
+661,EXE:STR,,sRepairCost,Cost: %d caps,,,FalloutNV.exe UI string
+662,EXE:STR,,sRepairItem,Repair Item,,,FalloutNV.exe UI string
+663,EXE:STR,,sRepairServicesTitle,Repair Services,,,FalloutNV.exe UI string
+664,EXE:STR,,sRepairSkill,Repair Skill,,,FalloutNV.exe UI string
+665,EXE:STR,,sRepairSkillTooLow,Repair Skill Too Low,,,FalloutNV.exe UI string
+666,EXE:STR,,sReputationButton,iHUDMaxCompassNPCTicks,,,FalloutNV.exe UI string
+667,EXE:STR,,sReset,Reset,,,FalloutNV.exe UI string
+668,EXE:STR,,sResetOnLoopCtlr,NiPSysRadialFieldModifier,,,FalloutNV.exe UI string
+669,EXE:STR,,sResetToDefaults,Reset your control mappings to their default settings?,,,FalloutNV.exe UI string
+670,EXE:STR,,sResolution,Resolution,,,FalloutNV.exe UI string
+671,EXE:STR,,sRestartBecauseContentRemoved,The game must restart now because downloaded content has been removed.,,,FalloutNV.exe UI string
+672,EXE:STR,,sRestartSignedOut,You have signed out of your profile and will now be returned to the title screen.,,,FalloutNV.exe UI string
+673,EXE:STR,,sRestartToUseNewContent,New content has been added.  You will need to restart to use this content.  All unsaved progress will be lost.,,,FalloutNV.exe UI string
+674,EXE:STR,,sRestartToUseProfileContent,"In order to use the downloaded content associated with this profile, you will need to restart.",,,FalloutNV.exe UI string
+675,EXE:STR,,sRestoreRate,Restore Rate,,,FalloutNV.exe UI string
+676,EXE:STR,,sReturn,Return,,,FalloutNV.exe UI string
+677,EXE:STR,,sRumble,Vibration,,,FalloutNV.exe UI string
+678,EXE:STR,,sSave,Save,,,FalloutNV.exe UI string
+679,EXE:STR,,sSaveFailed,Save failed.,,,FalloutNV.exe UI string
+680,EXE:STR,,sSaveGame,Save Game,,,FalloutNV.exe UI string
+681,EXE:STR,,sSaveGameContentIsMissing,This save relies on content that is no longer present. Some objects may no longer be available. Continue Loading?,,,FalloutNV.exe UI string
+682,EXE:STR,,sSaveGameCorrupt,Corrupt,,,FalloutNV.exe UI string
+683,EXE:STR,,sSaveGameCorruptMenuMessage,The save game is corrupt and cannot be loaded.,,,FalloutNV.exe UI string
+684,EXE:STR,,sSaveGameDeviceError,There was an error accessing the device.  Please try again.,,,FalloutNV.exe UI string
+685,EXE:STR,,sSaveGameIsCorrupt,The save game is corrupt.  Returning to game.,,,FalloutNV.exe UI string
+686,EXE:STR,,sSaveGameNoLongerAvailable,The save game is no longer available.  Returning to game.,,,FalloutNV.exe UI string
+687,EXE:STR,,sSaveGameNoMasterFilesFound,None of the master files used in this save game are loaded.  Returning to game.,,,FalloutNV.exe UI string
+688,EXE:STR,,sSaveGameOutOfDiskSpace,The selected storage device does not have sufficient space available. Please select another storage device or delete some of your existing saved content.,,,FalloutNV.exe UI string
+689,EXE:STR,,sSaveGameXboxContentIsMissing,This save game relies on downloadable content that is no longer available. Some objects may be no longer available. Continue loading?,,,FalloutNV.exe UI string
+690,EXE:STR,,sSaveNotAvailable,No valid save game found.,,,FalloutNV.exe UI string
+691,EXE:STR,,sSaveOnRest,Save On Rest,,,FalloutNV.exe UI string
+692,EXE:STR,,sSaveOnTravel,Save On Travel,,,FalloutNV.exe UI string
+693,EXE:STR,,sSaveOnWait,Save On Wait,,,FalloutNV.exe UI string
+694,EXE:STR,,sSaveOverSaveGame,Are you sure you want to overwrite this save game?,,,FalloutNV.exe UI string
+695,EXE:STR,,sSaveSuccessful,Save successful.,,,FalloutNV.exe UI string
+696,EXE:STR,,sSavesRemaining,saves used.,,,FalloutNV.exe UI string
+697,EXE:STR,,sSecondDozenText,2nd Dozen,,,FalloutNV.exe UI string
+698,EXE:STR,,sSecondaryBonus,Radio,,,FalloutNV.exe UI string
+699,EXE:STR,,sSettings,Settings,,,FalloutNV.exe UI string
+700,EXE:STR,,sShadowFade,Shadow Fade,,,FalloutNV.exe UI string
+701,EXE:STR,,sSize,staticMaskSize,,,FalloutNV.exe UI string
+702,EXE:STR,,sSkillChance,fCrossSkillDamageMultiplier,,,FalloutNV.exe UI string
+703,EXE:STR,,sSkillDamageMultiplier,fCrossAPCost,,,FalloutNV.exe UI string
+704,EXE:STR,,sSkillDecreased,skill decreased,,,FalloutNV.exe UI string
+705,EXE:STR,,sSkillIncreased,skill increased,,,FalloutNV.exe UI string
+706,EXE:STR,,sSkillIncreasedNum,Skill Increased Num,,,FalloutNV.exe UI string
+707,EXE:STR,,sSkillLevelApprentice,Apprentice,,,FalloutNV.exe UI string
+708,EXE:STR,,sSkillLevelExpert,Expert,,,FalloutNV.exe UI string
+709,EXE:STR,,sSkillLevelJourneyman,Journeyman,,,FalloutNV.exe UI string
+710,EXE:STR,,sSkillLevelMaster,iSkillApprenticeMin,,,FalloutNV.exe UI string
+711,EXE:STR,,sSkillLevelNovice,Novice,,,FalloutNV.exe UI string
+712,EXE:STR,,sSkillRequirement,Skill Requirement,,,FalloutNV.exe UI string
+713,EXE:STR,,sSkillsCount,Tag %d Skill,,,FalloutNV.exe UI string
+714,EXE:STR,,sSkillsTitle,SKILLS:  %d/%d Selected,,,FalloutNV.exe UI string
+715,EXE:STR,,sSleep,sleep,,,FalloutNV.exe UI string
+716,EXE:STR,,sSleepDeprevationDecrease,Your SleepDeprevation level has decreased,,,FalloutNV.exe UI string
+717,EXE:STR,,sSleepDeprevationIncrease,Your SleepDeprevation level has increased,,,FalloutNV.exe UI string
+718,EXE:STR,,sSleepDeprevationNotSick,You no longer have SleepDeprevation sickness,,,FalloutNV.exe UI string
+719,EXE:STR,,sSmall,Small,,,FalloutNV.exe UI string
+720,EXE:STR,,sSmallDown,UIItemGunsSmallUp,,,FalloutNV.exe UI string
+721,EXE:STR,,sSmallUp,UIItemGunsBigDown,,,FalloutNV.exe UI string
+722,EXE:STR,,sSneakAttackCriticalStrike,Sneak Attack Critical on,,,FalloutNV.exe UI string
+723,EXE:STR,,sSneakAttackCriticalStrikeIcon,Sneak Attack Critical Strike Icon,,,FalloutNV.exe UI string
+724,EXE:STR,,sSneakCaution,[CAUTION],,,FalloutNV.exe UI string
+725,EXE:STR,,sSneakDanger,[DANGER],,,FalloutNV.exe UI string
+726,EXE:STR,,sSneakDetected,[DETECTED],,,FalloutNV.exe UI string
+727,EXE:STR,,sSneakHidden,[HIDDEN],,,FalloutNV.exe UI string
+728,EXE:STR,,sSneaking,IsLeftUp,,,FalloutNV.exe UI string
+729,EXE:STR,,sSneakingMult,fCombatDamageBonusMeleeSneakingMult,,,FalloutNV.exe UI string
+730,EXE:STR,,sSortMethod,Sort,,,FalloutNV.exe UI string
+731,EXE:STR,,sSpecNameCombat,Spec Name Combat,,,FalloutNV.exe UI string
+732,EXE:STR,,sSpecNameMagic,Magic,,,FalloutNV.exe UI string
+733,EXE:STR,,sSpecNameStealth,Stealth,,,FalloutNV.exe UI string
+734,EXE:STR,,sSpecularityFade,Specularity Fade,,,FalloutNV.exe UI string
+735,EXE:STR,,sSpeechChallengeFailure,[FAILED],,,FalloutNV.exe UI string
+736,EXE:STR,,sSpeechChallengeSuccess,[SUCCESS],,,FalloutNV.exe UI string
+737,EXE:STR,,sStartANewGame,Start a New Game?,,,FalloutNV.exe UI string
+738,EXE:STR,,sStartNewGame,Start new game?,,,FalloutNV.exe UI string
+739,EXE:STR,,sStats,STATS,,,FalloutNV.exe UI string
+740,EXE:STR,,sStatsAP,Stats AP,,,FalloutNV.exe UI string
+741,EXE:STR,,sStatsAddicted,ADDICT,,,FalloutNV.exe UI string
+742,EXE:STR,,sStatsAlcohol,Stats Alcohol,,,FalloutNV.exe UI string
+743,EXE:STR,,sStatsBody,Body,,,FalloutNV.exe UI string
+744,EXE:STR,,sStatsCNDAbbrev,Stats CND Abbrev,,,FalloutNV.exe UI string
+745,EXE:STR,,sStatsCondition,Condition,,,FalloutNV.exe UI string
+746,EXE:STR,,sStatsCrippled,CRIPPLED,,,FalloutNV.exe UI string
+747,EXE:STR,,sStatsEFFAbbrev,EFF,,,FalloutNV.exe UI string
+748,EXE:STR,,sStatsEffects,Stats Effects,,,FalloutNV.exe UI string
+749,EXE:STR,,sStatsFODAbbrev,FOD,,,FalloutNV.exe UI string
+750,EXE:STR,,sStatsGeneral,Stats General,,,FalloutNV.exe UI string
+751,EXE:STR,,sStatsH20Abbrev,H20,,,FalloutNV.exe UI string
+752,EXE:STR,,sStatsHP,Stats HP,,,FalloutNV.exe UI string
+753,EXE:STR,,sStatsLMBAbbrev,LMB,,,FalloutNV.exe UI string
+754,EXE:STR,,sStatsLVLAbbrev,LVL,,,FalloutNV.exe UI string
+755,EXE:STR,,sStatsLimbs,Limbs,,,FalloutNV.exe UI string
+756,EXE:STR,,sStatsNoEffects,NO STATUS EFFECTS,,,FalloutNV.exe UI string
+757,EXE:STR,,sStatsPerks,Perks,,,FalloutNV.exe UI string
+758,EXE:STR,,sStatsRADAbbrev,RAD,,,FalloutNV.exe UI string
+759,EXE:STR,,sStatsRadResist,RAD RESIST,,,FalloutNV.exe UI string
+760,EXE:STR,,sStatsRadiation,Stats Radiation,,,FalloutNV.exe UI string
+761,EXE:STR,,sStatsSLPAbbrev,Stats SLP Abbrev,,,FalloutNV.exe UI string
+762,EXE:STR,,sStatsSkills,Skills,,,FalloutNV.exe UI string
+763,EXE:STR,,sStatsSpecial,S.P.E.C.I.A.L.,,,FalloutNV.exe UI string
+764,EXE:STR,,sStatsStatus,Status,,,FalloutNV.exe UI string
+765,EXE:STR,,sStatsXP,XP,,,FalloutNV.exe UI string
+766,EXE:STR,,sStatsXPMax,MAX,,,FalloutNV.exe UI string
+767,EXE:STR,,sStyle,Style,,,FalloutNV.exe UI string
+768,EXE:STR,,sSuccessfulSneakAttackEnd,X damage!,,,FalloutNV.exe UI string
+769,EXE:STR,,sSuccessfulSneakAttackMain,Sneak attack for,,,FalloutNV.exe UI string
+770,EXE:STR,,sTerminalLocked,You cannot hack this computer.,,,FalloutNV.exe UI string
+771,EXE:STR,,sTerminalServerText1,-Server 1-,,,FalloutNV.exe UI string
+772,EXE:STR,,sTerminalServerText10,-Server 10-.,,,FalloutNV.exe UI string
+773,EXE:STR,,sTerminalServerText2,-Server 2-,,,FalloutNV.exe UI string
+774,EXE:STR,,sTerminalServerText3,-Server 3-,,,FalloutNV.exe UI string
+775,EXE:STR,,sTerminalServerText4,-Server 4-,,,FalloutNV.exe UI string
+776,EXE:STR,,sTerminalServerText5,-Server 5-,,,FalloutNV.exe UI string
+777,EXE:STR,,sTerminalServerText6,-Server 6-,,,FalloutNV.exe UI string
+778,EXE:STR,,sTerminalServerText7,-Server 7-,,,FalloutNV.exe UI string
+779,EXE:STR,,sTerminalServerText8,-Server 8-,,,FalloutNV.exe UI string
+780,EXE:STR,,sTerminalServerText9,-Server 9-,,,FalloutNV.exe UI string
+781,EXE:STR,,sTextNote,Text File,,,FalloutNV.exe UI string
+782,EXE:STR,,sTextureSize,Texture Size,,,FalloutNV.exe UI string
+783,EXE:STR,,sTime,fSunXExtreme,,,FalloutNV.exe UI string
+784,EXE:STR,,sTimePassing,GetBarterGold,,,FalloutNV.exe UI string
+785,EXE:STR,,sTimeSinceMaxPedalInput,isFixed,,,FalloutNV.exe UI string
+786,EXE:STR,,sTimeout,fAIDodgeFavorLeftRightMult,,,FalloutNV.exe UI string
+787,EXE:STR,,sTimer,fCombatMonitorBuffsTimer,,,FalloutNV.exe UI string
+788,EXE:STR,,sTone,Tone,,,FalloutNV.exe UI string
+789,EXE:STR,,sTotalBetText,Total Bet:,,,FalloutNV.exe UI string
+790,EXE:STR,,sTotalCardsText,Total Cards:,,,FalloutNV.exe UI string
+791,EXE:STR,,sTotalFundsText,Total Funds:,,,FalloutNV.exe UI string
+792,EXE:STR,,sTraitMenuCounter,Trait Menu Counter,,,FalloutNV.exe UI string
+793,EXE:STR,,sTraitMenuCounterSingular,Trait Menu Counter Singular,,,FalloutNV.exe UI string
+794,EXE:STR,,sTraitMenuTitleText,CHOOSE UP TO %d TRAITS,,,FalloutNV.exe UI string
+795,EXE:STR,,sTraitMenuTitleTextSingular,CHOOSE %d TRAIT,,,FalloutNV.exe UI string
+796,EXE:STR,,sTraitsCount,Choose up to %d Trait,,,FalloutNV.exe UI string
+797,EXE:STR,,sTraitsTitle,OPTIONAL TRAITS:  %d/%d Selected,,,FalloutNV.exe UI string
+798,EXE:STR,,sTravel,Travel,,,FalloutNV.exe UI string
+799,EXE:STR,,sTravelQuestion,Do you want to travel to,,,FalloutNV.exe UI string
+800,EXE:STR,,sTreeLODFade,Tree LOD Fade,,,FalloutNV.exe UI string
+801,EXE:STR,,sTreeView32,SkinInstance,,,FalloutNV.exe UI string
+802,EXE:STR,,sTrueIronSights,True Iron Sights,,,FalloutNV.exe UI string
+803,EXE:STR,,sUnequipItemOnPlayer,was unequipped,,,FalloutNV.exe UI string
+804,EXE:STR,,sVDSGManual,VDSG MANUAL,,,FalloutNV.exe UI string
+805,EXE:STR,,sVDSGPlate,VDSG Plate,,,FalloutNV.exe UI string
+806,EXE:STR,,sValue,Value,,,FalloutNV.exe UI string
+807,EXE:STR,,sVersion,contentsClassNameSectionOffset,,,FalloutNV.exe UI string
+808,EXE:STR,,sVersionNumber,Version Info,,,FalloutNV.exe UI string
+809,EXE:STR,,sVideo,Video,,,FalloutNV.exe UI string
+810,EXE:STR,,sVideoChange,You must exit and restart Fallout: New Vegas for the new resolution to take effect.,,,FalloutNV.exe UI string
+811,EXE:STR,,sViewDistance,View Distance,,,FalloutNV.exe UI string
+812,EXE:STR,,sViewer,Viewer,,,FalloutNV.exe UI string
+813,EXE:STR,,sWait,wait,,,FalloutNV.exe UI string
+814,EXE:STR,,sWaiting,GetCurrentAIPackage,,,FalloutNV.exe UI string
+815,EXE:STR,,sWaterObject,IsActorsAIOff,,,FalloutNV.exe UI string
+816,EXE:STR,,sWeaponBreak,Your weapon has broken.,,,FalloutNV.exe UI string
+817,EXE:STR,,sWeaponInList,Is BGSBodyPart::LIMB_ENUM been dismembered,,,FalloutNV.exe UI string
+818,EXE:STR,,sWeaponLowCond,Your weapon condition is dangerously low.,,,FalloutNV.exe UI string
+819,EXE:STR,,sWeaponOut,PickIdle,,,FalloutNV.exe UI string
+820,EXE:STR,,sWeaponSkillType,GetWeaponAnimType,,,FalloutNV.exe UI string
+821,EXE:STR,,sWeaponTypeHandToHandMelee,Melee - Hand to Hand,,,FalloutNV.exe UI string
+822,EXE:STR,,sWeaponTypeOneHandGrenade,Grenade,,,FalloutNV.exe UI string
+823,EXE:STR,,sWeaponTypeOneHandMelee,Melee - One Hand,,,FalloutNV.exe UI string
+824,EXE:STR,,sWeaponTypeOneHandMine,Weapon Type One Hand Mine,,,FalloutNV.exe UI string
+825,EXE:STR,,sWeaponTypeOneHandPistol,Pistol,,,FalloutNV.exe UI string
+826,EXE:STR,,sWeaponTypeOneHandPistolEnergy,Energy Pistol,,,FalloutNV.exe UI string
+827,EXE:STR,,sWeaponTypeOneHandThrown,Melee - Thrown,,,FalloutNV.exe UI string
+828,EXE:STR,,sWeaponTypeTwoHandAutomatic,Automatic,,,FalloutNV.exe UI string
+829,EXE:STR,,sWeaponTypeTwoHandHandle,Handle Weapon,,,FalloutNV.exe UI string
+830,EXE:STR,,sWeaponTypeTwoHandLauncher,Launcher,,,FalloutNV.exe UI string
+831,EXE:STR,,sWeaponTypeTwoHandMelee,Melee - Two Hand,,,FalloutNV.exe UI string
+832,EXE:STR,,sWeaponTypeTwoHandRifle,Rifle,,,FalloutNV.exe UI string
+833,EXE:STR,,sWeaponTypeTwoHandRifleEnergy,Energy Rifle,,,FalloutNV.exe UI string
+834,EXE:STR,,sWeight,Weight,,,FalloutNV.exe UI string
+835,EXE:STR,,sWeightMin,fMinesDelayMin,,,FalloutNV.exe UI string
+836,EXE:STR,,sWeightMult,fRockitDamageBonusWeightMin,,,FalloutNV.exe UI string
+837,EXE:STR,,sWhite,WHITE,,,FalloutNV.exe UI string
+838,EXE:STR,,sWorldMapTabText,World Map,,,FalloutNV.exe UI string
+839,EXE:STR,,sYes,Yes,,,FalloutNV.exe UI string
+840,EXE:STR,,sYesRestart,"Yes, restart the game.",,,FalloutNV.exe UI string
+841,EXE:STR,,sYesText,Yes,,,FalloutNV.exe UI string
+842,EXE:STR,,sYesToAllText,Yes to &All,,,FalloutNV.exe UI string

@@ -1,4 +1,4 @@
-ID,ประเภท,FormID,EditorID,EN,TH,สถานะ,หมายเหตุ
+﻿ID,ประเภท,FormID,EditorID,EN,TH,สถานะ,หมายเหตุ
 1,MESG:DESC,0017BA3C,P04CompanionFireMSG,Companion dismissal notifications sent.,ได้ส่งหนังสือแจ้งการเลิกจ้างเพื่อนร่วมงานแล้ว,mt,
 2,MESG:DESC,00174AC6,WildWastelandMessage,...,...,mt,
 3,MESG:FULL,00000190,HelpHardcoreNeeds,Hardcore Needs,ความต้องการของฮาร์ดคอร์,mt,
