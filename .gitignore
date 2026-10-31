@@ -32,10 +32,31 @@ testing/*.tex
 
 # สภาพแวดล้อม agent / local
 .claude/
+.cursor/
+.superpowers/
 memory/
 html/
+
+# เครื่องมือ/ไบนารีเกมในเครื่อง (อย่า commit)
+Tools/FalloutNV*
+Tools/Steamless/
+Tools/Steamless*.zip
+Tools/*.exe
+Tools/*.bin
+
+# extract / sheet staging ชั่วคราว (สร้างใหม่จาก pipeline ได้)
+extracted/FalloutNV_extract_v2.csv
+extracted/sheets/_prev_snapshot/
+extracted/sheets/_upload_batches/
+extracted/sheets/for_sheet_upload/
+extracted/sheets/pending_upload/
+extracted/sheets/upload_merged/
+extracted/sheets/names_packs/
 
 # แพ็กเกจใหญ่ / artifact ชั่วคราว
 release/*.zip
 corpus_thai/
 fonts/out/esp_precompose/
+fonts/out/preview_edit/
+testing/_workbench_tmp/
+testing/ab_backup_our_fonts/
