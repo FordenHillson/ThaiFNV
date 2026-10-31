@@ -37,9 +37,19 @@ TEXT_SUBRECORDS_BY_TYPE = {
     "MESG": ("DESC", "ITXT"),
     "GMST": ("DATA",),
     "NOTE": ("TNAM",),
-    "INFO": ("NAM1",),                 # ข้อความบทสนทนา (response text)
+    "INFO": ("NAM1", "RNAM"),          # NAM1=คำพูด, RNAM=ตัวเลือกผู้เล่นบางเคส
     "TERM": ("DESC", "ITXT", "RNAM"),  # เนื้อหา terminal / ตัวเลือก / ข้อความตอบ
     "QUST": ("NNAM",),                 # quest objective
+    # Pip-Boy / item descriptions (เคยตกหล่น — มีแค่ FULL ใน Names)
+    "AVIF": ("DESC",),                 # SPECIAL + Skills คำอธิบาย
+    "PERK": ("DESC",),
+    "WEAP": ("DESC",),
+    "ARMO": ("DESC",),
+    "ALCH": ("DESC",),
+    "SPEL": ("DESC",),
+    "MISC": ("DESC",),
+    "KEYM": ("DESC",),
+    "AMMO": ("DESC",),
     # รอเพิ่ม: NAM3 ของ INFO (ตรวจสอบเพิ่ม), CNAM ของ QUST (ดูเหมือน dev note)
 }
 
@@ -115,17 +125,22 @@ def parse_record(rtype, formid, payload, stats, rows, opts):
     pos = 0
     while pos + 6 <= n:
         ssize = struct.unpack_from("<H", payload, pos + 4)[0]
-        if ssize == 0 or pos + 6 + ssize > n:
+        # ssize==0 พบบ่อย (เช่น INFO NEXT) — ข้ามต่อ ห้าม break ทั้ง record
+        if pos + 6 + ssize > n:
             break
         val = payload[pos + 6: pos + 6 + ssize]
         st = payload[pos:pos + 4].decode("ascii", "replace").rstrip("\x00")
-        pos += 6 + ssize
+        pos += 6 + max(ssize, 0)
+        if ssize == 0:
+            continue
         if st == "EDID":
             edid = decode_string(val)
             stats["edid"] += 1
         elif st in wanted:
             text = decode_string(val)
-            if text and all(c.isprintable() for c in text):
+            # อนุญาต \n \r \t — ข้อความ Help/MESG DESC มักมีขึ้นบรรทัดใหม่
+            # (isprintable() จะตัดทั้งก้อนถ้ามี \\r\\n ทำให้ Help VDSG ตกหล่น)
+            if text and _is_extractable_text(text):
                 rows.append({
                     "record_type": rtype,
                     "formid": "%08X" % formid,
@@ -137,8 +152,18 @@ def parse_record(rtype, formid, payload, stats, rows, opts):
                 stats["text_rows"] += 1
 
 
+def _is_extractable_text(text: str) -> bool:
+    for c in text:
+        if c in "\n\r\t":
+            continue
+        if not c.isprintable():
+            return False
+    return True
+
+
 def decode_string(value: bytes) -> str:
     # FNV เขียนข้อความแบบ single-byte codepage (ปกติ cp1252)
+    # เก็บ \\r\\n ไว้ใน EN (อย่า strip หมด) — ตัดแค่ขอบนอก
     return value.split(b"\x00")[0].decode("cp1252", "replace").strip()
 
 

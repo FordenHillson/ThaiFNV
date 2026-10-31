@@ -16,6 +16,7 @@ make_categories.py — แบ่ง CSV extract (v1) เป็นไฟล์ห
   Quests      QUST NNAM
   Notes       NOTE TNAM/FULL
   BookDesc    BOOK DESC
+  Descs       DESC ของ AVIF/PERK/WEAP/ARMO/... (คำอธิบาย Pip-Boy)
   SystemStr   GMST DATA (ข้อความระบบ s*)
 
 Usage:
@@ -51,6 +52,10 @@ def categorize(r):
         return "Messages"
     if rt == "GMST" and r["edid"].startswith("s"):
         return "SystemStr"
+    if sub == "DESC" and rt in (
+        "AVIF", "PERK", "WEAP", "ARMO", "ALCH", "SPEL", "MISC", "KEYM", "AMMO",
+    ):
+        return "Descs"
     if sub == "FULL":
         return "Names"
     return "Other"
