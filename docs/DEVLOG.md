@@ -5,6 +5,15 @@
 
 ---
 
+## 2026-11-05 — รื้อถอนระบบ Font และ Data Extraction เดิม เพื่อเริ่มต้นออกแบบใหม่
+
+- สำรองโค้ดและประวัติการทำงานเดิมทั้งหมดไว้ที่ Git branch `archive/legacy-font-and-extract`
+- ลบส่วนงานฟอนต์เดิม: `fonts/`, สคริปต์ `font_*.py`, `fnt_lib.py`, `testing/`, `scratch/` และเอกสารฟอนต์ทั้งหมด
+- ลบส่วนงานสกัดและฉีดข้อมูลเดิม: `fnv_esm.py`, `make_categories.py`, `Tools/`, สคริปต์ compile ESP
+- ลบ `Rule.md` ตามคำขอ
+- คงข้อมูลการแปลทั้งหมดไว้ใน `corpus/` และ `extracted/sheets/` เพื่อนำไปใช้กับสถาปัตยกรรมใหม่
+
+
 ## 2026-10-30 — เอกสารโปรเจกต์ + push GitHub
 
 - เพิ่ม `CONTEXT.md`, `README.md`, `docs/STATUS.md`, `docs/DEVLOG.md`
