@@ -1,0 +1,277 @@
+﻿ID,DLC,Plugin,RecordType,Subrecord,FormID,EditorID,ParentContext,EN,TH,Status,Notes
+1,Dead Money,DeadMoney.esm,MESG,DESC,01013E4A,NVDLC01FollowerMessagePerkDogRemove,NVDLC01FollowerMessagePerkDogRemove,You have lost the benefit of Dog's Ravenous Hunger.,,,
+2,Dead Money,DeadMoney.esm,MESG,DESC,01013E49,NVDLC01FollowerMessagePerkDogAdd,NVDLC01FollowerMessagePerkDogAdd,"Dog has given you the benefit of his Ravenous Hunger.
+
+Ghost People are difficult to kill unless dismembered or disintegrated. If Dog is in the party, however, Dog will devour them, preventing them from getting back up.",,,
+3,Dead Money,DeadMoney.esm,MESG,FULL,01013D60,NVDLC01NamedActorGod,Message Title,God,,,
+4,Dead Money,DeadMoney.esm,MESG,FULL,01013D5F,NVDLC01NamedActorDog,Message Title,Dog,,,
+5,Dead Money,DeadMoney.esm,MESG,FULL,01013B4E,NVDLC01SierraMadreGateMsg,Message Title,Gate to the Sierra Madre Casino,,,
+6,Dead Money,DeadMoney.esm,MESG,DESC,01013B4E,NVDLC01SierraMadreGateMsg,Gate to the Sierra Madre Casino,"This gate leads directly to the Sierra Madre Casino. Once inside, you may not be able to return to the Villa. Do you wish to proceed?",,,
+7,Dead Money,DeadMoney.esm,MESG,ITXT,01013B4E,NVDLC01SierraMadreGateMsg,Button: Gate to the Sierra Madre Casino,Stay in the Villa.,,,
+8,Dead Money,DeadMoney.esm,MESG,ITXT,01013B4E,NVDLC01SierraMadreGateMsg,Button: Gate to the Sierra Madre Casino,Proceed to the Sierra Madre Casino.,,,
+9,Dead Money,DeadMoney.esm,MESG,DESC,01013B25,NVDLC01FollowerMessagePerkGodRemove,NVDLC01FollowerMessagePerkGodRemove,You have lost God's In my Footsteps perk.,,,
+10,Dead Money,DeadMoney.esm,MESG,DESC,01013B24,NVDLC01FollowerMessagePerkGodAdd,NVDLC01FollowerMessagePerkGodAdd,"God has given you the In my Footsteps perk.
+
+This perk grants you a bonus to Stealth as well as the ability to step lightly around placed traps.",,,
+11,Dead Money,DeadMoney.esm,MESG,DESC,010139BD,NVDLC01SierraMadreMartiniPerkGain,NVDLC01SierraMadreMartiniPerkGain,"Dean has taught you the Sierra Madre Martini ""Perk,"" allowing you to mix Cloud Residue and Junk Food in a Tin Can at a Campfire or Electric Hot Plate for a surprisingly strong, restorative, and disgusting drink.",,,
+12,Dead Money,DeadMoney.esm,MESG,DESC,010139BC,NVDLC01GhostHunterPerkGain,NVDLC01GhostHunterPerkGain,"Dog has taught you the Ghost Hunter Perk, allowing you to kill Ghost People so they stay dead, dead.",,,
+13,Dead Money,DeadMoney.esm,MESG,DESC,010139BB,NVDLC01CoinOperatorPerkGain,NVDLC01CoinOperatorPerkGain,"Christine has taught you the Coin Operator Perk, allowing you to make Sierra Madre ""Chips"" (metal slugs) at Workbenches using Fission Batteries and Scrap Metal.",,,
+14,Dead Money,DeadMoney.esm,MESG,FULL,0101393F,NVDLC01VaultTurretGeneratorUMsg,Message Title,Turret Defense Electric Generator,,,
+15,Dead Money,DeadMoney.esm,MESG,DESC,0101393F,NVDLC01VaultTurretGeneratorUMsg,Turret Defense Electric Generator,"This generator powers turret defenses in the vault.
+
+Inscribed in its side, you can read:
+
+""Turret Defense Generator B.""
+
+You may be able to smash the generator. [Unarmed 50 or higher required]",,,
+16,Dead Money,DeadMoney.esm,MESG,ITXT,0101393F,NVDLC01VaultTurretGeneratorUMsg,Button: Turret Defense Electric Generator,Leave the generator alone.,,,
+17,Dead Money,DeadMoney.esm,MESG,ITXT,0101393F,NVDLC01VaultTurretGeneratorUMsg,Button: Turret Defense Electric Generator,Smash the generator.,,,
+18,Dead Money,DeadMoney.esm,MESG,FULL,0101393E,NVDLC01VaultTurretGeneratorMWMsg,Message Title,Turret Defense Electric Generator,,,
+19,Dead Money,DeadMoney.esm,MESG,DESC,0101393E,NVDLC01VaultTurretGeneratorMWMsg,Turret Defense Electric Generator,"This generator powers turret defenses in the vault.
+
+Inscribed in its side, you can read:
+
+""Turret Defense Generator B.""
+
+You may be able to smash the generator. [Melee Weapons 50 or higher required]",,,
+20,Dead Money,DeadMoney.esm,MESG,ITXT,0101393E,NVDLC01VaultTurretGeneratorMWMsg,Button: Turret Defense Electric Generator,Leave the generator alone.,,,
+21,Dead Money,DeadMoney.esm,MESG,ITXT,0101393E,NVDLC01VaultTurretGeneratorMWMsg,Button: Turret Defense Electric Generator,Smash the generator.,,,
+22,Dead Money,DeadMoney.esm,MESG,FULL,0101393C,NVDLC01VaultTurretGeneratorMsg,Message Title,Turret Defense Electric Generator,,,
+23,Dead Money,DeadMoney.esm,MESG,DESC,0101393C,NVDLC01VaultTurretGeneratorMsg,Turret Defense Electric Generator,"This generator powers turret defenses in the vault.
+
+Inscribed in its side, you can read:
+
+""Turret Defense Generator B.""
+
+You are not able to smash the generator. [Melee Weapons, or Unarmed, 50 or higher required]",,,
+24,Dead Money,DeadMoney.esm,MESG,DESC,01013937,NVDLC01SuitesRangedWarningB,NVDLC01SuitesRangedWarningB,Wideband Scan Warning!,,,
+25,Dead Money,DeadMoney.esm,MESG,DESC,01013936,NVDLC01SuitesProximityWarningB,NVDLC01SuitesProximityWarningB,Proximity Scan Warning!,,,
+26,Dead Money,DeadMoney.esm,MESG,FULL,010138C7,NVDLC01VendingMachineMsg,Message Title,Vending Machine,,,
+27,Dead Money,DeadMoney.esm,MESG,DESC,010138C7,NVDLC01VendingMachineMsg,Vending Machine,"This is an unusual-looking crafting station. As you approach, lines of tiny holographic items appear on the dispensing tray - wireframe schematics and lists of consumables the machine can assemble and package for the consumer. There is a slot on the side with a Sierra Madre symbol. The slot does not look part of the original design.",,,
+28,Dead Money,DeadMoney.esm,MESG,FULL,010138A9,NVDLC01ElijahsChemistrySetMsg,Message Title,Chemistry Set,,,
+29,Dead Money,DeadMoney.esm,MESG,DESC,010138A9,NVDLC01ElijahsChemistrySetMsg,Chemistry Set,"There appears to be residue collecting in the Chemistry Set. With the proper knowledge, you may be able to collect a sample of it.
+
+[Science of 25 or greater required.]",,,
+30,Dead Money,DeadMoney.esm,MESG,ITXT,010138A9,NVDLC01ElijahsChemistrySetMsg,Button: Chemistry Set,Leave it alone.,,,
+31,Dead Money,DeadMoney.esm,MESG,ITXT,010138A9,NVDLC01ElijahsChemistrySetMsg,Button: Chemistry Set,Collect residue sample.,,,
+32,Dead Money,DeadMoney.esm,MESG,DESC,0101389E,NVDLC01VaultMainTerminalLockedMsg,NVDLC01VaultMainTerminalLockedMsg,The terminal doesn't respond. Something is preventing its standard functions.,,,
+33,Dead Money,DeadMoney.esm,MESG,FULL,0101385D,NVDLC01BrokenIntercomMsg,Message Title,Broken Intercom,,,
+34,Dead Money,DeadMoney.esm,MESG,DESC,0101385D,NVDLC01BrokenIntercomMsg,Broken Intercom,This intercom is broken.,,,
+35,Dead Money,DeadMoney.esm,MESG,DESC,01013769,NVDLC01DogGalaDiagramMenuMsg,NVDLC01DogGalaDiagramMenuMsg,"On quick glance, the diagram seems to have something to do with the switches immediately to the right of it.
+(Intelligence 7)",,,
+36,Dead Money,DeadMoney.esm,MESG,ITXT,01013769,NVDLC01DogGalaDiagramMenuMsg,Button: NVDLC01DogGalaDiagramMenuMsg,Ignore the diagram.,,,
+37,Dead Money,DeadMoney.esm,MESG,ITXT,01013769,NVDLC01DogGalaDiagramMenuMsg,Button: NVDLC01DogGalaDiagramMenuMsg,Study the diagram.,,,
+38,Dead Money,DeadMoney.esm,MESG,DESC,01013545,NVDLC01SuitesKitchenDoorMsg,NVDLC01SuitesKitchenDoorMsg,This door is hermetically sealed due to a gas leak in the kitchen contaminating the air. The gas will need to be shut off in order for it to open.,,,
+39,Dead Money,DeadMoney.esm,MESG,ITXT,01013545,NVDLC01SuitesKitchenDoorMsg,Button: NVDLC01SuitesKitchenDoorMsg,Do nothing.,,,
+40,Dead Money,DeadMoney.esm,MESG,DESC,01013544,NVDLC01SuitesEmergencyDoorMsg,NVDLC01SuitesEmergencyDoorMsg,This door is hermetically sealed due to a structural collapse contaminating the air. It will need to be opened elsewhere.,,,
+41,Dead Money,DeadMoney.esm,MESG,ITXT,01013544,NVDLC01SuitesEmergencyDoorMsg,Button: NVDLC01SuitesEmergencyDoorMsg,Do nothing.,,,
+42,Dead Money,DeadMoney.esm,MESG,FULL,0101340F,NVDLC01SuitesAutoDocMsg,Message Title,Auto-Doc,,,
+43,Dead Money,DeadMoney.esm,MESG,DESC,0101340F,NVDLC01SuitesAutoDocMsg,Auto-Doc,This unusual-looking Auto-Doc still has a series of diodes and buttons that appear to work.,,,
+44,Dead Money,DeadMoney.esm,MESG,ITXT,0101340F,NVDLC01SuitesAutoDocMsg,Button: Auto-Doc,Leave the Auto-Doc alone.,,,
+45,Dead Money,DeadMoney.esm,MESG,ITXT,0101340F,NVDLC01SuitesAutoDocMsg,Button: Auto-Doc,Heal all crippled limbs.,,,
+46,Dead Money,DeadMoney.esm,MESG,ITXT,0101340F,NVDLC01SuitesAutoDocMsg,Button: Auto-Doc,Inject adrenaline to cure exhaustion.,,,
+47,Dead Money,DeadMoney.esm,MESG,ITXT,0101340F,NVDLC01SuitesAutoDocMsg,Button: Auto-Doc,[Download Medical History],,,
+48,Dead Money,DeadMoney.esm,MESG,FULL,01013404,NVDLC01TravelToMojaveMsg,Message Title,Gate to Mojave Wasteland,,,
+49,Dead Money,DeadMoney.esm,MESG,DESC,01013404,NVDLC01TravelToMojaveMsg,Gate to Mojave Wasteland,This path leads from the Sierra Madre back to the Mojave Wasteland. You are certain you'll never be able to get back here. Are you sure you want to leave?,,,
+50,Dead Money,DeadMoney.esm,MESG,ITXT,01013404,NVDLC01TravelToMojaveMsg,Button: Gate to Mojave Wasteland,Stay at the Sierra Madre.,,,
+51,Dead Money,DeadMoney.esm,MESG,ITXT,01013404,NVDLC01TravelToMojaveMsg,Button: Gate to Mojave Wasteland,Return to the Mojave Wasteland.,,,
+52,Dead Money,DeadMoney.esm,MESG,DESC,01013374,NVDLC01Gala02VentSystemOnMsg,NVDLC01Gala02VentSystemOnMsg,"You hear a loud noise coming from the room to the west. It sounds as if the ventilation systems are firing up, clearing the Cloud out of the Switching Station basement and sections of Puesta del Sol's streets.",,,
+53,Dead Money,DeadMoney.esm,MESG,DESC,0101331D,NVDLC01SuitesElevatorMsg,NVDLC01SuitesElevatorMsg,The elevator appears to have been locked down by security. Perhaps Christine is involved.,,,
+54,Dead Money,DeadMoney.esm,MESG,ITXT,0101331D,NVDLC01SuitesElevatorMsg,Button: NVDLC01SuitesElevatorMsg,Do nothing.,,,
+55,Dead Money,DeadMoney.esm,MESG,DESC,0101327A,NVDLC01DogEatsGhostMsg,NVDLC01DogEatsGhostMsg,Dog has devoured a fallen enemy.,,,
+56,Dead Money,DeadMoney.esm,MESG,DESC,01012EA3,NVDLC01KitchenFrontEntranceMsg,NVDLC01KitchenFrontEntranceMsg,"This door is hermetically sealed due to the gas leak in the Casa Madrid kitchen. While a maintenance key can override the lock, it will not open from the inside unless the gas valves are shut off. (Maintenance Pass Key Required)",,,
+57,Dead Money,DeadMoney.esm,MESG,ITXT,01012EA3,NVDLC01KitchenFrontEntranceMsg,Button: NVDLC01KitchenFrontEntranceMsg,Do nothing.,,,
+58,Dead Money,DeadMoney.esm,MESG,ITXT,01012EA3,NVDLC01KitchenFrontEntranceMsg,Button: NVDLC01KitchenFrontEntranceMsg,<Use Maintenance Pass Key to open the door.>,,,
+59,Dead Money,DeadMoney.esm,MESG,DESC,01012EA2,NVDLC01KitchenValveWarningMsg,NVDLC01KitchenValveWarningMsg,This door will not open until the gas valves have been repaired.,,,
+60,Dead Money,DeadMoney.esm,MESG,DESC,01012EA1,NVDLC01KitchenFrontEntranceWarningMsg,NVDLC01KitchenFrontEntranceWarningMsg,This door is hermetically sealed due to the gas leak and Elijah's override. It will not open until the valves are shut off and Dog is dealt with.,,,
+61,Dead Money,DeadMoney.esm,MESG,ITXT,01012EA1,NVDLC01KitchenFrontEntranceWarningMsg,Button: NVDLC01KitchenFrontEntranceWarningMsg,Do nothing.,,,
+62,Dead Money,DeadMoney.esm,MESG,ITXT,01012EA1,NVDLC01KitchenFrontEntranceWarningMsg,Button: NVDLC01KitchenFrontEntranceWarningMsg,<Use maintenance pass key to open the door>,,,
+63,Dead Money,DeadMoney.esm,MESG,DESC,01012CBC,NVDLC01SuitesBeepHalfwayWarning,NVDLC01SuitesBeepHalfwayWarning,Your collar is beeping faster.,,,
+64,Dead Money,DeadMoney.esm,MESG,DESC,01012CBB,NVDLC01SuitesProximityWarning,NVDLC01SuitesProximityWarning,Christine activated proximity detonation frequency.,,,
+65,Dead Money,DeadMoney.esm,MESG,DESC,01012CBA,NVDLC01SuitesRangedWarning,NVDLC01SuitesRangedWarning,Christine activated scanning detonation frequency.,,,
+66,Dead Money,DeadMoney.esm,MESG,DESC,01012CB9,NVDLC01SuitesBeepWarning,NVDLC01SuitesBeepWarning,Your collar is emitting a high-pitched beeping noise.,,,
+67,Dead Money,DeadMoney.esm,MESG,FULL,01012BD7,NVDLC01TravelToSierraMadreMsg,Message Title,Dead Money,,,
+68,Dead Money,DeadMoney.esm,MESG,DESC,01012BD7,NVDLC01TravelToSierraMadreMsg,Dead Money,"Dead Money takes you to an extremely dangerous area of the Mojave Wasteland, a one-way journey until your business at the Sierra Madre is finished. 
+
+In Normal Mode, you'll encounter new traps, enemies, and new companions whose lives are tied to yours. In Hardcore Mode, you'll be fighting the environment as well, a toxic city that erodes health over time. Companions are more vulnerable, and so are you.
+
+Dead Money is recommended for experienced Couriers (Level 20+). If up to the challenge, continue on. The Sierra Madre Grand Opening awaits... and has been for 200 years.",,,
+69,Dead Money,DeadMoney.esm,MESG,ITXT,01012BD7,NVDLC01TravelToSierraMadreMsg,Button: Dead Money,Stay in the Mojave Wasteland.,,,
+70,Dead Money,DeadMoney.esm,MESG,ITXT,01012BD7,NVDLC01TravelToSierraMadreMsg,Button: Dead Money,Seek out the radio signal in the Bunker.,,,
+71,Dead Money,DeadMoney.esm,MESG,DESC,01012877,NVDLC01KitchenBackEntranceMsg,NVDLC01KitchenBackEntranceMsg,"This door is hermetically sealed due to the gas leak. If you override the door's lock, you won't be able to open it from the inside until you've shut off the gas valves and dealt with Dog. (Emergency Maintenance Key Required)",,,
+72,Dead Money,DeadMoney.esm,MESG,ITXT,01012877,NVDLC01KitchenBackEntranceMsg,Button: NVDLC01KitchenBackEntranceMsg,Do nothing.,,,
+73,Dead Money,DeadMoney.esm,MESG,ITXT,01012877,NVDLC01KitchenBackEntranceMsg,Button: NVDLC01KitchenBackEntranceMsg,Use Emergency Maintenance Key to enter the Kitchen.,,,
+74,Dead Money,DeadMoney.esm,MESG,DESC,01012506,NVDLC01BombCollarChristineMsg,NVDLC01BombCollarChristineMsg,Christine's counter-frequency is temporarily blocking the Speaker.,,,
+75,Dead Money,DeadMoney.esm,MESG,FULL,01012505,NVDLC01CraftingNoSkillMsg,Message Title,Repair Vending Machine Failure,,,
+76,Dead Money,DeadMoney.esm,MESG,DESC,01012505,NVDLC01CraftingNoSkillMsg,Repair Vending Machine Failure,You lack the Repair skill needed to fix the Vending Machine. (Repair 50 or higher required),,,
+77,Dead Money,DeadMoney.esm,MESG,FULL,01012504,NVDLC01CraftingFixedMsg,Message Title,Vending Machine,,,
+78,Dead Money,DeadMoney.esm,MESG,DESC,01012504,NVDLC01CraftingFixedMsg,Vending Machine,You have fixed the Vending Machine.,,,
+79,Dead Money,DeadMoney.esm,MESG,FULL,01012502,NVDLC01CraftingRepairMsg,Message Title,Repair Vending Machine,,,
+80,Dead Money,DeadMoney.esm,MESG,DESC,01012502,NVDLC01CraftingRepairMsg,Repair Vending Machine,"This Vending Machine is broken. With your ability to repair objects, you may be able to fix the machine.",,,
+81,Dead Money,DeadMoney.esm,MESG,ITXT,01012502,NVDLC01CraftingRepairMsg,Button: Repair Vending Machine,Leave it alone.,,,
+82,Dead Money,DeadMoney.esm,MESG,ITXT,01012502,NVDLC01CraftingRepairMsg,Button: Repair Vending Machine,Repair the Vending Machine.,,,
+83,Dead Money,DeadMoney.esm,MESG,DESC,0101229D,NVDLC01DogGalaDiagram02Msg,NVDLC01DogGalaDiagram02Msg,"This diagram shows the order in which the switches must be toggled to reroute power to various areas of the town, including the Bell Tower.",,,
+84,Dead Money,DeadMoney.esm,MESG,DESC,0101226F,NVDLC01DogGalaSwitchMsg,NVDLC01DogGalaSwitchMsg,The switches have become corroded and will require great strength to move.,,,
+85,Dead Money,DeadMoney.esm,MESG,DESC,0101225D,NVDLC01HoloDisableMsg,NVDLC01HoloDisableMsg,You have disabled the emitter.,,,
+86,Dead Money,DeadMoney.esm,MESG,FULL,01011C37,NVDLC01ElevatorFumbledMsg,Message Title,Vault Elevator Locked,,,
+87,Dead Money,DeadMoney.esm,MESG,DESC,01011C37,NVDLC01ElevatorFumbledMsg,Vault Elevator Locked,"The Vault's elevator remains sealed.
+
+You did not get the voice-coded password correctly.",,,
+88,Dead Money,DeadMoney.esm,MESG,FULL,01011B28,NVDLC01ChallengeDeanSecretStash,Message Title,Secret Stash Found!,,,
+89,Dead Money,DeadMoney.esm,MESG,DESC,01011B28,NVDLC01ChallengeDeanSecretStash,Secret Stash Found!,You found Dean's secret stash!,,,
+90,Dead Money,DeadMoney.esm,MESG,FULL,0101190B,NVDLC01ElevatorUnlockedPasswordMsg,Message Title,Vault Elevator Unlocked!,,,
+91,Dead Money,DeadMoney.esm,MESG,DESC,0101190B,NVDLC01ElevatorUnlockedPasswordMsg,Vault Elevator Unlocked!,"You play Vera's Holotapes, who sings ""Begin again... Let go.""
+
+The Vault Elevator unlocks its seals.
+
+The way down to the Sierra Madre's Vault is now open.",,,
+92,Dead Money,DeadMoney.esm,MESG,FULL,010113FB,NVDLC01ElevatorCodeInfoMsg,Message Title,Object Inspected,,,
+93,Dead Money,DeadMoney.esm,MESG,DESC,010113FB,NVDLC01ElevatorCodeInfoMsg,Object Inspected,"This device is a voice-recognition security system that protects access to the Sierra Madre's Vault.
+
+Unlocking it requires to speak at the microphone with the proper voice.",,,
+94,Dead Money,DeadMoney.esm,MESG,FULL,010113FA,NVDLC01ElevatorLockedMsg,Message Title,Vault Elevator Locked,,,
+95,Dead Money,DeadMoney.esm,MESG,DESC,010113FA,NVDLC01ElevatorLockedMsg,Vault Elevator Locked,The Vault's elevator is locked.,,,
+96,Dead Money,DeadMoney.esm,MESG,DESC,01011218,NVDLC01ToxicCloudDeanMsg,NVDLC01ToxicCloudDeanMsg,Dean is protecting you from a toxic cloud.,,,
+97,Dead Money,DeadMoney.esm,MESG,DESC,01010F67,NVDLC01KitchenBackDoorMsg,NVDLC01KitchenBackDoorMsg,This door is hermetically sealed due to the gas leak. You won't be able to open it from the inside until you've shut off the gas valves and dealt with Dog.,,,
+98,Dead Money,DeadMoney.esm,MESG,DESC,01010DD2,NVDLC01KitchenDeadDogMsg,NVDLC01KitchenDeadDogMsg,"The remaining valves must be repaired before Dog's collar explodes, igniting the gas.",,,
+99,Dead Money,DeadMoney.esm,MESG,DESC,01010DA9,NVDLC01KitchenValveMsg,NVDLC01KitchenValveMsg,This valve is in need of repair.,,,
+100,Dead Money,DeadMoney.esm,MESG,ITXT,01010DA9,NVDLC01KitchenValveMsg,Button: NVDLC01KitchenValveMsg,Leave the valve alone.,,,
+101,Dead Money,DeadMoney.esm,MESG,ITXT,01010DA9,NVDLC01KitchenValveMsg,Button: NVDLC01KitchenValveMsg,Repair the valve.,,,
+102,Dead Money,DeadMoney.esm,MESG,DESC,01010DA8,NVDLC01KitchenValveReinforcedMsg,NVDLC01KitchenValveReinforcedMsg,Repair and reinforcement successful.,,,
+103,Dead Money,DeadMoney.esm,MESG,DESC,01010DA7,NVDLC01KitchenValveRepairedMsg,NVDLC01KitchenValveRepairedMsg,"You were able to repair the valve, but lack the skill to properly reinforce it from damage.",,,
+104,Dead Money,DeadMoney.esm,MESG,FULL,01010BAB,NVDLC01TheaterStageTerminal02Msg,Message Title,Stage Manager's Terminal,,,
+105,Dead Money,DeadMoney.esm,MESG,DESC,01010BAB,NVDLC01TheaterStageTerminal02Msg,Stage Manager's Terminal,This terminal is broken.,,,
+106,Dead Money,DeadMoney.esm,MESG,FULL,01010BAA,NVDLC01TheaterStageTerminalMsg,Message Title,Stage Manager's Terminal,,,
+107,Dead Money,DeadMoney.esm,MESG,DESC,01010BAA,NVDLC01TheaterStageTerminalMsg,Stage Manager's Terminal,This terminal is broken.,,,
+108,Dead Money,DeadMoney.esm,MESG,FULL,01010443,NVDLC01HologramEmitterNoSkillMsg,Message Title,Hologram Emitter,,,
+109,Dead Money,DeadMoney.esm,MESG,DESC,01010443,NVDLC01HologramEmitterNoSkillMsg,Hologram Emitter,You don't have the skill to do that.,,,
+110,Dead Money,DeadMoney.esm,MESG,FULL,01010442,NVDLC01HologramEmitterVeryHardMsg,Message Title,Hologram Emitter,,,
+111,Dead Money,DeadMoney.esm,MESG,DESC,01010442,NVDLC01HologramEmitterVeryHardMsg,Hologram Emitter,This emitter controls a Security Hologram in this area. You may be able to disable the emitter. [Repair 100 required],,,
+112,Dead Money,DeadMoney.esm,MESG,ITXT,01010442,NVDLC01HologramEmitterVeryHardMsg,Button: Hologram Emitter,Leave emitter alone.,,,
+113,Dead Money,DeadMoney.esm,MESG,ITXT,01010442,NVDLC01HologramEmitterVeryHardMsg,Button: Hologram Emitter,Disable emitter.,,,
+114,Dead Money,DeadMoney.esm,MESG,FULL,01010441,NVDLC01HologramEmitterHardMsg,Message Title,Hologram Emitter,,,
+115,Dead Money,DeadMoney.esm,MESG,DESC,01010441,NVDLC01HologramEmitterHardMsg,Hologram Emitter,This emitter controls a Security Hologram in this area. You may be able to disable the emitter. [Repair 75 or higher required],,,
+116,Dead Money,DeadMoney.esm,MESG,ITXT,01010441,NVDLC01HologramEmitterHardMsg,Button: Hologram Emitter,Leave emitter alone.,,,
+117,Dead Money,DeadMoney.esm,MESG,ITXT,01010441,NVDLC01HologramEmitterHardMsg,Button: Hologram Emitter,Disable emitter.,,,
+118,Dead Money,DeadMoney.esm,MESG,FULL,01010440,NVDLC01HologramEmitterAverageMsg,Message Title,Hologram Emitter,,,
+119,Dead Money,DeadMoney.esm,MESG,DESC,01010440,NVDLC01HologramEmitterAverageMsg,Hologram Emitter,This emitter controls a Security Hologram in this area. You may be able to disable the emitter. [Repair 50 or higher required],,,
+120,Dead Money,DeadMoney.esm,MESG,ITXT,01010440,NVDLC01HologramEmitterAverageMsg,Button: Hologram Emitter,Leave emitter alone.,,,
+121,Dead Money,DeadMoney.esm,MESG,ITXT,01010440,NVDLC01HologramEmitterAverageMsg,Button: Hologram Emitter,Disable emitter.,,,
+122,Dead Money,DeadMoney.esm,MESG,DESC,010102AC,NVDLC01DogGalaDiagramNoSkillMsg,NVDLC01DogGalaDiagramNoSkillMsg,"You see a complicated diagram but don't understand what it means.
+(Intelligence 7 or higher required)",,,
+123,Dead Money,DeadMoney.esm,MESG,FULL,0101025A,NVDLC01CasinoCompsHugeMessage,Message Title,Complimentary Gift Waiting,,,
+124,Dead Money,DeadMoney.esm,MESG,DESC,0101025A,NVDLC01CasinoCompsHugeMessage,Complimentary Gift Waiting,Please redeem your voucher for a complimentary gift at any vending machine.,,,
+125,Dead Money,DeadMoney.esm,MESG,FULL,0100FFE6,NVDLC01TheaterVeraPartiturMsg,Message Title,Object Found,,,
+126,Dead Money,DeadMoney.esm,MESG,DESC,0100FFE6,NVDLC01TheaterVeraPartiturMsg,Object Found,A key slides out of Vera's Partitures.,,,
+127,Dead Money,DeadMoney.esm,MESG,FULL,0100FFE5,NVDLC01TheaterProjectorPlayMsg,Message Title,Sierra Madre's Theater Projector,,,
+128,Dead Money,DeadMoney.esm,MESG,DESC,0100FFE5,NVDLC01TheaterProjectorPlayMsg,Sierra Madre's Theater Projector,"Holotape Projectors can play Holotapes.
+
+What would you like to do?",,,
+129,Dead Money,DeadMoney.esm,MESG,ITXT,0100FFE5,NVDLC01TheaterProjectorPlayMsg,Button: Sierra Madre's Theater Projector,"Play Dean Domino's Holotape of ""I Saw Her Yesterday.""",,,
+130,Dead Money,DeadMoney.esm,MESG,ITXT,0100FFE5,NVDLC01TheaterProjectorPlayMsg,Button: Sierra Madre's Theater Projector,Leave the Holotape Projector alone.,,,
+131,Dead Money,DeadMoney.esm,MESG,FULL,0100FE2F,NVDLC01CasinoCompsMessage,Message Title,Complimentary Gift Waiting,,,
+132,Dead Money,DeadMoney.esm,MESG,DESC,0100FE2F,NVDLC01CasinoCompsMessage,Complimentary Gift Waiting,You have a complimentary gift waiting for you at the cashier.,,,
+133,Dead Money,DeadMoney.esm,MESG,FULL,0100F41E,NVDLC01LoadedMsg,Message Title,Dead Money Loaded,,,
+134,Dead Money,DeadMoney.esm,MESG,DESC,0100F41E,NVDLC01LoadedMsg,Dead Money Loaded,Dead Money has been loaded. Your level cap has been raised by 5.,,,
+135,Dead Money,DeadMoney.esm,MESG,DESC,0100F3FE,NVDLC01GenericRepairFailedMsg,NVDLC01GenericRepairFailedMsg,Your Repair skill is not high enough.,,,
+136,Dead Money,DeadMoney.esm,MESG,DESC,0100F3FD,NVDLC01GenericRepairSuccessfulMsg,NVDLC01GenericRepairSuccessfulMsg,Repair successful.,,,
+137,Dead Money,DeadMoney.esm,MESG,DESC,0100EFB8,NVDLC01ToxicCloudStopMsg,NVDLC01ToxicCloudStopMsg,You are no longer being poisoned by a toxic cloud.,,,
+138,Dead Money,DeadMoney.esm,MESG,DESC,0100EFB7,NVDLC01ToxicCloudStartMsg,NVDLC01ToxicCloudStartMsg,You are being poisoned by a toxic cloud.,,,
+139,Dead Money,DeadMoney.esm,MESG,FULL,0100ED4C,NVDLC01TheaterProjectorBlockMsg,Message Title,Sierra Madre's Theater Projector,,,
+140,Dead Money,DeadMoney.esm,MESG,DESC,0100ED4C,NVDLC01TheaterProjectorBlockMsg,Sierra Madre's Theater Projector,You don't have a Holotape that will play in this projector.,,,
+141,Dead Money,DeadMoney.esm,MESG,FULL,0100ED4B,NVDLC01TheaterRecorderMsg,Message Title,Sierra Madre's Theater Recorder,,,
+142,Dead Money,DeadMoney.esm,MESG,DESC,0100ED4B,NVDLC01TheaterRecorderMsg,Sierra Madre's Theater Recorder,"Holotape Recorders can edit Holotapes.
+
+What would you like to do?",,,
+143,Dead Money,DeadMoney.esm,MESG,ITXT,0100ED4B,NVDLC01TheaterRecorderMsg,Button: Sierra Madre's Theater Recorder,"Splice together the voice fragments ""Let,"" and ""Go,"" from Vera's recordings.",,,
+144,Dead Money,DeadMoney.esm,MESG,ITXT,0100ED4B,NVDLC01TheaterRecorderMsg,Button: Sierra Madre's Theater Recorder,Leave the Holotape Recorder alone.,,,
+145,Dead Money,DeadMoney.esm,MESG,FULL,0100ED4A,NVDLC01TheaterProjectorBlock02Msg,Message Title,Sierra Madre's Theater Projector,,,
+146,Dead Money,DeadMoney.esm,MESG,DESC,0100ED4A,NVDLC01TheaterProjectorBlock02Msg,Sierra Madre's Theater Projector,You don't have a Holotape that will play in this projector.,,,
+147,Dead Money,DeadMoney.esm,MESG,DESC,0100ECED,NVDLC01Gala02ElevatorStartMsg,NVDLC01Gala02ElevatorStartMsg,The panel next to the elevator has buttons to go either up or down.,,,
+148,Dead Money,DeadMoney.esm,MESG,ITXT,0100ECED,NVDLC01Gala02ElevatorStartMsg,Button: NVDLC01Gala02ElevatorStartMsg,Leave the elevator alone.,,,
+149,Dead Money,DeadMoney.esm,MESG,ITXT,0100ECED,NVDLC01Gala02ElevatorStartMsg,Button: NVDLC01Gala02ElevatorStartMsg,Push the Up button.,,,
+150,Dead Money,DeadMoney.esm,MESG,ITXT,0100ECED,NVDLC01Gala02ElevatorStartMsg,Button: NVDLC01Gala02ElevatorStartMsg,Go up with Christine.,,,
+151,Dead Money,DeadMoney.esm,MESG,ITXT,0100ECED,NVDLC01Gala02ElevatorStartMsg,Button: NVDLC01Gala02ElevatorStartMsg,Push the Down button.,,,
+152,Dead Money,DeadMoney.esm,MESG,ITXT,0100ECED,NVDLC01Gala02ElevatorStartMsg,Button: NVDLC01Gala02ElevatorStartMsg,Push the Down button.,,,
+153,Dead Money,DeadMoney.esm,MESG,DESC,0100ECEC,NVDLC01Gala02ChristineInPositionMsg,NVDLC01Gala02ChristineInPositionMsg,You decide it's best to leave Christine down in the manual override chamber.,,,
+154,Dead Money,DeadMoney.esm,MESG,DESC,0100ECEB,NVDLC01Gala02ElevatorDownMsg,NVDLC01Gala02ElevatorDownMsg,"The elevator descends to a small, cramped room filled with electrical controls. There's no room to move, and the air is filled with a high whirring noise from the machines not unlike an Auto-Doc saw. 
+
+It appears the power can be manually controlled from this location - although it looks like manual operation was only intended for emergencies, and the terminal upstairs could do it via remote provided it was unlocked.
+
+This knowledge in hand, you take the elevator back up to the Switching Station.",,,
+155,Dead Money,DeadMoney.esm,MESG,FULL,0100EB95,NVDLC01TableClosedMessage,Message Title,Sierra Madre Closed,,,
+156,Dead Money,DeadMoney.esm,MESG,DESC,0100EB95,NVDLC01TableClosedMessage,Sierra Madre Closed,"The Sierra Madre Casino is currently closed. Once power is restored to the casino, it looks as if gambling will re-open as well - with Hologram dealers monitoring the tables and machines.",,,
+157,Dead Money,DeadMoney.esm,MESG,FULL,0100E7CE,NVDLC01ElevatorUnlockedMsg,Message Title,Vault Elevator Unlocked,,,
+158,Dead Money,DeadMoney.esm,MESG,DESC,0100E7CE,NVDLC01ElevatorUnlockedMsg,Vault Elevator Unlocked,"The Vault Elevator unlocks its seals.
+
+The way down to the Sierra Madre's Vault is now open.",,,
+159,Dead Money,DeadMoney.esm,MESG,FULL,0100E7CD,NVDLC01ElevatorCodePassMsg,Message Title,Sierra Madre's Vault Security,,,
+160,Dead Money,DeadMoney.esm,MESG,DESC,0100E7CD,NVDLC01ElevatorCodePassMsg,Sierra Madre's Vault Security,"Welcome, Miss. Keyes.
+
+Please, speak for voice-recognition access.",,,
+161,Dead Money,DeadMoney.esm,MESG,ITXT,0100E7CD,NVDLC01ElevatorCodePassMsg,Button: Sierra Madre's Vault Security,Play the Starlet's voice from your Pip-Boy.,,,
+162,Dead Money,DeadMoney.esm,MESG,ITXT,0100E7CD,NVDLC01ElevatorCodePassMsg,Button: Sierra Madre's Vault Security,Leave the Vault Elevator alone.,,,
+163,Dead Money,DeadMoney.esm,MESG,DESC,0100E3DB,NVDLC01Gala02EboxPartsFixSuccessfulMsg,NVDLC01Gala02EboxPartsFixSuccessfulMsg,"Using the parts you've acquired, you are able to fix the circuit breaker and get power up and running again.",,,
+164,Dead Money,DeadMoney.esm,MESG,DESC,0100E3DA,NVDLC01Gala02EboxRepairSkillNeededMsg,NVDLC01Gala02EboxRepairSkillNeededMsg,Your Repair skill is not high enough to fix the circuit breaker.,,,
+165,Dead Money,DeadMoney.esm,MESG,DESC,0100E3D9,NVDLC01Gala02EboxRepairSuccessfulMsg,NVDLC01Gala02EboxRepairSuccessfulMsg,"After a few quick adjustments, the power comes back on.",,,
+166,Dead Money,DeadMoney.esm,MESG,DESC,0100E3D8,NVDLC01Gala02InitialDoorMsg,NVDLC01Gala02InitialDoorMsg,The door won't open. It doesn't look like there's any power running to it.,,,
+167,Dead Money,DeadMoney.esm,MESG,DESC,0100E3D7,NVDLC01Gala02EboxNotFixedMsg,NVDLC01Gala02EboxNotFixedMsg,"The circuit breaker looks to have been jury-rigged at some point in the past, but is currently in need of repair.",,,
+168,Dead Money,DeadMoney.esm,MESG,ITXT,0100E3D7,NVDLC01Gala02EboxNotFixedMsg,Button: NVDLC01Gala02EboxNotFixedMsg,Leave the circuit breaker alone.,,,
+169,Dead Money,DeadMoney.esm,MESG,ITXT,0100E3D7,NVDLC01Gala02EboxNotFixedMsg,Button: NVDLC01Gala02EboxNotFixedMsg,[Repair 60] Jury-rig the circuit breaker.,,,
+170,Dead Money,DeadMoney.esm,MESG,ITXT,0100E3D7,NVDLC01Gala02EboxNotFixedMsg,Button: NVDLC01Gala02EboxNotFixedMsg,[Items required] Fix the circuit breaker using parts.,,,
+171,Dead Money,DeadMoney.esm,MESG,DESC,0100E3D6,NVDLC01Gala02EboxFixedMsg,NVDLC01Gala02EboxFixedMsg,The circuit breaker is now in working condition.,,,
+172,Dead Money,DeadMoney.esm,MESG,DESC,0100E3D5,NVDLC01Gala02EboxPartsNeededMsg,NVDLC01Gala02EboxPartsNeededMsg,You need three Electric Box Fuses to fix the circuit breaker.,,,
+173,Dead Money,DeadMoney.esm,MESG,FULL,0100E208,NVDLC01SlotsMsg,Message Title,Sierra Madre Jackpot,,,
+174,Dead Money,DeadMoney.esm,MESG,DESC,0100E208,NVDLC01SlotsMsg,Sierra Madre Jackpot,"You have reached the jackpot limit, but feel free to explore the other services here at the Sierra Madre!",,,
+175,Dead Money,DeadMoney.esm,MESG,DESC,0100D4AB,NVDLC01MessagePerkElijahRamblings,NVDLC01MessagePerkElijahRamblings,You have received the Elijah's Ramblings perk.,,,
+176,Dead Money,DeadMoney.esm,MESG,DESC,0100D4AA,NVDLC01MessagePerkElijahLastWords,NVDLC01MessagePerkElijahLastWords,"Veronica has received the Elijah's Last Words perk.
+
+She has learned a secret Melee Weapon technique that increases her attack speed by 150%% and gives her a 25%% chance to knock down enemies.",,,
+177,Dead Money,DeadMoney.esm,MESG,DESC,0100BFC0,NVDLC01ElevatorGoneMsgTwo,NVDLC01ElevatorGoneMsgTwo,Elevator cannot be called down from The Vault.,,,
+178,Dead Money,DeadMoney.esm,MESG,DESC,0100BFBF,NVDLC01ElevatorGoneMsg,NVDLC01ElevatorGoneMsg,Elevator cannot be called down from The Vault.,,,
+179,Dead Money,DeadMoney.esm,MESG,FULL,0100AD8E,NVDLC01SuitesBrokenIntercomMsg,Message Title,Broken Intercom,,,
+180,Dead Money,DeadMoney.esm,MESG,DESC,0100AD8E,NVDLC01SuitesBrokenIntercomMsg,Broken Intercom,This intercom appears to have failed over time. It will only allow one-way communication from another intercom.,,,
+181,Dead Money,DeadMoney.esm,MESG,ITXT,0100AD8E,NVDLC01SuitesBrokenIntercomMsg,Button: Broken Intercom,Do Nothing.,,,
+182,Dead Money,DeadMoney.esm,MESG,DESC,0100A818,NVDLC01DoorTrapDetectMsg,NVDLC01DoorTrapDetectMsg,"As you begin to open the door, you notice a tripwire on the other side of the door.",,,
+183,Dead Money,DeadMoney.esm,MESG,ITXT,0100A818,NVDLC01DoorTrapDetectMsg,Button: NVDLC01DoorTrapDetectMsg,Close the door.,,,
+184,Dead Money,DeadMoney.esm,MESG,ITXT,0100A818,NVDLC01DoorTrapDetectMsg,Button: NVDLC01DoorTrapDetectMsg,Disarm the Trap.,,,
+185,Dead Money,DeadMoney.esm,MESG,FULL,0100A4F0,NVDLC01ClinicAutoDocMsg,Message Title,Auto-Doc,,,
+186,Dead Money,DeadMoney.esm,MESG,DESC,0100A4F0,NVDLC01ClinicAutoDocMsg,Auto-Doc,This unusual-looking Auto-Doc still has a series of diodes and buttons that appear to work.,,,
+187,Dead Money,DeadMoney.esm,MESG,ITXT,0100A4F0,NVDLC01ClinicAutoDocMsg,Button: Auto-Doc,Leave the Auto-Doc alone.,,,
+188,Dead Money,DeadMoney.esm,MESG,ITXT,0100A4F0,NVDLC01ClinicAutoDocMsg,Button: Auto-Doc,Heal all crippled limbs.,,,
+189,Dead Money,DeadMoney.esm,MESG,ITXT,0100A4F0,NVDLC01ClinicAutoDocMsg,Button: Auto-Doc,Inject adrenaline to cure exhaustion.,,,
+190,Dead Money,DeadMoney.esm,MESG,DESC,010091CB,NVDLC01BeepWarningStop,NVDLC01BeepWarningStop,Your collar has stopped beeping.,,,
+191,Dead Money,DeadMoney.esm,MESG,DESC,010091CA,NVDLC01CollarDeathBeepWarning,NVDLC01CollarDeathBeepWarning,"Your collar is emitting a slow, steady beeping.",,,
+192,Dead Money,DeadMoney.esm,MESG,DESC,01008A39,NVDLC01FollowerMessageDeadChristine,NVDLC01FollowerMessageDeadChristine,Christine has died.,,,
+193,Dead Money,DeadMoney.esm,MESG,DESC,01008A38,NVDLC01FollowerMessageLeaveChristine,NVDLC01FollowerMessageLeaveChristine,Christine has gone to the Villa Fountain.,,,
+194,Dead Money,DeadMoney.esm,MESG,DESC,01008A37,NVDLC01FollowerMessagePerkDeanRemove,NVDLC01FollowerMessagePerkDeanRemove,You have lost Dean's Unclean Living perk.,,,
+195,Dead Money,DeadMoney.esm,MESG,DESC,01008A36,NVDLC01FollowerMessagePerkChristineRemove,NVDLC01FollowerMessagePerkChristineRemove,You have lost Christine's Signal Interference perk.,,,
+196,Dead Money,DeadMoney.esm,MESG,DESC,01008A35,NVDLC01FollowerMessageLeaveDog,NVDLC01FollowerMessageLeaveDog,Dog has gone to the Villa Fountain.,,,
+197,Dead Money,DeadMoney.esm,MESG,DESC,01008A34,NVDLC01FollowerMessageLeaveDean,NVDLC01FollowerMessageLeaveDean,Dean has gone to the Villa Fountain.,,,
+198,Dead Money,DeadMoney.esm,MESG,DESC,01008A33,NVDLC01FollowerMessageDeadDog,NVDLC01FollowerMessageDeadDog,Dog has died.,,,
+199,Dead Money,DeadMoney.esm,MESG,DESC,01008A32,NVDLC01FollowerMessageDeadDean,NVDLC01FollowerMessageDeadDean,Dean has died.,,,
+200,Dead Money,DeadMoney.esm,MESG,DESC,01008A31,NVDLC01FollowerMessagePerkDeanAdd,NVDLC01FollowerMessagePerkDeanAdd,"Dean has given you the Unclean Living perk.
+
+This perk grants you a short period of time before taking damage inside a toxic cloud as well as reducing the amount of damage you take inside the toxic cloud by 25%%.",,,
+201,Dead Money,DeadMoney.esm,MESG,DESC,01008A30,NVDLC01FollowerMessagePerkChristineAdd,NVDLC01FollowerMessagePerkChristineAdd,"Christine has given you the Signal Interference perk.
+
+This perk grants you a short period of time near a speaker before your bomb collar starts to activate as well as increasing the amount of time before your bomb collar detonates by 50%%.",,,
+202,Dead Money,DeadMoney.esm,MESG,FULL,01006EC4,NVDLC01HologramEmitterEasyMsg,Message Title,Hologram Emitter,,,
+203,Dead Money,DeadMoney.esm,MESG,DESC,01006EC4,NVDLC01HologramEmitterEasyMsg,Hologram Emitter,This emitter controls a Security Hologram in this area. You may be able to disable the emitter. [Repair 25 or higher required],,,
+204,Dead Money,DeadMoney.esm,MESG,ITXT,01006EC4,NVDLC01HologramEmitterEasyMsg,Button: Hologram Emitter,Leave emitter alone.,,,
+205,Dead Money,DeadMoney.esm,MESG,ITXT,01006EC4,NVDLC01HologramEmitterEasyMsg,Button: Hologram Emitter,Disable emitter.,,,
+206,Dead Money,DeadMoney.esm,MESG,DESC,01006E97,NVDLC01CollarTestDistance,NVDLC01CollarTestDistance,Explosive collar set to distance-based trigger.,,,
+207,Dead Money,DeadMoney.esm,MESG,DESC,01006E96,NVDLC01CollarTestTime,NVDLC01CollarTestTime,Explosive collar set to timer-based trigger.,,,
+208,Dead Money,DeadMoney.esm,MESG,DESC,01006CAC,NVDLC01CollarBeepHalfwayWarning,NVDLC01CollarBeepHalfwayWarning,Your collar is beeping faster.,,,
+209,Dead Money,DeadMoney.esm,MESG,DESC,01006CA9,HVBeepWarningStop,HVBeepWarningStop,The collar has stopped beeping.,,,
+210,Dead Money,DeadMoney.esm,MESG,DESC,01006CA8,NVDLC01CollarBeepWarning,NVDLC01CollarBeepWarning,Your collar is emitting a high-pitched beeping noise.,,,
+211,Dead Money,DeadMoney.esm,MESG,DESC,0100684B,NVDLC01valveRepairMsg,NVDLC01valveRepairMsg,"This valve is in need of repair. 
+(Repair 25 or higher required)",,,
+212,Dead Money,DeadMoney.esm,MESG,ITXT,0100684B,NVDLC01valveRepairMsg,Button: NVDLC01valveRepairMsg,Leave the valve alone.,,,
+213,Dead Money,DeadMoney.esm,MESG,ITXT,0100684B,NVDLC01valveRepairMsg,Button: NVDLC01valveRepairMsg,Change the flow of gas through the pipe.,,,
+214,Dead Money,DeadMoney.esm,MESG,FULL,010062B2,NVDLC01DownloadMessage,Message Title,Sierra Madre Grand Opening!,,,
+215,Dead Money,DeadMoney.esm,MESG,DESC,010062B2,NVDLC01DownloadMessage,Sierra Madre Grand Opening!,Your Pip-Boy has picked up a radio broadcast inviting you to the grand opening of the Sierra Madre Casino!,,,
+216,Dead Money,DeadMoney.esm,MESG,FULL,01005236,NVDLC01ClinicChristinePanelMsg,Message Title,Auto-Doc,,,
+217,Dead Money,DeadMoney.esm,MESG,DESC,01005236,NVDLC01ClinicChristinePanelMsg,Auto-Doc,The nearby Auto-Doc emits a number of disturbing noises as it operates.,,,
+218,Dead Money,DeadMoney.esm,MESG,ITXT,01005236,NVDLC01ClinicChristinePanelMsg,Button: Auto-Doc,Leave the panel alone.,,,
+219,Dead Money,DeadMoney.esm,MESG,ITXT,01005236,NVDLC01ClinicChristinePanelMsg,Button: Auto-Doc,Disengage Auto-Doc operation.,,,

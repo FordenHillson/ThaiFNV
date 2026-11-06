@@ -1,0 +1,381 @@
+﻿ID,DLC,Plugin,RecordType,Subrecord,FormID,EditorID,ParentContext,EN,TH,Status,Notes
+1,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01014E52,NVDLC03ElijahYangtzeNote4,Note Title,Journal Entry - Day 4 - Addendum,,,
+2,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01014E52,NVDLC03ElijahYangtzeNote4,Journal Entry - Day 4 - Addendum,"While setting up the radios to monitor Dome and robots, thought I saw glint (scope?) from the building on other side of compound. 
+
+Should check it out, make sure I'm not being watched... might be that Courier? 
+
+Still, he would have come straight up rather than hiding. Instinct says it's someone else.",,,
+3,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01014E51,NVDLC03ElijahYangtzeNote3,Note Title,Journal Entry - Day 4,,,
+4,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01014E51,NVDLC03ElijahYangtzeNote3,Journal Entry - Day 4,"Day 4, still continuing research... found way to deactivate collar after some failures, just a few headless ghouls. It's been hard to go fishing in the camp without one of them trying to run the gate and their heads exploding. Damn collars, twitchy.
+
+...need to ration the Mentats, giving me migraines.",,,
+5,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01014E50,NVDLC03ElijahYangtzeNote2,Note Title,Journal Entry - Day 3,,,
+6,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01014E50,NVDLC03ElijahYangtzeNote2,Journal Entry - Day 3,"No sign of that Courier from before. He stays out of my way, I'll stay out of his. Been thinking about that ""Sierra Madre"" he mentioned... if he's right, I'd just need to find the casino radio frequency to track it down. Wouldn't need his help. If the working holograms and toxic gas are preserved there, might be easier to study them there with no robots to interfere. And those dispensers... might have use for those as well.",,,
+7,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01014E4F,NVDLC03ElijahYangtzeNote1,Note Title,Journal Entry - Day 2,,,
+8,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01014E4F,NVDLC03ElijahYangtzeNote1,Journal Entry - Day 2,"2nd day at Pre-War concentration camp. Kept China citizens here before war. Radiation turned them, had to keep them in camp with collars (explains why some of these ""slave collars"" exist, always wondered, some were clearly Pre-War tech). Researching the collar frequencies, touchy - circuit architecture is messy, de-constructing them taking time. Must be careful, can't be spotted by local robots, or insane brains from the Dome will try to haul me back there, then... research me.",,,
+9,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011965,NVDLC03TraumaHarnessNote2,Note Title,Y-17 Trauma Harness Action Items,,,
+10,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011965,NVDLC03TraumaHarnessNote2,Y-17 Trauma Harness Action Items,"Some issues still remain to be ironed out before the Y-17 Trauma Harness is ready for general production: calibrating the proper amount of injury to trigger the suit remains problematic. Still, the Little Yangtze subjects could hardly protest once inside the harness. If a home base is not designated, the suit enters an unpredictable wander state. And, as we discovered while calibrating injury levels, the suit's sensors are unable to recognize when the wearer is dead - luckily, autonomous corpse retrieval is nearly as useful as autonomous casualty recovery!",,,
+11,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0101634C,NVDLC03X13VRNote,Note Title,VR Simulation Note,,,
+12,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0101634C,NVDLC03X13VRNote,VR Simulation Note,"With my dying breath, I write that I hate the VR Simulation so much! It has killed us. Now, I will kill it.",,,
+13,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0101634B,NVDLC03HQBuddyCentralIntelligenceNOTE,Note Title,Sink Project: Central Intelligence Unit,,,
+14,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0101634B,NVDLC03HQBuddyCentralIntelligenceNOTE,Sink Project: Central Intelligence Unit,"This holotape contains the functionality profile for the Sink robotic assistant: ""Central Intelligence Unit.""",,,
+15,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01016050,NVDLC03YangtzeNote3,Note Title,Little Yangtze Log #03,,,
+16,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01016050,NVDLC03YangtzeNote3,Little Yangtze Log #03,"Another escape attempt last night. We rounded them all up and processed the escapees, but these little bastards are determined. We've got triple shifts on the camp around the clock, and the extra hours are eating up morale. Commandant says he's put in a requisition to use the camp as a field test for the new ""total pacification collars"" the scientists have been working on. Maybe then I can get some goddamn sleep.",,,
+17,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0101604F,NVDLC03YangtzeNote2,Note Title,Little Yangtze Log #02,,,
+18,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0101604F,NVDLC03YangtzeNote2,Little Yangtze Log #02,"One of the prisoners who speaks a little English - I guess he's become the unofficial spokesman - came to the commandant's office today screaming about hungry ghosts snatching his people up in the night. The commandant told him to give up the ignorant superstitions of a bygone era and had him thrown in the cooler for three weeks. Me, I've seen some of the new robots they're developing here, and I gotta wonder where they get the brains from.",,,
+19,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0101604E,NVDLC03YangtzeNote1,Note Title,Little Yangtze Log #01,,,
+20,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0101604E,NVDLC03YangtzeNote1,Little Yangtze Log #01,"The government shipped in the first batch of dissidents today. Three whole trainloads of Communist infiltrators. Half of them don't even speak English, so we had to show them where to go with our nightsticks. They got the point eventually. The docs are already talking about ""research subjects."" Guess that'll help advance the war effort.",,,
+21,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0101604D,NVDLC03TraumaHarnessNote,Note Title,Y-17 Trauma Harness Testing Results,,,
+22,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0101604D,NVDLC03TraumaHarnessNote,Y-17 Trauma Harness Testing Results,"The Y-17 Trauma Harness has succeeded beyond our wildest expectations! The test harnesses were able to take over the motor functions of an injured subject and ""walk"" them back to home base.
+
+We'll have to see what develops once it's recorded enough neuro-auto-muscular movements to display a wider range of behaviors... to think, if they could be programmed to replicate a wearer's shooting or fighting reflexes, we'd have something truly amazing for the war effort!",,,
+23,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01015CC9,NVDLC03X8CyberdogGunNote03,Note Title,K9000 Cyberdog Gun Sealed in X-12,,,
+24,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01015CC9,NVDLC03X8CyberdogGunNote03,K9000 Cyberdog Gun Sealed in X-12,"We've had another unfortunate occurrence. While attempting to destroy Mr. Harris's Trauma Harness, the disaster control team member carrying the gun slipped and fell, dropping the weapon. Unarmed, the team had to flee and seal off the lab. Unfortunately, your K9000 Cyberdog Gun Prototype was sealed inside X-12.
+
+-Barb",,,
+25,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01015CC8,NVDLC03X8CyberdogGunNote02,Note Title,Assistance Granted,,,
+26,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01015CC8,NVDLC03X8CyberdogGunNote02,Assistance Granted,"I'm sending over the K9000 Cyberdog Gun. It should do the trick. Let me know if you have any operational questions.
+
+-Adam",,,
+27,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010158F8,NVDLC03TerminalHolograml01Note,Note Title,Requisition Order: Holograms,,,
+28,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010158F8,NVDLC03TerminalHolograml01Note,Requisition Order: Holograms,"If it wasn't for Sinclair's request, this hologram project would've been canned long ago. In addition to the dispenser tech he wants for the Sierra Madre, he spoke to the Big MT execs about using the holograms for defense (?), that's something N.E. would have to sign off on; I can't even imagine the cost to turn the holograms into something beyond walking cameras and greeters. And why would you? It's only been a little while, and I already hate spending my time with these ghosts walking around the plant. Rather see the research money spent on actually improving the field of view sensors or adding upgrades to the emitters.",,,
+29,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010158F7,NVDLC03TerminalHolograml02Note,Note Title,Vera Keyes: Hologram Progress Report,,,
+30,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010158F7,NVDLC03TerminalHolograml02Note,Vera Keyes: Hologram Progress Report,"Spending a lot of hours getting the Vera Keyes hologram looking right. I'm a physicist, not a sculptor - iterating on her facial features and her dress to match Sinclair's expectations... it's about enough to make me file a complaint. I don't get the sense Sinclair's doing this out of love or well, lust.
+
+Somewhere along the line, he became cold about the whole matter, as if crafting the hologram ""just right"" was something he hated.",,,
+31,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010158F6,NVDLC03TerminalYO01Note,Note Title,Requisition Order: Dispensers,,,
+32,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010158F6,NVDLC03TerminalYO01Note,Requisition Order: Dispensers,"We finished up the design for the dispensers for the Sierra Madre villa as requested. That big-wig Sinclair went to the Big MT execs; he wanted emergency dispensers for his sheltered Villa in case war broke out and they needed to care for the survivors there. He's done everything he can to isolate the community and tighten security, now he just needs to guarantee a food supply and be able to ration out resources in the event of nuclear holocaust. I hear he even narrowed the streets so cars couldn't come inside town, let alone come up to the Villa.",,,
+33,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010158F5,NVDLC03TerminalYO02Note,Note Title,Dispenser Funding Update,,,
+34,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010158F5,NVDLC03TerminalYO02Note,Dispenser Funding Update,"Got the funding from Sinclair. Near as I can tell, he's willing to not only bankrupt himself for these devices, he's struck a deal with the Big MT executives, letting the Villa become a lab for the supposedly-harmless prototype tech here. I've seen the Big MT execs do this with other isolated towns (Hopeville Meteorological research up north), and the whole process, it's not what I signed up for.",,,
+35,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010158F4,NVDLC03TerminalY17Note,Note Title,Sierra Madre: Test Case?,,,
+36,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010158F4,NVDLC03TerminalY17Note,Sierra Madre: Test Case?,"I heard one of the execs mention that whether Sinclair knew it or not, the Sierra Madre would be a ""test case"" for the Auto-Doc and the Innovative Toxins research. Maybe they were joking, but even that kind of a joke sends a chill down my spine... if I got poisoned by one of those toxins, no way would I crawl inside one of the Y-17 Auto-Docs here if my life depended on it. The medical tech for those trauma suits alone makes me wish they'd erase their research - the suits do more thinking than the people inside them.",,,
+37,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010158F3,NVDLC03TerminalChemicalNote,Note Title,Requisition Order: Chemical Suits,,,
+38,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010158F3,NVDLC03TerminalChemicalNote,Requisition Order: Chemical Suits,"Got word today there was a chemical leak at the Sierra Madre, Sinclair was on the phone to ask for more help from the Think Tank Execs, so they're sending him the prototype chemical suits to protect the Villa workers. Looks like they're following up an experiment with another experiment? The whole process creeps me out, and the way they're monitoring the Sierra Madre Villa and examining the ""results"" - I don't think Sinclair even knows what he's really paid for. To be guineas like the Little Yangtze Chinese... maybe it'd be merciful if war did break out, put an end to this chain of horrors.",,,
+39,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01015617,NVDLC03HQUpgradeMainComputerK9ModMentatChowNOTE,Note Title,"Main Computer Upgrade: K9000 Mod ""Mentat Chow""",,,
+40,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01015617,NVDLC03HQUpgradeMainComputerK9ModMentatChowNOTE,"Main Computer Upgrade: K9000 Mod ""Mentat Chow""","This holotape contains an upgrade file for the Sink robotic assistant: ""Central Intelligence Unit.""",,,
+41,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01015616,NVDLC03HQUpgradeMainComputerLAERModPrismNOTE,Note Title,"Main Computer Upgrade: LAER Mod ""Prismatic Lens""",,,
+42,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01015616,NVDLC03HQUpgradeMainComputerLAERModPrismNOTE,"Main Computer Upgrade: LAER Mod ""Prismatic Lens""","This holotape contains an upgrade file for the Sink robotic assistant: ""Central Intelligence Unit.""",,,
+43,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01015615,NVDLC03HQUpgradeMainComputerLAERModAuxClipNOTE,Note Title,"Main Computer Upgrade: LAER Mod ""Auxiliary Recharger Chip""",,,
+44,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01015615,NVDLC03HQUpgradeMainComputerLAERModAuxClipNOTE,"Main Computer Upgrade: LAER Mod ""Auxiliary Recharger Chip""","This holotape contains an upgrade file for the Sink robotic assistant: ""Central Intelligence Unit.""",,,
+45,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01015614,NVDLC03HQUpgradeMainComputerK9ModReslaRoilNOTE,Note Title,"Main Computer Upgrade: K9000 Mod ""Resla Roil""",,,
+46,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01015614,NVDLC03HQUpgradeMainComputerK9ModReslaRoilNOTE,"Main Computer Upgrade: K9000 Mod ""Resla Roil""","This holotape contains an upgrade file for the Sink robotic assistant: ""Central Intelligence Unit.""",,,
+47,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010155C8,NVDLC03ElijahSignalHillsPage,Note Title,Torn Journal Page,,,
+48,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010155C8,NVDLC03ElijahSignalHillsPage,Torn Journal Page,"Set up camp here after Yangtze attack. Too exposed here. Transmitter's vulnerable, hacked it, set up remote link so can access it any time. Need to find spot closer to north train tunnel with clear broadcast LOS to here. Canyons are too dangerous, can't go back to Yangtze - there is that weather station NW that drew that Courier here, but going there sounds like trouble. For now, going to scout the Waste Disposal site, then around the perimeter of that Securitron Plant, see if I can find a more defensible position.",,,
+49,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010155C7,NVDLC03ElijahWatchJournal,Note Title,Elijah's Watch Journal,,,
+50,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010155C7,NVDLC03ElijahWatchJournal,Elijah's Watch Journal,"This camp's better than the one I set up on top of Signal Hills roof, clear broadcast line to its radio tower and good vantage point on North Tunnel. Set up a turret perimeter and transmitter, should be able to control the trains via remote to escape before any robots come. The broken Securitrons make a good defense line, apparently brains in center Dome can't control them like they do the others.
+
+No sign of Courier - or that woman. Turns out I was right at the Yangtze Camp, I was being watched there, probably Brotherhood assassin out to ""sentence"" me. She got hers, though. After the robot attack, saw her get hauled away to the SE by medical robots... probably joined the Lobotomite ranks here, don't have to worry about her anymore.",,,
+51,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01014F87,NVDLC03X13VRTestFWRENote,Note Title,FW: RE: VR Test,,,
+52,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01014F87,NVDLC03X13VRTestFWRENote,FW: RE: VR Test,"The VR Sim is corrupted?! Dammit! Sounds like there's a bug in the software somewhere. I hope to God it doesn't screw with the suit's systems. I just got the firmware updated for Mori over the weekend. For now, let's just tell Calis we're having ""power issues"" and focus on the REPCONN tests until we get the suit ready for real-world tests.
+
+-Kael
+p.s. Delete this message ASAP. I don't want Calis harassing me over this.",,,
+53,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01014F86,NVDLC03X13VRTestKudosNote,Note Title,VR Test Kudos,,,
+54,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01014F86,NVDLC03X13VRTestKudosNote,VR Test Kudos,"Kudos for the bean pod addition for the VR Sim. I like the Jack and the Beanstalk reference, buddy! I hope Calis doesn't throw a fit. Watch your back with that guy. He's always been more than a bit wound up about simple stuff. I had to move my Battle Brew setup over to X-12's storage room after he threw a prohibitionist fit about it to the Leads.
+
+-Mori",,,
+55,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01014B86,NVDLC03X13SonicEmitterFieldNote,Note Title,Sonic Emitter Data,,,
+56,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01014B86,NVDLC03X13SonicEmitterFieldNote,Sonic Emitter Data,"Attached to this message is the data I collected regarding the EM Pulse Wave Module's effect on our force field emitters. I'm sending the prototype weapon your way for testing. Please forward this on to Ohlen as soon as you can determine how we might shield our emitters from this weapon's EMP effect.
+
+-Dr. Calis",,,
+57,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01014B80,NVDLC03X8CyberdogGunNote,Note Title,Request for Assistance,,,
+58,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01014B80,NVDLC03X8CyberdogGunNote,Request for Assistance,"We've had a small issue with one of our Y-17 Trauma Harnesses. Sadly, a member of the X-12 research team choked on a buffalo gourd seed and died while working late last night. For some reason his Y-17 Trauma Harness will not shutdown. In fact, it has begun malfunctioning and causing the late Mr. Harris to attack other employees. Do you have any prototypes you could lend us as a means to stop it?
+
+-Barb",,,
+59,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01014AB3,NVDLC03X8Test2SonicEmitterNote,Note Title,X-8 Test 2 Sonic Emitter Note,,,
+60,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01014AB3,NVDLC03X8Test2SonicEmitterNote,X-8 Test 2 Sonic Emitter Note,"A Sonic Emitter is required to complete this test. If you were not provided with a Sonic Emitter or have misplaced the one provided to you, please contact your Big MT host to receive one before entering the testing area.
+Addendum:  Due to staffing cutbacks, a new Sonic Emitter can now be received at The Sink Central Intelligence Unit.",,,
+61,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01014749,NVDLC03ChristineUlysses02HolotapeNote,Note Title,Patient Log: Y-17.9,,,
+62,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01014748,NVDLC03ChristineUlysses01HolotapeNote,Note Title,Patient Log: Y-17.5,,,
+63,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01014747,NVDLC03ChristineMedicalCenterHolotapeNote,Note Title,Patient Log: Y-17.0,,,
+64,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010142CA,NVDLC03SchematicsFIDONote,Note Title,Schematics - K9000 FIDO,,,
+65,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010142CA,NVDLC03SchematicsFIDONote,Schematics - K9000 FIDO,Schematics for upgrading the K9000 Cyberdog Brain Gun with a particularly aggressive and loyal cybernetic dog brain in a feisty red biogel suspension.,,,
+66,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010141FF,NVDLC03X42EmergencyNote01,NVDLC03X42EmergencyNote01,"Per instructions from the higher ups after that *one* time the Giant Robo-Scorpion's attack routine malfunctioned, we've installed an emergency shutdown procedure. Let's hope we never have to use it - the prototype's systems will all be fried, and we won't be up and running again for weeks. The military's expecting delivery of a battle-ready model within six months, and the project has already had enough delays.",,,
+67,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010141FE,NVDLC03X42PowerNote01,NVDLC03X42PowerNote01,"The new atomic laser is putting an incredible strain on the Giant Robo-Scorpion's generator - damn thing shut down right in the middle of weapons testing last week.
+
+I pushed for reducing the laser's output by 25%, instead they slapped a backup generator onto the Scorpion. Dangerous, if you ask me. The systems weren't designed to handle the power from two systems at once, and if some rookie tech fires up the backup generator too early, well...",,,
+68,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0101418D,NVDLC03HazmatNote,Note Title,Hazmat Pod Security Code,,,
+69,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0101418D,NVDLC03HazmatNote,Hazmat Pod Security Code,Unlock Code: 646F6E7470616E6963,,,
+70,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01013EB8,NVDLC03X13TestAreaANote,Note Title,Test Area A - Review,,,
+71,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01013EB8,NVDLC03X13TestAreaANote,Test Area A - Review,"Chayanov had me run through the first part of the facility to test the tripwires and proximity mines the other day and the suit kept chafing. Mori says some new firmware updates fixed the suit's fitment sync ability, but I'm not so sure. The legs kept binding up on me and the torso was ridiculously tight. Maybe I should stop lifting Fancy Lads from Slough's stashes.",,,
+72,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01013D7E,NVDLC03HQUpgradeAutoDocCosmeticNOTE,Note Title,Auto-Doc Upgrade: Cosmetic Enhancements,,,
+73,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01013D7E,NVDLC03HQUpgradeAutoDocCosmeticNOTE,Auto-Doc Upgrade: Cosmetic Enhancements,"This holotape contains an upgrade file for the Sink robotic assistant: ""Auto-Doc.""",,,
+74,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012C78,NVDLC03X13TestObservationsNote,Note Title,Independent Research,,,
+75,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012C78,NVDLC03X13TestObservationsNote,Independent Research,I've been watching Mendoza stumble through the various X-13 tests and noticed a critical flaw in the tripwire emitter design. A skilled scientist or someone with advanced electronics repair knowledge could crack the casings and hack their IFF circuit to ignore the current test subject. I'll see if I can reinforce the casings after the leads visit the facility this week.,,,
+76,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012BA5,NVDLC03X13SuitBootsNote,Note Title,Mk II Boot Research,,,
+77,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012BA5,NVDLC03X13SuitBootsNote,Mk II Boot Research,"Researcher Kael's breakthrough with the Suit's software has led me to a breakthrough of my own. By adding an advanced servo buffer to the existing leg rigs, I've been able to increase the resolution of data sent to and from the central control module. Once these babies are hooked up to the torso, an agent should be able to limbo under barriers almost as fast as they can run!",,,
+78,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012BA4,NVDLC03X13SuitArmsNote,Note Title,Mk II Glove Research,,,
+79,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012BA4,NVDLC03X13SuitArmsNote,Mk II Glove Research,"I've been working with Mori on fitting the gloves to the torso and come up with a few improvements which should greatly enhance the user's manual dexterity. I adapted Redding's new rubberized dampening compound and applied it to the palms and other high-wear surfaces. Once the suit adjusts to the user, the benefits of these upgrades should be obvious.",,,
+80,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012BA3,NVDLC03X13SuitTorsoNote,Note Title,Mk II Torso Research,,,
+81,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012BA3,NVDLC03X13SuitTorsoNote,Mk II Torso Research,"I've uploaded Kael's latest firmware update to the suit. I think Kael has outdone herself this time. Self-updating firmware is an ingenious addition to this system. As we upgrade the suit, it'll automatically adapt the new systems to the user's specifications during testing and unlock the features as they come online. This will save hundreds of hours of fiddling with settings.
+
+Note to self - Make Kael a keg of my infamous 'Battle Brew.'",,,
+82,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012BA2,NVDLC03X13WTHNote,Note Title,What the hell...?!,,,
+83,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012BA2,NVDLC03X13WTHNote,What the hell...?!,"What the hell is his damn problem?! All I was doing was reading the latest issue of La Fantoma!, and that grouch, Calis, called me an asshat. What the hell is an asshat, anyway? Funny, ha ha, my last name is Butz. That got old in grade school, the snobby bastard. Sorry, just needed to vent.
+
+-Butz",,,
+84,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012BA1,NVDLC03X13GetOffYourButtNote,Note Title,"Get off your butt, Butz!",,,
+85,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012BA1,NVDLC03X13GetOffYourButtNote,"Get off your butt, Butz!","This is the last time I'm going to warn you, Butz. I can see that comic book poking up out of your field manual. You don't fool me, asshat. Next time I catch you slacking, I'm writing a disciplinary notice and you can spend your free time polishing emitter arrays.
+
+-Dr. Calis",,,
+86,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012BA0,NVDLC03X13ReslaRoilNote,Note Title,Check out this mod I've been working on!,,,
+87,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012BA0,NVDLC03X13ReslaRoilNote,Check out this mod I've been working on!,"Hey buddy! I've been helping the guys over in X-8 test out this new toy they've been building. Get this, it's a gun that uses a dog's brain to track targets! They asked me to play around with their gun trigger code, and I came up with this mod. Next time you're over there, would you give it a shot? Calis has me swamped setting X-13 up for the coming visit by the leads and he wants the turrets in place so we don't fail the new security requirements.
+
+Thanks!",,,
+88,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012B9F,NVDLC03X13SecurityLockDownReplyNote,Note Title,RE: X-13 Shipment Notice,,,
+89,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012B9F,NVDLC03X13SecurityLockDownReplyNote,RE: X-13 Shipment Notice,"Everything is under control down here. If I need your assistance, I'll let you know. Paris will be along shortly to retrieve the shipment.
+
+-Dr. Calis",,,
+90,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012B9E,NVDLC03X13SecurityLockDownNote,Note Title,X-13 Shipment Notice,,,
+91,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012B9E,NVDLC03X13SecurityLockDownNote,X-13 Shipment Notice,"Your shipment of cattle prods arrived today. I'd like to remind you our systems are designed to prevent infiltration by enemy agents, not internal threats. If you're doing any testing on creatures, please forward that task to the animal testing facility. As you found with the Sonic Emitter, our force fields can't handle power fluctuations well.
+
+-Cpt. Hamm
+Base Security",,,
+92,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012B9D,NVDLC03X13SuggestionNote,Note Title,Suggestion.,,,
+93,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012B9D,NVDLC03X13SuggestionNote,Suggestion.,"I've noticed your work has taken a dive lately. This seems to have coincided with a marked weight gain over the past few months. I've developed an implant which has been proven to increase performance while reducing weight in lab animals. Granted, we haven't run it through any human test trials yet, but I'm sure it is perfectly safe. Also, please refrain from snacking in the lab. If you smudge another camera, I'm banning all food from the facility.
+
+-Dr. Calis",,,
+94,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012B9C,NVDLC03X13SubjectObservations1Note,Note Title,Test Subject Observations,,,
+95,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012B9C,NVDLC03X13SubjectObservations1Note,Test Subject Observations,"I've noticed some of the creatures have been increasingly aggressive when I come into the lab in the morning. Did something change in their diet? I'll run some tests if you like.
+
+-Asst. Paris",,,
+96,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012B9B,NVDLC03X13SubjectObservations2Note,Note Title,Test Subject Observations,,,
+97,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012B9B,NVDLC03X13SubjectObservations2Note,Test Subject Observations,"I went ahead and did the lab test and noticed no appreciable changes in their blood work. I'm concerned our use of the cattle prods may react with the chemistry of the injections. This is new ground we're treading. I'd hate to see your hard work lost to a change in brain chemistry. These critters could be invaluable to the war effort if we can somehow control their behavior.
+
+-Asst. Paris",,,
+98,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012B9A,NVDLC03X13SubjectObservations2bNote,Note Title,RE: RE: RE: Test Subject Observations,,,
+99,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012B9A,NVDLC03X13SubjectObservations2bNote,RE: RE: RE: Test Subject Observations,"Why the hell do you keep sending me these messages? You work right across the damn ramp from me. Walk your ass over here and say what you need to say. Stop wasting my time with these incessant messages!
+
+-Dr. Calis",,,
+100,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012B99,NVDLC03X13K9ModNote,Note Title,Independent Research,,,
+101,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012B99,NVDLC03X13K9ModNote,Independent Research,"While Slough is busy stuffing his face and trying to find new places to hide his junk food from Calis, I've decided to experiment with a mod from one of the techs over in X-8. I may not have been able to afford a doctorate like those eggheads upstairs, but I've been programming since I was in diapers. I found a ton of redundancies and exponential loop failures those halfwits must have missed. My fixes should speed up the refire rate of that K9 weapon they've been working on. Maybe if I leave it on one of their desks it'll actually get implemented. Lord knows they wouldn't take me seriously if I tried to take credit.",,,
+102,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012B98,NVDLC03X13SubjectObservations1bNote,Note Title,Test Subject Observations,,,
+103,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012B98,NVDLC03X13SubjectObservations1bNote,Test Subject Observations,"Yes, yes. Run the tests, if it'll keep you out of my way. I'm going back down to the cages to see if a nudge from a prod will trigger their abilities. The other project leads will be stopping by in a few days and we must be able to show them progress!
+
+-Dr. Calis",,,
+104,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012A0D,NVDLC03X8Experiment01Note,Note Title,Dog and Robot Splicing Experiment Holotape,,,
+105,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012A0D,NVDLC03X8Experiment01Note,Dog and Robot Splicing Experiment Holotape,This holotape contains dog and robot splicing data that can be used at the X-8 Bio-Mechanical Splicing Terminal.,,,
+106,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012A0C,NVDLC03X8Experiment03Note,Note Title,Robot and Nightstalker Splicing Experiment Holotape,,,
+107,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012A0C,NVDLC03X8Experiment03Note,Robot and Nightstalker Splicing Experiment Holotape,This holotape contains robot and Nightstalker splicing data that can be used at the X-8 Bio-Mechanical Splicing Terminal.,,,
+108,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01012A0B,NVDLC03X8Experiment02Note,Note Title,Dog and Lobotomite Splicing Experiment Holotape,,,
+109,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01012A0B,NVDLC03X8Experiment02Note,Dog and Lobotomite Splicing Experiment Holotape,This holotape contains dog and Lobotomite splicing data that can be used at the X-8 Bio-Mechanical Splicing Terminal.,,,
+110,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010124A9,NVDLC03x8GuardTestExpNote,Note Title,Residential Cyberdog Guard Test,,,
+111,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010124A9,NVDLC03x8GuardTestExpNote,Residential Cyberdog Guard Test,The parameters for this test are currently incomplete. Beware of dog.,,,
+112,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010124A8,NVDLC03X8DataRetrievalAdvanceExpNote,Note Title,Data Retrieval,,,
+113,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010124A8,NVDLC03X8DataRetrievalAdvanceExpNote,Data Retrieval,"For this test, you must use any means necessary to retrieve three student files from an average high school. Utilize the Field Disrupter Capacitance Module for the Sonic Emitter to better navigate the area. Protectrons and basic security protocols have been activated.
+
+Success - Retrieve three student files.
+
+Failure - Security measures prohibit you from retrieving the files.",,,
+114,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010124A7,NVDLC03X8DataRetrievalExpNote,Note Title,Data Retrieval,,,
+115,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010124A7,NVDLC03X8DataRetrievalExpNote,Data Retrieval,"For this test, you must use any means necessary to retrieve three student files from an average high school. Basic security protocols have been activated.
+
+Success - Retrieve three student files.
+
+Failure - Security measures prohibit you from retrieving the files.",,,
+116,Old World Blues,OldWorldBlues.esm,NOTE,FULL,010122E7,NVDLC03HQUpgradeLight02MoodNOTE,Note Title,"Light Switch 02 Upgrade: ""Mood Lights""",,,
+117,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,010122E7,NVDLC03HQUpgradeLight02MoodNOTE,"Light Switch 02 Upgrade: ""Mood Lights""","This holotape contains an upgrade file for the Sink robotic assistant: ""Light Switch 02.""",,,
+118,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FC9,NVDLC03RecipeSkillBookUnarmedNOTE,Note Title,Recipes - Unarmed Skill Book,,,
+119,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FC9,NVDLC03RecipeSkillBookUnarmedNOTE,Recipes - Unarmed Skill Book,This holotape contains a Workbench recipe that allows you to make a Unarmed Skill Book.,,,
+120,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FC8,NVDLC03RecipeSkillBookSurvivalNOTE,Note Title,Recipes - Survival Skill Book,,,
+121,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FC8,NVDLC03RecipeSkillBookSurvivalNOTE,Recipes - Survival Skill Book,This holotape contains a Workbench recipe that allows you to make a Survival Skill Book.,,,
+122,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FC7,NVDLC03RecipeSkillBookSpeechNOTE,Note Title,Recipes - Speech Skill Book,,,
+123,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FC7,NVDLC03RecipeSkillBookSpeechNOTE,Recipes - Speech Skill Book,This holotape contains a Workbench recipe that allows you to make a Speech Skill Book.,,,
+124,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FC6,NVDLC03RecipeSkillBookSneakNOTE,Note Title,Recipes - Sneak Skill Book,,,
+125,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FC6,NVDLC03RecipeSkillBookSneakNOTE,Recipes - Sneak Skill Book,This holotape contains a Workbench recipe that allows you to make a Sneak Skill Book.,,,
+126,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FC5,NVDLC03RecipeSkillBookScienceNOTE,Note Title,Recipes - Science Skill Book,,,
+127,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FC5,NVDLC03RecipeSkillBookScienceNOTE,Recipes - Science Skill Book,This holotape contains a Workbench recipe that allows you to make a Science Skill Book.,,,
+128,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FC4,NVDLC03RecipeSkillBookRepairNOTE,Note Title,Recipes - Repair Skill Book,,,
+129,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FC4,NVDLC03RecipeSkillBookRepairNOTE,Recipes - Repair Skill Book,This holotape contains a Workbench recipe that allows you to make a Repair Skill Book.,,,
+130,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FC3,NVDLC03RecipeSkillBookMeleeWeapNOTE,Note Title,Recipes - Melee Weapons Skill Book,,,
+131,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FC3,NVDLC03RecipeSkillBookMeleeWeapNOTE,Recipes - Melee Weapons Skill Book,This holotape contains a Workbench recipe that allows you to make a Melee Weapons Skill Book.,,,
+132,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FC2,NVDLC03RecipeSkillBookMedicineNOTE,Note Title,Recipes - Medicine Skill Book,,,
+133,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FC2,NVDLC03RecipeSkillBookMedicineNOTE,Recipes - Medicine Skill Book,This holotape contains a Workbench recipe that allows you to make a Medicine Skill Book.,,,
+134,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FC1,NVDLC03RecipeSkillBookLockpickingNOTE,Note Title,Recipes - Lockpick Skill Book,,,
+135,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FC1,NVDLC03RecipeSkillBookLockpickingNOTE,Recipes - Lockpick Skill Book,This holotape contains a Workbench recipe that allows you to make a Lockpick Skill Book.,,,
+136,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FC0,NVDLC03RecipeSkillBookGunsNOTE,Note Title,Recipes - Guns Skill Book,,,
+137,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FC0,NVDLC03RecipeSkillBookGunsNOTE,Recipes - Guns Skill Book,This holotape contains a Workbench recipe that allows you to make a Guns Skill Book.,,,
+138,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FBF,NVDLC03RecipeSkillBookExplosivesNOTE,Note Title,Recipes - Explosives Skill Book,,,
+139,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FBF,NVDLC03RecipeSkillBookExplosivesNOTE,Recipes - Explosives Skill Book,This holotape contains a Workbench recipe that allows you to make an Explosives Skill Book.,,,
+140,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FBE,NVDLC03RecipeSkillBookEnergyWeapNOTE,Note Title,Recipes - Energy Weapons Skill Book,,,
+141,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FBE,NVDLC03RecipeSkillBookEnergyWeapNOTE,Recipes - Energy Weapons Skill Book,This holotape contains a Workbench recipe that allows you to make an Energy Weapons Skill Book.,,,
+142,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FB3,NVDLC03RecipeSkillBookBarterNOTE,Note Title,Recipes - Barter Skill Book,,,
+143,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FB3,NVDLC03RecipeSkillBookBarterNOTE,Recipes - Barter Skill Book,This holotape contains a Workbench recipe that allows you to make a Barter Skill Book.,,,
+144,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FB1,NVDLC03HQUpgradeMuggyPartsProductionNOTE,Note Title,"""Muggy"" Upgrade: Parts Production",,,
+145,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FB1,NVDLC03HQUpgradeMuggyPartsProductionNOTE,"""Muggy"" Upgrade: Parts Production","This holotape contains an upgrade file for the Sink robotic assistant: ""Muggy.""",,,
+146,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FAF,NVDLC03HQUpgradeLight01SmartNOTE,Note Title,"Light Switch 01 Upgrade: ""Smart Lights""",,,
+147,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FAF,NVDLC03HQUpgradeLight01SmartNOTE,"Light Switch 01 Upgrade: ""Smart Lights""","This holotape contains an upgrade file for the Sink robotic assistant: ""Light Switch 01.""",,,
+148,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FAA,NVDLC03HQUpgradeSinkWaterNOTE,Note Title,Sink Upgrade: Water Production,,,
+149,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FAA,NVDLC03HQUpgradeSinkWaterNOTE,Sink Upgrade: Water Production,"This holotape contains an upgrade file for the Sink robotic assistant: ""Sink.""",,,
+150,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FA9,NVDLC03HQUpgradeBookChuteMulchingNOTE,Note Title,Book Chute Upgrade: Mulching,,,
+151,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FA9,NVDLC03HQUpgradeBookChuteMulchingNOTE,Book Chute Upgrade: Mulching,"This holotape contains an upgrade file for the Sink robotic assistant: ""Book Chute.""",,,
+152,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FA5,NVDLC03HQUpgradeAutoDocY7NOTE,Note Title,Auto-Doc Upgrade: Implant Y-7,,,
+153,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FA5,NVDLC03HQUpgradeAutoDocY7NOTE,Auto-Doc Upgrade: Implant Y-7,"This holotape contains an upgrade file for the Sink robotic assistant: ""Auto-Doc.""",,,
+154,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FA4,NVDLC03HQUpgradeAutoDocY3NOTE,Note Title,Auto-Doc Upgrade: Implant Y-3,,,
+155,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FA4,NVDLC03HQUpgradeAutoDocY3NOTE,Auto-Doc Upgrade: Implant Y-3,"This holotape contains an upgrade file for the Sink robotic assistant: ""Auto-Doc.""",,,
+156,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FA3,NVDLC03HQUpgradeAutoDocM5NOTE,Note Title,Auto-Doc Upgrade: Implant M-5,,,
+157,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FA3,NVDLC03HQUpgradeAutoDocM5NOTE,Auto-Doc Upgrade: Implant M-5,"This holotape contains an upgrade file for the Sink robotic assistant: ""Auto-Doc.""",,,
+158,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FA2,NVDLC03HQUpgradeAutoDocC13NOTE,Note Title,Auto-Doc Upgrade: Implant C-13,,,
+159,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FA2,NVDLC03HQUpgradeAutoDocC13NOTE,Auto-Doc Upgrade: Implant C-13,"This holotape contains an upgrade file for the Sink robotic assistant: ""Auto-Doc.""",,,
+160,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FA1,NVDLC03HQUpgradeAutoDocBarberNOTE,Note Title,Auto-Doc Upgrade: Hair Styling Enhancements,,,
+161,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FA1,NVDLC03HQUpgradeAutoDocBarberNOTE,Auto-Doc Upgrade: Hair Styling Enhancements,"This holotape contains an upgrade file for the Sink robotic assistant: ""Auto-Doc.""",,,
+162,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011FA0,NVDLC03HQBuddyMuggyNOTE,Note Title,Sink Project: Muggy,,,
+163,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011FA0,NVDLC03HQBuddyMuggyNOTE,Sink Project: Muggy,"This holotape contains the functionality profile for the Sink robotic assistant: ""Muggy.""",,,
+164,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011F9F,NVDLC03HQBuddyLightSwitch02NOTE,Note Title,Sink Project: Light Switch 02,,,
+165,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011F9F,NVDLC03HQBuddyLightSwitch02NOTE,Sink Project: Light Switch 02,"This holotape contains the functionality profile for the Sink robotic assistant: ""Light Switch 02.""",,,
+166,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011F9E,NVDLC03HQBuddyLightSwitch01NOTE,Note Title,Sink Project: Light Switch 01,,,
+167,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011F9E,NVDLC03HQBuddyLightSwitch01NOTE,Sink Project: Light Switch 01,"This holotape contains the functionality profile for the Sink robotic assistant: ""Light Switch 01.""",,,
+168,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011F9D,NVDLC03HQBuddySinkNOTE,Note Title,Sink Project: Sink,,,
+169,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011F9D,NVDLC03HQBuddySinkNOTE,Sink Project: Sink,"This holotape contains the functionality profile for the Sink robotic assistant: ""Sink.""",,,
+170,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011F9C,NVDLC03HQBuddyToasterNOTE,Note Title,Sink Project: Toaster,,,
+171,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011F9C,NVDLC03HQBuddyToasterNOTE,Sink Project: Toaster,"This holotape contains the functionality profile for the Sink robotic assistant: ""Toaster.""",,,
+172,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011F99,NVDLC03HQBuddyBookChuteNOTE,Note Title,Sink Project: Book Chute,,,
+173,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011F99,NVDLC03HQBuddyBookChuteNOTE,Sink Project: Book Chute,"This holotape contains the functionality profile for the Sink robotic assistant: ""Book Chute.""",,,
+174,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011F98,NVDLC03HQBuddyJukeboxNOTE,Note Title,Sink Project: Jukebox,,,
+175,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011F98,NVDLC03HQBuddyJukeboxNOTE,Sink Project: Jukebox,"This holotape contains the functionality profile for the Sink robotic assistant: ""Jukebox.""",,,
+176,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011F97,NVDLC03HQBuddyAutoDocNOTE,Note Title,Sink Project: Auto-Doc,,,
+177,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011F97,NVDLC03HQBuddyAutoDocNOTE,Sink Project: Auto-Doc,"This holotape contains the functionality profile for the Sink robotic assistant: ""Auto-Doc.""",,,
+178,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011F96,NVDLC03HQBuddyBiologyNOTE,Note Title,Sink Project: Biological Research Station,,,
+179,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011F96,NVDLC03HQBuddyBiologyNOTE,Sink Project: Biological Research Station,"This holotape contains the functionality profile for the Sink robotic assistant: ""Biological Research Station.""",,,
+180,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011F95,NVDLC03SonicGunTarantulaNOTE,Note Title,Audio Sample - Giant Tarantula,,,
+181,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011F95,NVDLC03SonicGunTarantulaNOTE,Audio Sample - Giant Tarantula,"This holotape contains an audio sample entitled, ""Giant Tarantula Attack."" It can be used to modify the Sonic Emitter weapon at the Sink's Jukebox.",,,
+182,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011F94,NVDLC03SonicGunRoboScorpionNOTE,Note Title,Audio Sample - Mobius' Robo-Scorpion,,,
+183,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011F94,NVDLC03SonicGunRoboScorpionNOTE,Audio Sample - Mobius' Robo-Scorpion,This holotape contains an audio sample from Mobius' Giant Robo-Scorpion. It can be used to modify the Sonic Emitter weapon at the Sink's Jukebox.,,,
+184,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011F93,NVDLC03SonicGunOperaSingerNOTE,Note Title,Audio Sample - Opera Singer,,,
+185,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011F93,NVDLC03SonicGunOperaSingerNOTE,Audio Sample - Opera Singer,"This holotape contains an audio sample entitled, ""Opera Singer."" It can be used to modify the Sonic Emitter weapon at the Sink's Jukebox.",,,
+186,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011F92,NVDLC03SonicGunGabrielsBarkNOTE,Note Title,Audio Sample - Gabriel's Bark,,,
+187,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011F92,NVDLC03SonicGunGabrielsBarkNOTE,Audio Sample - Gabriel's Bark,This holotape contains a audio sample of Gabriel's Bark. It can be used to modify the Sonic Emitter weapon at the Sink's Jukebox.,,,
+188,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011277,NVDLC03X13NightstalkerResearchNote,Note Title,Nightstalker DNA Manipulation,,,
+189,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011277,NVDLC03X13NightstalkerResearchNote,Nightstalker DNA Manipulation,"I believe this latest serum has proven to be a success. Under human observation, the creatures remain visible, but some of the nighttime recordings reveal the serum is working. The animals appear to be learning how to use their new cloaking ability when no one is around. Perhaps there is a physical limitation or some mental drawback to the ability, which prevents its usage under duress. I think I will pursue stress testing of the animals first thing Monday morning.",,,
+190,Old World Blues,OldWorldBlues.esm,NOTE,FULL,01011263,NVDLC03X8ShippingMemo4,Note Title,Shipping Department in Lockdown,,,
+191,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,01011263,NVDLC03X8ShippingMemo4,Shipping Department in Lockdown,"In our last supervisor meeting, we discussed the possible benefits of the small shipping accident. We are considering studying the unexpected specimen's behavior by releasing them into our test area before removing them from the X-8 facility. The shipping department will remain in lockdown until a decision has been reached.
+
+Dr. Adam Figgis, MD PhD DVM DDM DD, Test Supervisor",,,
+192,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100F996,NVDLC03X42ShutdownTerminalPassword,Note Title,Emergency Shutdown Terminal Password,,,
+193,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100F996,NVDLC03X42ShutdownTerminalPassword,Emergency Shutdown Terminal Password,"Einstein-3.14
+
+It'll take weeks to get the prototype functional if we ever have to initiate the emergency shutdown procedure, but it's better than destroying the thing outright (at least until we get the 17 other prototypes we've requested).",,,
+194,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100F7F6,NVDLC03X13InfiltrationReplayNote,Note Title,Basic Infiltration,,,
+195,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100F7F6,NVDLC03X13InfiltrationReplayNote,Basic Infiltration,"For this test, you must steal a document in the Administrator's office without being detected by the patrolling robots. A successful run will award an item in the Supply Cabinet.
+
+Success - Reach the Administrator's office and steal the document, without being detected.
+
+Failure - Detection.",,,
+196,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100F7F5,NVDLC03X13InfiltrationAdvReplayNote,Note Title,Advanced Infiltration,,,
+197,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100F7F5,NVDLC03X13InfiltrationAdvReplayNote,Advanced Infiltration,"For this test, you must sneak to, and steal, a document in the Administrator's office without being detected by the patrolling robots. Laser tripwires have been added for increased difficulty. A successful run will award an item in the Supply Cabinet.
+
+Success - Reach the Administrator's office and steal the document, without being detected.
+
+Failure - Detection.",,,
+198,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100F7F4,NVDLC03X13InfiltrationExpReplayNote,Note Title,Expert Infiltration,,,
+199,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100F7F4,NVDLC03X13InfiltrationExpReplayNote,Expert Infiltration,"For this test, you must steal a document in the Administrator's office without being detected by the patrolling robots. Laser tripwires and proximity detectors have been activated for increased difficulty. A successful run will award an item in the Supply Cabinet.
+
+Success - Reach the Administrator's office and steal the document, without being detected.
+
+Failure - Detection.",,,
+200,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100F7F3,NVDLC03X13RobotComplianceReplayNote,Note Title,Robot Compliance,,,
+201,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100F7F3,NVDLC03X13RobotComplianceReplayNote,Robot Compliance,"For this test, you must disable all active robots without being detected. All security measures are active. A successful run will award an item in the Supply Cabinet.
+
+Success - Disable all robots without being detected.
+
+Failure - Detection.",,,
+202,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100F449,NVDLC03X42PowerNote02,NVDLC03X42PowerNote02,"WARNING: Maximizing power output at this stage can potentially damage or destroy the prototype.
+
+Are you sure you wish to proceed?",,,
+203,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100F422,NVDLC03X13InfiltrationAdvNote,Note Title,Advanced Infiltration,,,
+204,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100F422,NVDLC03X13InfiltrationAdvNote,Advanced Infiltration,"For this test, you must sneak to, and steal, a document from the Administrator's office without being detected by the patrolling robots. Laser tripwires have been added for increased difficulty. A successful run will automatically update the suit's software and award an item in the Supply Cabinet.
+
+Success - Reach the Administrator's office and steal the document, without being detected.
+
+Failure - Detection.",,,
+205,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100F421,NVDLC03X13InfiltrationExpNote,Note Title,Expert Infiltration,,,
+206,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100F421,NVDLC03X13InfiltrationExpNote,Expert Infiltration,"For this test, you must steal a document in the Administrator's office without being detected by the patrolling robots. Laser tripwires and proximity detectors have been activated for increased difficulty. A successful run will automatically update the suit's software and award an item in the Supply Cabinet.
+
+Success - Reach the Administrator's office and steal the document, without being detected.
+
+Failure - Detection.",,,
+207,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100F03D,NVDLC03X42DroneNote02,Note Title,Target Drone Effectiveness,,,
+208,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100F03D,NVDLC03X42DroneNote02,Target Drone Effectiveness,"The constant improvements to the Giant Robo-Scorpion has rendered the Protectron models we've been using as ""hostile Communist forces"" largely ineffective. At this stage, they're little more than distractions.",,,
+209,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100F02A,NVDLC03X42DroneNote01,Note Title,Giant Robo-Scorpion Test Log,,,
+210,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100F02A,NVDLC03X42DroneNote01,Giant Robo-Scorpion Test Log,"The Saturnite armor plating on the Giant Robo-Scorpion has exceeded expectations - mostly. While it's virtually impervious to small arms fire, the Sonic Emitter that Parsons brought in managed to fry several of the prototype's subsystems. We'll have to look into improved EMP shielding for the next prototype.
+
+On a more positive note, the prototype's new atomic laser is performing admirably. Some residual radiation is left behind after the weapon discharges, it may be necessary to requisition more radiation suits and meds as a precaution.",,,
+211,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100E721,NVDLC03X13NoSuitTerminalMsg,Note Title,No Suit Detected!,,,
+212,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100E721,NVDLC03X13NoSuitTerminalMsg,No Suit Detected!,"To activate this terminal, please equip the Stealth Suit Mk II.",,,
+213,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100E57A,NVDLC03X8GraveRobbers,Note Title,Project: Burke and Project: Hare - PLEASE READ,,,
+214,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100E57A,NVDLC03X8GraveRobbers,Project: Burke and Project: Hare - PLEASE READ,"Yes, Project: Burke involves what some less science-minded individuals might call ""grave robbing."" Yes, we're forced into this due to budget cuts. No, none of senior staff uses the bodies for anything else. Finally, in regards to the rumor that Project: Hare engages in liquidation operations against non-military targets to procure research subjects, I will not dignify them with a response. Any other questions?
+
+Dr. Adam Figgis, MD PhD DVM DDM DD, Test Supervisor",,,
+215,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100E246,NVDLC03X8FieldGunNote,Note Title,Field Gun Prototype on Loan,,,
+216,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100E246,NVDLC03X8FieldGunNote,Field Gun Prototype on Loan,"The X-13 Facility has loaned us their EM Pulse Wave Module prototype for the Sonic Emitter for use in our Data Retrieval Test simulations. The Module allows the Sonic Emitter to disable certain force fields. DO NOT allow test subjects to leave the X-8 facility with this Module! Even though it won't work outside Big MT, it's a security nightmare. Thank you all for your attention in this matter.
+
+Dr. Adam Figgis, MD PhD DVM DDM DD, Test Supervisor",,,
+217,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100E245,NVDLC03X8ShippingMemo3,Note Title,Shipping Department in Lockdown,,,
+218,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100E245,NVDLC03X8ShippingMemo3,Shipping Department in Lockdown,"In light of the large number of fatalities due to the latest shipment of experimental test subjects, the shipping department is going into lockdown. I give you my personal assurance that as soon as this plague of monsters has been dealt with, I will work overtime to get your deliveries to you in a timely and efficient manner. As I am currently the only surviving member of the shipping department, however, there may still be some delays. Until then, Dr. Calis in X-13 has the passcard for the area.
+
+Skippy, Sole Survivor",,,
+219,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100E244,NVDLC03X8ShippingMemo2,Note Title,Re: Please Advise,,,
+220,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100E244,NVDLC03X8ShippingMemo2,Re: Please Advise,"So, at Dr. Richardson's request, we opened one of those kennels from our latest shipment. The ""dog"" inside (and I use that term very loosely) appeared to be suffering from a truly horrendous case of mange, and upon being released it immediately attacked, killed, and attempted to swallow whole Specialist Akers. Luckily, the situation has, for now at least, contained itself, as SPC Akers was a very large man and the creature has choked to death.
+
+Does anyone know anything about this shipment? Please Advise.",,,
+221,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100E243,NVDLC03X8SubjectInfo,Note Title,X-8 Test Subject Information,,,
+222,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100E243,NVDLC03X8SubjectInfo,X-8 Test Subject Information,"In this test, YOU will take on the role of one of those evil Commies, infiltrating an institution of HONEST AMERICAN LEARNING. (Don't worry, Citizen, it's just for pretend!) Your objective is to steal documents that a REAL dirty Commie traitor (which you're not) could use to BRAINWASH OUR CHILDREN (which you wouldn't do). This test will help us to protect our children's fragile minds from the agents of INTERNATIONAL COMMUNISM! Agents like YOU!
+
+Just kidding! We know you're a loyal American! AREN'T YOU?",,,
+223,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100E242,NVDLC03X8ShippingMemo1,Note Title,Please Advise,,,
+224,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100E242,NVDLC03X8ShippingMemo1,Please Advise,"Dr. Richardson,
+
+We've just received the latest shipment of dogs for the Cyberdog experiment process, but... well, frankly, I think our supplier screwed us. The animals must be basically feral - every time we get close to the shipping kennels they let out with the most Godawful hissing and... well, rattling is the only way I can describe it. Please advise - should we open the kennels or just send them back?",,,
+225,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100E241,NVDLC03X8InternalMemo02,Note Title,Residential Cyberdog Test Off-Limits!,,,
+226,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100E241,NVDLC03X8InternalMemo02,Residential Cyberdog Test Off-Limits!,"Until further notice, please do not enter the Residential Cyberdog Test area, or conduct any experiments using it. The Cyberdogs are still being programmed, and any disturbance could have dramatic influence on their progress. Restricting access in this fashion should also help to avoid any repeats of Incident: PLAYTIME, settlements for which are coming directly out of our budget.
+
+Dr. Gail Richardson, PhD, Test Engineer, X-8 Cyberdog Project",,,
+227,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100E240,NVDLC03X8InternalMemo01,Note Title,X-8 Institutional Data Retrieval Test,,,
+228,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100E240,NVDLC03X8InternalMemo01,X-8 Institutional Data Retrieval Test,"Subjects will be informed that we are gauging the effectiveness of Communist infiltration of American schools. They won't know about the Cyberdogs until they actually begin the testing process.
+
+1) TEST A engages Cyberdog protection protocols alongside standard automated turret systems.
+2) TEST B adds Protectrons to the previous test. TEST B also includes some basic tests for the Field Disrupter Capacitance Module.",,,
+229,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100E173,NVDLC03X8SplicingRules,Note Title,Bio-Mechanical Splicing Rules,,,
+230,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100E173,NVDLC03X8SplicingRules,Bio-Mechanical Splicing Rules,"1) Due to recent government-mandated cutbacks to our funding, only THREE experiments may be performed per day.
+2) We do not have infinite kennel space here in X-8! Only ONE Cyberdog beyond those needed for the testing process may be created.
+3) Clear any and all debris from the platform before conducting any splicing experiments. 
+4) Experiments are NOT allowed outside the X-8 Facility.
+5) Finally, Security must be disabled before experiments can be run.",,,
+231,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100DD4A,NVDLC03X8SchoolSchedule,Note Title,Cherie O' Bannon's After-School Schedule,,,
+232,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100DD4A,NVDLC03X8SchoolSchedule,Cherie O' Bannon's After-School Schedule,"Cherie O'Bannon's After-School Schedule
+
+Ballet: Tuesday and Thursday  4:30 - 6:30
+Pep Squad: Wednesday 4:15 - 5:15
+Tutoring Center Volunteer: Monday 4:15 - 6:00",,,
+233,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100DD49,NVDLC03X8SchoolGrades,Note Title,Midterm Grade Report: Richie Marcus,,,
+234,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100DD49,NVDLC03X8SchoolGrades,Midterm Grade Report: Richie Marcus,"Midterm Grade Report:  Richie ""Ball-Lover"" Marcus
+
+English   F-
+Math      F-
+Science   F--
+History   F-",,,
+235,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100DD48,NVDLC03X8SchoolRecord,Note Title,Betsy Bright's Disciplinary Record,,,
+236,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100DD48,NVDLC03X8SchoolRecord,Betsy Bright's Disciplinary Record,"Betsy Bright's Disciplinary Record
+
+Unexcused Absences 7
+Disruptive Behavior  3
+Smoking on School Property 11",,,
+237,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100DBA4,NVDLC03X13FieldGunNote,Note Title,Sonic Emitter Notice,,,
+238,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100DBA4,NVDLC03X13FieldGunNote,Sonic Emitter Notice,"We've successfully created a capacitance module capable of emitting a focused electromagnetic pulse from a Sonic Emitter. While the physical impact is rather weak, Jenkins fired the weapon at a force field and it fried the field's emitter array. Upon further study, we've found the gun only affects a small range of frequencies. Unfortunately, the frequency of our force fields fall within this range. The gun was sent to X-8 for further study.
+
+-Dr. Calis",,,
+239,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100CC21,NVDLC03X8TestTerminalNote01,NVDLC03X8TestTerminalNote01,"While programming the new residential Cyberdog model to retrieve objects thrown by human beings for purpose of enjoyment, I accidentally used an audio sample recording of its bark as the object to be fetched. The Cyberdog has now become attached to the sample, and displayed signs of aggressive tendencies when I attempted to recover it. I have left it in the Residential Reconstruction Area until it is needed. I believe the Cyberdog has buried it.
+
+Dr. Gail Richardson, PhD, Test Engineer, X-8 Cyberdog Project",,,
+240,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100C895,NVDLC03X13InfiltrationNote,Note Title,Basic Infiltration,,,
+241,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100C895,NVDLC03X13InfiltrationNote,Basic Infiltration,"For this test, you must steal a document in the Administrator's office without being detected by the patrolling robots. A successful run will automatically update the suit's software and award an item in the Supply Cabinet.
+
+Success - Reach the Administrator's office and steal the document, without being detected.
+
+Failure - Detection.",,,
+242,Old World Blues,OldWorldBlues.esm,NOTE,FULL,0100C894,NVDLC03X13RobotComplianceNote,Note Title,Robot Compliance,,,
+243,Old World Blues,OldWorldBlues.esm,NOTE,TNAM,0100C894,NVDLC03X13RobotComplianceNote,Robot Compliance,"For this test, you must disable all active robots without being detected. We need to calibrate the suit's FCG (Field Compliance Generator) to the proper variance. All security measures are active. A successful run will award an item in the Supply Cabinet.
+
+Success - Disable all robots without being detected.
+
+Failure - Detection.",,,

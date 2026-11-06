@@ -1,0 +1,194 @@
+﻿ID,DLC,Plugin,RecordType,Subrecord,FormID,EditorID,ParentContext,EN,TH,Status,Notes
+1,Honest Hearts,HonestHearts.esm,MESG,FULL,01011800,NVDLC02SideQuestWarningMSG,Message Title,No Going Back!,,,
+2,Honest Hearts,HonestHearts.esm,MESG,DESC,01011800,NVDLC02SideQuestWarningMSG,No Going Back!,"Whether you decide whether the Sorrows should fight or flee, your decision will set their destiny irrevocably in motion. You will be unable to finish any remaining quests in Zion once you make your decision, so choose wisely.",,,
+3,Honest Hearts,HonestHearts.esm,MESG,FULL,010117E9,NVDLC02MQ05TunnelMSG,Message Title,Collapsing the Tunnel,,,
+4,Honest Hearts,HonestHearts.esm,MESG,DESC,010117E9,NVDLC02MQ05TunnelMSG,Collapsing the Tunnel,Daniel has given you a detonator that is set to detonate the C4 placed above the mouth of the Pine Creek Tunnel. Firing this detonator will collapse the passage and prevent any White Legs from following Daniel and the Sorrows out of Zion.,,,
+5,Honest Hearts,HonestHearts.esm,MESG,FULL,010117D4,NVDLC02MQ03cMSG,Message Title,Explosives are Always Handy,,,
+6,Honest Hearts,HonestHearts.esm,MESG,DESC,010117D4,NVDLC02MQ03cMSG,Explosives are Always Handy,"Daniel has given you some Pre-War mining explosives and a special detonator for them. They aren't useful as weapons, but could be used to collapse certain caves, if that proves necessary in your exploration.",,,
+7,Honest Hearts,HonestHearts.esm,MESG,DESC,01011690,NVDLC02SnowGlobeMsg,NVDLC02SnowGlobeMsg,This snowglobe has been added to the collection at the Lucky 38.,,,
+8,Honest Hearts,HonestHearts.esm,MESG,DESC,01011206,NVDLC02BlackCoffeeCupBreakMSG,NVDLC02BlackCoffeeCupBreakMSG,Black Coffee cup broke,,,
+9,Honest Hearts,HonestHearts.esm,MESG,FULL,01011203,NVDLC02NoWaitMsg,Message Title,Warning!,,,
+10,Honest Hearts,HonestHearts.esm,MESG,DESC,01011203,NVDLC02NoWaitMsg,Warning!,Waiting will cause you to miss important events - your mission will fail.,,,
+11,Honest Hearts,HonestHearts.esm,MESG,FULL,01010EA8,NVDLC02WhiteLegKeyMessage,Message Title,You Found a Key!,,,
+12,Honest Hearts,HonestHearts.esm,MESG,DESC,01010EA8,NVDLC02WhiteLegKeyMessage,You Found a Key!,You found the key to the White Legs' prison!,,,
+13,Honest Hearts,HonestHearts.esm,MESG,FULL,01010D9B,NVDLC02CaravanDeathMessage,Message Title,"Caravaneer's Dead, Baby!",,,
+14,Honest Hearts,HonestHearts.esm,MESG,DESC,01010D9B,NVDLC02CaravanDeathMessage,"Caravaneer's Dead, Baby!","You've killed a member of the Happy Trails Caravan! Without their maps and mountaineering expertise, you'll never make it to Zion!
+
+(Becoming an enemy of the Happy Trails caravan has rendered the Honest Hearts DLC inacessible. Please reload your last save if you wish to play Honest Hearts.)",,,
+15,Honest Hearts,HonestHearts.esm,MESG,FULL,01010D75,NVDLC02BrokenCompassNoQuestMsg,Message Title,Broken Compass,,,
+16,Honest Hearts,HonestHearts.esm,MESG,DESC,01010D75,NVDLC02BrokenCompassNoQuestMsg,Broken Compass,This compass is broken.,,,
+17,Honest Hearts,HonestHearts.esm,MESG,FULL,01010D74,NVDLC02MedicalKitNoQuestMessage,Message Title,Contaminated Medical Supply Kit,,,
+18,Honest Hearts,HonestHearts.esm,MESG,DESC,01010D74,NVDLC02MedicalKitNoQuestMessage,Contaminated Medical Supply Kit,"This medical supply kit is mostly intact, but several of the sterile bandages have been broken open and the disinfectant bottle is leaking.",,,
+19,Honest Hearts,HonestHearts.esm,MESG,DESC,01010C05,NVDLC02WakingCloudDeadMsg,NVDLC02WakingCloudDeadMsg,Waking Cloud has died.,,,
+20,Honest Hearts,HonestHearts.esm,MESG,DESC,01010C04,NVDLC02FollowsChalkDeadMsg,NVDLC02FollowsChalkDeadMsg,Follows-Chalk has died.,,,
+21,Honest Hearts,HonestHearts.esm,MESG,DESC,01010BEC,NVDLC02MQ05cDetonatorMSG,NVDLC02MQ05cDetonatorMSG,You must be outside the cave to safely detonate the mining explosives.,,,
+22,Honest Hearts,HonestHearts.esm,MESG,DESC,010108C0,NVDLC02CampfireNoActivateMSG,NVDLC02CampfireNoActivateMSG,You cannot use the campfire while in combat.,,,
+23,Honest Hearts,HonestHearts.esm,MESG,FULL,010108A7,NVDLC02MQ02MedKitRepairMessage,Message Title,How to Fix Stuff,,,
+24,Honest Hearts,HonestHearts.esm,MESG,DESC,010108A7,NVDLC02MQ02MedKitRepairMessage,How to Fix Stuff,"If you don't have the parts or the skills to make repairs in the field, you can take the medical kit to a workbench and fix it there.",,,
+25,Honest Hearts,HonestHearts.esm,MESG,DESC,010108A6,NVDLC02MQ03cC4Message,NVDLC02MQ03cC4Message,You need some mining explosives to arm this bomb.,,,
+26,Honest Hearts,HonestHearts.esm,MESG,DESC,010101B6,NVDLC02NoCaravanMsg,NVDLC02NoCaravanMsg,You need to travel with the Happy Trails Caravan on your first journey to Zion Valley.,,,
+27,Honest Hearts,HonestHearts.esm,MESG,DESC,01010074,NVDLC02BighornerDead09,NVDLC02BighornerDead09,Mountain Bighorners Killed 9/9,,,
+28,Honest Hearts,HonestHearts.esm,MESG,DESC,01010073,NVDLC02BighornerDead08,NVDLC02BighornerDead08,Mountain Bighorners Killed 8/9,,,
+29,Honest Hearts,HonestHearts.esm,MESG,DESC,01010072,NVDLC02BighornerCalfScaredMsg,NVDLC02BighornerCalfScaredMsg,"The Mountain Bighorner Calf is scared, feed it a Banana Yucca Fruit?",,,
+30,Honest Hearts,HonestHearts.esm,MESG,ITXT,01010072,NVDLC02BighornerCalfScaredMsg,Button: NVDLC02BighornerCalfScaredMsg,Leave it alone.,,,
+31,Honest Hearts,HonestHearts.esm,MESG,ITXT,01010072,NVDLC02BighornerCalfScaredMsg,Button: NVDLC02BighornerCalfScaredMsg,Feed it a Banana Yucca Fruit.,,,
+32,Honest Hearts,HonestHearts.esm,MESG,DESC,01010071,NVDLC02BighornerDead07,NVDLC02BighornerDead07,Mountain Bighorners Killed 7/9,,,
+33,Honest Hearts,HonestHearts.esm,MESG,DESC,01010070,NVDLC02BighornerDead06,NVDLC02BighornerDead06,Mountain Bighorners Killed 6/9,,,
+34,Honest Hearts,HonestHearts.esm,MESG,DESC,0101006F,NVDLC02BighornerDead05,NVDLC02BighornerDead05,Mountain Bighorners Killed 5/9,,,
+35,Honest Hearts,HonestHearts.esm,MESG,DESC,0101006E,NVDLC02BighornerDead04,NVDLC02BighornerDead04,Mountain Bighorners Killed 4/9,,,
+36,Honest Hearts,HonestHearts.esm,MESG,DESC,0101006D,NVDLC02BighornerDead03,NVDLC02BighornerDead03,Mountain Bighorners Killed 3/9,,,
+37,Honest Hearts,HonestHearts.esm,MESG,DESC,0101006C,NVDLC02BighornerDead02,NVDLC02BighornerDead02,Mountain Bighorners Killed 2/9,,,
+38,Honest Hearts,HonestHearts.esm,MESG,DESC,0101006B,NVDLC02BighornerDead01,NVDLC02BighornerDead01,Mountain Bighorners Killed 1/9,,,
+39,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F907,NVDLC02JoshuaGrahamLeaveMsgDUPLICATE000,NVDLC02JoshuaGrahamLeaveMsgDUPLICATE000,Joshua Graham has left your company.,,,
+40,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F906,NVDLC02JoshuaGrahamPerkAddMsgFirstDUPLICATE000,NVDLC02JoshuaGrahamPerkAddMsgFirstDUPLICATE000,"Joshua Graham has given you the Way of the Canaanite perk.
+
+While Joshua Graham is in your party, any .45 caliber auto pistol you use has less spread and is twice as likely to score critical hits.",,,
+41,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F905,NVDLC02JoshuaGrahamPerkRemoveMsgDUPLICATE000,NVDLC02JoshuaGrahamPerkRemoveMsgDUPLICATE000,You have lost Joshua Graham's Way of the Canaanite perk.,,,
+42,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F8C1,NVDLC02JoshuaGrahamPerkRemoveMsg,NVDLC02JoshuaGrahamPerkRemoveMsg,You have lost Joshua Graham's Way of the Canaanite perk.,,,
+43,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F8C0,NVDLC02JoshuaGrahamLeaveMsg,NVDLC02JoshuaGrahamLeaveMsg,Joshua Graham has left your company.,,,
+44,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F8BF,NVDLC02JoshuaGrahamPerkAddMsgFirst,NVDLC02JoshuaGrahamPerkAddMsgFirst,"Joshua Graham has given you the Way of the Canaanite perk.
+
+While Joshua Graham is in your party, any .45 caliber auto pistol you use has less spread and is twice as likely to score critical hits.",,,
+45,Honest Hearts,HonestHearts.esm,MESG,FULL,0100F701,NVDLC02MedicalKitTakeMessage,Message Title,Salvaging Medical Kits,,,
+46,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F701,NVDLC02MedicalKitTakeMessage,Salvaging Medical Kits,"If you don't have the parts or the skills to make repairs in the field, you can take the contaminated medical supply kit to a campfire and salvage it there.",,,
+47,Honest Hearts,HonestHearts.esm,MESG,FULL,0100F700,NVDLC02MedicalKitBoozeMessage,Message Title,Contaminated Medical Supply Kit,,,
+48,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F700,NVDLC02MedicalKitBoozeMessage,Contaminated Medical Supply Kit,"With some high-proof alcohol, you could sterilize the kit rather than replace components.
+
+[Requires one Scotch, one Vodka, or one Whiskey.]",,,
+49,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F700,NVDLC02MedicalKitBoozeMessage,Button: Contaminated Medical Supply Kit,Leave it alone.,,,
+50,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F700,NVDLC02MedicalKitBoozeMessage,Button: Contaminated Medical Supply Kit,Replace the contaminated components.,,,
+51,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F700,NVDLC02MedicalKitBoozeMessage,Button: Contaminated Medical Supply Kit,Sterilize the kit with alcohol.,,,
+52,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F700,NVDLC02MedicalKitBoozeMessage,Button: Contaminated Medical Supply Kit,Salvage without replacements.,,,
+53,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F700,NVDLC02MedicalKitBoozeMessage,Button: Contaminated Medical Supply Kit,Take the incomplete medical kit with you.,,,
+54,Honest Hearts,HonestHearts.esm,MESG,FULL,0100F6FF,NVDLC02MedicalKitPartsMessage,Message Title,Contaminated Medical Supply Kit,,,
+55,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F6FF,NVDLC02MedicalKitPartsMessage,Contaminated Medical Supply Kit,"By finding replacements for the contaminated components of the kit, you can get it up to working order much more easily. 
+[Requires one Duct Tape and one Turpentine]",,,
+56,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F6FF,NVDLC02MedicalKitPartsMessage,Button: Contaminated Medical Supply Kit,Leave it alone.,,,
+57,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F6FF,NVDLC02MedicalKitPartsMessage,Button: Contaminated Medical Supply Kit,Replace components.,,,
+58,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F6FF,NVDLC02MedicalKitPartsMessage,Button: Contaminated Medical Supply Kit,Sterilize the kit with alcohol.,,,
+59,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F6FF,NVDLC02MedicalKitPartsMessage,Button: Contaminated Medical Supply Kit,Salvage without replacements.,,,
+60,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F6FF,NVDLC02MedicalKitPartsMessage,Button: Contaminated Medical Supply Kit,Take the incomplete medical kit with you.,,,
+61,Honest Hearts,HonestHearts.esm,MESG,FULL,0100F6FD,NVDLC02MedicalKitMessage,Message Title,Contaminated Medical Supply Kit,,,
+62,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F6FD,NVDLC02MedicalKitMessage,Contaminated Medical Supply Kit,"This medical supply kit is mostly intact, but several of the sterile bandages have been broken open and the disinfectant bottle is leaking. You can try to salvage what's there, or you can find replacements for the contaminated components. Alternately, you can use alcohol to re-sterilize the bandages.
+
+[Medicine 30 or greater required.]",,,
+63,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F6FD,NVDLC02MedicalKitMessage,Button: Contaminated Medical Supply Kit,Leave it alone.,,,
+64,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F6FD,NVDLC02MedicalKitMessage,Button: Contaminated Medical Supply Kit,Salvage the Medical supply kit.,,,
+65,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F6FD,NVDLC02MedicalKitMessage,Button: Contaminated Medical Supply Kit,Replace the contaminated components.,,,
+66,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F6FD,NVDLC02MedicalKitMessage,Button: Contaminated Medical Supply Kit,Sterilize the kit with alcohol.,,,
+67,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100F6FD,NVDLC02MedicalKitMessage,Button: Contaminated Medical Supply Kit,Take the incomplete medical kit with you.,,,
+68,Honest Hearts,HonestHearts.esm,MESG,FULL,0100F374,NVDLC02MorningGloryKeyMessage,Message Title,You Found a Key!,,,
+69,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F374,NVDLC02MorningGloryKeyMessage,You Found a Key!,You found the key to the door in Morning Glory Cave!,,,
+70,Honest Hearts,HonestHearts.esm,MESG,FULL,0100F373,NVDLC02StoreDeskKeyMessage,Message Title,You Found a Key!,,,
+71,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F373,NVDLC02StoreDeskKeyMessage,You Found a Key!,You found the key to the locked desk in the Zion General Store!,,,
+72,Honest Hearts,HonestHearts.esm,MESG,FULL,0100F371,NVDLC02LodgeCabinetKeyMessage,Message Title,You Found a Key!,,,
+73,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F371,NVDLC02LodgeCabinetKeyMessage,You Found a Key!,You found the key to the locked cabinet in the Zion Fishing Lodge!,,,
+74,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F079,NVDLC02WakingCloudPerkAddMsgFirst,NVDLC02WakingCloudPerkAddMsgFirst,"Waking Cloud has given you the Quiet as the Waters perk.
+
+While Waking Cloud is in your party, it is much easier to sneak by the White Legs (their PER is decreased).",,,
+75,Honest Hearts,HonestHearts.esm,MESG,DESC,0100F078,NVDLC02FollowsChalkPerkAddMsgFirst,NVDLC02FollowsChalkPerkAddMsgFirst,"Follows-Chalk has given you the Well-Stacked Cairns perk.
+
+While Follows-Chalk is in your party, reaching any summit in Zion Valley (such as ranger stations) will reveal all nearby map markers and inspire a heightened state of awareness (+3 PER) for three minutes.",,,
+76,Honest Hearts,HonestHearts.esm,MESG,DESC,0100DD61,NVDLC02WellStackedCairnsAddingEffect,NVDLC02WellStackedCairnsAddingEffect,Well-Stacked Cairns perk activated by Zion summit. Adding Heightened Senses (+3 PER).,,,
+77,Honest Hearts,HonestHearts.esm,MESG,DESC,0100DD60,NVDLC02WellStackedCairnsEffectActive,NVDLC02WellStackedCairnsEffectActive,Your senses are already heightened by this grand vista.,,,
+78,Honest Hearts,HonestHearts.esm,MESG,FULL,0100DAAF,NVDLC02WakingCloudAggroMessage,Message Title,Waking Cloud Smash!,,,
+79,Honest Hearts,HonestHearts.esm,MESG,DESC,0100DAAF,NVDLC02WakingCloudAggroMessage,Waking Cloud Smash!,< Something in Waking Cloud changes and she fights White Legs harder now. >,,,
+80,Honest Hearts,HonestHearts.esm,MESG,FULL,0100D699,NVDLC02JedDeathMessage,Message Title,"Jed's Dead, Baby!",,,
+81,Honest Hearts,HonestHearts.esm,MESG,DESC,0100D699,NVDLC02JedDeathMessage,"Jed's Dead, Baby!","You've killed Jed Masterson! Without his maps and mountaineering expertise, you'll never make it to Zion!
+
+(Killing Jed has rendered the Honest Hearts DLC inacessible. Please reload your last save if you wish to play Honest Hearts.)",,,
+82,Honest Hearts,HonestHearts.esm,MESG,FULL,0100D332,NVDLC02ZionSCaveSElectricSwitchRMsg,Message Title,Electricity Generator Wiring,,,
+83,Honest Hearts,HonestHearts.esm,MESG,DESC,0100D332,NVDLC02ZionSCaveSElectricSwitchRMsg,Electricity Generator Wiring,"This wiring is rigged to discharge electricity through the door.
+
+You may be able to disarm the wiring.
+
+[Repair 50 or higher required]",,,
+84,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100D332,NVDLC02ZionSCaveSElectricSwitchRMsg,Button: Electricity Generator Wiring,Leave the electric wiring alone.,,,
+85,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100D332,NVDLC02ZionSCaveSElectricSwitchRMsg,Button: Electricity Generator Wiring,Disarm the electric wiring.,,,
+86,Honest Hearts,HonestHearts.esm,MESG,FULL,0100D331,NVDLC02ZionSCaveSElectricSwitchMsg,Message Title,Electricity Generator Wiring,,,
+87,Honest Hearts,HonestHearts.esm,MESG,DESC,0100D331,NVDLC02ZionSCaveSElectricSwitchMsg,Electricity Generator Wiring,"This wiring is rigged to discharge electricity through the door.
+
+You are not able to disarm the wiring.
+
+[Repair 50 or higher required]",,,
+88,Honest Hearts,HonestHearts.esm,MESG,FULL,0100D29A,NVDLC02ZionSCaveSElectricGeneratorMWMsg,Message Title,Electricity Generator,,,
+89,Honest Hearts,HonestHearts.esm,MESG,DESC,0100D29A,NVDLC02ZionSCaveSElectricGeneratorMWMsg,Electricity Generator,"This generator powers the electric charge of its connected door.
+
+You may be able to smash the generator.
+
+[Melee Weapons 50 or higher required]",,,
+90,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100D29A,NVDLC02ZionSCaveSElectricGeneratorMWMsg,Button: Electricity Generator,Leave the generator alone.,,,
+91,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100D29A,NVDLC02ZionSCaveSElectricGeneratorMWMsg,Button: Electricity Generator,Smash the generator.,,,
+92,Honest Hearts,HonestHearts.esm,MESG,FULL,0100D299,NVDLC02ZionSCaveSElectricGeneratorUMsg,Message Title,Electricity Generator,,,
+93,Honest Hearts,HonestHearts.esm,MESG,DESC,0100D299,NVDLC02ZionSCaveSElectricGeneratorUMsg,Electricity Generator,"This generator powers the electric charge of its connected door.
+
+You may be able to smash the generator.
+
+[Unarmed 50 or higher required]",,,
+94,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100D299,NVDLC02ZionSCaveSElectricGeneratorUMsg,Button: Electricity Generator,Leave the generator alone.,,,
+95,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100D299,NVDLC02ZionSCaveSElectricGeneratorUMsg,Button: Electricity Generator,Smash the generator.,,,
+96,Honest Hearts,HonestHearts.esm,MESG,FULL,0100D297,NVDLC02ZionSCaveSElectricGeneratorMsg,Message Title,Electricity Generator,,,
+97,Honest Hearts,HonestHearts.esm,MESG,DESC,0100D297,NVDLC02ZionSCaveSElectricGeneratorMsg,Electricity Generator,"This generator powers the electric charge of its connected door.
+
+You are not able to smash the generator.
+
+[Melee Weapons, or Unarmed, 50 or higher required]",,,
+98,Honest Hearts,HonestHearts.esm,MESG,FULL,0100CCFA,NVDLC02WeapBindRitualMSG,Message Title,Weapon Binding Ritual,,,
+99,Honest Hearts,HonestHearts.esm,MESG,DESC,0100CCFA,NVDLC02WeapBindRitualMSG,Weapon Binding Ritual,"You have sacrificed a portion of your life's blood to become one with your weapon.
+
+Your eyes will be keen, your limbs will not break, and your claws will strike like thunder.
+
+Fight only with your hands or the weapons of your hands to know this glory in combat.",,,
+100,Honest Hearts,HonestHearts.esm,MESG,DESC,0100CCF9,NVDLC02WeapBindRitualEndMSG,NVDLC02WeapBindRitualEndMSG,The Weapon Binding Ritual fades from your mind.,,,
+101,Honest Hearts,HonestHearts.esm,MESG,FULL,0100CA52,NVDLC02MQ02RepairMessage,Message Title,How to Fix Stuff,,,
+102,Honest Hearts,HonestHearts.esm,MESG,DESC,0100CA52,NVDLC02MQ02RepairMessage,How to Fix Stuff,"If you don't have the parts or the skills to make repairs in the field, you can take the broken compass to a workbench and fix it there.",,,
+103,Honest Hearts,HonestHearts.esm,MESG,DESC,0100B4AA,NVDLC02HomeOnTheRangeMessage,NVDLC02HomeOnTheRangeMessage,Would you like to craft or sleep?,,,
+104,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100B4AA,NVDLC02HomeOnTheRangeMessage,Button: NVDLC02HomeOnTheRangeMessage,Craft,,,
+105,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100B4AA,NVDLC02HomeOnTheRangeMessage,Button: NVDLC02HomeOnTheRangeMessage,Sleep,,,
+106,Honest Hearts,HonestHearts.esm,MESG,FULL,0100AB06,NVDLC02RepairCombatMsg,Message Title,You're In Combat!,,,
+107,Honest Hearts,HonestHearts.esm,MESG,DESC,0100AB06,NVDLC02RepairCombatMsg,You're In Combat!,You don't have time to examine this object in the heat of battle.,,,
+108,Honest Hearts,HonestHearts.esm,MESG,FULL,0100AB05,NVDLC02BrokenWalkieTalkiePartsMsg,Message Title,Broken Walkie-Talkie,,,
+109,Honest Hearts,HonestHearts.esm,MESG,DESC,0100AB05,NVDLC02BrokenWalkieTalkiePartsMsg,Broken Walkie-Talkie,"The electronics in this walkie-talkie are badly damaged. If you replace them, the process will be much simpler. Requires one pile of Scrap Electronics.",,,
+110,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB05,NVDLC02BrokenWalkieTalkiePartsMsg,Button: Broken Walkie-Talkie,Leave it alone.,,,
+111,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB05,NVDLC02BrokenWalkieTalkiePartsMsg,Button: Broken Walkie-Talkie,Repair with parts.,,,
+112,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB05,NVDLC02BrokenWalkieTalkiePartsMsg,Button: Broken Walkie-Talkie,Repair without parts.,,,
+113,Honest Hearts,HonestHearts.esm,MESG,FULL,0100AB04,NVDLC02BrokenCompassPartsMsg,Message Title,Broken Compass,,,
+114,Honest Hearts,HonestHearts.esm,MESG,DESC,0100AB04,NVDLC02BrokenCompassPartsMsg,Broken Compass,"By replacing this compass's burned-out sensor module rather than bypassing it, you can make the repair process much easier.
+
+[Requires one Compass Sensor Module.]",,,
+115,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB04,NVDLC02BrokenCompassPartsMsg,Button: Broken Compass,Leave it alone.,,,
+116,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB04,NVDLC02BrokenCompassPartsMsg,Button: Broken Compass,Repair with parts.,,,
+117,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB04,NVDLC02BrokenCompassPartsMsg,Button: Broken Compass,Repair without parts.,,,
+118,Honest Hearts,HonestHearts.esm,MESG,FULL,0100AB02,NVDLC02BrokenWalkieTalkieMsg,Message Title,Broken Walkie-Talkie,,,
+119,Honest Hearts,HonestHearts.esm,MESG,DESC,0100AB02,NVDLC02BrokenWalkieTalkieMsg,Broken Walkie-Talkie,"This walkie-talkie is broken, but can possibly be restored to a fully functioning state.
+
+[Repair of 30 or greater required.]",,,
+120,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB02,NVDLC02BrokenWalkieTalkieMsg,Button: Broken Walkie-Talkie,Leave it alone.,,,
+121,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB02,NVDLC02BrokenWalkieTalkieMsg,Button: Broken Walkie-Talkie,Repair the walkie-talkie.,,,
+122,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB02,NVDLC02BrokenWalkieTalkieMsg,Button: Broken Walkie-Talkie,Repair with parts.,,,
+123,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB02,NVDLC02BrokenWalkieTalkieMsg,Button: Broken Walkie-Talkie,Take the broken walkie-talkie with you.,,,
+124,Honest Hearts,HonestHearts.esm,MESG,FULL,0100AB01,NVDLC02BrokenCompassMsg,Message Title,Broken Compass,,,
+125,Honest Hearts,HonestHearts.esm,MESG,DESC,0100AB01,NVDLC02BrokenCompassMsg,Broken Compass,"This compass is broken, but can possibly be restored to a fully functioning state.
+
+[Repair of 30 or greater required.]",,,
+126,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB01,NVDLC02BrokenCompassMsg,Button: Broken Compass,Leave it alone.,,,
+127,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB01,NVDLC02BrokenCompassMsg,Button: Broken Compass,Repair the compass.,,,
+128,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB01,NVDLC02BrokenCompassMsg,Button: Broken Compass,Repair with parts.,,,
+129,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100AB01,NVDLC02BrokenCompassMsg,Button: Broken Compass,Take the broken compass with you.,,,
+130,Honest Hearts,HonestHearts.esm,MESG,DESC,0100A6E3,NVDLC02BighornerCalfDropMsg,NVDLC02BighornerCalfDropMsg,Return the Mountain Bighorner Calf?,,,
+131,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100A6E3,NVDLC02BighornerCalfDropMsg,Button: NVDLC02BighornerCalfDropMsg,Keep the Calf,,,
+132,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100A6E3,NVDLC02BighornerCalfDropMsg,Button: NVDLC02BighornerCalfDropMsg,Return the Calf,,,
+133,Honest Hearts,HonestHearts.esm,MESG,DESC,0100A6DF,NVDLC02BighornerCalfMsg,NVDLC02BighornerCalfMsg,"You have found the lost Mountain Bighorner Calf.  It looks hungry, feed it a Banana Yucca Fruit?",,,
+134,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100A6DF,NVDLC02BighornerCalfMsg,Button: NVDLC02BighornerCalfMsg,Leave it alone.,,,
+135,Honest Hearts,HonestHearts.esm,MESG,ITXT,0100A6DF,NVDLC02BighornerCalfMsg,Button: NVDLC02BighornerCalfMsg,Feed it a Banana Yucca Fruit.,,,
+136,Honest Hearts,HonestHearts.esm,MESG,DESC,0100A671,NVDLC02NoMapMsg,NVDLC02NoMapMsg,"Without a map or a guide, you have no hope of finding your way back to the Mojave Wasteland.",,,
+137,Honest Hearts,HonestHearts.esm,MESG,DESC,0100A2DC,NVDLC02WakingCloudPerkAddMsg,NVDLC02WakingCloudPerkAddMsg,Waking Cloud has given you the Quiet as the Waters perk.,,,
+138,Honest Hearts,HonestHearts.esm,MESG,DESC,0100A2DB,NVDLC02WakingCloudPerkRemoveMsg,NVDLC02WakingCloudPerkRemoveMsg,You have lost Waking Cloud's Quiet as the Waters perk.,,,
+139,Honest Hearts,HonestHearts.esm,MESG,DESC,0100A2DA,NVDLC02WakingCloudLeaveMsg,NVDLC02WakingCloudLeaveMsg,Waking Cloud has returned to the Sorrows camp.,,,
+140,Honest Hearts,HonestHearts.esm,MESG,DESC,01009FE9,NVDLC02FollowsChalkPerkRemoveMsg,NVDLC02FollowsChalkPerkRemoveMsg,You have lost Follows-Chalk's Well-Stacked Cairns perk.,,,
+141,Honest Hearts,HonestHearts.esm,MESG,DESC,01009FE8,NVDLC02FollowsChalkPerkAddMsg,NVDLC02FollowsChalkPerkAddMsg,Follows-Chalk has given you the Well-Stacked Cairns perk.,,,
+142,Honest Hearts,HonestHearts.esm,MESG,DESC,01009FE7,NVDLC02FollowsChalkLeaveMsg,NVDLC02FollowsChalkLeaveMsg,Follows-Chalk has returned to the Dead Horses camp.,,,
+143,Honest Hearts,HonestHearts.esm,MESG,FULL,01008A34,NVDLC02LoadMessage02,Message Title,Honest Hearts Loaded,,,
+144,Honest Hearts,HonestHearts.esm,MESG,DESC,01008A34,NVDLC02LoadMessage02,Honest Hearts Loaded,Honest Hearts has been loaded. Your level cap has been raised by 5.,,,
+145,Honest Hearts,HonestHearts.esm,MESG,FULL,01008A33,NVDLC02LoadMessage01,Message Title,Happy Trails Expedition,,,
+146,Honest Hearts,HonestHearts.esm,MESG,DESC,01008A33,NVDLC02LoadMessage01,Happy Trails Expedition,Your Pip-Boy has picked up a radio broadcast from the Happy Trails Caravan Company. They're looking for one more member for an expedition to Zion Valley.,,,

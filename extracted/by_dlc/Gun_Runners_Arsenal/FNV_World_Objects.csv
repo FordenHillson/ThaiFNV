@@ -1,0 +1,10 @@
+﻿ID,DLC,Plugin,RecordType,Subrecord,FormID,EditorID,ObjectType,EN,TH,Status,Notes
+1,Gun Runners' Arsenal,GunRunnersArsenal.esm,FACT,FULL,01000AC1,NVDLC05BoomerVendorFaction,Faction Name,Boomer Vendor Faction,,,
+2,Gun Runners' Arsenal,GunRunnersArsenal.esm,FACT,FULL,0100095E,NVDLC05VendortronFaction,Faction Name,Gun Runner Vendortron Faction,,,
+3,Gun Runners' Arsenal,GunRunnersArsenal.esm,CONT,FULL,00167ACD,VLootSackVendorWastelandT2RS,Container,Sack,,,
+4,Gun Runners' Arsenal,GunRunnersArsenal.esm,CONT,FULL,00167ACC,VLootSackVendorWastelandT3RS,Container,Sack,,,
+5,Gun Runners' Arsenal,GunRunnersArsenal.esm,CONT,FULL,00167ACB,VLootSackVendorWastelandT2RSPros,Container,Sack,,,
+6,Gun Runners' Arsenal,GunRunnersArsenal.esm,CONT,FULL,00167ACA,VLootSackVendorWatelandT3RSAid,Container,Sack,,,
+7,Gun Runners' Arsenal,GunRunnersArsenal.esm,CONT,FULL,00167AC9,VLootSackVendorWastelandT2Mojave,Container,Sack,,,
+8,Gun Runners' Arsenal,GunRunnersArsenal.esm,CELL,FULL,0008EAE7,NVVendorChestsCell,Location/Interior Cell,New Vegas Buried Vendor Chests,,,
+9,Gun Runners' Arsenal,GunRunnersArsenal.esm,CELL,FULL,00108BED,TestMentats,Location/Interior Cell,Mentats Test Level,,,

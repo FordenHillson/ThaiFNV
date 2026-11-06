@@ -1,0 +1,210 @@
+﻿ID,DLC,Plugin,RecordType,Subrecord,FormID,EditorID,ItemType,EN,TH,Status,Notes
+1,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000A17,ModTestSuppress,Weapon Mod,Mod Test Supress,,,
+2,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100084B,NVDLC05ModNVTriBeamLaserRifleHighCapTerminal,Weapon Mod,Tri-beam LR Hi-Cap Terminal,,,
+3,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100084B,NVDLC05ModNVTriBeamLaserRifleHighCapTerminal,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases ammunition capacity (+24).",,,
+4,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100084A,NVDLC05ModNVTriBeamLaserRifleHDCapacitors,Weapon Mod,Tri-beam LR HD Caps,,,
+5,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100084A,NVDLC05ModNVTriBeamLaserRifleHDCapacitors,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases condition (+200%).",,,
+6,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000849,NVDLC05ModNVTriBeamLaserRifleFocusOptics,Weapon Mod,Tri-beam LR Focus Optics,,,
+7,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000849,NVDLC05ModNVTriBeamLaserRifleFocusOptics,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases damage (+9).",,,
+8,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000847,NVDLC05ModNVRipperHeavyDutyChain,Weapon Mod,Ripper HD Chain,,,
+9,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000847,NVDLC05ModNVRipperHeavyDutyChain,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases condition (+50%).",,,
+10,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000846,NVDLC05ModNVRipperCarbideTeeth,Weapon Mod,Ripper Carbide Teeth,,,
+11,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000846,NVDLC05ModNVRipperCarbideTeeth,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases damage (+10).",,,
+12,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000845,NVDLC05ModNVPowerFistPortedChambers,Weapon Mod,Power Fist Ported Chambers,,,
+13,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000845,NVDLC05ModNVPowerFistPortedChambers,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases attack speed.",,,
+14,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000844,NVDLC05ModNVPowerFistHighCapValves,Weapon Mod,Power Fist Hi-Cap Valves,,,
+15,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000844,NVDLC05ModNVPowerFistHighCapValves,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases damage (+8).",,,
+16,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000843,NVDLC05ModNVPowerFistChromedTubes,Weapon Mod,Power Fist Chromed Tubes,,,
+17,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000843,NVDLC05ModNVPowerFistChromedTubes,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases condition (+100%).",,,
+18,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000842,NVDLC05ModNVPlasmaPistolRecycler,Weapon Mod,Plas. Pistol Recycler,,,
+19,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000842,NVDLC05ModNVPlasmaPistolRecycler,Weapon Mod Description,"(Gun Runners' Arsenal)
+Replenishes ammunition (1/4 shots).",,,
+20,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000841,NVDLC05ModNVPlasmaPistolMagneticAccelerator,Weapon Mod,Plas. Pistol Mag. Accelerator,,,
+21,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000841,NVDLC05ModNVPlasmaPistolMagneticAccelerator,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases speed of plasma projectile.",,,
+22,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000840,NVDLC05ModNVPlasmaPistolHighEnergyIonizer,Weapon Mod,Plas. Pistol Hi-Energy Ionizer,,,
+23,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000840,NVDLC05ModNVPlasmaPistolHighEnergyIonizer,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases damage (+7).",,,
+24,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100083F,NVDLC05ModNVPlasmaDefenderSheathStabilizer,Weapon Mod,Plasma Def. Sheath Stabilizer,,,
+25,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100083F,NVDLC05ModNVPlasmaDefenderSheathStabilizer,Weapon Mod Description,"(Gun Runners' Arsenal)
+Decreases spread.",,,
+26,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100083E,NVDLC05ModNVPlasmaDefenderScope,Weapon Mod,Plasma Def. Scope,,,
+27,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100083E,NVDLC05ModNVPlasmaDefenderScope,Weapon Mod Description,"(Gun Runners' Arsenal)
+Adds short-range scope.",,,
+28,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100083D,NVDLC05ModNVPlasmaDefenderHighCapTerminal,Weapon Mod,Plasma Def. Hi-Cap Terminal,,,
+29,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100083D,NVDLC05ModNVPlasmaDefenderHighCapTerminal,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases ammunition capacity (+32).",,,
+30,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100083C,NVDLC05ModNVLaserPistolRecycler,Weapon Mod,Laser Pistol Recycler,,,
+31,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100083C,NVDLC05ModNVLaserPistolRecycler,Weapon Mod Description,"(Gun Runners' Arsenal)
+Replenishes ammunition (1/4 shots).",,,
+32,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100083B,NVDLC05ModNVLaserPistolFocusOptics,Weapon Mod,Laser Pistol Focus Optics,,,
+33,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100083B,NVDLC05ModNVLaserPistolFocusOptics,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases damage (+3).",,,
+34,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100083A,NVDLC05ModNVLaserPistolCombatSights,Weapon Mod,Laser Pistol Combat Sights,,,
+35,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100083A,NVDLC05ModNVLaserPistolCombatSights,Weapon Mod Description,"(Gun Runners' Arsenal)
+Adds usable iron sights.",,,
+36,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000839,NVDLC05ModNVKatanaProtectiveSheath,Weapon Mod,Katana Protective Sheath,,,
+37,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000839,NVDLC05ModNVKatanaProtectiveSheath,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases condition (+50%).",,,
+38,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000838,NVDLC05ModNVKatanaBalancedGrip,Weapon Mod,Katana Balanced Grip,,,
+39,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000838,NVDLC05ModNVKatanaBalancedGrip,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases attack speed.",,,
+40,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000837,NVDLC05ModNVKatanaAuthenticBlade,Weapon Mod,Katana Authentic Blade,,,
+41,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000837,NVDLC05ModNVKatanaAuthenticBlade,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases damage (+5).",,,
+42,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000836,NVDLC05ModNVHuntingRevolverSixShotCylinder,Weapon Mod,Hunting Rev. 6-Shot Cylinder,,,
+43,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000836,NVDLC05ModNVHuntingRevolverSixShotCylinder,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases ammunition capacity (+1).",,,
+44,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000834,NVDLC05ModNVHuntingRevolverMatchBarrel,Weapon Mod,Hunting Rev. Match Barrel,,,
+45,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000834,NVDLC05ModNVHuntingRevolverMatchBarrel,Weapon Mod Description,"(Gun Runners' Arsenal)
+Decreases spread.",,,
+46,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000833,NVDLC05ModNVChainsawHeavyDutyChain,Weapon Mod,Chainsaw HD Chain,,,
+47,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000833,NVDLC05ModNVChainsawHeavyDutyChain,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases condition (+50%).",,,
+48,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000832,NVDLC05ModNVChainsawCarbideTeeth,Weapon Mod,Chainsaw Carbide Teeth,,,
+49,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000832,NVDLC05ModNVChainsawCarbideTeeth,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases damage (+15).",,,
+50,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000831,NVDLC05ModNVChainsawAlloyFrame,Weapon Mod,Chainsaw Alloy Frame,,,
+51,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000831,NVDLC05ModNVChainsawAlloyFrame,Weapon Mod Description,"(Gun Runners' Arsenal)
+Decreases weight (-8).",,,
+52,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000830,NVDLC05ModNVBaseballBatNails,Weapon Mod,Baseball Bat Nails,,,
+53,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000830,NVDLC05ModNVBaseballBatNails,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases damage (+6).",,,
+54,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100082F,NVDLC05ModNVBaseballBatMapleBody,Weapon Mod,Baseball Bat Maple Body,,,
+55,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100082F,NVDLC05ModNVBaseballBatMapleBody,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases condition (+50%).",,,
+56,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100082E,NVDLC05ModNVBaseballBatCorkCore,Weapon Mod,Baseball Bat Cork Core,,,
+57,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100082E,NVDLC05ModNVBaseballBatCorkCore,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases attack speed.",,,
+58,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100082D,NVDLC05ModNVAssaultCarbineLightBolt,Weapon Mod,Assault Carb. Light Bolt,,,
+59,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100082D,NVDLC05ModNVAssaultCarbineLightBolt,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases rate of fire.",,,
+60,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100082C,NVDLC05ModNVAssaultCarbineForgedReceiver,Weapon Mod,Assault Carb. Forged Receiver,,,
+61,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100082C,NVDLC05ModNVAssaultCarbineForgedReceiver,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases condition (+33%).",,,
+62,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100082B,NVDLC05ModNVAssaultCarbineExtendedMags,Weapon Mod,Assault Carb. Ext. Mags,,,
+63,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100082B,NVDLC05ModNVAssaultCarbineExtendedMags,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases ammunition capacity (+6).",,,
+64,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,0100082A,NVDLC05ModNVAntiMaterielRifleSuppressor,Weapon Mod,Anti-Mat. Rifle Suppressor,,,
+65,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,0100082A,NVDLC05ModNVAntiMaterielRifleSuppressor,Weapon Mod Description,"(Gun Runners' Arsenal)
+Reduces weapon noise.",,,
+66,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000829,NVDLC05ModNVAntiMaterielRifleCustomBolt,Weapon Mod,Anti-Mat. Rifle Custom Bolt,,,
+67,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000829,NVDLC05ModNVAntiMaterielRifleCustomBolt,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases rate of fire.",,,
+68,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000828,NVDLC05ModNVAntiMaterielRifleCarbonFiberParts,Weapon Mod,Anti-Mat. Rifle CF Parts,,,
+69,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000828,NVDLC05ModNVAntiMaterielRifleCarbonFiberParts,Weapon Mod Description,"(Gun Runners' Arsenal)
+Decreases weight (-7).",,,
+70,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000827,NVDLC05ModNV25mmGrenadeAPWUpgradedInternals,Weapon Mod,25mm G. APW Upgraded Int.,,,
+71,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000827,NVDLC05ModNV25mmGrenadeAPWUpgradedInternals,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases rate of fire.",,,
+72,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000826,NVDLC05ModNV25mmGrenadeAPWLongBarrel,Weapon Mod,25mm G. APW Long Barrel,,,
+73,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000826,NVDLC05ModNV25mmGrenadeAPWLongBarrel,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases projectile velocity (+100%).",,,
+74,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000825,NVDLC05ModNV25mmGrenadeAPWExpandedDrum,Weapon Mod,25mm G. APW Exp. Drum,,,
+75,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000825,NVDLC05ModNV25mmGrenadeAPWExpandedDrum,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases ammunition capacity (+2).",,,
+76,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000824,NVDLC05ModNV127mmSMGSuppressor,Weapon Mod,12.7mm SMG Suppressor,,,
+77,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000824,NVDLC05ModNV127mmSMGSuppressor,Weapon Mod Description,"(Gun Runners' Arsenal)
+Silences the weapon.",,,
+78,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000823,NVDLC05ModNV127mmSMGStackedMagazine,Weapon Mod,12.7mm SMG Stacked Magazine,,,
+79,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000823,NVDLC05ModNV127mmSMGStackedMagazine,Weapon Mod Description,"(Gun Runners' Arsenal)
+Increases ammunition capacity (+6).",,,
+80,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,FULL,01000822,NVDLC05ModNV127mmSMGLaserSight,Weapon Mod,12.7mm SMG Laser Sight,,,
+81,Gun Runners' Arsenal,GunRunnersArsenal.esm,IMOD,DESC,01000822,NVDLC05ModNV127mmSMGLaserSight,Weapon Mod Description,"(Gun Runners' Arsenal)
+Decreases spread.",,,
+82,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000AC3,NVDLC05WeapFatmanCustom,Weapon,Fat Man (GRA),,,
+83,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000A18,ModTest,Weapon,ModTest,,,
+84,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,0000434F,Weap10mmPistol,Weapon,10mm Pistol,,,
+85,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,00121154,WeapNVRechargerRifle,Weapon,Recharger Rifle,,,
+86,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,00004330,WeapGrenadeFrag,Weapon,Frag Grenade,,,
+87,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,010008C9,NVDLC05WeapMineMFCCluster,Weapon,MFC Cluster (Mad Bomber) (GRA),,,
+88,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,010008C8,NVDLC05WeapGrenadeMFC,Weapon,MFC Grenade (Mad Bomber) (GRA),,,
+89,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000857,NVDLC05WeapRipperCustom,Weapon,Ripper (GRA),,,
+90,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000856,NVDLC05WeapPowerFistCustom,Weapon,Power Fist (GRA),,,
+91,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000855,NVDLC05WeapPlasmaPistolCustom,Weapon,Plasma Pistol (GRA),,,
+92,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000854,NVDLC05WeapNVTriBeamLaserRifleCustom,Weapon,Tri-beam Laser Rifle (GRA),,,
+93,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000853,NVDLC05WeapNVPlasmaDefenderCustom,Weapon,Plasma Defender (GRA),,,
+94,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000852,NVDLC05WeapNVHuntingRevolverCustom,Weapon,Hunting Revolver (GRA),,,
+95,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000851,NVDLC05WeapNVChainsawCustom,Weapon,Chainsaw (GRA),,,
+96,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000850,NVDLC05WeapNVAssaultCarbineCustom,Weapon,Assault Carbine (GRA),,,
+97,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,0100084F,NVDLC05WeapNVAntiMaterielRifleCustom,Weapon,Anti-Materiel Rifle (GRA),,,
+98,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,0100084E,NVDLC05WeapNV127mmSubmachineGunCustom,Weapon,12.7mm Submachine Gun (GRA),,,
+99,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,0100084D,NVDLC05WeapLaserPistolCustom,Weapon,Laser Pistol (GRA),,,
+100,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,0100084C,NVDLC05WeapBaseballBatCustom,Weapon,Baseball Bat (GRA),,,
+101,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,0100081B,NVDLC05Weap25mmGrenadeAPWCustom,Weapon,25mm Grenade APW (GRA),,,
+102,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000818,NVDLC05WeapGrenadeNuka,Weapon,Nuka-Grenade (Mad Bomber) (GRA),,,
+103,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000817,NVDLC05WeapKatanaCustom,Weapon,Katana (GRA),,,
+104,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000815,NVDLC05WeapMineFat,Weapon,Fat Mine (Mad Bomber) (GRA),,,
+105,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000814,NVDLC05WeapGrenadeTin,Weapon,Tin Grenade (Mad Bomber) (GRA),,,
+106,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000813,NVDLC05WeapNV556mmPistolCustom,Weapon,5.56mm Pistol (GRA),,,
+107,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000812,NVDLC05WeapNVBattleRifleCustom,Weapon,Battle Rifle (GRA),,,
+108,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000811,NVDLC05WeapNVTimeBombCustom,Weapon,"Time Bomb, High Yield (Mad Bomber) (GRA)",,,
+109,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000810,NVDLC05WeapPowerFistUnique,Weapon,Greased Lightning (GRA),,,
+110,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,0100080F,NVDLC05WeapShishkebabUnique,Weapon,Gehenna (GRA),,,
+111,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,0100080E,NVDLC05WeapNVBrushGunUnique,Weapon,Medicine Stick (GRA),,,
+112,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,0100080D,NVDLC05Weap10mmSubmachineGunUnique,Weapon,Sleepytyme (GRA),,,
+113,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,0100080C,NVDLC05WeapHuntingRifleUnique,Weapon,Paciencia (GRA),,,
+114,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,0100080B,NVDLC05WeapFlamerUnique,Weapon,Cleansing Flame (GRA),,,
+115,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,0100080A,NVDLC05WeapNVPlasmaCasterUnique,Weapon,The Smitty Special (GRA),,,
+116,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000809,NVDLC05WeapNVBallisticFistUnique,Weapon,Two-Step Goodbye (GRA),,,
+117,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000808,NVDLC05WeapNVMantisGauntletUnique,Weapon,Embrace of the Mantis King! (GRA),,,
+118,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000807,NVDLC05WeapNVRebarClubUnique,Weapon,Nuka-Breaker (GRA),,,
+119,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000806,NVDLC05WeapNVLightMachineGunUnique,Weapon,Bozar (GRA),,,
+120,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000805,NVDLC05WeapNV127mmPistolUnique,Weapon,Li'l Devil (GRA),,,
+121,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000804,NVDLC05WeapFatmanUnique,Weapon,Esther (GRA),,,
+122,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000803,NVDLC05WeapGatlingLaserUnique,Weapon,Sprtel-Wood 9700 (GRA),,,
+123,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000802,NVDLC05WeapNVRechargerPistolUnique,Weapon,MF Hyperbreeder Alpha (GRA),,,
+124,Gun Runners' Arsenal,GunRunnersArsenal.esm,WEAP,FULL,01000800,WeapNVDLC00Faderator,Weapon,The Faderator,,,
+125,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000A2B,NVDLC05Ammo127mmJHPHandLoad,Ammunition,12.7mm Round (Hand Load) (GRA),,,
+126,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000A09,NVDLC05AmmoFatMansTinyTots,Ammunition,"Mini Nuke, Tiny Tots (GRA)",,,
+127,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000875,NVDLC05AmmoFlamerFuelOptimized,Ammunition,"Flamer Fuel, Optimized (Vigilant Recycler) (GRA)",,,
+128,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000874,NVDLC05AmmoElectronChargePackOptimized,Ammunition,"Electron Charge Pack, Optimized (Vigilant Recycler) (GRA)",,,
+129,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000873,NVDLC05AmmoMicroFusionCellOptimized,Ammunition,"Microfusion Cell, Optimized (Vigilant Recycler) (GRA)",,,
+130,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000872,NVDLC05AmmoSmallEnergyCellOptimized,Ammunition,"Energy Cell, Optimized (Vigilant Recycler) (GRA)",,,
+131,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000871,NVDLC05Ammo5mmJSPHandLoad,Ammunition,"5mm, JSP (Hand Load) (GRA)",,,
+132,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000870,NVDLC05Ammo9mmJHPHandLoad,Ammunition,"9mm, JHP (Hand Load) (GRA)",,,
+133,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,0100086F,NVDLC05Ammo556mmMatchHandLoad,Ammunition,"5.56mm, Match (Hand Load) (GRA)",,,
+134,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,0100086E,NVDLC05Ammo40mmGrenadePlasma,Ammunition,"40mm Grenade, Plasma (GRA)",,,
+135,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,0100086D,NVDLC05Ammo40mmGrenadePulse,Ammunition,"40mm Grenade, Pulse (GRA)",,,
+136,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,0100086B,NVDLC05Ammo25mmGrenadePlasma,Ammunition,"25mm Grenade, Plasma (GRA)",,,
+137,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,0100086A,NVDLC05Ammo25mmGrenadePulse,Ammunition,"25mm Grenade, Pulse (GRA)",,,
+138,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000869,NVDLC05Ammo25mmGrenadeTimed,Ammunition,"25mm Grenade, Timed (GRA)",,,
+139,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000868,NVDLC05AmmoFatMansBigKid,Ammunition,"Mini Nuke, Big Kid (GRA)",,,
+140,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000867,NVDLC05AmmoFatMansTimed,Ammunition,"Mini Nuke, Timed (GRA)",,,
+141,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000866,NVDLC05AmmoFatMansLowYield,Ammunition,"Mini Nuke, Low Yield (GRA)",,,
+142,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000865,NVDLC05AmmoMissileHive,Ammunition,"Missile, Hive (GRA)",,,
+143,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000863,NVDLC05Ammo20Ga30BuckMagnum,Ammunition,"20 Gauge, 3/0 Buck Mag. (Hand Loader) (GRA)",,,
+144,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000862,NVDLC05Ammo12Ga40BuckMagnum,Ammunition,"12 Gauge, 4/0 Buck Mag. (Hand Loader) (GRA)",,,
+145,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000861,NVDLC05Ammo12Ga40Buck,Ammunition,"12 Gauge, 4/0 Buck (GRA)",,,
+146,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,01000860,NVDLC05Ammo20Ga30Buck,Ammunition,"20 Gauge, 3/0 Buck (GRA)",,,
+147,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,0100085F,NVDLC05Ammo12GaDragonsBreath,Ammunition,"12 Gauge, Dragon's Breath (GRA)",,,
+148,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,0100085E,NVDLC05Ammo12GaFlechette,Ammunition,"12 Gauge, Flechette (GRA)",,,
+149,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,0100085D,NVDLC05Ammo12GaPulseSlug,Ammunition,"12 Gauge, Pulse Slug (GRA)",,,
+150,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,0100085C,NVDLC05Ammo20GaPulseSlug,Ammunition,"20 Gauge, Pulse Slug (GRA)",,,
+151,Gun Runners' Arsenal,GunRunnersArsenal.esm,AMMO,FULL,0100085B,NVDLC05Ammo50MGExplosive,Ammunition,".50 MG, Explosive (GRA)",,,
+152,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000A2C,NVDLC05Recipe127mmHandLoad,Recipe,"12.7mm, JHP Hand Load (GRA)",,,
+153,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,0100093A,NVDLC05Recipe12Ga40BuckMagnum,Recipe,"12 Ga., 4/0 Buck Mag. Hand Load (GRA)",,,
+154,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000939,NVDLC05Recipe20Ga30BuckMagnum,Recipe,"20 Ga., 3/0 Buck Mag. Hand Load (GRA)",,,
+155,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000936,NVDLC05RecipeTinGrenade,Recipe,Tin Grenade (GRA),,,
+156,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000935,NVDLC05RecipeBottlecapMineEfficient,Recipe,"Bottlecap Mine, Efficient (GRA)",,,
+157,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000934,NVDLC05RecipePowderChargeEfficient,Recipe,"Powder Charge, Efficient (GRA)",,,
+158,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000933,NVDLC05RecipeTimeBombHighYield,Recipe,"Time Bomb, High Yield (GRA)",,,
+159,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000932,NVDLC05RecipeNukaGrenade,Recipe,Nuka-Grenade (GRA),,,
+160,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000931,NVDLC05RecipeMFCCluster,Recipe,MFC Cluster (GRA),,,
+161,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000930,NVDLC05RecipeMFCGrenade,Recipe,MFC Grenade (GRA),,,
+162,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,0100092F,NVDLC05RecipeFatMine,Recipe,Fat Mine (GRA),,,
+163,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,0100092C,NVDLC05Recipe5mmHandLoad,Recipe,"5mm, JSP Hand Load (GRA)",,,
+164,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,0100092B,NVDLC05Recipe9mmHandLoad,Recipe,"9mm, JHP Hand Load (GRA)",,,
+165,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,0100092A,NVDLC05Recipe556mmHandLoad,Recipe,"5.56mm, Match Hand Load (GRA)",,,
+166,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000929,NVDLC05RecipeFlamerFuelOptimized,Recipe,"Flamer Fuel, Optimized (GRA)",,,
+167,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000928,NVDLC05RecipeSmallEnergyCellOptimized,Recipe,"Energy Cell, Optimized (GRA)",,,
+168,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000927,NVDLC05RecipeMicroFusionCellOptimized,Recipe,"Microfusion Cell, Optimized (GRA)",,,
+169,Gun Runners' Arsenal,GunRunnersArsenal.esm,RCPE,FULL,01000926,NVDLC05RecipeElectronChargePackOptimized,Recipe,"Electron Charge Pack, Optimized (GRA)",,,

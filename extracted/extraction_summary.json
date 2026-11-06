@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-11-05 19:53:59",
+  "total_rows": 90074,
+  "categories": {
+    "FNV_Dialogue": 39115,
+    "FNV_TopicNames": 21521,
+    "FNV_Quests": 1974,
+    "FNV_Messages": 2950,
+    "FNV_Terminals": 3357,
+    "FNV_Notes": 2226,
+    "FNV_Books": 46,
+    "FNV_Items": 3120,
+    "FNV_Perks_Skills": 1973,
+    "FNV_World_Objects": 11871,
+    "FNV_LoadScreens": 283,
+    "FNV_GameSettings": 129,
+    "FNV_Other": 1509
+  },
+  "dlc_breakdown": {
+    "Base Game": 70586,
+    "Dead Money": 6753,
+    "Honest Hearts": 3679,
+    "Old World Blues": 5300,
+    "Lonesome Road": 3405,
+    "Gun Runners' Arsenal": 331,
+    "Classic Pack": 8,
+    "Caravan Pack": 4,
+    "Mercenary Pack": 4,
+    "Tribal Pack": 4
+  },
+  "dialogue_speaker_resolution": {
+    "total_dialogue_lines": 39115,
+    "speaker_identified": 35604,
+    "percentage": "91.0%"
+  }
+}

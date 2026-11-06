@@ -1,0 +1,10 @@
+﻿ID,DLC,Plugin,RecordType,Subrecord,FormID,EditorID,ParentContext,EN,TH,Status,Notes
+1,Classic Pack,ClassicPack.esm,MESG,FULL,00174777,PreorderMessageInventoryClassic,Message Title,Classic Pack,,,
+2,Classic Pack,ClassicPack.esm,MESG,DESC,00174777,PreorderMessageInventoryClassic,Classic Pack,Classic Pack items added to inventory.,,,
+3,Classic Pack,ClassicPack.esm,MESG,DESC,00174096,PreordVault13Canteen,PreordVault13Canteen,You take a sip from your trusty Vault 13 canteen...,,,
+4,Caravan Pack,CaravanPack.esm,MESG,FULL,00174775,PreorderMessageInventoryCaravan,Message Title,Caravan Pack,,,
+5,Caravan Pack,CaravanPack.esm,MESG,DESC,00174775,PreorderMessageInventoryCaravan,Caravan Pack,Caravan Pack items added to inventory.,,,
+6,Mercenary Pack,MercenaryPack.esm,MESG,FULL,00174776,PreorderMessageInventoryMercenary,Message Title,Mercenary Pack,,,
+7,Mercenary Pack,MercenaryPack.esm,MESG,DESC,00174776,PreorderMessageInventoryMercenary,Mercenary Pack,Mercenary Pack items added to inventory.,,,
+8,Tribal Pack,TribalPack.esm,MESG,FULL,001674D2,PreorderMessageInventoryTribal,Message Title,Tribal Pack,,,
+9,Tribal Pack,TribalPack.esm,MESG,DESC,001674D2,PreorderMessageInventoryTribal,Tribal Pack,Tribal Pack items added to inventory.,,,

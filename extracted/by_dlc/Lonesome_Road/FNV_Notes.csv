@@ -1,0 +1,158 @@
+﻿ID,DLC,Plugin,RecordType,Subrecord,FormID,EditorID,ParentContext,EN,TH,Status,Notes
+1,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100DF4A,NVDLC04FlashbangAbilitiesNote,Note Title,Flash Bang Information,,,
+2,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100DF4A,NVDLC04FlashbangAbilitiesNote,Flash Bang Information,"You have found a Flash Bang grenade! Flash Bangs are special grenades that:
+
+- Deal Fatigue damage.
+- Reduce enemy weapon skills.
+- Have a chance to Frenzy Tunnelers.",,,
+3,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100D977,NVDLC04CommissaryNote02,Note Title,Commissary Reminder,,,
+4,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100D977,NVDLC04CommissaryNote02,Commissary Reminder,"Attention all base personnel:
+
+This is just a reminder that all base commissary terminals draw from the same central depository. Please do not waste your time or the technicians' by running from commissary to commissary. You won't get any more whiskey than you did from the first one.
+
+-SSGT Lansky",,,
+5,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100D96F,NVDLC04FlashBangNOTE,Note Title,Bravo Team Mission Orders,,,
+6,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100D96F,NVDLC04FlashBangNOTE,Bravo Team Mission Orders,"At 0600 hours, Bravo Team will conduct sweep-and-clear operations in advance of the main force. Early intelligence suggests the tunnels are only sparsely populated by small, subterranean semi-humanoids, which are easily cowed by bright light and loud noises. Bravo Team has been issued flashbang grenades for this purpose, and is expected to meet minimal resistance.",,,
+7,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100CF39,NVDLC04BitterDrinkRecipeNOTE,Note Title,Bitter Drink Recipe,,,
+8,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100CF39,NVDLC04BitterDrinkRecipeNOTE,Bitter Drink Recipe,This hand written note contains the recipe for Bitter Drink. (The recipe is now unlocked for the campfire crafting station.),,,
+9,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100CD93,NVDLC04AudioLogUlyssesWhiteLegs3,Note Title,Ulysses Log: Y-17.23,,,
+10,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100CD93,NVDLC04AudioLogUlyssesWhiteLegs3,Ulysses Log: Y-17.23,‘Í,,,
+11,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100CD90,NVDLC04AudioLogUlyssessFinalMsg,Note Title,Ulysses' Final Message,,,
+12,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100CD90,NVDLC04AudioLogUlyssessFinalMsg,Ulysses' Final Message,ŽÍ,,,
+13,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100CD73,NVDLC04AudioLogUlyssesWhiteLegs2,Note Title,Ulysses Log: Y-17.22,,,
+14,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100CD73,NVDLC04AudioLogUlyssesWhiteLegs2,Ulysses Log: Y-17.22,gÍ,,,
+15,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100CD72,NVDLC04AudioLogUlyssesWhiteLegs1,Note Title,Ulysses Log: Y-17.21,,,
+16,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100CD72,NVDLC04AudioLogUlyssesWhiteLegs1,Ulysses Log: Y-17.21,hÍ,,,
+17,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100CD71,NVDLC04AudioLogUlyssesBigMT3,Note Title,Ulysses Log: Y-17.17,,,
+18,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100CD71,NVDLC04AudioLogUlyssesBigMT3,Ulysses Log: Y-17.17,iÍ,,,
+19,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100CD70,NVDLC04AudioLogUlyssesBigMT2,Note Title,Ulysses Log: Y-17.16,,,
+20,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100CD70,NVDLC04AudioLogUlyssesBigMT2,Ulysses Log: Y-17.16,jÍ,,,
+21,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100CD6F,NVDLC04AudioLogUlyssesBigMT1,Note Title,Ulysses Log: Y-17.15,,,
+22,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100CD6F,NVDLC04AudioLogUlyssesBigMT1,Ulysses Log: Y-17.15,aÍ,,,
+23,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100CAA0,NVDLC04ChineseGrenadeLauncherNote,Note Title,"""Missing"" shipment",,,
+24,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100CAA0,NVDLC04ChineseGrenadeLauncherNote,"""Missing"" shipment","General,
+
+We found a seized shipment of Chinese ""Red Victory"" model grenade launchers and thought you might like to have one for yourself. They're quicker to reload then our ""Great Bears,"" but they don't pack quite the same punch. Still, it'll be nice to give those bastards a taste of their own medicine if it comes to that, right?",,,
+25,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100CA7E,NVDLC04EyebotMaintenance01,Note Title,Eyebot Maintenance,,,
+26,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100CA7E,NVDLC04EyebotMaintenance01,Eyebot Maintenance,"Eyebot Maintenance Bay Status:
+
+Pod 1 - INACTIVE/Unoccupied. Power diverted to Eyebot synthesis pod in main launch chamber.
+
+Pod 2 - ACTIVE/Unoccupied
+
+Pod 3 - INACTIVE/Unoccupied. Power diverted to Eyebot synthesis pod in main launch chamber.",,,
+27,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100C620,NVDLC04Road01ArmoryAccessNote,Note Title,Hopeville Base - Armory Access Codes,,,
+28,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100BD3A,NVDLC04AudioLogTrooperNote03,Note Title,NCR Radio Distress Beacon,,,
+29,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100BD3A,NVDLC04AudioLogTrooperNote03,NCR Radio Distress Beacon,.½,,,
+30,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100BD39,NVDLC04AudioLogTrooperNote02,Note Title,NCR Ranger Action Report - Addendum,,,
+31,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100BD39,NVDLC04AudioLogTrooperNote02,NCR Ranger Action Report - Addendum,"3rd Platoon, Cazador Company, 4th Ranger Battalion Action Report, addendum: Staff Sergeant Balmoral reporting again. Looks like we aren't the only ones that had the idea to check this place out. Our advance scouts encountered heavy Legion activity in the area. The troopers are gearing up to hit them tonight - hopefully before they know we're here.",,,
+32,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100BD38,NVDLC04AudioLogTrooperNote01,Note Title,NCR Ranger Action Report,,,
+33,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100BD38,NVDLC04AudioLogTrooperNote01,NCR Ranger Action Report,"3rd Platoon, Cazador Company, 4th Ranger Battalion Action Report: Staff Sergeant Balmoral reporting. We've reached the area local tribes call ""the Divide,"" but so far, I don't think this will be a suitable route for bringing troops to Hoover Dam. The terrain is a nightmare, we've seen evidence of hostile indigenous life, and the Geiger counters are ticking like grandfather clocks on Turbo.
+
+Full report when the advance scouts come back at 2300, but as of now I'm recommending we abandon this mission.",,,
+34,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100B9F0,NVDLC04DivideGovtNote03,Note Title,Inter-Office Email,,,
+35,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100B9F0,NVDLC04DivideGovtNote03,Inter-Office Email,"Attention all base personnel:
+
+We will soon play host to one of the greatest American patriots of our day, General Wellesley himself. For those of you whose family trees don't fork, the General is chief liaison officer to the Big MT Research Facility. He and his team are paying us a visit to collect our ""guests"" and take them someplace where they can do some good for their country beyond stinking of patchouli and shooting the LSD.
+
+Commander Devlin",,,
+36,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100B6FE,NVDLC04CommissaryNote,Note Title,Commissaries Locked Down,,,
+37,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100B6FE,NVDLC04CommissaryNote,Commissaries Locked Down,"Attention all base personnel:
+
+The automated Commissary system has been locked down until further notice. It turns out that the ""counterfeit-proof"" pay chits we've been issuing to you are exactly the same size and shape as ordinary bottlecaps. Until we can correct the problem, you'll have to make your purchases the old-fashioned way.
+
+-SSGT Lansky",,,
+38,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100A7D1,NVDLC04Silo01MaintenanceAccess02Note,Note Title,Hopeville Silo - Maintenance Status,,,
+39,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100A7D1,NVDLC04Silo01MaintenanceAccess02Note,Hopeville Silo - Maintenance Status,"Main Power: On-line.
+
+Emergency Power: Standby.
+
+Maintenance Report:
+
+- Level One: Operational on main power - Security measures INACTIVE.
+
+- Level Two: Operational on main power - Security measures ACTIVE.
+
+- Level Three: Operational on main power - Security measures INACTIVE.",,,
+40,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100A7D0,NVDLC04Silo01Level02SecurityNote,Note Title,Hopeville Silo - Security Log - Second Level,,,
+41,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100A7D0,NVDLC04Silo01Level02SecurityNote,Hopeville Silo - Security Log - Second Level,"- Level One: Security Measures INACTIVE - Perimeter breach contained.
+
+- Level Two: Security Measures ACTIVE - Operations area secured.
+
+- Level Three: Security Measures INACTIVE - System failure. Please contact technical support",,,
+42,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100A7CF,NVDLC04Silo01MaintenanceAccessNote,Note Title,Hopeville Silo - Maintenance Access Status,,,
+43,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100A7CF,NVDLC04Silo01MaintenanceAccessNote,Hopeville Silo - Maintenance Access Status,"Main Power: Offline.
+
+Emergency Power: Standby.
+
+Maintenance Report:
+
+- Level One: Non-Operational - Security measures INACTIVE.
+
+- Level Two: Non-Operational - Security measures INACTIVE.
+
+- Level Three: Non-Operational - Security measures INACTIVE.",,,
+44,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100A2D6,NVDLC04DivideApartmentNote03,Note Title,Earthquakes Part 2,,,
+45,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100A2D6,NVDLC04DivideApartmentNote03,Earthquakes Part 2,"""Minor and nothing to worry about."" If that last quake wasn't a 5.0 at least, I'm Dean Domino. That's it, I'm requesting a transfer before the whole plaudsfg099io8u8ioi yti xciokghpt8i9io",,,
+46,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100A2D5,NVDLC04DivideApartmentNote02,Note Title,Earthquakes,,,
+47,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100A2D5,NVDLC04DivideApartmentNote02,Earthquakes,"Fantastic. Now there's earthquakes. Earthquakes! Sure, Commander Devlin says they're minor ones and nothing to worry about, but come on. EARTHQUAKES. Did no one think to check fault lines before they built a massive UNDERGROUND MISSILE COMPLEX?
+
+Your tax dollars at work, folks. Swear to God, when my term's up I'm moving to Canada.",,,
+48,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100A2D4,NVDLC04DivideApartmentNote01,Note Title,Noise,,,
+49,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100A2D4,NVDLC04DivideApartmentNote01,Noise,"Swear to God, if I lose one more night of sleep over these noises I am going to strangle somebody. ""Knocking pipes"" my ass - do these slumlords think it's easy running the safety protocols for an entire ICBM launch complex on two hours sleep? It's a goddamn miracle nobody's started World War III over a low-flying titmouse.",,,
+50,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100A2D3,NVDLC04DivideWaterPlant02,Note Title,Re: Wastewater Note,,,
+51,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100A2D3,NVDLC04DivideWaterPlant02,Re: Wastewater Note,"Listen here you pinko Commie-eyed puke, I got your lily-livered defeatest e-mails. I ignored them because they made me THROW UP IN MY MOUTH! Do you understand we're fighting a war here?! Against the REDS? And the only thing standing between you and hot atomic Armageddon is ME and my base full of GIANT NUCLEAR MISSILES? Answer me this, Specialist Buttinski: if the American people are overrun by Kremlin Joe and his Chicom cronies, what good will clean drinking water be?
+
+Commander Devlin",,,
+52,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100A2D2,NVDLC04DivideWaterPlant01,Note Title,Wastewater Note,,,
+53,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100A2D2,NVDLC04DivideWaterPlant01,Wastewater Note,"Commander Devlin,
+
+I apologize for e-mailing you again, but I still haven't received a response to my previous seven e-mails. Once again, we DESPERATELY need more funding to improve safety protocols at the water treatment plant. Current protocols are absolutely appalling, and I don't even want to think about the consequences of a failure on the local water supply.
+
+Specialist Alan Rothchild",,,
+54,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100A2D1,NVDLC04DivideGovtNote02,Note Title,Inter-Office Email,,,
+55,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100A2D1,NVDLC04DivideGovtNote02,Inter-Office Email,"Attention All Base Personnel:
+
+DO NOT engage the protestors outside the construction zone. I know, I know, the presence of those freedom-loving no-goodniks fills my brain with the WHITE-HOT RAGE OF CAPITALIST JUSTICE, but the Political Office has something planned for them, and you mooks better not screw it up.
+
+Commander Devlin",,,
+56,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100A2D0,NVDLC04DivideGovtNote01,Note Title,Report,,,
+57,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100A2D0,NVDLC04DivideGovtNote01,Report,"Somebody from the Political Office should keep an eye on those guys down at the water treatment plant. That's the third request for extra funds I've had to deny this month - do they think we're made of money? I swear, it's like they want the Communists to win....",,,
+58,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100A2CF,NVDLC04DivideJournal03,Note Title,Sunflower Summers' Diary,,,
+59,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100A2CF,NVDLC04DivideJournal03,Sunflower Summers' Diary,"Dear diary,
+
+I think we did it! We finally convinced the Death Merchants to hear our beautiful Mother Earth's cries! I just had a personal meeting with the base commander, who said they would be taking a long, hard look at our demands and preparing something special for us. I can't wait to see what it is - I bet it's a full nuclear disarmament!",,,
+60,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100A19C,NVDLC04SLWasteDisposalNote,Note Title,For whoever finds this....,,,
+61,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100A19C,NVDLC04SLWasteDisposalNote,For whoever finds this....,"If you find this, my name is James Rubinek. I'm a trader from the Hub - thought I'd found a new route to markets east. Guess now I know why no routes go through this Godforsaken place. Leg's broken, can't get out, and even if I could there's those crazed ghouls and those digging things waiting for me.
+
+Please, get this note to my ex-wife, Anna. Tell her what happened. Tell her how I died. And I guess you can tell that cheating bitch I hope she's happy with that limp-dick Rory Spencer.",,,
+62,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,01009A01,NVDLC04EyebotMaintenance,Note Title,Eyebot Maintenance,,,
+63,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,01009A01,NVDLC04EyebotMaintenance,Eyebot Maintenance,"Eyebot Maintenance Bay Status:
+
+Pod 1 - INACTIVE/Unoccupied. Power diverted to Eyebot synthesis pod in main launch chamber.
+
+Pod 2 - ACTIVE/Occupied. Estimated Eyebot damage: 0% Please contact an administrator to remove this Eyebot from its pod.
+
+Pod 3 - INACTIVE/Unoccupied. Power diverted to Eyebot synthesis pod in main launch chamber.",,,
+64,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,010092F0,NVDLC04Silo01SecurityCodeLvl01,Note Title,Hopeville Silo - 1st Level Security Code,,,
+65,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,010092EF,NVDLC04Silo01SecurityCodeLvl02,Note Title,Hopeville Silo - 2nd Level Security Code,,,
+66,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,0100910D,NVDLC04DivideJournal02,Note Title,Mission Report,,,
+67,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,0100910D,NVDLC04DivideJournal02,Mission Report,"Initial recon of the Divide has met with heavy resistance. These ghouls - the troopers have started calling them ""Marked Men"" - are smarter than the typical ferals we're used to. Yesterday we found some old Pre-War cages they've used to capture Deathclaws - God knows what they were planning to do with them, but one of the things must have escaped, judging from the carnage. I've ordered double watches until we find it.",,,
+68,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,01007E48,NVDLC04DivideJournal01,Note Title,Pvt. Foster's Personal Journal,,,
+69,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,01007E48,NVDLC04DivideJournal01,Pvt. Foster's Personal Journal,"Jesus, this place is a hellhole. I heard it was bad from some of the guys coming back, but... Jesus. Henriksen bought it when one of those unexploded warheads went off, and Jenkins... those things got him. I don't know what they were exactly - ghouls, maybe, but nasty fuckers. LT thinks they were drawn by the explosion that killed Henriksen. I think we're all gonna die here.",,,
+70,Lonesome Road,LonesomeRoad.esm,NOTE,FULL,01003E30,NVDLC04Silo02LaunchCode,Note Title,Silo Network Security Codes,,,
+71,Lonesome Road,LonesomeRoad.esm,NOTE,TNAM,01003E30,NVDLC04Silo02LaunchCode,Silo Network Security Codes,"|====================|
+|MINUTEMAN XI - CONSTANTINE
+|LAUNCH PROTOCOL 10.77
+|SECURITY CLEARANCE ALPHA
+|====================|
+|EAM CLEARANCE: G 5 S S 1 8
+|* * >> USAF DEFCON
+|* * >> EXEC:'BAGMAN'
+|====================|
+|AUTH CODE: 0000000000
+|====================|
+|RESPONSE SCENARIO MX-CN91
+|ICBM RESPONSE/NUCLEAR
+|BASE COMMAND EYES ONLY
+|====================|",,,

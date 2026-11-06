@@ -1,0 +1,670 @@
+﻿ID,DLC,Plugin,RecordType,Subrecord,FormID,EditorID,ParentContext,EN,TH,Status,Notes
+1,Dead Money,DeadMoney.esm,NOTE,FULL,01013B46,NVDLC01TheaterNote02,Note Title,Power Status,,,
+2,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B46,NVDLC01TheaterNote02,Power Status,"*** Power Status ***
+
+Non-Essential Systems
+    * Audio: Offline",,,
+3,Dead Money,DeadMoney.esm,NOTE,FULL,01013B45,NVDLC01TheaterNote01,Note Title,Power Status,,,
+4,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B45,NVDLC01TheaterNote01,Power Status,"*** Power Status ***
+
+Non-Essential Systems
+    * Audio: Powered",,,
+5,Dead Money,DeadMoney.esm,NOTE,FULL,01013B44,NVDLC01SuitesNote02,Note Title,Power Status,,,
+6,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B44,NVDLC01SuitesNote02,Power Status,"*** Power Status ***
+
+Non-Essential Systems
+    * Loudspeakers: Offline",,,
+7,Dead Money,DeadMoney.esm,NOTE,FULL,01013B43,NVDLC01SuitesNote01,Note Title,Power Status,,,
+8,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B43,NVDLC01SuitesNote01,Power Status,"*** Power Status ***
+
+Non-Essential Systems
+    * Loudspeakers: Powered",,,
+9,Dead Money,DeadMoney.esm,NOTE,FULL,01013B3E,NVDLC01ETVentilationNote02,Note Title,Ventilation System,,,
+10,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B3E,NVDLC01ETVentilationNote02,Ventilation System,"Salida Del Sol Ventilation System Status
+
+Ventilation Fan Status:
+Fan #1 ... Online
+Fan #2 ... Online
+Fan #3 ... Online
+Fan #4 ... Online
+Fan #5 ... Online",,,
+11,Dead Money,DeadMoney.esm,NOTE,FULL,01013B3D,NVDLC01ETVentilationNote01,Note Title,Ventilation System,,,
+12,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B3D,NVDLC01ETVentilationNote01,Ventilation System,"Salida Del Sol Ventilation System Status
+
+Ventilation Fan Status:
+Fan #1 ... Online
+Fan #2 ... Offline (Power Failure, Reset System)
+Fan #3 ... Online
+Fan #4 ... Online
+Fan #5 ... Offline (Power Failure, Reset System)",,,
+13,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B3B,NVDLC01FinalCompNote,NVDLC01FinalCompNote,"Dear Mr. Elijah,
+
+Congratulations on your winning luck at the Sierra Madre Casino! Your Complimentary Voucher will automatically delivered at the dropbox you specified every three days and can be redeemed at any Sierra Madre Vending Machine.
+
+Thank you and we hope you enjoyed your stay!
+
+Sincerely,
+
+The Sierra Madre Management",,,
+14,Dead Money,DeadMoney.esm,NOTE,FULL,01013B39,NVDLC01EastTownNote01,Note Title,Power Status,,,
+15,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B39,NVDLC01EastTownNote01,Power Status,"*** Power Status ***
+
+Non-Essential Systems
+    * Music Speakers: Powered",,,
+16,Dead Money,DeadMoney.esm,NOTE,FULL,01013B38,NVDLC01EastTownNote02,Note Title,Power Status,,,
+17,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B38,NVDLC01EastTownNote02,Power Status,"*** Power Status ***
+
+Non-Essential Systems
+    * Music Speakers: Offline",,,
+18,Dead Money,DeadMoney.esm,NOTE,FULL,01013B37,NVDLC01Gala02Note04,Note Title,Power Status,,,
+19,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B37,NVDLC01Gala02Note04,Power Status,"*** Power Status ***
+
+Non-Essential Systems
+    * Announcement System: WARNING! All speakers are offline. Please contact IT to resolve. CODE: 00J0TD7F",,,
+20,Dead Money,DeadMoney.esm,NOTE,FULL,01013B36,NVDLC01Gala02Note03,Note Title,Power Status,,,
+21,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B36,NVDLC01Gala02Note03,Power Status,"*** Power Status ***
+
+Non-Essential Systems
+    * Announcement System: WARNING! Three of four speakers are offline. Please contact IT to resolve. CODE: 000FHX9C",,,
+22,Dead Money,DeadMoney.esm,NOTE,FULL,01013B35,NVDLC01Gala02Note02,Note Title,Power Status,,,
+23,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B35,NVDLC01Gala02Note02,Power Status,"*** Power Status ***
+
+Non-Essential Systems
+    * Announcement System: WARNING! Two of four speakers are offline. Please contact IT to resolve. CODE: 000FHX9B",,,
+24,Dead Money,DeadMoney.esm,NOTE,FULL,01013B34,NVDLC01Gala02Note01,Note Title,Power Status,,,
+25,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B34,NVDLC01Gala02Note01,Power Status,"*** Power Status ***
+
+Non-Essential Systems
+    * Announcement System: WARNING! One of four speakers are offline. Please contact IT to resolve. CODE: 000FHX9A",,,
+26,Dead Money,DeadMoney.esm,NOTE,FULL,01013B33,NVDLC01Gala02Note00,Note Title,Power Status,,,
+27,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B33,NVDLC01Gala02Note00,Power Status,"*** Power Status ***
+
+Non-Essential Systems
+    * Announcement System: Powered",,,
+28,Dead Money,DeadMoney.esm,NOTE,FULL,01013B21,NVDLC01VendingModHoloRifle03,Note Title,"Vending Machine Code - ""Hologram Rifle - Advanced Calibration""",,,
+29,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B21,NVDLC01VendingModHoloRifle03,"Vending Machine Code - ""Hologram Rifle - Advanced Calibration""","This is a restricted dispenser code for use in the Vending Machines.
+
+It increases the Holorifle's damage.",,,
+30,Dead Money,DeadMoney.esm,NOTE,FULL,01013B1B,NVDLC01VendingModHoloRifle02,Note Title,"Vending Machine Code - ""Hologram Rifle - Focusing Lense""",,,
+31,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B1B,NVDLC01VendingModHoloRifle02,"Vending Machine Code - ""Hologram Rifle - Focusing Lense""","This is a restricted dispenser code for use in the Vending Machines.
+
+It appears to increase the Holorifle's damage.",,,
+32,Dead Money,DeadMoney.esm,NOTE,FULL,01013B19,NVDLC01Gala02MercNote,Note Title,See you in hell asshole,,,
+33,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B19,NVDLC01Gala02MercNote,See you in hell asshole,"Hope you're about dead when you read this Sierra Madre out of reach 
+Could've had it all, followed that white-arrow-graffiti bastard down here
+Left those beartraps as presents for you on trail hope you liked them shithead
+Hit my own tripwire you came to take what's mine??? Too bad, I got the last laugh 
+Speakers'll kill you before you get out then we'll settle things in hell
+Sierra Madre's treasure's mine mine mine",,,
+34,Dead Money,DeadMoney.esm,NOTE,FULL,01013B13,NVDLC01CasinoFinalComp,Note Title,Sierra Madre - Complimentary Voucher,,,
+35,Dead Money,DeadMoney.esm,NOTE,TNAM,01013B13,NVDLC01CasinoFinalComp,Sierra Madre - Complimentary Voucher,"This voucher grants the bearer:
+""Compliments of the House!""
+
+Enjoy your...
+<Casino Chips>
+...in good health and vitality.
+
+[Abuse will result in the
+denial of all ""Complimentary""
+status.]",,,
+36,Dead Money,DeadMoney.esm,NOTE,FULL,010138E8,NVDLC01RecipeSuperHeatedKnifeNote,Note Title,Recipe: Super-Heated Knife!,,,
+37,Dead Money,DeadMoney.esm,NOTE,TNAM,010138E8,NVDLC01RecipeSuperHeatedKnifeNote,Recipe: Super-Heated Knife!,"Played around with this the other day, and:
+
+1 Cosmic Piece-of-Shit Knife
+1 Pilot Light
+1 Hot Plate
+Something to hold the damn thing to cook evenly
+
+Pre-heat oven to 450 degrees
+Take 1 Knife, leave on stove!
+Let simmer for 5 minutes
+Watch as Knife glows red-hot
+Put Knife on table, melts table
+Sue scientist who made damn thing
+Give it to the military?",,,
+38,Dead Money,DeadMoney.esm,NOTE,FULL,010138E7,NVDLC01KitchenTooHotNote,Note Title,Too Hot!,,,
+39,Dead Money,DeadMoney.esm,NOTE,TNAM,010138E7,NVDLC01KitchenTooHotNote,Too Hot!,"One of the cooks noticed their knife was glowing the other day. They'd left it on the stove top, and the metal started glowing red - and it didn't cool down! What kind of ""Space Age"" metal is this Cosmic Knife made of? It kept glowing hot for several hours, and then the knife was so weak that when we tried to use it, it simply snapped. Guess that's why the metal's not used in rockets!",,,
+40,Dead Money,DeadMoney.esm,NOTE,FULL,010138E6,NVDLC01KitchenAnotherShipmentNote,Note Title,Another Shipment?,,,
+41,Dead Money,DeadMoney.esm,NOTE,TNAM,010138E6,NVDLC01KitchenAnotherShipmentNote,Another Shipment?,"Another (!) shipment of kitchen knives for the Cantina Madrid came in today, with their new ""space age"" alloy polymer material. We've got way more than we need for the Gala Event, even if everyone had 3 steak knives! But it's always the best for Sinclair, always, always, always, always, he insists everything must be perfect.",,,
+42,Dead Money,DeadMoney.esm,NOTE,FULL,010138E5,NVDLC01KitchenTheseKnivesNote,Note Title,These Knives!,,,
+43,Dead Money,DeadMoney.esm,NOTE,TNAM,010138E5,NVDLC01KitchenTheseKnivesNote,These Knives!,"These knives are sharp, too sharp! One of the chefs almost lost their thumb when dicing vegetables, and we're losing cutting boards at a rate of at least one per day. The knives just slice right through them! Running out of dishrags to mop up the blood.",,,
+44,Dead Money,DeadMoney.esm,NOTE,TNAM,010138B3,NVDLC01ToxicAnalysisNote,NVDLC01ToxicAnalysisNote,"I've started analyzing samples of the Cloud that surrounds the Sierra Madre. Preliminary results are promising. I need to perform a proper atmospheric analysis, that requires I travel there directly. Still, the sample I have collected in my chemistry set is enough to keep my experiments running. The Cloud Residue replenishes slowly, and I have to limit the gathering of samples to its rate of growth, allowing me to restock once per day.",,,
+45,Dead Money,DeadMoney.esm,NOTE,FULL,0101389D,NVDLC01VaultDean01Note,Note Title,Sinclair's Personal Accounts,,,
+46,Dead Money,DeadMoney.esm,NOTE,TNAM,0101389D,NVDLC01VaultDean01Note,Sinclair's Personal Accounts,"Dean,
+
+If you're reading this, this is goodbye. You will have many years to read this message. Why you have smiled in my face and held a dagger to me, I do not know. You were rich, respected... even admired, loved by many. When you finally pass away down here, either by your own hand or starvation, know that your greed has led you here, for no reason I can understand.
+
+You have made a habit in using others for your own ends. Now, the Sierra Madre is your reward. Whether you used blackmail or force - or even played to Vera's greed, it will not help down here in the Vault. Greed has led you here. I hope it leaves you as empty as you left me.
+
+The door has sealed, the elevator has left. Even Vera's voice will not unlock it. Know that on the night of the Gala Event I shall raise my glass and whisper, ""Fortunato.""
+
+In pace requiescat,
+
+Frederick Sinclair",,,
+47,Dead Money,DeadMoney.esm,NOTE,FULL,0101389B,NVDLC01VaultVera02Note,Note Title,Vera,,,
+48,Dead Money,DeadMoney.esm,NOTE,TNAM,0101389B,NVDLC01VaultVera02Note,Vera,"Vera, if you're reading this, my fears have come to pass, and this is an apology.
+
+I hope you realized what my last words meant to you. If so, they have led you here, and this place will keep you safe. I know what they meant for me, and I fear they have trapped me here.
+
+I have extracted the previous entry after our conversation tonight. It can't have been easy for you, and I am sorry for all I've put you through in silence. I know while you do not love me, you did not mean any malice in what you did.
+
+I knew about your plans to rob the casino with Dean before you told me. Hearing it from you didn't make it any easier. For what it's worth, I am glad you told me yourself, and I understood the tapes he had in his possession.
+
+I do not think either one of you realized what your addiction stemmed from, however, and that is the tragedy in this. I suspect the world would not have believed you, regardless, so I respect your desire to keep it from others.
+
+When first building this Villa, this casino, I meant it for you. As the world seemed to race headlong toward war, it became part of my desire to protect you. The loans, the funding I poured into the casino's construction...
+
+I knew it would not matter when war came for us. It was my means of creating a shelter, a defense if the world was bombarded in radiation and bombs.
+
+When Dean revealed his plans inadvertently through our introduction, I realized what had happened, and how I had been tricked. For a time, my thoughts were dark. I changed the casino vault from a shelter to a trap, as I knew the first one to enter would be Dean. He would die down here, and it would have been by his own hand.
+
+I fear, however, that I overstepped myself, and the only safe place in the casino is the Vault. I have tried to rewire the systems, change the protocols, and I cannot. I will do one last check on the pipes by the edge of the outside platform and see if anything can be done. I fear it is useless.
+
+If you come down here, do not access my personal accounts entry.
+
+It contains only a message for Dean, and it will seal the door and you will have no way out - even the elevator is designed to automatically return when the door is closed, and it will lock in place.
+
+There should be enough in the Vault to sustain you until help arrives. I have ensured that there is enough medical supplies down here to keep you comfortable.
+
+The holograms should defend the casino from any attackers, and the hologram beacon in the Villa will broadcast an emergency signal so that others know you are here.
+
+When danger has passed, rescue will come.
+
+I hope you were able to read this, and know that I loved you.
+
+Frederick Sinclair",,,
+49,Dead Money,DeadMoney.esm,NOTE,FULL,01013897,NVDLC01VaultVera01Note,Note Title,Extracted Holotape,,,
+50,Dead Money,DeadMoney.esm,NOTE,TNAM,01013897,NVDLC01VaultVera01Note,Extracted Holotape,"<This Holotape looks like it was ripped from a terminal drive.>
+
+Vera,
+
+If you're reading this, I know what you and Dean had planned tonight on the eve of the Gala Event. I loved you very much, and whatever possessed you to choose Dean's arm over my hand is beyond me. Whether it was greed or lust, it has led you here and will forever keep us apart. I hope it leaves you as empty as you left me. As much as you sought what was inside the Sierra Madre, now it will keep you.
+
+The door has sealed, the elevator has left, and not even your voice will unlock it. This casino was my gift to you, and you now will be its heart for all time.
+
+Sincerely,
+
+Frederick Sinclair",,,
+51,Dead Money,DeadMoney.esm,NOTE,FULL,01013896,NVDLC01VaultSecurityWarnProtocolNote,Note Title,Vault Security Protocols,,,
+52,Dead Money,DeadMoney.esm,NOTE,TNAM,01013896,NVDLC01VaultSecurityWarnProtocolNote,Vault Security Protocols,"Warning: In the event Vault security is disabled by any means and the private terminal in the Vault is accessed, the Vault will enter a lockdown state. At this time, the elevator will return to the Suites and cannot be accessed again. As requested by Mr. Sinclair, there is no manual or terminal override once the elevator is locked. Once initiated, it cannot be undone.",,,
+53,Dead Money,DeadMoney.esm,NOTE,FULL,01013894,NVDLC01VaultWorkerNote,Note Title,Worker's Note,,,
+54,Dead Money,DeadMoney.esm,NOTE,TNAM,01013894,NVDLC01VaultWorkerNote,Worker's Note,"This job doesn't pay enough, working down here with those walking lightshows gets on my nerves. And the elevator... does Sinclair know how dangerous it is to have the elevator lock like that? If someone accidentally trips the deadman's switch inside his Vault... even Sinclair himself... this whole place becomes a big metal coffin. Lou tried to tell him and Sinclair said it would be ""user error.""",,,
+55,Dead Money,DeadMoney.esm,NOTE,FULL,01013893,NVDLC01VaultElevatorWarnProtocolNote,Note Title,Warning: Elevator Protocols,,,
+56,Dead Money,DeadMoney.esm,NOTE,TNAM,01013893,NVDLC01VaultElevatorWarnProtocolNote,Warning: Elevator Protocols,"Warning: If Vault security is disabled and the Vault terminal is breached, the elevator will automatically return to the Suites and lock permanently in place. After that, there is no way to operate the elevator, and the Vault area is sealed off. As requested by Mr. Sinclair, there is no manual or terminal override once the elevator is locked. Once initiated, it cannot be undone.
+
+Until that time, the elevator may be operated freely from the terminal above.",,,
+57,Dead Money,DeadMoney.esm,NOTE,FULL,0101375A,NVDLC01Holograms11Note,Note Title,Sinclair: E.B.E,,,
+58,Dead Money,DeadMoney.esm,NOTE,TNAM,0101375A,NVDLC01Holograms11Note,Sinclair: E.B.E,"Mr. Sinclair,
+
+I took the points you raised in the call today to heart, and I hope my answers offered some reassurance. What we are providing is an exclusive, comprehensive technology, but more importantly, we want to address the concern you raised for protecting your guests from threats, specifically the growing communist threat from the Chinese.
+
+Security is N.E.'s top concern. There is no reason to provide a service that you cannot defend, and should the current world situation lead to increased hostilities, an Emergency Broadcast Emitter has been placed inside select hologram emitters at the Sierra Madre. In case of nuclear attack, holograms will defend their stations with lethal force to protect the guests under their charge.
+
+If you wish to make sure that those who come to your Villa and casino have the means to defend themselves, I assure you, you need look no further than the E.B.E., it is a proven technology, and anyone who decides to attack you or your guests will regret any aggression.
+
+Martin T. Harris
+
+P.S. Any chance we could ask you to have Ms Keyes sign an autograph for us? It won't reduce the price, although I could see about sending a few extra systems your way.",,,
+59,Dead Money,DeadMoney.esm,NOTE,FULL,01013759,NVDLC01Holograms10Note,Note Title,Hologram: Maintenance 8.3,,,
+60,Dead Money,DeadMoney.esm,NOTE,TNAM,01013759,NVDLC01Holograms10Note,Hologram: Maintenance 8.3,"Holographic greeting and security technology requires service from trained professionals and routine maintenance. While the emitters maintain a charge for theoretically hundreds of years, damage can occur and circuits can erode over time. As part of the Security Madre exclusive contract, we have delivered on the custom energy recycling emitters requested by the Sierra Madre financiers and Mr. Sinclair.",,,
+61,Dead Money,DeadMoney.esm,NOTE,FULL,01013758,NVDLC01Holograms09Note,Note Title,Hologram: Hologram Emitters 5.0,,,
+62,Dead Money,DeadMoney.esm,NOTE,TNAM,01013758,NVDLC01Holograms09Note,Hologram: Hologram Emitters 5.0,"Hologram emitters are sturdy, yet can still be damaged or broken if enough force is applied. In addition, while they are protected inside sturdy space age alloys, their circuits are vulnerable to being tampered with. If this occurs, refer to the repair manual that comes with the hologram installation guide. Please call customer support services if this occurs. Do not attempt to repair the emitter yourself!
+
+Warning: Do not approach an emitter that may have been tampered with! If you must, please wear reflective maintenance gear or metal armor in case of hologram malfunction, and make sure that you can move beyond a hologram's field of view in case problems arise.",,,
+63,Dead Money,DeadMoney.esm,NOTE,FULL,01013757,NVDLC01Holograms08Note,Note Title,Hologram: Security Patrols 2.7,,,
+64,Dead Money,DeadMoney.esm,NOTE,TNAM,01013757,NVDLC01Holograms08Note,Hologram: Security Patrols 2.7,"As with service holograms, security holograms cannot leave emitter range. They will pursue a target to the emitter's perimeter, however. This usually allows a target to be subdued, and should present no obstacle to casino security.",,,
+65,Dead Money,DeadMoney.esm,NOTE,FULL,01013756,NVDLC01Holograms07Note,Note Title,Hologram: Threat Response 2.6.2,,,
+66,Dead Money,DeadMoney.esm,NOTE,TNAM,01013756,NVDLC01Holograms07Note,Hologram: Threat Response 2.6.2,"Often, an intruder's natural response is to attack a security hologram, either with fists or with a weapon. Fortunately for the hologram owner, all such assaults are useless against security holograms! They cannot be wounded, damaged, or harmed unless their emitter is destroyed.
+
+Attackers spending the time to look for emitters will usually be rendered unconscious by a hologram's discharge beams before they can disable them, so there is nothing to fear.",,,
+67,Dead Money,DeadMoney.esm,NOTE,FULL,01013755,NVDLC01Holograms06Note,Note Title,Hologram: Threat Detection 2.6,,,
+68,Dead Money,DeadMoney.esm,NOTE,TNAM,01013755,NVDLC01Holograms06Note,Hologram: Threat Detection 2.6,"If security holograms detect unauthorized guests or detect criminal action, they will display a warning ""caution"" color to the target.
+
+If you believe they ever display this color in error, immediately move away from the hologram's field of view until they resume their normal protocol. If the behavior persists, they will enter engagement mode, turn red, and attempt to subdue targets with their discharge beams.
+
+Note: As requested in the service contract, N.E. has installed EBE systems in all Sierra Madre security hologram emitters.",,,
+69,Dead Money,DeadMoney.esm,NOTE,FULL,01013754,NVDLC01Holograms05Note,Note Title,Hologram: Security Protocols 2.5,,,
+70,Dead Money,DeadMoney.esm,NOTE,TNAM,01013754,NVDLC01Holograms05Note,Hologram: Security Protocols 2.5,"Security holograms use field of view sensors to perceive their environment and to aid in pathing. While later versions will feature upgrades that allow for a 360 degree perception arc, the memory cells in current hologram emitters can only perceive their environment in a cone in front of them.
+
+They can, however, change facing as needed and scan their environment for unauthorized activity. It is best to purchase security hologram emitters in pairs to cover a full view of the environment, as trespassers could conceivably use hologram blindspots to gain access to unauthorized areas!",,,
+71,Dead Money,DeadMoney.esm,NOTE,FULL,01013753,NVDLC01Holograms04Note,Note Title,Hologram: Addendum: Appearance 2.4.1,,,
+72,Dead Money,DeadMoney.esm,NOTE,TNAM,01013753,NVDLC01Holograms04Note,Hologram: Addendum: Appearance 2.4.1,"Security holograms have been programmed with the case-specific Sierra Madre protocols.
+
+Not only do security holograms look like Sierra Madre personnel, they will respond to threats or unauthorized personnel just as conventional security guards would.",,,
+73,Dead Money,DeadMoney.esm,NOTE,FULL,01013752,NVDLC01Holograms03Note,Note Title,Hologram: Security Protocols 2.4,,,
+74,Dead Money,DeadMoney.esm,NOTE,TNAM,01013752,NVDLC01Holograms03Note,Hologram: Security Protocols 2.4,Security protocol holograms do just as the name implies: provide security. They perform this function better than most conventional security guards.,,,
+75,Dead Money,DeadMoney.esm,NOTE,FULL,01013751,NVDLC01Holograms02Note,Note Title,Hologram: Service Protocols 2.3,,,
+76,Dead Money,DeadMoney.esm,NOTE,TNAM,01013751,NVDLC01Holograms02Note,Hologram: Service Protocols 2.3,"Holograms are programmed with service protocols and security protocols.
+
+Service protocol holograms perform a specific function - greeters, simple vendors, or in the case of the Sierra Madre casino itself, even monitoring gambling tables. These service holograms follow simple routines, and are incapable of performing any security function.
+
+Holograms cannot move beyond range of their emitters and are best when used for a simple, localized function.",,,
+77,Dead Money,DeadMoney.esm,NOTE,FULL,01013750,NVDLC01Holograms01Note,Note Title,Hologram: Installation and Maintenance 1.1,,,
+78,Dead Money,DeadMoney.esm,NOTE,TNAM,01013750,NVDLC01Holograms01Note,Hologram: Installation and Maintenance 1.1,"Welcome, and on behalf of your friends at N.E., we thank you for purchasing the latest in service and security technology.
+
+If you encounter any problems, contact our urgent care service representatives at any time during the weekdays from 10 to 2 on Tuesdays and Thursdays. If no one is there to respond to your emergency, leave a message and one of our trained representatives will return your call in the next three to four working days.",,,
+79,Dead Money,DeadMoney.esm,NOTE,TNAM,01013411,NVDLC01ChipRewardNote,NVDLC01ChipRewardNote,"Dear Mr. Elijah,
+
+Congratulations on your winning luck at the Sierra Madre Casino! We have set up your payment of Sierra Madre Chips to be automatically delivered at the dropbox you specified every three days.
+
+Thank you and we hope you enjoyed your stay!
+
+Sincerely,
+
+The Sierra Madre Management",,,
+80,Dead Money,DeadMoney.esm,NOTE,FULL,01013410,NVDLC01SuitesVeraMedNote,Note Title,Vera Keyes' Medical Report,,,
+81,Dead Money,DeadMoney.esm,NOTE,TNAM,01013410,NVDLC01SuitesVeraMedNote,Vera Keyes' Medical Report,"/Sinclair Access 301
+Subject: Keyes, Vera
+Condition: Terminal
+
+Sinclair, 
+
+There's not much more we can do for Miss Keyes except keep her comfortable. Her exhaustion will persist, as will the insomnia.
+
+Recommend continuing Med-X/Superstim treatments. This is not a viable long-term solution. The pain will persist and increase over time, and the dosages she's currently taken already carry the risk of overdose. Based on discussions, I also fear allowing Miss Keyes access to those amounts of Chems may lead to purposeful overdose, and recommend psychiatric evaluation as well.",,,
+82,Dead Money,DeadMoney.esm,NOTE,FULL,0101336E,NVDLC01Gala02SampleNote,Note Title,Toxic Samples,,,
+83,Dead Money,DeadMoney.esm,NOTE,TNAM,0101336E,NVDLC01Gala02SampleNote,Toxic Samples,"Boy, am I ever glad to be out of that damned suit! Almost lost a few men today getting enough samples together for the eggheads to take a look at.",,,
+84,Dead Money,DeadMoney.esm,NOTE,FULL,0101332B,NVDLC01VendingModBearTrapFist,Note Title,"Vending Machine Code - ""Bear Trap Fist - Heavy Duty Springs""",,,
+85,Dead Money,DeadMoney.esm,NOTE,TNAM,0101332B,NVDLC01VendingModBearTrapFist,"Vending Machine Code - ""Bear Trap Fist - Heavy Duty Springs""","This is a restricted dispenser code for use in the Vending Machines.
+
+It looks as if it can increase the damage the Bear Trap Fist does.",,,
+86,Dead Money,DeadMoney.esm,NOTE,FULL,0101332A,NVDLC01VendingModHoloRifle,Note Title,"Vending Machine Code - ""Hologram Rifle - Reinforced Components""",,,
+87,Dead Money,DeadMoney.esm,NOTE,TNAM,0101332A,NVDLC01VendingModHoloRifle,"Vending Machine Code - ""Hologram Rifle - Reinforced Components""","This is a restricted dispenser code for use in the Vending Machines.
+
+It appears to improve the condition of the Hologram Rifle.",,,
+88,Dead Money,DeadMoney.esm,NOTE,FULL,01013329,NVDLC01VendingModAutoRifle,Note Title,"Vending Machine Code - ""Automatic Rifle - Upgraded Internals""",,,
+89,Dead Money,DeadMoney.esm,NOTE,TNAM,01013329,NVDLC01VendingModAutoRifle,"Vending Machine Code - ""Automatic Rifle - Upgraded Internals""","This is a restricted dispenser code for use in the Vending Machines.
+
+It increases the Automatic Rifle's rate of fire.",,,
+90,Dead Money,DeadMoney.esm,NOTE,FULL,010132D9,NVDLC01DeanBlackmailTapeNote,Note Title,Dean Domino's Blackmail Evidence,,,
+91,Dead Money,DeadMoney.esm,NOTE,FULL,010132D8,NVDLC01StarletAudition01Note,Note Title,Vera Keyes' Audition,,,
+92,Dead Money,DeadMoney.esm,NOTE,FULL,010132D7,NVDLC01VaultTurretPasswordNote,Note Title,Vault Turret Terminal Password,,,
+93,Dead Money,DeadMoney.esm,NOTE,TNAM,010132D7,NVDLC01VaultTurretPasswordNote,Vault Turret Terminal Password,"Don't use this unless strictly necessary.
+
+The Vault is off-limits. There is no reason to enter it unless your clearance is personally approved by Mr. Sinclair.
+
+Still, if anything were to go wrong with those security systems, use this password in the Turret-Defense terminal inside the Vault's Chamber:
+
+""HeartArrow""
+
+Lou Martin
+
+M&M Construction Inc.
+Crew Chief.",,,
+94,Dead Money,DeadMoney.esm,NOTE,FULL,01012F56,NVDLC01VendReturnOutfitItem,Note Title,"Vending Machine Code - ""Return Outfit Item""",,,
+95,Dead Money,DeadMoney.esm,NOTE,TNAM,01012F56,NVDLC01VendReturnOutfitItem,"Vending Machine Code - ""Return Outfit Item""",This is a restricted dispenser code for use in the Vending Machines that allows a user to return the selected item for Sierra Madre Chips.,,,
+96,Dead Money,DeadMoney.esm,NOTE,FULL,01012F55,NVDLC01VendingStimpak,Note Title,"Vending Machine Code - ""Stimpak""",,,
+97,Dead Money,DeadMoney.esm,NOTE,TNAM,01012F55,NVDLC01VendingStimpak,"Vending Machine Code - ""Stimpak""",This is a restricted dispenser code for use in the Vending Machines.,,,
+98,Dead Money,DeadMoney.esm,NOTE,FULL,01012F53,NVDLC01VendReturnSAArmor,Note Title,"Vending Machine Code - ""Return SA Armor""",,,
+99,Dead Money,DeadMoney.esm,NOTE,TNAM,01012F53,NVDLC01VendReturnSAArmor,"Vending Machine Code - ""Return SA Armor""",This is a restricted dispenser code for use in the Vending Machines that allows a user to return the selected item for Sierra Madre Chips.,,,
+100,Dead Money,DeadMoney.esm,NOTE,FULL,01012E4A,NVDLC01StarletMusicFragment01,Note Title,"Vera Keyes' ""Let the Bright Tomorrow in"" Song (I)",,,
+101,Dead Money,DeadMoney.esm,NOTE,TNAM,01012E4A,NVDLC01StarletMusicFragment01,"Vera Keyes' ""Let the Bright Tomorrow in"" Song (I)","This is a fragment of Vera Keyes' melody, ""Let the Bright Tomorrow in.""",,,
+102,Dead Money,DeadMoney.esm,NOTE,FULL,01012E49,NVDLC01StarletMusicFragment03,Note Title,"Vera Keyes' ""Let the Bright Tomorrow in"" Song (III)",,,
+103,Dead Money,DeadMoney.esm,NOTE,TNAM,01012E49,NVDLC01StarletMusicFragment03,"Vera Keyes' ""Let the Bright Tomorrow in"" Song (III)","This is a fragment of Vera Keyes' melody, ""Let the Bright Tomorrow in.""",,,
+104,Dead Money,DeadMoney.esm,NOTE,FULL,01012E48,NVDLC01StarletMusicFragment02,Note Title,"Vera Keyes' ""Let the Bright Tomorrow in"" Song (II)",,,
+105,Dead Money,DeadMoney.esm,NOTE,TNAM,01012E48,NVDLC01StarletMusicFragment02,"Vera Keyes' ""Let the Bright Tomorrow in"" Song (II)","This is a fragment of Vera Keyes' melody, ""Let the Bright Tomorrow in.""",,,
+106,Dead Money,DeadMoney.esm,NOTE,FULL,010126E5,NVDLC01ETPersonalLog01Note,Note Title,Personal Log,,,
+107,Dead Money,DeadMoney.esm,NOTE,TNAM,010126E5,NVDLC01ETPersonalLog01Note,Personal Log,"Asked the Foreman how come no one's wised up yet, and he just winked, said we got someone watching out for us, an ace in the hole. As long as we're good until showtime, this whole Villa's going to be the biggest con of all time. That's because half the maintenance shipments aren't coming through - Sinclair's too blinded by that Starlet to see beyond the casino, so we're able to cut corners when we need to, and no one's going to look too close at the budgets while the casino's big opening is underway, and after that, we'll be long gone.",,,
+108,Dead Money,DeadMoney.esm,NOTE,FULL,010126E4,NVDLC01ETStatusReportNote,Note Title,Status Report,,,
+109,Dead Money,DeadMoney.esm,NOTE,TNAM,010126E4,NVDLC01ETStatusReportNote,Status Report,"...the Villa's like cardboard, but the casino? That place isn't built for people to just gamble, it's a place for them to take cover if the big ones hit. Those doors can be hermetically sealed, and whatever they got lining the floors screws up anything not hooked up direct by wires. 
+
+Word is, while Mr. Yesterday got the Villa covered, Sinclair's locking up the Sierra Madre like a golden trap.",,,
+110,Dead Money,DeadMoney.esm,NOTE,FULL,010126E3,NVDLC01ETStainedPageNote,Note Title,Stained Page,,,
+111,Dead Money,DeadMoney.esm,NOTE,TNAM,010126E3,NVDLC01ETStainedPageNote,Stained Page,"Not going to rat me out for what happened in the Villa - I'm not the one who laid the foundation, and I'm not going to take the fall for the supports, either. They try and pin this on me, I'll let them all know what's really going on with the construction contracts.",,,
+112,Dead Money,DeadMoney.esm,NOTE,FULL,010126E2,NVDLC01ETTornJournalNote,Note Title,Torn Journal Page,,,
+113,Dead Money,DeadMoney.esm,NOTE,TNAM,010126E2,NVDLC01ETTornJournalNote,Torn Journal Page,"...seems kind enough, signed my poster, and even the promo photo. Kind of a sad look to her, though, like she wasn't really there. And she almost ran when Mr. Domino slipped his arm through hers, and he wasn't even looking at her, like she was a bag hanging on his arm. Something wrong between those two, not sure if Sinclair sees it, but I do.",,,
+114,Dead Money,DeadMoney.esm,NOTE,FULL,010126E1,NVDLC01ETJournalNote,Note Title,Journal Page,,,
+115,Dead Money,DeadMoney.esm,NOTE,TNAM,010126E1,NVDLC01ETJournalNote,Journal Page,"...town's going to get built, it just ain't built to last. Casino might be a different story, it's like a bank vault to the sky, but that's just me. It's a big show for someone, hope Sinclair survives this one.",,,
+116,Dead Money,DeadMoney.esm,NOTE,FULL,010126E0,NVDLC01ETPersonalLog02Note,Note Title,Personal Log,,,
+117,Dead Money,DeadMoney.esm,NOTE,TNAM,010126E0,NVDLC01ETPersonalLog02Note,Personal Log,"Mr. Yesterday says they can get the incident hushed up, after all, no one really saw what happened when the patio collapsed, and the balcony along with it... we can also see about getting the medical reports at the clinic deleted, too, it's all good. Still, I'm getting nervous - whole thing's a big gamble, won't be long before people see the Villa for what it is, sand barely held together with spit and glue. We're protected legal-wise, even so, this is criminal. It's like he doesn't want this place to last.",,,
+118,Dead Money,DeadMoney.esm,NOTE,FULL,010126DF,NVDLC01ETInfrastructureNote,Note Title,Infrastructure,,,
+119,Dead Money,DeadMoney.esm,NOTE,TNAM,010126DF,NVDLC01ETInfrastructureNote,Infrastructure,"As shoddy as the support beams are for most of these buildings, the ventilation system's worse, and the problems they had over at Puesta... sure, when you count our bonuses, it's good, but not when the workers are coughing to death. Hate to see what this place spits out if someone let the ventilation system chug along for a few years, we'd have another Greener Pastures on our hand, easy, and a pile of bodies beyond it.",,,
+120,Dead Money,DeadMoney.esm,NOTE,FULL,0101255F,NVDLC01Gala02SuitDamageNote,Note Title,Suit Damage,,,
+121,Dead Money,DeadMoney.esm,NOTE,TNAM,0101255F,NVDLC01Gala02SuitDamageNote,Suit Damage,"Sure, the Docs at the Clinic got mad, but we didn't have any choice if we wanted to get medical attention after that gas hit us. So we cut his suit open with one of those surplus steak knives (things could cut through a T-bone like it was hot butter). Rest of us tried to pry the locks on our suits, finally had to use the knives on ours, too.
+
+Can't wait until this job is over and we can let the Villa collapse on itself. They'll be too busy at the casino anyway.",,,
+122,Dead Money,DeadMoney.esm,NOTE,FULL,0101255E,NVDLC01Gala02MaintenanceReportNote,Note Title,Maintenance Report,,,
+123,Dead Money,DeadMoney.esm,NOTE,TNAM,0101255E,NVDLC01Gala02MaintenanceReportNote,Maintenance Report,"Didn't take long to find the problem. Heading down the main pipe, we hit traces of the gas - not the full red stuff like last time, though, minor blessing. The kicker was despite the sealant, it still got inside the suit, turns out the gas eroded the metal of the suit's locks. So not only did one of the boys get exposed, everyone who went down there got locked in their suits.",,,
+124,Dead Money,DeadMoney.esm,NOTE,FULL,0101255D,NVDLC01Gala02SuitsAreHereNote,Note Title,Suits are Here,,,
+125,Dead Money,DeadMoney.esm,NOTE,TNAM,0101255D,NVDLC01Gala02SuitsAreHereNote,Suits are Here,"Those new chemical suits came in today, so we could check out the ventilation chambers, see how that cloud cocktail formed. Suits are kind of creepy looking, hard to talk in them, so we had to use sign language to actually make sense of each other. At least we can check out the pipes and ventilation chambers now.
+
+Gas worries me, though. Really messed the guys up. If the chambers get backed up again hate to see that gas get out, wipe out the Villa.",,,
+126,Dead Money,DeadMoney.esm,NOTE,FULL,0101255C,NVDLC01Gala02SecondShiftNote,Note Title,Second Shifts,,,
+127,Dead Money,DeadMoney.esm,NOTE,TNAM,0101255C,NVDLC01Gala02SecondShiftNote,Second Shifts,"The boys hit by the gas are still out, everyone's pulling more work in as a result, and grumbling's starting. Mr. Yesterday's been keeping the hard liquor and chems coming under Sinclair's eye, isn't helping. We need those boys back. We have another chemical leak like that, no more construction for the rest of the year.",,,
+128,Dead Money,DeadMoney.esm,NOTE,FULL,0101255B,NVDLC01Gala02GasLeakNote,Note Title,Gas Leak,,,
+129,Dead Money,DeadMoney.esm,NOTE,TNAM,0101255B,NVDLC01Gala02GasLeakNote,Gas Leak,"Ventilation's all shot to hell, which is going to be a problem when summer hits. The pipes backed up, the chambers started spewing out this red dust cloud, like rust - whatever it was, caused the guys to start choking and vomiting. It's like the place was getting sprayed for roaches, 'cept the bug spray was hitting us. Got the boys to the Clinic, put them out of commission. Mr. Yesterday said he couldn't justify having them paid, but he'd see what he could do ""on the side."" Sounds like he was going to get them some chems - and a little green for keeping their mouths shut.",,,
+130,Dead Money,DeadMoney.esm,NOTE,FULL,010122A7,NVDLC01PoliceNote04c,Note Title,No More Parking Tickets,,,
+131,Dead Money,DeadMoney.esm,NOTE,TNAM,010122A7,NVDLC01PoliceNote04c,No More Parking Tickets,"One good thing about this assignment - no more writing parking tickets. Sinclair's laid out the streets so narrow, cars can't even come into the Villa. Resources being what they are, he may not want folks to waste gas coming here. Cuts down on traffic noise, too. Chief says it's more than that, says Sinclair wanted the Villa to be ""reclusive."" 
+
+Long as I don't have to worry about double-parking snobs or Chryslus gas-hogs clogging the Villa, I could care less. Wonder how he expects folks to get here, though. Seems extreme, even for privacy.",,,
+132,Dead Money,DeadMoney.esm,NOTE,FULL,010122A6,NVDLC01PoliceNote04b,Note Title,Search and Seizure,,,
+133,Dead Money,DeadMoney.esm,NOTE,TNAM,010122A6,NVDLC01PoliceNote04b,Search and Seizure,"After another ""discussion"" with the Puesta del Sol crew, told Chief it'd be difficult to enforce the prohibition list, let alone the searches. Chief had the Gala on his brain, said Sinclair put construction of the Villa more important than patting down the construction crews for liquor and chems as long as they didn't hurt anyone or each other. Got a little hot under the collar, Chief did too, told me to walk it off.
+
+This whole thing stinks. Chief's barely got time for me, now Sinclair's turning a blind eye to things in the Villa because his friend's running the show?",,,
+134,Dead Money,DeadMoney.esm,NOTE,FULL,010122A5,NVDLC01PoliceNote04a,Note Title,Vending Machine Installation,,,
+135,Dead Money,DeadMoney.esm,NOTE,TNAM,010122A5,NVDLC01PoliceNote04a,Vending Machine Installation,"Oversaw the streetside Vending Machines installation today, all working, mostly because the casino crew was running the show. 
+
+Finally complained to the Chief about the machines. They feel like a ""company store."" We only get a few casino chips with the paycheck, so we can barely buy anything. Chief says he's not sure the chips were Sinclair's idea, only if we had any problems with the machines, let him know immediately.",,,
+136,Dead Money,DeadMoney.esm,NOTE,FULL,01012287,NVDLC01wtMoreExplosivesNote,Note Title,More Explosives,,,
+137,Dead Money,DeadMoney.esm,NOTE,TNAM,01012287,NVDLC01wtMoreExplosivesNote,More Explosives,"More demolition charges showed up today - checked with Mr. Yesterday, he didn't know squat about the shipment, was only interested if anyone had made a buck off it. These something Sinclair ordered, or is it another cock-up like the knives? We got more than enough explosives already - what, is high-and-mighty planning to blow up the road to this place so no one can get up here?",,,
+138,Dead Money,DeadMoney.esm,NOTE,FULL,01012286,NVDLC01wtDamnRaidNote,Note Title,Damn Raid,,,
+139,Dead Money,DeadMoney.esm,NOTE,TNAM,01012286,NVDLC01wtDamnRaidNote,Damn Raid,"Villa security showed up today and searched the place. Domino must've made the Chief mad, so this was payback. Had all our stashes tucked away when they arrived, didn't find much. Chief tried to be all hard with us about keeping our noses clean, ranted about ""casino policy."" 
+
+That Sinclair's a tight-ass. Sick of these spot-checks and stripped by the casino search programs every time I enter the Villa. What's his issue with chems? He could use some. So could that pretty bride-to-be, though she looks half-doped up with that expression of hers. Med-X from the looks of it.",,,
+140,Dead Money,DeadMoney.esm,NOTE,FULL,01012285,NVDLC01wtChatNote,Note Title,Chat,,,
+141,Dead Money,DeadMoney.esm,NOTE,TNAM,01012285,NVDLC01wtChatNote,Chat,"Domino swung by today after the foreman's accident. Wanted to know how I was handling it, if the boys and I were doing all right. Guy's a snake, laying on the fake charm, trying to be one of us - he asked if we were being paid as ""befits our skills."" He said if we weren't, to come see him, he'd set us up. I'm not stupid, I seen the percentages, I know someone's making a killing off the corners we're cutting - sounds like Domino and construction are arm-in-arm. Don't matter to me as long as the cash gets left in the drawer every week.",,,
+142,Dead Money,DeadMoney.esm,NOTE,FULL,01012284,NVDLC01wtPromotionNote,Note Title,Promotion,,,
+143,Dead Money,DeadMoney.esm,NOTE,TNAM,01012284,NVDLC01wtPromotionNote,Promotion,"This place is a safety inspector's wet dream. Or nightmare. Foreman ended up taking a fall in the switching station last night, broke one of his legs and his neck, but didn't die from it - he bled out before anyone found him. Bad luck - wasn't his shift, no idea what he was doing down there, but I'm surprised he fell and didn't have one of the platforms just collapse on him.",,,
+144,Dead Money,DeadMoney.esm,NOTE,FULL,01012283,NVDLC01wtContractsNote,Note Title,Contracts,,,
+145,Dead Money,DeadMoney.esm,NOTE,TNAM,01012283,NVDLC01wtContractsNote,Contracts,"We have a sweet deal here. I let Mr. Yesterday know that, know that we might need to renegotiate our arrangement and move the % around. Left records in maintenance in case things got difficult, blow this deathtrap wide open. Agreed to discuss things in the switching station so we wouldn't be overheard.",,,
+146,Dead Money,DeadMoney.esm,NOTE,FULL,01012282,NVDLC01wtVisitNote,Note Title,Visit,,,
+147,Dead Money,DeadMoney.esm,NOTE,TNAM,01012282,NVDLC01wtVisitNote,Visit,"Sinclair was a lot more level than I was expecting. Especially after Mr. Yesterday's cracks. He's sharper than one of those knives, too. He asked a lot of good questions about the foundations, some I couldn't even answer, didn't bother him though. He knows engineering, that's for sure. Worried he's going to see through the Villa, see it for the cardboard town it is.",,,
+148,Dead Money,DeadMoney.esm,NOTE,FULL,01012281,NVDLC01wtSurveySchedulesNote,Note Title,Survey Schedules,,,
+149,Dead Money,DeadMoney.esm,NOTE,TNAM,01012281,NVDLC01wtSurveySchedulesNote,Survey Schedules,"Sinclair's coming tomorrow to check on the Villa's ""progress,"" told the boys to look sharp for the suit. Not bringing the big starlet, though, so the boys were grumbling about that. 
+
+Better watch himself, might have a nasty fall in the switching station.",,,
+150,Dead Money,DeadMoney.esm,NOTE,FULL,01012280,NVDLC01wtJournalNote,Note Title,Journal,,,
+151,Dead Money,DeadMoney.esm,NOTE,TNAM,01012280,NVDLC01wtJournalNote,Journal,"One thing about the liquor they're shipping in, it's making somebody talk - the big man came down today and told us that we have a sweet deal set up, and one slipped word in front of security can bring this all crashing down... for real.",,,
+152,Dead Money,DeadMoney.esm,NOTE,FULL,0101227F,NVDLC01wtShipmentInvoiceNote,Note Title,Shipment Invoice,,,
+153,Dead Money,DeadMoney.esm,NOTE,TNAM,0101227F,NVDLC01wtShipmentInvoiceNote,Shipment Invoice,"Shipments got routed again, and what was meant for the casino restaurant ended up in the Villa main for the umpteenth time. Hauling those crates of knives up to the main lobby ain't going to be my job, especially with no cars.",,,
+154,Dead Money,DeadMoney.esm,NOTE,FULL,0101227E,NVDLC01wtStainedNote,Note Title,Stained Note,,,
+155,Dead Money,DeadMoney.esm,NOTE,TNAM,0101227E,NVDLC01wtStainedNote,Stained Note,"Liquor shipment finally came in today - didn't realize working here would be like working in a dry state. Just need to keep it out of sight of security and Sinclair, and ought to take the edge off the day, keep it stashed in the back.",,,
+156,Dead Money,DeadMoney.esm,NOTE,FULL,0101227D,NVDLC01wtSpecialOrdersNote,Note Title,Special Orders,,,
+157,Dead Money,DeadMoney.esm,NOTE,TNAM,0101227D,NVDLC01wtSpecialOrdersNote,Special Orders,"Those Vending Machines are something else - we got codes in today so we don't even need the demolition charges, or even more tool orders. You use these things at the Vending Machines, it unlocks construction equipment - even demolition charges and repair kits?",,,
+158,Dead Money,DeadMoney.esm,NOTE,FULL,01012215,NVDLC01PoliceNote03b,Note Title,Dispenser Report,,,
+159,Dead Money,DeadMoney.esm,NOTE,TNAM,01012215,NVDLC01PoliceNote03b,Dispenser Report,"Dispensers are up and running. Unlike most everything else, we've had few problems with them. I heard they'd been part of some World's Fair exhibit Sinclair had seen, so he contacted the researchers about the dispensers to see if he could use them here. 
+
+Turns out, dispensers do more than supply convenience items: if there's an emergency or the threat of communist attack, codes can unlock ammo and repair kits for the dispensers. Stored back-ups of the codes in the contraband room, just in case.",,,
+160,Dead Money,DeadMoney.esm,NOTE,FULL,01012214,NVDLC01PoliceNote03a,Note Title,Inventory,,,
+161,Dead Money,DeadMoney.esm,NOTE,TNAM,01012214,NVDLC01PoliceNote03a,Inventory,"Got the weapons and the mines in today, along with the shotguns and the ammo, enough to defend the Villa if trouble breaks out. Sinclair's taking the world situation seriously, even all the way out here... maybe more so because we're out here. 
+
+Hate to think if someone got their hands on half the stuff we have stored here. Enough military ordinance here to turn the Villa into a mine field.",,,
+162,Dead Money,DeadMoney.esm,NOTE,FULL,01012213,NVDLC01PoliceNote02b,Note Title,Security System Installation,,,
+163,Dead Money,DeadMoney.esm,NOTE,TNAM,01012213,NVDLC01PoliceNote02b,Security System Installation,"Sinclair installed a new security system for visitors coming into and out of the Villa - he doesn't seem to care too much about what they do when they're inside, only that we confiscate any personal items that could be dangerous or foreign, and make sure we know who enters and who leaves. Asked him again about watching the construction crews. He said that was a ""Villa matter"" (great, that means the Prick runs the show). As long as there were no more accidents among the crews, that's what he cared about. 
+
+Barely tucked my flask under the desk before he showed up. He gets that disapproving look when he sees the hard stuff.",,,
+164,Dead Money,DeadMoney.esm,NOTE,FULL,01012212,NVDLC01PoliceNote02a,Note Title,Prohibited Items,,,
+165,Dead Money,DeadMoney.esm,NOTE,TNAM,01012212,NVDLC01PoliceNote02a,Prohibited Items,"Sinclair's prohibition list is going to be difficult to enforce and told him so. He claims we're getting an automated system that would confiscate items even the slightest bit radioactive or foreign and ship them back to the visitor's source address. Asked about items already in the Villa (didn't mention the construction crew) and he dismissed it.
+
+Of course, no sooner than Sinclair gives his prohibition speech, his pal swings by the same hour, asking how ""hardnosed"" we were going to be. Told me he couldn't guarantee he could keep me supplied if I didn't treat his ""friends"" with the same respect. Prick.",,,
+166,Dead Money,DeadMoney.esm,NOTE,FULL,01012211,NVDLC01PoliceNote01c,Note Title,Communications,,,
+167,Dead Money,DeadMoney.esm,NOTE,TNAM,01012211,NVDLC01PoliceNote01c,Communications,"Set up the radio room downstairs to broadcast through the speakers. Don't want to miss tonight's performance, the receiver down there is stronger than the desk radios we have up here.
+
+Stashed some supplies from the evidence room down there to celebrate once my shift is over. Way I figure it, the rest of the guards'll be too busy to check up on me.",,,
+168,Dead Money,DeadMoney.esm,NOTE,FULL,01012210,NVDLC01PoliceNote01b,Note Title,Holding Cell,,,
+169,Dead Money,DeadMoney.esm,NOTE,TNAM,01012210,NVDLC01PoliceNote01b,Holding Cell,"Nothing much to report. Pretty quiet tonight, even from Puesta del Sol. Imagine Morris up in the casino probably has more than enough with the guests coming in tonight, poor bastard.
+
+Set up the radios so I can listen in on the Gala Event when it fires up, and left one out for the prisoners. If Sinclair doesn't want us to be too strict with the guests tonight, I may just toss the key in the holding cage with anyone we pick up and let them unlock the door when they sleep it off.",,,
+170,Dead Money,DeadMoney.esm,NOTE,FULL,010121FE,NVDLC01SecurityMeetingNote,Note Title,Security Measure Meeting,,,
+171,Dead Money,DeadMoney.esm,NOTE,TNAM,010121FE,NVDLC01SecurityMeetingNote,Security Measure Meeting,"Since you missed it, Sinclair outlined security measures today. Wasn't blind to what was happening in the news, wanted to take steps if the Chinese got a foothold on American soil. Ran us through the added functionality of the holograms, then explained the construction of the casino, its emergency protocols, and the broadcast signal we're using for the Gala Event. Guy's a nut job, still, seems to have the bases covered. Guess the isolation of the casino was intentional. Not sure what he's hoping to protect, sure seems obsessed with it.",,,
+172,Dead Money,DeadMoney.esm,NOTE,FULL,010121FD,NVDLC01ProtocolsNote,Note Title,Notes on Emergency Protocols,,,
+173,Dead Money,DeadMoney.esm,NOTE,TNAM,010121FD,NVDLC01ProtocolsNote,Notes on Emergency Protocols,"Been reading this over: ""In the event of a fire, chemical leak, nuclear attack, or other threat to the casino, the interior and exterior doors will hermetically seal to prevent harm coming to the guests. During this time, Holograms will be deployed and assume threat status until the lockdown is ended.""
+
+Guess can't be too careful these days. Still, what if there was another leak at the switching station? Not to mention the gas valves in the kitchen. If those got hit, the whole casino's a torch.",,,
+174,Dead Money,DeadMoney.esm,NOTE,FULL,010120C4,NVDLC01ClinicNote05b,Note Title,Unpleasant Visit,,,
+175,Dead Money,DeadMoney.esm,NOTE,TNAM,010120C4,NVDLC01ClinicNote05b,Unpleasant Visit,"Domino stopped by to ask about the test results and Vera's voice. He seemed concerned she would lose her voice for the Gala Event. I told him if Ms Keyes was concerned, she should see me, and I would only disclose any medical information to her. I told him the Auto-Docs were more than capable of healing Ms Keyes voice if she developed any throat infection, and we could even operate if need be if she tore her larynx. He seemed satisfied by the news, apologized, amazingly enough, and left a bottle of wine as a token of his appreciation. I told him I felt it was inappropriate, he insisted. I dumped it in the trash.",,,
+176,Dead Money,DeadMoney.esm,NOTE,FULL,010120C3,NVDLC01ClinicNote05a,Note Title,Appointment Calendar,,,
+177,Dead Money,DeadMoney.esm,NOTE,TNAM,010120C3,NVDLC01ClinicNote05a,Appointment Calendar,"Ms Keyes showed up today (sans Sinclair), escorted by Mr. Domino. He explained to me Ms Keyes had developed a throat infection, and asked if the Auto-Doc could help. I asked about the Sierra Madre's Auto-Doc. He said he didn't want to ""alarm"" Sinclair.
+
+Ran some tests. Ms Keyes' voice is fine, her loss of voice was more listlessness, symptomatic of excessive Med-X usage. When I tried to speak to her about it, Mr. Domino intervened. I warned them too much of the Chem could render a subject comatose, and Domino laughed. I lost my temper, and he said they'd return another time when I was in ""better spirits."" Despise that man.",,,
+178,Dead Money,DeadMoney.esm,NOTE,FULL,010120C2,NVDLC01ClinicNote04,Note Title,Appointment Calendar,,,
+179,Dead Money,DeadMoney.esm,NOTE,TNAM,010120C2,NVDLC01ClinicNote04,Appointment Calendar,"Sinclair + Ms Keyes
+<<Transmitted to Sierra Madre>>
+
+Sinclair + Ms Keyes
+<<Transmitted to Sierra Madre>>
+
+Domino + Ms Keyes
+<<Transmitted to Chief Physician's Terminal>>
+
+Sinclair
+Proposed moving 1 Auto-Doc to casino and scheduling visits. Sinclair agreed.",,,
+180,Dead Money,DeadMoney.esm,NOTE,FULL,010120BD,NVDLC01ClinicNote03,Note Title,Exhaustion,,,
+181,Dead Money,DeadMoney.esm,NOTE,TNAM,010120BD,NVDLC01ClinicNote03,Exhaustion,"Ms Keyes' insomnia seems to have gotten worse, so we ended up ordering the new Auto-Doc upgrades, must have cost Sinclair a fortune. The new programs for the Auto-Docs ameliorate the effects of exhaustion. Have already spoken to the staff about side effects and dangers of prolonged use - wanted to make sure they weren't using it to pull double-shifts.
+
+Sinclair asked if these codes could be downloaded into the public dispensers. The codes aren't compatible, unfortunately. He said he'd ""look into it."" Guess his contacts at Big Mountain will be getting a call soon.",,,
+182,Dead Money,DeadMoney.esm,NOTE,FULL,010120B9,NVDLC01ClinicNote02b,Note Title,Safety Suits Arrived,,,
+183,Dead Money,DeadMoney.esm,NOTE,TNAM,010120B9,NVDLC01ClinicNote02b,Safety Suits Arrived,"Chemical suits arrived today. They're bulky, hard to talk and move in. It was difficult to unlock the clasps once in place, had to get one of the staff to help me out of it. I told the construction crew keep the suits ready while working in the switching station and to be careful with them, we only have a limited number. 
+
+I asked Sinclair to order more in the event of a leak in the Villa, and prepared cost estimates for another gas leak to support my case. Didn't need to, he agreed to the request immediately, then asked if he could see the workers and make sure they were all right.",,,
+184,Dead Money,DeadMoney.esm,NOTE,FULL,010120B8,NVDLC01ClinicNote02a,Note Title,Puesta del Sol Switching Station Gas Leak,,,
+185,Dead Money,DeadMoney.esm,NOTE,TNAM,010120B8,NVDLC01ClinicNote02a,Puesta del Sol Switching Station Gas Leak,"Admitted 3 workers from Puesta del Sol Switching Station. Exposed to some unidentified airborne toxin from the ventilation system. Caused severe lung and tissue damage, inhalation isn't the problem, it's absorbed through the skin. 
+
+Researching its effects. The gas, whatever it is, may be building up in vents beneath the town. Asked foreman to look into source before government inspectors do.",,,
+186,Dead Money,DeadMoney.esm,NOTE,FULL,01011DFF,NVDLC01VendingMedX,Note Title,"Vending Machine Code - ""Med-X""",,,
+187,Dead Money,DeadMoney.esm,NOTE,TNAM,01011DFF,NVDLC01VendingMedX,"Vending Machine Code - ""Med-X""",This is a restricted dispenser code for use in the Vending Machines.,,,
+188,Dead Money,DeadMoney.esm,NOTE,FULL,01011B37,NVDLC01VendingVodka,Note Title,"Vending Machine Code - ""Vodka""",,,
+189,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B37,NVDLC01VendingVodka,"Vending Machine Code - ""Vodka""",This is a restricted dispenser code for use in the Vending Machines.,,,
+190,Dead Money,DeadMoney.esm,NOTE,FULL,01011B36,NVDLC01VendingScotch,Note Title,"Vending Machine Code - ""Scotch""",,,
+191,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B36,NVDLC01VendingScotch,"Vending Machine Code - ""Scotch""",This is a restricted dispenser code for use in the Vending Machines.,,,
+192,Dead Money,DeadMoney.esm,NOTE,FULL,01011B35,NVDLC01VendingWine,Note Title,"Vending Machine Code - ""Wine""",,,
+193,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B35,NVDLC01VendingWine,"Vending Machine Code - ""Wine""",This is a restricted dispenser code for use in the Vending Machines.,,,
+194,Dead Money,DeadMoney.esm,NOTE,FULL,01011B34,NVDLC01VendingMentats,Note Title,"Vending Machine Code - ""Mentats""",,,
+195,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B34,NVDLC01VendingMentats,"Vending Machine Code - ""Mentats""",This is a restricted dispenser code for use in the Vending Machines.,,,
+196,Dead Money,DeadMoney.esm,NOTE,FULL,01011B33,NVDLC01VendingBuffout,Note Title,"Vending Machine Code - ""Buffout""",,,
+197,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B33,NVDLC01VendingBuffout,"Vending Machine Code - ""Buffout""",This is a restricted dispenser code for use in the Vending Machines.,,,
+198,Dead Money,DeadMoney.esm,NOTE,FULL,01011B32,NVDLC01VendingRebound,Note Title,"Vending Machine Code - ""Rebound""",,,
+199,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B32,NVDLC01VendingRebound,"Vending Machine Code - ""Rebound""",This is a restricted dispenser code for use in the Vending Machines.,,,
+200,Dead Money,DeadMoney.esm,NOTE,FULL,01011B31,NVDLC01VendingSteady,Note Title,"Vending Machine Code - ""Steady""",,,
+201,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B31,NVDLC01VendingSteady,"Vending Machine Code - ""Steady""",This is a restricted dispenser code for use in the Vending Machines.,,,
+202,Dead Money,DeadMoney.esm,NOTE,FULL,01011B30,NVDLC01VendingWeapRepairKit,Note Title,"Vending Machine Code - ""Weapon Repair Kit""",,,
+203,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B30,NVDLC01VendingWeapRepairKit,"Vending Machine Code - ""Weapon Repair Kit""",This is a restricted dispenser code for use in the Vending Machines.,,,
+204,Dead Money,DeadMoney.esm,NOTE,FULL,01011B2F,NVDLC01VendingRadX,Note Title,"Vending Machine Code - ""Rad-X""",,,
+205,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B2F,NVDLC01VendingRadX,"Vending Machine Code - ""Rad-X""",This is a restricted dispenser code for use in the Vending Machines.,,,
+206,Dead Money,DeadMoney.esm,NOTE,FULL,01011B2E,NVDLC01VendingRadAway,Note Title,"Vending Machine Code - ""RadAway""",,,
+207,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B2E,NVDLC01VendingRadAway,"Vending Machine Code - ""RadAway""",This is a restricted dispenser code for use in the Vending Machines.,,,
+208,Dead Money,DeadMoney.esm,NOTE,FULL,01011B2D,NVDLC01VendingAutoRifleAmmo,Note Title,"Vending Machine Code - "".308 Rifle Rounds""",,,
+209,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B2D,NVDLC01VendingAutoRifleAmmo,"Vending Machine Code - "".308 Rifle Rounds""",This is a restricted dispenser code for use in the Vending Machines.,,,
+210,Dead Money,DeadMoney.esm,NOTE,FULL,01011B2C,NVDLC01VendingPolicePistolAmmo,Note Title,"Vending Machine Code - "".357 Magnum Rounds""",,,
+211,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B2C,NVDLC01VendingPolicePistolAmmo,"Vending Machine Code - "".357 Magnum Rounds""",This is a restricted dispenser code for use in the Vending Machines.,,,
+212,Dead Money,DeadMoney.esm,NOTE,FULL,01011B2B,NVDLC01VendingDemoCharge,Note Title,"Vending Machine Code - ""Demolition Charge""",,,
+213,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B2B,NVDLC01VendingDemoCharge,"Vending Machine Code - ""Demolition Charge""",This is a restricted dispenser code for use in the Vending Machines.,,,
+214,Dead Money,DeadMoney.esm,NOTE,FULL,01011B2A,NVDLC01VendingPolicePistol,Note Title,"Vending Machine Code - ""Police Pistol""",,,
+215,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B2A,NVDLC01VendingPolicePistol,"Vending Machine Code - ""Police Pistol""",This is a restricted dispenser code for use in the Vending Machines.,,,
+216,Dead Money,DeadMoney.esm,NOTE,FULL,01011B29,NVDLC01VendingSuperStims,Note Title,"Vending Machine Code - ""Super Stimpak""",,,
+217,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B29,NVDLC01VendingSuperStims,"Vending Machine Code - ""Super Stimpak""",This is a restricted dispenser code for use in the Vending Machines.,,,
+218,Dead Money,DeadMoney.esm,NOTE,FULL,01011B03,NVDLC01SecurityMemo01,Note Title,Sierra Madre Security Memo,,,
+219,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B03,NVDLC01SecurityMemo01,Sierra Madre Security Memo,"Complaint: Mrs. Purvis/Drunk and Disorderly 
+Sierra Madre Security Log: 11:02PM
+Guard on Call: Morris, Tyler
+
+Describe the Incident: 10PM, received complaints about noise in upper bar, then emergency call from the main floor cashier cage who reported (quote) ""old bat on ceiling."" Investigating, found guests cheering Mrs. Millicent Purvis, 72, who had climbed over the upper bar railing and was walking on the support beams, indicating loudly that she was (quote), ""going to join the circus."" She had already tripped over one Holo-Emitter (unhurt), and was inviting guests out on the beams so we could ""use them like monkey bars."" 
+
+Climbed after her, cornered her near the rafter over the cashier's area, then brought Mrs. Purvis to holding and called her daughter to come escort her to her room. No damage done to rafters or the emitter. Mrs. Purvis's daughter was visibly agitated by the incident and too embarrassed to take any legal action saying that she (quote), ""didn't want to cause any more trouble for Mr. Sinclair."" Need to gate off the rafter area to prevent repeat incidents.",,,
+220,Dead Money,DeadMoney.esm,NOTE,FULL,01011B02,NVDLC01SecurityMemo02,Note Title,Sierra Madre Security Memo 2,,,
+221,Dead Money,DeadMoney.esm,NOTE,TNAM,01011B02,NVDLC01SecurityMemo02,Sierra Madre Security Memo 2,"Complaint: Lost and Found 
+Sierra Madre Security Log: 8:07AM
+Guard on Call: Morris, Tyler
+Describe the Incident: Mrs. Purvis daughter called down to ask if we happened to find her mother's purse, which she may have dropped during last night's ""stroll."" We found the purse on the main floor. None of the valuables were inside, may have been taken when the purse dropped, or Mrs. Purvis may have emptied the purse contents during last night's incident.",,,
+222,Dead Money,DeadMoney.esm,NOTE,FULL,010119DC,NVDLC01ElijahHolomessage,Note Title,Elijah's Holomessage,,,
+223,Dead Money,DeadMoney.esm,NOTE,TNAM,010119DC,NVDLC01ElijahHolomessage,Elijah's Holomessage,"This Holomessage is locked. A label on the front reads, ""For Veronica."" A strange sensor mounted on the back seems to be tied to the locking mechanism.",,,
+224,Dead Money,DeadMoney.esm,NOTE,FULL,010109EF,NVDLC01TheaterEntertainerPasscodeNote,Note Title,Tampico's Stage Manager Passcode,,,
+225,Dead Money,DeadMoney.esm,NOTE,TNAM,010109EF,NVDLC01TheaterEntertainerPasscodeNote,Tampico's Stage Manager Passcode,"Dean had his Entertainer Pass wrapped up in an old, crumbling piece of paper.
+
+Barely visible, it reads:
+
+""Huba-luba""",,,
+226,Dead Money,DeadMoney.esm,NOTE,FULL,010109CA,NVDLC01TheaterFrontDeskMessage,Note Title,"John K. Lester: ""I'm on my way!""",,,
+227,Dead Money,DeadMoney.esm,NOTE,TNAM,010109CA,NVDLC01TheaterFrontDeskMessage,"John K. Lester: ""I'm on my way!""","From: John K. Lester: ""I'm on my way!"" 10/23/77
+
+I'll be right there, Eve!
+
+Just hide until I get there. Do whatever you need to do, understand!?
+
+I'm not going to let anything happen to you.
+
+
+
+
+
+
+---------------------------------
+From: Evelyn A. Sainz: ""John, Help!"" 10/23/77
+
+Everything exploded! There's smoke. Holograms are firing at people! We can't get out, John!
+
+Please!",,,
+228,Dead Money,DeadMoney.esm,NOTE,FULL,01010977,NVDLC01TheaterFrontDeskTerminalPassword,Note Title,Tampico's Front Desk Terminal Password,,,
+229,Dead Money,DeadMoney.esm,NOTE,TNAM,01010977,NVDLC01TheaterFrontDeskTerminalPassword,Tampico's Front Desk Terminal Password,Ardent Tequila,,,
+230,Dead Money,DeadMoney.esm,NOTE,FULL,0101092C,NVDLC01TheaterSecurityProtocolNote,Note Title,The Tampico's Performance Protocols,,,
+231,Dead Money,DeadMoney.esm,NOTE,TNAM,0101092C,NVDLC01TheaterSecurityProtocolNote,The Tampico's Performance Protocols,"The Tampico's Performances Scheduling:
+
+- Performance Preparations:
+  - Doors to Tampico's Stage Open.
+  - Hologram Sentries On.
+  - Ambient Audio System On.
+  - Stage Audio System Off.
+
+- Performance In Progress:
+  - Doors to Tampico's Stage Closed.
+  - Hologram Sentries Off.
+  - Ambient Audio System Off.
+  - Stage Audio System On.
+
+
+In case of emergency, see the Stage's Manager to override Security Protocols.
+
+Sierra Madre Management.",,,
+232,Dead Money,DeadMoney.esm,NOTE,FULL,0101092B,NVDLC01TheaterTampicoShowsNote,Note Title,The Tampico's Grand Opening Shows!,,,
+233,Dead Money,DeadMoney.esm,NOTE,TNAM,0101092B,NVDLC01TheaterTampicoShowsNote,The Tampico's Grand Opening Shows!,"The Sierra Madre opens its doors to the world!
+
+The opening of our great Casino & Resort will feature a unique Gala, showcasing artists of world-renown!
+
+Miss Vera Keyes.
+
+Mr. Dean Domino.
+
+Joey Baxter.
+
+And, Wilfred the Wizard.
+
+
+Come join us at the grandest event in the history of the West.
+
+We welcome you to the best time of your life!
+
+
+Sincerely,
+
+The Sierra Madre's Management.",,,
+234,Dead Money,DeadMoney.esm,NOTE,FULL,010108EA,NVDLC01StarletPartitures,Note Title,Vera Keyes' Partitures,,,
+235,Dead Money,DeadMoney.esm,NOTE,TNAM,010108EA,NVDLC01StarletPartitures,Vera Keyes' Partitures,"This copy of Vera Keyes' partitures contains several notes on the margins of its pages.
+Most of the notations deal with how to best perform each melody. The first page shows a scribble that seems out of place. It reads:
+
+""Begin again, let go.""",,,
+236,Dead Money,DeadMoney.esm,NOTE,FULL,0100FE77,NVDLC01SuitesSecurityPassNote,Note Title,Suites Security Pass,,,
+237,Dead Money,DeadMoney.esm,NOTE,TNAM,0100FE77,NVDLC01SuitesSecurityPassNote,Suites Security Pass,This appears to be the security chief's pass for a security terminal.,,,
+238,Dead Money,DeadMoney.esm,NOTE,FULL,0100ED51,NVDLC01StarletVoiceFragment04,Note Title,Spliced Holotape,,,
+239,Dead Money,DeadMoney.esm,NOTE,TNAM,0100ED51,NVDLC01StarletVoiceFragment04,Spliced Holotape,"You have an edited Holotape of Vera Keyes' voice fragments,  splicing together the words: ""Let,"" and ""Go.""",,,
+240,Dead Money,DeadMoney.esm,NOTE,TNAM,0100ECF6,NVDLC01Gala02EmergencyNote,NVDLC01Gala02EmergencyNote,"In case of emergency, all non-essential systems are to be shut down immediately to help the automatic systems balance the load. Should the automatic systems fail, your foreman will assign one of you to enter the Manual Override Chamber located adjacent to the main regulator.",,,
+241,Dead Money,DeadMoney.esm,NOTE,TNAM,0100ECF5,NVDLC01Gala02StatusNote,NVDLC01Gala02StatusNote,"Minimum power level required: 43%
+Power currently supplied: 85%
+
+Acceptable variation from norm: +/- 15%
+Largest variation in past 24 hours: 36%
+
+Automatic Systems: Offline
+
+WARNING: Large fluctuations in power detected. Large energy expenditures are to be avoided at all costs under these conditions. Report this to the foreman in charge at once.",,,
+242,Dead Money,DeadMoney.esm,NOTE,FULL,0100EC9F,NVDLC01Gala02EnnisLockerNote,Note Title,Ennis's Note,,,
+243,Dead Money,DeadMoney.esm,NOTE,TNAM,0100EC9F,NVDLC01Gala02EnnisLockerNote,Ennis's Note,"Stupid system locked me out again. How am I supposed to remember the password if they keep making me change it every few months? Bah, I'll just write it down here so I don't forget.
+
+XHT68J09DS",,,
+244,Dead Money,DeadMoney.esm,NOTE,FULL,0100EC9E,NVDLC01Gala02EnnisTerminalFromNote,Note Title,Remote Maintenance Terminal Password,,,
+245,Dead Money,DeadMoney.esm,NOTE,TNAM,0100EC9E,NVDLC01Gala02EnnisTerminalFromNote,Remote Maintenance Terminal Password,"To: William Ennis
+
+From: Konrad Simmons
+
+Damn it, Ennis, how many times do I have to tell you?  The password for the Remote Maintenance Terminal is T7GF0SEW.",,,
+246,Dead Money,DeadMoney.esm,NOTE,TNAM,0100EC9D,NVDLC01Gala02KeyNote,NVDLC01Gala02KeyNote,"Old man Ennis left his key on one of the consoles again, so making this note to remind myself to give it back next time I see him. We should stuff his locker full of Dandy Boy Apples or something. Maybe then he'd be less forgetful.",,,
+247,Dead Money,DeadMoney.esm,NOTE,TNAM,0100EC9C,NVDLC01Gala02EnnisTerminalToNote,NVDLC01Gala02EnnisTerminalToNote,"To: Konrad Simmons
+
+From: William Ennis
+
+Simmons, the ventilation system is on the fritz again and I need to even out the power distribution manually for the new generator we're bringing online. It's positively sweltering down in that cramped little room, and you know I don't cope well with the heat, so I'd like to do the work remotely. What's the password for the back-up machine again?",,,
+248,Dead Money,DeadMoney.esm,NOTE,FULL,0100E9F6,NVDLC01TheaterDeanHolotapeNote,Note Title,"Dean Domino's ""Saw Her Yesterday"" Song",,,
+249,Dead Money,DeadMoney.esm,NOTE,TNAM,0100E9F6,NVDLC01TheaterDeanHolotapeNote,"Dean Domino's ""Saw Her Yesterday"" Song","This Holodisk contains Dean Domino's melody, ""Saw Her Yesterday.""",,,
+250,Dead Money,DeadMoney.esm,NOTE,FULL,0100E7CA,NVDLC01StarletVoiceFragment03,Note Title,"Vera Keyes' ""Begin Again"" Song",,,
+251,Dead Money,DeadMoney.esm,NOTE,TNAM,0100E7CA,NVDLC01StarletVoiceFragment03,"Vera Keyes' ""Begin Again"" Song","You have a Holotape of Vera Keyes' melody, ""Begin Again.""",,,
+252,Dead Money,DeadMoney.esm,NOTE,FULL,0100E7C9,NVDLC01StarletVoiceFragment02,Note Title,"Vera Keyes' ""Go to the Faraway"" Song",,,
+253,Dead Money,DeadMoney.esm,NOTE,TNAM,0100E7C9,NVDLC01StarletVoiceFragment02,"Vera Keyes' ""Go to the Faraway"" Song","You have a Holotape of Vera Keyes' melody, ""Go to the Faraway.""",,,
+254,Dead Money,DeadMoney.esm,NOTE,FULL,0100E7C8,NVDLC01StarletVoiceFragment01,Note Title,"Vera Keyes' ""Let the Bright Tomorrow in"" Song",,,
+255,Dead Money,DeadMoney.esm,NOTE,TNAM,0100E7C8,NVDLC01StarletVoiceFragment01,"Vera Keyes' ""Let the Bright Tomorrow in"" Song","You have a Holotape of Vera Keyes' melody, ""Let the Bright Tomorrow in.""",,,
+256,Dead Money,DeadMoney.esm,NOTE,FULL,0100E4CD,NVDLC01PoliceNote01a,Note Title,Sinclair Visit,,,
+257,Dead Money,DeadMoney.esm,NOTE,TNAM,0100E4CD,NVDLC01PoliceNote01a,Sinclair Visit,"Sinclair did the rounds again today. Glad he left his ghostly entourage at the casino, those walking lightshows makes me wonder why he's even got us on staff when they could blast us in a second. Otherwise, Sinclair runs a tight ship, good to see in these days and times. Don't know how smart he is trying to make a resort to escape everything in the outside world, but rich guys can make it happen, even ones that've been hit hard like Sinclair has.",,,
+258,Dead Money,DeadMoney.esm,NOTE,FULL,0100DFCF,NVDLC01DogCommandNote,Note Title,Dog Command Tape,,,
+259,Dead Money,DeadMoney.esm,NOTE,TNAM,0100DFCF,NVDLC01DogCommandNote,Dog Command Tape,»ß,,,
+260,Dead Money,DeadMoney.esm,NOTE,FULL,0100DACE,NVDLC01VaultTechReplicatorNote,Note Title,Sierra Madre Replicator Tech,,,
+261,Dead Money,DeadMoney.esm,NOTE,TNAM,0100DACE,NVDLC01VaultTechReplicatorNote,Sierra Madre Replicator Tech,Sierra Madre Replicator Schematics Retrieved.,,,
+262,Dead Money,DeadMoney.esm,NOTE,FULL,0100DACD,NVDLC01VaultTechHoloNote,Note Title,Sierra Madre Hologram Tech,,,
+263,Dead Money,DeadMoney.esm,NOTE,TNAM,0100DACD,NVDLC01VaultTechHoloNote,Sierra Madre Hologram Tech,Sierra Madre Hologram Technology Retrieved.,,,
+264,Dead Money,DeadMoney.esm,NOTE,FULL,0100DACC,NVDLC01VaultTechCloudNote,Note Title,Sierra Madre Cloud Tech,,,
+265,Dead Money,DeadMoney.esm,NOTE,TNAM,0100DACC,NVDLC01VaultTechCloudNote,Sierra Madre Cloud Tech,Sierra Madre Environmental Analysis Retrieved.,,,
+266,Dead Money,DeadMoney.esm,NOTE,FULL,0100C840,NVDLC01ClinicNote01a,Note Title,Dispenser Codes,,,
+267,Dead Money,DeadMoney.esm,NOTE,TNAM,0100C840,NVDLC01ClinicNote01a,Dispenser Codes,"Codes for the public dispensers arrived today. Sinclair instructed us in their use in case of emergency. Should be able to get stims and other treatments from the machines. Sinclair indicated it could dispense more based on the nature of the medical emergency or subject's condition.
+
+Among the codes, he kept asking if we could make sure the code for Med-X was backed up. He must have said it three times, I don't think he realized it? Must be stress - made a backup of the code on this terminal just in case.",,,
+268,Dead Money,DeadMoney.esm,NOTE,FULL,0100BFBD,NVDLC01VaultSecurityProtocolNote,Note Title,Vault Security Protocols,,,
+269,Dead Money,DeadMoney.esm,NOTE,TNAM,0100BFBD,NVDLC01VaultSecurityProtocolNote,Vault Security Protocols,"Sierra Madre Vault Security
+
+Protocols:
+
+- Security On:
+  - Elevator Dispatch to Executive Suites.
+  - Security Turrets Active - Not Shielded.
+  - Electric-Barriers Seal Vault.
+
+- Security Off:
+  - Elevator Dispatch to Executive Suites.
+  - Security Turrets Off - Shielded.
+  - Electric-Barriers Down.",,,
+270,Dead Money,DeadMoney.esm,NOTE,FULL,0100BCDA,NVDLC01ElijahNote02,Note Title,Message From Elijah: Gala Event,,,
+271,Dead Money,DeadMoney.esm,NOTE,FULL,0100BCD9,NVDLC01ElijahNote01,Note Title,Prisoner Commands,,,
+272,Dead Money,DeadMoney.esm,NOTE,TNAM,0100BCD9,NVDLC01ElijahNote01,Prisoner Commands,ˆ,,,
+273,Dead Money,DeadMoney.esm,NOTE,FULL,0100A845,NVDLC01SuitesPasswordNote,Note Title,Suites Password Reminder,,,
+274,Dead Money,DeadMoney.esm,NOTE,TNAM,0100A845,NVDLC01SuitesPasswordNote,Suites Password Reminder,"Kevin,
+
+Make sure to set a separate security override for the hallway loudspeakers before you leave tonight. The last thing we need is our coms going down in the middle of a robbery.  Set it to 1837uC@n7Gu355.  That should prevent a lucky guess by some hack with a stolen security card.
+
+Thanks,
+Rubin",,,
+275,Dead Money,DeadMoney.esm,NOTE,FULL,0100A5A2,NVDLC01CasinoPasscode01,Note Title,Casino Security Passcode,,,
+276,Dead Money,DeadMoney.esm,NOTE,TNAM,0100A5A2,NVDLC01CasinoPasscode01,Casino Security Passcode,"Sheila,
+
+The passcode for the cashier room security Hologram is ""MrFizzle17."" Please don't forget it again, I could lose my job if they found out I gave it to you. See you in the electrical closet after the Gala Event?
+
+                                                  -Bill",,,
+277,Dead Money,DeadMoney.esm,NOTE,FULL,01009238,NVDLC01PassEntertainerNote,Note Title,Sierra Madre Entertainer Pass,,,
+278,Dead Money,DeadMoney.esm,NOTE,TNAM,01009238,NVDLC01PassEntertainerNote,Sierra Madre Entertainer Pass,This appears to be a unique 'Entertainer Pass' for the Sierra Madre.,,,
+279,Dead Money,DeadMoney.esm,NOTE,FULL,01009237,NVDLC01PassMaintenanceNote,Note Title,Sierra Madre Maintenance Pass,,,
+280,Dead Money,DeadMoney.esm,NOTE,TNAM,01009237,NVDLC01PassMaintenanceNote,Sierra Madre Maintenance Pass,This appears to be a standard 'Maintenance Pass' for the Sierra Madre.,,,
+281,Dead Money,DeadMoney.esm,NOTE,FULL,01008BCE,NVDLC01ClinicBasmentNote02,Note Title,Power Status,,,
+282,Dead Money,DeadMoney.esm,NOTE,TNAM,01008BCE,NVDLC01ClinicBasmentNote02,Power Status,"*** Clinic Power Status ***
+
+Essential Systems
+    * Auto-Doc: Emergency backup engaged.
+    * Security Hologram: Emergency backup engaged.
+
+Non-Essential Systems
+    * Music Speakers: Offline",,,
+283,Dead Money,DeadMoney.esm,NOTE,FULL,01008BCD,NVDLC01ClinicBasmentNote01,Note Title,Power Status,,,
+284,Dead Money,DeadMoney.esm,NOTE,TNAM,01008BCD,NVDLC01ClinicBasmentNote01,Power Status,"*** Clinic Power Status ***
+
+Essential Systems
+    * Auto-Docs: Powered
+    * Security Hologram: Powered
+
+Non-Essential Systems
+    * Music Speakers: Powered
+
+NOTE: Please inform clinic management before shutting down generator for maintenance.",,,
+285,Dead Money,DeadMoney.esm,NOTE,FULL,01006371,NVDLC01CasinoSecurityMemo,Note Title,NVDLC01CasinoSecurityMemo,,,
+286,Dead Money,DeadMoney.esm,NOTE,TNAM,01006371,NVDLC01CasinoSecurityMemo,NVDLC01CasinoSecurityMemo,"Security Memo
+
+Sierra Madre Employees,
+
+At the request of Mr. Sinclair, please refrain from tampering with or destroying the Security Hologram emitters. Remember the Holograms keep us - and our guests - safe.
+
+Thanks,
+
+Sierra Madre Management",,,

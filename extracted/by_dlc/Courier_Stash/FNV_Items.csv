@@ -1,0 +1,10 @@
+﻿ID,DLC,Plugin,RecordType,Subrecord,FormID,EditorID,ItemType,EN,TH,Status,Notes
+1,Classic Pack,ClassicPack.esm,ARMO,FULL,001735D1,PreordArmorVault13Armored,Armor/Clothing,Armored Vault 13 Jumpsuit,,,
+2,Classic Pack,ClassicPack.esm,MISC,FULL,001735D2,PreordVaultCanteen,Misc Item,Vault 13 Canteen,,,
+3,Classic Pack,ClassicPack.esm,WEAP,FULL,001735D4,WeapPreord10mmPistol,Weapon,Weathered 10mm Pistol,,,
+4,Caravan Pack,CaravanPack.esm,ARMO,FULL,001735E0,PreordArmorLeather,Armor/Clothing,Lightweight Leather Armor,,,
+5,Caravan Pack,CaravanPack.esm,WEAP,FULL,001735E3,WeapPreordCaravanShotgun,Weapon,Sturdy Caravan Shotgun,,,
+6,Mercenary Pack,MercenaryPack.esm,ARMO,FULL,001735E1,PreordArmorMetal,Armor/Clothing,Lightweight Metal Armor,,,
+7,Mercenary Pack,MercenaryPack.esm,WEAP,FULL,001735E4,WeapPreordGrenadeRifle,Weapon,Mercenary's Grenade Rifle,,,
+8,Tribal Pack,TribalPack.esm,ARMO,FULL,001735E2,PreordArmorTribalRaiding,Armor/Clothing,Tribal Raiding Armor,,,
+9,Tribal Pack,TribalPack.esm,WEAP,FULL,001735E5,WeapPreordMachete,Weapon,Broad Machete,,,

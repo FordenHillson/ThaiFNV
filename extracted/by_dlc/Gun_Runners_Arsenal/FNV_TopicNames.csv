@@ -1,0 +1,11 @@
+﻿ID,DLC,Plugin,RecordType,Subrecord,FormID,EditorID,ParentContext,EN,TH,Status,Notes
+1,Gun Runners' Arsenal,GunRunnersArsenal.esm,DIAL,FULL,0008D07E,CliffBriscoeOpenStore,,I'd like to see what you've got for sale.,,,
+2,Gun Runners' Arsenal,GunRunnersArsenal.esm,DIAL,FULL,000E88D7,188AlexanderSeeInventory,,188AlexanderSeeInventory,,,
+3,Gun Runners' Arsenal,GunRunnersArsenal.esm,DIAL,FULL,000EE4EA,VDialogueEastVegas1EGunRunnerProtectronTopic001,,Show me what you have for sale.,,,
+4,Gun Runners' Arsenal,GunRunnersArsenal.esm,DIAL,FULL,0011277C,VFreeformFreesideVFSMickTopic000,,What guns do you have for sale?,,,
+5,Gun Runners' Arsenal,GunRunnersArsenal.esm,DIAL,FULL,001131EC,VFreeformFreesideVFSRalphTopic000,,What do you have in stock?,,,
+6,Gun Runners' Arsenal,GunRunnersArsenal.esm,DIAL,FULL,0011A27D,VFreeformFreesideVFSGloriaVanGraffTopic000,,I'd like to see what you have for sale.,,,
+7,Gun Runners' Arsenal,GunRunnersArsenal.esm,DIAL,FULL,0011BCA3,VFreeformFreesideVFSMickTopic008,,Could you repair some things for me?,,,
+8,Gun Runners' Arsenal,GunRunnersArsenal.esm,DIAL,FULL,0012790C,VFreeformFreesideVFSMickTopic020,,I'd like to browse your special inventory.,,,
+9,Gun Runners' Arsenal,GunRunnersArsenal.esm,DIAL,FULL,0015FCA1,VDialogueHiddenValleyHVTorresTopic000,,Show me what you have for sale.,,,
+10,Gun Runners' Arsenal,GunRunnersArsenal.esm,DIAL,FULL,001602AE,VFreeformNellisTopic003,,Could I buy some spare munitions?,,,

@@ -1,0 +1,46 @@
+﻿ID,DLC,Plugin,RecordType,Subrecord,EditorID,UI_Context,EN,TH,Status,Notes
+1,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sContinue,ปุ่มเมนูหลัก,Continue,ดำเนินการต่อ,ai,Main Menu Button
+2,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sNew,ปุ่มเมนูหลัก,New,ใหม่,ai,Main Menu Button
+3,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sLoad,ปุ่มเมนูหลัก,Load,โหลด,ai,Main Menu Button
+4,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sSettings,ปุ่มเมนูหลัก,Settings,การตั้งค่า,ai,Main Menu Button
+5,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sCrew,ปุ่มเมนูหลัก,Credits,เครดิต,ai,Main Menu Button
+6,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sDownloads,ปุ่มเมนูหลัก,Downloadable Content,เนื้อหาที่ดาวน์โหลดได้,ai,Main Menu Button
+7,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sQuit,ปุ่มเมนูหลัก,Quit,ออกเกม,ai,Main Menu Button
+8,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sSave,เมนูกลางเกม/พักเกม,Save,บันทึก,ai,Pause/In-Game Menu
+9,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sConfirmNew,กล่องยืนยันเริ่มเกมใหม่,"Start a new game? This will
+overwrite your Autosave if present.",เริ่มเกมใหม่ใช่หรือไม่? การกระทำนี้จะเขียนทับเซฟอัตโนมัติหากมีอยู่,ai,Confirmation Popup
+10,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sConfirmQuit,กล่องยืนยันออกจากเกม,Are you sure you want to quit?,คุณต้องการออกจากเกมจริงหรือ?,ai,Confirmation Popup
+11,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sConfirmWarning,คำเตือนก่อนออก,WARNING:  Any unsaved progress will be lost.,คำเตือน: ความคืบหน้าทั้งหมดที่คุณยังไม่ได้บันทึกจะหายไป,ai,Warning Popup
+12,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sExitGameAffirm,ปุ่มยืนยันออกเกม,Exit Game,ออกเกม,ai,Exit Button
+13,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sMainMenu,ปุ่มกลับสู่เมนูหลัก,Main Menu,เมนูหลัก,ai,Return to Main Menu
+14,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sYesText,ปุ่มยืนยัน,&Yes,ยืนยัน,ai,Dialog Button
+15,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sNoText,ปุ่มปฏิเสธ,&No,ปฏิเสธ,ai,Dialog Button
+16,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sGameplay,หมวดหมู่ตั้งค่าการเล่น,Gameplay,การเล่นเกม,ai,Settings Category
+17,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sControls,หมวดหมู่ตั้งค่าการควบคุม,Controls,การควบคุม,ai,Settings Category
+18,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sDefaults,ปุ่มคืนค่าเริ่มต้น,Defaults,ค่าเริ่มต้น,ai,Settings Button
+19,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sVideo,หมวดหมู่ตั้งค่าวิดีโอ,Video,วิดีโอ,ai,Settings Category
+20,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sDisplay,หมวดหมู่ตั้งค่าการแสดงผล,Display,การแสดงผล,ai,Settings Category
+21,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sAudio,หมวดหมู่ตั้งค่าเสียง,Audio,เสียง,ai,Settings Category
+22,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sMasterVolume,ระดับเสียงหลัก,Master,ระดับเสียงหลัก,ai,Audio Setting
+23,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sVoiceVolume,ระดับเสียงพูด,Voice,เสียงพูด,ai,Audio Setting
+24,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sEffectsVolume,ระดับเสียงเอฟเฟกต์,Effects,เอฟเฟกต์เสียง,ai,Audio Setting
+25,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sFootstepsVolume,ระดับเสียงฝีเท้า,Footstep,เสียงฝีเท้า,ai,Audio Setting
+26,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sBrightness,ความสว่างหน้าจอ,Brightness,ความสว่าง,ai,Display Setting
+27,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sHUDOpacity,ความทึบแสง HUD,HUD Opacity,ความทึบแสง HUD,ai,Display Setting
+28,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sCrosshair,เป้าเล็ง,Crosshair,เป้าเล็ง,ai,Display Setting
+29,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sDialogSubtitles,คำบรรยายบทสนทนา,Dialog Subtitles,คำบรรยายบทสนทนา,ai,Subtitle Setting
+30,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sGeneralSubtitles,คำบรรยายทั่วไป,General Subtitles,คำบรรยายทั่วไป,ai,Subtitle Setting
+31,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sDifficulty,ระดับความยาก,Difficulty,ระดับความยาก,ai,Gameplay Setting
+32,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sHardcore,โหมดฮาร์ดคอร์,Hardcore Mode,โหมดฮาร์ดคอร์,ai,Gameplay Setting
+33,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sKillCamMode,โหมดกล้องคิลแคม,Kill Cam Mode,โหมดกล้องคิลแคม,ai,Gameplay Setting
+34,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sTrueIronSights,การเล็งศูนย์ปืนสมจริง,True Iron Sights,การเล็งศูนย์ปืนสมจริง,ai,Gameplay Setting
+35,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sSaveOnRest,บันทึกอัตโนมัติเมื่อพัก,Save On Rest,บันทึกอัตโนมัติเมื่อพัก,ai,Gameplay Setting
+36,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sSaveOnWait,บันทึกอัตโนมัติเมื่อรอ,Save On Wait,บันทึกเมื่อรอ,ai,Gameplay Setting
+37,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sSaveOnTravel,บันทึกอัตโนมัติเมื่อเดินทาง,Save On Travel,บันทึกเมื่อเดินทาง,ai,Gameplay Setting
+38,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sKillCamModePlayer,มุมมองคิลแคม: ผู้เล่น,Player View,มุมมองผู้เล่น,ai,Gameplay Setting
+39,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sKillCamModeCinematic,มุมมองคิลแคม: ภาพยนตร์,Cinematic,มุมมองภาพยนตร์,ai,Gameplay Setting
+40,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sBack,ปุ่มย้อนกลับ,Back,ย้อนกลับ,ai,Navigation Button
+41,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sNext,ปุ่มถัดไป,Next,ถัดไป,ai,Navigation Button
+42,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sDone,ปุ่มเสร็จสิ้น,Done,เสร็จแล้ว,ai,Navigation Button
+43,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sCancel,ปุ่มยกเลิก,Cancel,ยกเลิก,ai,Dialog Button
+44,Base Game,FalloutNV.esm / FalloutNV.exe,GMST,DATA,sOK,ปุ่มตกลง,OK,ตกลง,ai,Dialog Button
