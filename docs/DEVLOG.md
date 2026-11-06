@@ -5,6 +5,40 @@
 
 ---
 
+## 2026-11-06 — แก้ปัญหาข้อความชิดขอบล่างและสระล่างตกกรอบตัวเลือก (UI Hover Box & Baseline Lift Calibration)
+
+- **ปัญหาข้อความจมชิดขอบล่างของกรอบเมาส์ Hover (Bottom-Hugging & Overflow):**
+  - ในตัวเลือกบทสนทนา (Dialog Topics), รายชื่อเควสต์ใน Pip-Boy, ปุ่มยืนยัน (Confirmation Buttons เช่น "ใช่", "ออกเกม"), และแท็บ Pip-Boy ("World Map", "Quests") พบว่าข้อความลอยจมลงไปชิดเส้นขอบล่างของกรอบสี่เหลี่ยมสีเหลือง (`lb_highlight_box`) จนขอบบนมีช่องว่างโล่งมากเกินไป (19-40px)
+  - สระล่าง (`ุ`, `ู`) ของคำเช่น `ขอบคุณ`, `ขุด`, `หลุม`, `กลับสู่รัง` ชนหรือทะลุเส้นขอบล่างของกรอบออกไป
+- **การวิเคราะห์แก่นแท้ระบบ UI Gamebryo และ XML Templates:**
+  - จากการแกะไฟล์ XML ทางการจาก `Fallout - Misc.bsa` (`dialog_menu.xml`, `message_menu.xml`, `list_box_template.xml`):
+    - กรอบตัวเลือกสร้างจาก `<include src="list_box_template.xml"/>` โดยมีความสูงคำนวณจาก `item_height = font.line_height + _VerticalSpacing` (สำหรับ Dialog = 32 + 20 = 52px)
+    - ตำแหน่งข้อความถูกกำหนดด้วย `<y> 15 </y>` (ในบทสนทนา) และ `<y> 20 </y>` (ในปุ่มกดยืนยัน)
+    - Gamebryo วาง baseline ของบรรทัดแรกไว้ที่ `y + line_height` ซึ่งอยู่ห่างจากขอบล่างของกรอบเพียง **5px** เท่านั้น!
+  - **สาเหตุที่ฟอนต์เดิม (Monofonto) แสดงผลได้:**
+    - ฟอนต์ Monofonto ดั้งเดิมของเกมออกแบบมาให้ตัวพิมพ์ใหญ่สูงมาก (Ascent = 24..27px, Descent = 2..5px) ตัวอักษรจึงยืดขึ้นไปเต็มพื้นที่ด้านบนและลงมาแตะด้านล่างพอดี
+    - ในขณะที่ฟอนต์ Sarabun ของไทย ขนาดตัวพยัญชนะมีความสูง 11..12px เพื่อเผื่อที่ให้สระบน/วรรณยุกต์ เมื่อนั่งอยู่บน baseline เดียวกันกับของเดิม พยัญชนะจึงจมลงไปอยู่ครึ่งล่างของกรอบ และสระล่าง `ุ`, `ู` ที่ยื่นลงมา 12..14px จึงล้นทะลุเส้นขอบล่างของกรอบ 5px
+- **วิธีแก้ปัญหาที่สมบูรณ์แบบ — Universal Baseline Lift (+8.0px):**
+  - เพิ่มพารามิเตอร์ `baseline_lift` ใน `pipeline/font_builder.py`
+  - ใน Gamebryo การคำนวณตำแหน่ง quad บนหน้าจอคือ `screen_y = (baseline - g.ascent) + draw_y`
+  - เมื่อกำหนด `g.ascent = float(m["asc"]) + baseline_lift`:
+    - ตำแหน่งเรนเดอร์ของตัวอักษรทุกตัวบนหน้าจอจะถูก **ยกตัวลอยสูงขึ้นอย่างแม่นยำ +8.0px** เข้าสู่กึ่งกลางของกรอบไฮไลต์
+    - สระล่าง `ุ`, `ู` ลอยพ้นเส้นขอบล่างขึ้นมามีระยะห่างปลอดภัย (Bottom Clearance) สบายตา 3-4px
+    - พยัญชนะไทยทั่วไปอยู่กึ่งกลางกรอบตัวเลือกอย่างสมดุล (ระยะขอบบนและขอบล่างสมมาตร)
+    - ระยะห่างระหว่างบรรทัด (Line Spacing) ของบทสนทนายังคงถูกควบคุมด้วย `line_height` อย่างอิสระ บรรทัดไม่ชนกัน 100%
+- **การปรับแต่งในทุก Font Slots (VANILLA_SLOTS):**
+  - Slot 1, 2, 4, 6, 7, 9 (ไซส์ 17-18): `baseline_lift = 8.0px`
+  - Slot 3 (Glow_Monofonto_Medium, ไซส์ 15): `baseline_lift = 6.0px`
+  - Slot 5 (Fixedsys_Comp_uniform_width, ไซส์ 20): `baseline_lift = 4.0px`
+  - Slot 8 (Glow_Futura_Caps_Large, ไซส์ 36): `baseline_lift = 12.0px`
+- **ไฟล์และแพ็กเกจที่เกี่ยวข้อง:**
+  - `pipeline/font_builder.py` (เพิ่ม `baseline_lift`, อัปเดต `VANILLA_SLOTS` และ `main()`)
+  - อัปเดตและ Deploy ฟอนต์ทั้ง 9 รายการไปยัง `Data\Textures\Fonts\` ในโฟลเดอร์เกม
+  - สร้างแพ็กเกจม็อดเวอร์ชันใหม่:
+    - `release/ThaiFNV_v2.2_CenteredBoxes.zip`
+    - `C:\Users\saetanpee\Desktop\ThaiFNV_v2.2_CenteredBoxes.zip`
+
+
 ## 2026-11-06 — การปรับปรุงระยะช่องไฟอักษร (Letter Spacing) และ Thai Shaper Engine v2.1 สำเร็จสมบูรณ์
 
 - **ปัญหาช่องไฟ (Letter Spacing / Tracking):**

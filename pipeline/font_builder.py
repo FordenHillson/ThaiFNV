@@ -161,7 +161,9 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
                line_height: float = 36.0, target_ascent: float | None = None, outline: int = 1,
                stroke_gap: float | None = None,
                tone_scale: float = 0.75,
-               tone_clearance: float = 0.0):
+               tone_clearance: float = 0.0,
+               baseline_lift: float = 0.0):
+
     font = ImageFont.truetype(ttf_path, size)
 
     # หาความกว้างพยัญชนะไทยเฉลี่ย เพื่อใช้จัดกึ่งกลางสระบน/วรรณยุกต์
@@ -497,7 +499,7 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
         g.px_height = float(h)
         g.bearing_x = m["bearing_x"]
         g.advance_extra = m["advance"] - float(w)
-        g.ascent = float(m["asc"])
+        g.ascent = float(m["asc"]) + baseline_lift
         glyphs[code] = g
 
     # บันทึกไฟล์ (ถ้ามี out_base)
@@ -515,19 +517,19 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
     return atlas, glyphs, line_height
 
 
-# สล็อตมาตรฐานของ Fallout: New Vegas พร้อมค่า Line Height, Target Ascent, Outline, และ Stroke Gap
-# จัดวางให้ตัวอักษรอยู่ "กึ่งกลางกรอบตัวเลือกสีเหลือง" พอดี และเรียงชิดสวยงามเป็นธรรมชาติเหมือน Google Docs
-# (ชื่อไฟล์, ขนาด Sarabun, line_height, target_ascent, outline, stroke_gap)
+# สล็อตมาตรฐานของ Fallout: New Vegas พร้อมค่า Line Height, Target Ascent, Outline, Stroke Gap, และ Baseline Lift
+# จัดวางให้ตัวอักษรอยู่ "กึ่งกลางกรอบตัวเลือกสีเหลือง" พอดี ไม่ชิดขอบล่าง และสระล่าง ุ ู ไม่ตกขอบ
+# (ชื่อไฟล์, ขนาด Sarabun, line_height, target_ascent, outline, stroke_gap, baseline_lift)
 VANILLA_SLOTS = [
-    ("Baked-in_Monofonto_Large", 18, 38.0, 27.0, 2, 1.5),        # Slot 7: Start Menu (ขอบ 2px คมชัด, กึ่งกลางกรอบสมดุล)
-    ("Glow_Monofonto_VL_dialogs", 18, 32.0, 23.0, 1, 0.5),       # Slot 6: Dialog / Settings (ชิดธรรมชาติเหมือน Google Docs)
-    ("Monofonto_VeryLarge02_Dialogs2", 18, 36.0, 26.0, 1, 0.5),  # Slot 4: Version Info / HUD
-    ("Glow_Monofonto_Large", 18, 31.0, 23.0, 1, 0.5),            # Slot 1: ข้อความป๊อปอัป
-    ("Monofonto_Large", 17, 31.0, 23.0, 1, 0.5),                 # Slot 2: Stats / Map
-    ("Glow_Monofonto_Medium", 15, 26.0, 19.0, 1, 0.5),           # Slot 3: Container / Loading
-    ("Fixedsys_Comp_uniform_width", 20, 25.0, 19.0, 1, 0.5),     # Slot 5: Terminal
-    ("Glow_Futura_Caps_Large", 36, 52.0, 38.0, 2, 1.5),          # Slot 8: หัวข้อใหญ่
-    ("NVFont_Test", 26, 36.0, 27.0, 1, 0.5),                     # Slot 9: เทสต์
+    ("Baked-in_Monofonto_Large", 18, 38.0, 27.0, 2, 1.5, 8.0),        # Slot 7: Start Menu (ขอบ 2px คมชัด, กึ่งกลางกรอบ)
+    ("Glow_Monofonto_VL_dialogs", 18, 32.0, 23.0, 1, 0.5, 8.0),       # Slot 6: Dialog / Settings (กึ่งกลางกรอบตัวเลือก สระล่างไม่ชนขอบ)
+    ("Monofonto_VeryLarge02_Dialogs2", 18, 36.0, 26.0, 1, 0.5, 8.0),  # Slot 4: Version Info / HUD
+    ("Glow_Monofonto_Large", 18, 31.0, 23.0, 1, 0.5, 8.0),            # Slot 1: ข้อความป๊อปอัป
+    ("Monofonto_Large", 17, 31.0, 23.0, 1, 0.5, 8.0),                 # Slot 2: Stats / Map / Buttons / Pip-Boy Tabs
+    ("Glow_Monofonto_Medium", 15, 26.0, 19.0, 1, 0.5, 6.0),           # Slot 3: Container / Loading
+    ("Fixedsys_Comp_uniform_width", 20, 25.0, 19.0, 1, 0.5, 4.0),     # Slot 5: Terminal
+    ("Glow_Futura_Caps_Large", 36, 52.0, 38.0, 2, 1.5, 12.0),         # Slot 8: หัวข้อใหญ่
+    ("NVFont_Test", 26, 36.0, 27.0, 1, 0.5, 8.0),                     # Slot 9: เทสต์
 ]
 
 
@@ -540,20 +542,21 @@ def main():
 
     os.makedirs(args.out_dir, exist_ok=True)
     print(f"Building Sarabun Bold 700 with clear outline, natural spacing, and centered boxes...")
-    for fname, size, lh, asc, otl, gap in VANILLA_SLOTS:
+    for fname, size, lh, asc, otl, gap, lift in VANILLA_SLOTS:
         out_base = os.path.join(args.out_dir, fname)
-        build_font(args.ttf, fname, size, out_base, line_height=lh, target_ascent=asc, outline=otl, stroke_gap=gap)
+        build_font(args.ttf, fname, size, out_base, line_height=lh, target_ascent=asc, outline=otl, stroke_gap=gap, baseline_lift=lift)
 
     if args.deploy:
         game_fonts = Path(r"D:\SteamLibrary\steamapps\common\Fallout New Vegas\Data\Textures\Fonts")
         game_fonts.mkdir(parents=True, exist_ok=True)
         import shutil
-        for fname, _, _, _, _, _ in VANILLA_SLOTS:
+        for fname, _, _, _, _, _, _ in VANILLA_SLOTS:
             for ext in (".fnt", ".tex", ".png"):
                 src = Path(args.out_dir) / f"{fname}{ext}"
                 if src.exists():
                     shutil.copy2(src, game_fonts / f"{fname}{ext}")
         print(f"Successfully deployed fonts -> {game_fonts}")
+
 
 
 if __name__ == "__main__":
