@@ -14,7 +14,7 @@ import shutil
 import sys
 from pathlib import Path
 
-from thai_precompose import encode_thai_cp874
+from thai_shaper_engine import shape_to_bytes
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -29,7 +29,7 @@ PATCHES: list[tuple[bytes, str, str]] = [
     (b"sLoad\x00\x00\x00", "Load", "โหลด"),
     (b"sSettings\x00\x00\x00", "Settings", "ตั้งค่า"),
     (b"sCrew\x00\x00\x00", "Credits", "เครดิต"),
-    (b"sDownloads\x00\x00", "Downloadable Content", "เนื้อหาดาวน์โหลด"),
+    (b"sDownloads\x00\x00", "Downloadable Content", "DLC [ThaiFNV v2.0]"),
     (b"sQuit\x00\x00\x00", "Quit", "ออก"),
     (b"sSave\x00\x00\x00", "Save", "เซฟ"),
     # confirm
@@ -123,7 +123,7 @@ PATCHES: list[tuple[bytes, str, str]] = [
 
 def patch_one(data: bytearray, ctx: bytes, en: str, th: str) -> bool:
     en_b = en.encode("ascii") + b"\x00"
-    th_b = encode_thai_cp874(th) + b"\x00"
+    th_b = shape_to_bytes(th) + b"\x00"
     needle = ctx + en_b
     i = data.find(needle)
     if i < 0:
