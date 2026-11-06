@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Launch FNV via NVSE, restore the window, capture the main menu at 2560x1440."""
+"""Launch FNV via NVSE, restore the window, capture the main menu."""
 import ctypes
 import os
 import subprocess
@@ -9,7 +9,8 @@ import time
 from PIL import ImageGrab
 
 GAME = r"D:\SteamLibrary\steamapps\common\Fallout New Vegas"
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "shot_v7.png")
+TESTING_DIR = r"D:\backup\github\ThaiFNV\testing"
+OUT = os.path.join(TESTING_DIR, "main_menu_ingame.png")
 
 user32 = ctypes.windll.user32
 kernel32 = ctypes.windll.kernel32
@@ -66,23 +67,23 @@ def windows():
 
 
 def main():
-    # kill leftovers
-    subprocess.run(["taskkill", "/F", "/IM", "FalloutNV.exe"],
-                   capture_output=True)
+    # ปิด process ค้างถ้ามี
+    subprocess.run(["taskkill", "/F", "/IM", "FalloutNV.exe"], capture_output=True)
 
     exe = os.path.join(GAME, "nvse_loader.exe")
+    print("Launching FNV via", exe, flush=True)
     proc = subprocess.Popen([exe], cwd=GAME,
                             stdout=subprocess.DEVNULL,
                             stderr=subprocess.DEVNULL)
-    print("launched pid", proc.pid, flush=True)
+    print("Launched pid:", proc.pid, flush=True)
 
     main_hwnd = None
-    deadline = time.time() + 90
+    deadline = time.time() + 60
     while time.time() < deadline:
         wins = windows()
         for hwnd, pid, name, title, w, h in wins:
-            if w >= 1000 and h >= 700:
-                print("found", name, pid, repr(title), w, h, flush=True)
+            if w >= 800 and h >= 600:
+                print(f"Found game window: {name} pid={pid} title={title!r} size=({w}x{h})", flush=True)
                 main_hwnd = hwnd
                 break
         if main_hwnd:
@@ -90,32 +91,32 @@ def main():
         time.sleep(2)
 
     if main_hwnd is None:
-        print("main window not found", flush=True)
-        subprocess.run(["taskkill", "/F", "/IM", "FalloutNV.exe"],
-                       capture_output=True)
+        print("Error: Main game window not found within timeout", flush=True)
+        subprocess.run(["taskkill", "/F", "/IM", "FalloutNV.exe"], capture_output=True)
         sys.exit(1)
 
     user32.ShowWindow(main_hwnd, 9)  # SW_RESTORE
     user32.SetForegroundWindow(main_hwnd)
 
+    print("Waiting for main menu to load...", flush=True)
+    # รอโลโก้และ intro ผ่านไป
+    time.sleep(14)
+
     rect = RECT()
-    for i in range(6):
-        time.sleep(10)
-        # keep the game in front: the shell window steals focus between grabs
+    for i in range(2):
         user32.BringWindowToTop(main_hwnd)
         user32.SetForegroundWindow(main_hwnd)
-        time.sleep(1.5)
+        time.sleep(2.0)
         GetWindowRect(main_hwnd, ctypes.byref(rect))
-        img = ImageGrab.grab(bbox=(rect.left, rect.top, rect.right, rect.bottom),
-                             all_screens=False)
-        path = OUT if i == 0 else OUT.replace(".png", "_%d.png" % i)
+        img = ImageGrab.grab(bbox=(rect.left, rect.top, rect.right, rect.bottom), all_screens=False)
+        path = OUT if i == 0 else OUT.replace(".png", f"_{i}.png")
         img.save(path)
-        print("saved", path, img.size, flush=True)
+        print("Captured screenshot:", path, img.size, flush=True)
+        time.sleep(4)
 
     time.sleep(1)
-    subprocess.run(["taskkill", "/F", "/IM", "FalloutNV.exe"],
-                   capture_output=True)
-    print("terminated", flush=True)
+    subprocess.run(["taskkill", "/F", "/IM", "FalloutNV.exe"], capture_output=True)
+    print("Test run completed and closed cleanly.", flush=True)
 
 
 if __name__ == "__main__":
