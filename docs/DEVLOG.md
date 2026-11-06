@@ -5,6 +5,14 @@
 
 ---
 
+## 2026-11-06 — บทเรียนสำคัญ: ห้ามแพตช์ FalloutNV.exe โดยตรง (Steam Error 3:0000065432)
+
+- **ปัญหา:** การใช้ `patch_main_menu_exe.py` ไปแก้ไขไบนารีสตริงใน `FalloutNV.exe` ทำให้ระบบ DRM SteamStub ของ Steam พัง และเกมเด้งด้วยข้อผิดพลาด:
+  `Steam Error: Application load error 3:0000065432`
+- **การแก้ไข:** Restore `FalloutNV.exe` กลับคืนสภาพ Official Steam แท้ทันที
+- **บันทึกกฎถาวร:** บันทึกลง `GEMINI.md` ห้ามแตะต้องไฟล์ `.exe` เด็ดขาด ม็อดทั้งหมดต้องทำงานผ่าน `ThaiFNV.esp` และ `Textures\Fonts\` หรือ NVSE เท่านั้น
+
+
 ## 2026-11-05 — รื้อถอนระบบ Font และ Data Extraction เดิม เพื่อเริ่มต้นออกแบบใหม่
 
 - สำรองโค้ดและประวัติการทำงานเดิมทั้งหมดไว้ที่ Git branch `archive/legacy-font-and-extract`
