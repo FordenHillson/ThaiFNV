@@ -16,6 +16,9 @@ pipeline/xtranslator/**
 # ไฟล์เกมที่แตกออกมาเพื่ออ้างอิง (ลิขสิทธิ์ Bethesda + ใหญ่)
 # สร้างใหม่ได้ด้วย: pipeline/bsa_extract.py --filter fonts
 testing/vanilla_bsa_fonts/
+testing/vanilla_fnt/
+testing/menus/
+extracted_assets/
 
 # ภาพผลตรวจชั่วคราว / ฟอนต์ทดลองใน testing
 testing/*.png
@@ -24,6 +27,11 @@ testing/gui_preview/
 testing/v5fonts/
 testing/*.fnt
 testing/*.tex
+
+# ภาพและฟอนต์ทดสอบชั่วคราว
+fonts/out/test/
+fonts/test_pil_direct.png
+pipeline/preview_from_server.png
 
 # โฟลเดอร์ขยะจากคำสั่ง shell ที่พลาด
 /-Force/
