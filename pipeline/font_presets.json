@@ -1,0 +1,113 @@
+{
+  "active_slot": "Glow_Monofonto_VL_dialogs",
+  "slots": {
+    "Baked-in_Monofonto_Large": {
+      "slot_number": 7,
+      "label": "Slot 7: Start Menu (ปุ่มเมนูหลัก)",
+      "size": 18,
+      "line_height": 38.0,
+      "target_ascent": 27.0,
+      "outline": 2,
+      "stroke_gap": 1.5,
+      "tone_scale": 0.75,
+      "tone_clearance": 0.0,
+      "description": "ใช้สำหรับปุ่มในเมนูหลัก (เริ่มเกมใหม่, โหลดเกม, การตั้งค่า, ออกจากเกม)"
+    },
+    "Glow_Monofonto_VL_dialogs": {
+      "slot_number": 6,
+      "label": "Slot 6: Settings / Dialog (หน้าตั้งค่าและบทสนทนา)",
+      "size": 18,
+      "line_height": 32.0,
+      "target_ascent": 23.0,
+      "outline": 1,
+      "stroke_gap": 0.5,
+      "tone_scale": 0.75,
+      "tone_clearance": 0.0,
+      "description": "ใช้สำหรับรายการตั้งค่า และหน้าต่างบทสนทนา NPC (ตัวอักษรชิดธรรมชาติเหมือน Google Docs)"
+    },
+    "Monofonto_VeryLarge02_Dialogs2": {
+      "slot_number": 4,
+      "label": "Slot 4: Version / Large HUD (เวอร์ชันและ HUD สำคัญ)",
+      "size": 18,
+      "line_height": 36.0,
+      "target_ascent": 26.0,
+      "outline": 1,
+      "stroke_gap": 0.5,
+      "tone_scale": 0.75,
+      "tone_clearance": 0.0,
+      "description": "ใช้แสดงเลขเวอร์ชันมุมขวาล่าง และข้อมูล HUD ขนาดย่อม"
+    },
+    "Glow_Monofonto_Large": {
+      "slot_number": 1,
+      "label": "Slot 1: Popups / Notifications (การแจ้งเตือนป๊อปอัป)",
+      "size": 18,
+      "line_height": 31.0,
+      "target_ascent": 23.0,
+      "outline": 1,
+      "stroke_gap": 0.5,
+      "tone_scale": 0.75,
+      "tone_clearance": 0.0,
+      "description": "ใช้สำหรับข้อความแจ้งเตือน เควสต์อัปเดต ข้อความช่วยเหลือมุมซ้ายบน"
+    },
+    "Monofonto_Large": {
+      "slot_number": 2,
+      "label": "Slot 2: Pip-Boy Stats & Map (หน้า Pip-Boy สเตตัสและแผนที่)",
+      "size": 17,
+      "line_height": 31.0,
+      "target_ascent": 23.0,
+      "outline": 1,
+      "stroke_gap": 0.5,
+      "tone_scale": 0.75,
+      "tone_clearance": 0.0,
+      "description": "ใช้สำหรับรายการใน Pip-Boy สเตตัส ไอเทม รายชื่ออาวุธ และพิกัดแผนที่"
+    },
+    "Glow_Monofonto_Medium": {
+      "slot_number": 3,
+      "label": "Slot 3: Container / Loading (กล่องเก็บของและโหลด)",
+      "size": 15,
+      "line_height": 26.0,
+      "target_ascent": 19.0,
+      "outline": 1,
+      "stroke_gap": 0.5,
+      "tone_scale": 0.75,
+      "tone_clearance": 0.0,
+      "description": "ใช้สำหรับหน้าจอ Looting ค้นศพ ตู้คอนเทนเนอร์ และหน้า Loading"
+    },
+    "Fixedsys_Comp_uniform_width": {
+      "slot_number": 5,
+      "label": "Slot 5: Terminal Hacking (เทอร์มินัลคอมพิวเตอร์)",
+      "size": 20,
+      "line_height": 25.0,
+      "target_ascent": 19.0,
+      "outline": 1,
+      "stroke_gap": 0.5,
+      "tone_scale": 0.75,
+      "tone_clearance": 0.0,
+      "description": "ใช้สำหรับหน้าจอแฮกเทอร์มินัลของ RobCo และข้อความบันทึกในคอมพิวเตอร์"
+    },
+    "Glow_Futura_Caps_Large": {
+      "slot_number": 8,
+      "label": "Slot 8: Big Headers (หัวข้อหลักขนาดใหญ่)",
+      "size": 36,
+      "line_height": 52.0,
+      "target_ascent": 38.0,
+      "outline": 2,
+      "stroke_gap": 1.5,
+      "tone_scale": 0.75,
+      "tone_clearance": 0.0,
+      "description": "ใช้สำหรับชื่อสถานที่ใหญ่ และหัวข้อเมนูระดับบนสุด"
+    },
+    "NVFont_Test": {
+      "slot_number": 9,
+      "label": "Slot 9: Engine Test Slot (สล็อตทดสอบ)",
+      "size": 26,
+      "line_height": 36.0,
+      "target_ascent": 27.0,
+      "outline": 1,
+      "stroke_gap": 0.5,
+      "tone_scale": 0.75,
+      "tone_clearance": 0.0,
+      "description": "สล็อตสำรองสำหรับทดสอบเอนจินเกม"
+    }
+  }
+}
