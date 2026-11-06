@@ -5,6 +5,34 @@
 
 ---
 
+## 2026-11-06 — การปรับปรุงระยะช่องไฟอักษร (Letter Spacing) และ Thai Shaper Engine v2.1 สำเร็จสมบูรณ์
+
+- **ปัญหาช่องไฟ (Letter Spacing / Tracking):**
+  - ในการปรับรอบก่อน พยัญชนะทั่วไปถูกตัด advance ชิดเกินไปจนเส้น stroke outline (1px) เกยทับกัน (-1.0px) ทำให้ข้อความดูทึบและอึดอัด
+  - สระหน้า (`ไ`, `ใ`, `โ`) ถูกคำนวณ advance จากความกว้างกล่องทั้งหมด (`ink_w + 1.0`) ซึ่งรวมหางที่ยื่นไปทางซ้าย (`left_ink < 0`) ส่งผลให้เกิดช่องว่างหลอกตา 4-5px ก่อนพยัญชนะต้น เช่น `ไ ป`, `เ ลย`, `แ ข็ง`
+- **การแก้ไขและสูตรปรับ Advance สม่ำเสมอ (Uniform Right-Ink Advance):**
+  - กำหนดตำแหน่งขอบขวาจริงของหมึก: $\text{right\_ink} = \text{left\_ink} + \text{ink\_w}$
+  - กำหนด advance ให้ก้าวพ้นขอบขวาจริง **+1.0px** เท่ากันทุกตัวอักษร: $\text{adv} = \text{round\_adv}(\text{right\_ink} + 1.0)$
+  - ส่งผลให้พยัญชนะทุกตัวมีระยะหายใจระหว่างเส้นขอบ 1.0px พอดี สระหน้าแนบสนิทกับพยัญชนะต้นอย่างเป็นธรรมชาติ ไม่ทับซ้อนและไม่มีช่องว่างเกิน
+- **การจัดระดับสระและวรรณยุกต์ (Vertical Offsets & Clearance):**
+  - ยกระดับสระบน (`ิ, ี, ึ, ื, ั, ็, ํ, ๎`) และวรรณยุกต์เดี่ยวขึ้น **+2.5px**
+  - เลื่อนสระล่าง (`ุ, ู, ฺ`) ลง **-2.5px** ไม่เกยทับฐานพยัญชนะ
+  - วรรณยุกต์ซ้อนสระบน 2 ชั้น (`0x80..0x9B` เช่น `ี่`, `ั้`, `ิ้`) ย่อขนาดลง 80% และเว้น `tone_gap = 2.5px` ขอบเส้นคมชัด อ่านง่าย ไม่ทึบหนา
+- **สระอำ (`ำ` - 0xD3):**
+  - ปรับใช้ Precomposed Single Glyph `0xD3` เต็มระบบ
+  - จัด `bearing_x = left_ink - pad_x` ให้จุดนิคหิตถอยไปวางบนเสาขวาของพยัญชนะหน้า และชดเชย `adv = round_adv(right_ink + 1.0) - bx` ให้ pen ก้าวพ้นขอบสระอา 1.0px พอดี
+- **เครื่องมือ Vit-o-matic Vigor Tester (Texture & 3D Tool):**
+  - พัฒนา `pipeline/vigor_tester_tool.py` และ `tools/vigor_tester_viewer.html`
+  - สกัด texture DDS จาก BSA ทั้งหมดของตู้ทดสอบพลัง (หน้า 0-4 และ special values) แปลงเป็น PNG พร้อมตัวพรีวิว 3D Interactive (Three.js) และตัวแปลงกลับเป็น DXT5 DDS ด้วยคำสั่งเดียว
+- **ผลการทดสอบในเกม:**
+  - ยืนยันผลลัพธ์ผ่านบทสนทนาจริงของ Doc Mitchell ในเกม Fallout: New Vegas อักษรไทยทุกตัวจัดวางสวยงาม สมดุล ชัดเจน สบายตา ไร้บั๊กทับซ้อน
+- **ไฟล์ที่เกี่ยวข้อง:**
+  - `pipeline/font_builder.py`
+  - `pipeline/thai_shaper_engine.py`
+  - `pipeline/vigor_tester_tool.py`
+  - `tools/vigor_tester_viewer.html`
+  - `release/ThaiFNV_v2.1_SpacingFix.zip` และสำเนาบน Desktop
+
 ## 2026-11-06 — บทเรียนสำคัญ: ห้ามแพตช์ FalloutNV.exe โดยตรง (Steam Error 3:0000065432)
 
 - **ปัญหา:** การใช้ `patch_main_menu_exe.py` ไปแก้ไขไบนารีสตริงใน `FalloutNV.exe` ทำให้ระบบ DRM SteamStub ของ Steam พัง และเกมเด้งด้วยข้อผิดพลาด:

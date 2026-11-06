@@ -125,9 +125,9 @@ def shape_thai_text(text: str) -> list[int]:
             i += 2
             continue
 
-        # สระอำเดี่ยว (ำ = 0xD3) -> แปลงเป็น นิคหิต ํ (0xED) + สระอา า (0xD2)
+        # สระอำเดี่ยว (ำ = 0xD3) -> ใช้ slot 0xD3 สำเร็จรูปโดยตรง ไม่แยกเป็น นิคหิต+สระอา
         if ch == 'ำ':
-            out_bytes.extend([0xED, 0xD2])
+            out_bytes.append(0xD3)
             i += 1
             continue
 

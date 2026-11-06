@@ -44,13 +44,13 @@ ASCII_RANGE = list(range(0x20, 0x7F))
 COMBINING = set("ัิีึืฺุู็่้๊๋์ํ๎")
 THAI_CONSONANTS = range(0xA1, 0xCF)
 
-# ระยะชดเชยพิเศษสำหรับสระหน้า (ใ, ไ, โ, เ, แ) เพื่อป้องกันไม่ให้เส้นขอบชนเกยกับพยัญชนะที่ตามมา โดยไม่ห่างเกินไปจนเป็นช่องว่าง
+# ระยะชดเชยพิเศษสำหรับสระหน้า (ใ, ไ, โ, เ, แ) เพื่อป้องกันไม่ให้เส้นขอบชนเกยกับพยัญชนะที่ตามมา
 LEADING_VOWELS_EXTRA = {
-    'ใ': 0.8,
-    'ไ': 0.8,
-    'โ': 1.0,
-    'เ': 0.5,
-    'แ': 0.5,
+    'ใ': 3.2,
+    'ไ': 3.2,
+    'โ': 2.8,
+    'เ': 2.0,
+    'แ': 2.0,
 }
 
 # สีเส้นขอบ (โทนเข้ม-อบอุ่น เพื่อให้เมื่อคูณกับสีส้ม/ทองของเกมแล้วได้ขอบเข้มคมชัด ตัดกับแสงพื้นหลัง)
@@ -78,23 +78,29 @@ def get_ink_metrics(font: ImageFont.FreeTypeFont, ch: str, size: int, stroke: in
 
 def draw_glyph_to_image(ch: str, font: ImageFont.FreeTypeFont, stroke: int = 0,
                         target_ascent: float | None = None,
+                        v_offset: float = 0.0,
                         outer_color=DEFAULT_OUTLINE_OUTER, inner_color=DEFAULT_OUTLINE_INNER):
-    """วาด glyph หนึ่งตัวลงรูปภาพ พร้อมจัด baseline ให้ตรงกับ target_ascent เพื่อให้อยู่กึ่งกลางกรอบตัวเลือก"""
+    """วาด glyph หนึ่งตัวลงรูปภาพ พร้อมจัด baseline ให้ตรงกับ target_ascent เพื่อให้อยู่กึ่งกลางกรอบตัวเลือก
+       v_offset: ระยะเลื่อนแนวตั้ง (บวก = เลื่อนขึ้นบน, ลบ = เลื่อนลงล่าง)
+    """
     raw = get_ink_metrics(font, ch, font.size, stroke=stroke)
     if raw is None:
         return None, 0, 0, 0, 0
     l, t, w, h = raw
 
     pad_x = stroke + 1
+    shift_up = int(round(v_offset)) if v_offset > 0 else 0
+    shift_down = int(round(-v_offset)) if v_offset < 0 else 0
+
     natural_asc = stroke + 1 - t  # ระยะจากขอบบนกล่องหมึกถึง baseline
 
     # ถ้ามีการกำหนด target_ascent ให้ขยาย padding ด้านบนเพื่อให้ baseline อยู่ที่ target_ascent พอดี
     if target_ascent is not None and target_ascent > natural_asc:
-        top_pad = int(round(target_ascent - natural_asc)) + pad_x
+        top_pad = int(round(target_ascent - natural_asc)) + pad_x + shift_up
     else:
-        top_pad = pad_x
+        top_pad = pad_x + shift_up
 
-    bot_pad = pad_x + 2
+    bot_pad = pad_x + 2 + shift_down
 
     img_w = w + pad_x * 2
     img_h = h + top_pad + bot_pad
@@ -103,7 +109,8 @@ def draw_glyph_to_image(ch: str, font: ImageFont.FreeTypeFont, stroke: int = 0,
 
     # พิกัด baseline ภายในภาพ
     draw_x = pad_x - l
-    draw_y = top_pad - t
+    ascent = top_pad - t
+    draw_y = ascent - int(round(v_offset))
 
     # 1. วาดเส้นขอบนอก
     if stroke > 0:
@@ -120,7 +127,6 @@ def draw_glyph_to_image(ch: str, font: ImageFont.FreeTypeFont, stroke: int = 0,
     # 3. วาดตัวอักษรสีขาวบริสุทธิ์
     draw.text((draw_x, draw_y), ch, font=font, anchor="ls", fill=(255, 255, 255, 255))
 
-    ascent = draw_y  # ระยะจากขอบบนภาพถึง baseline
     return img, img_w, img_h, ascent, l
 
 
@@ -190,7 +196,10 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
         img, w, h, asc, left_ink = draw_glyph_to_image(ch, font, stroke=outline, target_ascent=target_ascent)
         if img is None:
             continue
-        adv = round_adv(font.getlength(ch) + stroke_gap)
+        pad_x = outline + 1
+        ink_w = float(w - pad_x * 2)
+        right_ink = float(left_ink + ink_w)
+        adv = round_adv(right_ink + 1.0)
         measured[code] = {
             "img": img, "w": w, "h": h, "asc": asc,
             "bearing_x": 0.0,
@@ -206,25 +215,57 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
             continue
 
         is_combining = ch in COMBINING
-        img, w, h, asc, left_ink = draw_glyph_to_image(ch, font, stroke=outline, target_ascent=target_ascent)
+
+        # กำหนด vertical offset สำหรับสระบน / วรรณยุกต์ / สระล่าง
+        v_offset = 0.0
+        if ch in "ัิีึื็ํ๎":
+            v_offset = 2.5   # ยกสระบนขึ้นให้พ้นหัวพยัญชนะ
+        elif ch in "่้๊๋์":
+            v_offset = 2.5   # ยกวรรณยุกต์เดี่ยวขึ้น
+        elif ch in "ฺุู":
+            v_offset = -2.5  # เลื่อนสระล่างลงให้พ้นฐานพยัญชนะ
+
+        img, w, h, asc, left_ink = draw_glyph_to_image(ch, font, stroke=outline,
+                                                       target_ascent=target_ascent,
+                                                       v_offset=v_offset)
         if img is None:
             continue
 
+        pad_x = outline + 1
+        ink_w = float(w - pad_x * 2)
+
+        if code == 0xD3:  # สระอำ ำ (Precomposed ใน Sarabun)
+            # ใน Sarabun-Bold: นิคหิต อยู่ทางซ้าย (left_ink ≈ -6) และ สระอา อยู่ทางขวา (0..10)
+            # ตั้ง bearing_x ให้ นิคหิต ถอยไปอยู่บนเสาขวาของพยัญชนะหน้าพอดี
+            bx = float(left_ink - pad_x)
+            right_ink = float(left_ink + ink_w)
+            # ใน Gamebryo: net_delta = bearing_x + advance
+            # ดังนั้นเพื่อให้ pen เลื่อนสุทธิตาม right_ink + 1.0 จะต้องชดเชย bx:
+            adv = round_adv(right_ink + 1.0) - bx
+            measured[code] = {
+                "img": img, "w": w, "h": h, "asc": asc,
+                "bearing_x": bx,
+                "advance": adv,
+                "combining": False,
+            }
+            continue
+
         if is_combining:
-            # สระบน/ล่าง/วรรณยุกต์เดี่ยว: จัดตำแหน่งกึ่งกลางพยัญชนะไทยเฉลี่ย (ref_cons_adv)
-            # เพื่อให้เมื่อเอนจินวาดต่อจากพยัญชนะ ตัวสระ/วรรณยุกต์จะไม่เบี้ยวไปทางซ้ายหรือขวา
-            pad_x = outline + 1
-            mark_ink_w = float(w - pad_x * 2)
             if ch in "่้๊๋์":
                 # วรรณยุกต์เดี่ยววางบนเสาขวาของพยัญชนะ (เยื้องขวาเล็กน้อย)
-                bx = -round((ref_cons_adv + mark_ink_w) / 2.0 - 1.0)
+                bx = -round((ref_cons_adv + ink_w) / 2.0 - 1.0)
+            elif ch == 'ํ':
+                # นิคหิตเดี่ยว วางบนเสาขวาของพยัญชนะ
+                bx = -round(ink_w + 1.0)
             else:
-                # สระบน (ิ, ี, ึ, ื, ั), ไม้ไต่คู้ (็), นิคหิต (ํ), สระล่าง (ุ, ู) จัดกึ่งกลางพยัญชนะพอดี
-                bx = -round((ref_cons_adv + mark_ink_w) / 2.0)
+                # สระบน (ิ, ี, ึ, ื, ั), ไม้ไต่คู้ (็), สระล่าง (ุ, ู) จัดกึ่งกลางพยัญชนะพอดี
+                bx = -round((ref_cons_adv + ink_w) / 2.0)
             adv = -bx
         else:
-            extra_lead = LEADING_VOWELS_EXTRA.get(ch, 0.0)
-            adv = round_adv(font.getlength(ch) + stroke_gap + extra_lead)
+            right_ink = float(left_ink + ink_w)
+            # เผื่อระยะขอบหมึกพ้นตัวอักษร 1.0px อย่างสม่ำเสมอทุกตัวอักษร
+            # สระหน้า (ไ, ใ, โ, เ, แ) และพยัญชนะทั่วไป จะมีช่องไฟสม่ำเสมอเท่ากัน 1.0px พอดี
+            adv = round_adv(right_ink + 1.0)
             bx = 0.0
 
         measured[code] = {
@@ -240,6 +281,8 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
     tone_size = max(10, int(round(size * tone_scale)))
     tone_font = ImageFont.truetype(ttf_path, tone_size)
     tone_stroke = max(1, outline // 2) if outline > 1 else outline
+    vlift = 2.5      # ยกระดับสระบนขึ้น 2.5px
+    tone_gap = 2.5   # ระยะห่างชัดเจนระหว่างสระบนกับวรรณยุกต์ (ไม่ซ้อนทับกัน)
 
     for cluster, slot in CLUSTER_TO_SLOT.items():
         vowel, tone = cluster[0], cluster[1]
@@ -251,12 +294,12 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
         vl, vt, vw, vh = mv
         tl, tt, tw, th = mt
 
-        # ยกวรรณยุกต์ขึ้นให้แนบชิดกับไหล่ขวาของสระบน ไม่ลอยเคว้ง (ลด lift ลง 2.5px เพื่อให้กระชับสมดุลแบบ Google Docs)
-        lift = int(round((tt + th) - vt - 2.5 + tone_clearance))
+        # ยกวรรณยุกต์ขึ้นเหนือสระบน พร้อมระยะห่าง tone_gap ที่สะอาดตา ไม่จมทึบ
+        lift = int(round((tt + th) - vt + tone_gap + tone_clearance))
         tt_lifted = tt - lift
 
         left = min(vl, tl)
-        top = min(vt, tt_lifted)
+        top = min(vt, tt_lifted) - int(round(vlift))
         right = max(vl + vw, tl + tw)
         bot = max(vt + vh, tt_lifted + th)
 
@@ -275,21 +318,28 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
         draw_x = pad_x - left
         draw_y = top_pad - top
 
-        # วาดสระ
+        # วาดสระ (ยกขึ้น vlift)
+        v_draw_y = draw_y - int(round(vlift))
         if outline > 0:
-            draw.text((draw_x, draw_y), vowel, font=font, anchor="ls", fill=(255, 255, 255, 255),
+            draw.text((draw_x, v_draw_y), vowel, font=font, anchor="ls", fill=(255, 255, 255, 255),
                       stroke_width=outline, stroke_fill=DEFAULT_OUTLINE_OUTER + (255,))
-        draw.text((draw_x, draw_y), vowel, font=font, anchor="ls", fill=(255, 255, 255, 255))
+        draw.text((draw_x, v_draw_y), vowel, font=font, anchor="ls", fill=(255, 255, 255, 255))
 
         # วาดวรรณยุกต์ (ยกขึ้นเหนือสระบนด้วยขนาด 80% และเส้นขอบที่คมชัดไม่เกยกัน)
+        t_draw_y = draw_y - lift - int(round(vlift))
         if tone_stroke > 0:
-            draw.text((draw_x, draw_y - lift), tone, font=tone_font, anchor="ls", fill=(255, 255, 255, 255),
+            draw.text((draw_x, t_draw_y), tone, font=tone_font, anchor="ls", fill=(255, 255, 255, 255),
                       stroke_width=tone_stroke, stroke_fill=DEFAULT_OUTLINE_OUTER + (255,))
-        draw.text((draw_x, draw_y - lift), tone, font=tone_font, anchor="ls", fill=(255, 255, 255, 255))
+        draw.text((draw_x, t_draw_y), tone, font=tone_font, anchor="ls", fill=(255, 255, 255, 255))
 
         cluster_ink_w = float(right - left)
-        # จัดตำแหน่งกึ่งกลางพยัญชนะไทยเฉลี่ย (ref_cons_adv) เพื่อไม่ให้สระ+วรรณยุกต์ซ้อนตกขอบซ้ายของพยัญชนะ
-        bx = -round((ref_cons_adv + cluster_ink_w) / 2.0)
+        if vowel == 'ํ':
+            # สำหรับ นิคหิต+วรรณยุกต์ (0x98..0x9B ใน น้ำ, ค่ำ): วางบนเสาขวาของพยัญชนะ
+            bx = -round(cluster_ink_w + 1.0)
+        else:
+            # จัดตำแหน่งกึ่งกลางพยัญชนะไทยเฉลี่ย (ref_cons_adv)
+            bx = -round((ref_cons_adv + cluster_ink_w) / 2.0)
+
         measured[slot] = {
             "img": img, "w": img_w, "h": img_h, "asc": draw_y,
             "bearing_x": float(bx),
@@ -299,7 +349,8 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
 
     # 4. วรรณยุกต์ลดระดับ (0x9C..0x9F, 0xDB) สำหรับพยัญชนะที่ไม่มีสระบน (ค่า, ไม่, ถ้า, กอล์ฟ)
     for tone_ch, slot in LOW_TONE_MAP.items():
-        img, w, h, asc, left_ink = draw_glyph_to_image(tone_ch, font, stroke=outline, target_ascent=target_ascent)
+        img, w, h, asc, left_ink = draw_glyph_to_image(tone_ch, font, stroke=outline,
+                                                       target_ascent=target_ascent, v_offset=2.5)
         if img is None:
             continue
         pad_x = outline + 1
@@ -323,7 +374,8 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
         # baseline อยู่ที่ y = asc; ตัด pixels ด้านล่าง baseline
         cut_y = int(round(asc + max(1, outline)))
         draw_cut.rectangle([(0, cut_y), (w, h)], fill=(0, 0, 0, 0))
-        adv = round_adv(font.getlength(base_ch) + stroke_gap)
+        base_code = base_ch.encode("cp874")[0]
+        adv = measured[base_code]["advance"]
         measured[slot] = {
             "img": img_cut, "w": w, "h": h, "asc": asc,
             "bearing_x": 0.0,
@@ -337,7 +389,8 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
     for t_ch, slot in [('่', SLOT_TALL_LOW_MAI_EK), ('้', SLOT_TALL_LOW_MAI_THO)]:
         if slot in measured:
             continue
-        img, w, h, asc, left_ink = draw_glyph_to_image(t_ch, font, stroke=outline, target_ascent=target_ascent)
+        img, w, h, asc, left_ink = draw_glyph_to_image(t_ch, font, stroke=outline,
+                                                       target_ascent=target_ascent, v_offset=2.5)
         if img is None:
             continue
         pad_x = outline + 1
@@ -352,7 +405,8 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
 
     # 6.2 สระบนเยื้องซ้าย (0xFE, 0xFF)
     for v_ch, slot in [('ิ', SLOT_TALL_I), ('ี', SLOT_TALL_II)]:
-        img, w, h, asc, left_ink = draw_glyph_to_image(v_ch, font, stroke=outline, target_ascent=target_ascent)
+        img, w, h, asc, left_ink = draw_glyph_to_image(v_ch, font, stroke=outline,
+                                                       target_ascent=target_ascent, v_offset=2.5)
         if img is None:
             continue
         pad_x = outline + 1
@@ -374,10 +428,10 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
             continue
         vl, vt, vw, vh = mv
         tl, tt, tw, th = mt
-        lift = int(round((tt + th) - vt - 2.5 + tone_clearance))
+        lift = int(round((tt + th) - vt + tone_gap + tone_clearance))
         tt_lifted = tt - lift
         left = min(vl, tl)
-        top = min(vt, tt_lifted)
+        top = min(vt, tt_lifted) - int(round(vlift))
         right = max(vl + vw, tl + tw)
         bot = max(vt + vh, tt_lifted + th)
         pad_x = outline + 1
@@ -389,14 +443,19 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
         draw = ImageDraw.Draw(img)
         draw_x = pad_x - left
         draw_y = top_pad - top
+
+        v_draw_y = draw_y - int(round(vlift))
         if outline > 0:
-            draw.text((draw_x, draw_y), vowel, font=font, anchor="ls", fill=(255, 255, 255, 255),
+            draw.text((draw_x, v_draw_y), vowel, font=font, anchor="ls", fill=(255, 255, 255, 255),
                       stroke_width=outline, stroke_fill=DEFAULT_OUTLINE_OUTER + (255,))
-        draw.text((draw_x, draw_y), vowel, font=font, anchor="ls", fill=(255, 255, 255, 255))
+        draw.text((draw_x, v_draw_y), vowel, font=font, anchor="ls", fill=(255, 255, 255, 255))
+
+        t_draw_y = draw_y - lift - int(round(vlift))
         if tone_stroke > 0:
-            draw.text((draw_x, draw_y - lift), tone, font=tone_font, anchor="ls", fill=(255, 255, 255, 255),
+            draw.text((draw_x, t_draw_y), tone, font=tone_font, anchor="ls", fill=(255, 255, 255, 255),
                       stroke_width=tone_stroke, stroke_fill=DEFAULT_OUTLINE_OUTER + (255,))
-        draw.text((draw_x, draw_y - lift), tone, font=tone_font, anchor="ls", fill=(255, 255, 255, 255))
+        draw.text((draw_x, t_draw_y), tone, font=tone_font, anchor="ls", fill=(255, 255, 255, 255))
+
         cluster_ink_w = float(right - left)
         bx = -round((ref_cons_adv + cluster_ink_w) / 2.0) - tall_shift
         measured[slot] = {
