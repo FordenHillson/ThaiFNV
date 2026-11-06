@@ -35,6 +35,31 @@ def cluster_of_slot(cp: int) -> str | None:
     return PRECOMPOSE_BYTE_TO_CLUSTER.get(cp)
 
 
+# แผนที่สำหรับ สระอำ + วรรณยุกต์ (น้ำ, ถ้ำ, ค่ำ)
+# ในภาษาไทย: วรรณยุกต์ + ำ (0xD3) = (นิคหิต ํ + วรรณยุกต์) + สระอา (0xD2)
+# ซึ่ง นิคหิต+วรรณยุกต์ มีช่อง precompose อยู่แล้วคือ 0x98..0x9B
+AM_TONE_UNICODE = {
+    ('่', 'ำ'): chr(0x98) + 'า',
+    ('้', 'ำ'): chr(0x99) + 'า',
+    ('๊', 'ำ'): chr(0x9A) + 'า',
+    ('๋', 'ำ'): chr(0x9B) + 'า',
+    ('ำ', '่'): chr(0x98) + 'า',
+    ('ำ', '้'): chr(0x99) + 'า',
+    ('ำ', '๊'): chr(0x9A) + 'า',
+    ('ำ', '๋'): chr(0x9B) + 'า',
+}
+
+AM_TONE_CP874 = {
+    (0xE8, 0xD3): (0x98, 0xD2),
+    (0xE9, 0xD3): (0x99, 0xD2),
+    (0xEA, 0xD3): (0x9A, 0xD2),
+    (0xEB, 0xD3): (0x9B, 0xD2),
+    (0xD3, 0xE8): (0x98, 0xD2),
+    (0xD3, 0xE9): (0x99, 0xD2),
+    (0xD3, 0xEA): (0x9A, 0xD2),
+    (0xD3, 0xEB): (0x9B, 0xD2),
+}
+
 def compose_text(text: str) -> str:
     """แทนที่สระบน+วรรณยุกต์ในสตริง Unicode ด้วยตัวอักษรจากช่อง precompose
     (ใช้ chr(byte) เป็น proxy ใน Python — ตอน encode cp874 ต้อง map เอง)
@@ -44,6 +69,11 @@ def compose_text(text: str) -> str:
     n = len(text)
     while i < n:
         if i + 1 < n:
+            am_pair = (text[i], text[i + 1])
+            if am_pair in AM_TONE_UNICODE:
+                out.append(AM_TONE_UNICODE[am_pair])
+                i += 2
+                continue
             pair = text[i] + text[i + 1]
             if pair in PRECOMPOSE_TABLE:
                 # เก็บเป็น private marker ผ่าน chr ของ slot (latin-1)
@@ -90,10 +120,19 @@ def compose_cp874(data: bytes) -> bytes:
     while i < len(data):
         if i + 1 < len(data):
             key = (data[i], data[i + 1])
+            if key in AM_TONE_CP874:
+                out.extend(AM_TONE_CP874[key])
+                i += 2
+                continue
             if key in pair_to_slot:
                 out.append(pair_to_slot[key])
                 i += 2
                 continue
+        # สระอำเดี่ยว (0xD3) -> นิคหิต ํ (0xED) + สระอา า (0xD2)
+        if data[i] == 0xD3:
+            out.extend([0xED, 0xD2])
+            i += 1
+            continue
         out.append(data[i])
         i += 1
     return bytes(out)
