@@ -518,19 +518,20 @@ def build_font(ttf_path: str, name: str, size: int, out_base: str | None = None,
 
 
 # สล็อตมาตรฐานของ Fallout: New Vegas พร้อมค่า Line Height, Target Ascent, Outline, Stroke Gap, และ Baseline Lift
-# จัดวางให้ตัวอักษรอยู่ "กึ่งกลางกรอบตัวเลือกสีเหลือง" พอดี ไม่ชิดขอบล่าง และสระล่าง ุ ู ไม่ตกขอบ
+# จัดวางให้ตัวอักษรอยู่ "กึ่งกลางกรอบตัวเลือกสีเหลือง" พอดี ไม่ชิดบน ไม่ชิดขอบล่าง และสระล่าง ุ ู ไม่ตกขอบ
 # (ชื่อไฟล์, ขนาด Sarabun, line_height, target_ascent, outline, stroke_gap, baseline_lift)
 VANILLA_SLOTS = [
-    ("Baked-in_Monofonto_Large", 18, 38.0, 27.0, 2, 1.5, 8.0),        # Slot 7: Start Menu (ขอบ 2px คมชัด, กึ่งกลางกรอบ)
-    ("Glow_Monofonto_VL_dialogs", 18, 32.0, 23.0, 1, 0.5, 8.0),       # Slot 6: Dialog / Settings (กึ่งกลางกรอบตัวเลือก สระล่างไม่ชนขอบ)
-    ("Monofonto_VeryLarge02_Dialogs2", 18, 36.0, 26.0, 1, 0.5, 8.0),  # Slot 4: Version Info / HUD
-    ("Glow_Monofonto_Large", 18, 31.0, 23.0, 1, 0.5, 8.0),            # Slot 1: ข้อความป๊อปอัป
-    ("Monofonto_Large", 17, 31.0, 23.0, 1, 0.5, 8.0),                 # Slot 2: Stats / Map / Buttons / Pip-Boy Tabs
-    ("Glow_Monofonto_Medium", 15, 26.0, 19.0, 1, 0.5, 6.0),           # Slot 3: Container / Loading
-    ("Fixedsys_Comp_uniform_width", 20, 25.0, 19.0, 1, 0.5, 4.0),     # Slot 5: Terminal
-    ("Glow_Futura_Caps_Large", 36, 52.0, 38.0, 2, 1.5, 12.0),         # Slot 8: หัวข้อใหญ่
-    ("NVFont_Test", 26, 36.0, 27.0, 1, 0.5, 8.0),                     # Slot 9: เทสต์
+    ("Baked-in_Monofonto_Large", 18, 38.0, 27.0, 2, 1.5, 3.5),        # Slot 7: Start Menu (กึ่งกลางกรอบปุ่มเมนู)
+    ("Glow_Monofonto_VL_dialogs", 18, 32.0, 23.0, 1, 0.5, 3.5),       # Slot 6: Dialog / Settings (กึ่งกลางกรอบตัวเลือกพอดีเป๊ะ)
+    ("Monofonto_VeryLarge02_Dialogs2", 18, 36.0, 26.0, 1, 0.5, 3.5),  # Slot 4: Version Info / HUD
+    ("Glow_Monofonto_Large", 18, 31.0, 23.0, 1, 0.5, 3.5),            # Slot 1: ข้อความป๊อปอัป
+    ("Monofonto_Large", 17, 31.0, 23.0, 1, 0.5, 3.5),                 # Slot 2: Stats / Map / Buttons / Pip-Boy Tabs
+    ("Glow_Monofonto_Medium", 15, 26.0, 19.0, 1, 0.5, 3.0),           # Slot 3: Container / Loading
+    ("Fixedsys_Comp_uniform_width", 20, 25.0, 19.0, 1, 0.5, 2.0),     # Slot 5: Terminal
+    ("Glow_Futura_Caps_Large", 36, 52.0, 38.0, 2, 1.5, 6.0),          # Slot 8: หัวข้อใหญ่
+    ("NVFont_Test", 26, 36.0, 27.0, 1, 0.5, 3.5),                     # Slot 9: เทสต์
 ]
+
 
 
 def main():
