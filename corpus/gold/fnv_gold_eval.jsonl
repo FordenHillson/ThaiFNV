@@ -1,0 +1,52 @@
+{"id": 1, "en": "Take it easy for a few days. You took a nasty hit to the head.", "th": "พักสักสองสามวัน คุณโดนกระแทกหัวแรงมาก", "speaker": "Doc Mitchell", "expected_register": "doctor", "emotion": "Neutral"}
+{"id": 2, "en": "I'm Doc Mitchell. You're in Goodsprings.", "th": "ผมคือด็อก มิตเชลล์ คุณอยู่ที่กู๊ดสปริงส์", "speaker": "Doc Mitchell", "expected_register": "doctor"}
+{"id": 3, "en": "Medicine's running low again.", "th": "ยาเหลือน้อยอีกแล้ว", "speaker": "Doctor Usanagi", "expected_register": "doctor", "emotion": "Concerned"}
+{"id": 4, "en": "There are people in Freeside who need food and medicine.", "th": "มีคนที่ฟรีไซด์ที่ต้องการอาหารและยา", "speaker": "Doctor Usanagi", "expected_register": "doctor"}
+{"id": 5, "en": "I can patch you up, but you should avoid getting shot again.", "th": "ผมรักษาคุณได้ แต่คุณควรหลีกเลี่ยงการโดนยิงอีก", "speaker": "Doctor Henry", "expected_register": "doctor"}
+{"id": 6, "en": "Let me check your vitals before you head back out.", "th": "ให้ผมตรวจสัญญาณชีพก่อนที่คุณจะออกไปอีกครั้ง", "speaker": "Doc Mitchell", "expected_register": "doctor"}
+{"id": 7, "en": "A Stimpak will stabilize you for now.", "th": "สติมแพกจะช่วยให้คุณทรงตัวได้ชั่วคราว", "speaker": "Doctor Usanagi", "expected_register": "doctor", "must_contain": ["สติมแพก"]}
+{"id": 8, "en": "See, the NCR sends us when they want terrible things done to terrible people...", "th": "เห็นไหม เอ็นซีอาร์ส่งพวกเรามาเมื่ออยากให้ทำเรื่องโหดกับคนโหด...", "speaker": "NCR Ranger", "expected_register": "military", "must_contain": ["เอ็นซีอาร์"]}
+{"id": 9, "en": "Hard to believe this place used to be a luxury resort, huh?", "th": "เชื่อยากว่าที่นี่เคยเป็นรีสอร์ตหรูเลยนะ", "speaker": "NCR Ranger", "expected_register": "military"}
+{"id": 10, "en": "Trooper, report to Camp McCarran immediately.", "th": "ทหาร รายงานตัวที่แคมป์แมคแคร์แรนทันที", "speaker": "NCR Commander", "expected_register": "military", "must_contain": ["ทหาร", "แมคแคร์แรน"]}
+{"id": 11, "en": "The Brotherhood of Steel does not share its technology lightly.", "th": "บราเธอร์ฮูดออฟสตีลไม่แจกจ่ายเทคโนโลยีง่าย ๆ", "speaker": "Brotherhood Paladin", "expected_register": "military", "must_contain": ["บราเธอร์ฮูดออฟสตีล"]}
+{"id": 12, "en": "Stay sharp. Deathclaws have been spotted near the highway.", "th": "ตั้งใจให้ดี พบเดธคลอว์ใกล้ทางหลวง", "speaker": "NCR Trooper", "expected_register": "military", "must_contain": ["เดธคลอว์"]}
+{"id": 13, "en": "They say a doctor killed Caesar. Why would Caesar need a doctor?", "th": "เขาบอกว่าหมอฆ่าซีซาร์ ทำไมซีซาร์ถึงต้องมีหมอ?", "speaker": "Vulpes Inculta", "expected_register": "legion", "must_contain": ["ซีซาร์"]}
+{"id": 14, "en": "Ave, true to Caesar.", "th": "อาเว ภักดีต่อซีซาร์", "speaker": "Legion Explorer", "expected_register": "legion", "must_contain": ["ซีซาร์"]}
+{"id": 15, "en": "The Legion does not forgive weakness.", "th": "ลีเจียนไม่ให้อภัยความอ่อนแอ", "speaker": "Legate Lanius", "expected_register": "legion", "must_contain": ["ลีเจียน"]}
+{"id": 16, "en": "Kneel before mighty Caesar, or die as an enemy of the Legion.", "th": "คุกเข่าต่อหน้าซีซาร์ผู้ยิ่งใหญ่ หรือตายในฐานะศัตรูของลีเจียน", "speaker": "Centurion", "expected_register": "legion", "must_contain": ["ซีซาร์", "ลีเจียน"]}
+{"id": 17, "en": "This ain't your business. Walk off and forget you saw anything.", "th": "เรื่องของมึงไม่ใช่ เดินไปแล้วลืมว่าเห็นอะไร", "speaker": "Omerta Thug", "expected_register": "raider"}
+{"id": 18, "en": "Got some fresh grub coming in from Goodsprings.", "th": "ได้เสบียงสดจากกู๊ดสปริงส์เข้ามา", "speaker": "Joe Cobb", "expected_register": "raider", "must_contain": ["กู๊ดสปริงส์"]}
+{"id": 19, "en": "Hand over the Caps or I'll put a bullet in you.", "th": "ยื่นแคปส์มา ไม่งั้นกูยิงมึง", "speaker": "Powder Ganger", "expected_register": "raider", "must_contain": ["แคปส์"]}
+{"id": 20, "en": "The Fiends will tear you apart if you hang around here.", "th": "ฟีนด์สจะฉีกมึงเป็นชิ้น ๆ ถ้ามึงยังวนเวียนแถวนี้", "speaker": "Fiend", "expected_register": "raider", "must_contain": ["ฟีนด์ส"]}
+{"id": 21, "en": "Welcome to New Vegas. Enjoy your stay on the Strip.", "th": "ยินดีต้อนรับสู่นิวเวกัส ขอให้สนุกบนเดอะสตริป", "speaker": "Swank", "expected_register": "civilian", "must_contain": ["นิวเวกัส", "สตริป"]}
+{"id": 22, "en": "Primm's seen better days, but we're still standing.", "th": "พริมม์เคยดีกว่านี้ แต่เรายังยืนหยัดอยู่", "speaker": "Primm Settler", "expected_register": "civilian", "must_contain": ["พริมม์"]}
+{"id": 23, "en": "You look like you could use a drink at the Lucky 38.", "th": "ดูท่าทางคุณน่าจะอยากดื่มที่ลัคกี้ 38", "speaker": "Casino Patron", "expected_register": "civilian", "must_contain": ["ลัคกี้ 38"]}
+{"id": 24, "en": "Novac isn't much, but it's home.", "th": "โนแวคไม่ได้ยิ่งใหญ่ แต่ที่นี่คือบ้าน", "speaker": "Novac Settler", "expected_register": "civilian", "must_contain": ["โนแวค"]}
+{"id": 25, "en": "Fancy meeting you here, friend.", "th": "บังเอิญเจอคุณที่นี่เลยนะ เพื่อน", "speaker": "Victor", "expected_register": "robot"}
+{"id": 26, "en": "You need to be careful, it's dangerous out here!", "th": "คุณต้องระวัง นี่ข้างนอกอันตราย!", "speaker": "Victor", "expected_register": "robot"}
+{"id": 27, "en": "Howdy, partner! Yes Man at your service!", "th": "หวัดดี พาร์ทเนอร์! เยสแมนพร้อมรับใช้!", "speaker": "Yes Man", "expected_register": "robot", "must_contain": ["เยสแมน"]}
+{"id": 28, "en": "Mr. House requires your presence at the Lucky 38.", "th": "มิสเตอร์เฮาส์ต้องการพบคุณที่ลัคกี้ 38", "speaker": "Securitron", "expected_register": "robot", "must_contain": ["มิสเตอร์เฮาส์", "ลัคกี้ 38"]}
+{"id": 29, "en": "The Mojave Wasteland is no place for the unprepared.", "th": "แดนรกร้างโมฮาวีไม่ใช่ที่สำหรับคนไม่พร้อม", "speaker": "Sunny Smiles", "expected_register": "civilian", "must_contain": ["โมฮาวี"]}
+{"id": 30, "en": "Boone keeps watch from the dinosaur in Novac.", "th": "บูนเฝ้ายามจากไดโนเสาร์ที่โนแวค", "speaker": "Narrator", "expected_register": "default", "must_contain": ["บูน", "โนแวค"]}
+{"id": 31, "en": "Cassidy runs caravans across the Wasteland.", "th": "แคสส์รับคาราวานพาดผ่านแดนรกร้าง", "speaker": "Merchant", "expected_register": "civilian", "must_contain": ["แคสส์", "คาราวาน"]}
+{"id": 32, "en": "Use your Pip-Boy to track the quest.", "th": "ใช้พิปบอยติดตามเควส", "speaker": "UI", "expected_register": "default", "must_contain": ["พิปบอย"]}
+{"id": 33, "en": "Vault 21 is under the New Vegas Strip.", "th": "วอลต์ 21 อยู่ใต้สตริปของนิวเวกัส", "speaker": "UI", "expected_register": "default", "must_contain": ["วอลต์", "นิวเวกัส"]}
+{"id": 34, "en": "RadAway will flush radiation from your system.", "th": "เรดอะเวย์จะขับกัมมันตภาพรังสีออกจากร่างกายคุณ", "speaker": "Doctor Usanagi", "expected_register": "doctor", "must_contain": ["เรดอะเวย์"]}
+{"id": 35, "en": "A Super Mutant was seen near Hoover Dam.", "th": "พบซูเปอร์มิวแทนท์ใกล้เขื่อนฮูเวอร์", "speaker": "NCR Trooper", "expected_register": "military", "must_contain": ["ซูเปอร์มิวแทนท์", "ฮูเวอร์"]}
+{"id": 36, "en": "The Great Khans still hold Red Rock Canyon.", "th": "เกรตคานส์ยังยึดเรดร็อคแคนยอนอยู่", "speaker": "Civilian", "expected_register": "civilian", "must_contain": ["เกรตคานส์"]}
+{"id": 37, "en": "Followers of the Apocalypse run the Old Mormon Fort clinic.", "th": "ผู้ติดตามแห่งวันสิ้นโลกดูแลคลินิกที่โอลด์มอร์มอนฟอร์ท", "speaker": "Doctor Usanagi", "expected_register": "doctor", "must_contain": ["ผู้ติดตามแห่งวันสิ้นโลก"]}
+{"id": 38, "en": "Please sit still while I examine the wound.", "th": "โปรดนั่งนิ่ง ๆ ขณะที่ผมตรวจบาดแผล", "speaker": "Doc Mitchell", "expected_register": "doctor"}
+{"id": 39, "en": "You should take Med-X for the pain.", "th": "คุณควรใช้เมด-เอ็กซ์แก้ปวด", "speaker": "Doc Mitchell", "expected_register": "doctor", "must_contain": ["เมด-เอ็กซ์"]}
+{"id": 40, "en": "I'll patch you up. That will be 75 Caps.", "th": "ผมจะรักษาให้ ค่าบริการ 75 แคปส์", "speaker": "Doctor Usanagi", "expected_register": "doctor", "must_contain": ["แคปส์"]}
+{"id": 41, "en": "Sir, the Legion is advancing on Boulder City.", "th": "ท่าน ลีเจียนกำลังรุกคืบไปยังโบลเดอร์ซิตี", "speaker": "NCR Trooper", "expected_register": "military", "must_contain": ["ลีเจียน", "โบลเดอร์ซิตี"]}
+{"id": 42, "en": "Ranger, secure the perimeter around Camp McCarran.", "th": "เรนเจอร์ คุมเส้นรอบค่ายแคมป์แมคแคร์แรน", "speaker": "NCR Officer", "expected_register": "military", "must_contain": ["เรนเจอร์", "แมคแคร์แรน"]}
+{"id": 43, "en": "Ghouls aren't welcome in most towns.", "th": "กูลไม่เป็นที่ต้อนรับในเมืองส่วนใหญ่", "speaker": "Settler", "expected_register": "civilian", "must_contain": ["กูล"]}
+{"id": 44, "en": "Watch out for Cazadores near the road to Nellis.", "th": "ระวังคาซาดอร์ใกล้ทางไปเนลลิส", "speaker": "NCR Trooper", "expected_register": "military", "must_contain": ["คาซาดอร์", "เนลลิส"]}
+{"id": 45, "en": "The Burned Man walks Zion Canyon still.", "th": "ชายผู้ถูกเผายังเดินอยู่ในหุบเขาไซออน", "speaker": "Tribal", "expected_register": "civilian", "must_contain": ["ชายผู้ถูกเผา", "ไซออน"]}
+{"id": 46, "en": "Ulysses waits at the Divide.", "th": "ยูลิสซิสรออยู่ที่เดอะดีไวด์", "speaker": "Narrator", "expected_register": "default", "must_contain": ["ยูลิสซิส", "ดีไวด์"]}
+{"id": 47, "en": "Big MT experiments created the Lobotomites.", "th": "การทดลองที่บิ๊กเอ็มทีสร้างโลโบโทไมท์ขึ้นมา", "speaker": "Doctor Mobius", "expected_register": "doctor", "must_contain": ["บิ๊กเอ็มที", "โลโบโทไมท์"]}
+{"id": 48, "en": "Sierra Madre will never let you leave.", "th": "เซียร่า มาเดรจะไม่ยอมให้คุณจากไป", "speaker": "Father Elijah", "expected_register": "default", "must_contain": ["เซียร่า มาเดร"]}
+{"id": 49, "en": "{Angry}I told you to rest. Don't make me sedate you.", "th": "{Angry}ผมบอกให้คุณพักแล้ว อย่าทำให้ผมต้องให้ยาระงับประสาท", "speaker": "Doc Mitchell", "expected_register": "doctor", "emotion": "Angry"}
+{"id": 50, "en": "Continue", "th": "เล่นต่อ", "speaker": "UI", "expected_register": "default", "must_contain": ["เล่นต่อ"]}
+{"id": 51, "en": "The Courier arrived in Goodsprings after Benny left him for dead.", "th": "เดอะคูเรียร์มาถึงกู๊ดสปริงส์หลังจากเบนนี่ทิ้งให้ตาย", "speaker": "Narrator", "expected_register": "default", "must_contain": ["เดอะคูเรียร์", "กู๊ดสปริงส์", "เบนนี่"]}
+{"id": 52, "en": "Powder Gangers took over the NCR Correctional Facility.", "th": "พาวเดอร์แกงเกอร์สยึดสถานกักกันเอ็นซีอาร์ไว้", "speaker": "NCR Ranger", "expected_register": "military", "must_contain": ["พาวเดอร์แกงเกอร์ส", "เอ็นซีอาร์"]}
