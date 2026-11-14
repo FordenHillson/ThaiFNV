@@ -272,7 +272,15 @@ class TranslationJobManager:
                     writer = csv.DictWriter(f, fieldnames=headers)
                     writer.writeheader()
                     writer.writerows(rows)
-                os.replace(tmp_path, file_path)
+                # Retry loop on Windows to withstand transient locks from search indexers / antivirus
+                for retry_i in range(5):
+                    try:
+                        os.replace(tmp_path, file_path)
+                        break
+                    except PermissionError:
+                        if retry_i == 4:
+                            raise
+                        time.sleep(0.3)
                 save_cache(cache)
             except Exception as e:
                 with self.lock:
@@ -636,7 +644,7 @@ def _build_provider(provider_type: str, model_name: str = "", api_key: str = "",
     if provider_type == "gemini":
         if not api_key:
             return None, "Gemini API Key is required"
-        return GeminiProvider(api_key=api_key, model=model_name or "gemini-2.5-flash"), None
+        return GeminiProvider(api_key=api_key, model=model_name or "gemini-3.8-flash"), None
     if provider_type == "deepseek":
         if not api_key:
             return None, "DeepSeek API Key is required"
@@ -684,6 +692,10 @@ def api_translate_single():
 
         accepted, unresolved = translate_batch_with_qa(provider, payload)
         th_res = (accepted.get(1) or "").strip()
+        if not th_res:
+            qa_fails = unresolved.get(1, [])
+            err_msg = f"QA ไม่ผ่าน: {', '.join(qa_fails)}" if qa_fails else "โมเดลไม่ตอบกลับ หรือเกิดข้อผิดพลาดจาก API (โปรดตรวจสอบว่าเลือก Model เป็น gemini-3.8-flash หรือตรวจดูหน้าต่างสีดำ)"
+            return jsonify({"ok": False, "error": err_msg}), 200
         return jsonify({
             "ok": True,
             "th": th_res,
@@ -982,8 +994,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           <input type="password" id="gemini-key" placeholder="AIzaSy...">
           <label>โมเดล (Gemini Model):</label>
           <select id="gemini-model-select">
-            <option value="gemini-2.5-flash">gemini-2.5-flash (เร็วและฉลาด)</option>
-            <option value="gemini-1.5-flash">gemini-1.5-flash</option>
+            <option value="gemini-3.8-flash">gemini-3.8-flash (เร็วและฉลาด แนะนำ)</option>
+            <option value="gemini-2.0-flash">gemini-2.0-flash (สำรอง เสถียร)</option>
+            <option value="gemini-1.5-flash">gemini-1.5-flash (สำรอง)</option>
             <option value="gemini-1.5-pro">gemini-1.5-pro</option>
           </select>
         </div>
@@ -1462,11 +1475,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       .then(d => {
         btn.disabled = false;
         btn.innerText = "⚡ แปล AI";
-        if (d.ok) {
+        if (d.ok && d.th) {
           document.getElementById('th-' + rowIdx).value = d.th;
           saveRow(rowIdx);
         } else {
-          alert("แปลไม่สำเร็จ: " + d.error);
+          alert("แปลไม่สำเร็จ: " + (d.error || "ไม่ได้รับข้อความแปลกลับมา"));
         }
       })
       .catch(err => {
