@@ -192,7 +192,7 @@ class OllamaProvider(BaseProvider):
 
 
 class GeminiProvider(BaseProvider):
-    def __init__(self, api_key: str, model: str = "gemini-2.5-flash"):
+    def __init__(self, api_key: str, model: str = "gemini-3.8-flash"):
         self.api_key = api_key
         self.model = model
 
@@ -215,11 +215,19 @@ class GeminiProvider(BaseProvider):
             data=json.dumps(payload).encode("utf-8"),
             headers={"Content-Type": "application/json"},
         )
-        try:
-            with urllib.request.urlopen(req, timeout=60) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-        except urllib.error.HTTPError as e:
-            _raise_for_provider_http_error(e, "Gemini")
+        data = {}
+        for attempt in range(4):
+            try:
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                break
+            except urllib.error.HTTPError as e:
+                if e.code in (429, 503) and attempt < 3:
+                    wait_sec = 2 * (attempt + 1)
+                    print(f"\n[Gemini] Server busy (HTTP {e.code}), retrying in {wait_sec}s...")
+                    time.sleep(wait_sec)
+                    continue
+                _raise_for_provider_http_error(e, "Gemini")
         cand = data.get("candidates", [])
         if not cand:
             return {}
@@ -752,7 +760,7 @@ def main():
         if not api_key:
             print("Error: Gemini API key required!")
             sys.exit(1)
-        model = args.model or "gemini-2.5-flash"
+        model = args.model or "gemini-3.8-flash"
         print(f"Using Provider: Google Gemini API (Model: {model})")
         provider = GeminiProvider(api_key=api_key, model=model)
     else:
